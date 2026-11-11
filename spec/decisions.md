@@ -11,13 +11,15 @@ The site is generated at build time with Astro (static output). Interactive part
 
 ## D-002 Hosting on Cloudflare Workers static assets, deployed with `cf`
 
+The deploy tool part is replaced by D-019. Hosting on Workers static assets still holds.
+
 - Static asset requests are free and unlimited. The audio sits next to it on R2.
 - The project is deployed with the `cf` CLI. `cloudflare.config.ts` and `wrangler.config.ts` (with `assetsDirectory`) are written by hand. Never run `cf init` in this project, because it reconfigures Astro or Next.js projects for server rendering.
 - Wrangler is used only for the few commands `cf` does not support yet.
 
 ## D-003 Deploy from GitHub Actions
 
-Pull requests run all checks and deploy a named preview (`cf previews deploy`). Pushes to `main` deploy to production only after the checks pass.
+Pull requests run all checks and deploy a named preview. Pushes to `main` deploy to production only after the checks pass. The commands are in D-019.
 - The Cloudflare API token has only the "Workers Scripts: Edit" permission and is stored in the GitHub `production` environment.
 - Considered: Cloudflare Workers Builds (no secret in GitHub, but deploys do not wait for GitHub checks, and Node 26 was not confirmed in its build image).
 
@@ -96,3 +98,13 @@ They are written later, from sourced facts, never copied from wikis (Wikipedia a
 - Why: MIT matches the tools we build on. The curated data is facts (dates, credits); CC0, as MusicBrainz uses for its core data, lets projects such as ByMykel's API absorb it without any conditions. Stories are creative writing, so CC BY 4.0 asks for credit. Share-alike and non-commercial terms were left out because they block wikis and other projects from reusing the work; CC BY content can still go into CC BY-SA wikis.
 - Compared with similar projects (ByMykel's API: MIT for everything; PokeAPI: BSD-3 for everything plus a trademark line; GameTracking: no licence), separating our work from third-party material in `NOTICE` is stricter than usual.
 - Self-hosted fonts ship with their OFL licence files.
+
+## D-019 Deploy with Wrangler, not `cf` (replaces the deploy tool in D-002)
+
+Decided 2026-11-11 while building the skeleton.
+
+- `wrangler.jsonc` points `assets.directory` at `./dist`, with `html_handling: "auto-trailing-slash"` and `not_found_handling: "404-page"`. There is no Worker code (`main`).
+- Build with `pnpm build` (Astro), then deploy with `wrangler deploy`. Pull request previews use `wrangler preview --name pr-<number>` and `wrangler preview delete`.
+- `cf` is still used for account and resource commands (R2 buckets, DNS) from a maintainer's machine. It is not a project dependency.
+- Why: `cf deploy` detects Astro, runs `astro build` itself and then expects the Build Output that only the `@astrojs/cloudflare` adapter writes. That adapter is for on-demand rendering, which this site does not use. Cloudflare's own guide for fully prerendered Astro sites uses a Wrangler configuration and `wrangler deploy`. The Cloudflare plugin's rule ("a project with a Wrangler configuration keeps Wrangler for deploy; `cf` resource commands are fine alongside it") matches this.
+- Revisit when `cf` supports static framework output without an adapter.
