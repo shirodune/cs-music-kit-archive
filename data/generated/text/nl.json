@@ -1,0 +1,620 @@
+{
+  "kits": {
+    "1": {
+      "credit": "Valve",
+      "description": "De officiële muziekset van Counter-Strike 2.",
+      "name": "Valve, Counter-Strike 2",
+      "title": "Counter-Strike 2"
+    },
+    "3": {
+      "credit": "Daniel Sadowski",
+      "description": "Videogamecomponist Daniel Sadowski laat gekke Edgy Action gemixt met CRAZY FAT-beats horen in deze pulserende, opwindende muziekset.",
+      "name": "Daniel Sadowski, Crimson Assault",
+      "title": "Crimson Assault"
+    },
+    "4": {
+      "credit": "Noisia",
+      "description": "Het Nederlandse elektronische trio Noisia geeft een stoer, filmisch gevoel met een unieke mix van traditie en progressie.",
+      "name": "Noisia, Sharpened",
+      "title": "Sharpened"
+    },
+    "5": {
+      "credit": "Robert Allaire",
+      "description": "Muziek om je tegenstanders te vermorzelen. Van bekroonde componist Robert Allaire.",
+      "name": "Robert Allaire, Insurgency",
+      "title": "Insurgency"
+    },
+    "6": {
+      "credit": "Sean Murray",
+      "description": "Van de componist van twee van 's werelds grootste oorlogsspellen komt nu een sonische uitrusting die je vijanden naar de poorten van de hel brengt!",
+      "name": "Sean Murray, A*D*8",
+      "title": "A*D*8"
+    },
+    "7": {
+      "credit": "Feed Me",
+      "description": "Gerenommeerd elektronisch muzikant Feed Me zet een corral-showdown uit het Wilde Westen in een moderne elektronische ruimte.",
+      "name": "Feed Me, High Noon",
+      "title": "High Noon"
+    },
+    "8": {
+      "credit": "Dren",
+      "description": "Dit cinematische muziekpakket van spelmuziekcomponist Dren McDonald is geïnspireerd op superheld-metal en zet de 'ill' op de KILL!",
+      "name": "Dren, Death's Head Demolition",
+      "title": "Death's Head Demolition"
+    },
+    "9": {
+      "credit": "Austin Wintory",
+      "description": "De voor Grammy's genomineerde spelcomponist Austin Wintory vraagt zich af​ waarom je zou jagen op je vijanden als je ze kunt lokken met een dodelijke, weliswaar krankzinnige tango?",
+      "name": "Austin Wintory, Desert Fire",
+      "title": "Desert Fire"
+    },
+    "10": {
+      "credit": "Sasha",
+      "description": "Dompel jezelf onder in deze filmische soundtrack vol stijgende strijkers, pulserende melodieën en drijvende drums van de wereldberoemde DJ en producer Sasha.",
+      "name": "Sasha, LNOE",
+      "title": "LNOE"
+    },
+    "11": {
+      "credit": "Skog",
+      "description": "Een les in agressie van metal-producent Skog.",
+      "name": "Skog, Metal",
+      "title": "Metal"
+    },
+    "12": {
+      "credit": "Midnight Riders",
+      "description": "\"FIJNE FEESTDAGEN, **KELS!\"\n-Midnight Riders",
+      "name": "Midnight Riders, All I Want for Christmas",
+      "title": "All I Want for Christmas"
+    },
+    "13": {
+      "credit": "Matt Lange",
+      "description": "Verwen je auditieve zintuigen met een verzameling van filmische, glitchy sferen en harde, kloppende ritmes van innovator en producent van elektronische muziek Matt Lange.",
+      "name": "Matt Lange, IsoRhythm",
+      "title": "IsoRhythm"
+    },
+    "14": {
+      "credit": "Mateo Messina",
+      "description": "Hak je vijanden in de pan. Overweldigende intensiteit door de met een Grammy bekroonde componist Mateo Messina.",
+      "name": "Mateo Messina, For No Mankind",
+      "title": "For No Mankind"
+    },
+    "15": {
+      "credit": "Verschillende artiesten",
+      "description": "Een heleboel elektronische kunstenaars leveren brute beats in dit opwindende muziekpakket van het iconische Hotline Miami.",
+      "name": "Verschillende artiesten, Hotline Miami",
+      "title": "Hotline Miami"
+    },
+    "16": {
+      "credit": "Daniel Sadowski",
+      "description": "Componist Daniel Sadowski legt de lat een stukje hoger met agressieve elektronische beats, creatieve geluidseffecten en een opwindende, opzwepende, futuristische vibe. \"Waarschuwing: zal leiden tot een stijging van de adrenaline!\"",
+      "name": "Daniel Sadowski, Total Domination",
+      "title": "Total Domination"
+    },
+    "17": {
+      "credit": "Damjan Mravunac",
+      "description": "Componist Damjan Mravunac combineert energieke filmische grooves met epische koren in dit muziekpakket met muziek van Croteams veelgeprezen titel \"The Talos Principle\".",
+      "name": "Damjan Mravunac, The Talos Principle",
+      "title": "The Talos Principle"
+    },
+    "18": {
+      "credit": "Proxy",
+      "description": "Russische heavy electronica-artiest PROXY brengt zijn eigen unieke zware artillerie naar CS:GO. Hybride audiobewapening samengevoegd met de beste studiotechnologie maakt deze muziekset uniek.",
+      "name": "Proxy, Battlepack",
+      "title": "Battlepack"
+    },
+    "19": {
+      "credit": "Ki:Theory",
+      "description": "Artiest en DOTA TI4-performer Ki:Theory dropt BOMMEN met deze verschroeiende set van vlijmscherpe dark electronic rock.",
+      "name": "Ki:Theory, MOLOTOV",
+      "title": "MOLOTOV"
+    },
+    "20": {
+      "credit": "Troels Folmann",
+      "description": "Triomfantelijke blastophones combineren met hedendaagse Uberpulse in deze explosieve collectie door ultrabekroonde componist Troels Folmann.",
+      "name": "Troels Folmann, Uber Blasto Phone",
+      "title": "Uber Blasto Phone"
+    },
+    "21": {
+      "credit": "Kelly Bailey",
+      "description": "Kelly Bailey, componist van Valve's Half-Life-serie, maakt een arsenaal aan apocalyptische muziek geïnspireerd door de donkere kant van het Half-Life-universum.",
+      "name": "Kelly Bailey, Hazardous Environments",
+      "title": "Hazardous Environments"
+    },
+    "22": {
+      "credit": "Skog",
+      "description": "Metal-componist en producer Jocke Skog keert terug met een geheel nieuwe, keiharde metal-kit, waardoor de rest van de CS:GO-muzieksets schattig, warm en pluizig klinken. Ga nu, en word MVP zodat iedereen kan horen hoe geweldig je bent!",
+      "name": "Skog, II-Headshot",
+      "title": "II-Headshot"
+    },
+    "23": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski heeft de eerste 8-bit-muziekset ooit voor Counter-Strike gemaakt, met authentieke 8-bit-geluiden.",
+      "name": "Daniel Sadowski, The 8-Bit Kit",
+      "title": "The 8-Bit Kit"
+    },
+    "24": {
+      "credit": "AWOLNATION",
+      "description": "AWOLNATION Alternatieve rocker AWOLNATION brengt je een muziekset die de tijd doorstaat. Dit pakket zit boordevol met een eclectische mix van liedjes en bevat delen uit singles 'I Am' en multi-platina hit 'Sail'.",
+      "name": "AWOLNATION, I Am",
+      "title": "I Am"
+    },
+    "25": {
+      "credit": "Mord Fustang",
+      "description": "Diamanten. Zijn voor altijd. Duik in de arpeggiotron van Mord Fustang met deze verse set grooves en sferen.",
+      "name": "Mord Fustang, Diamonds",
+      "title": "Diamonds"
+    },
+    "26": {
+      "credit": "Michael Bross",
+      "description": "Michael Bross tovert epische / cinematische techno-grunge om je een echte baas te laten voelen in de strijd.",
+      "name": "Michael Bross, Invasion!",
+      "title": "Invasion!"
+    },
+    "27": {
+      "credit": "Ian Hultquist",
+      "description": "Menging van pulserende strijkers en synths met beukende oorlogsdrums; bereid je voor op de strijd met deze donderende soundtrack van componist Ian Hultquist.",
+      "name": "Ian Hultquist, Lion's Mouth",
+      "title": "Lion's Mouth"
+    },
+    "28": {
+      "credit": "New Beat Fund",
+      "description": "Zonnige surfrock met elementen van hiphop, punk en garagepop. Blijf trouw aan jezelf en maak headshots.",
+      "name": "New Beat Fund, Sponge Fingerz",
+      "title": "Sponge Fingerz"
+    },
+    "29": {
+      "credit": "Beartooth",
+      "description": "Beartooth brengt een agressieve back-to-basics hardcore stomp die menigten aan het bewegen krijgt en spullen laat breken. Een perfecte soundtrack voor je no-scope scout frags. Rock tot je dood bent.",
+      "name": "Beartooth, Disgusting",
+      "title": "Disgusting"
+    },
+    "30": {
+      "credit": "Lennie Moore",
+      "description": "Gamecomponist Lennie Moore serveert een aromatisch, pikant mengsel van Jazzy Funk. Heerlijk als het koud wordt opgediend, net zoals de lijken van je vijanden als je klaar met ze bent.",
+      "name": "Lennie Moore, Java Havana Funkaloo",
+      "title": "Java Havana Funkaloo"
+    },
+    "31": {
+      "credit": "Darude",
+      "description": "Ga op in het bekende geluid van de Finse producer Darudes bekende muzikale smaken en tonen. Verrijk jezelf met toegang tot een zware mix van progressieve boventonen en scores van tintelende melodische structuur van de geluidsbanken van een van de meest gerenommeerde pioniers van de dancemuziek.",
+      "name": "Darude, Moments CSGO",
+      "title": "Moments CSGO"
+    },
+    "32": {
+      "credit": "Beartooth",
+      "description": "Beartooth is terug voor ronde twee. Deze nieuwe muziekset is nog harder en agressiever. We hebben het liedje voor de beste speler extra hevig gemaakt, zodat je tegenstanders zich heel slecht voelen wanneer ze van je verliezen.",
+      "name": "Beartooth, Aggressive",
+      "title": "Aggressive"
+    },
+    "33": {
+      "credit": "Blitz Kids",
+      "description": "De Britse pop-/punkband Blitz Kids brengt je de perfecte muziekset voor het bestormen van B terwijl je terugdenkt aan die nachtritjes die je op de middelbare school met je vrienden maakte. Met deze set voel je je snel en jong.",
+      "name": "Blitz Kids, The Good Youth",
+      "title": "The Good Youth"
+    },
+    "34": {
+      "credit": "Hundredth",
+      "description": "Hundredth brengt heavy naar de wereld met hun unieke draai aan melodic hardcore. Breek los van je ketenen of keer terug naar Dust met deze perfecte soundtrack om de onwaardigen omver te schieten.",
+      "name": "Hundredth, FREE",
+      "title": "FREE"
+    },
+    "35": {
+      "credit": "Neck Deep",
+      "description": "Soms heb je wat punkpop nodig om je door de dag heen te helpen. Of je nou met campers afrekent of een enorme killstreak verliest, Neck Deep is er om te bewijzen dat \"Life's Not Out To Get You\". Het andere team wel.",
+      "name": "Neck Deep, Life's Not Out To Get You",
+      "title": "Life's Not Out To Get You"
+    },
+    "36": {
+      "credit": "Roam",
+      "description": "Roam levert snelle, vanzelfsprekende punkpop die zowel het publiek als spelers in beweging krijgt. Bewijs dat je een ruggegraat hebt met deze soundtrack, die perfect is voor snelle aanvallen waarmee je het andere team uitschakelt voordat ze weten wat ze overkomt.",
+      "name": "Roam, Backbone",
+      "title": "Backbone"
+    },
+    "37": {
+      "credit": "Twin Atlantic",
+      "description": "Heviger, lawaaieriger en luider dan ooit. Twin Atlantic komt naar CS:GO om je te helpen gezichten eraf te knallen met de vuurkracht van Schotse rock.",
+      "name": "Twin Atlantic, GLA",
+      "title": "GLA"
+    },
+    "38": {
+      "credit": "Skog",
+      "description": "Skog is terug met een derde verpletterende metalset. Deze keer heeft de muziek een electro-organische twist, waarbij het grote gitaarriffs met net zo grote drops, loops en drones combineert.",
+      "name": "Skog, III-Arena",
+      "title": "III-Arena"
+    },
+    "39": {
+      "credit": "The Verkkars",
+      "description": "The Verkkars schudden de Finse popwereld wakker met een vette ode aan ENCE. Is het echt zo EZ?",
+      "name": "The Verkkars, EZ4ENCE",
+      "title": "EZ4ENCE"
+    },
+    "40": {
+      "credit": "Halo",
+      "description": "Kies voor een ander geluid in Counter Strike met het Master Chief Collection-muziekpakket, vol onvergetelijke muzikale momenten uit de wereld van Halo. © 2019 343 Industries. Alle rechten voorbehouden. Gebruikt met toestemming van 343 Industries. Halo: The Master Chief Collection en het Halo-logo zijn handelsmerken van de Microsoft-bedrijvengroep.",
+      "name": "Halo, The Master Chief Collection",
+      "title": "The Master Chief Collection"
+    },
+    "41": {
+      "credit": "Scarlxrd",
+      "description": "Scarlxrd combineert zieke beats met een flow en delivery die een genre op zich creëren. Met deze vette mix van stijlen krijgt hij bij elk optreden de handen op elkaar.",
+      "name": "Scarlxrd: King, Scar",
+      "title": "King, Scar"
+    },
+    "42": {
+      "credit": "Half-Life: Alyx",
+      "description": "Deze muziekset is een aandenken aan Half-Life: Alyx, waarmee Valve in VR terugkeert naar de Half-Life-serie. Jij bent de enige kans op overleving voor de mensheid en je meeslepende interacties met je omgeving worden vervolgd in Counter-Strike: Global Offensive.",
+      "name": "Half-Life: Alyx, Anti-Citizen",
+      "title": "Anti-Citizen"
+    },
+    "43": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory mixt Keltische fantasy met sissende elektronica en een overvloedige ondersteuning van Peter Hollens' stemgeluid in deze genre-overstijgende muziekset.",
+      "name": "Austin Wintory, Bachram",
+      "title": "Bachram"
+    },
+    "44": {
+      "credit": "Dren",
+      "description": "De apocalyptische mariachisoundtrack van het populaire indiespel Gunman Taco Truck is er nu voor CS:GO met intense Mexicaans gekruide deuntjes zoals Pollo Diablo en Persecución de Helltain!",
+      "name": "Dren, Gunman Taco Truck",
+      "title": "Gunman Taco Truck"
+    },
+    "45": {
+      "credit": "Daniel Sadowski",
+      "description": "Van de componist die je 'Total Domination', 'The 8-Bit Kit' en 'Crimson Assault' bracht, verschijnt nu 'Eye Of The Dragon'. Componist Daniel Sadowski mixt ninja's plus geweren plus hiphop plus techno om zo een muziekset vol actie te creëren. Ninja's staan erom bekend snel en met precisie toe te kunnen slaan, doch zijn zij onzichtbaar voor hun vijanden.",
+      "name": "Daniel Sadowski, Eye of the Dragon",
+      "title": "Eye of the Dragon"
+    },
+    "46": {
+      "credit": "Tree Adams en Ben Bromfield",
+      "description": "Achter de krachtige chaos van M.U.D.D. FORCE schuilen Tree Adams en Ben Bromfield, die met hun alchemistische aanpak epische motieven en schurende synths samenvoegen tot een orgie van verwoesting.",
+      "name": "Tree Adams en Ben Bromfield, M.U.D.D. FORCE",
+      "title": "M.U.D.D. FORCE"
+    },
+    "47": {
+      "credit": "Tim Huling",
+      "description": "Componist Tim Huling levert tracks in een klassieke film-noirstijl gemengd met hedendaagse grooves en beats.",
+      "name": "Tim Huling, Neo Noir",
+      "title": "Neo Noir"
+    },
+    "48": {
+      "credit": "Sam Marshall",
+      "description": "Geïnspireerd door de funky videogamemuziek van de vroege jaren 90 heeft componist Sam Marshall wat klassieke videospelnostalgie afgetopt met een pittig modern sausje.",
+      "name": "Sam Marshall, Bodacious",
+      "title": "Bodacious"
+    },
+    "49": {
+      "credit": "Matt Levine",
+      "description": "Componist Matt Levine levert een ruwe stijl in deze groezelige hommage aan de spaghettiwestern. Er is nog nooit een beter moment geweest om \"go ahead, make my day...\" te zeggen.",
+      "name": "Matt Levine, Drifter",
+      "title": "Drifter"
+    },
+    "50": {
+      "credit": "Amon Tobin",
+      "description": "De legendarische muziekproducent Amon Tobin leent zijn unieke esthetiek uit aan CS:GO. Ditmaal met behulp van buizenversterkers.",
+      "name": "Amon Tobin, All for Dust",
+      "title": "All for Dust"
+    },
+    "51": {
+      "credit": "Darren Korb",
+      "description": "Natuurlijk, iedereen mist zo nu en dan wel eens een schot, maar wat nooit mis is, is deze muziekset die het bloed doet laten stromen en rechtstreeks afkomstig is uit de onderwereld van Hades, de schurkachtige dungeon-crawler van Supergiant.",
+      "name": "Darren Korb, Hades",
+      "title": "Hades"
+    },
+    "52": {
+      "credit": "Neck Deep",
+      "description": "Bewijs dat je bijzonder bent (en beter dan de rest op de map) met de nieuwe muziekset van Neck Deep, met nummers van het album All Distortions Are Intentional.",
+      "name": "Neck Deep, The Lowlife Pack",
+      "title": "The Lowlife Pack"
+    },
+    "53": {
+      "credit": "Scarlxrd",
+      "description": "CHAIN$AW PRESENTEERT SCARLXRD OP ZIJN BEST MET EEN RAUWE FLOW EN EEN VETTE TRACK.",
+      "name": "Scarlxrd, CHAIN$AW.LXADXUT.",
+      "title": "CHAIN$AW.LXADXUT."
+    },
+    "54": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory geeft antwoord op de vraag die de mens al eeuwenlang bezighoudt: wat gebeurt er als je polka-accordionmuziek uit biergartens combineert met grungy heavy metal?",
+      "name": "Austin Wintory, Mocha Petal",
+      "title": "Mocha Petal"
+    },
+    "55": {
+      "credit": "Chipzel",
+      "description": "Componist van gamesoundtracks en chiptunelegende Chipzel presenteert een glitchy, door Speak & Spell geïnspireerde mash-up van hybridestijlen vol fun, funk en flavour.",
+      "name": "Chipzel, ~Yellow Magic~",
+      "title": "~Yellow Magic~"
+    },
+    "56": {
+      "credit": "Freaky DNA",
+      "description": "Opera. 8-bitgeluiden. Analoge synthesizers. Wat wil je nog meer? Chiptune-specialist Freaky DNA en soprano Leanne Koch slaan de handen ineen voor vette beats en vrolijke noten!",
+      "name": "Freaky DNA, Vici",
+      "title": "Vici"
+    },
+    "57": {
+      "credit": "Jesse Harlin",
+      "description": "Componist Jesse Harlin levert een bombastisch space-operadrama af, geïnspireerd door klassieke sf-films uit de jaren 70, 80 en verder.",
+      "name": "Jesse Harlin, Astro Bellum",
+      "title": "Astro Bellum"
+    },
+    "58": {
+      "credit": "Laura Shigihara",
+      "description": "Componist van gamesoundtracks en ontwikkelaar Laura Shigihara helpt je luid en duidelijk verkondigen dat jij de MVP bent. Veel plezier met deze unieke mix van dance uit de jaren 90, retrogamemuziek en een vleugje Plants vs. Zombies.",
+      "name": "Laura Shigihara: Work Hard, Play Hard",
+      "title": "Work Hard, Play Hard"
+    },
+    "59": {
+      "credit": "Sarah Schachner",
+      "description": "Sarah Schachner presenteert een dystopisch koor van zelfbewuste Scandinavische robots die hebben besloten dat de mensheid moet worden uitgeroeid.",
+      "name": "Sarah Schachner, KOLIBRI",
+      "title": "KOLIBRI"
+    },
+    "60": {
+      "credit": "bbno$",
+      "description": "bbno$ presenteert hét nummer voor toxic gamers: u mad! Ben je niet goed? LOL get good. Uit onderzoek blijkt dat je meteen van zilver naar de mondiale elite stijgt met deze muziekset.",
+      "name": "bbno$, u mad!",
+      "title": "u mad!"
+    },
+    "61": {
+      "credit": "The Verkkars & n0thing",
+      "description": "Counter-Strike-legenden n0thing en The Verkkars hebben hun krachten gebundeld om een keiharde knaller te maken, van zonnig Californië tot ijskoud Lapland: Flashbang Dance! 3, 2, 1, wie niet weg is kan niets meer zien!",
+      "name": "The Verkkars & n0thing, Flashbang Dance",
+      "title": "Flashbang Dance"
+    },
+    "62": {
+      "credit": "3kliksphilip",
+      "description": "Kom je nog maar net kijken of doe je het ongewild rustig aan? Deze set bevat het typische synthgeluid van de jaren 80 en neemt je mee op een nostalgische toer naar de goeie ouwe tijd.",
+      "name": "3kliksphilip, Heading for the Source",
+      "title": "Heading for the Source"
+    },
+    "63": {
+      "credit": "Humanity's Last Breath",
+      "description": "De Zweedse band Humanity's Last Breath meldt zich met de heftige muziekset Void, vol loodzware drums, kolossale riffs en een huiveringwekkende sfeer.",
+      "name": "Humanity's Last Breath, Void",
+      "title": "Void"
+    },
+    "64": {
+      "credit": "Juelz",
+      "description": "Neo-trap-synths, rauwe 808's, een epische pianomelodie en een eindeloze lading geweerschoteffecten. De OG-trap-hit Shooters van Juelz levert een unieke muziekset op. Alleen geschikt voor MVP's.",
+      "name": "Juelz, Shooters",
+      "title": "Shooters"
+    },
+    "65": {
+      "credit": "Knock2",
+      "description": "dashstar*, de iconische basshouse-hit van Knock2, geeft je eindeloos veel energie, volledig in lijn met het mantra van de jonge muzikant uit San Diego: 'geen grenzen'.",
+      "name": "Knock2, dashstar*",
+      "title": "dashstar*"
+    },
+    "66": {
+      "credit": "Meechy Darko",
+      "description": "Pak je Glock en gebruik deze muziekset om af te reizen naar het middelpunt van de alternatieve hiphop in New York.",
+      "name": "Meechy Darko, Gothic Luxury",
+      "title": "Gothic Luxury"
+    },
+    "67": {
+      "credit": "Sullivan King",
+      "description": "Gek op achtervolgingen? Gek op de jacht? Hardrock, metal en dubstep komen samen in Sullivan Kings soundtrack voor onoverwinnelijkheid.",
+      "name": "Sullivan King, Lock Me Up",
+      "title": "Lock Me Up"
+    },
+    "68": {
+      "credit": "Perfect World",
+      "description": "Vier de vijfde verjaardag van CS:GO in China met een unieke muziekset: 花脸 Hua Lian (Painted Face). Deze set combineert Jing-opera (de vroegste versie van rock-'n'-roll op z'n Chinees) en moderne rock-'n'-roll. Maar verdwaal niet in de rook of door de flashbangs!",
+      "name": "Perfect World, 花脸 Hua Lian (Painted Face)",
+      "title": "花脸 Hua Lian (Painted Face)"
+    },
+    "69": {
+      "credit": "Denzel Curry",
+      "description": "Denzel brengt zijn kenmerkende energie naar CS:GO met een mengeling van trap, jazz en drum-'n-bass. Deze set bevat Denzels hits 'Walkin', 'ULTIMATE' en meer, dus haal je verchroomde beretta's uit de kast en zet het volume op elf met de ULTIMATE-muziekset.",
+      "name": "Denzel Curry, ULTIMATE",
+      "title": "ULTIMATE"
+    },
+    "70": {
+      "credit": "Valve",
+      "description": "De standaard CS:GO-muziekset, geïntroduceerd bij de lancering van CS:GO in 2012.",
+      "name": "Valve, CS:GO",
+      "title": "CS:GO"
+    },
+    "71": {
+      "credit": "DRYDEN",
+      "description": "Feel the power. Moeten we er meer woorden aan vuilmaken? Laat je wegdragen op deze energierijke electro-muziekset van DRYDEN.",
+      "name": "DRYDEN, Feel The Power",
+      "title": "Feel The Power"
+    },
+    "72": {
+      "credit": "ISOxo",
+      "description": "Speciaal gemaakt voor de potjes waarbij je je ... anders voelt. Verras je vijanden ronde na ronde met de 'onmenselijke' muziekset van ISOxo.",
+      "name": "ISOxo, inhuman",
+      "title": "inhuman"
+    },
+    "73": {
+      "credit": "KILL SCRIPT",
+      "description": "Ben je een minnaar of een vechter? Misschien wel allebei? Laat het de hele lobby weten met muziekset All Night van KILL SCRIPT.",
+      "name": "KILL SCRIPT, All Night",
+      "title": "All Night"
+    },
+    "74": {
+      "credit": "Knock2",
+      "description": "Voor spelers die elke wedstrijd behandelen alsof het een grote finale is, zelfs als er maar een paar honderd punten op het spel staan. Haal de energie en de overwinningen binnen met de tweede muziekset van Knock2, 'Make U SWEAT!'",
+      "name": "Knock2, Make U SWEAT!",
+      "title": "Make U SWEAT!"
+    },
+    "75": {
+      "credit": "Rad Cat",
+      "description": "Soms is het onschadelijk maken van de bom voldoende om de beste speler van de ronde te worden. Vier elk moment, groot of klein, met de muziekset 'Reason' van Rad Cat.",
+      "name": "Rad Cat, Reason",
+      "title": "Reason"
+    },
+    "76": {
+      "credit": "TWERL en Ekko & Sidetrack",
+      "description": "Er is geen beter moment om te stralen dan wanneer je in de schijnwerpers staat. Laat het drum-and-bass-anthem 'Under Bright Lights' van TWERL en Ekko & Sidetrack jou en je team naar nieuwe hoogten brengen.",
+      "name": "TWERL en Ekko & Sidetrack, Under Bright Lights",
+      "title": "Under Bright Lights"
+    },
+    "78": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory sluit een pact met de duivel en combineert helse vioolmuziek met een EDM-clubsfeer.",
+      "name": "Austin Wintory, The Devil Went Clubbing in Georgia",
+      "title": "The Devil Went Clubbing in Georgia"
+    },
+    "79": {
+      "credit": "Ben Bromfield",
+      "description": "Je bent bedrogen! Ervaar deze spannende, broeierig intense, door jazz geïnspireerde soundtrack van film- en tv-componist Ben Bromfield en ontdek waar je dit allemaal naartoe kan leiden ...",
+      "name": "Ben Bromfield, Rabbit Hole",
+      "title": "Rabbit Hole"
+    },
+    "80": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski nodigt spelers uit om de wereld van 'Dead Shot' te betreden, een hybride mix van actie, hiphop, orkestmuziek, electro, retro, emotie en sounddesign. Kun je je hoofd hierbij helder houden?",
+      "name": "Daniel Sadowski, Dead Shot",
+      "title": "Dead Shot"
+    },
+    "81": {
+      "credit": "Dren McDonald",
+      "description": "Cafeïne is goed voor je. Het is goed voor iedereen, behalve voor je vijand. 'Coffee! Kofe! Kahveh!' is balkanmuziek, een straatfeest met blaasinstrumenten van Dren McDonald ('Gunman Taco Truck' en 'Death’s Head Demolition'), live opgenomen in Balkancisco!",
+      "name": "Dren McDonald, Coffee! Kofe! Kahveh!",
+      "title": "Coffee! Kofe! Kahveh!"
+    },
+    "82": {
+      "credit": "Matt Levine",
+      "description": "Betreed de gevaarlijke wereld van spionage met de 'Agency'-muziekset van componist Matt Levine.",
+      "name": "Matt Levine, Agency",
+      "title": "Agency"
+    },
+    "83": {
+      "credit": "Sam Marshall",
+      "description": "'Clutch', het niet-goedgekeurde vervolg op 'Bodacious', is een koortsdroom vol cyberfunk, een gruwel die werd gereanimeerd door Sam Marshall door middel van alchemie en geheimzinnige rituelen.",
+      "name": "Sam Marshall, Clutch",
+      "title": "Clutch"
+    },
+    "84": {
+      "credit": "Tim Huling",
+      "description": "Luister voor een extra adrenalinekick naar 'Devil's Paintbrush' van Tim Huling, een groove-metal-ervaring met een hoog energiegehalte.",
+      "name": "Tim Huling, Devil's Paintbrush",
+      "title": "Devil's Paintbrush"
+    },
+    "85": {
+      "credit": "Tree Adams",
+      "description": "Hier op 'Seventh Moon' zorgt Tree Adams voor een vette mix van intergalactische funk en krachtige strijdmuziek.",
+      "name": "Tree Adams, Seventh Moon",
+      "title": "Seventh Moon"
+    },
+    "86": {
+      "credit": "Perfect World",
+      "description": "'Ay Hey' combineert traditionele Chinese volksmuziek met elektronische muziek en biedt spelers van verschillende leeftijden en achtergronden zo een meeslepende ervaring vol energieke beats. Het levendige ritme doet niet onder voor het enthousiasme van de spelers en geeft de humor en speelsheid van de verschillende gevechtsscènes goed weer.",
+      "name": "Perfect World, Ay Hey",
+      "title": "Ay Hey"
+    },
+    "87": {
+      "credit": "Adam Beyer",
+      "description": "De Zweedse technolegende Adam Beyer bezorgt je een dromerige muziekset waarmee je de levels op de beat een bloederig rood kunt verven.",
+      "name": "Adam Beyer, Red Room",
+      "title": "Red Room"
+    },
+    "88": {
+      "credit": "Ghost",
+      "description": "BERICHT UIT DE GEESTELIJKE WERELD — Papa V Perpetua daalt neer in Counter-Strike in een overweldigend heavymetalspektakel. Laat het onheilige vuurtje oplaaien en ontsnap voor even aan je dagelijkse sleur.",
+      "name": "Ghost, Skeletá",
+      "title": "Skeletá"
+    },
+    "89": {
+      "credit": "HEALTH",
+      "description": "Maak HEALTH mee in Counter-Strike. Laad je wapens en ga hard op de brute, meedogenloze sound van industrial metal op RAT WARS.",
+      "name": "HEALTH, RAT WARS",
+      "title": "RAT WARS"
+    },
+    "90": {
+      "credit": "James and the Cold Gun",
+      "description": "James and the Cold Gun, een rockduo uit Wales, staat garant voor pure, ongefilterde energie. Deze heerlijke muziekset bevat elementen van klassieke punk en moderne altrock.",
+      "name": "James and the Cold Gun, Chewing Glass",
+      "title": "Chewing Glass"
+    },
+    "91": {
+      "credit": "Jonathan Young",
+      "description": "Powermetal en ruimtepiraten, dat ontbrak er nog aan. Ga aan boord van Starship Velociraptor en laat je meevoeren op het geluid van Jonathan Youngs door anime en games geïnspireerde album om je wedstrijden naar een hoger niveau te tillen.",
+      "name": "Jonathan Young, Starship Velociraptor",
+      "title": "Starship Velociraptor"
+    },
+    "92": {
+      "credit": "Juelz",
+      "description": "Toe aan wat four-to-the-floor? Dan zit je gebakken met deze vette muziekset van Floorspace, het debuutalbum van Juelz vol neo-ravesynths, grimmige baslijnen en snoeiharde kickdrums. Speciaal voor Counter-Strike 2 is Floorspace flink onder handen genomen, en op de MVP-hit Gossip kun je niet anders dan een ledmuur opbouwen — om die vervolgens weer te laten instorten.",
+      "name": "Juelz, Floorspace",
+      "title": "Floorspace"
+    },
+    "93": {
+      "credit": "Killer Mike",
+      "description": "Verrijk de wereld van Counter-Strike met een hiphopalbum dat 3 GRAMMY Awards won. Killer Mike houdt je altijd op koers om beter en beter te worden en de ranglijsten te bestormen.",
+      "name": "Killer Mike, MICHAEL",
+      "title": "MICHAEL"
+    },
+    "94": {
+      "credit": "PVRIS",
+      "description": "Wat hebben we nog liever dan een goede vijand? Een goede soundtrack. Met de nieuwe PVRIS-muziekset zet je je team op scherp en reken je met elke vijand af alsof het een groentje is.",
+      "name": "PVRIS, Evergreen",
+      "title": "Evergreen"
+    },
+    "95": {
+      "credit": "Selective Response",
+      "description": "Ga helemaal op in deze dynamische, intense muziekset van het Amerikaanse techno-icoon Selective Response. Laad je op, zodat je er weer tegenaan kunt.",
+      "name": "Selective Response, No Love Only Pleasure",
+      "title": "No Love Only Pleasure"
+    },
+    "96": {
+      "credit": "Tigercub",
+      "description": "De Britse rockband Tigercub staat bekend om zijn grimmige, maar melodieuze sound. Deze muziekset bevat de intensiteit van altrock met een somber, modern randje.",
+      "name": "Tigercub, The Perfume of Decay",
+      "title": "The Perfume of Decay"
+    },
+    "98": {
+      "credit": "ALRT",
+      "description": "Deze nieuwe housetrack van ALRT geeft je de ultieme dosis dopamine die je nodig hebt om locked in te blijven en toe te slaan wanneer het moet.",
+      "name": "ALRT, DOPAMINE HIT",
+      "title": "DOPAMINE HIT"
+    },
+    "99": {
+      "credit": "Altare",
+      "description": "Het euforische Change My Mind van Altare is perfect voor als je niet te houden bent en niemand je wat kan maken.",
+      "name": "Altare, Change My Mind",
+      "title": "Change My Mind"
+    },
+    "100": {
+      "credit": "borne",
+      "description": "Give It To Me is een moddervet nummer van borne waardoor je echt zin krijgt om de vijand te grazen te nemen in Counter-Strike, of waar dan ook.",
+      "name": "borne, Give It To Me",
+      "title": "Give It To Me"
+    },
+    "101": {
+      "credit": "Pirapus",
+      "description": "De dikke drum-'n-bass van EVERYNITE, een nummer van Pirapus, geeft je het gevoel dat alles mogelijk is. En ja, elke avond hou je zo de concentratie vast.",
+      "name": "Pirapus, EVERYNITE",
+      "title": "EVERYNITE"
+    },
+    "102": {
+      "credit": "Repiet & Julia Kleijn",
+      "description": "Met On And On, een heerlijke oorwurm van Repiet en Julia Kleijn, ben je klaar voor elke uitdaging. Dit nummer gaat de hoogte en de diepte in en laat de grootste obstakels nietig lijken.",
+      "name": "Repiet & Julia Kleijn, On And On",
+      "title": "On And On"
+    },
+    "103": {
+      "credit": "ShockOne",
+      "description": "Ontketen jezelf met de energieke drum-'n-bass van Voices, een nummer van ShockOne. Met deze lekkere baslijnen op de achtergrond is elke clutch voor jou en word je telkens weer de MVP.",
+      "name": "ShockOne, Voices",
+      "title": "Voices"
+    },
+    "104": {
+      "credit": "Starjunk 95",
+      "description": "Geniet van een groovy muziekset met de nieuwste hits en nostalgische klassiekers. Dit is Starjunk 95.",
+      "name": "Starjunk 95, Industrial Sunset Memories",
+      "title": "Industrial Sunset Memories"
+    }
+  },
+  "releases": {
+    "2016-11-28-radicals": "StatTrak™ Radicals-koffer",
+    "2020-04-16-masterminds": "Masterminds-vinylkoffer",
+    "2021-08-12-tacticians": "Tacticians-vinylkoffer",
+    "2022-08-23-initiators": "Initiators-vinylkoffer",
+    "2024-02-06-nightmode": "NIGHTMODE-vinylkoffer",
+    "2024-08-20-masterminds-2": "Masterminds 2-vinylkoffer",
+    "2025-08-14-deluge": "Deluge-vinylkoffer",
+    "2026-05-07-nightmode-ii": "Muzieksets NIGHTMODE II"
+  }
+}

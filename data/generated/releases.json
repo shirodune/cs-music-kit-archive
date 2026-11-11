@@ -1,0 +1,428 @@
+[
+  {
+    "date": "2014-10-10",
+    "id": "2014-10-10-music-kits",
+    "kits": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      70
+    ],
+    "nameKey": null,
+    "note": "Valve, CS:GO (70) is the default CS:GO music, in the game since 2012, and became selectable with the first music kits. It was also granted as a separate item on 2023-09-27 (\"CS:GO Players who started playing more than a week ago will receive a commemorative CS:GO coin and CS:GO Music Kit\").",
+    "source": {
+      "quote": "Introducing Music Kits, featuring new music exclusively made for CS:GO by various artists and composers.",
+      "title": "Release Notes for 10/10/2014",
+      "url": "https://blog.counter-strike.net/2014/10/10479/"
+    }
+  },
+  {
+    "date": "2014-12-18",
+    "id": "2014-12-18-midnight-riders",
+    "kits": [
+      12
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "Added a holiday-themed Midnight Riders Music Kit, available as an offer for a limited time.",
+      "title": "Release Notes for 12/18/2014",
+      "url": "https://blog.counter-strike.net/2014/12/11079/"
+    }
+  },
+  {
+    "date": "2015-02-12",
+    "id": "2015-02-12-music-kits",
+    "kits": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "Added 5 new Music Kit Offers.",
+      "title": "Release Notes for 2/12/2015",
+      "url": "https://blog.counter-strike.net/2015/02/11443/"
+    }
+  },
+  {
+    "date": "2015-09-24",
+    "id": "2015-09-24-stattrak-music-kits",
+    "kits": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "All new music kits are also available as normal (non-StatTrak) Music Kit offers.",
+      "title": "Release Notes for 9/24/2015",
+      "url": "https://blog.counter-strike.net/2015/09/12604/"
+    }
+  },
+  {
+    "date": "2016-11-28",
+    "id": "2016-11-28-radicals",
+    "kits": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "nameKey": "csgo_crate_musickit_radicals_stattrak_capsule",
+    "note": null,
+    "source": {
+      "quote": "Introducing the Radicals Music Box, featuring 7 new StatTrak™ music kits from “Radicals” artists.",
+      "title": "Release Notes for 11/28/2016",
+      "url": "https://blog.counter-strike.net/2016/11/17118/"
+    }
+  },
+  {
+    "date": "2019-03-28",
+    "id": "2019-03-28-ez4ence",
+    "kits": [
+      39
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "A new music kit EZ4ENCE by The Verkkars is now available for purchase.",
+      "title": "Release Notes for 3/28/2019",
+      "url": "https://blog.counter-strike.net/2019/03/23732/"
+    }
+  },
+  {
+    "date": "2019-11-26",
+    "id": "2019-11-26-halo",
+    "kits": [
+      40
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "Owners of The Master Chief Collection on Steam, after they accrue sufficient playtime in the game, will also receive The Master Chief Collection Music Kit.",
+      "title": "Release Notes for 11/26/2019",
+      "url": "https://blog.counter-strike.net/2019/11/26569/"
+    }
+  },
+  {
+    "date": "2019-12-16",
+    "id": "2019-12-16-king-scar",
+    "kits": [
+      41
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "A new music kit “King, Scar” by Scarlxrd is now available for purchase in-game.",
+      "title": "Release Notes for 12/16/2019",
+      "url": "https://blog.counter-strike.net/2019/12/27541/"
+    }
+  },
+  {
+    "date": "2020-03-22",
+    "id": "2020-03-22-half-life-alyx",
+    "kits": [
+      42
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "Added a complimentary exclusive Music Kit and a complimentary Genuine Alyx Pin for pre-purchasers of Valve Index hardware.",
+      "title": "Release Notes for 3/22/2020",
+      "url": "https://blog.counter-strike.net/2020/03/29160/"
+    }
+  },
+  {
+    "date": "2020-04-16",
+    "id": "2020-04-16-masterminds",
+    "kits": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "nameKey": "csgo_crate_musickit_masterminds_capsule",
+    "note": null,
+    "source": {
+      "quote": "Added the Masterminds Music Kit Box, available in regular and StatTrak™ variants, featuring 7 new music kits:",
+      "title": "Release Notes for 4/16/2020",
+      "url": "https://blog.counter-strike.net/2020/04/29707/"
+    }
+  },
+  {
+    "date": "2020-06-22",
+    "id": "2020-06-22-all-for-dust",
+    "kits": [
+      50
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "A new music kit “All for Dust” by Amon Tobin is now available for purchase in-game.",
+      "title": "Release Notes for 6/22/2020",
+      "url": "https://blog.counter-strike.net/2020/06/30600/"
+    }
+  },
+  {
+    "date": "2021-03-18",
+    "id": "2021-03-18-music-kits",
+    "kits": [
+      51,
+      52,
+      53
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "Owners of Hades on Steam, after they accrue sufficient playtime in the game, will receive The Hades Music Kit in CS:GO. Two new music kits – “The Lowlife Pack” by Neck Deep, and “CHAIN$AW.LXADXUT” by Scarlxrd – are now available for purchase in-game.",
+      "title": "Release Notes for 3/18/2021",
+      "url": "https://blog.counter-strike.net/2021/03/33431/"
+    }
+  },
+  {
+    "date": "2021-08-12",
+    "id": "2021-08-12-tacticians",
+    "kits": [
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "nameKey": "csgo_crate_musickit_tacticians_capsule",
+    "note": null,
+    "source": {
+      "quote": "Added the “Tacticians” Music Kit Box, available in regular and StatTrak™ variants, featuring 6 new music kits:",
+      "title": "Release Notes for 8/12/2021",
+      "url": "https://blog.counter-strike.net/2021/08/35047/"
+    }
+  },
+  {
+    "date": "2021-10-07",
+    "id": "2021-10-07-u-mad",
+    "kits": [
+      60
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "Added the bbno$ – u mad! Music Kit, available in regular and StatTrak™ versions",
+      "title": "Release Notes for 10/7/2021",
+      "url": "https://blog.counter-strike.net/2021/10/35661/"
+    }
+  },
+  {
+    "date": "2021-11-09",
+    "id": "2021-11-09-flashbang-dance",
+    "kits": [
+      61
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "A new music kit “Flashbang Dance” by The Verkkars & n0thing is now available for purchase in-game.",
+      "title": "Release Notes for 11/9/2021",
+      "url": "https://blog.counter-strike.net/2021/11/36187/"
+    }
+  },
+  {
+    "date": "2022-08-23",
+    "id": "2022-08-23-initiators",
+    "kits": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67
+    ],
+    "nameKey": "csgo_crate_musickit_initiators_capsule",
+    "note": null,
+    "source": {
+      "quote": "Added the Initiators Music Kit Box and the StatTrak™ Initiators Music Kit Box, featuring 6 new music kits:",
+      "title": "Release Notes for 8/23/2022",
+      "url": "https://blog.counter-strike.net/2022/08/39352/"
+    }
+  },
+  {
+    "date": "2022-09-13",
+    "id": "2022-09-13-hua-lian",
+    "kits": [
+      68
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "Added the 花脸 Hua Lian (Painted Face) Music Kit and StatTrak™ 花脸 Hua Lian (Painted Face) Music Kit, now available for purchase.",
+      "title": "Release Notes for 9/13/2022",
+      "url": "https://blog.counter-strike.net/2022/09/39582/"
+    }
+  },
+  {
+    "date": "2023-02-09",
+    "id": "2023-02-09-ultimate",
+    "kits": [
+      69
+    ],
+    "nameKey": null,
+    "note": "The release notes for this update do not mention the kit, so the announcement post from the same day is the source (DATA-14).",
+    "source": {
+      "quote": "Finally, we’re also shipping the Denzel Curry ULTIMATE music kit, featuring Denzel’s hits “Walkin”, “ULTIMATE”, and more from his 2022 album “Melt My Eyez See Your Future”.",
+      "title": "Case, Capsule, Kit, Oh My!",
+      "url": "https://blog.counter-strike.net/2023/02/41047/"
+    }
+  },
+  {
+    "date": "2023-09-27",
+    "id": "2023-09-27-counter-strike-2",
+    "kits": [
+      1
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "Added the new CS2 default music kit",
+      "title": "Release Notes for 9/27/2023",
+      "url": "https://store.steampowered.com/news/app/730/view/3747614808335403091"
+    }
+  },
+  {
+    "date": "2024-02-06",
+    "id": "2024-02-06-nightmode",
+    "kits": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76
+    ],
+    "nameKey": "csgo_crate_musickit_nightmode_capsule",
+    "note": null,
+    "source": {
+      "quote": "The NIGHTMODE Music Kit Box is now available for purchase in standard and StatTrak versions",
+      "title": "Release Notes for 2/6/2024",
+      "url": "https://store.steampowered.com/news/app/730/view/4064004264605234735"
+    }
+  },
+  {
+    "date": "2024-08-20",
+    "id": "2024-08-20-masterminds-2",
+    "kits": [
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85
+    ],
+    "nameKey": "csgo_crate_musickit_masterminds2_capsule",
+    "note": null,
+    "source": {
+      "quote": "The MASTERMINDS 2 Music Kit Box is now available for purchase in standard and StatTrak versions",
+      "title": "Release Notes for 8/20/2024",
+      "url": "https://store.steampowered.com/news/app/730/view/4273439871236872890"
+    }
+  },
+  {
+    "date": "2024-11-27",
+    "id": "2024-11-27-ay-hey",
+    "kits": [
+      86
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "A new music kit “Ay Hey” by Perfect World is now available for purchase in-game in standard and StatTrak versions.",
+      "title": "Counter-Strike 2 Update",
+      "url": "https://store.steampowered.com/news/app/730/view/4472733036435210471"
+    }
+  },
+  {
+    "date": "2025-08-14",
+    "id": "2025-08-14-deluge",
+    "kits": [
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+    ],
+    "nameKey": "csgo_crate_musickit_deluge_capsule",
+    "note": null,
+    "source": {
+      "quote": "Deluge Music Kit Box is now available for purchase in standard and StatTrak versions.",
+      "title": "Counter-Strike 2 Update",
+      "url": "https://store.steampowered.com/news/app/730/view/657081807721726196"
+    }
+  },
+  {
+    "date": "2026-05-07",
+    "id": "2026-05-07-nightmode-ii",
+    "kits": [
+      98,
+      99,
+      100,
+      101,
+      102,
+      103
+    ],
+    "nameKey": "store_nav_section_coupon_nightmode2",
+    "note": null,
+    "source": {
+      "quote": "NIGHTMODE II Music Kits are now available for purchase in standard and StatTrak versions through the STORE tab.",
+      "title": "Counter-Strike 2 Update",
+      "url": "https://store.steampowered.com/news/app/730/view/702141807556821888"
+    }
+  },
+  {
+    "date": "2026-09-22",
+    "id": "2026-09-22-industrial-sunset-memories",
+    "kits": [
+      104
+    ],
+    "nameKey": null,
+    "note": null,
+    "source": {
+      "quote": "The Starjunk 95, Industrial Sunset Memories Music Kit is now available for purchase in standard and StatTrak versions through the STORE tab.",
+      "title": "Counter-Strike 2 Update",
+      "url": "https://store.steampowered.com/news/app/730/view/674006995886407685"
+    }
+  }
+]

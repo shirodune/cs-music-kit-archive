@@ -1,0 +1,620 @@
+{
+  "kits": {
+    "1": {
+      "credit": "Valve",
+      "description": "Counter-Strike 2:n virallinen musiikkipakkaus.",
+      "name": "Valve – Counter-Strike 2",
+      "title": "Counter-Strike 2"
+    },
+    "3": {
+      "credit": "Daniel Sadowski",
+      "description": "Videopelimusiikin säveltäjä Daniel Sadowski tarjoaa veitsenterävää toimintaa hullujen taustabiittien tahtiin tässä sykkivässä, kiihkeässä musiikkipaketissa.",
+      "name": "Daniel Sadowski, Crimson Assault",
+      "title": "Crimson Assault"
+    },
+    "4": {
+      "credit": "Noisia",
+      "description": "Hollantilainen elektronista musiikkia tekevä kolmikko Noisia on tehnyt vahvan ja jopa elokuvamaisen tuntuman ainutlaatuisella perinteisen ja kokeellisen musiikin yhdistelmällä.",
+      "name": "Noisia, Sharpened",
+      "title": "Sharpened"
+    },
+    "5": {
+      "credit": "Robert Allaire",
+      "description": "Musiikkia vihollisesi murskaamiseen. Jyrää heidän ylitseen palkintoja voittaneen säveltäjän, Robert Allairen kanssa.",
+      "name": "Robert Allaire, Insurgency",
+      "title": "Insurgency"
+    },
+    "6": {
+      "credit": "Sean Murray",
+      "description": "Kahden maailman suurimman sotapelin säveltäjältä tykitystä, joka lähettää vihollisesi Helvetin porteille!",
+      "name": "Sean Murray, A*D*8",
+      "title": "A*D*8"
+    },
+    "7": {
+      "credit": "Feed Me",
+      "description": "Kuuluisa elektronisen musiikin tekijä Feed Me yhdistää villin lännen ammuskelun moderniin avaruusteemaiseen musiikkiin.",
+      "name": "Feed Me, High Noon",
+      "title": "High Noon"
+    },
+    "8": {
+      "credit": "Dren",
+      "description": "Tämä pelimusiikkisäveltäjä Dren McDonaldin elokuvamainen, supresankari- ja metallivaikutteinen musiikkipaketti laittaa nupit kaakkoon ja napit otsaan!",
+      "name": "Dren, Death's Head Demolition",
+      "title": "Death's Head Demolition"
+    },
+    "9": {
+      "credit": "Austin Wintory",
+      "description": "Pelimusiikin säveltäjä ja Grammy-ehdokas Austin Wintory kysyy, miksi vaivautua metsästämään vihollisia kun voit houkutella heidät esiin kuolettavalla ja mielipuolisella tangolla?",
+      "name": "Austin Wintory, Desert Fire",
+      "title": "Desert Fire"
+    },
+    "10": {
+      "credit": "Sasha",
+      "description": "Uppoudu elokuvallisen äänimaailman pariin täynnä leijuvaa jousisoittoa, sykkiviä melodioita ja kiihkeitä rumpuja, joita maailmankuulu DJ / tuottaja Sasha tarjoaa",
+      "name": "Sasha, LNOE",
+      "title": "LNOE"
+    },
+    "11": {
+      "credit": "Skog",
+      "description": "Oppitunti aggressiosta metallimusiikin tuottajalta, Skogilta.",
+      "name": "Skog, Metal",
+      "title": "Metal"
+    },
+    "12": {
+      "credit": "Midnight Riders",
+      "description": "\"HYVIÄ PYHIÄ, ****KARIT!\"\n-Midnight Riders",
+      "name": "Midnight Riders, All I Want for Christmas",
+      "title": "All I Want for Christmas"
+    },
+    "13": {
+      "credit": "Matt Lange",
+      "description": "Hemmottele kuudetta aistiasi jännittävällä tunnelmalla ja sykkivillä rytmeillä, jotka on säveltänyt elektronisen musiikin tuottaja ja innovaattori Matt Lange.",
+      "name": "Matt Lange, IsoRhythm",
+      "title": "IsoRhythm"
+    },
+    "14": {
+      "credit": "Mateo Messina",
+      "description": "Päihitä vihollisesi. Puhdasta intensiteettiä Grammyn voittaneelta säveltäjä Mateo Messinalta.",
+      "name": "Mateo Messina, For No Mankind",
+      "title": "For No Mankind"
+    },
+    "15": {
+      "credit": "Eri esittäjiä",
+      "description": "Joukko elektronisen musiikin artisteja tuo brutaaleja biittejä tällä mukaansatempaavalla musiikkipakkauksella ikonisesta Hotline Miamista.",
+      "name": "Eri esittäjiä, Hotline Miami",
+      "title": "Hotline Miami"
+    },
+    "16": {
+      "credit": "Daniel Sadowski",
+      "description": "Säveltäjä Daniel Sadowski nostaa riman aggressiivisilla, elektronisilla rytmeillä, mielikuvituksellisilla äänitehosteilla ja henkeäsalpaavalla futuristisella tunnelmalla. \"Varoitus: adrenaliinitasoa nostava!\"",
+      "name": "Daniel Sadowski, Total Domination",
+      "title": "Total Domination"
+    },
+    "17": {
+      "credit": "Damjan Mravunac",
+      "description": "Säveltäjä Damjan Mravunac yhdistää energeettistä groovea eeppisiin kuoroihin tässä musiikkipaketissa, jossa on musiikkia Croteamin arvostetusta pelistä \"The Talos Principle\".",
+      "name": "Damjan Mravunac, The Talos Principle",
+      "title": "The Talos Principle"
+    },
+    "18": {
+      "credit": "Proxy",
+      "description": "Venäläinen raskaan elektronisen musiikin tekijä PROXY tuo ainutlaatuisen raskaan tykistönsä taistelukentälle. Sarjatulta takova ääniraita ja mitä laadukkain studioteknologia tekevät tästä pakkauksesta ainutlaatuisen.",
+      "name": "Proxy, Battlepack",
+      "title": "Battlepack"
+    },
+    "19": {
+      "credit": "Ki:Theory",
+      "description": "Ki:Theory, levyttävä artisti ja esiintyjä DOTAn TI4-tapahtumassa, pudottaa pommeja taistelukentälle tällä veitsenterävällä elektronisella dark rockilla.",
+      "name": "Ki:Theory, MOLOTOV",
+      "title": "MOLOTOV"
+    },
+    "20": {
+      "credit": "Troels Folmann",
+      "description": "Jykevät Blastophonet yhdistyvät modernin Uberpulsen kanssa tässä moninkertaisesti palkitun Troels Folmannin räjähtävässä kokoelmassa.",
+      "name": "Troels Folmann, Uber Blasto Phone",
+      "title": "Uber Blasto Phone"
+    },
+    "21": {
+      "credit": "Kelly Bailey",
+      "description": "Valven Half-Life-sarjan säveltäjä Kelly Baileyn luoma apokalyptinen musiikkipakkaus on Half-Life-maailman pimeämmän puolen inspiroima.",
+      "name": "Kelly Bailey, Hazardous Environments",
+      "title": "Hazardous Environments"
+    },
+    "22": {
+      "credit": "Skog",
+      "description": "Metallisäveltäjä ja -tuottaja Jocke Skog palaa täysin uudella kovatempoisella metallipaketilla, joiden rinnalla muut CS2:n musiikkipaketit ovat söpöjä ja pörröisiä kissanpentuja. Tee siis itsestäsi tähtipelaaja, niin kaikki kuulevat mahtavuutesi!",
+      "name": "Skog, II-Headshot",
+      "title": "II-Headshot"
+    },
+    "23": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski luo ensimmäisen 8-bittisen musiikkipakkauksen Counter-Strikeen käyttäen aitoja 8-bittisiä ääniä.",
+      "name": "Daniel Sadowski, The 8-Bit Kit",
+      "title": "The 8-Bit Kit"
+    },
+    "24": {
+      "credit": "AWOLNATION",
+      "description": "Vaihtoehtorock-yhtye AWOLNATION on luonut musiikkipakkauksen, jota ei vain kyllästy kuuntelemaan. Vivahteikas melodia ja pätkät singlestä 'I Am' sekä moninkertaista platinaa myyneestä hitistä 'Sail' takaavat tiukkaa settiä.",
+      "name": "AWOLNATION, I Am",
+      "title": "I Am"
+    },
+    "25": {
+      "credit": "Mord Fustang",
+      "description": "Timantit. Ne ovat ikuisia. Sukella murtosointujen maailmaan tämän Mord Fustangin luoman rytmikkään pakkauksen kanssa.",
+      "name": "Mord Fustang, Diamonds",
+      "title": "Diamonds"
+    },
+    "26": {
+      "credit": "Michael Bross",
+      "description": "Michael Bross luo eeppistä ja näyttävää tekno-grungea, jotta tuntisit itsesi taistelun todelliseksi pahikseksi.",
+      "name": "Michael Bross, Invasion!",
+      "title": "Invasion!"
+    },
+    "27": {
+      "credit": "Ian Hultquist",
+      "description": "Valmistaudu taisteluun tällä säveltäjä Ian Hultquistin luomalla jyrähtelevällä musiikkipakkauksella, jossa yhdistyvät värähtelevät jousisoittimet ja syntikat sekä takovat sotarummut.",
+      "name": "Ian Hultquist, Lion's Mouth",
+      "title": "Lion's Mouth"
+    },
+    "28": {
+      "credit": "New Beat Fund",
+      "description": "Aurinkoista surffarirokkia ja vähän hip-hoppia, punkkia and garage-poppia. Ole itsesi ja napsi pääosumia.",
+      "name": "New Beat Fund, Sponge Fingerz",
+      "title": "Sponge Fingerz"
+    },
+    "29": {
+      "credit": "Beartooth",
+      "description": "Beartooth tuo aggressiivista perusjyskytystä, joka saa massat liikkeelle ja rikkomaan paikkoja. Täydellinen ääniraita räiskintään ilman kiikaria. Rokkaa kunnes olet kuollut.",
+      "name": "Beartooth, Disgusting",
+      "title": "Disgusting"
+    },
+    "30": {
+      "credit": "Lennie Moore",
+      "description": "Pelisäveltäjä Lennie Moore tarjoilee mausteisen kattauksen jatsahtavaa funkia. Herkullista kylmänä nautittuna, kuten vastustajiesi ruumiit.",
+      "name": "Lennie Moore, Java Havana Funkaloo",
+      "title": "Java Havana Funkaloo"
+    },
+    "31": {
+      "credit": "Darude",
+      "description": "Uppoudu vapaasti suomalaistuottaja Daruden tuttuihin äänimaisemiin. Tämä dance-musiikin tunnetuimman pioneerin progressiivisien ylisävelien ja kutkuttavien melodiarakenteiden fuusio rikastaa jokaista pelikokemusta.",
+      "name": "Darude, Moments CSGO",
+      "title": "Moments CSGO"
+    },
+    "32": {
+      "credit": "Beartooth",
+      "description": "Beartooth on palannut. Tämä uusi musiikkipakkaus on jopa entistä kovempi ja aggressiivisempi. MVP-hymnistä on tehty erityisen raskas, jotta hävinneistä vastustajistasi tuntuu todella ikävältä.",
+      "name": "Beartooth, Aggressive",
+      "title": "Aggressive"
+    },
+    "33": {
+      "credit": "Blitz Kids",
+      "description": "Brittiläisen pop/punk-yhtyeen Blitz Kidsin musiikkipakkaus on täydellinen B-rynnäkköihin, joiden aikana voit muistella nuoruutesi yöajeluja kavereiden kanssa. Tämä musiikkipakkaus on hetkiin, jolloin haluat mennä lujaa ja tuntea itsesi nuoreksi.",
+      "name": "Blitz Kids, The Good Youth",
+      "title": "The Good Youth"
+    },
+    "34": {
+      "credit": "Hundredth",
+      "description": "Hundredth julistaa hevin ilosanomaa omaperäisellä melodisen hardcoren tulkinnallaan. Vapauta itsesi tällä musiikkipaketilla, joka on kuin tehty vähempiarvoisten päiden napsimiseen.",
+      "name": "Hundredth, FREE",
+      "title": "FREE"
+    },
+    "35": {
+      "credit": "Neck Deep",
+      "description": "Joskus sitä vain tarvitsee vähän pop punkkia jaksaakseen. Jouduitpa sitten kestämään kämppereitä tai katkesipa hullu tappoputkesi, Neck Deep on täällä osoittaakseen, että \"Life's Not Out To Get You\", elämä ei ole sinua vastaan – mutta vastajoukkue on.",
+      "name": "Neck Deep, Life's Not Out To Get You",
+      "title": "Life's Not Out To Get You"
+    },
+    "36": {
+      "credit": "Roam",
+      "description": "Roam soittaa nopeaa ja suoraviivaista pop-punkkia, joka saa niin yleisön kuin pelaajatkin liikkeelle. Hävitä vihollisesi kartalta tämän musiikin soidessa, ennen kuin he edes huomaavat olevansa pelkkiä maalitauluja.",
+      "name": "Roam, Backbone",
+      "title": "Backbone"
+    },
+    "37": {
+      "credit": "Twin Atlantic",
+      "description": "Raskaampi, rajumpi ja äänekkäämpi Twin Atlantic tulee CS2:hon valmiina sulattamaan naamoja skottirockin räimeellä.",
+      "name": "Twin Atlantic, GLA",
+      "title": "GLA"
+    },
+    "38": {
+      "credit": "Skog",
+      "description": "Skog on palannut kolmannen murskaavan metallipakettinsa kanssa. Tällä kertaa musiikissa on elektro-orgaanista vivahdetta, massiivisia kitarariffejä ja ja valtavia droppeja, luuppeja ja bordunoja.",
+      "name": "Skog, III-Arena",
+      "title": "III-Arena"
+    },
+    "39": {
+      "credit": "The Verkkars",
+      "description": "Verkkars nousi Suomen listojen kärkeen ENCE:lle tehdyllä tykytyksiä aiheuttavalla tribuuttikappaleella. Voiko se todella olla niin EZ?",
+      "name": "The Verkkars, EZ4ENCE",
+      "title": "EZ4ENCE"
+    },
+    "40": {
+      "credit": "Halo",
+      "description": "Anna CS2-äänimaailman kokemuksellesi legendaarinen muodonmuutos The Master Chief Collection -musiikkipakkauksella, joka sisältää Halo-universumin ikonista musiikkia. © 2019 343 Industries. Kaikki oikeudet pidätetään. Käytetään 343 Industries -yrityksen luvalla. Halo: The Master Chief Collection ja Halo-logo ovat Microsoft-yritysryhmän tuotemerkkejä.",
+      "name": "Halo: The Master Chief Collection",
+      "title": "The Master Chief Collection"
+    },
+    "41": {
+      "credit": "Scarlxrd",
+      "description": "Scarlxrd sekoittaa sulavasti raskaita trap-biittejä ja luo uniikin musiikin alagenren. Mielenkiintoinen sekoitus takaa, että live-esitykset saavat yleisön jakamattoman huomion.",
+      "name": "Scarlxrd: King, Scar",
+      "title": "King, Scar"
+    },
+    "42": {
+      "credit": "Half-Life: Alyx",
+      "description": "Half-Life: Alyx -musiikkipakkaus juhlistaa Valven VR-peliä ja paluuta Half-Life-sarjaan. Olet ihmiskunnan viimeinen toivo, ja Alyxin immersiivisten ympäristöjen tunnelma jatkuu Counter-Strike: Global Offensive -pelissä.",
+      "name": "Half-Life: Alyx – Anti-Citizen",
+      "title": "Anti-Citizen"
+    },
+    "43": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintoryn musiikin lajityyppejä sekoittava musiikkipakkaus on hieno sekoitus kelttiläistä fantasiaa, kuumia elektronisia biittejä ja Peter Hollensin laulua.",
+      "name": "Austin Wintory, Bachram",
+      "title": "Bachram"
+    },
+    "44": {
+      "credit": "Dren",
+      "description": "Apokalyptinen mariachi-soundtrack suosiota saavuttaneesta Gunman Taco Truck -indiepelistä tulee CS2-peliin kiihkeine meksikolaismausteisine biiseineen, mukaan lukien Pollo Diablo ja Persecución de Helltain.",
+      "name": "Dren, Gunman Taco Truck",
+      "title": "Gunman Taco Truck"
+    },
+    "45": {
+      "credit": "Daniel Sadowski",
+      "description": "Jo \"Total Domination\"-, \"The 8-Bit Kit\"- ja \"Crimson Assault\" -musiikkipakkaukset julkaisseelta säveltäjältä tulee nyt \"Eye Of The Dragon\". Säveltäjä Daniel Sadowski sekoittaa ninjoja, aseita, hiphopia ja teknoa luodakseen toiminnantäyteisen musiikkipakkauksen. Ninjat ovat tunnettuja nopeista ja tarkoista iskuistaan, mutta ne kykenevät silti pysymään näkymättömiä vihollisilleen.",
+      "name": "Daniel Sadowski, Eye of the Dragon",
+      "title": "Eye of the Dragon"
+    },
+    "46": {
+      "credit": "Tree Adams and Ben Bromfield",
+      "description": "Väkevän kaaoksen alkemistit, M.U.D.D. FORCE, eli säveltäjät Tree Adams ja Ben Bromfield hitsaavat eeppiset taisteluaiheen ja syntikat yhteen täydellä teholla kulkevan hävityksen kurimukseksi.",
+      "name": "Tree Adams and Ben Bromfield, M.U.D.D. FORCE",
+      "title": "M.U.D.D. FORCE"
+    },
+    "47": {
+      "credit": "Tim Huling",
+      "description": "Säveltäjä Tim Huling tuo tiskiin klassisia film-noir-tyyppisiä raitoja, joissa tyyliin yhdistyy nykyaikaista rytmiä ja biittejä.",
+      "name": "Tim Huling, Neo Noir",
+      "title": "Neo Noir"
+    },
+    "48": {
+      "credit": "Sam Marshall",
+      "description": "Funkahtavan 90-luvun alun videopelimusiikin inspiroimana säveltäjä Sam Marshall on yhdistänyt klassisen pelinostalgian ja rohkeat nykyrytmit.",
+      "name": "Sam Marshall, Bodacious",
+      "title": "Bodacious"
+    },
+    "49": {
+      "credit": "Matt Levine",
+      "description": "Säveltäjä Matt Levinen rajun rehvakas kokonaisuus tekee kunniaa spaghettiwesterneille. Niissä tunnelmissa on hyvä sanoa: \"Antaa palaa!\"",
+      "name": "Matt Levine, Drifter",
+      "title": "Drifter"
+    },
+    "50": {
+      "credit": "Amon Tobin",
+      "description": "Legendaarinen tuottaja Amon Tobin lainaa uniikkia estetiikkaansa CS2-pelille. Tällä kertaa putkivahvistimien kautta.",
+      "name": "Amon Tobin, All for Dust",
+      "title": "All for Dust"
+    },
+    "51": {
+      "credit": "Darren Korb",
+      "description": "Missaat varmaan osuman silloin tällöin, mutta tämä veret kiertoon laittava Supergiantin roguelike-luolastoroolipeli Underworld of Hadesin musiikkipaikkaus ei missaa biittiä.",
+      "name": "Darren Korb, Hades-musiikkipakkaus",
+      "title": "Hades-musiikkipakkaus"
+    },
+    "52": {
+      "credit": "Neck Deep",
+      "description": "Todista tällä Neck Deepin uudella musiikkipakkauksella, ettet ole massan mukana menijä (ja, että olet kartalla parempi kuin kukaan muu). Se sisältää biisejä heidän All Distortions Are Intentional -albumiltaan.",
+      "name": "Neck Deep, The Lowlife Pack",
+      "title": "The Lowlife Pack"
+    },
+    "53": {
+      "credit": "Scarlxrd",
+      "description": "CHAIN$AW TUO SCARLXRD:LLA PELIIN EHDOTTOMASTI PARASTAAN RAIDALLA, JOSSA YHDISTYVÄT RAAKA FLOW JA SITÄ MÄTSÄÄVÄ RASKAS MENO.",
+      "name": "Scarlxrd, CHAIN$AW.LXADXUT.",
+      "title": "CHAIN$AW.LXADXUT."
+    },
+    "54": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory vastaa ihmiskuntaa pitkään askarruttaneeseen kysymykseen: mitä tapahtuu, kun yhdistät oluttuvan haitaripolkan rohjoiseen heavy metaliin?",
+      "name": "Austin Wintory, Mocha Petal",
+      "title": "Mocha Petal"
+    },
+    "55": {
+      "credit": "Chipzel",
+      "description": "Videopelisäveltäjä ja chiptunen legenda Chipzel tuo säröisen Speak & Spell - lelun inspiroiman hybridien tyylien mash-upin, josta löytyy hupia, funkia ja sävyjä.",
+      "name": "Chipzel, ~Yellow Magic~",
+      "title": "~Yellow Magic~"
+    },
+    "56": {
+      "credit": "Freaky DNA",
+      "description": "Oopperaa. 8-bittisiä ääniä. Analogisyntikoita. Miten tästä voisi olla pitämättä? Chiptune-spesialisti Freaky DNA ja sopraano Leanne Koch lyöttäytyivät yhteen ja tuloksena oli raskasta biittiä ja hyvää menoa!",
+      "name": "Freaky DNA, Vici",
+      "title": "Vici"
+    },
+    "57": {
+      "credit": "Jesse Harlin",
+      "description": "Säveltäjä Jesse Harlin on toteuttanut mahtipontisen avaruusopperadraaman, joka on saanut inspiraationsa klassisesta 70- ja 80-luvun (ja vähän myöhemmästäkin) scifistä.",
+      "name": "Jesse Harlin, Astro Bellum",
+      "title": "Astro Bellum"
+    },
+    "58": {
+      "credit": "Laura Shigihara",
+      "description": "Videopelisäveltäjä ja kehittäjä Laura Shigiharan teoksen avulla voit kertoa kaikille kovaa ja korkealta, että olet tähtipelaaja. Pidä hauskaa näiden uniikkien 90-luvun dancen, retropelien syntikan ja Plants vs. Zombies -vivahteiden myötä.",
+      "name": "Laura Shigihara: Work Hard, Play Hard",
+      "title": "Work Hard, Play Hard"
+    },
+    "59": {
+      "credit": "Sarah Schachner",
+      "description": "Sarah Schachner tuo sinulle tämän dystooppisen goottikuoron, jonka tiedostavat, skandinaaviset robotit päättävät, että ihmiskunta tulee tuhota.",
+      "name": "Sarah Schachner, KOLIBRI",
+      "title": "KOLIBRI"
+    },
+    "60": {
+      "credit": "bbno$",
+      "description": "bbno$ on tehnyt huonoasenteisen pelaajan anthemin – u mad! Ootko vihainen? Haha, treenaa enemmän, nyypiö. Tutkimuksen mukaan tällä musiikkipaketilla pelaamalla pääsee heti hopeatasolta kansainväliseksi valioksi.",
+      "name": "bbno$, u mad!",
+      "title": "u mad!"
+    },
+    "61": {
+      "credit": "The Verkkars & n0thing",
+      "description": "Aurinkoisesta Kaliforniasta hyiseen Lappiin. Counter-Strike-legenda n0thing ja The Verkkars yhdistivät voimansa ja loivat Flashbang Dance -hitin! 3... 2... 1... olet sokaistu!",
+      "name": "The Verkkars & n0thing, Flashbang Dance",
+      "title": "Flashbang Dance"
+    },
+    "62": {
+      "credit": "3kliksphilip",
+      "description": "Olitpa sitten matkalla huipulle tai häviölle anna kasarisyntikoiden ja unenomaisten melodioiden viedä ajassa taaksepäin... vanhoihin hyviin aikoihin.",
+      "name": "3kliksphilip, Heading for the Source",
+      "title": "Heading for the Source"
+    },
+    "63": {
+      "credit": "Humanity's Last Breath",
+      "description": "Ruotsalaisen Humanity's Last Breathin -bandin musiikkipaketti Void heittäytyy raskaalle linjalle: hakkaavat rummut, massiiviset riffit ja selkäpiitä karmiva tunnelma.",
+      "name": "Humanity's Last Breath, Void",
+      "title": "Void"
+    },
+    "64": {
+      "credit": "Juelz",
+      "description": "Neo-trap-syntikat, tujut 808-rumpukoneen kompit, eeppinen pianoriffi ja iso kasa asetulituksen äänitehosteita. Juelzin gangsta rap -mestariteos Shooters kruunaa musiikkipakkauksen tyylillä. Vain isoimmille jehuille.",
+      "name": "Juelz, Shooters",
+      "title": "Shooters"
+    },
+    "65": {
+      "credit": "Knock2",
+      "description": "Knock2:n dashstar*, ikoninen bass house -hitti tarjoaa tykintäydeltä energiaa, joka kiteyttää nuoren sandiegolaisen artistin moton, \"ei rajoja\".",
+      "name": "Knock2, dashstar*",
+      "title": "dashstar*"
+    },
+    "66": {
+      "credit": "Meechy Darko",
+      "description": "Nappaa Glock-pistoolisi ja pistä musiikkipakkaus tulille, niin tunnet olevasi keskellä New Yorkin underground hiphop -skeneä.",
+      "name": "Meechy Darko, Gothic Luxury",
+      "title": "Gothic Luxury"
+    },
+    "67": {
+      "credit": "Sullivan King",
+      "description": "Onko armoton jahti sinun juttusi? Sullivan Kingin hard rockia, metallia ja dubstepiä yhdistelevä ääniraita tekee kenestä tahansa pysäyttämättömän tappokoneen.",
+      "name": "Sullivan King, Lock Me Up",
+      "title": "Lock Me Up"
+    },
+    "68": {
+      "credit": "Perfect World",
+      "description": "Juhlista CS2:n 5-vuotispäivää Kiinassa ainutlaatuisella musiikkipakkauksella: 花脸 Hua Lian (Painted Face). Pakkauksessa yhdistyvät Qinqiang-ooppera (varhaisin kiinalaistyylinen rokki) ja moderni rokki. Vaikka savu ympäröisi tai valokranaatti sokaisisi, älä eksy!",
+      "name": "Perfect World, 花脸 Hua Lian (Painted Face)",
+      "title": "花脸 Hua Lian (Painted Face)"
+    },
+    "69": {
+      "credit": "Denzel Curry",
+      "description": "Denzel tuo tavanomaisen energiansa CS2-peliin yhdistämällä trappia ja jatsia sekä rumpu- ja bassobiittiä. Pakkaus sisältää Denzelin hitit Walkin, Ultimate ja monta muuta. Ota nikkelöidyt kromi-Berettat esiin, käännä nupit kaakkoon ja anna Ultimate-musiikkipakkauksen soida.",
+      "name": "Denzel Curry – ULTIMATE",
+      "title": "ULTIMATE"
+    },
+    "70": {
+      "credit": "Valve",
+      "description": "CS:GO-oletusmusiikkipakkaus, joka esiteltiin CS:GO-pelin julkaisun yhteydessä 2012.",
+      "name": "Valve – CS:GO",
+      "title": "CS:GO"
+    },
+    "71": {
+      "credit": "DRYDEN",
+      "description": "Mitä sitä muuta voisi sanoa? Feel The Power. Tunne DRYDENin energisen musiikkipakkauksen sähköinen voima.",
+      "name": "DRYDEN: Feel The Power",
+      "title": "Feel The Power"
+    },
+    "72": {
+      "credit": "ISOxo",
+      "description": "Sopii eritoten peleihin, joissa tunnet olevasi...erilainen. Piinaa vihollisia kierros toisensa jälkeen ISOxon \"epäinhimillisellä\" musiikilla.",
+      "name": "ISOxo: inhuman",
+      "title": "inhuman"
+    },
+    "73": {
+      "credit": "KILL SCRIPT",
+      "description": "Käytätkö mieluummin lempeä vai voimaa? Vai lempeää voimaa? Kerro se kaikille KILL SCRIPTin All Night -musiikkipakkauksella.",
+      "name": "KILL SCRIPT: All Night",
+      "title": "All Night"
+    },
+    "74": {
+      "credit": "Knock2",
+      "description": "Pelaajille, jotka suhtautuvat jokaiseen peliin kuin ratkaisevaan finaaliin, vaikka palkkiona olisi vain muutama sata pistettä. Knock2:n toinen musiikkipakkaus Make U SWEAT tuo kunnon energiaa ja voitot kotiin.",
+      "name": "Knock2: Make U SWEAT!",
+      "title": "Make U SWEAT!"
+    },
+    "75": {
+      "credit": "Rad Cat",
+      "description": "Toisinaan pommin purkaminen riittää kierroksen tähtipelaajan titteliin. Juhli jokaista hetkeä – pientä ja isoa – Rad Catin Reason-musiikkipakkauksella.",
+      "name": "Rad Cat: Reason",
+      "title": "Reason"
+    },
+    "76": {
+      "credit": "TWERL, Ekko & Sidetrack",
+      "description": "Valokeilassa paistattelua ei voita mikään. Under Bright Lightsin rumpu- ja bassorytmit nostavat sinut tiimeinesi uusiin korkeuksiin.",
+      "name": "TWERL, Ekko & Sidetrack: Under Bright Lights",
+      "title": "Under Bright Lights"
+    },
+    "78": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory tekee sopimuksen Saatanan kanssa ja sekoittaa yhteen paholaismaista viulumusiikkia ja täyden EDM-klubin tunnelmaa.",
+      "name": "Austin Wintory: The Devil Went Clubbing in Georgia",
+      "title": "The Devil Went Clubbing in Georgia"
+    },
+    "79": {
+      "credit": "Ben Bromfield",
+      "description": "Sinut on petetty kahdesti! Koe elokuva- ja tv-säveltäjä Ben Bromfieldin kovapanoksinen, mietteliään jännittynyt, jazz-vaikutteinen ääniraita, kun selvität tämän kaninkolon syvyyttä...",
+      "name": "Ben Bromfield: Rabbit Hole",
+      "title": "Rabbit Hole"
+    },
+    "80": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski kutsuu pelaajia astumaan Dead Shotin maailmaan, joka on yhdistelmä toimintaa, hiphopia, orkesterimusiikkia, elektronista, retroa, tunnetta ja äänisuunnittelua. Vältä pään mätäneminen!",
+      "name": "Daniel Sadowski: Dead Shot",
+      "title": "Dead Shot"
+    },
+    "81": {
+      "credit": "Dren McDonald",
+      "description": "Kofeiini on ystäväsi. Se on kaikkien ystävä, paitsi vihollistesi! Coffee! Kofe! Kahveh! on BalkanBalkanBalkan!-katubileiden puhallinmusiikkia Dren McDonaldilta, joka tunnetaan myös Gunman Taco Truck- ja Death's Head Demolition -musiikkipakkauksista. Äänitetty livenä Balkanciscossa!",
+      "name": "Dren McDonald: Coffee! Kofe! Kahveh!",
+      "title": "Coffee! Kofe! Kahveh!"
+    },
+    "82": {
+      "credit": "Matt Levine",
+      "description": "Astu vakoilun vaaralliseen maailmaan säveltäjä Matt Levinen Agency-musiikkipakkauksen avulla.",
+      "name": "Matt Levine: Agency",
+      "title": "Agency"
+    },
+    "83": {
+      "credit": "Sam Marshall",
+      "description": "Clutch, Bodaciousin vahvistamaton jatko-osa, on kyberfunkia ja kuumeuninen kammotus, jonka Sam Marshall elvyttää alkemian ja vaikeaselkoisen rituaalin avulla.",
+      "name": "Sam Marshall: Clutch",
+      "title": "Clutch"
+    },
+    "84": {
+      "credit": "Tim Huling",
+      "description": "Nosta adrenaliiniasi Tim Hulingin Devil's Paintbrush -elämyksellä, joka on huippuenerginen groove metal -kokemus.",
+      "name": "Tim Huling: Devil's Paintbrush",
+      "title": "Devil's Paintbrush"
+    },
+    "85": {
+      "credit": "Tree Adams",
+      "description": "Tree Adams rullaa Seventh Moonissa tunnelmallisen sekoituksen galaksien välistä funkia ja johtavia taistelupisteitä.",
+      "name": "Tree Adams: Seventh Moon",
+      "title": "Seventh Moon"
+    },
+    "86": {
+      "credit": "Perfect World",
+      "description": "Yhdistämällä perinteisen kiinalaisen kansanmusiikin ja elektronisen musiikin Ay Hey tarjoaa elävää tarinankerrontaa ja energisiä rytmejä, jotka yhdistävät eri-ikäisiä ja -taustaisia pelaajia. Musiikin eloisa rytmi kuvaa pelaajien innostusta ja humoristisia ja leikkisiä taistelukohtauksia.",
+      "name": "Perfect World – Ay Hey",
+      "title": "Ay Hey"
+    },
+    "87": {
+      "credit": "Adam Beyer",
+      "description": "Ruotsalaisen teknomusiikin legendan Adam Beyerin musiikkipakkaus tarjoaa unenomaisia äänimaailmoja samalla, kun pumppaat viholliset täyteen lyijyä.",
+      "name": "Adam Beyer, Red Room",
+      "title": "Red Room"
+    },
+    "88": {
+      "credit": "Ghost",
+      "description": "VIESTI PAPISTOLTA: Papa V Perpetua on saapunut Counter-Strikeen, ja tuo mukanaan mahtavan hevimetallispektaakkelin. Tuo piristystä arkiseen aherrukseen tulittamalla ja rukoilemalla epäpyhän istuimen puolesta.",
+      "name": "Ghost, Skeletá",
+      "title": "Skeletá"
+    },
+    "89": {
+      "credit": "HEALTH",
+      "description": "HEALTH saapuu Counter-Strikeen. Ota ase kouraan ja nauti RAT WARS -albumin brutaalin raskaasta konemetallista.",
+      "name": "HEALTH, RAT WARS",
+      "title": "RAT WARS"
+    },
+    "90": {
+      "credit": "James and the Cold Gun",
+      "description": "Walesilainen rock-duo James and the Cold Gun on täynnä energiaa, klassista punk-asennetta ja modernia alt-rockia. Tätä musiikkipakkausta ei pitele mikään.",
+      "name": "James and the Cold Gun, Chewing Glass",
+      "title": "Chewing Glass"
+    },
+    "91": {
+      "credit": "Jonathan Young",
+      "description": "Pelisi kaipaa avaruuspiraattien innoittamaa power metallia. Hyppää Velociraptor-nimisen avaruusaluksen kyytiin ja vie ottelusi uusiin ulottuvuuksiin Jonathan Youngin musiikilla, joka lainaa elementtejä animesta ja videopeleistä.",
+      "name": "Jonathan Young, Starship Velociraptor",
+      "title": "Starship Velociraptor"
+    },
+    "92": {
+      "credit": "Juelz",
+      "description": "Onko lattialla tarpeeksi tilaa? Tämä massiivinen musiikkipakkaus Juelzin debyyttialbumilta sisältää neo-rave-syntikkaa, brutaaleja bassosoundeja ja tarttuvia trap-rumpuja. Floorspace on tehty uudelleen Counter-Strike 2 -peliä varten, ja MVP-biisi Gossip saa pelaajat niin hulluiksi, että he kokoavat kokonaisen LED-valoseinän vain rikkoakseen sen.",
+      "name": "Juelz, Floorspace",
+      "title": "Floorspace"
+    },
+    "93": {
+      "credit": "Killer Mike",
+      "description": "Nauti kolme Grammya voittaneesta hiphop-albumista Counter-Strikessa. Killer Miken ääni motivoi sinua tekemään parhaasi, kun nostat tasoasi ja hiot taitojasi.",
+      "name": "Killer Mike, MICHAEL",
+      "title": "MICHAEL"
+    },
+    "94": {
+      "credit": "PVRIS",
+      "description": "Mikä on vielä hauskempaa kuin hyvän vastustajan löytäminen? Hyvä ääniraita. PVRIS-musiikkipakkaus inspiroi joukkueesi voittoon kerta toisensa jälkeen.",
+      "name": "PVRIS, Evergreen",
+      "title": "Evergreen"
+    },
+    "95": {
+      "credit": "Selective Response",
+      "description": "Anna musiikin tahdittaa elämääsi tällä energiaa pursuavalla musiikkipakkauksella Amerikan teknomusiikin ikonilta, Selective Responselta. Akku täynnä ja valmiustilassa.",
+      "name": "Selective Response, No Love Only Pleasure",
+      "title": "No Love Only Pleasure"
+    },
+    "96": {
+      "credit": "Tigercub",
+      "description": "Isosta-Britanniasta kotoisin oleva Tigercub sekoittaa raskaan melodista alt-rockia modernilla soundilla. Tuloksena on suorastaan murskaavan kova musiikkipakkaus.",
+      "name": "Tigercub, The Perfume of Decay",
+      "title": "The Perfume of Decay"
+    },
+    "98": {
+      "credit": "ALRT",
+      "description": "ALRT tarjoaa äärimmäisen dopamiinipiikin bassopainoitteisella kappaleellaan, joka pitää sinut valppaana pelin tärkeimpinä hetkinä.",
+      "name": "ALRT, DOPAMINE HIT",
+      "title": "DOPAMINE HIT"
+    },
+    "99": {
+      "credit": "Altare",
+      "description": "Altaren euforinen kappale Change My Mind on täydellinen voitokkaita hetkiä varten, jolloin tunnet olevasi pysäyttämätön.",
+      "name": "Altare, Change My Mind",
+      "title": "Change My Mind"
+    },
+    "100": {
+      "credit": "borne",
+      "description": "Tarttuva basso on etualalla bornen kappaleessa Give It To Me, joka inspiroi pelaajia antamaan kaikkensa sekä Counter-Strikessa että muuallakin.",
+      "name": "borne, Give It To Me",
+      "title": "Give It To Me"
+    },
+    "101": {
+      "credit": "Pirapus",
+      "description": "Pirapusin energiaa pursuava drum and bass -kappale EVERYNITE saa kuuntelijan tuntemaan olevansa suuruuden äärellä. Nimensä mukaisesti tätä kelpaa kuunnella illasta toiseen.",
+      "name": "Pirapus, EVERYNITE",
+      "title": "EVERYNITE"
+    },
+    "102": {
+      "credit": "Repiet & Julia Kleijn",
+      "description": "Kun pistät Repietin ja Julia Kleijnin korvamadon On And On soimaan, olet valmiis kohtaamaan minkä tahansa haasteen.",
+      "name": "Repiet & Julia Kleijn, On And On",
+      "title": "On And On"
+    },
+    "103": {
+      "credit": "ShockOne",
+      "description": "ShockOnen nopeatempoinen ja tiukkoihin tilanteisiin sopiva drum and bass -kappale on täynnä raskaita bassolinjoja, joiden innoittamana tähtipelaajan titteli on melkein taattu.",
+      "name": "ShockOne, Voices",
+      "title": "Voices"
+    },
+    "104": {
+      "credit": "Starjunk 95",
+      "description": "Fiilistele galaksin svengaavimman radiokanavan musiikkia, joka yhdistelee nykysoundia entisaikojen nostalgian kanssa. Kyseessä on Starjunk 95.",
+      "name": "Starjunk 95, Industrial Sunset Memories",
+      "title": "Industrial Sunset Memories"
+    }
+  },
+  "releases": {
+    "2016-11-28-radicals": "StatTrak™ Radikaali-laatikko",
+    "2020-04-16-masterminds": "Masterminds-musiikkipakkauslaatikko",
+    "2021-08-12-tacticians": "Tacticians-musiikkipakkauslaatikko",
+    "2022-08-23-initiators": "Initiators-musiikkipakkauslaatikko",
+    "2024-02-06-nightmode": "NIGHTMODE-musiikkipakkauslaatikko",
+    "2024-08-20-masterminds-2": "Masterminds 2 -musiikkipakkauslaatikko",
+    "2025-08-14-deluge": "Deluge-musiikkipakkauslaatikko",
+    "2026-05-07-nightmode-ii": "NIGHTMODE II -musiikkipakkaukset"
+  }
+}

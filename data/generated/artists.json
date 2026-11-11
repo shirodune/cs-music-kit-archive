@@ -1,0 +1,886 @@
+[
+  {
+    "aliases": [],
+    "id": "daniel-sadowski",
+    "kits": [
+      3,
+      16,
+      23,
+      45,
+      80
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Daniel Sadowski",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "noisia",
+    "kits": [
+      4
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Noisia",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "robert-allaire",
+    "kits": [
+      5
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Robert Allaire",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "sean-murray",
+    "kits": [
+      6
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Sean Murray",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "feed-me",
+    "kits": [
+      7
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Feed Me",
+    "type": "person"
+  },
+  {
+    "aliases": [
+      "Dren"
+    ],
+    "id": "dren-mcdonald",
+    "kits": [
+      8,
+      44,
+      81
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Dren McDonald",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "austin-wintory",
+    "kits": [
+      9,
+      43,
+      54,
+      78
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Austin Wintory",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "sasha",
+    "kits": [
+      10
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Sasha",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "skog",
+    "kits": [
+      11,
+      22,
+      38
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Skog",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "midnight-riders",
+    "kits": [
+      12
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Midnight Riders",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "matt-lange",
+    "kits": [
+      13
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Matt Lange",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "mateo-messina",
+    "kits": [
+      14
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Mateo Messina",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "various-artists",
+    "kits": [
+      15
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Various Artists",
+    "type": "brand"
+  },
+  {
+    "aliases": [],
+    "id": "damjan-mravunac",
+    "kits": [
+      17
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Damjan Mravunac",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "proxy",
+    "kits": [
+      18
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Proxy",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "ki-theory",
+    "kits": [
+      19
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Ki:Theory",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "troels-folmann",
+    "kits": [
+      20
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Troels Folmann",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "kelly-bailey",
+    "kits": [
+      21
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Kelly Bailey",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "awolnation",
+    "kits": [
+      24
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "AWOLNATION",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "mord-fustang",
+    "kits": [
+      25
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Mord Fustang",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "michael-bross",
+    "kits": [
+      26
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Michael Bross",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "ian-hultquist",
+    "kits": [
+      27
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Ian Hultquist",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "new-beat-fund",
+    "kits": [
+      28
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "New Beat Fund",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "beartooth",
+    "kits": [
+      29,
+      32
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Beartooth",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "lennie-moore",
+    "kits": [
+      30
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Lennie Moore",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "darude",
+    "kits": [
+      31
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Darude",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "blitz-kids",
+    "kits": [
+      33
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Blitz Kids",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "hundredth",
+    "kits": [
+      34
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Hundredth",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "neck-deep",
+    "kits": [
+      35,
+      52
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Neck Deep",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "roam",
+    "kits": [
+      36
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Roam",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "twin-atlantic",
+    "kits": [
+      37
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Twin Atlantic",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "the-verkkars",
+    "kits": [
+      39,
+      61
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "The Verkkars",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "halo",
+    "kits": [
+      40
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Halo",
+    "type": "brand"
+  },
+  {
+    "aliases": [],
+    "id": "scarlxrd",
+    "kits": [
+      41,
+      53
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Scarlxrd",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "half-life-alyx",
+    "kits": [
+      42
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Half-Life: Alyx",
+    "type": "brand"
+  },
+  {
+    "aliases": [],
+    "id": "tree-adams",
+    "kits": [
+      46,
+      85
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Tree Adams",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "ben-bromfield",
+    "kits": [
+      46,
+      79
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Ben Bromfield",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "tim-huling",
+    "kits": [
+      47,
+      84
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Tim Huling",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "sam-marshall",
+    "kits": [
+      48,
+      83
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Sam Marshall",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "matt-levine",
+    "kits": [
+      49,
+      82
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Matt Levine",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "amon-tobin",
+    "kits": [
+      50
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Amon Tobin",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "darren-korb",
+    "kits": [
+      51
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Darren Korb",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "chipzel",
+    "kits": [
+      55
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Chipzel",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "freaky-dna",
+    "kits": [
+      56
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Freaky DNA",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "jesse-harlin",
+    "kits": [
+      57
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Jesse Harlin",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "laura-shigihara",
+    "kits": [
+      58
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Laura Shigihara",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "sarah-schachner",
+    "kits": [
+      59
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Sarah Schachner",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "bbno",
+    "kits": [
+      60
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "bbno$",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "3kliksphilip",
+    "kits": [
+      62
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "3kliksphilip",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "humanity-s-last-breath",
+    "kits": [
+      63
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Humanity's Last Breath",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "juelz",
+    "kits": [
+      64,
+      92
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Juelz",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "knock2",
+    "kits": [
+      65,
+      74
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Knock2",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "meechy-darko",
+    "kits": [
+      66
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Meechy Darko",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "sullivan-king",
+    "kits": [
+      67
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Sullivan King",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "perfect-world",
+    "kits": [
+      68,
+      86
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Perfect World",
+    "type": "brand"
+  },
+  {
+    "aliases": [],
+    "id": "denzel-curry",
+    "kits": [
+      69
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Denzel Curry",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "valve",
+    "kits": [
+      70,
+      1
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Valve",
+    "type": "brand"
+  },
+  {
+    "aliases": [],
+    "id": "dryden",
+    "kits": [
+      71
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "DRYDEN",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "isoxo",
+    "kits": [
+      72
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "ISOxo",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "kill-script",
+    "kits": [
+      73
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "KILL SCRIPT",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "rad-cat",
+    "kits": [
+      75
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Rad Cat",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "twerl-and-ekko-sidetrack",
+    "kits": [
+      76
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "TWERL and Ekko & Sidetrack",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "adam-beyer",
+    "kits": [
+      87
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Adam Beyer",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "ghost",
+    "kits": [
+      88
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Ghost",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "health",
+    "kits": [
+      89
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "HEALTH",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "james-and-the-cold-gun",
+    "kits": [
+      90
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "James and the Cold Gun",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "jonathan-young",
+    "kits": [
+      91
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Jonathan Young",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "killer-mike",
+    "kits": [
+      93
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Killer Mike",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "pvris",
+    "kits": [
+      94
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "PVRIS",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "selective-response",
+    "kits": [
+      95
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Selective Response",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "tigercub",
+    "kits": [
+      96
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Tigercub",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "alrt",
+    "kits": [
+      98
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "ALRT",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "altare",
+    "kits": [
+      99
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Altare",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "borne",
+    "kits": [
+      100
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "borne",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "pirapus",
+    "kits": [
+      101
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Pirapus",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "repiet-julia-kleijn",
+    "kits": [
+      102
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Repiet & Julia Kleijn",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "shockone",
+    "kits": [
+      103
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "ShockOne",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "starjunk-95",
+    "kits": [
+      104
+    ],
+    "members": [],
+    "musicbrainzId": null,
+    "name": "Starjunk 95",
+    "type": "person"
+  }
+]

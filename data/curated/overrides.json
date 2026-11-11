@@ -1,0 +1,39 @@
+{
+  "slugs": {},
+  "splits": {
+    "40": {
+      "zh-hans": {
+        "credit": "",
+        "title": "《光环：士官长合集》"
+      }
+    },
+    "42": {
+      "cs": {
+        "credit": "Half-Life: Alyx",
+        "title": "Anti-Citizen"
+      },
+      "el": {
+        "credit": "Half-Life: Alyx",
+        "title": "Anti-Citizen"
+      },
+      "zh-hant": {
+        "credit": "《戰慄時空：艾莉克絲》",
+        "title": "反公民"
+      }
+    },
+    "51": {
+      "es-419": {
+        "credit": "Darren Korb",
+        "title": "Kit de música de Hades"
+      },
+      "it": {
+        "credit": "Darren Korb",
+        "title": "Hades"
+      },
+      "zh-hant": {
+        "credit": "Darren Kor",
+        "title": "《Hades》音樂包"
+      }
+    }
+  }
+}
