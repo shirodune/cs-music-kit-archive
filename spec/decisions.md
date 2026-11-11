@@ -50,7 +50,10 @@ Defined in DATA-13 and DATA-14. All 25 releases have an official note or post. T
 ## D-009 Default kits
 
 `defIndex` 70 (Valve, CS:GO) is dated 2014-10-10, the day music kits became selectable. `defIndex` 1 (Valve, Counter-Strike 2) is dated 2023-09-27. `defIndex` 2 is shown as the alternate track set of 70, not as a kit.
-- Found later (2026-11-11): the CS2 launch notes of 2023-09-27 also say "CS:GO Players who started playing more than a week ago will receive a commemorative CS:GO coin and CS:GO Music Kit", so 70 became a separate inventory item that day. The 2014-10-10 date stands; the release `note` records the 2023 grant.
+- Why: the archive presents the music a player can choose, not the inventory item. The default CS:GO music became a choice in the music kit slot when the slot was added; `defIndex` 70 itself is a CS2-era number for the same music.
+- Evidence: the 2014-10-10 release notes say "Introducing Music Kits" but do not name the default kit. That it was selectable from that day is an inference from the music kit slot, not a quote. This is the only release whose quote does not name its kits (DATA-14b).
+- History kept in the release `note`: default CS:GO music since 2012; selectable from 2014-10-10; granted as a separate inventory item on 2023-09-27 (CS2 launch notes: "CS:GO Players who started playing more than a week ago will receive a commemorative CS:GO coin and CS:GO Music Kit").
+- Rejected: 2023-09-27 for 70. It is well sourced but dates the inventory item, not the music kit.
 
 ## D-010 "Artists", not "Composers"
 
