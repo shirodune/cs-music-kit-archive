@@ -44,12 +44,13 @@ Every track is the full game file, as csgoskins.gg and the Fandom wiki do.
 
 ## D-008 Release dates come from Valve's release notes
 
-Defined in DATA-13 and DATA-14. All 28 release batches have an official note or post. The design canvas matched 27 of 28. The difference: Scarlxrd's "King, Scar" was released on 2019-12-16 (release notes); the canvas used the next day's blog post.
+Defined in DATA-13 and DATA-14. All 25 releases have an official note or post. The design canvas matched 24 of 25. The difference: Scarlxrd's "King, Scar" was released on 2019-12-16 (release notes); the canvas used the next day's blog post.
 - GameTracking commit history and `first_sale_date` were rejected as sources: the first is the tracking bot's time and breaks when folders move; the second is an internal date that runs days to months early.
 
 ## D-009 Default kits
 
 `defIndex` 70 (Valve, CS:GO) is dated 2014-10-10, the day music kits became selectable. `defIndex` 1 (Valve, Counter-Strike 2) is dated 2023-09-27. `defIndex` 2 is shown as the alternate track set of 70, not as a kit.
+- Found later (2026-11-11): the CS2 launch notes of 2023-09-27 also say "CS:GO Players who started playing more than a week ago will receive a commemorative CS:GO coin and CS:GO Music Kit", so 70 became a separate inventory item that day. The 2014-10-10 date stands; the release `note` records the 2023 grant.
 
 ## D-010 "Artists", not "Composers"
 
