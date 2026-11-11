@@ -1,0 +1,620 @@
+{
+  "kits": {
+    "1": {
+      "credit": "Valve",
+      "description": "Counter-Strike 2'nin resmî müzik kiti.",
+      "name": "Valve, Counter-Strike 2",
+      "title": "Counter-Strike 2"
+    },
+    "3": {
+      "credit": "Daniel Sadowski",
+      "description": "Video Oyun Bestecisi Daniel Sadowski hareketli ve canlandırıcı bu müzik paketinde, Heyecanlı Aksiyon müzikleriyle ÇILGIN tempolu ritimleri bir araya getirdi.",
+      "name": "Daniel Sadowski, Crimson Assault",
+      "title": "Crimson Assault"
+    },
+    "4": {
+      "credit": "Noisia",
+      "description": "Hollandalı Elektronik Üçlüsü Noisia, gelenek ve ilerleyişin eşsiz bir karışımını sert ve sinematik bir duyguyla harmanlıyor.",
+      "name": "Noisia, Sharpened",
+      "title": "Sharpened"
+    },
+    "5": {
+      "credit": "Robert Allaire",
+      "description": "Düşmanlarınızı alt etmek ve onları harekete geçirmek için ödüllü besteci Robert Allaire'den seçilmiş bir müzik.",
+      "name": "Robert Allaire, Insurgency",
+      "title": "Insurgency"
+    },
+    "6": {
+      "credit": "Sean Murray",
+      "description": "Dünyanın en büyük iki savaş oyunun bestecisinden, düşmanlarınızı Cehennem Kapılarına götürecek sonik bir mühimmat!!",
+      "name": "Sean Murray, A*D*8",
+      "title": "A*D*8"
+    },
+    "7": {
+      "credit": "Feed Me",
+      "description": "Ünlü elektonik müzisyeni Feed Me, modern elektronik boşluğuna western ezgileri getiriyor.",
+      "name": "Feed Me, High Noon",
+      "title": "High Noon"
+    },
+    "8": {
+      "credit": "Dren",
+      "description": "Oyun müzik bestecisi Dren'in bestelediği bu sinematik, süper kahraman metal türünden esinlenilmiş müzik, LEŞ'e \"eş\" katıyor!",
+      "name": "Dren, Death's Head Demolition",
+      "title": "Death's Head Demolition"
+    },
+    "9": {
+      "credit": "Austin Wintory",
+      "description": "Grammy adaylığı bulunan oyun bestecisi Austin Wintory soruyor, düşmanlarınızı ölümcül, gerçekten çılgın bir tangoyla cezbetmek varken neden avlıyorsunuz?",
+      "name": "Austin Wintory, Desert Fire",
+      "title": "Desert Fire"
+    },
+    "10": {
+      "credit": "Sasha",
+      "description": "Tırmanan tellilere, hareketli melodilere ve canlı davullara sahip, dünyaca ünlü DJ / Yapımcı Sasha'nın bestelediği bu sinematik müziklere kendinizi kaptırın.",
+      "name": "Sasha, LNOE",
+      "title": "LNOE"
+    },
+    "11": {
+      "credit": "Skog",
+      "description": "Metal müzik yapımcısı Skog'dan, saldırganlıktaki ders.",
+      "name": "Skog, Metal",
+      "title": "Metal"
+    },
+    "12": {
+      "credit": "Midnight Riders",
+      "description": "\"İYİ TATİLLER, ****LER!\"\n-Midnight Riders",
+      "name": "Midnight Riders, All I Want for Christmas",
+      "title": "All I Want for Christmas"
+    },
+    "13": {
+      "credit": "Matt Lange",
+      "description": "Elektronik müzik yapımcısı ve yenilikçi Matt Lange'nin müzik paketinde sinematik, bozuk bir atmosferde vurucu ve çarpıcı ritimler ile içsel duygularınızı şımartın.",
+      "name": "Matt Lange, IsoRhythm",
+      "title": "IsoRhythm"
+    },
+    "14": {
+      "credit": "Mateo Messina",
+      "description": "Düşmanlarınıza hükmedin. Grammy ödüllü besteci Mateo Messina'dan saf kuvvet.",
+      "name": "Mateo Messina, For No Mankind",
+      "title": "For No Mankind"
+    },
+    "15": {
+      "credit": "Çeşitli Sanatçılar",
+      "description": "Çeşitli elektronik müzisyenler sert tempoları sevilen Hotline Miami'nin bu neşeli müzik paketinde sunmakta.",
+      "name": "Çeşitli Sanatçılar, Hotline Miami",
+      "title": "Hotline Miami"
+    },
+    "16": {
+      "credit": "Daniel Sadowski",
+      "description": "Besteci Daniel Sadowski, sert elektoronik tempolar, yaratıcı ses efektleri ve canlandırıcı, bağlayıcı, fütüristik bir ortam hazırlayarak çıtayı biraz daha yükseltiyor. \"Dikkat: Adrenalin seviyenizde artışa neden olur!\"",
+      "name": "Daniel Sadowski, Total Domination",
+      "title": "Total Domination"
+    },
+    "17": {
+      "credit": "Damjan Mravunac",
+      "description": "Besteci Damjan Mravunac, Croteam'in oldukça beğenilen yapımı \"The Talos Principle\"dan müzikler içeren bu müzik paketinde, canlandırıcı sinematik ezgileri muhteşem bir koro ile harmanlıyor.",
+      "name": "Damjan Mravunac, The Talos Principle",
+      "title": "The Talos Principle"
+    },
+    "18": {
+      "credit": "Proxy",
+      "description": "Rus Russian Heavy Electronica Sanatçısı PROXY kendi eşsiz ağır toplarını Counter Strike'a getiriyor. Hibrid ses silahlanması ile en iyi stüdyo teknolojisi bu paketi eşsiz kılıyor.",
+      "name": "Proxy, Battlepack",
+      "title": "Battlepack"
+    },
+    "19": {
+      "credit": "Ki:Theory",
+      "description": "Kayıt sanatçısı ve DOTA TI4 sanatçısı Ki:Theory, bu jilet kadar keskin elektronik rock ile BOMBAYI bırakıyor.",
+      "name": "Ki:Theory, MOLOTOV",
+      "title": "MOLOTOV"
+    },
+    "20": {
+      "credit": "Troels Folmann",
+      "description": "Ultra-ödüllü bestekar Troels Folmann'ın bu patlayıcı koleksiyonunda utkulu Blastophone'lar çağdaş Uberpulse'lar ile birleşiyor.",
+      "name": "Troels Folmann, Uber Blasto Phone",
+      "title": "Uber Blasto Phone"
+    },
+    "21": {
+      "credit": "Kelly Bailey",
+      "description": "Kelly Bailey, Valve'ın Half-Life serisinin bestecisi, Half-Life dünyasının karanlık tarafından ilham alan yeni apokaliptik müzik yaratıyor.",
+      "name": "Kelly Bailey, Hazardous Environments",
+      "title": "Hazardous Environments"
+    },
+    "22": {
+      "credit": "Skog",
+      "description": "Metal müzik bestecisi ve yapımcısı Jocke Skog yepyeni ve sert bir metal müzik kiti ile dönerek CS:GO Müzik Takımları'nın kalanını sevimli, samimi ve kıvırcık bir şeye dönüştürüyor. Şimdi git EDO ol ki herkes senin müthişliğini duyabilsin!",
+      "name": "Skog, II-Headshot",
+      "title": "II-Headshot"
+    },
+    "23": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski Counter-Strike için ilk defa tamamı gerçek 8-bit seslerle dolu 8-bit müzik kitini yarattı.",
+      "name": "Daniel Sadowski, The 8-Bit Kit",
+      "title": "The 8-Bit Kit"
+    },
+    "24": {
+      "credit": "AWOLNATION",
+      "description": "AWOLNATION Alternatif Rock sanatçısı AWOLNATION yılların müzik kitini sizlere sunuyor. Bu takım, teklilerden 'I Am' ve çok başarılı 'Sail' şarkılarından derleme bir müzik seçkisiyle dopdolu.",
+      "name": "AWOLNATION, I Am",
+      "title": "I Am"
+    },
+    "25": {
+      "credit": "Mord Fustang",
+      "description": "Elmaslar. Sonsuza kadar. Bu taze ritimler ve atmosferle Mord Fustang'in arpejlerinin içine dalın.",
+      "name": "Mord Fustang, Diamonds",
+      "title": "Diamonds"
+    },
+    "26": {
+      "credit": "Michael Bross",
+      "description": "Michael Bross savaşta gerçek bir baş belası gibi hissetmeniz için destansı / sinematik tekno-grunge müzik yaratıyor.",
+      "name": "Michael Bross, Invasion!",
+      "title": "Invasion!"
+    },
+    "27": {
+      "credit": "Ian Hultquist",
+      "description": "Tellilerle synthlerin nabzını savaş davulları ile birleştiren besteci Ian Hultquist'in bu gümbürtülü müziği ile kendinizi savaşa hazırlayın.",
+      "name": "Ian Hultquist, Lion's Mouth",
+      "title": "Lion's Mouth"
+    },
+    "28": {
+      "credit": "New Beat Fund",
+      "description": "Hip-hop, punk ve garaj pop elementleriyle dopdolu bir sörf rock. Kendin ol ve kafadan vur.",
+      "name": "New Beat Fund, Sponge Fingerz",
+      "title": "Sponge Fingerz"
+    },
+    "29": {
+      "credit": "Beartooth",
+      "description": "Beartooth, kitleleri harekete geçiren ve eşyaları kırdıran, agresif, hardcore bir köklere dönüş vuruşunu sizlere sunuyor. Dürbünsüz scout leşleriniz için mükemmel bir müzik. Ölene kadar Rock!",
+      "name": "Beartooth, Disgusting",
+      "title": "Disgusting"
+    },
+    "30": {
+      "credit": "Lennie Moore",
+      "description": "Oyun Bestecisi Lennie Moore, Jazzy Funk'tan bir aromatik karışım sunuyor. Soğuk iken lezzetli, tıpkı düşmanlarınızın onlarla işiniz bittikten sonraki cesetleri gibi.",
+      "name": "Lennie Moore, Java Havana Funkaloo",
+      "title": "Java Havana Funkaloo"
+    },
+    "31": {
+      "credit": "Darude",
+      "description": "Finlandiyalı müzik yapımcısı Darude'nin tanıdık müzik tadı ve tonlarına özgürce uyum sağlayın. Dans müziğinin en bilinen öncülerinden bir tanesinin, ses bankasının melodik temelinde gezinen parçalar ve progresif armonisinin ağır sentezi ile kendinizi zenginleştirin.",
+      "name": "Darude, Moments CSGO",
+      "title": "Moments CSGO"
+    },
+    "32": {
+      "credit": "Beartooth",
+      "description": "Beartooth ikinci raunt için geri döndü. Bu yeni müzik kiti daha sert ve agresif. Ayrıca EDÖ marşını daha ağır yaptık ki rakipleriniz size karşı kaybettikten sonra iyice kötü hissetsinler.",
+      "name": "Beartooth, Aggressive",
+      "title": "Aggressive"
+    },
+    "33": {
+      "credit": "Blitz Kids",
+      "description": "Britanyalı Pop/Punk grubu Blitz Kids, B bombalama alanına hızlı bir saldırı gerçekleştirirken, lise arkadaşlarınız ile geçirdiğiniz gece gezmelerini hatırlatır. Bu müzik kiti hızlı ve genç hissettirir.",
+      "name": "Blitz Kids, The Good Youth",
+      "title": "The Good Youth"
+    },
+    "34": {
+      "credit": "Hundredth",
+      "description": "Hundredth, melodik hardcore'u kendi tarzlaryla daha ağır bir şekilde dünyaya sunuyor. Bu mükemmel oyun müziği ile değersiz düşmanları öldürürken özgür olun ya da Dust'a geri dönün.",
+      "name": "Hundredth, FREE",
+      "title": "FREE"
+    },
+    "35": {
+      "credit": "Neck Deep",
+      "description": "Günü geçirmek için bazen sadece Pop Punk'a ihtiyaç duyarsınız. Bu ister pusucular olsun ister oldukça fazla arka arkaya leş almayı kaybetmek olsun, Neck Deep size yaşamın peşinizde olmadığını (Life's Not Out To Get You) ancak diğer takımın peşinizde olduğunu göstermek için burada.",
+      "name": "Neck Deep, Life's Not Out To Get You",
+      "title": "Life's Not Out To Get You"
+    },
+    "36": {
+      "credit": "Roam",
+      "description": "Roam hızlı, gelişi güzel bir Pop Punk sunarak kalabalık veya oyuncu gözetmeden herkesi coşturuyor. Backbone isimli bu muhteşem müzik kiti, hızlı saldırılarda düşman takımı aniden ezerek, onları ölü ağırlık olduklarına inandırmak için birebir.",
+      "name": "Roam, Backbone",
+      "title": "Backbone"
+    },
+    "37": {
+      "credit": "Twin Atlantic",
+      "description": "Daha ağır, daha gürültücü ve daha gürültülü olan Twin Atlantic, CS:GO'ya sizin düşmanlarınızın yüzlerini İskoç rock'ının ateş gücüyle eritmeye yardıma hazır bir şekilde geliyor.",
+      "name": "Twin Atlantic, GLA",
+      "title": "GLA"
+    },
+    "38": {
+      "credit": "Skog",
+      "description": "Skog üçüncü ezici metal kitiyle tekrar geri döndü. Bu sefer elektro-organik tınılara sahip müziğiyle yoğun gitar riff'leri ve bir o kadar daha yoğun döngü elementleri ve drone'ları birleştiriyor.",
+      "name": "Skog, III-Arena",
+      "title": "III-Arena"
+    },
+    "39": {
+      "credit": "The Verkkars",
+      "description": "The Verkkars, ENCE'e hitaben yaptıkları bu coşkulu şarkıyla Finlandiya'daki müzik listelerini tırmandı. Gerçekten de bu kadar EZ olabilir mi?",
+      "name": "The Verkkars, EZ4ENCE",
+      "title": "EZ4ENCE"
+    },
+    "40": {
+      "credit": "Halo",
+      "description": "Halo evreninden ikonik müzik anlarını içeren Master Chief Collection Müzik Paketi ile Counter Strike ses deneyiminize efsanevi bir değişiklik uygulayın. © 2019 343 Industries. Tüm hakları saklıdır. 343 Industries izni ile kullanılmıştır. Halo: The Master Chief Collection ve Halo logosu Microsoft şirketler grubunun ticari markalarıdır.",
+      "name": "Halo, The Master Chief Collection",
+      "title": "The Master Chief Collection"
+    },
+    "41": {
+      "credit": "Scarlxrd",
+      "description": "Scarlxrd yoğun trap tempolarını içeren akışa ve performansa sahip bu parçasıyla kendine has benzersiz bir alt tür meydana getiriyor. Heyecan verici bu müzik karışımı sayesinde canlı performanslarında seyircilerin bütün ilgisini kendi üzerinde toplamayı başarabiliyor.",
+      "name": "Scarlxrd: King, Scar",
+      "title": "King, Scar"
+    },
+    "42": {
+      "credit": "Half-Life: Alyx",
+      "description": "Bu müzik kiti, Valve'ın Half-Life serisine VR ile döndüğü son oyunu olan Half-Life: Alyx'in anısınadır. İnsanlığın hayatta kalmak için son umudu sensin ve seni sürüklemeye devam eden maceraları Counter-Strike: Global Offensive'te de yaşamaya devam edebileceksin.",
+      "name": "Half-Life: Alyx, Bölücü",
+      "title": "Bölücü"
+    },
+    "43": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory, türler arasındaki sınırı kaldırdığı bu müzik kitinde Kelt fantezisini elektronik müzikle ve Peter Hollens'ın vokalleriyle bir araya getiriyor.",
+      "name": "Austin Wintory, Bachram",
+      "title": "Bachram"
+    },
+    "44": {
+      "credit": "Dren",
+      "description": "Bağımsız popüler oyunlardan Gunman Taco Truck'ın kıyamet sonrası Meksika tınılı oyun müziği albümünde yer alan Pollo Diablo ve Persecución de Helltain gibi parçalar CS:GO'ya geliyor!",
+      "name": "Dren, Gunman Taco Truck",
+      "title": "Gunman Taco Truck"
+    },
+    "45": {
+      "credit": "Daniel Sadowski",
+      "description": "\"Total Domination\", \"The 8-Bit Kit\" ve \"Crimson Assault\"un bestecisinden, karşınızda \"Eye Of The Dragon\". Müzik bestecisi Daniel Sadowski; tekno, hip-hop, ninjalar ve silahları bir araya getirerek aksiyon dolu bir müzik kiti yarattı. Ninjalar, düşmanlarına görünmeden yaptıkları hızlı ve kusursuz saldırılarıyla bilinir.",
+      "name": "Daniel Sadowski, Eye of the Dragon",
+      "title": "Eye of the Dragon"
+    },
+    "46": {
+      "credit": "Tree Adams ve Ben Bromfield",
+      "description": "Kaosun mimarlarından M.U.D.D. FORCE ve besteciler Tree Adams ile Ben Bromfield, efsanevi savaş motiflerini ve ezici synth'leri birleştirerek bir yıkım fırtınası oluşturuyor.",
+      "name": "Tree Adams ve Ben Bromfield, M.U.D.D. FORCE",
+      "title": "M.U.D.D. FORCE"
+    },
+    "47": {
+      "credit": "Tim Huling",
+      "description": "Besteci Tim Huling bu parçasında, klasik film noir tarzı müziğini günümüz modern tempolarıyla harmanlıyor.",
+      "name": "Tim Huling, Neo Noir",
+      "title": "Neo Noir"
+    },
+    "48": {
+      "credit": "Sam Marshall",
+      "description": "90'lı yılların başlarındaki oyunların eğlenceli müziklerinden ilham alan besteci Sam Marshall, bu parçayla modern soslu nostaljik bir klasik oyun müziği ortaya çıkarıyor.",
+      "name": "Sam Marshall, Bodacious",
+      "title": "Bodacious"
+    },
+    "49": {
+      "credit": "Matt Levine",
+      "description": "Besteci Matt Levine, Spagetti Western türündeki filmlere saygı duruşunda bulunduğu bu sert parçayla sizi havaya sokacak. \"Haydi, bir yamuk yap da görelim...\" demek daha önce hiç bu kadar iyi hissettirmemişti.",
+      "name": "Matt Levine, Drifter",
+      "title": "Drifter"
+    },
+    "50": {
+      "credit": "Amon Tobin",
+      "description": "Efsanevi yapımcı Amon Tobin, benzersiz tarzını bu sefer tüp amfiler kullanarak CS:GO'ya getiriyor.",
+      "name": "Amon Tobin, All for Dust",
+      "title": "All for Dust"
+    },
+    "51": {
+      "credit": "Darren Korb",
+      "description": "Ara sıra atış kaçırdığın olmuştur fakat Supergiant Games'in rogue-like dungeon crawler oyunu olan Hades'in yer altından çıkma bu kan kaynatıcı müzik setiyle artık her atışını isabetli olacak.",
+      "name": "Darren Korb, Hades Müzik Kiti",
+      "title": "Hades Müzik Kiti"
+    },
+    "52": {
+      "credit": "Neck Deep",
+      "description": "Grubun All Distortions Are Intentional adlı albümünden parçaları içeren Neck Deep müzik kitiyle bir normie olmadığını, maçtaki herkesten iyi olduğunu kanıtla.",
+      "name": "Neck Deep, The Lowlife Pack",
+      "title": "The Lowlife Pack"
+    },
+    "53": {
+      "credit": "Scarlxrd",
+      "description": "CHAIN$AW, FENA BİR FLOW VE BUNA GİDECEK SERTLİKTE BİR PARÇAYLA SCARLXRD'Yİ BİR SONRAKİ SEVİYEYE TAŞIYOR.",
+      "name": "Scarlxrd, CHAIN$AW.LXADXUT.",
+      "title": "CHAIN$AW.LXADXUT."
+    },
+    "54": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory insanların asırlardır sorduğu soruyu cevaplıyor: Bira bahçesi akordeon polka müziğini grungy heavy metal ile birleştirince ne olur?",
+      "name": "Austin Wintory, Mocha Petal",
+      "title": "Mocha Petal"
+    },
+    "55": {
+      "credit": "Chipzel",
+      "description": "Video oyunu bestecisi ve chiptune efsanesi Chipzel, Speak & Spell'in robotik seslerinden aldığı ilhamla hibrit stilleri bir araya getirerek ortaya eğlence, funk ve zevkle dolu bir çalışma çıkartıyor.",
+      "name": "Chipzel, ~Yellow Magic~",
+      "title": "~Yellow Magic~"
+    },
+    "56": {
+      "credit": "Freaky DNA",
+      "description": "Opera. 8 bitlik sesler. Analog synth'ler. Sevilmeyecek ne var ki? Chiptune uzmanı Freaky DNA ve soprano Leanne Koch, sert tempolar içeren ve keyifli zaman geçirtecek bir parça ortaya çıkarmak için bir araya geldi!",
+      "name": "Freaky DNA, Vici",
+      "title": "Vici"
+    },
+    "57": {
+      "credit": "Jesse Harlin",
+      "description": "Besteci Jesse Harlin, 70'ler, 80'ler ve ötesindeki klasik bilim kurgularından esinlenen, gösterişli bir uzay operası draması sunuyor.",
+      "name": "Jesse Harlin, Astro Bellum",
+      "title": "Astro Bellum"
+    },
+    "58": {
+      "credit": "Laura Shigihara",
+      "description": "Video oyunu bestecisi ve geliştiricisi Laura Shigihara, herkese yüksek sesle ve gururla EDO olduğunuzu söylemenize yardımcı olacak. 90'ların dans müziklerinin, retro video oyunu synth'lerinin ve hafif Plants vs. Zombies tınılarının bir araya geldiği bu eşsiz parçanın tadını çıkarın.",
+      "name": "Laura Shigihara: Work Hard, Play Hard",
+      "title": "Work Hard, Play Hard"
+    },
+    "59": {
+      "credit": "Sarah Schachner",
+      "description": "Sarah Schachner tarafından bestelendi: Bilinç sahibi İskandinav robotlardan oluşan distopik gotik bir koro, insanlığın ortadan kaldırılması gerektiğine karar veriyor.",
+      "name": "Sarah Schachner, KOLIBRI",
+      "title": "KOLIBRI"
+    },
+    "60": {
+      "credit": "bbno$",
+      "description": "bbno$ toksik oyuncuların marşını yaptı: \"u mad! Are u mad? LOL get good scrub\". Yapılan araştırmalar gösteriyor ki bu müzik kitiyle oynamak, oyuncuyu Gümüş'ten Dünyaca Seçkin'e taşıyor.",
+      "name": "bbno$, u mad!",
+      "title": "u mad!"
+    },
+    "61": {
+      "credit": "The Verkkars ve n0thing",
+      "description": "Güneşli Kaliforniya'dan dondurucu Lapland'a, Counter-Strike'ın efsane ismi n0thing ve The Verkkars güçlerini birleştirip hit şarkıları Flashbang Dance'ı yarattılar! 3, 2, 1 ve kör oldun!",
+      "name": "The Verkkars ve n0thing, Flashbang Dance",
+      "title": "Flashbang Dance"
+    },
+    "62": {
+      "credit": "3kliksphilip",
+      "description": "Profesyonel olma arayışında mısın yoksa istemeden rütbe mi düşüyorsun? Bu müzik kitinin 80'ler synthesizer efektleri ve rüyamsı melodileriyle sizi geri götürmesine izin verin. Geçmişe, daha da geçmişe... eski güzel günlere.",
+      "name": "3kliksphilip, Heading for the Source",
+      "title": "Heading for the Source"
+    },
+    "63": {
+      "credit": "Humanity's Last Breath",
+      "description": "İsveçli Grup Humanity's Last Breath'in Void Müzik Kiti ile ortam ağırlaşıyor. Gümbür gümbür davullar, devasa riff'ler ve tüylerinizi diken diken edecek bir atmosfer.",
+      "name": "Humanity's Last Breath, Void",
+      "title": "Void"
+    },
+    "64": {
+      "credit": "Juelz",
+      "description": "Neo trap synth'leri, cesur 808'ler, epik bir piyano riff'i ve çok sayıda silah sesi efekti. Juelz'in orijinal trap marşı \"Shooters\" gerçekten seçkin bir müzik kitidir ve sadece EDO'lar için uygundur.",
+      "name": "Juelz, Shooters",
+      "title": "Shooters"
+    },
+    "65": {
+      "credit": "Knock2",
+      "description": "Knock2'nin ikonik bas house marşı olan dashstar*, genç San Diego yerlisinin \"limit yok\" mottosunun bitmeyen enerjisini yansıtıyor.",
+      "name": "Knock2, dashstar*",
+      "title": "dashstar*"
+    },
+    "66": {
+      "credit": "Meechy Darko",
+      "description": "Glock'unu kap ve bu müzik kitini kuşan; kendini bir anda New York'un yeraltı hip-hop dünyasında bulacaksın.",
+      "name": "Meechy Darko, Gothic Luxury",
+      "title": "Gothic Luxury"
+    },
+    "67": {
+      "credit": "Sullivan King",
+      "description": "Kovalamayı sever misin? Avlanmayı sever misin? Sullivan King'in seni durdurulamaz yapacak bu parçasında hard rock, metal ve dubstep bir araya geliyor.",
+      "name": "Sullivan King, Lock Me Up",
+      "title": "Lock Me Up"
+    },
+    "68": {
+      "credit": "Perfect World",
+      "description": "CS:GO'nu Çin'deki beşinci çıkış yıl dönümünü benzersiz bir müzik kiti olan 花脸 Hua Lian (Painted Face) ile kutlayın. Bu kit, halk Qinqiang operasını (erken Çin tarzı rock) ve modern rock'ı bir araya getiriyor. İster her yanınız sisle kaplanmış olsun, ister flaşla kör edilmiş olun; sakın kaybolmayın!",
+      "name": "Perfect World, 花脸 Hua Lian (Painted Face)",
+      "title": "花脸 Hua Lian (Painted Face)"
+    },
+    "69": {
+      "credit": "Denzel Curry",
+      "description": "Denzel, trap, caz, davul ve bas ritimleri arasında gidip gelirken kendine özgü enerjisini Counter-Strike'a getiriyor. Bu kit, Denzel'in hit şarkıları \"Walkin\", \"ULTIMATE\" ve daha fazlasını içerir, bu nedenle nikel kaplama krom Beretta'ları çıkarın ve ULTIMATE müzik kitiyle yoğunluğu artırın.",
+      "name": "Denzel Curry, ULTIMATE",
+      "title": "ULTIMATE"
+    },
+    "70": {
+      "credit": "Valve",
+      "description": "Varsayılan CS:GO müzik kiti, 2012 yılında CS:GO'yla birlikte çıktı.",
+      "name": "Valve, CS:GO",
+      "title": "CS:GO"
+    },
+    "71": {
+      "credit": "DRYDEN",
+      "description": "Daha başka ne söylenebilir ki? Gücü hisset. DRYDEN'in bu yüksek enerjili elektronik müzik kiti ile hedefe kilitlenin.",
+      "name": "DRYDEN, Feel The Power",
+      "title": "Feel The Power"
+    },
+    "72": {
+      "credit": "ISOxo",
+      "description": "Sizi farklı hissettiren oyunlara özel yapıldı. ISOxo'nun \"inhuman\" müzik kiti ile düşmanlarınızı oyun boyunca avlayın.",
+      "name": "ISOxo, inhuman",
+      "title": "inhuman"
+    },
+    "73": {
+      "credit": "KILL SCRIPT",
+      "description": "Bir âşık mısın yoksa bir dövüşçü mü? Belki de her ikisi? KILL SCRIPT'in \"All Night\" müzik kiti ile bunu bütün lobiye göster.",
+      "name": "KILL SCRIPT, All Night",
+      "title": "All Night"
+    },
+    "74": {
+      "credit": "Knock2",
+      "description": "İşin sonunda sadece birkaç yüz CS derecesi olsa bile her maçı Major'un büyük finaliymiş gibi oynayan oyuncular için. Enerjiyi ve galibiyetleri Knock2'nin ikinci müzik kiti “Make U SWEAT!” ile getirin.",
+      "name": "Knock2, Make U SWEAT!",
+      "title": "Make U SWEAT!"
+    },
+    "75": {
+      "credit": "Rad Cat",
+      "description": "Bazen bombayı imha etmek raundun EDO'su olmak için yeterlidir. Rad Cat'in \"Reason\" müzik kiti ile büyük veya küçük her anı kutlayın.",
+      "name": "Rad Cat, Reason",
+      "title": "Reason"
+    },
+    "76": {
+      "credit": "TWERL ve Ekko & Sidetrack",
+      "description": "Canlanmak için spot ışığında olmaktan daha iyi bir zaman olamaz. TWERL ve Ekko & Sidetrack'in davul ve bas marşı \"Under Bright Lights\"ın sizi ve ekibinizi yeni zirvelere taşımasına izin verin.",
+      "name": "TWERL ve Ekko & Sidetrack, Under Bright Lights",
+      "title": "Under Bright Lights"
+    },
+    "78": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory, şeytanla bir anlaşma yaparak şeytani keman müziğini EDM kulübü havasıyla birleştiriyor.",
+      "name": "Austin Wintory, The Devil Went Clubbing in Georgia",
+      "title": "The Devil Went Clubbing in Georgia"
+    },
+    "79": {
+      "credit": "Ben Bromfield",
+      "description": "İhanete uğradınız! Film ve TV bestecisi Ben Bromfield'ın bu yüksek riskli, kasvetli, gergin ve cazdan esinlenen parçasını dinlerken bu tavşan deliğinin ne kadar derin olduğunu keşfedin...",
+      "name": "Ben Bromfield, Rabbit Hole",
+      "title": "Rabbit Hole"
+    },
+    "80": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski, oyuncuları aksiyon, hip-hop, orkestra, elektronik, retro, duygu ve ses tasarımının bir karışımı olan \"Dead Shot\" dünyasına davet ediyor. Kafanızı koruyun!",
+      "name": "Daniel Sadowski, Dead Shot",
+      "title": "Dead Shot"
+    },
+    "81": {
+      "credit": "Dren McDonald",
+      "description": "Kafein dostunuzdur. Düşmanınız hariç herkesin dostudur! \"Coffee! Kofe! Kahveh!\", Dren McDonald'ın (\"Gunman Taco Truck\" and \"Death’s Head Demolition\") Balkancisco'daki BalkanBalkanBalkan! sokak partisinde canlı olarak kaydedilen parçasıdır!",
+      "name": "Dren McDonald, Coffee! Kofe! Kahveh!",
+      "title": "Coffee! Kofe! Kahveh!"
+    },
+    "82": {
+      "credit": "Matt Levine",
+      "description": "Besteci Matt Levine'in \"Agency\" müzik kitiyle casusluğun tehlikeli dünyasına adım atın.",
+      "name": "Matt Levine, Agency",
+      "title": "Agency"
+    },
+    "83": {
+      "credit": "Sam Marshall",
+      "description": "“Bodacious\"un onaylanmamış devamı olan “Clutch”, Sam Marshall'ın simya ve gizli ritüel yoluyla yeniden hayata döndürdüğü siber funk havasında ve kâbus gibi bir ucubedir.",
+      "name": "Sam Marshall, Clutch",
+      "title": "Clutch"
+    },
+    "84": {
+      "credit": "Tim Huling",
+      "description": "Tim Huling'in \"Devil's Paintbrush\" eseriyle yüksek enerjili groove-metal deneyimiyle adrenalininizi yükseltin.",
+      "name": "Tim Huling, Devil's Paintbrush",
+      "title": "Devil's Paintbrush"
+    },
+    "85": {
+      "credit": "Tree Adams",
+      "description": "\"Seventh Moon\"da Tree Adams, sürükleyici bir savaş müziğiyle galaksiler arası funk'ın yağlı bir karışımını bir araya getiriyor.",
+      "name": "Tree Adams, Seventh Moon",
+      "title": "Seventh Moon"
+    },
+    "86": {
+      "credit": "Perfect World",
+      "description": "Geleneksel Çin halk müziğini ve elektronik müziğini birleştiren “Ay Hey”, farklı yaş ve geçmişteki oyuncuları birbirine bağlamak için canlı hikaye anlatımı ve enerjik ritimler sunuyor. Oyuncuların oyuna olan coşkusunu eşleştiren canlı ritmi ile “Ay Hey”, çeşitli komik ve eğlenceli savaş sahnelerini canlı bir şekilde yakalar.",
+      "name": "Perfect World, Ay Hey",
+      "title": "Ay Hey"
+    },
+    "87": {
+      "credit": "Adam Beyer",
+      "description": "İsveçli tekno efsanesi Adam Beyer, düşmanlarınızı kırmızıya boyamanıza yardımcı olmak için size rüya gibi bir müzik kiti sunuyor.",
+      "name": "Adam Beyer, Red Room",
+      "title": "Red Room"
+    },
+    "88": {
+      "credit": "Ghost",
+      "description": "RUHBANLARDAN MESAJ—Papa V. Perpetua, görkemli bir heavy metal gösterisiyle Counter-Strike'a geldi. Kutsal Olmayan Makam'a dua ederken ve ateşler saçarken günlük hayatın zorluklarından kaçın.",
+      "name": "Ghost, Skeletá",
+      "title": "Skeletá"
+    },
+    "89": {
+      "credit": "HEALTH",
+      "description": "Counter-Strike'da HEALTH'i deneyimleyin. Silahlarınızı alın ve RAT WARS'ın acımasız ve cezalandırıcı endüstriyel metal sesinin tadını çıkarın.",
+      "name": "HEALTH, RAT WARS",
+      "title": "RAT WARS"
+    },
+    "90": {
+      "credit": "James and the Cold Gun",
+      "description": "Galli rock ikilisi James and the Cold Gun saf, filtrelenmemiş enerjiyi açığa çıkarıyor ve klasik punk tavrını modern alt-rock ateşiyle harmanlayarak nefes kesici bir müzik kiti sunuyor.",
+      "name": "James and the Cold Gun, Chewing Glass",
+      "title": "Chewing Glass"
+    },
+    "91": {
+      "credit": "Jonathan Young",
+      "description": "Uzay korsanı power metali, oyununuzda eksik olan şeydi. Starship Velociraptor ile bir gezintiye çıkın ve Jonathan Young'ın anime ve video oyunlarından ilham alan albümünün maçlarınızı başka bir seviyeye taşımasına izin verin.",
+      "name": "Jonathan Young, Starship Velociraptor",
+      "title": "Starship Velociraptor"
+    },
+    "92": {
+      "credit": "Juelz",
+      "description": "Alana mı ihtiyacınız var? Juelz'in ilk albümünden bu büyük müzik kiti neo-rave synth parçaları, sert baslar ve sert trap davulları içerir. Floorspace Counter-Strike 2 için yeniden tasarlandı ve EDO marşı \"Gossip\" oyuncuları bir LED duvarı kurmaya ve onu parçalamaya teşvik ediyor.",
+      "name": "Juelz, Floorspace",
+      "title": "Floorspace"
+    },
+    "93": {
+      "credit": "Killer Mike",
+      "description": "Counter-Strike'ta üç kez GRAMMY Ödülü kazanan hip-hop albümünün tadını çıkarın. Sıralamanızı yükseltip becerilerinizi geliştirirken Killer Mike'ın sesi sizi motive edecek.",
+      "name": "Killer Mike, MICHAEL",
+      "title": "MICHAEL"
+    },
+    "94": {
+      "credit": "PVRIS",
+      "description": "İyi bir düşmandan daha çok sevdiğimiz tek şey nedir? İyi müzik. PVRIS'in yeni müzik kitiyle takımınızı motive edebilir ve zafer serinizi sürdürebilirsiniz.",
+      "name": "PVRIS, Evergreen",
+      "title": "Evergreen"
+    },
+    "95": {
+      "credit": "Selective Response",
+      "description": "Amerikan tekno ikonu Selective Response'ın bu dinamik, yüksek enerjili müzik kiti ile arzularınızı artırın. Şarj edilmiş ve harekete hazır.",
+      "name": "Selective Response, No Love Only Pleasure",
+      "title": "No Love Only Pleasure"
+    },
+    "96": {
+      "credit": "Tigercub",
+      "description": "İngiliz rock grubu Tigercub, alternatif rock'ın ham yoğunluğunu karanlık ve modern bir dokunuşla birleştirerek güçlü ve melodik bir ses yaratıyor ve ortaya muhteşem bir müzik kiti çıkıyor.",
+      "name": "Tigercub, The Perfume of Decay",
+      "title": "The Perfume of Decay"
+    },
+    "98": {
+      "credit": "ALRT",
+      "description": "ALRT'nin hareketli bass house parçası \"DOPAMINE HIT\", odaklanmanızı ve en önemli anlarda hazır olmanızı sağlıyor.",
+      "name": "ALRT, DOPAMINE HIT",
+      "title": "DOPAMINE HIT"
+    },
+    "99": {
+      "credit": "Altare",
+      "description": "Altare'in coşkulu marşı \"Change My Mind\", kimsenin size karşı koyamadığı, en tepede olduğunuz anlar için mükemmeldir.",
+      "name": "Altare, Change My Mind",
+      "title": "Change My Mind"
+    },
+    "100": {
+      "credit": "borne",
+      "description": "borne'un kendine özgü bas ağırlıklı şarkısı \"Give It To Me\", oyuncuları Counter-Strike'taki ve ve hatta hayattaki rakiplerine karşı hazırlayacak.",
+      "name": "borne, Give It To Me",
+      "title": "Give It To Me"
+    },
+    "101": {
+      "credit": "Pirapus",
+      "description": "Pirapus'un hareketli davul ve bas ağırlıklı marşı \"EVERYNITE\", harika başarıların eşiğinde olma hissini uyandırıyor. Adından da anlaşılacağı üzere, bu parça her gece konsantrasyon sağlıyor.",
+      "name": "Pirapus, EVERYNITE",
+      "title": "EVERYNITE"
+    },
+    "102": {
+      "credit": "Repiet & Julia Kleijn",
+      "description": "Repiet ve Julia Kleijn'ın dillere dolanan parçası \"On And On\" ile her türlü zorluğa hazırlıklı olun. İyi ve kötü anlarda her türlü engeli aşmak için gereken motivasyonu sağlayan bir melodi.",
+      "name": "Repiet & Julia Kleijn, On And On",
+      "title": "On And On"
+    },
+    "103": {
+      "credit": "ShockOne",
+      "description": "ShockOne'ın yüksek enerjili davul ve bas ağırlıklı parçası \"Voices\" ile özgürlüğe kavuşun. Kritik anlar için hazırlanan bu müzik kiti, size defalarca EDO ünvanını kazandıracak etkili bas bölümleri içerir.",
+      "name": "ShockOne, Voices",
+      "title": "Voices"
+    },
+    "104": {
+      "credit": "Starjunk 95",
+      "description": "Galaksinin en havalı istasyonunun müzik kitini deneyimleyin. Geçmişin nostaljisini bugünün yepyeni sesleri ile harmanlıyor. Starjunk 95'i dinliyorsunuz.",
+      "name": "Starjunk 95, Industrial Sunset Memories",
+      "title": "Industrial Sunset Memories"
+    }
+  },
+  "releases": {
+    "2016-11-28-radicals": "StatTrak™ Radikaller Kutusu",
+    "2020-04-16-masterminds": "Masterminds Müzik Kiti Kutusu",
+    "2021-08-12-tacticians": "Taktisyenler Müzik Kiti Kutusu",
+    "2022-08-23-initiators": "Initiators Müzik Kiti Kutusu",
+    "2024-02-06-nightmode": "NIGHTMODE Müzik Kiti Kutusu",
+    "2024-08-20-masterminds-2": "Masterminds 2 Müzik Kiti Kutusu",
+    "2025-08-14-deluge": "Deluge Müzik Kiti Kutusu",
+    "2026-05-07-nightmode-ii": "NIGHTMODE II Müzik Kitleri"
+  }
+}

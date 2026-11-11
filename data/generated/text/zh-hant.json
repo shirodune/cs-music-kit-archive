@@ -1,0 +1,620 @@
+{
+  "kits": {
+    "1": {
+      "credit": "Valve",
+      "description": "絕對武力 2 的官方音樂包。",
+      "name": "Valve - 《絕對武力 2》",
+      "title": "《絕對武力 2》"
+    },
+    "3": {
+      "credit": "Daniel Sadowski",
+      "description": "遊戲音樂作曲家 Daniel Sadowski 為音樂包創作了狂熱旋律，既前衛又激昂，讓人激奮不已。",
+      "name": "Daniel Sadowski - Crimson Assault",
+      "title": "Crimson Assault"
+    },
+    "4": {
+      "credit": "Noisia",
+      "description": "荷蘭電子樂三人組 Noisia 帶來的音樂強悍有電影感，以獨特的方式融合了傳統與創新。",
+      "name": "Noisia - Sharpened",
+      "title": "Sharpened"
+    },
+    "5": {
+      "credit": "Robert Allaire",
+      "description": "用音樂碾碎您的敵人。讓他們因獲獎作曲家 Robert Allaire 比你先走一步吧。",
+      "name": "Robert Allaire - Insurgency",
+      "title": "Insurgency"
+    },
+    "6": {
+      "credit": "Sean Murray",
+      "description": "由世上最大兩款戰爭遊戲的作曲家，以音波武裝將您的敵人送入地獄之門！！",
+      "name": "Sean Murray - A*D*8",
+      "title": "A*D*8"
+    },
+    "7": {
+      "credit": "Feed Me",
+      "description": "知名電子音樂人 Feed Me 所呈現的是現代電子空間中的西部拓荒大秀。",
+      "name": "Feed Me - High Noon",
+      "title": "High Noon"
+    },
+    "8": {
+      "credit": "Dren",
+      "description": "由遊戲音樂作曲家 Dren 製作，這電影超級英雄金屬風的音樂包將使菜雞蛻變成大殺器！",
+      "name": "Dren - Death's Head Demolition",
+      "title": "Death's Head Demolition"
+    },
+    "9": {
+      "credit": "Austin Wintory",
+      "description": "獲葛萊美獎提名的遊戲配樂作曲人 Austin Wintory 提問了，如果能用一個致命的瘋狂探戈把敵人引誘過來，又何必那麼麻煩的追著他們跑？",
+      "name": "Austin Wintory - Desert Fire",
+      "title": "Desert Fire"
+    },
+    "10": {
+      "credit": "Sasha",
+      "description": "讓自己沉浸在這支電影般的原聲帶中，滿滿的飛揚弦樂、動人旋律還有鼓聲震動，全都出自舉世知名的 DJ 兼製作人 Sasha 之手。",
+      "name": "Sasha - LNOE",
+      "title": "LNOE"
+    },
+    "11": {
+      "credit": "Skog",
+      "description": "讓金屬樂創作者 Skog 教教您什麼才是煞氣。",
+      "name": "Skog - Metal",
+      "title": "Metal"
+    },
+    "12": {
+      "credit": "Midnight Riders",
+      "description": "「佳節快樂，**蛋們！」\n-Midnight Riders",
+      "name": "Midnight Riders - All I Want for Christmas",
+      "title": "All I Want for Christmas"
+    },
+    "13": {
+      "credit": "Matt Lange",
+      "description": "來場聽覺饗宴，這是一個具電影感、干擾氛圍和強力搏動韻律的組曲，由電子樂製作人兼創新人士 Matt Lange 製做。",
+      "name": "Matt Lange - IsoRhythm",
+      "title": "IsoRhythm"
+    },
+    "14": {
+      "credit": "Mateo Messina",
+      "description": "玩弄敵人於掌心。由葛萊美得獎作曲家 Mateo Messina 獻上的純粹震撼力。",
+      "name": "Mateo Messina - For No Mankind",
+      "title": "For No Mankind"
+    },
+    "15": {
+      "credit": "Various Artists",
+      "description": "由風格各異的電子音樂人共同出手，在指標性遊戲《Hotline Miami》這個振奮人心的音樂包中帶來殘暴的節奏打擊。",
+      "name": "Various Artists - Hotline Miami",
+      "title": "Hotline Miami"
+    },
+    "16": {
+      "credit": "Daniel Sadowski",
+      "description": "作曲家 Daniel Sadowski 把整個門檻都提高了，這組作品充滿激進的電子樂節奏、創意音效和一種令人興奮又有未來感的氛圍。「小心：腎上腺素即將飆高！」",
+      "name": "Daniel Sadowski - Total Domination",
+      "title": "Total Domination"
+    },
+    "17": {
+      "credit": "Damjan Mravunac",
+      "description": "作曲家 Damjan Mravunac 所創作的音樂包混合了電影般的能量動感與史詩般的合唱於一身，擷取了 Croteam 出品、極富盛名的作品《The Talos Principle》的音樂精華。",
+      "name": "Damjan Mravunac - The Talos Principle",
+      "title": "The Talos Principle"
+    },
+    "18": {
+      "credit": "Proxy",
+      "description": "俄式重度電音藝術家 PROXY 為絕對武力帶來了他自己獨特的重砲。合成武器音效與最精細的混音室技術交迸出的火花創造了這份獨一無二的音樂包。",
+      "name": "Proxy - Battlepack",
+      "title": "Battlepack"
+    },
+    "19": {
+      "credit": "Ki:Theory",
+      "description": "錄音藝術家兼 Dota 第 4 屆國際錦標賽上的表演者 Ki:Theory 投下重磅巨彈！帶來這組燙手的銳利電子黑暗搖滾音樂包。",
+      "name": "Ki:Theory - MOLOTOV",
+      "title": "MOLOTOV"
+    },
+    "20": {
+      "credit": "Troels Folmann",
+      "description": "勝利號角般的樂聲結合現代性的脈動創造出這套炸裂全場的組曲，創作者為贏得無數獎項的得獎作曲家 Troels Folmann。",
+      "name": "Troels Folmann - Uber Blasto Phone",
+      "title": "Uber Blasto Phone"
+    },
+    "21": {
+      "credit": "Kelly Bailey",
+      "description": "Kelly Bailey，Valve《戰慄時空》系列的作曲家，創作出一組了受《戰慄時空》宇宙的黑暗面啟發的全新末世風音樂。",
+      "name": "Kelly Bailey - Hazardous Environments",
+      "title": "Hazardous Environments"
+    },
+    "22": {
+      "credit": "Skog",
+      "description": "金屬樂作曲家兼製作人 Jocke Skog 帶著全新的強力重擊金屬音樂包回歸。此組曲一出，其它 CS:GO 音樂包都成了可愛溫馨舒適小曲。現在就去贏得 MVP 讓每個人都聽見您有多厲害！",
+      "name": "Skog - II-Headshot",
+      "title": "II-Headshot"
+    },
+    "23": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski 使用純正的 8 位元音效為絕對武力創作了首個 8 位元音樂包。",
+      "name": "Daniel Sadowski - The 8-Bit Kit",
+      "title": "The 8-Bit Kit"
+    },
+    "24": {
+      "credit": "AWOLNATION",
+      "description": "AWOLNATION 另類搖滾樂團 AWOLNATION 為您帶來值得永久珍藏的音樂包。此音樂包收錄了多首曲風迥異的金曲，以及單曲\"I Am\"和多白金銷量的熱門歌曲\"Sail\"片段。",
+      "name": "AWOLNATION - I Am",
+      "title": "I Am"
+    },
+    "25": {
+      "credit": "Mord Fustang",
+      "description": "鑽石恆久遠，一顆永流傳。投入 Mord Fustang 的快速電子琶音之中，享受這一組全新的律動與氛圍。",
+      "name": "Mord Fustang - Diamonds",
+      "title": "Diamonds"
+    },
+    "26": {
+      "credit": "Michael Bross",
+      "description": "Michael Bross 結合了史詩與電影在鐵克諾加頹廢搖滾的樂音之中，讓您在戰鬥中充滿身為狠角色的感受。",
+      "name": "Michael Bross - Invasion!",
+      "title": "Invasion!"
+    },
+    "27": {
+      "credit": "Ian Hultquist",
+      "description": "混合了讓人悸動的弦樂與合成樂，再加上隆隆的戰鼓聲，作曲家 Ian Hultquist 帶來的強有力原聲帶讓您準備好上戰場一較高下。",
+      "name": "Ian Hultquist - Lion's Mouth",
+      "title": "Lion's Mouth"
+    },
+    "28": {
+      "credit": "New Beat Fund",
+      "description": "陽光衝浪搖滾加上嘻哈、龐克與車庫流行元素。放手一戰，爆頭擊殺。",
+      "name": "New Beat Fund - Sponge Fingerz",
+      "title": "Sponge Fingerz"
+    },
+    "29": {
+      "credit": "Beartooth",
+      "description": "Beartooth 帶來能讓觀眾燥動起來、氣勢洶洶的返璞歸真重硬核節奏。最適合在用 Scout 不用開鏡擊殺敵人時聆聽。盡情搖滾，至死方休！",
+      "name": "Beartooth - Disgusting",
+      "title": "Disgusting"
+    },
+    "30": {
+      "credit": "Lennie Moore",
+      "description": "遊戲作曲家 Lennie Moore 獻上一道芳香又辛辣的爵士放克。冷冷地聽也對味，正像被您火爆了結後的敵人屍體一樣。",
+      "name": "Lennie Moore - Java Havana Funkaloo",
+      "title": "Java Havana Funkaloo"
+    },
+    "31": {
+      "credit": "Darude",
+      "description": "放心屈服於充滿芬蘭創作者 Darude 音樂風味與格調的音景之中吧。 來自一位著名的舞曲先驅的音樂作品集，讓自己沈浸於具革新泛音及刺激旋律結構的重節奏混合音樂。",
+      "name": "Darude - Moments CSGO",
+      "title": "Moments CSGO"
+    },
+    "32": {
+      "credit": "Beartooth",
+      "description": "Beartooth 再次回歸。這全新的音樂包比上回的節奏更強烈，更氣勢洶洶。而且我們再三加強了 MVP 主題曲的節奏，這樣您的對手在落敗的時候情緒便會更加低落。",
+      "name": "Beartooth - Aggressive",
+      "title": "Aggressive"
+    },
+    "33": {
+      "credit": "Blitz Kids",
+      "description": "英式搖滾 / 龐克樂團 Blitz Kids 為大家帶來能讓您在突擊 B 點的路上，回想起高中時期與好友深夜飆車美好時光的音樂包。飆速疾走與感受青春時這個音樂包再適合不過。",
+      "name": "Blitz Kids - The Good Youth",
+      "title": "The Good Youth"
+    },
+    "34": {
+      "credit": "Hundredth",
+      "description": "Hundredth 以他們對旋律硬核獨特的見解把重金屬帶到這個世界。聽著這絕配的音樂逃離束縛（《Break Free》）或回到 Dust 炸爆那些不值一提的人吧。",
+      "name": "Hundredth - FREE",
+      "title": "FREE"
+    },
+    "35": {
+      "credit": "Neck Deep",
+      "description": "有時候就是要聽著流行龐克渡過艱苦的一天。不論是被蹲點狙擊手為難，還是被斷掉超高的連殺，Neck Deep 在此向大家證明人生並沒有故意要針對您（《Life's Not Out To Get You》），但敵方隊伍絕對有意。",
+      "name": "Neck Deep - Life's Not Out To Get You",
+      "title": "Life's Not Out To Get You"
+    },
+    "36": {
+      "credit": "Roam",
+      "description": "Roam 為大家帶來快節奏且直接了當的流行龐克，無論是觀眾還是玩家都會跟著音樂動起來。帶著這個音樂包突襲敵人，在對方還未搞清楚狀況之前將其隊伍殲滅，證明自己是個有「Backbone」（骨氣）的人吧。",
+      "name": "Roam - Backbone",
+      "title": "Backbone"
+    },
+    "37": {
+      "credit": "Twin Atlantic",
+      "description": "Twin Atlantic 為 CS:GO 帶來比以往更重節奏、更喧鬧和更大聲的音樂，以蘇格蘭搖滾的火力助大家震懾敵人。",
+      "name": "Twin Atlantic - GLA",
+      "title": "GLA"
+    },
+    "38": {
+      "credit": "Skog",
+      "description": "Skog 帶著第三部粉碎重金屬音樂包再次到來。這次的音樂添加了活潑的電子風，在大量的吉他重覆樂段中結合了同樣多的高潮樂段、循環元素以及持續音。",
+      "name": "Skog - III-Arena",
+      "title": "III-Arena"
+    },
+    "39": {
+      "credit": "The Verkkars",
+      "description": "The Verkkars 憑著這首向 ENCE 致敬的震撼心靈之作登上芬蘭音樂排行榜。真的有那麼 EZ 嗎？",
+      "name": "The Verkkars - EZ4ENCE",
+      "title": "EZ4ENCE"
+    },
+    "40": {
+      "credit": "Halo",
+      "description": "以由 Halo 宇宙中象徵性的音樂時刻組成的《Master Chief Collection》音樂包，為自己的絕對武力音訊體驗帶來傳奇改造。© 2019 343 Industries。版權所有。由 343 Industries 授權使用。《Halo: The Master Chief Collection》和 Halo 標誌均為 Microsoft 公司集團的商標。",
+      "name": "Halo - The Master Chief Collection",
+      "title": "The Master Chief Collection"
+    },
+    "41": {
+      "credit": "Scarlxrd",
+      "description": "Scarlxrd 將重陷阱拍子融入自己的表演風格，製造出屬於他獨特的音樂子流派。如他在現場表演此令人興奮的混合音樂總能抓住所有觀眾的注意力。",
+      "name": "Scarlxrd: King - Scar",
+      "title": "King - Scar"
+    },
+    "42": {
+      "credit": "《戰慄時空：艾莉克絲》",
+      "description": "本音樂包旨在紀念 Valve 重返《戰慄時空》系列的 VR 大作：《戰慄時空：艾莉克絲》。 您是人類存活下去的最後一絲希望，您的沉浸式環境互動體驗也將在《絕對武力：全球攻勢》延續下去。",
+      "name": "《戰慄時空：艾莉克絲》- 反公民",
+      "title": "反公民"
+    },
+    "43": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory 混合了賽爾提克神話與熱燒的電子樂，再加上大份量的 Peter Hollens 嗓音，調製了這份跨曲風的音樂包。",
+      "name": "Austin Wintory - Bachram",
+      "title": "Bachram"
+    },
+    "44": {
+      "credit": "Dren",
+      "description": "這組末世風墨西哥街頭樂原為熱門獨立遊戲《Gunman Taco Truck》的原聲帶，現在為 CS:GO 帶來墨西哥風味強烈的的曲調，包括 Pollo Diablo 還有 Persecución de Helltain！",
+      "name": "Dren - Gunman Taco Truck",
+      "title": "Gunman Taco Truck"
+    },
+    "45": {
+      "credit": "Daniel Sadowski",
+      "description": "曾為您帶來音樂包《Total Domination》、《The 8-Bit Kit》和《Crimson Assault》的作曲家 Daniel Sadowski 這回獻上《Eye Of The Dragon》。音樂人 Daniel Sadowski 混合了忍者、槍枝、嘻哈和鐵克諾，創造了一個動作緊湊的音樂包。忍者最為人所知的是其快速精準的攻擊手法，而且敵人完全無法捉摸其行蹤。",
+      "name": "Daniel Sadowski - Eye of the Dragon",
+      "title": "Eye of the Dragon"
+    },
+    "46": {
+      "credit": "Tree Adams 與 Ben Bromfield",
+      "description": "M.U.D.D. FORCE 由操縱強大混沌之力的煉金術士組成——作曲家 Tree Adams 和 Ben Bromfield 將史詩式戰鬥主題與嚴苛的合成器音效結合，煉成一股擁有巨大破壞力的漩渦。",
+      "name": "Tree Adams 與 Ben Bromfield - M.U.D.D. FORCE",
+      "title": "M.U.D.D. FORCE"
+    },
+    "47": {
+      "credit": "Tim Huling",
+      "description": "作曲家 Tim Huling 為大家帶來融合當代韻律與節拍的經典黑色電影風格樂曲。",
+      "name": "Tim Huling - Neo Noir",
+      "title": "Neo Noir"
+    },
+    "48": {
+      "credit": "Sam Marshall",
+      "description": "受 90 年代初的放克電子遊戲音樂啟發，作曲家 Sam Marshall 編寫了幾首有現代趣味的經典遊戲懷舊風樂曲。",
+      "name": "Sam Marshall - Bodacious",
+      "title": "Bodacious"
+    },
+    "49": {
+      "credit": "Matt Levine",
+      "description": "作曲家 Matt Levine 以大搖大擺的曲風向義大利式西部片表示不加掩飾的敬意。「儘管動手，我求之不得…」聽著此音樂說出這話實在太爽了。",
+      "name": "Matt Levine - Drifter",
+      "title": "Drifter"
+    },
+    "50": {
+      "credit": "Amon Tobin",
+      "description": "傳奇製作人 Amon Tobin 這次透過真空管放大器將他獨特的音樂美學帶給 CS:GO。",
+      "name": "Amon Tobin - All for Dust",
+      "title": "All for Dust"
+    },
+    "51": {
+      "credit": "Darren Kor",
+      "description": "沒錯，時不時是會錯過扣下板機的時機，但絕對不容錯過的是這份令人熱血沸騰、出自 Supergiant 的類 Rogue 迷宮探索作品《Hades》中冥界的音樂包。",
+      "name": "Darren Kor -《Hades》音樂包",
+      "title": "《Hades》音樂包"
+    },
+    "52": {
+      "credit": "Neck Deep",
+      "description": "以 Neck Deep 全新的音樂包，來證明自己並非凡夫俗子（比地圖上所有人優越），當中包含樂團專輯《All Distortions Are Intentional》中的曲目。",
+      "name": "Neck Deep - The Lowlife Pack",
+      "title": "The Lowlife Pack"
+    },
+    "53": {
+      "credit": "Scarlxrd",
+      "description": "SCARLXRD 在 CHAIN$AW 中以粗獷的演唱配合拍子強烈的音樂，展現了前所未有的最佳狀態。",
+      "name": "Scarlxrd - CHAIN$AW.LXADXUT",
+      "title": "CHAIN$AW.LXADXUT"
+    },
+    "54": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory 解答了人類好奇很久的問題：如果將露天啤酒屋的手風琴波爾卡音樂與頹廢風的重金屬混在一起，會有什麼效果呢？",
+      "name": "Austin Wintory - Mocha Petal",
+      "title": "Mocha Petal"
+    },
+    "55": {
+      "credit": "Chipzel",
+      "description": "身為遊戲音樂作曲家的晶片音樂傳奇人物 Chipzel，帶來了受充滿雜訊的「Speak & Spell」玩具語音所啟發，且充滿趣味、放克元素和風味的混合音樂。",
+      "name": "Chipzel - ~Yellow Magic~",
+      "title": "~Yellow Magic~"
+    },
+    "56": {
+      "credit": "Freaky DNA",
+      "description": "歌劇、8 位元音效、類比合成器。有什麼可挑剔的嗎？晶片音樂專家 Freaky DNA 與女高音 Leanne Koch 合作，帶來強勁節奏和歡樂時光！",
+      "name": "Freaky DNA - Vici",
+      "title": "Vici"
+    },
+    "57": {
+      "credit": "Jesse Harlin",
+      "description": "受到 70 與 80 年代以及更新的經典科幻作品啟發，作曲家 Jesse Harlin 為大家帶來浮誇的外太空歌劇。",
+      "name": "Jesse Harlin - Astro Bellum",
+      "title": "Astro Bellum"
+    },
+    "58": {
+      "credit": "Laura Shigihara",
+      "description": "遊戲音樂作曲家和開發者 Laura Shigihara 會大聲又自豪地為您向全世界宣揚您是 MVP 的消息。希望您享受這融合了 90 年代舞曲、復古電子遊戲合成器和一點點《植物大戰殭屍》元素的獨特混合音樂。",
+      "name": "Laura Shigihara - Work Hard, Play Hard",
+      "title": "Work Hard, Play Hard"
+    },
+    "59": {
+      "credit": "Sarah Schachner",
+      "description": "Sarah Schachner 為大家呈獻，由具有自我意識的北歐機械人組成的反烏托邦哥德搖滾合唱團，獻上音樂並帶出必須要毀滅人類的決定。",
+      "name": "Sarah Schachner - KOLIBRI",
+      "title": "KOLIBRI"
+    },
+    "60": {
+      "credit": "bbno$",
+      "description": "bbno$ 專為惡毒玩家打造的代表歌曲《u mad!》！你惱羞喔？笑死，多練練再來吧。研究顯示帶著這個音樂包進行遊戲，馬上就能從銀牌上地球。",
+      "name": "bbno$ - u mad!",
+      "title": "u mad!"
+    },
+    "61": {
+      "credit": "The Verkkars & n0thing",
+      "description": "從陽光四射的加州到冰冷嚴寒的拉普蘭，由絕對武力傳奇選手 n0thing 聯合 The Verkkars 合力打造，帶來暢銷單曲《Flashbang Dance》！3，2，1，眼被亮瞎了！",
+      "name": "The Verkkars & n0thing - Flashbang Dance",
+      "title": "Flashbang Dance"
+    },
+    "62": {
+      "credit": "3kliksphilip",
+      "description": "在邁向職業選手的路上？還是無意中落入谷底？讓這音樂包中的 80 年代合成器音樂與夢幻的旋律帶大家回到過去，慢慢回想起昔日美好的時光。",
+      "name": "3kliksphilip - Heading for the Source",
+      "title": "Heading for the Source"
+    },
+    "63": {
+      "credit": "Humanity's Last Breath",
+      "description": "瑞典樂團 Humanity's Last Breath 沉重有力地為大家帶來他們的 Void 音樂包。震撼的鼓聲和大量的重覆樂段，營造毛骨悚然的氛圍。",
+      "name": "Humanity's Last Breath - Void",
+      "title": "Void"
+    },
+    "64": {
+      "credit": "Juelz",
+      "description": "新陷阱風合成器、粗獷的 808 鼓機、史詩式的鋼琴重覆樂段再配上大量槍聲音效。這首來自 Juelz 的元老級陷阱代表歌曲《Shooters》造就了這款出類拔萃的音樂包，僅適合 MVP 玩家使用。",
+      "name": "Juelz - Shooters",
+      "title": "Shooters"
+    },
+    "65": {
+      "credit": "Knock2",
+      "description": "《dashstar*》是 Knock2 象徵性的低音浩室代表歌曲，充分展現了這位來自聖地牙哥的年輕人的口號——「永無界限」，為大家帶來源源不絕的能量。",
+      "name": "Knock2 - dashstar*",
+      "title": "dashstar*"
+    },
+    "66": {
+      "credit": "Meechy Darko",
+      "description": "拿起一把格洛克手槍並裝備這個音樂包，瞬間猶如處身紐約充斥地下嘻哈的現場中心。",
+      "name": "Meechy Darko - Gothic Luxury",
+      "title": "Gothic Luxury"
+    },
+    "67": {
+      "credit": "Sullivan King",
+      "description": "喜歡追捕與狩獵嗎？Sullivan King 的歌曲中結合了重搖滾、金屬和迴響貝斯，勢不可擋！",
+      "name": "Sullivan King - Lock Me Up",
+      "title": "Lock Me Up"
+    },
+    "68": {
+      "credit": "完美世界",
+      "description": "以獨特的花臉音樂包歡慶 CS:GO 於中國推出滿 5 週年。此音樂包混合了民間戲曲「秦腔」（最早期的中國風搖滾）和現代搖滾。不論是被包圍在煙霧之中，還是被閃光彈閃瞎，都不要迷失方向！",
+      "name": "完美世界 - 花臉",
+      "title": "花臉"
+    },
+    "69": {
+      "credit": "Denzel Curry",
+      "description": "Denzel 將他橫跨陷阱音樂、爵士樂、鼓與低音節拍的代表性能量帶到 CS:GO。此音樂包內含 Denzel 的熱門歌曲《Walkin》、《ULTIMATE》，以及更多樂曲。快來「break out nickel-plated chrome Berettas」，用 ULTIMATE 音樂包將熱度再提升！",
+      "name": "Denzel Curry - ULTIMATE",
+      "title": "ULTIMATE"
+    },
+    "70": {
+      "credit": "Valve",
+      "description": "預設的 CS:GO 音樂包，在 CS:GO 於 2012 年發行時推出。",
+      "name": "Valve - 《CS:GO》",
+      "title": "《CS:GO》"
+    },
+    "71": {
+      "credit": "DRYDEN",
+      "description": "還需要補充什麼嗎？感受那股力量。快鎖定這出自 DRYDEN 的高能電子音樂包。",
+      "name": "DRYDEN - Feel The Power",
+      "title": "Feel The Power"
+    },
+    "72": {
+      "credit": "ISOxo",
+      "description": "專為那些讓您感到……有所不同的比賽所製作。帶上 ISOxo 的「inhuman」音樂包不斷追擊敵人吧。",
+      "name": "ISOxo - inhuman",
+      "title": "inhuman"
+    },
+    "73": {
+      "credit": "KILL SCRIPT",
+      "description": "你是戀人或是戰士？或許兩者皆是？用 KILL SCIPRT 的「All Night」音樂包讓整個大廳都知道吧。",
+      "name": "KILL SCRIPT - All Night",
+      "title": "All Night"
+    },
+    "74": {
+      "credit": "Knock2",
+      "description": "為將每場遊戲都當成特級錦標賽總決賽認真對待的玩家所準備，即使賽果只會影響幾百 CS 評分也是如此。帶上 Knock2 第二個推出的音樂包「Make U SWEAT!」迎來衝勁和勝利。",
+      "name": "Knock2 - Make U SWEAT!",
+      "title": "Make U SWEAT!"
+    },
+    "75": {
+      "credit": "Rad Cat",
+      "description": "有時成功拆除炸彈足以能當上回合 MVP。用 Red Cat 的「Reason」音樂包來慶祝每個時刻——不論是多麼重大還是微不足道的場面。",
+      "name": "Rad Cat - Reason",
+      "title": "Reason"
+    },
+    "76": {
+      "credit": "TWERL 和 Ekko & Sidetrack",
+      "description": "沒有比在聚光燈下大展身手更好的時刻了。讓來自 TWERL 和 Ekko & Sidetrack 充滿鼓與低音的歌曲「Under Bright Lights」將自己和隊伍帶上新高度。",
+      "name": "TWERL 和 Ekko & Sidetrack - Under Bright Lights",
+      "title": "Under Bright Lights"
+    },
+    "78": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory 與撒旦做了筆交易，將狂熱的電子舞曲派對氣氛與惡魔般的小提琴音樂融合在一起。",
+      "name": "Austin Wintory - The Devil Went Clubbing in Georgia",
+      "title": "The Devil Went Clubbing in Georgia"
+    },
+    "79": {
+      "credit": "Ben Bromfield",
+      "description": "你被背叛了！體驗來自電影和電視劇作曲家 Ben Bromfield 帶來凝重又緊張刺激、受爵士樂啟發的原聲帶，一探這兔子洞到底有多深……",
+      "name": "Ben Bromfield - Rabbit Hole",
+      "title": "Rabbit Hole"
+    },
+    "80": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski 邀請玩家進入《Dead Shot》的世界，一首融合動作、嘻哈、管弦樂、電子、復古、情感和音樂設計的混合音樂。小心不要被爆頭！",
+      "name": "Daniel Sadowski - Dead Shot",
+      "title": "Dead Shot"
+    },
+    "81": {
+      "credit": "Dren McDonald",
+      "description": "咖啡因是你的朋友。是每個人的朋友，除了你的敵人！《Coffee! Kofe! Kahveh!》是來自 Dren McDonald（《Gunman Taco Truck》和《Death’s Head Demolition》的作者）在 Balkancisco 現場錄製的巴爾幹巴爾幹巴爾幹街頭派對銅管樂！",
+      "name": "Dren McDonald - Coffee! Kofe! Kahveh!",
+      "title": "Coffee! Kofe! Kahveh!"
+    },
+    "82": {
+      "credit": "Matt Levine",
+      "description": "聽著來自作曲家 Matt Levine 的《Agency》音樂包進入危險的間諜世界。",
+      "name": "Matt Levine - Agency",
+      "title": "Agency"
+    },
+    "83": {
+      "credit": "Sam Marshall",
+      "description": "《Clutch》是《Bodacious》非正式的續作，Sam Marshall 透過煉金術和神秘儀式為這惡夢般的電馭放克怪曲賦予了生命。",
+      "name": "Sam Marshall - Clutch",
+      "title": "Clutch"
+    },
+    "84": {
+      "credit": "Tim Huling",
+      "description": "Tim Huling 的《Devil's Paintbrush》為大家帶來使腎上腺素飆升、充滿能量的蠱戮金屬體驗。",
+      "name": "Tim Huling - Devil's Paintbrush",
+      "title": "Devil's Paintbrush"
+    },
+    "85": {
+      "credit": "Tree Adams",
+      "description": "在《Seventh Moon》中，Tree Adams 油滑地將星際放克與強烈的戰鬥配樂混和在一起。",
+      "name": "Tree Adams - Seventh Moon",
+      "title": "Seventh Moon"
+    },
+    "86": {
+      "credit": "完美世界",
+      "description": "融合傳統中國民謠與電子樂的《唉嘿》音樂包，帶來鮮活的敘事風格以及充滿動感的節奏，讓各種年齡與背景的玩家都能連結在一起。藉由活潑的節奏來配合玩家在遊戲內的熱情，《唉嘿》生動地捕捉了各種幽默逗趣的戰鬥場景。",
+      "name": "完美世界，唉嘿",
+      "title": "唉嘿"
+    },
+    "87": {
+      "credit": "Adam Beyer",
+      "description": "瑞典鐵克諾傳奇 Adam Beyer 帶來這款夢幻而有力的音樂包，助你將血染敵人。",
+      "name": "Adam Beyer - Red Room",
+      "title": "Red Room"
+    },
+    "88": {
+      "credit": "Ghost",
+      "description": "來自神職人員的消息——Papa V Perpetua 已在一場輝煌的重金屬盛宴中降臨絕對武力。願你能透過掃射與向邪惡教廷祈禱逃離日常生活的煩擾。",
+      "name": "Ghost - Skeletá",
+      "title": "Skeletá"
+    },
+    "89": {
+      "credit": "HEALTH",
+      "description": "在絕對武力中體驗 HEALTH。拿起武器，享受 RAT WARS 殘酷嚴苛的工業金屬。",
+      "name": "HEALTH - RAT WARS",
+      "title": "RAT WARS"
+    },
+    "90": {
+      "credit": "James and the Cold Gun",
+      "description": "威爾斯搖滾二人組 James and the Cold Gun 釋放天然純粹的能量，將經典龐克態度與現在另類搖滾之火融合在一起，打造熱力四射的音樂包。",
+      "name": "James and the Cold Gun - Chewing Glass",
+      "title": "Chewing Glass"
+    },
+    "91": {
+      "credit": "Jonathan Young",
+      "description": "你的戰役中缺少的，是宇宙海盜力量金屬。登上 Velociraptor 星艦，讓 Jonathan Young 由動漫和遊戲音樂啟發的專輯將比賽提升至另一個層次。",
+      "name": "Jonathan Young - Starship Velociraptor",
+      "title": "Starship Velociraptor"
+    },
+    "92": {
+      "credit": "Juelz",
+      "description": "需要舞池空間？這套來自 Juelz 首張專輯的大型音樂盒包含新銳舞合成器、粗獷的低音旋律和強勁的陷阱風鼓。Floorspace 已針對《絕對武力 2》重新設計，其中的 MVP 主題曲《Gossip》讓玩家彷如把 LED 牆帶上了戰場。",
+      "name": "Juelz - Floorspace",
+      "title": "Floorspace"
+    },
+    "93": {
+      "credit": "Killer Mike",
+      "description": "在絕對武力世界中享受這張獲得 3 次葛萊美獎的嘻哈專輯。Killer Mike 的聲線將激勵你提升排名並精進技巧。",
+      "name": "Killer Mike - MICHAEL",
+      "title": "MICHAEL"
+    },
+    "94": {
+      "credit": "PVRIS",
+      "description": "有什麼比遇到勁敵更開心？就是遇到好歌。讓新的 PVRIS 音樂包為隊伍打氣，讓連勝如 Evergreen 般長青不衰。",
+      "name": "PVRIS - Evergreen",
+      "title": "Evergreen"
+    },
+    "95": {
+      "credit": "Selective Response",
+      "description": "美國鐵克諾標誌人物 Selective Response 的這款充滿活力的高能量音樂包，為種種渴望注入動力，力量滿載隨時都準備好迎戰。",
+      "name": "Selective Response - No Love Only Pleasure",
+      "title": "No Love Only Pleasure"
+    },
+    "96": {
+      "credit": "Tigercub",
+      "description": "英國搖滾樂隊 Tigercub 帶來粗獷而旋律強勁的音樂，將原始的另類搖滾張力與鬱悶的現代風氣融合在一起，打造震撼人心的音樂包。",
+      "name": "Tigercub - The Perfume of Decay",
+      "title": "The Perfume of Decay"
+    },
+    "98": {
+      "credit": "ALRT",
+      "description": "ALRT 這首動感十足的低音浩室舞曲帶來了極致的「多巴胺衝擊」，讓您全神貫注，隨時準備好在最關鍵的時刻挺身而出。",
+      "name": "ALRT - DOPAMINE HIT",
+      "title": "DOPAMINE HIT"
+    },
+    "99": {
+      "credit": "Altare",
+      "description": "Altare 這首亢奮浪潮樂曲「Change My Mind」特別適合自覺無人能擋的超級巔峰時刻。",
+      "name": "Altare - Change My Mind",
+      "title": "Change My Mind"
+    },
+    "100": {
+      "credit": "borne",
+      "description": "borne 這首粗獷低音節奏樂曲「Give It To Me」讓玩家隨時準備好向絕對武力遊戲內外的對手發動攻勢。",
+      "name": "borne - Give It To Me",
+      "title": "Give It To Me"
+    },
+    "101": {
+      "credit": "Pirapus",
+      "description": "Pirapus 這首高能量、充滿節奏與低音的歌曲「EVERYNITE」喚起邁向輝煌的感覺。正如其名，這首歌確保您每晚都沉醉其中。",
+      "name": "Pirapus - EVERYNITE",
+      "title": "EVERYNITE"
+    },
+    "102": {
+      "credit": "Repiet & Julia Kleijn",
+      "description": "聽著 Repiet 與 Julia Kleijn 這首極具感染力的歌曲「On And On」來準備迎接任何挑戰。無論處於高峰或低谷，這首歌都能定下迎擊任何障礙的基調。",
+      "name": "Repiet & Julia Kleijn - On And On",
+      "title": "On And On"
+    },
+    "103": {
+      "credit": "ShockOne",
+      "description": "聽著 ShockOne 高能量、充滿節奏與低音的歌曲「Voices」來突破極限。這音樂包極具感染力的低音旋律讓您隨時準備好於殘局取勝，將助您拿下無數 MVP。",
+      "name": "ShockOne - Voices",
+      "title": "Voices"
+    },
+    "104": {
+      "credit": "Starjunk 95",
+      "description": "體驗來自銀河系中最動感電台的音樂包，帶來沉浸在昨日復古懷舊氣息中的今日最新聲音，這就是 Starjunk 95。",
+      "name": "Starjunk 95 - Industrial Sunset Memories",
+      "title": "Industrial Sunset Memories"
+    }
+  },
+  "releases": {
+    "2016-11-28-radicals": "StatTrak™ Radicals（根音）箱",
+    "2020-04-16-masterminds": "Masterminds 音樂箱",
+    "2021-08-12-tacticians": "Tacticians（戰術家）音樂箱",
+    "2022-08-23-initiators": "Initiators 音樂箱",
+    "2024-02-06-nightmode": "NIGHTMODE 音樂箱",
+    "2024-08-20-masterminds-2": "Masterminds 2 音樂箱",
+    "2025-08-14-deluge": "Deluge 音樂箱",
+    "2026-05-07-nightmode-ii": "NIGHTMODE II 音樂包"
+  }
+}

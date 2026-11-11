@@ -1,0 +1,744 @@
+{
+  "boxes": [
+    {
+      "itemId": "4287",
+      "kits": ["beartooth_02", "blitzkids_01", "hundredth_01", "neckdeep_01", "roam_01", "skog_03", "twinatlantic_01"],
+      "name": "crate_musickit_radicals_stattrak_capsule",
+      "nameKey": "csgo_crate_musickit_radicals_stattrak_capsule",
+      "stattrak": true
+    },
+    {
+      "itemId": "4696",
+      "kits": [
+        "austinwintory_02",
+        "danielsadowski_04",
+        "dren_02",
+        "mattlevine_01",
+        "sammarshall_01",
+        "timhuling_01",
+        "treeadams_benbromfield_01"
+      ],
+      "name": "crate_musickit_masterminds_capsule",
+      "nameKey": "csgo_crate_musickit_masterminds_capsule",
+      "stattrak": false
+    },
+    {
+      "itemId": "4697",
+      "kits": [],
+      "name": "crate_musickit_masterminds_stattrak_capsule",
+      "nameKey": "csgo_crate_musickit_masterminds_stattrak_capsule",
+      "stattrak": true
+    },
+    {
+      "itemId": "4754",
+      "kits": [
+        "austinwintory_03",
+        "chipzel_01",
+        "freakydna_01",
+        "jesseharlin_01",
+        "laurashigihara_01",
+        "sarahschachner_01"
+      ],
+      "name": "crate_musickit_tacticians_capsule",
+      "nameKey": "csgo_crate_musickit_tacticians_capsule",
+      "stattrak": false
+    },
+    {
+      "itemId": "4755",
+      "kits": [],
+      "name": "crate_musickit_tacticians_stattrak_capsule",
+      "nameKey": "csgo_crate_musickit_tacticians_stattrak_capsule",
+      "stattrak": true
+    },
+    {
+      "itemId": "4848",
+      "kits": ["3kliksphilip_01", "hlb_01", "juelz_01", "knock2_01", "meechydarko_01", "sullivanking_01"],
+      "name": "crate_musickit_initiators_capsule",
+      "nameKey": "csgo_crate_musickit_initiators_capsule",
+      "stattrak": false
+    },
+    {
+      "itemId": "4849",
+      "kits": [],
+      "name": "crate_musickit_initiators_stattrak_capsule",
+      "nameKey": "csgo_crate_musickit_initiators_stattrak_capsule",
+      "stattrak": true
+    },
+    {
+      "itemId": "4914",
+      "kits": ["dryden_01", "isoxo_01", "killscript_01", "knock2_02", "radcat_01", "twerl_01"],
+      "name": "crate_musickit_nightmode_capsule",
+      "nameKey": "csgo_crate_musickit_nightmode_capsule",
+      "stattrak": false
+    },
+    {
+      "itemId": "4915",
+      "kits": [],
+      "name": "crate_musickit_nightmode_stattrak_capsule",
+      "nameKey": "csgo_crate_musickit_nightmode_stattrak_capsule",
+      "stattrak": true
+    },
+    {
+      "itemId": "4946",
+      "kits": [
+        "austinwintory_04",
+        "benbromfield_01",
+        "danielsadowski_05",
+        "dren_03",
+        "mattlevine_02",
+        "sammarshall_02",
+        "timhuling_02",
+        "treeadams_01"
+      ],
+      "name": "crate_musickit_masterminds2_capsule",
+      "nameKey": "csgo_crate_musickit_masterminds2_capsule",
+      "stattrak": false
+    },
+    {
+      "itemId": "4947",
+      "kits": [],
+      "name": "crate_musickit_masterminds2_stattrak_capsule",
+      "nameKey": "csgo_crate_musickit_masterminds2_stattrak_capsule",
+      "stattrak": true
+    },
+    {
+      "itemId": "7019",
+      "kits": [
+        "adambeyer_01",
+        "ghost_01",
+        "health_01",
+        "jamesandthecoldgun_01",
+        "jonathanyoung_01",
+        "juelz_02",
+        "killermike_01",
+        "pvris_01",
+        "selectiveresponse_01",
+        "tigercub_01"
+      ],
+      "name": "crate_musickit_deluge_capsule",
+      "nameKey": "csgo_crate_musickit_deluge_capsule",
+      "stattrak": false
+    },
+    {
+      "itemId": "7021",
+      "kits": [],
+      "name": "crate_musickit_deluge_stattrak_capsule",
+      "nameKey": "csgo_crate_musickit_deluge_stattrak_capsule",
+      "stattrak": true
+    }
+  ],
+  "music": {
+    "1": {
+      "imageInventory": "econ/music_kits/valve_cs2_01",
+      "locDescription": "musickit_valve_cs2_01_desc",
+      "locName": "musickit_valve_cs2_01",
+      "name": "valve_cs2_01"
+    },
+    "2": {
+      "imageInventory": "econ/music_kits/valve_02",
+      "locDescription": "musickit_valve_csgo_02_desc",
+      "locName": "musickit_valve_csgo_02",
+      "name": "valve_02"
+    },
+    "3": {
+      "imageInventory": "econ/music_kits/danielsadowski_01",
+      "locDescription": "musickit_danielsadowski_01_desc",
+      "locName": "musickit_danielsadowski_01",
+      "name": "danielsadowski_01"
+    },
+    "4": {
+      "imageInventory": "econ/music_kits/noisia_01",
+      "locDescription": "musickit_noisia_01_desc",
+      "locName": "musickit_noisia_01",
+      "name": "noisia_01"
+    },
+    "5": {
+      "imageInventory": "econ/music_kits/robertallaire_01",
+      "locDescription": "musickit_robertallaire_01_desc",
+      "locName": "musickit_robertallaire_01",
+      "name": "robertallaire_01"
+    },
+    "6": {
+      "imageInventory": "econ/music_kits/seanmurray_01",
+      "locDescription": "musickit_seanmurray_01_desc",
+      "locName": "musickit_seanmurray_01",
+      "name": "seanmurray_01"
+    },
+    "7": {
+      "imageInventory": "econ/music_kits/feedme_01",
+      "locDescription": "musickit_feedme_01_desc",
+      "locName": "musickit_feedme_01",
+      "name": "feedme_01"
+    },
+    "8": {
+      "imageInventory": "econ/music_kits/dren_01",
+      "locDescription": "musickit_dren_01_desc",
+      "locName": "musickit_dren_01",
+      "name": "dren_01"
+    },
+    "9": {
+      "imageInventory": "econ/music_kits/austinwintory_01",
+      "locDescription": "musickit_austinwintory_01_desc",
+      "locName": "musickit_austinwintory_01",
+      "name": "austinwintory_01"
+    },
+    "10": {
+      "imageInventory": "econ/music_kits/sasha_01",
+      "locDescription": "musickit_sasha_01_desc",
+      "locName": "musickit_sasha_01",
+      "name": "sasha_01"
+    },
+    "11": {
+      "imageInventory": "econ/music_kits/skog_01",
+      "locDescription": "musickit_skog_01_desc",
+      "locName": "musickit_skog_01",
+      "name": "skog_01"
+    },
+    "12": {
+      "imageInventory": "econ/music_kits/midnightriders_01",
+      "locDescription": "musickit_midnightriders_01_desc",
+      "locName": "musickit_midnightriders_01",
+      "name": "midnightriders_01"
+    },
+    "13": {
+      "imageInventory": "econ/music_kits/mattlange_01",
+      "locDescription": "musickit_mattlange_01_desc",
+      "locName": "musickit_mattlange_01",
+      "name": "mattlange_01"
+    },
+    "14": {
+      "imageInventory": "econ/music_kits/mateomessina_01",
+      "locDescription": "musickit_mateomessina_01_desc",
+      "locName": "musickit_mateomessina_01",
+      "name": "mateomessina_01"
+    },
+    "15": {
+      "imageInventory": "econ/music_kits/hotlinemiami_01",
+      "locDescription": "musickit_hotlinemiami_01_desc",
+      "locName": "musickit_hotlinemiami_01",
+      "name": "hotlinemiami_01"
+    },
+    "16": {
+      "imageInventory": "econ/music_kits/danielsadowski_02",
+      "locDescription": "musickit_danielsadowski_02_desc",
+      "locName": "musickit_danielsadowski_02",
+      "name": "danielsadowski_02"
+    },
+    "17": {
+      "imageInventory": "econ/music_kits/damjanmravunac_01",
+      "locDescription": "musickit_damjanmravunac_01_desc",
+      "locName": "musickit_damjanmravunac_01",
+      "name": "damjanmravunac_01"
+    },
+    "18": {
+      "imageInventory": "econ/music_kits/proxy_01",
+      "locDescription": "musickit_proxy_01_desc",
+      "locName": "musickit_proxy_01",
+      "name": "proxy_01"
+    },
+    "19": {
+      "imageInventory": "econ/music_kits/kitheory_01",
+      "locDescription": "musickit_kitheory_01_desc",
+      "locName": "musickit_kitheory_01",
+      "name": "kitheory_01"
+    },
+    "20": {
+      "imageInventory": "econ/music_kits/troelsfolmann_01",
+      "locDescription": "musickit_troelsfolmann_01_desc",
+      "locName": "musickit_troelsfolmann_01",
+      "name": "troelsfolmann_01"
+    },
+    "21": {
+      "imageInventory": "econ/music_kits/kellybailey_01",
+      "locDescription": "musickit_kellybailey_01_desc",
+      "locName": "musickit_kellybailey_01",
+      "name": "kellybailey_01"
+    },
+    "22": {
+      "imageInventory": "econ/music_kits/skog_02",
+      "locDescription": "musickit_skog_02_desc",
+      "locName": "musickit_skog_02",
+      "name": "skog_02"
+    },
+    "23": {
+      "imageInventory": "econ/music_kits/danielsadowski_03",
+      "locDescription": "musickit_danielsadowski_03_desc",
+      "locName": "musickit_danielsadowski_03",
+      "name": "danielsadowski_03"
+    },
+    "24": {
+      "imageInventory": "econ/music_kits/awolnation_01",
+      "locDescription": "musickit_awolnation_01_desc",
+      "locName": "musickit_awolnation_01",
+      "name": "awolnation_01"
+    },
+    "25": {
+      "imageInventory": "econ/music_kits/mordfustang_01",
+      "locDescription": "musickit_mordfustang_01_desc",
+      "locName": "musickit_mordfustang_01",
+      "name": "mordfustang_01"
+    },
+    "26": {
+      "imageInventory": "econ/music_kits/michaelbross_01",
+      "locDescription": "musickit_michaelbross_01_desc",
+      "locName": "musickit_michaelbross_01",
+      "name": "michaelbross_01"
+    },
+    "27": {
+      "imageInventory": "econ/music_kits/ianhultquist_01",
+      "locDescription": "musickit_ianhultquist_01_desc",
+      "locName": "musickit_ianhultquist_01",
+      "name": "ianhultquist_01"
+    },
+    "28": {
+      "imageInventory": "econ/music_kits/newbeatfund_01",
+      "locDescription": "musickit_newbeatfund_01_desc",
+      "locName": "musickit_newbeatfund_01",
+      "name": "newbeatfund_01"
+    },
+    "29": {
+      "imageInventory": "econ/music_kits/beartooth_01",
+      "locDescription": "musickit_beartooth_01_desc",
+      "locName": "musickit_beartooth_01",
+      "name": "beartooth_01"
+    },
+    "30": {
+      "imageInventory": "econ/music_kits/lenniemoore_01",
+      "locDescription": "musickit_lenniemoore_01_desc",
+      "locName": "musickit_lenniemoore_01",
+      "name": "lenniemoore_01"
+    },
+    "31": {
+      "imageInventory": "econ/music_kits/darude_01",
+      "locDescription": "musickit_darude_01_desc",
+      "locName": "musickit_darude_01",
+      "name": "darude_01"
+    },
+    "32": {
+      "imageInventory": "econ/music_kits/beartooth_02",
+      "locDescription": "musickit_beartooth_02_desc",
+      "locName": "musickit_beartooth_02",
+      "name": "beartooth_02"
+    },
+    "33": {
+      "imageInventory": "econ/music_kits/blitzkids_01",
+      "locDescription": "musickit_blitzkids_01_desc",
+      "locName": "musickit_blitzkids_01",
+      "name": "blitzkids_01"
+    },
+    "34": {
+      "imageInventory": "econ/music_kits/hundredth_01",
+      "locDescription": "musickit_hundredth_01_desc",
+      "locName": "musickit_hundredth_01",
+      "name": "hundredth_01"
+    },
+    "35": {
+      "imageInventory": "econ/music_kits/neckdeep_01",
+      "locDescription": "musickit_neckdeep_01_desc",
+      "locName": "musickit_neckdeep_01",
+      "name": "neckdeep_01"
+    },
+    "36": {
+      "imageInventory": "econ/music_kits/roam_01",
+      "locDescription": "musickit_roam_01_desc",
+      "locName": "musickit_roam_01",
+      "name": "roam_01"
+    },
+    "37": {
+      "imageInventory": "econ/music_kits/twinatlantic_01",
+      "locDescription": "musickit_twinatlantic_01_desc",
+      "locName": "musickit_twinatlantic_01",
+      "name": "twinatlantic_01"
+    },
+    "38": {
+      "imageInventory": "econ/music_kits/skog_03",
+      "locDescription": "musickit_skog_03_desc",
+      "locName": "musickit_skog_03",
+      "name": "skog_03"
+    },
+    "39": {
+      "imageInventory": "econ/music_kits/theverkkars_01",
+      "locDescription": "musickit_theverkkars_01_desc",
+      "locName": "musickit_theverkkars_01",
+      "name": "theverkkars_01"
+    },
+    "40": {
+      "imageInventory": "econ/music_kits/halo_01",
+      "locDescription": "musickit_halo_01_desc",
+      "locName": "musickit_halo_01",
+      "name": "halo_01"
+    },
+    "41": {
+      "imageInventory": "econ/music_kits/scarlxrd_01",
+      "locDescription": "musickit_scarlxrd_01_desc",
+      "locName": "musickit_scarlxrd_01",
+      "name": "scarlxrd_01"
+    },
+    "42": {
+      "imageInventory": "econ/music_kits/hlalyx_01",
+      "locDescription": "musickit_hlalyx_01_desc",
+      "locName": "musickit_hlalyx_01",
+      "name": "hlalyx_01"
+    },
+    "43": {
+      "imageInventory": "econ/music_kits/austinwintory_02",
+      "locDescription": "musickit_austinwintory_02_desc",
+      "locName": "musickit_austinwintory_02",
+      "name": "austinwintory_02"
+    },
+    "44": {
+      "imageInventory": "econ/music_kits/dren_02",
+      "locDescription": "musickit_dren_02_desc",
+      "locName": "musickit_dren_02",
+      "name": "dren_02"
+    },
+    "45": {
+      "imageInventory": "econ/music_kits/danielsadowski_04",
+      "locDescription": "musickit_danielsadowski_04_desc",
+      "locName": "musickit_danielsadowski_04",
+      "name": "danielsadowski_04"
+    },
+    "46": {
+      "imageInventory": "econ/music_kits/treeadams_benbromfield_01",
+      "locDescription": "musickit_treeadams_benbromfield_01_desc",
+      "locName": "musickit_treeadams_benbromfield_01",
+      "name": "treeadams_benbromfield_01"
+    },
+    "47": {
+      "imageInventory": "econ/music_kits/timhuling_01",
+      "locDescription": "musickit_timhuling_01_desc",
+      "locName": "musickit_timhuling_01",
+      "name": "timhuling_01"
+    },
+    "48": {
+      "imageInventory": "econ/music_kits/sammarshall_01",
+      "locDescription": "musickit_sammarshall_01_desc",
+      "locName": "musickit_sammarshall_01",
+      "name": "sammarshall_01"
+    },
+    "49": {
+      "imageInventory": "econ/music_kits/mattlevine_01",
+      "locDescription": "musickit_mattlevine_01_desc",
+      "locName": "musickit_mattlevine_01",
+      "name": "mattlevine_01"
+    },
+    "50": {
+      "imageInventory": "econ/music_kits/amontobin_01",
+      "locDescription": "musickit_amontobin_01_desc",
+      "locName": "musickit_amontobin_01",
+      "name": "amontobin_01"
+    },
+    "51": {
+      "imageInventory": "econ/music_kits/hades_01",
+      "locDescription": "musickit_hades_01_desc",
+      "locName": "musickit_hades_01",
+      "name": "hades_01"
+    },
+    "52": {
+      "imageInventory": "econ/music_kits/neckdeep_02",
+      "locDescription": "musickit_neckdeep_02_desc",
+      "locName": "musickit_neckdeep_02",
+      "name": "neckdeep_02"
+    },
+    "53": {
+      "imageInventory": "econ/music_kits/scarlxrd_02",
+      "locDescription": "musickit_scarlxrd_02_desc",
+      "locName": "musickit_scarlxrd_02",
+      "name": "scarlxrd_02"
+    },
+    "54": {
+      "imageInventory": "econ/music_kits/austinwintory_03",
+      "locDescription": "musickit_austinwintory_03_desc",
+      "locName": "musickit_austinwintory_03",
+      "name": "austinwintory_03"
+    },
+    "55": {
+      "imageInventory": "econ/music_kits/chipzel_01",
+      "locDescription": "musickit_chipzel_01_desc",
+      "locName": "musickit_chipzel_01",
+      "name": "chipzel_01"
+    },
+    "56": {
+      "imageInventory": "econ/music_kits/freakydna_01",
+      "locDescription": "musickit_freakydna_01_desc",
+      "locName": "musickit_freakydna_01",
+      "name": "freakydna_01"
+    },
+    "57": {
+      "imageInventory": "econ/music_kits/jesseharlin_01",
+      "locDescription": "musickit_jesseharlin_01_desc",
+      "locName": "musickit_jesseharlin_01",
+      "name": "jesseharlin_01"
+    },
+    "58": {
+      "imageInventory": "econ/music_kits/laurashigihara_01",
+      "locDescription": "musickit_laurashigihara_01_desc",
+      "locName": "musickit_laurashigihara_01",
+      "name": "laurashigihara_01"
+    },
+    "59": {
+      "imageInventory": "econ/music_kits/sarahschachner_01",
+      "locDescription": "musickit_sarahschachner_01_desc",
+      "locName": "musickit_sarahschachner_01",
+      "name": "sarahschachner_01"
+    },
+    "60": {
+      "imageInventory": "econ/music_kits/bbnos_01",
+      "locDescription": "musickit_bbnos_01_desc",
+      "locName": "musickit_bbnos_01",
+      "name": "bbnos_01"
+    },
+    "61": {
+      "imageInventory": "econ/music_kits/theverkkars_02",
+      "locDescription": "musickit_theverkkars_02_desc",
+      "locName": "musickit_theverkkars_02",
+      "name": "theverkkars_02"
+    },
+    "62": {
+      "imageInventory": "econ/music_kits/3kliksphilip_01",
+      "locDescription": "musickit_3kliksphilip_01_desc",
+      "locName": "musickit_3kliksphilip_01",
+      "name": "3kliksphilip_01"
+    },
+    "63": {
+      "imageInventory": "econ/music_kits/hlb_01",
+      "locDescription": "musickit_hlb_01_desc",
+      "locName": "musickit_hlb_01",
+      "name": "hlb_01"
+    },
+    "64": {
+      "imageInventory": "econ/music_kits/juelz_01",
+      "locDescription": "musickit_juelz_01_desc",
+      "locName": "musickit_juelz_01",
+      "name": "juelz_01"
+    },
+    "65": {
+      "imageInventory": "econ/music_kits/knock2_01",
+      "locDescription": "musickit_knock2_01_desc",
+      "locName": "musickit_knock2_01",
+      "name": "knock2_01"
+    },
+    "66": {
+      "imageInventory": "econ/music_kits/meechydarko_01",
+      "locDescription": "musickit_meechydarko_01_desc",
+      "locName": "musickit_meechydarko_01",
+      "name": "meechydarko_01"
+    },
+    "67": {
+      "imageInventory": "econ/music_kits/sullivanking_01",
+      "locDescription": "musickit_sullivanking_01_desc",
+      "locName": "musickit_sullivanking_01",
+      "name": "sullivanking_01"
+    },
+    "68": {
+      "imageInventory": "econ/music_kits/perfectworld_01",
+      "locDescription": "musickit_perfectworld_01_desc",
+      "locName": "musickit_perfectworld_01",
+      "name": "perfectworld_01"
+    },
+    "69": {
+      "imageInventory": "econ/music_kits/denzelcurry_01",
+      "locDescription": "musickit_denzelcurry_01_desc",
+      "locName": "musickit_denzelcurry_01",
+      "name": "denzelcurry_01"
+    },
+    "70": {
+      "imageInventory": "econ/music_kits/valve_01",
+      "locDescription": "musickit_valve_csgo_01_desc",
+      "locName": "musickit_valve_csgo_01",
+      "name": "valve_01"
+    },
+    "71": {
+      "imageInventory": "econ/music_kits/dryden_01",
+      "locDescription": "musickit_dryden_01_desc",
+      "locName": "musickit_dryden_01",
+      "name": "dryden_01"
+    },
+    "72": {
+      "imageInventory": "econ/music_kits/isoxo_01",
+      "locDescription": "musickit_isoxo_01_desc",
+      "locName": "musickit_isoxo_01",
+      "name": "isoxo_01"
+    },
+    "73": {
+      "imageInventory": "econ/music_kits/killscript_01",
+      "locDescription": "musickit_killscript_01_desc",
+      "locName": "musickit_killscript_01",
+      "name": "killscript_01"
+    },
+    "74": {
+      "imageInventory": "econ/music_kits/knock2_02",
+      "locDescription": "musickit_knock2_02_desc",
+      "locName": "musickit_knock2_02",
+      "name": "knock2_02"
+    },
+    "75": {
+      "imageInventory": "econ/music_kits/radcat_01",
+      "locDescription": "musickit_radcat_01_desc",
+      "locName": "musickit_radcat_01",
+      "name": "radcat_01"
+    },
+    "76": {
+      "imageInventory": "econ/music_kits/twerl_01",
+      "locDescription": "musickit_twerl_01_desc",
+      "locName": "musickit_twerl_01",
+      "name": "twerl_01"
+    },
+    "78": {
+      "imageInventory": "econ/music_kits/austinwintory_04",
+      "locDescription": "musickit_austinwintory_04_desc",
+      "locName": "musickit_austinwintory_04",
+      "name": "austinwintory_04"
+    },
+    "79": {
+      "imageInventory": "econ/music_kits/benbromfield_01",
+      "locDescription": "musickit_benbromfield_01_desc",
+      "locName": "musickit_benbromfield_01",
+      "name": "benbromfield_01"
+    },
+    "80": {
+      "imageInventory": "econ/music_kits/danielsadowski_05",
+      "locDescription": "musickit_danielsadowski_05_desc",
+      "locName": "musickit_danielsadowski_05",
+      "name": "danielsadowski_05"
+    },
+    "81": {
+      "imageInventory": "econ/music_kits/dren_03",
+      "locDescription": "musickit_dren_03_desc",
+      "locName": "musickit_dren_03",
+      "name": "dren_03"
+    },
+    "82": {
+      "imageInventory": "econ/music_kits/mattlevine_02",
+      "locDescription": "musickit_mattlevine_02_desc",
+      "locName": "musickit_mattlevine_02",
+      "name": "mattlevine_02"
+    },
+    "83": {
+      "imageInventory": "econ/music_kits/sammarshall_02",
+      "locDescription": "musickit_sammarshall_02_desc",
+      "locName": "musickit_sammarshall_02",
+      "name": "sammarshall_02"
+    },
+    "84": {
+      "imageInventory": "econ/music_kits/timhuling_02",
+      "locDescription": "musickit_timhuling_02_desc",
+      "locName": "musickit_timhuling_02",
+      "name": "timhuling_02"
+    },
+    "85": {
+      "imageInventory": "econ/music_kits/treeadams_01",
+      "locDescription": "musickit_treeadams_01_desc",
+      "locName": "musickit_treeadams_01",
+      "name": "treeadams_01"
+    },
+    "86": {
+      "imageInventory": "econ/music_kits/perfectworld_02",
+      "locDescription": "musickit_perfectworld_02_desc",
+      "locName": "musickit_perfectworld_02",
+      "name": "perfectworld_02"
+    },
+    "87": {
+      "imageInventory": "econ/music_kits/adambeyer_01",
+      "locDescription": "musickit_adambeyer_01_desc",
+      "locName": "musickit_adambeyer_01",
+      "name": "adambeyer_01"
+    },
+    "88": {
+      "imageInventory": "econ/music_kits/ghost_01",
+      "locDescription": "musickit_ghost_01_desc",
+      "locName": "musickit_ghost_01",
+      "name": "ghost_01"
+    },
+    "89": {
+      "imageInventory": "econ/music_kits/health_01",
+      "locDescription": "musickit_health_01_desc",
+      "locName": "musickit_health_01",
+      "name": "health_01"
+    },
+    "90": {
+      "imageInventory": "econ/music_kits/jamesandthecoldgun_01",
+      "locDescription": "musickit_jamesandthecoldgun_01_desc",
+      "locName": "musickit_jamesandthecoldgun_01",
+      "name": "jamesandthecoldgun_01"
+    },
+    "91": {
+      "imageInventory": "econ/music_kits/jonathanyoung_01",
+      "locDescription": "musickit_jonathanyoung_01_desc",
+      "locName": "musickit_jonathanyoung_01",
+      "name": "jonathanyoung_01"
+    },
+    "92": {
+      "imageInventory": "econ/music_kits/juelz_02",
+      "locDescription": "musickit_juelz_02_desc",
+      "locName": "musickit_juelz_02",
+      "name": "juelz_02"
+    },
+    "93": {
+      "imageInventory": "econ/music_kits/killermike_01",
+      "locDescription": "musickit_killermike_01_desc",
+      "locName": "musickit_killermike_01",
+      "name": "killermike_01"
+    },
+    "94": {
+      "imageInventory": "econ/music_kits/pvris_01",
+      "locDescription": "musickit_pvris_01_desc",
+      "locName": "musickit_pvris_01",
+      "name": "pvris_01"
+    },
+    "95": {
+      "imageInventory": "econ/music_kits/selectiveresponse_01",
+      "locDescription": "musickit_selectiveresponse_01_desc",
+      "locName": "musickit_selectiveresponse_01",
+      "name": "selectiveresponse_01"
+    },
+    "96": {
+      "imageInventory": "econ/music_kits/tigercub_01",
+      "locDescription": "musickit_tigercub_01_desc",
+      "locName": "musickit_tigercub_01",
+      "name": "tigercub_01"
+    },
+    "98": {
+      "imageInventory": "econ/music_kits/alrt_01",
+      "locDescription": "musickit_alrt_01_desc",
+      "locName": "musickit_alrt_01",
+      "name": "alrt_01"
+    },
+    "99": {
+      "imageInventory": "econ/music_kits/altare_01",
+      "locDescription": "musickit_altare_01_desc",
+      "locName": "musickit_altare_01",
+      "name": "altare_01"
+    },
+    "100": {
+      "imageInventory": "econ/music_kits/borne_01",
+      "locDescription": "musickit_borne_01_desc",
+      "locName": "musickit_borne_01",
+      "name": "borne_01"
+    },
+    "101": {
+      "imageInventory": "econ/music_kits/pirapus_01",
+      "locDescription": "musickit_pirapus_01_desc",
+      "locName": "musickit_pirapus_01",
+      "name": "pirapus_01"
+    },
+    "102": {
+      "imageInventory": "econ/music_kits/repiet_01",
+      "locDescription": "musickit_repiet_01_desc",
+      "locName": "musickit_repiet_01",
+      "name": "repiet_01"
+    },
+    "103": {
+      "imageInventory": "econ/music_kits/shockone_01",
+      "locDescription": "musickit_shockone_01_desc",
+      "locName": "musickit_shockone_01",
+      "name": "shockone_01"
+    },
+    "104": {
+      "imageInventory": "econ/music_kits/starjunk95_01",
+      "locDescription": "musickit_starjunk95_01_desc",
+      "locName": "musickit_starjunk95_01",
+      "name": "starjunk95_01"
+    }
+  }
+}

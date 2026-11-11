@@ -1,0 +1,620 @@
+{
+  "kits": {
+    "1": {
+      "credit": "Valve",
+      "description": "A Counter-Strike 2 hivatalos zenekészlete.",
+      "name": "Valve - Counter-Strike 2",
+      "title": "Counter-Strike 2"
+    },
+    "3": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski játékzene-szerző izgalmas akciót kever ESZELŐSEN ÜTŐS ritmusokkal ebben a lüktető, élénkítő zenecsomagban.",
+      "name": "Daniel Sadowski - Crimson Assault",
+      "title": "Crimson Assault"
+    },
+    "4": {
+      "credit": "Noisia",
+      "description": "A Noisia, a holland elektronikus zenei trió kemény, moziszerű érzést hoz el a hagyományos és progresszív hangzás egyedi keverékével.",
+      "name": "Noisia - Sharpened",
+      "title": "Sharpened"
+    },
+    "5": {
+      "credit": "Robert Allaire",
+      "description": "Zene az ellenség összezúzásához és magad előtt űzéséhez a díjnyertes zeneszerzőtől, Robert Allaire-től.",
+      "name": "Robert Allaire - Insurgency",
+      "title": "Insurgency"
+    },
+    "6": {
+      "credit": "Sean Murray",
+      "description": "A világ két legnagyobb háborús játékának zeneszerzőjétől érkezik a zenei készlet, mely a Pokol Kapujához juttatja őket!",
+      "name": "Sean Murray - A*D*8",
+      "title": "A*D*8"
+    },
+    "7": {
+      "credit": "Feed Me",
+      "description": "Feed Me, az ismert elektronikus zenész a vadnyugati leszámolások hangulatát hozza át egy modern, elektronikus térbe.",
+      "name": "Feed Me - High Noon",
+      "title": "High Noon"
+    },
+    "8": {
+      "credit": "Dren",
+      "description": "Dren játékzene-szerző moziszerű szuperhős-metál ihletésű zenéje ugyanolyan gyilkos, mint a játék!",
+      "name": "Dren - Death's Head Demolition",
+      "title": "Death's Head Demolition"
+    },
+    "9": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory Grammy-jelölt játékzene-szerző felteszi a kérdést: miért fáradnál ellenségeid levadászásával, mikor magadhoz is csalogathatod őket egy halálos és bevallottan eszelős tangóval?",
+      "name": "Austin Wintory - Desert Fire",
+      "title": "Desert Fire"
+    },
+    "10": {
+      "credit": "Sasha",
+      "description": "Merülj el a világhírű DJ / producer, Sasha moziszerű zenei anyagában, tele szárnyaló vonósokkal, lüktető dallamokkal és lendületbe hozó dobokkal.",
+      "name": "Sasha - LNOE",
+      "title": "LNOE"
+    },
+    "11": {
+      "credit": "Skog",
+      "description": "Agresszivitás-lecke a metál-producer Skogtól.",
+      "name": "Skog - Metal",
+      "title": "Metal"
+    },
+    "12": {
+      "credit": "Midnight Riders",
+      "description": "„KELLEMES ÜNNEPEKET, ****DÉKOK!”\n-Midnight Riders",
+      "name": "Midnight Riders - All I Want for Christmas",
+      "title": "All I Want for Christmas"
+    },
+    "13": {
+      "credit": "Matt Lange",
+      "description": "Kényeztesd hallásod Matt Lange elektronikuszene-szerző és újító moziszerű, darabos hangulataival és kemény, lüktető ritmusaival.",
+      "name": "Matt Lange - IsoRhythm",
+      "title": "IsoRhythm"
+    },
+    "14": {
+      "credit": "Mateo Messina",
+      "description": "Alázd le ellenségeidet. Tiszta intenzitás a Grammy-nyertes zeneszerzőtől, Mateo Messinától.",
+      "name": "Mateo Messina - For No Mankind",
+      "title": "For No Mankind"
+    },
+    "15": {
+      "credit": "Különböző előadók",
+      "description": "Több elektronikuszene-szerző hoz el brutális ritmusokat ebben a felüdítő zenecsomagban az ikonikus Hotline Miamiból.",
+      "name": "Különböző előadók - Hotline Miami",
+      "title": "Hotline Miami"
+    },
+    "16": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski zeneszerző agresszív elektronikus ritmusokkal, kreatív hangeffektekkel és frissítő, lendületbe hozó, futurisztikus hangulattal emeli feljebb a lécet. „Vigyázat: adrenalinszint-emelkedést okoz!”",
+      "name": "Daniel Sadowski - Total Domination",
+      "title": "Total Domination"
+    },
+    "17": {
+      "credit": "Damjan Mravunac",
+      "description": "Damjan Mravunac zeneszerző energikus moziszerű ritmusokat vegyít eposzi kórusokkal ebben a csomagban, melyben a Croteam kritikai elismerést kapott „The Talos Principle” című játékának zenéi szerepelnek.",
+      "name": "Damjan Mravunac - The Talos Principle",
+      "title": "The Talos Principle"
+    },
+    "18": {
+      "credit": "Proxy",
+      "description": "PROXY, az orosz heavy electronica zeneszerző saját egyedi nehéztüzérségét hozza el a Counter Strike-ba. A legkiválóbb stúdiótechnikával ötvözött hibrid hangfegyverzet teszi különlegessé ezt a készletet.",
+      "name": "Proxy - Battlepack",
+      "title": "Battlepack"
+    },
+    "19": {
+      "credit": "Ki:Theory",
+      "description": "A rekordokat döntő és a DOTA TI4-en is fellépő előadó, Ki:Theory bombákat dob le ezzel a pengeélesen metsző sötét elektronikus rockkal.",
+      "name": "Ki:Theory - MOLOTOV",
+      "title": "MOLOTOV"
+    },
+    "20": {
+      "credit": "Troels Folmann",
+      "description": "Diadalmas blastophone-ok és kortárs uberpulse kombinációja a legmagasabb díjakat megnyert zeneszerzőtől, Troels Folmanntól.",
+      "name": "Troels Folmann - Uber Blasto Phone",
+      "title": "Uber Blasto Phone"
+    },
+    "21": {
+      "credit": "Kelly Bailey",
+      "description": "Kelly Bailey, a Valve Half-Life sorozatának zeneszerzője új, apokaliptikus zenearzenált alkotott, melyet a Half-Life univerzum sötétebb oldala ihletett.",
+      "name": "Kelly Bailey - Hazardous Environments",
+      "title": "Hazardous Environments"
+    },
+    "22": {
+      "credit": "Skog",
+      "description": "A metál zeneszerző és producer Jocke Skog vadonatúj, ütős zenekészlettel tér vissza, ami a többi CS:GO zenekészletből valami cuki és melengető dolgot csinál. Gyerünk, legyél MVP, hogy mindenki hallhassa, mekkora király vagy!",
+      "name": "Skog - II-Headshot",
+      "title": "II-Headshot"
+    },
+    "23": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski elkészítette a legelső 8 bites zenekészletet a Counter-Strike-hoz, eredeti 8 bites hangokkal.",
+      "name": "Daniel Sadowski - The 8-Bit Kit",
+      "title": "The 8-Bit Kit"
+    },
+    "24": {
+      "credit": "AWOLNATION",
+      "description": "Az alternatív rockzenész AWOLNATION örök érvényű zenekészletet hoz el neked. Ez a készlet eklektikus dalválogatásokkal van telepakolva, köztük részletekkel az „I Am”, és a többszörös platinalemezes siker „Sail” című kislemezekből.",
+      "name": "AWOLNATION - I Am",
+      "title": "I Am"
+    },
+    "25": {
+      "credit": "Mord Fustang",
+      "description": "Gyémántok. Az örökkévalóságnak. Ugorj fejest Mord Fustang arpeggiotronjába ezekkel az új ritmusokkal és hangulatokkal.",
+      "name": "Mord Fustang - Diamonds",
+      "title": "Diamonds"
+    },
+    "26": {
+      "credit": "Michael Bross",
+      "description": "Michael Bross eposzi, filmekbe illő techno-grunge-ot varázsol neked, hogy igazi tökös gyereknek érezd magad a csatában.",
+      "name": "Michael Bross - Invasion!",
+      "title": "Invasion!"
+    },
+    "27": {
+      "credit": "Ian Hultquist",
+      "description": "Készülj fel a csatára ezzel a dübörgő, lüktető vonósokat és szintetizátorokat a harci dobok dübögésével keverő zenei anyaggal Ian Hultquist zeneszerzőtől.",
+      "name": "Ian Hultquist - Lion's Mouth",
+      "title": "Lion's Mouth"
+    },
+    "28": {
+      "credit": "New Beat Fund",
+      "description": "Vidám szörfös rock hip-hop, punk és garage pop elemekkel keverve. Ne süketelj, és told a fejlövéseket.",
+      "name": "New Beat Fund - Sponge Fingerz",
+      "title": "Sponge Fingerz"
+    },
+    "29": {
+      "credit": "Beartooth",
+      "description": "Beartooth agresszív, az alapokhoz visszanyúló keményvonalas zúzást hoz, amitől beindul a tömeg, és törni kezdenek a dolgok. Tökéletes zene egy távcsőmentes felderítős-gyilkoláshoz. Nyomd mindhalálig.",
+      "name": "Beartooth - Disgusting",
+      "title": "Disgusting"
+    },
+    "30": {
+      "credit": "Lennie Moore",
+      "description": "Lennie Moore játékzene-szerző aromás, fűszeres jazzy funk keveréket szolgál fel. Hidegen tálalva a legfinomabb, mint ellenségeid hullái, miután elintézted őket.",
+      "name": "Lennie Moore - Java Havana Funkaloo",
+      "title": "Java Havana Funkaloo"
+    },
+    "31": {
+      "credit": "Darude",
+      "description": "Teljesedj ki szabadon a finn producer, Darude ismerős zenei ízei és hangjai között. Gazdagítsd magad progresszív felhangok és bizsergető dallamstruktúrák erős keverékével a dance zene egyik leghíresebb úttörőjének hangbankjaiból.",
+      "name": "Darude - Moments CSGO",
+      "title": "Moments CSGO"
+    },
+    "32": {
+      "credit": "Beartooth",
+      "description": "Beartooth másodjára is színre lép. Ez az új zenekészlet keményebben zúz és még agresszívabb. Emellett az MVP himnuszt még ütősebbé tettük, hogy az ellenfeleid igazán rosszul érezzék magukat, miután kikaptak tőled.",
+      "name": "Beartooth - Aggressive",
+      "title": "Aggressive"
+    },
+    "33": {
+      "credit": "Blitz Kids",
+      "description": "A brit pop punk banda, a Blitz Kids elhozza számodra a tökéletes zenekészletet a „B” lerohanásához, miközben a gimis éjszakai kocsikázásokra gondolsz a haverokkal. Ez a készlet a sebességhez és a fiatal életérzéshez illik.",
+      "name": "Blitz Kids - The Good Youth",
+      "title": "The Good Youth"
+    },
+    "34": {
+      "credit": "Hundredth",
+      "description": "A Hundredth ütőssé teszi a világot egyedi hozzáállásával a melodikus kemény rockhoz. Akár szabaddá, akár porrá leszel, ez egy tökéletes zenei anyag a méltatlanok szétmarcangolásához.",
+      "name": "Hundredth - FREE",
+      "title": "FREE"
+    },
+    "35": {
+      "credit": "Neck Deep",
+      "description": "Néha csak egy kis pop punk kell, hogy átvészeld a napot. Akár táborozókkal kell megszenvedned, akár elvesztettél egy óriási öléssorozatot, a Neck Deep bármikor bizonyítja, hogy nincs ellened az egész világ, csak a másik csapat.",
+      "name": "Neck Deep - Life's Not Out To Get You",
+      "title": "Life's Not Out To Get You"
+    },
+    "36": {
+      "credit": "Roam",
+      "description": "Roam gyors és lényegre törő pop punkot szállít, ami a közönséget és a játékosokat is egyaránt megmozgatja. Bizonyítsd ezzel a zenei anyaggal, hogy van gerinced, mert tökéletesen illik a másik csapat lerohanása és megsemmisítése alá, még mielőtt tudatosulna bennük, hogy esélyük se volt.",
+      "name": "Roam - Backbone",
+      "title": "Backbone"
+    },
+    "37": {
+      "credit": "Twin Atlantic",
+      "description": "A Twin Atlantic keményebb, zabolátlanabb és hangosabb, mint valaha, és most megérkezett a CS:GO-ba, hogy a skót rock tűzerejével segítse az agyszaggatást.",
+      "name": "Twin Atlantic - GLA",
+      "title": "GLA"
+    },
+    "38": {
+      "credit": "Skog",
+      "description": "Skog újra itt van harmadik, zúzós, metál készletével. Ezúttal elektro-organikus csavart ad a zenéhez, súlyos gitár riffeket kombinálva egyaránt súlyos dropokkal, loopokkal és drone-okkal.",
+      "name": "Skog - III-Arena",
+      "title": "III-Arena"
+    },
+    "39": {
+      "credit": "The Verkkars",
+      "description": "A The Verkkars az ENCE tiszteletére írt felpörgető zenével hódította meg a finn slágerlistákat. Tényleg ilyen könnyű lenne?",
+      "name": "The Verkkars - EZ4ENCE",
+      "title": "EZ4ENCE"
+    },
+    "40": {
+      "credit": "Halo",
+      "description": "Alakítsd át legendássá a CS:GO hangélményedet a Master Chief Collection Zenekészlettel, benne jellegzetes zenei pillanatokkal a Halo univerzumból. © 2019 343 Industries. Minden jog fenntartva. A 343 Industries engedélyével. A Halo: The Master Chief Collection és a Halo logó a Microsoft cégcsoport védjegye.",
+      "name": "Halo, The Master Chief Collection",
+      "title": "The Master Chief Collection"
+    },
+    "41": {
+      "credit": "Scarlxrd",
+      "description": "Scarlxrd ütős trap ütemeket vegyít olyan flow-val és hangzással, amely saját egyedi alműfajt teremt. Ezzel az izgalmas keverékkel élő műsorai a teljes közönség figyelmét megragadják.",
+      "name": "Scarlxrd - King, Scar",
+      "title": "King, Scar"
+    },
+    "42": {
+      "credit": "Half-Life: Alyx",
+      "description": "Ez a zenekészlet a Half-Life: Alyxnek állít emléket, a Valve VR visszatérésének a Half-Life sorozathoz. Te vagy az emberiség egyetlen esélye a túlélésre, és átélhető környezeti interakcióid folytatódnak a Counter-Strike: Global Offensive-ben.",
+      "name": "Half-Life: Alyx - Anti-Citizen",
+      "title": "Anti-Citizen"
+    },
+    "43": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory kelta fantasy elemeket kever sistergő elektronikus zenével és Peter Hollens bőséges vokáljával ebben a műfajhajlító zenekészletben.",
+      "name": "Austin Wintory - Bachram",
+      "title": "Bachram"
+    },
+    "44": {
+      "credit": "Dren",
+      "description": "Az indie játéksiker, a Gunman Taco Truck apokaliptikus mariachi zenei anyaga megérkezett a CS:GO-ba olyan erős mexikói ízű dallamokkal, mint a Pollo Diablo és a Persecución de Helltain!",
+      "name": "Dren - Gunman Taco Truck",
+      "title": "Gunman Taco Truck"
+    },
+    "45": {
+      "credit": "Daniel Sadowski",
+      "description": "A „Total Domination”, „The 8-Bit Kit” és „Crimson Assault” zeneszerzőjétől most itt az „Eye Of The Dragon”. Daniel Sadowski nindzsákat, fegyvereket, hiphopot és technót kever egy akciódús zenekészlet megalkotásához.A nindzsák gyors és pontos támadásaikról ismertek, mégis láthatatlanok tudnak lenni ellenségeik számára.",
+      "name": "Daniel Sadowski - Eye of the Dragon",
+      "title": "Eye of the Dragon"
+    },
+    "46": {
+      "credit": "Tree Adams és Ben Bromfield",
+      "description": "A M.U.D.D. FORCE erőteljes káoszának alkimistáiként Tree Adams és Ben Bromfield zeneszerzők eposzi harci motívumokat és zúzós szintetizátoros zenét forrasztanak egybe egy teljes sebességű pusztító forgataggá.",
+      "name": "Tree Adams és Ben Bromfield - M.U.D.D. FORCE",
+      "title": "M.U.D.D. FORCE"
+    },
+    "47": {
+      "credit": "Tim Huling",
+      "description": "Tim Huling klasszikus film noir stílusú számokat vegyített kortárs ütemekkel és ritmussal.",
+      "name": "Tim Huling - Neo Noir",
+      "title": "Neo Noir"
+    },
+    "48": {
+      "credit": "Sam Marshall",
+      "description": "A 90-es évek elejének fura videojáték-zenéi által megihletve Sam Marshall klasszikus játéknosztalgiát fűszerezett egy kis modern beütéssel.",
+      "name": "Sam Marshall - Bodacious",
+      "title": "Bodacious"
+    },
+    "49": {
+      "credit": "Matt Levine",
+      "description": "Matt Levine zeneszerző nyers menőséget szállít ebben a spagettiwesternek előtti tisztelgésben. És azt mondani sem esett még soha ilyen jól: „Csak rajta! Mi tart vissza?”",
+      "name": "Matt Levine - Drifter",
+      "title": "Drifter"
+    },
+    "50": {
+      "credit": "Amon Tobin",
+      "description": "A legendás zeneszerző, Amon Tobin különleges hangzásvilágot kölcsönöz a CS:GO-nak. Ezúttal csöves erősítőkkel.",
+      "name": "Amon Tobin - All for Dust",
+      "title": "All for Dust"
+    },
+    "51": {
+      "credit": "Darren Korb",
+      "description": "Persze, lehet, hogy néha egy-egy lövés nem talál be, de ami biztosan betalál, az ez a vérnyomásnövelő zenekészlet egyenesen Hades alvilágából, a Supergiant rouge-like dungeon crawleréből.",
+      "name": "Darren Korb - Hades Zenekészlet",
+      "title": "Hades Zenekészlet"
+    },
+    "52": {
+      "credit": "Neck Deep",
+      "description": "Bizonyítsd, hogy nem vagy átlagos (és, hogy jobb vagy mindenki másnál a pályán) a Neck Deep új zenekészletével, amely a banda All Distortions Are Intentional albumáról tartalmaz zenéket.",
+      "name": "Neck Deep - The Lowlife Pack",
+      "title": "The Lowlife Pack"
+    },
+    "53": {
+      "credit": "Scarlxrd",
+      "description": "A CHAIN$AW-VAL SCARLXRD EDDIGI LEGJOBBJÁT HOZZA, EHHEZ MÉRTEN NYERS FLOW-VAL ÉS SÚLYOS SZÁMOKKAL.",
+      "name": "Scarlxrd - CHAIN$AW.LXADXUT.",
+      "title": "CHAIN$AW.LXADXUT."
+    },
+    "54": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory megválaszolja az emberiség ősrégi kérdését: mi történik ha a sörkerti, harmonikán játszott polka zenét grunge heavy metallal elegyítjük?",
+      "name": "Austin Wintory - Mocha Petal",
+      "title": "Mocha Petal"
+    },
+    "55": {
+      "credit": "Chipzel",
+      "description": "A videójátékzene-szerző és chipzene legenda Chipzel hibrid stílusok bugos Speak & Spell inspirálta összevágását hozza el mókával, funkkal és zamattal megpakolva.",
+      "name": "Chipzel - ~Yellow Magic~",
+      "title": "~Yellow Magic~"
+    },
+    "56": {
+      "credit": "Freaky DNA",
+      "description": "Opera. 8 bites hangok. Analóg szinti. Ki ne szeretné mindezt? A chipzene specialisa Freaky DNA és a szoprán Leanne Koch összeálltak egy jó bulira és egy kis ütős zenére.",
+      "name": "Freaky DNA - Vici",
+      "title": "Vici"
+    },
+    "57": {
+      "credit": "Jesse Harlin",
+      "description": "Jesse Harlin zeneszerző a 70-es, 80-as és egyéb korszakok klasszikus sci-fijei által ihletett bombasztikus űropera drámát szállít.",
+      "name": "Jesse Harlin - Astro Bellum",
+      "title": "Astro Bellum"
+    },
+    "58": {
+      "credit": "Laura Shigihara",
+      "description": "A videójátékzene-szerző és fejlesztő Laura Shigihara segíteni fog mindenkivel hangosan és büszkén közölni, hogy te vagy az MVP. Szórakozz jól a 90-es évek tánczenéjének, a retró szintis videójáték zenék és csak egy csipetnyi Plants vs. Zombies hangzás keverékével.",
+      "name": "Laura Shigihara - Work Hard, Play Hard",
+      "title": "Work Hard, Play Hard"
+    },
+    "59": {
+      "credit": "Sarah Schachner",
+      "description": "Sarah Schachner tálalásában öntudatra ébredt skandináv robotok disztopikus gót kórusa úgy dönt, hogy az emberiségnek pusztulnia kell.",
+      "name": "Sarah Schachner - KOLIBRI",
+      "title": "KOLIBRI"
+    },
+    "60": {
+      "credit": "bbno$",
+      "description": "bbno$ megalkotta „a” mérgező játékos himnuszt, a „u mad!”-et. Berágtál? Szívd fel magad, csíra! A kutatások szerint ha ezt a Zenekészletet felszerelve játszol, azonnal felugrasz Ezüstről Globálisra.",
+      "name": "bbno$ - u mad!",
+      "title": "u mad!"
+    },
+    "61": {
+      "credit": "The Verkkars & n0thing",
+      "description": "A napos Kaliforniától a fagyos Lappföldig, a Counter-Strike legenda n0thing és a The Verkkars egyesítették erejüket a nagy sikerű Flashbang Dance megalkotására! 3, 2, 1, megvakultál!",
+      "name": "The Verkkars & n0thing - Flashbang Dance",
+      "title": "Flashbang Dance"
+    },
+    "62": {
+      "credit": "3kliksphilip",
+      "description": "Az a célod, hogy profi légy, vagy véletlenül visszaestél? Hagyd, hogy e zenekészlet 80-as éveket idéző szinti és álomszerű dallamai visszarepítsenek. Vissza, vissza, vissza... a régi szép időkbe.",
+      "name": "3kliksphilip - Heading for the Source",
+      "title": "Heading for the Source"
+    },
+    "63": {
+      "credit": "Humanity's Last Breath",
+      "description": "A Humanitiy's Last Breath nevű svéd banda bekeményített a Void zenekészletével. Dübörgő dobok, kolosszális riffek és olyan hangulat, amitől libabőrös leszel.",
+      "name": "Humanity's Last Breath - Void",
+      "title": "Void"
+    },
+    "64": {
+      "credit": "Juelz",
+      "description": "Neo trap szinti, nyers 808-asok, eposzi zongorafutamok és rengeteg fegyvertűz-hangeffekt. Juelz OG trap himnusza, a „Shooters” igazán elit zenekészlet. Csak MVP-knek.",
+      "name": "Juelz - Shooters",
+      "title": "Shooters"
+    },
+    "65": {
+      "credit": "Knock2",
+      "description": "A „dashstar*”, a Knock2 ikonikus bass house himnusza korlátlan energiával tölt el, ami megtestesíti a San Diego-i születésű fiatal „nincs határ” mantráját.",
+      "name": "Knock2 - dashstar*",
+      "title": "dashstar*"
+    },
+    "66": {
+      "credit": "Meechy Darko",
+      "description": "Ragadj meg egy Glockot, és hallgasd ezt a zenekészletet, hogy visszarepülj a New York-i underground hip-hop szcéna középpontjába.",
+      "name": "Meechy Darko - Gothic Luxury",
+      "title": "Gothic Luxury"
+    },
+    "67": {
+      "credit": "Sullivan King",
+      "description": "Imádod az üldözést? Imádod a vadászatot? A hard rock, a metal és a dubstep ütköznek Sullivan King zenei anyagában, hogy megállíthatatlanná tegyenek.",
+      "name": "Sullivan King - Lock Me Up",
+      "title": "Lock Me Up"
+    },
+    "68": {
+      "credit": "Perfect World",
+      "description": "Ünnepeld meg a CS:GO kínai megjelenésének ötödik évfordulóját a 花脸 Hua Lian (Painted Face) egyedülálló zenekészlettel. Ez a zenekészlet a csincsiang népi kínai operát (a legkorábbi kínai stílusú rock 'n' rollt) és a modern rock 'n' rollt ötvözi. Akár füst ölel körül, akár villanógránát vakított el, ne tévessz utat!",
+      "name": "Perfect World - 花脸 Hua Lian (Painted Face)",
+      "title": "花脸 Hua Lian (Painted Face)"
+    },
+    "69": {
+      "credit": "Denzel Curry",
+      "description": "Denzel elhozza jellegzetes energiáját a CS:GO-ba trap, jazz és drum and bass ritmusaival. E készletben megtalálhatók Denzel olyan sikerei, mint a „Walkin”, az „ULTIMATE” és mások, hát kapd elő a nikkelezett króm Berettákat és tekerd fel az intenzitást az ULTIMATE zenekészlettel.",
+      "name": "Denzel Curry - ULTIMATE",
+      "title": "ULTIMATE"
+    },
+    "70": {
+      "credit": "Valve",
+      "description": "Az alap CS:GO zenekészlet, amelyet 2012-ben, a CS:GO megjelenésekor mutattak be.",
+      "name": "Valve - CS:GO",
+      "title": "CS:GO"
+    },
+    "71": {
+      "credit": "DRYDEN",
+      "description": "Mit mondhatnánk még? Feel The Power. Kapcsolódj be DRYDEN energikus elektronikus zenekészletével.",
+      "name": "DRYDEN - Feel The Power",
+      "title": "Feel The Power"
+    },
+    "72": {
+      "credit": "ISOxo",
+      "description": "Kifejezetten azokhoz a játékokhoz készült, amikor... másnak érzed magad. Kísértsd ellenségeidet körről körre ISOxo „inhuman” zenekészletével.",
+      "name": "ISOxo - inhuman",
+      "title": "inhuman"
+    },
+    "73": {
+      "credit": "KILL SCRIPT",
+      "description": "Kedves vagy, vagy harcos? Talán mindkettő? Tudasd az egész váróval KILL SCRIPT „All Night” zenekészletével.",
+      "name": "KILL SCRIPT - All Night",
+      "title": "All Night"
+    },
+    "74": {
+      "credit": "Knock2",
+      "description": "Azoknak a játékosoknak, akik minden játékot úgy kezelnek, mintha egy Major döntője volna, még ha csak némi CS besorolás forog is kockán. Jöjjön az energia és a győzelmek Knock2 második zenekészletével, a „Make U SWEAT!”-tel.",
+      "name": "Knock2 - Make U SWEAT!",
+      "title": "Make U SWEAT!"
+    },
+    "75": {
+      "credit": "Rad Cat",
+      "description": "Néha a bomba hatástalanítása is elég, hogy a kör MVP-je legyél. Ünnepelj minden pillanatot, kicsit és nagyot, Rad Cat „Reason” zenekészletével.",
+      "name": "Rad Cat - Reason",
+      "title": "Reason"
+    },
+    "76": {
+      "credit": "TWERL és Ekko & Sidetrack",
+      "description": "Nincs jobb alkalom belelendülni, mint amikor reflektorfényben vagy. Engedd, hogy TWERL és Ekko & Sidetrack „Under Bright Lights” című drum and bass himnusza új magasságokba vigyen téged és csapatodat.",
+      "name": "TWERL és Ekko & Sidetrack - Under Bright Lights",
+      "title": "Under Bright Lights"
+    },
+    "78": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory alkut köt a Sátánnal, ördögi hegedűzenét csapva a totális EDM klubhangulathoz.",
+      "name": "Austin Wintory - The Devil Went Clubbing in Georgia",
+      "title": "The Devil Went Clubbing in Georgia"
+    },
+    "79": {
+      "credit": "Ben Bromfield",
+      "description": "Téged átvertek! Éld át ezt a merengően feszült, jazz ihletésű zenei anyagot Ben Bromfield film- és tévézeneszerzőtől, miközben kideríted, milyen mély is ez a nyúlüreg...",
+      "name": "Ben Bromfield - Rabbit Hole",
+      "title": "Rabbit Hole"
+    },
+    "80": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski meghívja a játékosokat a „Dead Shot” világába, amely az akció, hip-hop, szimfonikus, elektronikus és retró hangzás, valamint az érzelmek és a hangdizájn hibrid keveréke. Kerüld el a fejrothadást!",
+      "name": "Daniel Sadowski - Dead Shot",
+      "title": "Dead Shot"
+    },
+    "81": {
+      "credit": "Dren McDonald",
+      "description": "A koffein a barátod. Mindenki barátja, kivéve az ellenségedet! A „Coffee! Kofe! Kahveh!” a BalkanBalkanBalkan! street party rézfúvós zenéje Dren McDonaldtól („Gunman Taco Truck” és „Death’s Head Demolition”) élőben rögzítve Balkanciscóban!",
+      "name": "Dren McDonald - Coffee! Kofe! Kahveh!",
+      "title": "Coffee! Kofe! Kahveh!"
+    },
+    "82": {
+      "credit": "Matt Levine",
+      "description": "Lépj be a kémkedés veszélyes világába Matt Levine zeneszerző „Agency” zenekészletével.",
+      "name": "Matt Levine - Agency",
+      "title": "Agency"
+    },
+    "83": {
+      "credit": "Sam Marshall",
+      "description": "A „Clutch”, a „Bodacious” nem engedélyezett folytatása egy förtelmes cyber-funk lázálom, amit Sam Marshall élesztett fel alkímiával és misztikus rituáléval.",
+      "name": "Sam Marshall - Clutch",
+      "title": "Clutch"
+    },
+    "84": {
+      "credit": "Tim Huling",
+      "description": "Emeld meg az adrenalinszinted Tim Huling „Devil's Paintbrush”-jával, egy nagy energiájú groove-metál élménnyel.",
+      "name": "Tim Huling - Devil's Paintbrush",
+      "title": "Devil's Paintbrush"
+    },
+    "85": {
+      "credit": "Tree Adams",
+      "description": "Itt, a „Seventh Moon”-on Tree Adams kövér intergalaktikus funk mixet gyúr egybe ösztönző harci zenével.",
+      "name": "Tree Adams - Seventh Moon",
+      "title": "Seventh Moon"
+    },
+    "86": {
+      "credit": "Perfect World",
+      "description": "A hagyományos kínai népzenét és elektronikus zenét ötvöző „Ay Hey” eleven történetmesélést és energikus ütemeket kínál a különböző korú és hátterű játékosok összekapcsolására. A játékosok játék iránti lelkesedéséhez illő élénk ritmusával az „Ay Hey” élénken ragadja meg a különféle humoros és játékos csatajeleneteket.",
+      "name": "Perfect World - Ay Hey",
+      "title": "Ay Hey"
+    },
+    "87": {
+      "credit": "Adam Beyer",
+      "description": "A svéd techno legenda, Adam Beyer hozza el nektek ezt az álomszerű zenekészletet, hogy segítsen vörösre festeni az ellenségeiteket.",
+      "name": "Adam Beyer - Red Room",
+      "title": "Red Room"
+    },
+    "88": {
+      "credit": "Ghost",
+      "description": "MESSAGE FROM THE CLERGY – V. Perpetua pápa dicső heavy metal látványosság keretében alászállott a Counter-Strike-ba. Menekülj el a mindennapok megpróbáltatásaitól, miközben szórod a golyót és imádkozol az Unholy See-hez.",
+      "name": "Ghost - Skeletá",
+      "title": "Skeletá"
+    },
+    "89": {
+      "credit": "HEALTH",
+      "description": "Éld át a HEALTH-t a Counter-Strike-ban. Ragadj fegyvert, és élvezd a RAT WARS brutális és büntető ipari metál hangzását.",
+      "name": "HEALTH - RAT WARS",
+      "title": "RAT WARS"
+    },
+    "90": {
+      "credit": "James and the Cold Gun",
+      "description": "A walesi rockduó, a James and the Cold Gun tiszta, szűretlen energiát szabadít fel, a klasszikus punk hozzáállást vegyítve modern alternatív rock tűzzel egy fergeteges zenekészlet megalkotására.",
+      "name": "James and the Cold Gun - Chewing Glass",
+      "title": "Chewing Glass"
+    },
+    "91": {
+      "credit": "Jonathan Young",
+      "description": "Az űrkalóz power metal az, ami hiányzik a játékodból. Menj egy kört a Starship Velociraptorral, és hagyd, hogy Jonathan Young anime és videójáték ihlette albumának hangjai új szintre emeljék a meccseidet.",
+      "name": "Jonathan Young - Starship Velociraptor",
+      "title": "Starship Velociraptor"
+    },
+    "92": {
+      "credit": "Juelz",
+      "description": "Kell Floorspace? Ez a hatalmas zenekészlet Juelz bemutatkozó albumáról neo-rave szintiket, nyers basszusokat és kemény trap dobokat tartalmaz. Újraértelmezi a Floorspace-t a Counter-Strike 2-höz, és a „Gossip” MVP-himnusztól a játékosok előbb felállítanának, majd ledöntenének egy LED-falat.",
+      "name": "Juelz - Floorspace",
+      "title": "Floorspace"
+    },
+    "93": {
+      "credit": "Killer Mike",
+      "description": "Élvezd a háromszoros GRAMMY-díjas hiphop albumot a Counter-Strike világában. Killer Mike hangja segít motiváltnak maradni, miközben felfelé törekszel a ranglétrán és fejleszted a képességeidet.",
+      "name": "Killer Mike - MICHAEL",
+      "title": "MICHAEL"
+    },
+    "94": {
+      "credit": "PVRIS",
+      "description": "Mi az egyetlen, amit jobban szeretünk egy jó ellenségnél? Egy jó zenei anyag. Engedd, hogy az új PVRIS zenekészlet felpörgesse a csapatod és örökzölddé tegye a győzelemsorozatod.",
+      "name": "PVRIS - Evergreen",
+      "title": "Evergreen"
+    },
+    "95": {
+      "credit": "Selective Response",
+      "description": "Tüzeld fel vágyaidat ezzel a dinamikus, energikus zenekészlettel az amerikai techno ikontól, a Selective Response-tól. Feltöltve és akcióra készen.",
+      "name": "Selective Response - No Love Only Pleasure",
+      "title": "No Love Only Pleasure"
+    },
+    "96": {
+      "credit": "Tigercub",
+      "description": "A Tigercub brit rockcsapat nyers, dallamos zenét hozott, a nyers alternatív rock intenzitását egyesítve bús, modern éllel, hogy egy zúzós zenekészletet alkosson.",
+      "name": "Tigercub - The Perfume of Decay",
+      "title": "The Perfume of Decay"
+    },
+    "98": {
+      "credit": "ALRT",
+      "description": "Az ALRT lendületes basszus house lemeze a tökéletes „DOPAMIN HIT-et” adja, ami fókuszban tart, így készen állsz színre lépni, amikor a legjobban számít.",
+      "name": "ALRT - DOPAMINE HIT",
+      "title": "DOPAMINE HIT"
+    },
+    "99": {
+      "credit": "Altare",
+      "description": "Altare „Change My Mind” című euforikus wave-himnusza tökéletes a csúcsok csúcsaihoz, amikor úgy érzed, senki sem állhat az utadba.",
+      "name": "Altare - Change My Mind",
+      "title": "Change My Mind"
+    },
+    "100": {
+      "credit": "borne",
+      "description": "Borne kemény basszus ritmusa, a „Give It To Me” felkészíti a játékosokat odacsapni ellenfeleiknek a Counter-Strike-ban, és azon túl.",
+      "name": "borne - Give It To Me",
+      "title": "Give It To Me"
+    },
+    "101": {
+      "credit": "Pirapus",
+      "description": "Pirapus energikus drum and bass himnusza, az „EVERYNITE” a nagyszerűség kapujában állás érzését kelti. Címéhez hűen garantálja, hogy minden éjjel rákapcsolsz.",
+      "name": "Pirapus - EVERYNITE",
+      "title": "EVERYNITE"
+    },
+    "102": {
+      "credit": "Repiet & Julia Kleijn",
+      "description": "Készülj fel bármilyen kihívásra Repiet és Julia Kleijn ragályos „On And On” dalával. A magaslatokon és mélypontokon át ez a dallam megadja a hangulatot bármilyen akadály leküzdésére.",
+      "name": "Repiet & Julia Kleijn - On And On",
+      "title": "On And On"
+    },
+    "103": {
+      "credit": "ShockOne",
+      "description": "Törj ki ShockOne energikus drum and bass felvételével, a „Voices”-szel. Készen állva hozni a szólót, ez a zenekészlet ütős basszussorokat tartalmaz, amelyekkel sokszor eléred az MVP-t.",
+      "name": "ShockOne - Voices",
+      "title": "Voices"
+    },
+    "104": {
+      "credit": "Starjunk 95",
+      "description": "Tapasztald meg a galaxis legmenőbb rádióállomásának zenekészletét, amely a mai legújabb hangzásokat retró nosztalgiával ötvözi. Ez a Starjunk 95.",
+      "name": "Starjunk 95, Industrial Sunset Memories",
+      "title": "Industrial Sunset Memories"
+    }
+  },
+  "releases": {
+    "2016-11-28-radicals": "StatTrak™ Radikálisok Doboz",
+    "2020-04-16-masterminds": "Lángelmék Zenekészlet Doboz",
+    "2021-08-12-tacticians": "Taktikusok Zenekészlet Doboz",
+    "2022-08-23-initiators": "Kezdeményezők Zenekészlet Doboz",
+    "2024-02-06-nightmode": "NIGHTMODE Zenekészlet Doboz",
+    "2024-08-20-masterminds-2": "Lángelmék 2 Zenekészlet Doboz",
+    "2025-08-14-deluge": "Özönvíz Zenekészlet Doboz",
+    "2026-05-07-nightmode-ii": "NIGHTMODE II Zenekészletek"
+  }
+}

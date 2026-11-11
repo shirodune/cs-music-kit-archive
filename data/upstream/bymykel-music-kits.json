@@ -1,0 +1,512 @@
+{
+  "1": {
+    "image": "https://cdn.steamstatic.com/apps/730/icons/econ/music_kits/valve_cs2_01.6958879a95853a86e8fbaebc9efe4518712cb3f9.png",
+    "standard": true,
+    "stattrak": false
+  },
+  "2": {
+    "image": "https://cdn.steamstatic.com/apps/730/icons/econ/music_kits/valve_02.731a1c0b47d69a7d7deb5fbfdd04d74bf3378f9c.png",
+    "standard": true,
+    "stattrak": false
+  },
+  "3": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMXqZ7FN554bw5U70ShTOzseu_HBZ6aurOvI5cPWSXGOSw-gjtLE4GHCxwktx6jjVw4msJHzGaQIgAowwG7B47VZqDQ",
+    "standard": true,
+    "stattrak": true
+  },
+  "4": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuO3Se9l90y9elpF_iFE-knZW1-HACuqD7P_Q1JqSXDTfHwr536bk_TnjixU1w5jvSw9m3MSXAtbhIJfc",
+    "standard": true,
+    "stattrak": true
+  },
+  "5": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJ3SV4ERh9Yv461D1RCKhz9i2rCNa6fb8P_U8JqWVWmaUk7gm47g5SXznwxsismrXntqueHmeZwYgFNIuEkQzDnuI",
+    "standard": true,
+    "stattrak": true
+  },
+  "6": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJn6W61tg5pX182a3EFOkm87k-HUI7PCvMac1d6XDVjLDlrxw5bNvGHmwlx50523Rn9n9IiiWcEZ-XdLc0038",
+    "standard": true,
+    "stattrak": true
+  },
+  "7": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuM36S4Vtwy9elpAHhQhunysPlriAI7aD5PfBvJKmQWjDIxb8j57drHXmwl04k4mWDm9m3MSXA9LcoLxM",
+    "standard": true,
+    "stattrak": true
+  },
+  "8": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMWmS62klpcny6Qu2Fkj3n8S4pCBftqv7O6BuI6eXWGTGlrx357RtFiznxxtx42TW1J_3JonMHxrk",
+    "standard": true,
+    "stattrak": true
+  },
+  "9": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNG6E8V974476_lb1WCKhz9i1-HFZ6qWqP6ZpcvXCXDSUlrgv5rhsGC3iwkt25GjRz9epdSqRPQByFNIuEoOD6xBW",
+    "standard": true,
+    "stattrak": true
+  },
+  "10": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJnqE7VdKpNa6sljjEB6jn5Pi-XMMt_aoO6BrJqDKDTOWkLcmsrY5GX23wUsj4mnXn8HpLyzD8oHEQA",
+    "standard": true,
+    "stattrak": true
+  },
+  "11": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJnCY4mklpcmgsg--QhmlzMGw_3QOvqH7baJrd6WXXzXBkb8ktOM5Fn2xlxtz6mrW1J_3JjSDCT4B",
+    "standard": true,
+    "stattrak": true
+  },
+  "12": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuOHKT619y_JPm413iUw7Ozseur3Ba66v6avw9IaDGVmaUku104bI-HC-wk00h5WSAzNahcn-ebwEmD4wwG7Dv5VTfwA",
+    "standard": true,
+    "stattrak": true
+  },
+  "13": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuOHqD8Vp0-oDx1Qm2DxykzcSx-3Bf7auobPw5I6nACzTIlesk6OU_H33rwkVz6mzWm4mhciqJLlh3-4p3w34",
+    "standard": true,
+    "stattrak": true
+  },
+  "14": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuOHqD4Fl48ZTn41fmfk2g0M-0-HUDuPD9bPY_d6jHX2KRlu8ls-U9Fy21l0R24mzWy46oIymWO1A-SswnqhmYKNo",
+    "standard": true,
+    "stattrak": true
+  },
+  "15": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPXSD6V978Yr961Tufk2g0JLmpXsLt6T8OfxsJPOSCDfAw7Ygs-dvSS_kzUx-4jvXnNr7IimSbgY-SswntCV3CPU",
+    "standard": true,
+    "stattrak": true
+  },
+  "16": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMXqZ7FN554bw5U70ShTOzsSuqCMJuqKrbvRseaKQDGLAluwntuU8S3vllBsj4juBm9qrJXqXO1MoXowwG7D37VA97g",
+    "standard": true,
+    "stattrak": true
+  },
+  "17": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMXqa71d7-ZX1_EzpQB7OzseuqHED7aT2bvY7JPGXCmOVku0u4-c_TiznwRki6mTRzY77di6fPQR0CowwG7A3iRcaNw",
+    "standard": true,
+    "stattrak": true
+  },
+  "18": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJWmY_U9KpNa6uwuwGEv0zs_m-3YM7KOqbPY4d6XEDWGWkbkg4eNvGCvrzU0jtT_WmMHpLyx6Oq1mFg",
+    "standard": true,
+    "stattrak": true
+  },
+  "19": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPnKD7VN65p7LugipEU30x8Hi-ScPv6D7Mfw6c_SVCzLCx-hz6LEwTHmyxUhz4mWBy97_J2XXMFElSD7z3A",
+    "standard": true,
+    "stattrak": true
+  },
+  "20": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuIWmY4Fpm8oj451jpTyKhz9i2ryEKtvf_bvBoJKOQXTeVwrwl6OU5F3G3kR534GvTzd78dHyTZwEiFNIuEg48vcSn",
+    "standard": true,
+    "stattrak": true
+  },
+  "21": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPn6b6U939Y7470DYEUy_y5C2r3IIvvCsav1pdqjGV2OSk-gntrloGn7mlEsjsDnUytigInKVZhhgVMWDIHfBEw",
+    "standard": true,
+    "stattrak": true
+  },
+  "22": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJnCY4mklpsnx71u-RRnzzcKw-3pav_D7O_RvcKnECDGRlugl5-JtFnvhxk5ztWjW1J_3JggDF25u",
+    "standard": true,
+    "stattrak": true
+  },
+  "23": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMXqZ7FN554bw5U70ShTOzsWur3FduaX-bvw7JKPDXD7Alusn6bc8GHHjlxt3tT7Uztr4I3iUagQjD4wwG7CloiQLEg",
+    "standard": true,
+    "stattrak": true
+  },
+  "24": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNGyY6Vh04I775Ga3EFOjmJDjrHQOv_OsbKFseaDKVzLHk70hsbc4GSvrlEVytWWGm9mhdy6TcEZ-XZaQ4-De",
+    "standard": true,
+    "stattrak": true
+  },
+  "25": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuOHSF4VBg55P15F7YEUy_z8_irHdetqqtOfw-JaSQCDbBx74gteQwS3zqlEV-4zncy9qociqfPBhgVMVYMXeUSA",
+    "standard": true,
+    "stattrak": true
+  },
+  "26": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuOHKU7Vdw-IXm5Ur0fk2g0Jfk-yQI7ParafU9IvOSVzORmLwm4rRqTHi1kU1y4T_Qm92qc3zGZlI-SswnxR50Dnw",
+    "standard": true,
+    "stattrak": true
+  },
+  "27": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPHqZ7UN54Jbh40rzfk2g0MWxqHVduKT_bfw5d_KSWjXIw-xw6LNvTS-ywht35D7Sw934dC-RbAA-SswnHSbFbTg",
+    "standard": true,
+    "stattrak": true
+  },
+  "28": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuO36A51N04IHh5F3YEUy_mMGxrCBY66L9P6c9I_OQXzXBw71ztrVtHy3nwB9w5WnTmI6qIijEOxhgVMW0Zuhv-w",
+    "standard": true,
+    "stattrak": true
+  },
+  "29": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuN36W90J6-5P81Qm2D0ryxsS3ryMKu_P6P_08dvOWDDOSlLd0s7AxTXi1xxl3427TmNqsc3iJLlh34_7J-SA",
+    "standard": true,
+    "stattrak": true
+  },
+  "30": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuOX6Z619w-Yj7-FzYEUy_xsPl-yFevKGsbvFpc6DHWzWRmesu5OQ9Tnzmlkp_sGSHztuudn7DbRhgVMXA6cDp0w",
+    "standard": true,
+    "stattrak": true
+  },
+  "31": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMXqF8FJwy9elpA7kGE_wy8awr3ULvKL_aaY7eKjACDGRkLoitrQwTCrhzUhw4mjXy4u3MSXAdefS6m8",
+    "standard": true,
+    "stattrak": true
+  },
+  "32": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuN36W90J6-5P81Qm1D0v0ncXjpHcDuqT5OfY1JKnHWjLFx7l147U8Fivhxxwj4W3Ty46ocyiJLlh39UDB3WA",
+    "standard": false,
+    "stattrak": true
+  },
+  "33": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuN3ee8Ux-_YPn1Qm2D0j3zsK4rXYNt_T5avA7IajAVmWSlrgntOdtSSjjwkV_52vcn9z8cHyJLlh3QAIUPxY",
+    "standard": false,
+    "stattrak": true
+  },
+  "34": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPW6Z4URw8JP81Qm2DxunzsWypXcL7qD4bf1vcfaXDT6Vmbol5eA8GH3hzU8l4WrSw92udXyJLlh3C_9f1qc",
+    "standard": false,
+    "stattrak": true
+  },
+  "35": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuO36U7lJw8ZfLugipR0_zzMCzqHsMvKSoOvI-I6XCV2GSlOxwtuNoSXzqxR5ysD-BmYuodmXXMFGQ36ERJg",
+    "standard": false,
+    "stattrak": true
+  },
+  "36": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJ3SW6Gklpcnw7wC2GEujx5Cx-SQMuqSqOv01JKjCDWOSk7pz5rQxSiiwk0p36m2G1J_3JhtobOCh",
+    "standard": false,
+    "stattrak": true
+  },
+  "37": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuIWye61dh-Ib6_lDkfk2g0Jez-HQLuqT3bPQ4cqfBXzXHlLci4-M-SSjjlEhx4DjQw4v9cy2WbgM-SswnmggWEWw",
+    "standard": false,
+    "stattrak": true
+  },
+  "38": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJnCY4mklp8mm6w_lF0j3m8S0qXFY66D5PPU5I6iWDzPIl78is7VrFnrrwx505GqE1J_3JpXwBPe8",
+    "standard": false,
+    "stattrak": true
+  },
+  "39": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuIXOS81Nn_4z1-ErYEUy_ncG2pHQC66qtOfBsefHEWmTHkOgmtLRsSSq2w0ly4DvSmNipIy2TbRhgVMXK454YZg",
+    "standard": true,
+    "stattrak": true
+  },
+  "40": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPXqb6mklpcn1vgC-FE_3ypOwqHsDuKOtOPFrdvTLXD6Wl-gk6eA4Tnuwlh8jtz7X1J_3JlK1Y0Yt",
+    "standard": true,
+    "stattrak": false
+  },
+  "41": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJniW91pt5oPLugipR0z1m5fl-XUI7KP9OvY7cPPLXTLEkLcusuI7SXvgkER06j_Uydb7cmXXMFHBwRoo_g",
+    "standard": true,
+    "stattrak": true
+  },
+  "42": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPXeW6U9ty9elpA--FBihnMa3-3EMtqr-PvE9JKTDVmGUkrwg4LY6GC21zU9yt2yDw963MSXAJjr9su4",
+    "standard": true,
+    "stattrak": false
+  },
+  "43": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNG6E8V974476_lb1WCKhzNjjpSRZuKr3bqVveKjGVjGUl7d04uNqF3vhxk51smqEwtn4JymfbVN0FNIuEmZnQsKn",
+    "standard": true,
+    "stattrak": true
+  },
+  "44": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMWmS62klpsmiuQ-zFh7ympPlrXQCvaf7bvU0dajKCjCTxLxy5eM-SyzmzEwmsmuH1J_3JsSHwbhj",
+    "standard": true,
+    "stattrak": true
+  },
+  "45": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMXqZ7FN554bw5U70ShTOzsKuqyBevaD_PvY_cqnBC2aSx-sitOA9Hy3iw0shsmrQm9n9cS_EO1UlD4wwG7C42cYiFA",
+    "standard": true,
+    "stattrak": true
+  },
+  "46": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuIWmS4Fdx9Yrn1VviTx_jkZvm9CdX683-Oeo9ePOSVj-Tmegg5bFrGnvnk0p36jzWn938cX7CbQcmCpd3TOANs0O7jJS5YPSqCPlw",
+    "standard": true,
+    "stattrak": true
+  },
+  "47": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuIXKa7UN5_Ynz1Qm2D0igxpfhqyAPufGra_RpeKDKCzaVmLYi4LU4TH_lkxl34zvXyI2pcX6JLlh3SgiXjNY",
+    "standard": true,
+    "stattrak": true
+  },
+  "48": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJnqa6Fdn54_15lXYEUy_zsPh-SEJtqCvbvBsIvOVCzGTxbh04uU-GSjlxU93sj_dyt6rcyrDPxhgVMX0GDfl6g",
+    "standard": true,
+    "stattrak": true
+  },
+  "49": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuOHqD8Vpw4o7672a3EFOoycLiqXcL6qT-PvE5d_HCXT-VkLt35bU5GnDkxEtzsT6Bzd_4eS6fcEZ-XQTUt-o7",
+    "standard": true,
+    "stattrak": true
+  },
+  "50": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNHaY60J69o761Qm2D0_ymMLmpSACt_P_OfVrI6jHWTLHl-x05uAxSSyxxk5x5zzXmYn4cCmJLlh3qmNAx_w",
+    "standard": true,
+    "stattrak": true
+  },
+  "51": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPXqT4EVKpNa6vgi0EkugzcO2q3Nfu6D8OPc0JvXEXjeVkexw5OIxHn7lzUVx4mTRn8HpLyy5vFaXRw",
+    "standard": true,
+    "stattrak": false
+  },
+  "52": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuO36U7lJw8ZfLugupRU2hm8W4_3AP66etafY1dfaXXTPEkL93tuI6GyvrwkkmsWXVmYuoI2XXMFG1wALONw",
+    "standard": true,
+    "stattrak": true
+  },
+  "53": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJniW91pt5oPLugupGBmnzcbkqCEPtqr6Oac-damWWGOVx750s7NsGyzhwR9x4T_XnN2qcmXXMFFfP0kuIw",
+    "standard": true,
+    "stattrak": true
+  },
+  "54": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNG6E8V974476_lb1WCKhzdixpSQNvaP9avU8JfOQCmXBk7wl57Q9GCjkzR51sD_Syon7dH_DZgQpFNIuEpzXvuPa",
+    "standard": true,
+    "stattrak": true
+  },
+  "55": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNnOe9Uxw-LikuxeyR0n1x5C1_HYPv_P3avI7eKDEDDSRkO135LFrSSzlxB8jtz7Rwtz6bzvJOed42IOv",
+    "standard": true,
+    "stattrak": true
+  },
+  "56": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuM2mS5F1s8In11Qm2D0Snn5DhqXII6aevMaE9cqPHXj-VmbYi6bc6GXDgw0wl5zvQz9j_dX-JLlh3U7PBHho",
+    "standard": true,
+    "stattrak": true
+  },
+  "57": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuP36E9lN99ZX441fYEUy_xsC5pSMIvfGqbaZvJfXCWDXClO0k47BrTi3ml0l14W_QzI6tJS3CbBhgVMVNIuoA8w",
+    "standard": true,
+    "stattrak": true
+  },
+  "58": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuOXqC91dm_I7z41HmUxzOzseuqyFY66CqOf09dKXAXjDHkr8n5eNoF3Gwxx4lsW7dw4uqJSqTaFJ2CYwwG7C58tQJhA",
+    "standard": true,
+    "stattrak": true
+  },
+  "59": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJnqF5F5m94_16VHpRA_OzseuqCMO7feoO_Q9IaTHCD-WlLp0sbJtF3jkx0lysD_WyImvdy-WPQ4lXIwwG7Cq-4RO3A",
+    "standard": true,
+    "stattrak": true
+  },
+  "60": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuN3mZ6kVKpNa6vgjlRByknJOw-CEK7KP_bPZrefPGVmSTk7py4bY8Tivlx0Vw4z_SzsHpLyyu3lGzoA",
+    "standard": true,
+    "stattrak": true
+  },
+  "61": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuIXOS81Nn_4z1-ErYEU-_zcS5rXEP7KT2PvU_JaiVXjeWkegn6OQ7Hy3klEVztWqByI2veX2VaRhgVMWDR-PWmQ",
+    "standard": true,
+    "stattrak": true
+  },
+  "62": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuZnCb7F1m5I_95lD3fk2g0MW3q3IKvqr4P6BsJPHHXjeSkLl147Q-GH3rkU5z5z7UztaoIHmfZgc-SswnBcYXqSs",
+    "standard": true,
+    "stattrak": true
+  },
+  "63": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPXeV2gYkutf2ugHjR0T1yc7ir3EL6aD4av1od_WRWmHIxe134bBvHXDrl053tjvLioH-59nm0rc",
+    "standard": true,
+    "stattrak": true
+  },
+  "64": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuP26S6UxKpNa6ul2yGE3zzZLkqyEOt_asafQ4dPWWXjeWlLx36LA_GnDlwx8isW7UysHpLyxdw4RVEg",
+    "standard": true,
+    "stattrak": true
+  },
+  "65": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPnWY5l0ny9elpFuwQhugx8G0qXVavqT_avw_I6HCDT-Vk-oi5rFtGnjjkBxy6zyGmNu3MSXAuEzdSoI",
+    "standard": true,
+    "stattrak": true
+  },
+  "66": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuOH6S5l5s8Ibm4VbYEUy_y5Li-HsC6fT2afZoJqnKXDWUmbp3s7c4TSyxzB4j5WXQzduvI3OfaBhgVMWCMDEthw",
+    "standard": true,
+    "stattrak": true
+  },
+  "67": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJm6b6V9j9Yn_41fgfk2g0MG3rXUMvfH3OKc8IfOVXTPJxbwgs-BqTSuykUwm6mvTm9erdHmTbVU-SswnLnCCc2g",
+    "standard": true,
+    "stattrak": true
+  },
+  "68": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJX6F41N24JD7-FXjfk2g0MLlqScOt6L7PPxrdfTLX2HDkbgi4OM7TX2wkRsm6j-Ewor8InueOwY-Sswnc1NbBcg",
+    "standard": true,
+    "stattrak": true
+  },
+  "69": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMX6Z_1N595Lm-EDYEUy_ncCzrXpZ6qf_avA9I6bADTeRxep05bA7SS-1wBl1sGTSy9z4Ii7EPxhgVMXpTAlXoQ",
+    "standard": true,
+    "stattrak": true
+  },
+  "70": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuI3qb81NKpNa66wu1Qx-mm8Kx-CYC6aD2bv0-IfPFWGHIkegh5LY4GXzlxU905W7UwsHpLywWgep6oQ",
+    "standard": true,
+    "stattrak": false
+  },
+  "71": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMWmO4VN7y9elpAiyEUynyZSwrSMOu6v-MaI8cqjCDzXIluwmtLRtHy2wzB4mtzuDyNi3MSXAPV825k0",
+    "standard": true,
+    "stattrak": true
+  },
+  "72": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPGiY_VlKpNa671zmERmmy5Pi_3YMtqr5aqBpJaXFWGSRlL916LUxGS3nwBwk52TUz8HpLyyhdGnKfw",
+    "standard": true,
+    "stattrak": true
+  },
+  "73": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPnKb6UV25o7k_ma3EFPym86wqSAKu_H7PKE4JKiWV2GVx71z57k6Sy3hzURwsWjXyouod3KfcEZ-XaDU2Jmf",
+    "standard": true,
+    "stattrak": true
+  },
+  "74": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPnWY5l0ny9empA21F0ijnMS3rXoO6qv2Oac4cKfDXz-Uw7p0tLk9TXHllkVx5W2HzNa3MSXAGLCr2ac",
+    "standard": true,
+    "stattrak": true
+  },
+  "75": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJ3qT5ldhy9elpFq0FEmgzpDh-3INuaqtaqU0cKmWCzSSlr9ysrI_TCq1xx5ztmqDyd23MSXAcELeXMM",
+    "standard": true,
+    "stattrak": true
+  },
+  "76": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuIWyS91pKpNa6s13lE0-jn8-1pXJauqf4O_xrdaLHDzPBwugh4bgwGHvjxR9-4G6HnMHpLyxvON_2ZA",
+    "standard": true,
+    "stattrak": true
+  },
+  "78": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNG6E8V974476_lb1WCKhytiwpXNYv_aoO6JoI6DGWDKSkb9ytONsTSvhzU505z-BzoyvdX3Da1MnFNIuEmHVT0Jg",
+    "standard": true,
+    "stattrak": true
+  },
+  "79": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuN36Z50R6-YH971Xjfk2g0MGw_nMJvKWtO6I9eaDCDWbJxO0utLI6TXjrzU934W6An46vdXqUPFc-Sswnvkalcgc",
+    "standard": true,
+    "stattrak": true
+  },
+  "80": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMXqZ7FN554bw5U70ShTOzsOuqnACvKD5P6Fpd6SWCGPFlu0u4eA_SyqwzEwmsTvQyNapdi_CPFMlDYwwG7Abj54DYw",
+    "standard": true,
+    "stattrak": true
+  },
+  "81": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMWmS62klp8n3vQjkFkXymJe4-Xtavqf6bvM_dqOSC2PBlr8us7JtTH_rx0Ul5m3V1J_3JsxLaZwf",
+    "standard": true,
+    "stattrak": true
+  },
+  "82": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuOHqD8Vpw4o7672a3E1OnyJezrnNdu6r7bvNrI_HKVmGUw7h34eM8Hn_lxEVw6zuEyYqqd3vEcEZ-XfK-tm-7",
+    "standard": true,
+    "stattrak": true
+  },
+  "83": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJnqa6Fdn54_15lXYEU-_zJe0qnYJ66utOvI0c6LLWz7AmL8u4Lc9S3zjwUxwtW_dmdascCqSPxhgVMUkssBXcw",
+    "standard": true,
+    "stattrak": true
+  },
+  "84": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuIXKa7UN5_Ynz1Qm1D0Six8Lh-SMDu6r5O6c8eaPBWzHJmb4i4-doFnvmxRl2tzvQy4yhJH2JLlh3Dy1Dksc",
+    "standard": true,
+    "stattrak": true
+  },
+  "85": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuIWmS4Fdx9Yrn1Qm2Dxz3zcKy-XFYv6P4PPQ_eaHCVjOSmep35rRrF32wwBh042vSmYmoInmJLlh3TYKTTis",
+    "standard": true,
+    "stattrak": true
+  },
+  "86": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJX6F41N24JD7-FXjfk2j0M7ir3QOvKb8P6A1cPSSXzKSkbl14eU-GCu3x0V24jvWzo6veXuUbAQ-SswnjV5YWxY",
+    "standard": true,
+    "stattrak": true
+  },
+  "87": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNH-W6FRw7YLm1Qm2D0ypm86w-CcL6vT-OP05caHDWmHHmOh35eI5HS_jwE4msmTXwtepcniJLlh3Piv7u7I",
+    "standard": true,
+    "stattrak": true
+  },
+  "88": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuMnOY9kJKpNa6uwzmFkT1zMHlpXMMvKv5Oqc0caHBX2bCmb8ltbIxH37klE0h4W_cm8HpLyyghyHkLA",
+    "standard": true,
+    "stattrak": true
+  },
+  "89": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPX6W6UJ9y9elpAHkF0_wz8C5r3BeuvH4Pfw8IaPACzWSmbkgtrI6Hy2xwBh34mrcyt63MSXA80s-Xh8",
+    "standard": true,
+    "stattrak": true
+  },
+  "90": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuP3qa4EV0-oPg4lzkThH1mYPuwnIKofD-PPxseajKDTCTkbgg6OI4TCzmxURw42yDzI6hcy-ebgN1XJEiQ-MU8k7vPe1y5g0",
+    "standard": true,
+    "stattrak": true
+  },
+  "91": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuP3SZ5EJ99Ynt5UzpRiKhz9i0-3YCvvD7P_xrJanECDWTme0m5-drHn7hwkpw52zTzYv9cH2eOA4nFNIuEiP11Fka",
+    "standard": true,
+    "stattrak": true
+  },
+  "92": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuP26S6UxKpNW661yyF0Xwyc7kryMIuqCtOqdudaPEDTeUw-11seQ4H3G3zRwk4DuGn8HpLyxF_Gg6fw",
+    "standard": true,
+    "stattrak": true
+  },
+  "93": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuPnKb6VNn-Y7_72a3EFOlz8biqnRd6ab3bvA_cvTDC2XImOwi4-U8S37nxk5y5D7Sw9v9I37DcEZ-XeFRCz_X",
+    "standard": true,
+    "stattrak": true
+  },
+  "94": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJW2F7EVKpNa671jlEk-pmpLj-HtZ6qv8Ofc6JaWRXGTIw750srVqSXCwlBgi423XmMHpLywuexEzEA",
+    "standard": true,
+    "stattrak": true
+  },
+  "95": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJn6b4FVh_ZHx-Fz0URL_jZPfrXMVtqH2a_Q0cfLBDWbJk-p0sbNoHnrmxx8m42jdy9f7InieOgciDZZ1EPlK7EehqW9d7Q",
+    "standard": true,
+    "stattrak": true
+  },
+  "96": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuIXKQ4ER24YXLugipQEn0mpPl_icD6qD4a6c7I6XGWTbFx7ZysbIxG3C3zEtz4G6BmImoImXXMFEshFifrQ",
+    "standard": true,
+    "stattrak": true
+  },
+  "98": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNHeF8Wklpcmtu120GR6hy8O5-3MJ7Pb6PaY_I_bBXjHJmbd1s7Y8FyrkwEty5jjS1J_3JrXfbNYF",
+    "standard": true,
+    "stattrak": true
+  },
+  "99": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuNHeD5ERwy9elpFq3Fx6hmJLlrHAJv_eqOKI1JKSVWDXGkLovtLJoF3Hik00htTzWyt-3MSXAv8iGC0E",
+    "standard": true,
+    "stattrak": true
+  },
+  "100": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuN3SF61NKpNa66VrjQhigmpCx-Xdf7qWvO_0_IfHBCmHCkrcm6LgwS3vkzUlzsD_Vm8HpLywQpLob3g",
+    "standard": true,
+    "stattrak": true
+  },
+  "101": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJXKF5EZg57ikuxewRUmkmMaw_yZY6qf3OPY6JKeRD2XIk78m5udtS3G1xhx-tT-Hy96obzvJOYRCqud0",
+    "standard": true,
+    "stattrak": true
+  },
+  "102": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJ36H7FNhy9elpFu3QkXyyZe3pHcI6_D8bPI0cvLCXzTCw7ovs7RtGXjhzEl-6z6Emda3MSXAtLvhCgA",
+    "standard": true,
+    "stattrak": true
+  },
+  "103": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJnOY5l16-oLLugipEE7zmM63-SFfuKv-MPc6eKfLWDHJk74l6eJoHC23zEh-t2yHyN_7dWXXMFFiTTCrFg",
+    "standard": true,
+    "stattrak": true
+  },
+  "104": {
+    "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJm-W91xg-oytv2a3EFOpycPlqCdatqGqOaE_I6nLVzbCw7pw4rZrTnHhwEtx6m-Dw43_JS-WcEZ-XYyGj8X1",
+    "standard": true,
+    "stattrak": true
+  }
+}

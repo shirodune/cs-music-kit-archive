@@ -6,7 +6,16 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!!**/dist", "!!**/.astro", "!!**/*.md", "!!LICENSE*", "!!NOTICE"]
+    "includes": [
+      "**",
+      "!!**/dist",
+      "!!**/.astro",
+      "!!**/data/upstream",
+      "!!**/data/generated",
+      "!!**/*.md",
+      "!!LICENSE*",
+      "!!NOTICE"
+    ]
   },
   "formatter": {
     "enabled": true,

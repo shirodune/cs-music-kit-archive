@@ -1,0 +1,915 @@
+{
+  "1": {
+    "artists": [
+      {
+        "artist": "valve",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "3": {
+    "artists": [
+      {
+        "artist": "daniel-sadowski",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "4": {
+    "artists": [
+      {
+        "artist": "noisia",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "5": {
+    "artists": [
+      {
+        "artist": "robert-allaire",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "6": {
+    "artists": [
+      {
+        "artist": "sean-murray",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "7": {
+    "artists": [
+      {
+        "artist": "feed-me",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "8": {
+    "artists": [
+      {
+        "artist": "dren-mcdonald",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "9": {
+    "artists": [
+      {
+        "artist": "austin-wintory",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "10": {
+    "artists": [
+      {
+        "artist": "sasha",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "11": {
+    "artists": [
+      {
+        "artist": "skog",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "12": {
+    "artists": [
+      {
+        "artist": "midnight-riders",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "13": {
+    "artists": [
+      {
+        "artist": "matt-lange",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "14": {
+    "artists": [
+      {
+        "artist": "mateo-messina",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "15": {
+    "artists": [
+      {
+        "artist": "various-artists",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "16": {
+    "artists": [
+      {
+        "artist": "daniel-sadowski",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "17": {
+    "artists": [
+      {
+        "artist": "damjan-mravunac",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "18": {
+    "artists": [
+      {
+        "artist": "proxy",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "19": {
+    "artists": [
+      {
+        "artist": "ki-theory",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "20": {
+    "artists": [
+      {
+        "artist": "troels-folmann",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "21": {
+    "artists": [
+      {
+        "artist": "kelly-bailey",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "22": {
+    "artists": [
+      {
+        "artist": "skog",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "23": {
+    "artists": [
+      {
+        "artist": "daniel-sadowski",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "24": {
+    "artists": [
+      {
+        "artist": "awolnation",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "25": {
+    "artists": [
+      {
+        "artist": "mord-fustang",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "26": {
+    "artists": [
+      {
+        "artist": "michael-bross",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "27": {
+    "artists": [
+      {
+        "artist": "ian-hultquist",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "28": {
+    "artists": [
+      {
+        "artist": "new-beat-fund",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "29": {
+    "artists": [
+      {
+        "artist": "beartooth",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "30": {
+    "artists": [
+      {
+        "artist": "lennie-moore",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "31": {
+    "artists": [
+      {
+        "artist": "darude",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "32": {
+    "artists": [
+      {
+        "artist": "beartooth",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "33": {
+    "artists": [
+      {
+        "artist": "blitz-kids",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "34": {
+    "artists": [
+      {
+        "artist": "hundredth",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "35": {
+    "artists": [
+      {
+        "artist": "neck-deep",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "36": {
+    "artists": [
+      {
+        "artist": "roam",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "37": {
+    "artists": [
+      {
+        "artist": "twin-atlantic",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "38": {
+    "artists": [
+      {
+        "artist": "skog",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "39": {
+    "artists": [
+      {
+        "artist": "the-verkkars",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "40": {
+    "artists": [
+      {
+        "artist": "halo",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "41": {
+    "artists": [
+      {
+        "artist": "scarlxrd",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "42": {
+    "artists": [
+      {
+        "artist": "half-life-alyx",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "43": {
+    "artists": [
+      {
+        "artist": "austin-wintory",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "44": {
+    "artists": [
+      {
+        "artist": "dren-mcdonald",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "45": {
+    "artists": [
+      {
+        "artist": "daniel-sadowski",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "46": {
+    "artists": [
+      {
+        "artist": "tree-adams",
+        "role": "main"
+      },
+      {
+        "artist": "ben-bromfield",
+        "role": "main"
+      }
+    ],
+    "credit": "Tree Adams and Ben Bromfield"
+  },
+  "47": {
+    "artists": [
+      {
+        "artist": "tim-huling",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "48": {
+    "artists": [
+      {
+        "artist": "sam-marshall",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "49": {
+    "artists": [
+      {
+        "artist": "matt-levine",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "50": {
+    "artists": [
+      {
+        "artist": "amon-tobin",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "51": {
+    "artists": [
+      {
+        "artist": "darren-korb",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "52": {
+    "artists": [
+      {
+        "artist": "neck-deep",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "53": {
+    "artists": [
+      {
+        "artist": "scarlxrd",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "54": {
+    "artists": [
+      {
+        "artist": "austin-wintory",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "55": {
+    "artists": [
+      {
+        "artist": "chipzel",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "56": {
+    "artists": [
+      {
+        "artist": "freaky-dna",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "57": {
+    "artists": [
+      {
+        "artist": "jesse-harlin",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "58": {
+    "artists": [
+      {
+        "artist": "laura-shigihara",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "59": {
+    "artists": [
+      {
+        "artist": "sarah-schachner",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "60": {
+    "artists": [
+      {
+        "artist": "bbno",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "61": {
+    "artists": [
+      {
+        "artist": "the-verkkars",
+        "role": "main"
+      }
+    ],
+    "credit": "The Verkkars & n0thing"
+  },
+  "62": {
+    "artists": [
+      {
+        "artist": "3kliksphilip",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "63": {
+    "artists": [
+      {
+        "artist": "humanity-s-last-breath",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "64": {
+    "artists": [
+      {
+        "artist": "juelz",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "65": {
+    "artists": [
+      {
+        "artist": "knock2",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "66": {
+    "artists": [
+      {
+        "artist": "meechy-darko",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "67": {
+    "artists": [
+      {
+        "artist": "sullivan-king",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "68": {
+    "artists": [
+      {
+        "artist": "perfect-world",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "69": {
+    "artists": [
+      {
+        "artist": "denzel-curry",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "70": {
+    "artists": [
+      {
+        "artist": "valve",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "71": {
+    "artists": [
+      {
+        "artist": "dryden",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "72": {
+    "artists": [
+      {
+        "artist": "isoxo",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "73": {
+    "artists": [
+      {
+        "artist": "kill-script",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "74": {
+    "artists": [
+      {
+        "artist": "knock2",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "75": {
+    "artists": [
+      {
+        "artist": "rad-cat",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "76": {
+    "artists": [
+      {
+        "artist": "twerl-and-ekko-sidetrack",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "78": {
+    "artists": [
+      {
+        "artist": "austin-wintory",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "79": {
+    "artists": [
+      {
+        "artist": "ben-bromfield",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "80": {
+    "artists": [
+      {
+        "artist": "daniel-sadowski",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "81": {
+    "artists": [
+      {
+        "artist": "dren-mcdonald",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "82": {
+    "artists": [
+      {
+        "artist": "matt-levine",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "83": {
+    "artists": [
+      {
+        "artist": "sam-marshall",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "84": {
+    "artists": [
+      {
+        "artist": "tim-huling",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "85": {
+    "artists": [
+      {
+        "artist": "tree-adams",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "86": {
+    "artists": [
+      {
+        "artist": "perfect-world",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "87": {
+    "artists": [
+      {
+        "artist": "adam-beyer",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "88": {
+    "artists": [
+      {
+        "artist": "ghost",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "89": {
+    "artists": [
+      {
+        "artist": "health",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "90": {
+    "artists": [
+      {
+        "artist": "james-and-the-cold-gun",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "91": {
+    "artists": [
+      {
+        "artist": "jonathan-young",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "92": {
+    "artists": [
+      {
+        "artist": "juelz",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "93": {
+    "artists": [
+      {
+        "artist": "killer-mike",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "94": {
+    "artists": [
+      {
+        "artist": "pvris",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "95": {
+    "artists": [
+      {
+        "artist": "selective-response",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "96": {
+    "artists": [
+      {
+        "artist": "tigercub",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "98": {
+    "artists": [
+      {
+        "artist": "alrt",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "99": {
+    "artists": [
+      {
+        "artist": "altare",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "100": {
+    "artists": [
+      {
+        "artist": "borne",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "101": {
+    "artists": [
+      {
+        "artist": "pirapus",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "102": {
+    "artists": [
+      {
+        "artist": "repiet-julia-kleijn",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "103": {
+    "artists": [
+      {
+        "artist": "shockone",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "104": {
+    "artists": [
+      {
+        "artist": "starjunk-95",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  }
+}

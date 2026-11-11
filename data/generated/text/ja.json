@@ -1,0 +1,620 @@
+{
+  "kits": {
+    "1": {
+      "credit": "Valve",
+      "description": "Counter-Strike 2 の公式ミュージックキット。",
+      "name": "Valve, Counter-Strike 2",
+      "title": "Counter-Strike 2"
+    },
+    "3": {
+      "credit": "Daniel Sadowski",
+      "description": "ゲーム音楽制作者の Daniel Sadowski による、トガッた分厚いビートの数々。活力に満ちた爽快なミュージックパック。",
+      "name": "Daniel Sadowski, Crimson Assault",
+      "title": "Crimson Assault"
+    },
+    "4": {
+      "credit": "Noisia",
+      "description": "オランダのドラムンベース・トリオ Noisia によるハードでシネマティックなミュージックキット。伝統と革新の類まれな融合。",
+      "name": "Noisia, Sharpened",
+      "title": "Sharpened"
+    },
+    "5": {
+      "credit": "Robert Allaire",
+      "description": "受賞歴もある作曲家 Robert Allaire の手による音楽で敵を駆逐せよ。",
+      "name": "Robert Allaire, Insurgency",
+      "title": "Insurgency"
+    },
+    "6": {
+      "credit": "Sean Murray",
+      "description": "二大戦争ゲームの作曲者による音楽で血をたぎらせ、敵を地獄の門まで送り届けろ！",
+      "name": "Sean Murray, A*D*8",
+      "title": "A*D*8"
+    },
+    "7": {
+      "credit": "Feed Me",
+      "description": "著名エレクトロニック・ミュージシャン Feed Me が、ウェスタンの決闘シーンの緊張感をモダンなエレクトロ音楽空間に再現。",
+      "name": "Feed Me, High Noon",
+      "title": "High Noon"
+    },
+    "8": {
+      "credit": "Dren",
+      "description": "ゲーム音楽作曲者の Dren によるミュージックキット。スーパーヒーローメタルにインスパイアされた壮大な音楽でヤバすぎるキルを量産しろ！",
+      "name": "Dren, Death's Head Demolition",
+      "title": "Death's Head Demolition"
+    },
+    "9": {
+      "credit": "Austin Wintory",
+      "description": "敵をわざわざ追いかけなくてもいい。グラミー賞ノミネート経験もあるゲーム音楽作曲者の Austin Wintory によるイカレたタンゴで誘い込め。",
+      "name": "Austin Wintory, Desert Fire",
+      "title": "Desert Fire"
+    },
+    "10": {
+      "credit": "Sasha",
+      "description": "世界的に評価されているDJ/プロデューサーの Sasha が贈るシネマティックなサントラ。疾走感のあるドラム、生き生きとしたメロディー、高揚感のあるストリングスに身を任せよう。",
+      "name": "Sasha, LNOE",
+      "title": "LNOE"
+    },
+    "11": {
+      "credit": "Skog",
+      "description": "メタルプロデューサーの Skog が「アグロ」とは何かを教えてくれる。",
+      "name": "Skog, Metal",
+      "title": "Metal"
+    },
+    "12": {
+      "credit": "Midnight Riders",
+      "description": "「ホリデーを楽しめよ、ク****ども！」\n-Midnight Riders",
+      "name": "Midnight Riders, All I Want for Christmas",
+      "title": "All I Want for Christmas"
+    },
+    "13": {
+      "credit": "Matt Lange",
+      "description": "エレクトロニクスのプロデューサーでありイノベーターでもある Matt Lange が生み出す、壮大さとグリッチ感を併せ持つハードなリズムに耳を傾けよ。",
+      "name": "Matt Lange, IsoRhythm",
+      "title": "IsoRhythm"
+    },
+    "14": {
+      "credit": "Mateo Messina",
+      "description": "グラミー賞受賞作曲家の Mateo Messina の緊迫感に満ちた音楽と共に敵を圧倒しろ。",
+      "name": "Mateo Messina, For No Mankind",
+      "title": "For No Mankind"
+    },
+    "15": {
+      "credit": "Various Artists",
+      "description": "多数のエレクトロニクス・アーティストが参加したミュージックパック。名作『Hotline Miami』の血なまぐさいビートでアゲていけ。",
+      "name": "Various Artists, Hotline Miami",
+      "title": "Hotline Miami"
+    },
+    "16": {
+      "credit": "Daniel Sadowski",
+      "description": "作曲家 Daniel Sadowski が\"攻め\"のビートとクリエイティブなSFX、そしてグイグイと迫る未来的なバイブスでさらなる高みへといざなう。アドレナリンの急上昇に注意！",
+      "name": "Daniel Sadowski, Total Domination",
+      "title": "Total Domination"
+    },
+    "17": {
+      "credit": "Damjan Mravunac",
+      "description": "作曲家 Damjan Mravunac がエネルギッシュなグルーヴと荘厳なコーラスをブレンドさせた、Croteam 開発の傑作『The Talos Principle』のミュージックパック。",
+      "name": "Damjan Mravunac, The Talos Principle",
+      "title": "The Talos Principle"
+    },
+    "18": {
+      "credit": "Proxy",
+      "description": "ロシアのヘビーエレクトロニカ・アーティスト PROXY が Counter-Strike に独創的かつ重厚なミュージックキットをドロップ。ハイブリッドな楽曲を最高度のスタジオ技術で洗練させた唯一無二のキット。",
+      "name": "Proxy, Battlepack",
+      "title": "Battlepack"
+    },
+    "19": {
+      "credit": "Ki:Theory",
+      "description": "DOTA TI4 でパフォーマンスを披露したレコーディングアーティストの Ki:Theory が、エッジの効いたダークなエレクトロ・ロックで火をつける。",
+      "name": "Ki:Theory, MOLOTOV",
+      "title": "MOLOTOV"
+    },
+    "20": {
+      "credit": "Troels Folmann",
+      "description": "受賞歴のある作曲家 Troels Folmann によるミュージックキット。凱歌が響きわたり、現代的なパルスが伝わる楽曲の数々。",
+      "name": "Troels Folmann, Uber Blasto Phone",
+      "title": "Uber Blasto Phone"
+    },
+    "21": {
+      "credit": "Kelly Bailey",
+      "description": "Valve の「Half-Life」シリーズの作曲家である Kelly Bailey が、Half-Life ユニバースの闇に触発されて書き下ろした終末世界のサウンド。",
+      "name": "Kelly Bailey, Hazardous Environments",
+      "title": "Hazardous Environments"
+    },
+    "22": {
+      "credit": "Skog",
+      "description": "メタル・コンポーザー兼プロデューサーの Jocke Skog による、完全新作のハードなメタルキット。これを聴けばこれまでの CS:GO ミュージックキットが\"キュートでスウィート\"に感じられるはずだ。MVP を勝ち取って強者のアンセムを皆に浴びせろ！",
+      "name": "Skog, II-Headshot",
+      "title": "II-Headshot"
+    },
+    "23": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski による、Counter-Strike 史上初のオーセンティックな 8 ビットミュージックキット。",
+      "name": "Daniel Sadowski, The 8-Bit Kit",
+      "title": "The 8-Bit Kit"
+    },
+    "24": {
+      "credit": "AWOLNATION",
+      "description": "オルタナロックの AWOLNATION によるタイムレスなミュージックキット。シングル「I Am」やマルチプラチナヒットとなった「Sail」を含む多彩な楽曲を収録。",
+      "name": "AWOLNATION, I Am",
+      "title": "I Am"
+    },
+    "25": {
+      "credit": "Mord Fustang",
+      "description": "ダイヤモンドは永遠に。Mord Fustang の新鮮なグルーヴとアンビエントを収めたミュージックキット。",
+      "name": "Mord Fustang, Diamonds",
+      "title": "Diamonds"
+    },
+    "26": {
+      "credit": "Michael Bross",
+      "description": "Michael Bross の気宇壮大なテクノグランジを聴けば、戦闘のさなかでも真のツワモノらしく振る舞えるはず。",
+      "name": "Michael Bross, Invasion!",
+      "title": "Invasion!"
+    },
+    "27": {
+      "credit": "Ian Hultquist",
+      "description": "ストリングスとシンセに戦鼓の律動を加えた迫力のサントラで戦闘に臨め。Ian Hultquist 作曲のミュージックキット。",
+      "name": "Ian Hultquist, Lion's Mouth",
+      "title": "Lion's Mouth"
+    },
+    "28": {
+      "credit": "New Beat Fund",
+      "description": "ヒップホップ、ファンク、ガレージポップの要素を盛り込んだサーフロック。ゴキゲンな太陽の下でヘッドショットを決めよう。",
+      "name": "New Beat Fund, Sponge Fingerz",
+      "title": "Sponge Fingerz"
+    },
+    "29": {
+      "credit": "Beartooth",
+      "description": "誰もが暴れ出したくなる Beartooth のハードチューンで原点回帰。ノースコープキルに合うBGMといえばこれしかない。死ぬまでロックし続けろ！",
+      "name": "Beartooth, Disgusting",
+      "title": "Disgusting"
+    },
+    "30": {
+      "credit": "Lennie Moore",
+      "description": "ゲーム音楽作曲家の Lennie Moore が贈る、香り高く刺激的なジャズファンク。敵チームのボイスチャット並みにキンキンに冷えた一杯をやりたくなるはず。",
+      "name": "Lennie Moore, Java Havana Funkaloo",
+      "title": "Java Havana Funkaloo"
+    },
+    "31": {
+      "credit": "Darude",
+      "description": "フィンランドのプロデューサー Darude が手掛ける馴染み深いサウンドスケープに身を委ねよう。ダンスミュージック界を代表するパイオニアのサウンドとメロディは心をくすぐり、豊かな倍音の波は知らず知らずのうちに気分を盛り上げてくれる。",
+      "name": "Darude, Moments CSGO",
+      "title": "Moments CSGO"
+    },
+    "32": {
+      "credit": "Beartooth",
+      "description": "Beartooth によるミュージックキット第2弾。よりハードに、アグレッシブに仕上がった今作のなかでも、MVP 祝歌は特にヘビーなものになっている。敵の傷口に塩を塗りこんでやれ。",
+      "name": "Beartooth, Aggressive",
+      "title": "Aggressive"
+    },
+    "33": {
+      "credit": "Blitz Kids",
+      "description": "イギリスのポップ/パンクバンドの Blitz Kids による、高校時代に仲間とつるんだ思い出を反芻しながら B 地点にラッシュするときにピッタリのBGM。若さと疾走感に満ちたミュージックキット。",
+      "name": "Blitz Kids, The Good Youth",
+      "title": "The Good Youth"
+    },
+    "34": {
+      "credit": "Hundredth",
+      "description": "自由を得るか塵に還るか、Hundredth が送り出すヘビーでユニークなメロコア。根性のない連中を狩るときのBGMにもってこいだ。",
+      "name": "Hundredth, FREE",
+      "title": "FREE"
+    },
+    "35": {
+      "credit": "Neck Deep",
+      "description": "長大なキルストリークを妨害されたり、しつこい芋野郎に悩まされたり、やりきれないときはポップパンクを聴こう。Neck Deep は「Life's Not Out To Get You/人生は敵じゃない」と教えてくれる。敵チームの嫌がらせは続くが。",
+      "name": "Neck Deep, Life's Not Out To Get You",
+      "title": "Life's Not Out To Get You"
+    },
+    "36": {
+      "credit": "Roam",
+      "description": "観客もプレイヤーも思わず体が動き出す、Roam のド直球ポップファンク。このサントラを聴きながら敵チームを急襲し、戸惑う隙すら与えずに殲滅して「Backbone/気骨」を示せ。",
+      "name": "Roam, Backbone",
+      "title": "Backbone"
+    },
+    "37": {
+      "credit": "Twin Atlantic",
+      "description": "スコティッシュロックの雄 Twin Atlantic が CS:GO のために用意したヘビーでラフでラウドなミュージックキットで敵を圧倒しろ。",
+      "name": "Twin Atlantic, GLA",
+      "title": "GLA"
+    },
+    "38": {
+      "credit": "Skog",
+      "description": "Skog のメタルミュージックキット第3弾。今回は派手なギターリフとドロップ、ループ、そしてドローン音が盛り込まれ、エレクトロ・オーガニックなひねりが利いている。",
+      "name": "Skog, III-Arena",
+      "title": "III-Arena"
+    },
+    "39": {
+      "credit": "The Verkkars",
+      "description": "フィンランドのチャートを席巻した Verkkars による ENCE のアツい応援ソング。そこまでEZにいくだろうか？",
+      "name": "The Verkkars, EZ4ENCE",
+      "title": "EZ4ENCE"
+    },
+    "40": {
+      "credit": "Halo",
+      "description": "Halo ユニバースの劇的な音楽シーンを集めた Master Chief Collection Music Pack によって、Counter-Strike の聴覚体験は伝説となる。©2019 343 Industries. All rights reserved. 343 Industries の認可を得て製作。※「Halo: The Master Chief Collection」および Halo ロゴは Microsoft グループの商標です。",
+      "name": "Halo, The Master Chief Collection",
+      "title": "The Master Chief Collection"
+    },
+    "41": {
+      "credit": "Scarlxrd",
+      "description": "Scarlxrd は重厚なトラップビートとフロウで独自のサブジャンルを開拓。ライブ音源をブレンドしたこのミュージックキットに惹かれないオーディエンスはいないだろう。",
+      "name": "Scarlxrd: King, Scar",
+      "title": "King, Scar"
+    },
+    "42": {
+      "credit": "Half-Life: Alyx",
+      "description": "Valve の「Half-Life」シリーズに VR で帰ってきた『Half-Life: Alyx』を記念するミュージックキット。人類存続の希望となって身を投じた荒廃世界の先にあるのは、『Counter-Strike: Global Offensive』の戦場だ。",
+      "name": "Half-Life: Alyx, Anti-Citizen",
+      "title": "Anti-Citizen"
+    },
+    "43": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory が Peter Hollens のヴォーカルサポートを得て、ケルトファンタジーとエレクトロニクスをミックス。ジャンルを超えたミュージックキット。",
+      "name": "Austin Wintory, Bachram",
+      "title": "Bachram"
+    },
+    "44": {
+      "credit": "Dren",
+      "description": "インディゲームのヒット作『Gunman Taco Truck』のアポカリプス・マリアッチなサントラが CS:GO に登場。Pollo Diablo、Persecución de Helltainなどアツいメキシカンチューンと共に撃ちまくれ！",
+      "name": "Dren, Gunman Taco Truck",
+      "title": "Gunman Taco Truck"
+    },
+    "45": {
+      "credit": "Daniel Sadowski",
+      "description": "\"Total Domination\"、\"The 8-Bit Kit\"、\"Crimson Assault\" の作曲家 Daniel Sadowski の新作となる \"Eye Of The Dragon\" は、ニンジャと銃とヒップホップとテクノを融合させたアクション満載のミュージックキット。闇より一閃、須臾の間に敵を葬ってこそ忍とは申すなり。",
+      "name": "Daniel Sadowski, Eye of the Dragon",
+      "title": "Eye of the Dragon"
+    },
+    "46": {
+      "credit": "Tree Adams and Ben Bromfield",
+      "description": "M.U.D.D. FORCE なる混沌の力を操る錬金術師、作曲家の Tree Adams と Ben Bromfielf が壮大な闘争のモチーフとうねり逆巻くシンセで描写する破壊の大嵐。",
+      "name": "Tree Adams and Ben Bromfield, M.U.D.D. FORCE",
+      "title": "M.U.D.D. FORCE"
+    },
+    "47": {
+      "credit": "Tim Huling",
+      "description": "作曲家 Tim Huling がクラシックなフィルム・ノワール風トラックにモダンなグルーヴとビートを加えたミュージックキット。",
+      "name": "Tim Huling, Neo Noir",
+      "title": "Neo Noir"
+    },
+    "48": {
+      "credit": "Sam Marshall",
+      "description": "90年代のファンキーなゲーム音楽にインスパイアされた Sam Marshall のミュージックキット。古典ゲームへの郷愁を現代風にピリリと味付け。",
+      "name": "Sam Marshall, Bodacious",
+      "title": "Bodacious"
+    },
+    "49": {
+      "credit": "Matt Levine",
+      "description": "作曲家 Matt Levine によるマカロニ・ウエスタンへのオマージュ。肩で風を切り、土埃を立てつつ、「やれよ、俺に撃たれたいならな」のキメ台詞を言える日が来た。",
+      "name": "Matt Levine, Drifter",
+      "title": "Drifter"
+    },
+    "50": {
+      "credit": "Amon Tobin",
+      "description": "伝説的プロデューサー Amon Tobin は CS:GO でも独自の美的センスを発揮。真空管アンプによる表現が特徴のミュージックキット。",
+      "name": "Amon Tobin, All for Dust",
+      "title": "All for Dust"
+    },
+    "51": {
+      "credit": "Darren Korb",
+      "description": "誰しも時として狙いを外すものだが、Supergiant のローグライク・ダンジョンアドベンチャー『Hades』の冥界から持ち込まれたこのミュージックキットはハズさない。",
+      "name": "Darren Korb, Hades ミュージックキット",
+      "title": "Hades ミュージックキット"
+    },
+    "52": {
+      "credit": "Neck Deep",
+      "description": "アルバム「All Distortions Are Intentional」の楽曲を収めた Neck Deep の新作ミュージックキット。君が凡人なわけがない。マップ上の誰よりも優れていることを証明しろ。",
+      "name": "Neck Deep, The Lowlife Pack",
+      "title": "The Lowlife Pack"
+    },
+    "53": {
+      "credit": "Scarlxrd",
+      "description": "生々しいフロウとそれに見合うヘビーなトラック。CHAIN$AW で SCARLXRD はかつてない高みに到達した。",
+      "name": "Scarlxrd, CHAIN$AW.LXADXUT.",
+      "title": "CHAIN$AW.LXADXUT."
+    },
+    "54": {
+      "credit": "Austin Wintory",
+      "description": "ビアガーデンのアコーディオンポルカとグランジーなヘビーメタルを合体させたらどうなるか？ 人類の長年の問いに Austin Wintory が答える。",
+      "name": "Austin Wintory, Mocha Petal",
+      "title": "Mocha Petal"
+    },
+    "55": {
+      "credit": "Chipzel",
+      "description": "チップチューンのレジェンドとして名高いゲーム音楽作曲者の Chipzel が、知育玩具の名品「Speak & Spell」にインスパイアされて製作した、楽しくファンキーで味わい深いミュージックキット。",
+      "name": "Chipzel, ~Yellow Magic~",
+      "title": "~Yellow Magic~"
+    },
+    "56": {
+      "credit": "Freaky DNA",
+      "description": "「オペラ x 8ビットサウンド x アナログシンセ」ときたら、愛さずにはいられまい。チップチューンのスペシャリスト Freaky DNA がソプラノ歌手 Leanne Koch と組んで、ヘビーなビートを遊びつくす！",
+      "name": "Freaky DNA, Vici",
+      "title": "Vici"
+    },
+    "57": {
+      "credit": "Jesse Harlin",
+      "description": "作曲家 Jesse Harlin が主に70～80年代の古典SFにインスパイアされて制作した、けれん味たっぷりのスペースオペラ。",
+      "name": "Jesse Harlin, Astro Bellum",
+      "title": "Astro Bellum"
+    },
+    "58": {
+      "credit": "Laura Shigihara",
+      "description": "作曲家兼ゲーム開発者の Laura Shigihara が、MVP獲得の喜びを皆に伝えてくれる。90年代のダンスミュージックにレトロゲームのシンセサウンドをブレンドし、隠し味に『Plants vs. Zombies』を加えた楽しくユニークな楽曲集。",
+      "name": "Laura Shigihara: Work Hard, Play Hard",
+      "title": "Work Hard, Play Hard"
+    },
+    "59": {
+      "credit": "Sarah Schachner",
+      "description": "Sarah Schachner 作のミュージックキット。自己認識能力を獲得し人類抹消を決断したスカンジナビアのロボットたちによる、ディストピア感あふれるゴシックコーラス。",
+      "name": "Sarah Schachner, KOLIBRI",
+      "title": "KOLIBRI"
+    },
+    "60": {
+      "credit": "bbno$",
+      "description": "bbno$ が生み出したトキシックなゲーマーのためのアンセム。「キレてんの？ なら練習しとけw」このミュージックキットでプレイすると、シルバーからグローバルエリートまで一気に駆け上がれるという研究結果が出ている。",
+      "name": "bbno$, u mad!",
+      "title": "u mad!"
+    },
+    "61": {
+      "credit": "The Verkkars & n0thing",
+      "description": "晴天のカリフォルニアから極寒のラップランドまで、Counter-Strike のレジェンドである n0thing と The Verkkars が協力して生み出したスマッシュヒットが「Flashbang Dance」だ。3、2、1… あ、目が見えない！",
+      "name": "The Verkkars & n0thing, Flashbang Dance",
+      "title": "Flashbang Dance"
+    },
+    "62": {
+      "credit": "3kliksphilip",
+      "description": "プロを目指して邁進中？ それとも意図せず低迷中？ 80年代シンセと揺蕩うメロディに身を任せれば、どんな人でもあの頃に戻れるはず。ずっと、ずっと昔... 楽しかったあの頃に。",
+      "name": "3kliksphilip, Heading for the Source",
+      "title": "Heading for the Source"
+    },
+    "63": {
+      "credit": "Humanity's Last Breath",
+      "description": "スウェーデンのバンド Humanity's Last Breath のミュージックキット「Void」。激しいドラムスとスケール感のあるリフに背筋がゾクゾクするはず。",
+      "name": "Humanity's Last Breath, Void",
+      "title": "Void"
+    },
+    "64": {
+      "credit": "Juelz",
+      "description": "ネオトラップシンセ、808のザラついた響き、壮大なピアノリフ、そしてあふれ出す銃声エフェクト。Juelz によるOGトラップのアンセム「Shooters」は、MVPにこそふさわしい、真のエリートのためのミュージックキットだ。",
+      "name": "Juelz, Shooters",
+      "title": "Shooters"
+    },
+    "65": {
+      "credit": "Knock2",
+      "description": "サンディエゴ出身の Knock2 が贈るベースハウスのアンセム「dashstar*」は、この若き才能のモットーである「ノーリミット」そのままの、とどまるところを知らないエネルギーを感じさせる。",
+      "name": "Knock2, dashstar*",
+      "title": "dashstar*"
+    },
+    "66": {
+      "credit": "Meechy Darko",
+      "description": "Glock を装備してこのミュージックキットをかけ、ニューヨークのアングラヒップホップシーンの中心地へと旅立とう。",
+      "name": "Meechy Darko, Gothic Luxury",
+      "title": "Gothic Luxury"
+    },
+    "67": {
+      "credit": "Sullivan King",
+      "description": "ギリギリのチェイスを愛するならば、ハードロックとメタルとダブステップが激突する Sullivan King のサントラで駆け抜けろ。",
+      "name": "Sullivan King, Lock Me Up",
+      "title": "Lock Me Up"
+    },
+    "68": {
+      "credit": "Perfect World",
+      "description": "CS:GO の中国リリース5周年を記念して制作された「花脸 Hua Lian (Painted Face)」は、中国最古のロックンロールとも言える古典演劇「秦腔」と現代のロックを融合した超個性派のミュージックキット。スモークに包まれようと、フラッシュグレネードで視界を奪われようと、迷わず進め！",
+      "name": "Perfect World, 花脸 Hua Lian (Painted Face)",
+      "title": "花脸 Hua Lian (Painted Face)"
+    },
+    "69": {
+      "credit": "Denzel Curry",
+      "description": "トラップ、ジャズ、そしてドラムンベースの垣根を渡りつつ、Denzel Curry が持ち前のエネルギーを CS:GO に注ぎ込む。ヒット曲「Walkin」「ULTIMATE」をはじめとする楽曲を収めた究極のミュージックキットをかけ、クロームニッケルメッキのベレッタでガンガン攻めろ。",
+      "name": "Denzel Curry, ULTIMATE",
+      "title": "ULTIMATE"
+    },
+    "70": {
+      "credit": "Valve",
+      "description": "2012年の CS:GO ローンチ時にリリースされた CS:GO のデフォルトミュージックキット。",
+      "name": "Valve, CS:GO",
+      "title": "CS:GO"
+    },
+    "71": {
+      "credit": "DRYDEN",
+      "description": "説明は不要でしょう。このパワーを感じて。DRYDEN のエネルギーあふれるエレクトロミュージックキットでロックイン。",
+      "name": "DRYDEN, Feel The Power",
+      "title": "Feel The Power"
+    },
+    "72": {
+      "credit": "ISOxo",
+      "description": "違いを感じられるゲームのために製作されたもの。ISOxo の \"inhuman\" なミュージックキットでラウンドのたびに敵を悩ませろ。",
+      "name": "ISOxo, inhuman",
+      "title": "inhuman"
+    },
+    "73": {
+      "credit": "KILL SCRIPT",
+      "description": "愛の者か、戦う者か？はたまたその両方か？ KILL SCRIPT の \"All Night\" ミュージックキットでロビー全体に知らしめよ。",
+      "name": "KILL SCRIPT, All Night",
+      "title": "All Night"
+    },
+    "74": {
+      "credit": "Knock2",
+      "description": "どんなゲームもメジャー・グランドファイナルと同じように考えるプレイヤー向け。たとえわずか数百の CSR しかかかっていないゲームでも。Knock2 の第2弾のミュージックキット 「Make U SWEAT!」でパワーと勝利をその手に。",
+      "name": "Knock2, Make U SWEAT!",
+      "title": "Make U SWEAT!"
+    },
+    "75": {
+      "credit": "Rad Cat",
+      "description": "爆弾を解除するだけでラウンドの MVP になることも。Rad Cat の \"Reason\" ミュージックキットで、些細な瞬間、決定的な瞬間、あらゆる瞬間を祝福して。",
+      "name": "Rad Cat, Reason",
+      "title": "Reason"
+    },
+    "76": {
+      "credit": "TWERL and Ekko & Sidetrack",
+      "description": "スポットライトを浴びているときほど、生きていると思える最高の瞬間はない。TWERL, Ekko & Sidetrack によるドラムンベースのアンセム \"Under Bright Lights\" であなたとチームを新たな高みへと導いて。",
+      "name": "TWERL and Ekko & Sidetrack, Under Bright Lights",
+      "title": "Under Bright Lights"
+    },
+    "78": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory が悪魔と契約。悪魔的なフィドル音楽と EDMクラブのバキバキのバイブスを融合させて。",
+      "name": "Austin Wintory, The Devil Went Clubbing in Georgia",
+      "title": "The Devil Went Clubbing in Georgia"
+    },
+    "79": {
+      "credit": "Ben Bromfield",
+      "description": "なんて裏切り！映画や TV の作曲家 Ben Bromfield が手掛けた一か八かの不穏な緊張感漂うジャズ風サウンドトラックを体感して。このウサギの穴の深さを暴いて…",
+      "name": "Ben Bromfield, Rabbit Hole",
+      "title": "Rabbit Hole"
+    },
+    "80": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski が誘う \"Dead Shot\" の世界へ。アクション、ヒップホップ、オーケストラ、エレクトロニック、レトロ、エモーションそしてサウンドデザインが融合したハイブレッドなサウンド。頭を怠けさせるな！",
+      "name": "Daniel Sadowski, Dead Shot",
+      "title": "Dead Shot"
+    },
+    "81": {
+      "credit": "Dren McDonald",
+      "description": "カフェインはあなたの味方、いえ、みんなの味方。でも、敵は例外！ \"Coffee! Kofe! Kahveh!\" は、\"Gunman Taco Truck\" や \"Death’s Head Demolition\" を手掛けた Dren Mcdonald による、Balkancisco でライブ録音にされた まさにバルカンバルカンバルカンなストリートパーティのブラスミュージック。",
+      "name": "Dren McDonald, Coffee! Kofe! Kahveh!",
+      "title": "Coffee! Kofe! Kahveh!"
+    },
+    "82": {
+      "credit": "Matt Levine",
+      "description": "作曲家 Matt Levine による \"Agency\" ミュージックキット。危険なスパイの世界に足を踏み入れて。",
+      "name": "Matt Levine, Agency",
+      "title": "Agency"
+    },
+    "83": {
+      "credit": "Sam Marshall",
+      "description": "\"Bodacious\" の非公認続編、\"Clutch\"。Sam Marshall が錬金術と秘密の儀式を駆使して蘇らせた熱狂的な悪夢のサイバーファンク。",
+      "name": "Sam Marshall, Clutch",
+      "title": "Clutch"
+    },
+    "84": {
+      "credit": "Tim Huling",
+      "description": "Tim Huling による \"Devil's Paintbrush\" でアドレナリンを全開に。エネルギッシュなグルーヴメタルを体験して。",
+      "name": "Tim Huling, Devil's Paintbrush",
+      "title": "Devil's Paintbrush"
+    },
+    "85": {
+      "credit": "Tree Adams",
+      "description": "\"Seventh Moon\" では、Tree Adams が銀河系ファンクとノリノリのバトルチューンを思うがままにミックス。",
+      "name": "Tree Adams, Seventh Moon",
+      "title": "Seventh Moon"
+    },
+    "86": {
+      "credit": "Perfect World",
+      "description": "伝統的な中国民謡とエレクトロニックミュージックを融合させた \"Ay Hey\" は、リアルなストーリーとエネルギッシュなビートでさまざま年代や背景のプレイヤーをつなぐ。弾むようなリズムが、プレイヤーのゲームへの熱狂とパーフェクトにマッチ。\"Ay Hey\" がユーモアや遊び心あふれるさまざまな戦闘シーンを鮮やかに描き出す。",
+      "name": "Perfect World, Ay Hey",
+      "title": "Ay Hey"
+    },
+    "87": {
+      "credit": "Adam Beyer",
+      "description": "スウェーデンのテクノレジェンド Adam Beyer が生み出すベルティングトラックに包まれ、夢心地のまま敵を赤く染めろ。",
+      "name": "Adam Beyer, Red Room",
+      "title": "Red Room"
+    },
+    "88": {
+      "credit": "Ghost",
+      "description": "お知らせ――ペルペトゥアヌス五世猊下が Counter-Strike 界に降臨し、栄えあるヘビーメタル・スペクタクルを披露なさいます。日常の些事を忘れ、恐慌庁に祈りと弾薬を捧げましょう。",
+      "name": "Ghost, Skeletá",
+      "title": "Skeletá"
+    },
+    "89": {
+      "credit": "HEALTH",
+      "description": "Counter-Strike で体験する HEALTH の世界。武器を手にして、冷酷で痛烈な RAT WARS のインダストリアルメタル・サウンドを浴びよう。",
+      "name": "HEALTH, RAT WARS",
+      "title": "RAT WARS"
+    },
+    "90": {
+      "credit": "James and the Cold Gun",
+      "description": "ウェールズのロックデュオ James and the Cold Gun が放つピュアで生々しいエネルギー。昔ながらのパンク魂に現代オルタナロックの熱を加えて生み出した、ヤケド注意のミュージックキット。",
+      "name": "James and the Cold Gun, Chewing Glass",
+      "title": "Chewing Glass"
+    },
+    "91": {
+      "credit": "Jonathan Young",
+      "description": "君のゲームに欠けているのは、宇宙海賊パワーメタルだ。宇宙船ヴェロキラプトルに乗り込んで、アニメやゲームにインスパイアされた Jonathan Young のアルバムサウンドと共に異次元のプレイを繰り出せ。",
+      "name": "Jonathan Young, Starship Velociraptor",
+      "title": "Starship Velociraptor"
+    },
+    "92": {
+      "credit": "Juelz",
+      "description": "フロア、空けとく？ Juelz のデビューアルバムを採用したこの大型ミュージックキットは、ネオレイブのシンセ、太いベースライン、トラップドラムのハードヒットに彩られている。Counter-Strike 2 のために再考された「Floorspace」のMVP 祝歌 “Gossip” を聴いたプレイヤーは、LEDのウォールを設置し、そして打ち壊したくなるだろう。",
+      "name": "Juelz, Floorspace",
+      "title": "Floorspace"
+    },
+    "93": {
+      "credit": "Killer Mike",
+      "description": "グラミー賞３部門に輝いたヒップホップアルバムを Counter-Strike の世界で堪能しよう。Killer Mike の声でモチベーションを保ち、スキルを磨いてランキングを駆けあがれ。",
+      "name": "Killer Mike, MICHAEL",
+      "title": "MICHAEL"
+    },
+    "94": {
+      "credit": "PVRIS",
+      "description": "我々が好敵手以上に愛するもの、それは上質なサウンドトラックだ。PVRISの新作ミュージックキットでチームのテンションを上げて、連勝の勢いを枯らさないようにしよう。",
+      "name": "PVRIS, Evergreen",
+      "title": "Evergreen"
+    },
+    "95": {
+      "credit": "Selective Response",
+      "description": "アメリカのテクノアイコン Selective Response によるダイナミックかつエネルギッシュなミュージックキットで欲望を解き放て。チャージが済んだら、出撃だ。",
+      "name": "Selective Response, No Love Only Pleasure",
+      "title": "No Love Only Pleasure"
+    },
+    "96": {
+      "credit": "Tigercub",
+      "description": "イギリスのロックバンド Tigercub が図太くパンチのあるメロディを奏でる――オルタナロックの激しさと陰鬱で現代的なエッジを融合させたミュージックキット。",
+      "name": "Tigercub, The Perfume of Decay",
+      "title": "The Perfume of Decay"
+    },
+    "98": {
+      "credit": "ALRT",
+      "description": "ALRT の跳ねるようなベースハウストラックが最高の「DOPAMINE HIT」をお届け。ここぞというタイミングであなたを夢中にさせ、最高なパフォーマンスへと導く。",
+      "name": "ALRT, DOPAMINE HIT",
+      "title": "DOPAMINE HIT"
+    },
+    "99": {
+      "credit": "Altare",
+      "description": "Altare の多幸感あふれるウェーブアンセム「Change My Mind」は、もう誰にも止められないと感じるほど気分が最高潮に達した瞬間にぴったり。",
+      "name": "Altare, Change My Mind",
+      "title": "Change My Mind"
+    },
+    "100": {
+      "credit": "borne",
+      "description": "borne の力強いベースバンガー「Give It To Me」は、Counter-Strike はもちろんその先でも対戦相手に全力でぶつかっていけるように気持ちを高めてくれる。",
+      "name": "borne, Give It To Me",
+      "title": "Give It To Me"
+    },
+    "101": {
+      "credit": "Pirapus",
+      "description": "Pirapus のダイナミックなドラムンベースのアンセム「EVERYNITE」は、偉業の一歩手前にいる感覚を呼び起こす。その名のとおり、毎夜あなたをロックインする。",
+      "name": "Pirapus, EVERYNITE",
+      "title": "EVERYNITE"
+    },
+    "102": {
+      "credit": "Repiet & Julia Kleijn",
+      "description": "Repiet と Julia Kleijn のクセになるトラック「On And On」でどんな局面にも立ち向かえる。良いときも悪いときも、この曲さえあればどんな困難にも挑める気がしてくる。",
+      "name": "Repiet & Julia Kleijn, On And On",
+      "title": "On And On"
+    },
+    "103": {
+      "credit": "ShockOne",
+      "description": "ShockOne によるハイエナジーなドラムンベースのトラック「Voices」で限界を打ち破れ。クラッチシーンにうってつけのこのミュージックキット。パンチの効いたベースラインがあれば、数々の MVP がその手の中に。",
+      "name": "ShockOne, Voices",
+      "title": "Voices"
+    },
+    "104": {
+      "credit": "Starjunk 95",
+      "description": "銀河で最もグルーヴィーなラジオ曲からお届けするミュージックキット。最新のサウンドに、懐かしのヴィンテージ感をたっぷり盛り込んだ。これが、Starjunk 95 だ。",
+      "name": "Starjunk 95, Industrial Sunset Memories",
+      "title": "Industrial Sunset Memories"
+    }
+  },
+  "releases": {
+    "2016-11-28-radicals": "StatTrak™ Radicals ボックス",
+    "2020-04-16-masterminds": "Masterminds ミュージックキットボックス",
+    "2021-08-12-tacticians": "Tacticians ミュージックキットボックス",
+    "2022-08-23-initiators": "Initiators ミュージックキットボックス",
+    "2024-02-06-nightmode": "NIGHTMODE ミュージックキットボックス",
+    "2024-08-20-masterminds-2": "Masterminds 2 ミュージックキットボックス",
+    "2025-08-14-deluge": "Deluge ミュージックキットボックス",
+    "2026-05-07-nightmode-ii": "NIGHTMODE II ミュージックキット"
+  }
+}

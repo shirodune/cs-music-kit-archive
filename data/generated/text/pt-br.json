@@ -1,0 +1,620 @@
+{
+  "kits": {
+    "1": {
+      "credit": "Valve",
+      "description": "A trilha sonora oficial do Counter-Strike 2.",
+      "name": "Valve, Counter-Strike 2",
+      "title": "Counter-Strike 2"
+    },
+    "3": {
+      "credit": "Daniel Sadowski",
+      "description": "Compositor de trilhas de jogos Daniel Sadowski traz Edgy Action misturado com ritmo CRAZY FAT nesta trilha sonora animada.",
+      "name": "Daniel Sadowski, Crimson Assault",
+      "title": "Crimson Assault"
+    },
+    "4": {
+      "credit": "Noisia",
+      "description": "O trio holandês de música eletrônica Noisia traz uma sensação cinematográfica misturada com uma combinação única de tradição e progressão.",
+      "name": "Noisia, Sharpened",
+      "title": "Sharpened"
+    },
+    "5": {
+      "credit": "Robert Allaire",
+      "description": "Música para esmagar os seus inimigos composta pelo premiado Robert Allaire.",
+      "name": "Robert Allaire, Insurgency",
+      "title": "Insurgency"
+    },
+    "6": {
+      "credit": "Sean Murray",
+      "description": "O compositor de dois dos maiores jogos de guerra do mundo traz uma trilha sônica que levará os seus inimigos aos portões do inferno!!",
+      "name": "Sean Murray, A*D*8",
+      "title": "A*D*8"
+    },
+    "7": {
+      "credit": "Feed Me",
+      "description": "O renomado compositor de música eletrônica Feed Me traz um duelo do Velho Oeste para um espaço eletrônico moderno.",
+      "name": "Feed Me, High Noon",
+      "title": "High Noon"
+    },
+    "8": {
+      "credit": "Dren",
+      "description": "Do compositor de trilhas de jogos Dren, este pacote musical cinemático super-heroico estilo metal é de matar!",
+      "name": "Dren, Death's Head Demolition",
+      "title": "Death's Head Demolition"
+    },
+    "9": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory, compositor de trilhas de jogos indicado ao Grammy, indaga: por que se importar em caçar os seus inimigos quando se pode atraí-los com um tango mortal e certamente insano?",
+      "name": "Austin Wintory, Desert Fire",
+      "title": "Desert Fire"
+    },
+    "10": {
+      "credit": "Sasha",
+      "description": "Mergulhe nesta trilha sonora cinemática repleta de cordas crescentes, melodias pulsantes e tambores poderosos de Sasha, DJ e produtor renomado mundialmente.",
+      "name": "Sasha, LNOE",
+      "title": "LNOE"
+    },
+    "11": {
+      "credit": "Skog",
+      "description": "Uma lição de agressão de Skog, produtor de Metal.",
+      "name": "Skog, Metal",
+      "title": "Metal"
+    },
+    "12": {
+      "credit": "Midnight Riders",
+      "description": "\"BOAS FESTAS, OTÁRIOS!\"\n— Midnight Riders",
+      "name": "Midnight Riders, All I Want for Christmas",
+      "title": "All I Want for Christmas"
+    },
+    "13": {
+      "credit": "Matt Lange",
+      "description": "Mergulhe os seus sentidos auditivos em uma coleção de atmosferas cinemáticas e irregulares e fortes ritmos pulsantes criada pelo produtor e inovador eletrônico Matt Lange.",
+      "name": "Matt Lange, IsoRhythm",
+      "title": "IsoRhythm"
+    },
+    "14": {
+      "credit": "Mateo Messina",
+      "description": "Domine os seus inimigos. Intensidade pura pelo compositor Mateo Messina, vencedor do Grammy.",
+      "name": "Mateo Messina, For No Mankind",
+      "title": "For No Mankind"
+    },
+    "15": {
+      "credit": "Vários Artistas",
+      "description": "Uma multidão de artistas eletrônicos fazem batidas brutais nesta trilha sonora de tirar o fôlego do renomado jogo Hotline Miami.",
+      "name": "Vários Artistas, Hotline Miami",
+      "title": "Hotline Miami"
+    },
+    "16": {
+      "credit": "Daniel Sadowski",
+      "description": "O compositor Daniel Sadowski eleva o nível com batidas eletrônicas agressivas, efeitos sonoros criativos e uma poderosa \"vibe\" futurística estimulante. \"O Ministério do CS adverte: o uso pode elevar o nível de adrenalina!\"",
+      "name": "Daniel Sadowski, Total Domination",
+      "title": "Total Domination"
+    },
+    "17": {
+      "credit": "Damjan Mravunac",
+      "description": "O compositor Damjan Mravunac mistura sons cinemáticos energéticos com coros épicos nesta trilha sonora composta por músicas do aclamado título \"The Talos Principle\" da Croteam.",
+      "name": "Damjan Mravunac, The Talos Principle",
+      "title": "The Talos Principle"
+    },
+    "18": {
+      "credit": "Proxy",
+      "description": "O artista russo de eletrônica pesada PROXY traz a sua própria artilharia pesada a CS:GO. Um armamento de áudio híbrido misturado com a melhor tecnologia de estúdio torna este pacote único.",
+      "name": "Proxy, Battlepack",
+      "title": "Battlepack"
+    },
+    "19": {
+      "credit": "Ki:Theory",
+      "description": "Artista profissional e que tocou no TI4 de Dota, Ki:Theory solta BOMBAS com esta trilha sonora de rock eletrônico afiado.",
+      "name": "Ki:Theory, MOLOTOV",
+      "title": "MOLOTOV"
+    },
+    "20": {
+      "credit": "Troels Folmann",
+      "description": "Blastophones Triunfantes se combinam com um Uberpulse contemporâneo nesta coleção explosiva criada pelo ultra compositor premiado Troels Folmann.",
+      "name": "Troels Folmann, Uber Blasto Phone",
+      "title": "Uber Blasto Phone"
+    },
+    "21": {
+      "credit": "Kelly Bailey",
+      "description": "Kelly Bailey, compositor da série Half-Life da Valve, cria um arsenal de novas músicas apocalípticas inspiradas pelo lado mais sombrio do universo de Half-Life.",
+      "name": "Kelly Bailey, Hazardous Environments",
+      "title": "Hazardous Environments"
+    },
+    "22": {
+      "credit": "Skog",
+      "description": "O compositor e produtor de metal Jocke Skog retorna com uma trilha sonora de metal nova e forte, tornando as outras Trilhas Sonoras de CS:GO fofas e inofensivas. Agora vá ser o destaque para que todos ouçam o seu incrível hino!",
+      "name": "Skog, II-Headshot",
+      "title": "II-Headshot"
+    },
+    "23": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski cria a primeira Trilha Sonora 8-bit para Counter-Strike, usando sons autênticos de máquinas 8-bit.",
+      "name": "Daniel Sadowski, The 8-Bit Kit",
+      "title": "The 8-Bit Kit"
+    },
+    "24": {
+      "credit": "AWOLNATION",
+      "description": "O roqueiro alternativo AWOLNATION traz a você uma trilha sonora de marcar gerações, recheada com uma seleção eclética de sons e inclui cortes dos singles \"I Am\" e o disco de platina \"Sail\".",
+      "name": "AWOLNATION, I Am",
+      "title": "I Am"
+    },
+    "25": {
+      "credit": "Mord Fustang",
+      "description": "Diamantes. Eles são para sempre. Mergulhe no arpeggiotron de Mord Fustang com este novo conjunto de ritmos e atmosferas.",
+      "name": "Mord Fustang, Diamonds",
+      "title": "Diamonds"
+    },
+    "26": {
+      "credit": "Michael Bross",
+      "description": "Michael Bross conjura um techno-grunge épico e cinemático para que se fortaleça na batalha.",
+      "name": "Michael Bross, Invasion!",
+      "title": "Invasion!"
+    },
+    "27": {
+      "credit": "Ian Hultquist",
+      "description": "Misturando cordas pulsantes e sintonizadores com tambores de guerra, prepare-se para a batalha com esta trilha sonora poderosa do compositor Ian Hultquist.",
+      "name": "Ian Hultquist, Lion's Mouth",
+      "title": "Lion's Mouth"
+    },
+    "28": {
+      "credit": "New Beat Fund",
+      "description": "Rock de surfe com elementos de hip-hop, punk e pop de garagem. Mantenha-se focado e atire na cabeça.",
+      "name": "New Beat Fund, Sponge Fingerz",
+      "title": "Sponge Fingerz"
+    },
+    "29": {
+      "credit": "Beartooth",
+      "description": "Beartooth traz uma batida forte e agressiva que faz com que a plateia se mexa e quebre coisas. Uma trilha sonora perfeita para matar com a Scout sem usar a luneta. Rock até morrer.",
+      "name": "Beartooth, Disgusting",
+      "title": "Disgusting"
+    },
+    "30": {
+      "credit": "Lennie Moore",
+      "description": "Lennie Moore, compositor de jogos, serve uma mistura aromática e picante de Jazzy Funk. Deliciosa quando servida fria, assim como os cadáveres dos seus inimigos após matá-los.",
+      "name": "Lennie Moore, Java Havana Funkaloo",
+      "title": "Java Havana Funkaloo"
+    },
+    "31": {
+      "credit": "Darude",
+      "description": "Liberte-se nos tons musicais familiares do compositor finlandês Darude. Enriqueça com acesso a uma fusão pesada de sobretons progressivos e estrutura melódica dos bancos de sons de um dos pioneiros mais renomados da música dance.",
+      "name": "Darude, Moments CSGO",
+      "title": "Moments CSGO"
+    },
+    "32": {
+      "credit": "Beartooth",
+      "description": "Beartooth está de volta para uma segunda rodada. Esta nova trilha sonora é ainda mais agressiva que a anterior. Fizemos um hino de destaque extra forte, para que os seus adversários se sintam super mal depois de perderem para você.",
+      "name": "Beartooth, Aggressive",
+      "title": "Aggressive"
+    },
+    "33": {
+      "credit": "Blitz Kids",
+      "description": "A banda pop/punk britânica Blitz Kids traz a você a trilha sonora perfeita para rushar B enquanto se lembra daquelas viagens de carro que fez com amigos no ensino médio. Esta trilha é para voar baixo e se sentir jovem.",
+      "name": "Blitz Kids, The Good Youth",
+      "title": "The Good Youth"
+    },
+    "34": {
+      "credit": "Hundredth",
+      "description": "Hundredth deixa o mundo mais pesado com a sua pegada única no hardcore melódico. Liberte-se ou retorne à areia com essa trilha sonora perfeita para destruir os indignos.",
+      "name": "Hundredth, FREE",
+      "title": "FREE"
+    },
+    "35": {
+      "credit": "Neck Deep",
+      "description": "Às vezes você só precisa de um Pop Punk para levar o dia adiante. Seja lidando com campers ou morrendo depois de matar tantos que nem dá para contar nos dedos, Neck Deep chegou para provar que a vida não quer acabar com você, mas a outra equipe quer.",
+      "name": "Neck Deep, Life's Not Out To Get You",
+      "title": "Life's Not Out To Get You"
+    },
+    "36": {
+      "credit": "Roam",
+      "description": "Roam entrega um Pop Punk rápido e direto que mantém tanto a plateia quanto os jogadores em movimento. Prove que tem uma coluna vertebral com essa trilha sonora perfeita para rushar e obliterar a equipe inimiga antes mesmo de perceberem que são peso morto.",
+      "name": "Roam, Backbone",
+      "title": "Backbone"
+    },
+    "37": {
+      "credit": "Twin Atlantic",
+      "description": "Mais pesados, barulhentos e altos do que nunca, Twin Atlantic vem ao CS:GO prontos para ajudar você a derreter rostos com o poder de fogo do rock escocês.",
+      "name": "Twin Atlantic, GLA",
+      "title": "GLA"
+    },
+    "38": {
+      "credit": "Skog",
+      "description": "Skog está de volta com uma terceira trilha sonora de metal. Dessa vez com um padrão eletro-orgânico para a música, combinando riffs de guitarra e batidas massivas, além de drones e elementos em repetição.",
+      "name": "Skog, III-Arena",
+      "title": "III-Arena"
+    },
+    "39": {
+      "credit": "The Verkkars",
+      "description": "The Verkkars sobe nas paradas de sucesso da Finlândia com uma homenagem para ENCE. É tão EZ mesmo?",
+      "name": "The Verkkars, EZ4ENCE",
+      "title": "EZ4ENCE"
+    },
+    "40": {
+      "credit": "Halo",
+      "description": "Faça uma renovação lendária à sua experiência auditiva no CS:GO com a Trilha Sonora da Master Chief Collection, que contém momentos musicais icônicos do universo Halo. © 2019 343 Industries. Todos os direitos reservados. Usado com permissão da 343 Industries. Halo: The Master Chief Collection e o logo Halo são marcas do grupo de empresas da Microsoft.",
+      "name": "Halo, The Master Chief Collection",
+      "title": "The Master Chief Collection"
+    },
+    "41": {
+      "credit": "Scarlxrd",
+      "description": "Scarlxrd mistura batidas intesas de trap com uma cadência e uma execução que acabam criando o seu próprio subgênero. Com esta mistura estimulante, os seus espetáculos ao vivo capturam a atenção da plateia inteira.",
+      "name": "Scarlxrd: King, Scar",
+      "title": "King, Scar"
+    },
+    "42": {
+      "credit": "Half-Life: Alyx",
+      "description": "Trilha sonora comemorativa do jogo Half-Life: Alyx, marcando a volta da Valve à série Half-Life em realidade virtual. Você representa a única chance de sobrevivência da humanidade, e as suas interações imersivas com o ambiente continuam no Counter-Strike: Global Offensive.",
+      "name": "Half-Life: Alyx, Anti-Citizen",
+      "title": "Anti-Citizen"
+    },
+    "43": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory mistura a fantasia celta com a música eletrônica fervilhante e conta com a ajuda dos vocais de Peter Hollens nesta trilha sonora eclética.",
+      "name": "Austin Wintory, Bachram",
+      "title": "Bachram"
+    },
+    "44": {
+      "credit": "Dren",
+      "description": "A trilha sonora mariachi e apocalíptica do renomado jogo indie Gunman Taco Truck chega ao CS:GO com intensas músicas mexicanas como \"Pollo Diablo\" e \"Persecución de Helltain\"!",
+      "name": "Dren, Gunman Taco Truck",
+      "title": "Gunman Taco Truck"
+    },
+    "45": {
+      "credit": "Daniel Sadowski",
+      "description": "O compositor de \"Total Domination\", \"The 8-Bit Kit\" e \"Crimson Assault\" agora lança \"Eye Of The Dragon\". Daniel Sadowski, compositor musical, mistura ninjas, armas, hip hop e techno para criar uma trilha sonora cheia de ação. Ninjas são conhecidos pelos seus ataques rápidos e precisos. Mesmo assim, são invisíveis aos olhos dos inimigos.",
+      "name": "Daniel Sadowski, Eye of the Dragon",
+      "title": "Eye of the Dragon"
+    },
+    "46": {
+      "credit": "Tree Adams e Ben Bromfield",
+      "description": "Tree Adams e Ben Bromfield, alquimistas do poderoso caos que é M.U.D.D. FORCE, unem batalhas épicas e sintetizadores estridentes em um redemoinho de destruição total.",
+      "name": "Tree Adams e Ben Bromfield, M.U.D.D. FORCE",
+      "title": "M.U.D.D. FORCE"
+    },
+    "47": {
+      "credit": "Tim Huling",
+      "description": "O compositor Tim Huling oferece trilhas clássicas de filmes noir misturadas com batidas e ritmos contemporâneos.",
+      "name": "Tim Huling, Neo Noir",
+      "title": "Neo Noir"
+    },
+    "48": {
+      "credit": "Sam Marshall",
+      "description": "Inspirado pelas divertidas músicas de jogos do começo dos anos 90, o compositor Sam Marshall traz uma nostalgia de jogos clássicos com um toque moderno.",
+      "name": "Sam Marshall, Bodacious",
+      "title": "Bodacious"
+    },
+    "49": {
+      "credit": "Matt Levine",
+      "description": "O compositor Matt Levine esbanja puro estilo nesta homenagem corajosa ao faroeste espaguete. Nunca foi tão bom dizer: \"Vá em frente, faça o meu dia valer a pena...\"",
+      "name": "Matt Levine, Drifter",
+      "title": "Drifter"
+    },
+    "50": {
+      "credit": "Amon Tobin",
+      "description": "O lendário produtor Amon Tobin empresta a sua estética única ao CS:GO. Desta vez, por amplificadores de tubo.",
+      "name": "Amon Tobin, All for Dust",
+      "title": "All for Dust"
+    },
+    "51": {
+      "credit": "Darren Korb",
+      "description": "Claro, você até pode fazer escolhas erradas de vez em quando, mas sabe o que sempre é uma escolha acertada? Colocar para tocar a Trilha Sonora energética que veio diretamente do submundo de Hades, explorador de calabouços roguelike da Supergiant.",
+      "name": "Darren Korb, Trilha Sonora de Hades",
+      "title": "Trilha Sonora de Hades"
+    },
+    "52": {
+      "credit": "Neck Deep",
+      "description": "Prove que você não é um normie (e melhor que todos no mapa) com a nova trilha sonora da banda Neck Deep, que inclui faixas do álbum \"All Distortions Are Intentional\".",
+      "name": "Neck Deep, The Lowlife Pack",
+      "title": "The Lowlife Pack"
+    },
+    "53": {
+      "credit": "Scarlxrd",
+      "description": "CHAIN$AW LEVA SCARLXRD AO SEU INIGUALÁVEL MELHOR COM UM FLUXO BRUTO E UMA BASE PESADA PARA ACOMPANHAR.",
+      "name": "Scarlxrd, CHAIN$AW.LXADXUT.",
+      "title": "CHAIN$AW.LXADXUT."
+    },
+    "54": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory responde a pergunta que há muito atormenta a humanidade: o que acontece se você combinar música polca e acordeões com grunge e heavy metal?",
+      "name": "Austin Wintory, Mocha Petal",
+      "title": "Mocha Petal"
+    },
+    "55": {
+      "credit": "Chipzel",
+      "description": "Chipzel, compositor de trilhas sonoras de jogos e lenda do gênero chiptune, apresenta uma mistura de estilos híbridos repleta de diversão, funk e personalidade — inspirada por um brinquedo \"Speak & Spell\" defeituoso.",
+      "name": "Chipzel, ~Yellow Magic~",
+      "title": "~Yellow Magic~"
+    },
+    "56": {
+      "credit": "Freaky DNA",
+      "description": "Ópera. Sons de 8 bits. Sintetizadores analógicos. Tem como não amar? Freaky DNA, especialista do gênero chiptune, e a soprano Leanne Koch se juntam para fazer batidas pesadas e se divertir!",
+      "name": "Freaky DNA, Vici",
+      "title": "Vici"
+    },
+    "57": {
+      "credit": "Jesse Harlin",
+      "description": "O compositor Jesse Harlin apresenta um suspense de ópera espacial bombástico inspirado nos clássicos de ficção científica dos anos 70, 80 em diante.",
+      "name": "Jesse Harlin, Astro Bellum",
+      "title": "Astro Bellum"
+    },
+    "58": {
+      "credit": "Laura Shigihara",
+      "description": "Laura Shigihara, compositora e desenvolvedora de jogos, ajudará você a exibir com orgulho a sua estrela de destaque da rodada. Divirta-se com esta mistura única de \"Dance music\" dos anos 90, sintetizadores de jogos retrô e um toque de Plants vs. Zombies.",
+      "name": "Laura Shigihara: Work Hard, Play Hard",
+      "title": "Work Hard, Play Hard"
+    },
+    "59": {
+      "credit": "Sarah Schachner",
+      "description": "Sarah Schachner apresenta um coral gótico e distópico de robôs escandinavos conscientes que decide que a humanidade precisa ser eliminada.",
+      "name": "Sarah Schachner, KOLIBRI",
+      "title": "KOLIBRI"
+    },
+    "60": {
+      "credit": "bbno$",
+      "description": "bbno$ formulou \"o\" hino para jogadores tóxicos: \"u mad!\", cujo nome pode ser traduzido como um \"TÁ EM SHOKKK?!\" Estudos indicam que, jogando com essa trilha sonora, você pulará imediatamente do pratinha para o global.",
+      "name": "bbno$, u mad!",
+      "title": "u mad!"
+    },
+    "61": {
+      "credit": "The Verkkars e n0thing",
+      "description": "Da ensolarada Califórnia ao frio da Lapônia, a lenda do Counter-Strike n0thing e o grupo The Verkkars juntaram-se para criar o sucesso Flashbang Dance! Três, dois, um — olha a granada!",
+      "name": "The Verkkars e n0thing, Flashbang Dance",
+      "title": "Flashbang Dance"
+    },
+    "62": {
+      "credit": "3kliksphilip",
+      "description": "Está em uma jornada para virar profissa ou pelo menos tentando deixar o pratinha? Deixe esta trilha com melodias sintetizadoras e sonhadoras levá-lo de volta. De volta, de volta, de volta... aos bons velhos tempos.",
+      "name": "3kliksphilip, Heading for the Source",
+      "title": "Heading for the Source"
+    },
+    "63": {
+      "credit": "Humanity's Last Breath",
+      "description": "A banda sueca \"Humanity's Last Breath\" entra com tudo com a sua trilha sonora \"Void\". Baterias retumbantes, riffs colossais e uma atmosfera de arrepiar.",
+      "name": "Humanity's Last Breath, Void",
+      "title": "Void"
+    },
+    "64": {
+      "credit": "Juelz",
+      "description": "Sintetizadores neo trap, 808s enérgicos, um riff épico de piano e uma infinidade de efeitos sonoros de tiros. O hino de trap original \"Shooters\" feito por Juelz cria uma trilha sonora verdadeiramente de elite. Disponível apenas para destaques.",
+      "name": "Juelz, Shooters",
+      "title": "Shooters"
+    },
+    "65": {
+      "credit": "Knock2",
+      "description": "dashstar*, o icônico hino de bass house feito por Knock2, proporciona uma energia infinita que captura o mantra do jovem de San Diego: \"sem limites\".",
+      "name": "Knock2, dashstar*",
+      "title": "dashstar*"
+    },
+    "66": {
+      "credit": "Meechy Darko",
+      "description": "Pegue uma Glock e equipe esta trilha sonora para ser transportado ao centro do cenário underground de hip-hop de Nova Iorque.",
+      "name": "Meechy Darko, Gothic Luxury",
+      "title": "Gothic Luxury"
+    },
+    "67": {
+      "credit": "Sullivan King",
+      "description": "Curte uma perseguição? E uma boa caça? Hard rock, metal e dubstep colidem na trilha sonora de Sullivan King para tornar-se invencível.",
+      "name": "Sullivan King, Lock Me Up",
+      "title": "Lock Me Up"
+    },
+    "68": {
+      "credit": "Perfect World",
+      "description": "Comemore o quinto aniversário do lançamento do CS:GO na China com uma trilha sonora única: \"花脸 Hua Lian (Painted Face)\". Ela combina a ópera folclórica de Qinqiang (o mais antigo estilo chinês de rock) com o rock 'n' roll moderno. Esteja você no meio da fumaça ou com a visão turva após uma granada de luz, não se perca!",
+      "name": "Perfect World, 花脸 Hua Lian (Painted Face)",
+      "title": "花脸 Hua Lian (Painted Face)"
+    },
+    "69": {
+      "credit": "Denzel Curry",
+      "description": "Denzel traz a sua energia característica ao CS:GO, misturando trap, jazz, tambor e acordes de baixo. Esta trilha sonora contém os sucessos \"Walkin\", \"ULTIMATE\" e outras músicas de Denzel, então quebre as Berettas cromadas com placas de níquel e eleve a intensidade com a trilha ULTIMATE.",
+      "name": "Denzel Curry, ULTIMATE",
+      "title": "ULTIMATE"
+    },
+    "70": {
+      "credit": "Valve",
+      "description": "A trilha sonora padrão do CS:GO, lançada junto do jogo, em 2012.",
+      "name": "Valve, CS:GO",
+      "title": "CS:GO"
+    },
+    "71": {
+      "credit": "DRYDEN",
+      "description": "O que mais precisa ser dito? Sinta o poder. Curta esta trilha sonora eletrônica altamente energética criada por DRYDEN.",
+      "name": "DRYDEN, Feel The Power",
+      "title": "Feel The Power"
+    },
+    "72": {
+      "credit": "ISOxo",
+      "description": "Criada especialmente para aquelas partidas em que você se sente... diferente. Assombre os seus inimigos rodada após rodada com a trilha sonora \"inhuman\", de ISOxo.",
+      "name": "ISOxo, inhuman",
+      "title": "inhuman"
+    },
+    "73": {
+      "credit": "KILL SCRIPT",
+      "description": "Você prefere amar ou lutar? Ou os dois? Deixe que todo mundo saiba com a trilha sonora \"All Night\", de KILL SCRIPT.",
+      "name": "KILL SCRIPT, All Night",
+      "title": "All Night"
+    },
+    "74": {
+      "credit": "Knock2",
+      "description": "Para jogadores que tratam cada partida como se fosse a Grande Final de um Mundial, mesmo quando há somente algumas centenas de pontos da CSficação na reta. Traga a energia e as vitórias com a segunda trilha sonora de Knock2: \"Make U SWEAT!\".",
+      "name": "Knock2, Make U SWEAT!",
+      "title": "Make U SWEAT!"
+    },
+    "75": {
+      "credit": "Rad Cat",
+      "description": "Às vezes, desarmar a bomba é o suficiente para ser o destaque da partida. Comemore cada momento — grande ou pequeno — com a trilha sonora \"Reason\", de Rad Cat.",
+      "name": "Rad Cat, Reason",
+      "title": "Reason"
+    },
+    "76": {
+      "credit": "TWERL + Ekko & Sidetrack",
+      "description": "Não há hora melhor para brilhar do que sob a luz dos holofotes. Deixe a bateria e o baixo de \"Under Bright Lights\", uma colaboração entre TWERL e a dupla Ekko & Sidetrack, levarem você e a sua equipe a novos lugares.",
+      "name": "TWERL + Ekko & Sidetrack, Under Bright Lights",
+      "title": "Under Bright Lights"
+    },
+    "78": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory faz um trato com Satanás, combinando um violino diabólico com uma vibe eletrônica.",
+      "name": "Austin Wintory, The Devil Went Clubbing in Georgia",
+      "title": "The Devil Went Clubbing in Georgia"
+    },
+    "79": {
+      "credit": "Ben Bromfield",
+      "description": "Você sofreu uma traição! Experimente esta trilha sonora eletrizante, tensa e inspirada no jazz de Ben Bromfield, compositor de filmes e séries de TV, enquanto desenrola este mistério...",
+      "name": "Ben Bromfield, Rabbit Hole",
+      "title": "Rabbit Hole"
+    },
+    "80": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski convida os jogadores a entrarem no mundo de \"Dead Shot\", uma mistura híbrida de ação, hip-hop, orquestra, eletrônica, retrô, emoções e design de som. Evite o Head Rot!",
+      "name": "Daniel Sadowski, Dead Shot",
+      "title": "Dead Shot"
+    },
+    "81": {
+      "credit": "Dren McDonald",
+      "description": "A cafeína é a sua amiga. É amiga de todos, exceto dos seus inimigos! \"Coffee! Kofe! Kahveh!\" inclui músicas de rua dos Bálcãs compostas por Dren McDonald (\"Gunman Taco Truck\" e \"Death’s Head Demolition\"), gravada ao vivo em Bálcãncisco!",
+      "name": "Dren McDonald, Coffee! Kofe! Kahveh!",
+      "title": "Coffee! Kofe! Kahveh!"
+    },
+    "82": {
+      "credit": "Matt Levine",
+      "description": "Entre no perigoso mundo da espionagem com a trilha sonora \"Agency\", do compositor Matt Levine.",
+      "name": "Matt Levine, Agency",
+      "title": "Agency"
+    },
+    "83": {
+      "credit": "Sam Marshall",
+      "description": "\"Clutch\", a sequência não autorizada de \"Bodacious\", é uma abominação psicodélica em estilo cyberfunk reanimada por Sam Marshall com o uso de alquimia e rituais arcanos.",
+      "name": "Sam Marshall, Clutch",
+      "title": "Clutch"
+    },
+    "84": {
+      "credit": "Tim Huling",
+      "description": "Aumente a sua adrenalina com \"Devil's Paintbrush\", uma experiência groove-metal de alta energia composta por Tim Huling.",
+      "name": "Tim Huling, Devil's Paintbrush",
+      "title": "Devil's Paintbrush"
+    },
+    "85": {
+      "credit": "Tree Adams",
+      "description": "Em \"Seventh Moon\", Tree Adams prepara uma mistura de funk intergalático com uma trilha de batalha.",
+      "name": "Tree Adams, Seventh Moon",
+      "title": "Seventh Moon"
+    },
+    "86": {
+      "credit": "Perfect World",
+      "description": "Combinando música tradicional chinesa com eletrônica, \"Ay Hey\" oferece uma narrativa vívida e batidas enérgicas para conectar jogadores de diferentes idades e origens. Com o seu ritmo animado combinado com o entusiasmo dos jogadores pelo jogo, \"Ay Hey\" captura intensamente várias cenas de batalha engraçadas e divertidas.",
+      "name": "Perfect World, Ay Hey",
+      "title": "Ay Hey"
+    },
+    "87": {
+      "credit": "Adam Beyer",
+      "description": "A lenda sueca do techno Adam Beyer trouxe a trilha sonora dos sonhos para ajudar a pintar os seus inimigos de vermelho.",
+      "name": "Adam Beyer, Red Room",
+      "title": "Red Room"
+    },
+    "88": {
+      "credit": "Ghost",
+      "description": "MESSAGE FROM THE CLERGY – Papa Perpétuo V aterrissou no Counter-Strike em um espetáculo glorioso de heavy metal. Fuja das dificuldades do cotidiano enquanto corre e atira ao som do Vaticatar.",
+      "name": "Ghost, Skeletá",
+      "title": "Skeletá"
+    },
+    "89": {
+      "credit": "HEALTH",
+      "description": "Experimente HEALTH no Counter-Strike. Coloque as mãos nas armas e aproveite o som industrial brutal e punitivo do álbum de metal RAT WARS.",
+      "name": "HEALTH, RAT WARS",
+      "title": "RAT WARS"
+    },
+    "90": {
+      "credit": "James and the Cold Gun",
+      "description": "A dupla galesa do rock James and the Cold Gun liberta uma energia pura e sem filtros, juntando a atitude clássica do punk ao calor do rock alternativo moderno para criar uma trilha sonora explosiva.",
+      "name": "James and the Cold Gun, Chewing Glass",
+      "title": "Chewing Glass"
+    },
+    "91": {
+      "credit": "Jonathan Young",
+      "description": "Power metal de piratas espaciais é o que faltava no seu jogo. Dê um passeio no Starship Velociraptor e deixe os sons deste álbum de Jonathan Young, inspirados em animes e jogos, elevarem as suas partidas a um novo nível.",
+      "name": "Jonathan Young, Starship Velociraptor",
+      "title": "Starship Velociraptor"
+    },
+    "92": {
+      "credit": "Juelz",
+      "description": "Precisando de um espacinho? Pois ele se chama Floorspace. Essa grande trilha sonora do álbum de estreia de Juelz inclui sintetizadores estilo neorrave, acordes de baixo corajosos e percussões de trap afiadas. Floorspace foi reimaginado para o Counter-Strike 2, e o hino de destaque \"Gossip\" faz os jogadores desejarem montar — e depois destruir — uma parede de LEDs.",
+      "name": "Juelz, Floorspace",
+      "title": "Floorspace"
+    },
+    "93": {
+      "credit": "Killer Mike",
+      "description": "Curta o álbum de hip-hop vencedor de três GRAMMYs dentro do mundo do Counter-Strike. A voz de Killer Mike ajudará você a manter a motivação enquanto sobe nas classificações e aprimora as suas habilidades.",
+      "name": "Killer Mike, MICHAEL",
+      "title": "MICHAEL"
+    },
+    "94": {
+      "credit": "PVRIS",
+      "description": "A única coisa que amamos mais do que um bom inimigo? Uma boa trilha sonora. Deixe a música de PVRIS em Evergreen animar a sua equipe e manter o resultado das suas partidas no verde.",
+      "name": "PVRIS, Evergreen",
+      "title": "Evergreen"
+    },
+    "95": {
+      "credit": "Selective Response",
+      "description": "Conduza os seus desejos com esta trilha sonora dinâmica e de alta energia, criada pelo ícone americano do techno Selective Response. Eletrizada e pronta para a ação!",
+      "name": "Selective Response, No Love Only Pleasure",
+      "title": "No Love Only Pleasure"
+    },
+    "96": {
+      "credit": "Tigercub",
+      "description": "Os roqueiros britânicos do Tigercub entregam um soco melódico corajoso, fundindo a intensidade crua do rock alternativo com um toque moderno contemplativo para criar uma trilha sonora esmagadora.",
+      "name": "Tigercub, The Perfume of Decay",
+      "title": "The Perfume of Decay"
+    },
+    "98": {
+      "credit": "ALRT",
+      "description": "O baixo vibrante das gravações de ALRT entregam o ápice do \"DOPAMINE HIT\", um soco de dopamina, mantendo você alerta e de prontidão para se sobressair quando mais for preciso.",
+      "name": "ALRT, DOPAMINE HIT",
+      "title": "DOPAMINE HIT"
+    },
+    "99": {
+      "credit": "Altare",
+      "description": "O eufórico hino eletrônico de Altare, \"Change My Mind\", é perfeito para os seus melhores momentos, quando parece que ninguém pode entrar no seu caminho.",
+      "name": "Altare, Change My Mind",
+      "title": "Change My Mind"
+    },
+    "100": {
+      "credit": "borne",
+      "description": "O baixo afiado de borne no hino \"Give It To Me\" deixará os jogadores igualmente afiados contra os seus inimigos do Counter-Strike, e além.",
+      "name": "borne, Give It To Me",
+      "title": "Give It To Me"
+    },
+    "101": {
+      "credit": "Pirapus",
+      "description": "Os acordes agudos de baixo e percussão de Pirapus no hino \"EVERYNITE\" evocam a sensação de estar à beira da grandeza. Fazendo jus ao nome, \"TODANOITE\", você ficará alerta todas as noites.",
+      "name": "Pirapus, EVERYNITE",
+      "title": "EVERYNITE"
+    },
+    "102": {
+      "credit": "Repiet & Julia Kleijn",
+      "description": "Esteja de prontidão para qualquer desafio com a música contagiante de Repiet e Julia Kleijn, \"On And On\". Passando por altos e baixos, as melodias definem o tom para qualquer ataque.",
+      "name": "Repiet & Julia Kleijn, On And On",
+      "title": "On And On"
+    },
+    "103": {
+      "credit": "ShockOne",
+      "description": "Liberte-se com a alta energia da percussão e do baixo de ShockOne em \"Voices\". Perfeita para os momentos de clutch, esta trilha sonora traz acordes de baixo que carregarão você a diversos momentos de destaque.",
+      "name": "ShockOne, Voices",
+      "title": "Voices"
+    },
+    "104": {
+      "credit": "Starjunk 95",
+      "description": "Experimente uma trilha sonora da rádio mais badalada da galáxia, apresentando os sons mais modernos com a nostalgia vintage do passado. Isso é Starjunk 95.",
+      "name": "Starjunk 95, Industrial Sunset Memories",
+      "title": "Industrial Sunset Memories"
+    }
+  },
+  "releases": {
+    "2016-11-28-radicals": "Caixa dos Radicais StatTrak™",
+    "2020-04-16-masterminds": "Caixa de Trilhas Sonoras dos Gênios",
+    "2021-08-12-tacticians": "Caixa de Trilhas Sonoras dos Estrategistas",
+    "2022-08-23-initiators": "Caixa de Trilhas Sonoras dos Iniciadores",
+    "2024-02-06-nightmode": "Caixa de Trilhas Sonoras NIGHTMODE",
+    "2024-08-20-masterminds-2": "Caixa de Trilhas Sonoras dos Gênios II",
+    "2025-08-14-deluge": "Caixa de Trilhas Sonoras do Dilúvio",
+    "2026-05-07-nightmode-ii": "Trilhas sonoras NIGHTMODE II"
+  }
+}

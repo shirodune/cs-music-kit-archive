@@ -1,0 +1,620 @@
+{
+  "kits": {
+    "1": {
+      "credit": "Valve",
+      "description": "Το επίσημο μουσικό κουτί του Counter-Strike 2.",
+      "name": "Valve, Counter-Strike 2",
+      "title": "Counter-Strike 2"
+    },
+    "3": {
+      "credit": "Daniel Sadowski",
+      "description": "Ο συνθέτης βιντεοπαιχνιδιών Daniel Sadowski προσφέρει δράση μειξαρισμένη με τρελά ηχητικά στο καταπληκτικό Μουσικό πακέτο.",
+      "name": "Daniel Sadowski, Crimson Assault",
+      "title": "Crimson Assault"
+    },
+    "4": {
+      "credit": "Noisia",
+      "description": "Ένα Ολλανδικό τρίο Electronic, οι Noisia, φέρνουν μια σκληρή, κινηματογραφική αίσθηση με έναν μοναδικό συνδυασμό παράδοσης και εξέλιξης.",
+      "name": "Noisia, Sharpened",
+      "title": "Sharpened"
+    },
+    "5": {
+      "credit": "Robert Allaire",
+      "description": "Μουσική για να συνθλίψετε τους εχθρούς σας. Δείτε τους να πέφτουν στα πόδια σας από τον βραβευμένο μουσικοσυνθέτη Robert Allaire.",
+      "name": "Robert Allaire, Insurgency",
+      "title": "Insurgency"
+    },
+    "6": {
+      "credit": "Sean Murray",
+      "description": "Από τον συνθέτη των δύο μεγαλύτερων παιχνιδιών πολέμου του κόσμου, έρχεται ένα ηχητικό αποτέλεσμα που θα φέρει τους εχθρούς σας στην πύλη της κόλασης!",
+      "name": "Sean Murray, A*D*8",
+      "title": "A*D*8"
+    },
+    "7": {
+      "credit": "Feed Me",
+      "description": "Ο καταξιωμένος μουσικός Feed Me, φέρνει το δυτικό μουσικό στυλ σε μοντέρνο ηλεκτρονικό διάστημα.",
+      "name": "Feed Me, High Noon",
+      "title": "High Noon"
+    },
+    "8": {
+      "credit": "Dren",
+      "description": "Από το συνθέτη βιντεοπαιχνιδιών Dren, αυτή η σινεματική, μεταλλική μουσική υπερηρώων σας βάζει σε φονικό πνεύμα!",
+      "name": "Dren, Death's Head Demolition",
+      "title": "Death's Head Demolition"
+    },
+    "9": {
+      "credit": "Austin Wintory",
+      "description": "O βραβευμένος με Grammy συνθέτης παιχνιδιών Austin Wintory αναρωτιέται, γιατί να κυνηγήσετε τους εχθρούς σας ενώ μπορείτε να τους παρασύρετε με ένα θανατηφόρο, ομολογουμένως παράφρον, τανγκό;",
+      "name": "Austin Wintory, Desert Fire",
+      "title": "Desert Fire"
+    },
+    "10": {
+      "credit": "Sasha",
+      "description": "Βυθιστείτε με αυτό το κινηματογραφικό soundtrack γεμάτο χορδές, παλλόμενες μελωδίες και τυμπάνων από τον παγκοσμίου φήμης DJ / παραγωγό Sasha",
+      "name": "Sasha, LNOE",
+      "title": "LNOE"
+    },
+    "11": {
+      "credit": "Skog",
+      "description": "Ένα μάθημα επιδρομών από τον παραγωγό της Metal, Skog.",
+      "name": "Skog, Metal",
+      "title": "Metal"
+    },
+    "12": {
+      "credit": "Midnight Riders",
+      "description": "«ΚΑΛΕΣ ΔΙΑΚΟΠΕΣ, ****ΟΛΗΔΕΣ!»\n-Midnight Riders",
+      "name": "Midnight Riders, All I Want for Christmas",
+      "title": "All I Want for Christmas"
+    },
+    "13": {
+      "credit": "Matt Lange",
+      "description": "Ικανοποιήστε την ακοή σας με αυτή τη συλλογή κινηματογραφικών ατμοσφαιρικών κομματιών και σκληροτράχηλων ρυθμών από τον παραγωγό και πρωτοπόρο Matt Lange.",
+      "name": "Matt Lange, IsoRhythm",
+      "title": "IsoRhythm"
+    },
+    "14": {
+      "credit": "Mateo Messina",
+      "description": "Κατατροπώστε τους εχθρούς σας. Καθαρή ένταση από τον νικητή Grammy και συνθέτη, Mateo Messina.",
+      "name": "Mateo Messina, For No Mankind",
+      "title": "For No Mankind"
+    },
+    "15": {
+      "credit": "Διάφοροι καλλιτέχνες",
+      "description": "Μια πληθώρα από καλλιτέχνες ηλεκτρονικής μουσικής προσφέρουν σκληρά μπιτ σε αυτό το απολαυστικό μουσικό πακέτο από το θρυλικό Hotline Miami.",
+      "name": "Διάφοροι καλλιτέχνες, Hotline Miami",
+      "title": "Hotline Miami"
+    },
+    "16": {
+      "credit": "Daniel Sadowski",
+      "description": "Ο συνθέτης Daniel Sadowski ανεβάζει τον πήχη με επιθετικά ηλεκτρονικά beat, δημιουργικά ηχητικά εφέ και έναν συναρπαστικό φουτουριστικό παλμό. «Προσοχή: Θα προκαλέσει αύξηση αδρεναλίνης!»",
+      "name": "Daniel Sadowski, Total Domination",
+      "title": "Total Domination"
+    },
+    "17": {
+      "credit": "Damjan Mravunac",
+      "description": "Ο συνθέτης Damjan Mravunac συνδυάζει δυναμικούς κινηματογραφικούς ήχους με επικές χορωδίες σε αυτό το μουσικό πακέτο που περιλαμβάνει μουσική από τον εξαιρετικό τίτλο της Croteam «The Talos Principle».",
+      "name": "Damjan Mravunac, The Talos Principle",
+      "title": "The Talos Principle"
+    },
+    "18": {
+      "credit": "Proxy",
+      "description": "Ο Ρώσος καλλιτέχνης Heavy Electronica PROXY φέρνει το δικό του βαρύ πυροβολικό στο Counter-Strike. Υβριδικοί ήχοι όπλων ενωμένοι με την καλύτερη τεχνολογία στούντιο κάνουν αυτό το πακέτο μοναδικό.",
+      "name": "Proxy, Battlepack",
+      "title": "Battlepack"
+    },
+    "19": {
+      "credit": "Ki:Theory",
+      "description": "Ο καλλιτέχνης και εκτελεστής του DOTA TI4, Ki:Theory ρίχνει ΒΟΜΒΕΣ με αυτό το καυτό σετ της ηλεκτρονικής ροκ.",
+      "name": "Ki:Theory, MOLOTOV",
+      "title": "MOLOTOV"
+    },
+    "20": {
+      "credit": "Troels Folmann",
+      "description": "Θριαμβευτική μουσική συνδυασμένη με δυνατό ρυθμό σε αυτήν την εκρηκτική συλλογή από τον υπέρ βραβευμένο συνθέτη Troels Folmann.",
+      "name": "Troels Folmann, Uber Blasto Phone",
+      "title": "Uber Blasto Phone"
+    },
+    "21": {
+      "credit": "Kelly Bailey",
+      "description": "Ο Kelly Bailey, ο συνθέτης της σειράς Half-Life της Valve, δημιουργεί ένα οπλοστάσιο νέας αποκαλυπτικής μουσικής, εμπνευσμένης από τη σκοτεινή πλευρά του κόσμου του Half-Life.",
+      "name": "Kelly Bailey, Hazardous Environments",
+      "title": "Hazardous Environments"
+    },
+    "22": {
+      "credit": "Skog",
+      "description": "Ο συνθέτης metal και παραγωγός Jocke Skog επιστρέφει με ένα ολοκαίνουριο πακέτο metal, μετατρέποντας τα υπόλοιπα μουσικά πακέτα του CS:GO σε κάτι γλυκούλι, ζεστό και χνουδωτό. Γίνετε τώρα MVP για να ακούσουν όλοι την υπεροχή σας!",
+      "name": "Skog, II-Headshot",
+      "title": "II-Headshot"
+    },
+    "23": {
+      "credit": "Daniel Sadowski",
+      "description": "Ο Daniel Sadowski δημιουργεί το πρώτο μουσικό κουτί 8-bit για το Counter-Strike, γεμάτο με αυθεντικούς ήχους 8-bit.",
+      "name": "Daniel Sadowski, The 8-Bit Kit",
+      "title": "The 8-Bit Kit"
+    },
+    "24": {
+      "credit": "AWOLNATION",
+      "description": "Ο εναλλακτικός ροκάς AWOLNATION φέρνει ένα μουσικό πακέτο για πάντα. Περιέχει μια προσεγμένη επιλογή κομματιών και περιέχει τμήματα τραγουδιών από το «I Am» και το hit «Sail».",
+      "name": "AWOLNATION, I Am",
+      "title": "I Am"
+    },
+    "25": {
+      "credit": "Mord Fustang",
+      "description": "Διαμάντια. Είναι παντοτινά. Βυθιστείτε στο αρπέτζιο του Mord Fustang με αυτό το νέο σετ ρυθμού και ατμόσφαιρας.",
+      "name": "Mord Fustang, Diamonds",
+      "title": "Diamonds"
+    },
+    "26": {
+      "credit": "Michael Bross",
+      "description": "Ο Michael Bross παράγει επικό / κινηματογραφικό techno-grunge για να σας κάνει να νιώσετε σαν πραγματικός θεός μέσα στη μάχη.",
+      "name": "Michael Bross, Invasion!",
+      "title": "Invasion!"
+    },
+    "27": {
+      "credit": "Ian Hultquist",
+      "description": "Συνδυάζοντας παλλόμενες χορδές και συνθεσάιζερ με το χτύπημα τυμπάνων του πολέμου, προετοιμαστείτε για πόλεμο με αυτό το εκκωφαντικό κομμάτι από τον συνθέτη Ian Hultquist.",
+      "name": "Ian Hultquist, Lion's Mouth",
+      "title": "Lion's Mouth"
+    },
+    "28": {
+      "credit": "New Beat Fund",
+      "description": "Ηλιόλουστο rock με στοιχεία hip-hop, punk και garage pop. Κρατήστε το πραγματικό και πάρτε κεφαλίδια.",
+      "name": "New Beat Fund, Sponge Fingerz",
+      "title": "Sponge Fingerz"
+    },
+    "29": {
+      "credit": "Beartooth",
+      "description": "Οι Beartooth φέρνουν έναν επιθετικό κλασικό σκληροπυρηνικό ρυθμό που κινεί το πλήθος και τα σπάει. Ένα τέλειο soundtrack για να ακούτε ενώ σκοτώνετε χωρίς εστίαση με το scout. Ροκ μέχρι θανάτου.",
+      "name": "Beartooth, Disgusting",
+      "title": "Disgusting"
+    },
+    "30": {
+      "credit": "Lennie Moore",
+      "description": "Ο συνθέτης μουσικής παιχνιδιών Lennie Moore σερβίρει μια αρωματική, πικάντικη μίξη από jazz και funk. Νόστιμη σερβιρισμένη κρύα, όπως τα πτώματα των εχθρών σας μόλις τελειώσετε με αυτά.",
+      "name": "Lennie Moore, Java Havana Funkaloo",
+      "title": "Java Havana Funkaloo"
+    },
+    "31": {
+      "credit": "Darude",
+      "description": "Υποκύψτε ελεύθερα στα ηχοτοπία των οικείων μουσικών αρωμάτων και τόνων του Φινλανδού παραγωγού Darude. Εμπλουτίζοντας τον εαυτό σας με πρόσβαση σε μια βαριά μίξη προοδευτικών χροιών και θεμάτων ανατριχιαστικής μελωδικής δομής από τις τράπεζες ήχου ενός από τους πιο γνωστούς πρωτοπόρους στη χορευτική μουσική.",
+      "name": "Darude, Moments CSGO",
+      "title": "Moments CSGO"
+    },
+    "32": {
+      "credit": "Beartooth",
+      "description": "O Beartooth επιστρέφει για τον δεύτερο γύρο. Αυτό το μουσικό κιτ βαράει δυνατά και είναι ακόμα πιο επιθετικό. Έχουμε κάνει επίσης τον ύμνο του MVP ιδιαίτερα βαρύ, για να νιώθουν ακόμα πιο άσχημα οι αντίπαλοί σας όταν τους νικάτε.",
+      "name": "Beartooth, Aggressive",
+      "title": "Aggressive"
+    },
+    "33": {
+      "credit": "Blitz Kids",
+      "description": "Το βρετανικό ποπ/πανκ συγκρότημα «Blitz Kids» σας φέρνει το τέλειο μουσικό κιτ για να κάνετε «rush B» όσο σκέφτεστε τις νυχτερινές κούρσες με τους φίλους σας στο λύκειο. Αυτό το κιτ είναι για να τρέχετε γρήγορα και να νιώθετε νέοι.",
+      "name": "Blitz Kids, The Good Youth",
+      "title": "The Good Youth"
+    },
+    "34": {
+      "credit": "Hundredth",
+      "description": "Οι Hundredth φέρνουν τη βαριά μουσική στον κόσμο με μοναδικό τρόπο μέσω του μελωδικού hardcore τους. Απελευθερωθείτε ή επιστρέψτε στην Dust με αυτούς τους τέλειους ήχους για το σκότωμα των ανάξιων.",
+      "name": "Hundredth, FREE",
+      "title": "FREE"
+    },
+    "35": {
+      "credit": "Neck Deep",
+      "description": "Μερικές φορές χρειάζεστε λίγο ποπ πανκ για να βγάλετε τη μέρα. Είτε αντιμετωπίζετε εχθρούς που έχουν στήσει ενέδρα είτε έχετε ένα σερί από ήττες, ο Neck Deep σας ηρεμεί με το Life's Not Out To Get You, αν και η αντίπαλη ομάδα προσπαθεί για το αντίθετο.",
+      "name": "Neck Deep, Life's Not Out To Get You",
+      "title": "Life's Not Out To Get You"
+    },
+    "36": {
+      "credit": "Roam",
+      "description": "Οι Roam παρέχουν γρήγορο και ευθύ Pop Punk που κάνει το πλήθος και τους παίκτες να κινούνται. Αποδείξτε ότι έχετε θράσος με αυτούς τους τέλειους ήχους καθώς εφορμάτε και εξαλείφετε την αντίπαλη ομάδα πριν καν συνειδητοποιήσει ότι είναι χαμένη από χέρι.",
+      "name": "Roam, Backbone",
+      "title": "Backbone"
+    },
+    "37": {
+      "credit": "Twin Atlantic",
+      "description": "Βαρύτεροι, δυνατότεροι και πιο άγριοι από ποτέ, οι Twin Atlantic έρχονται στο CS:GO έτοιμοι να σας βοηθήσουν να τα χάσετε με τη δύναμη του σκοτσέζικου ροκ.",
+      "name": "Twin Atlantic, GLA",
+      "title": "GLA"
+    },
+    "38": {
+      "credit": "Skog",
+      "description": "Οι Skog επέστρεψαν με το τρίτο κιτ metal που συνθλίβει. Αυτή τη φορά με μια ηλεκτροργανική προσέγγιση στη μουσική, που συνδυάζει τεράστια κιθαριστικά riff με εξίσου μαζικά βαριά σημεία, στοιχεία loop και drone.",
+      "name": "Skog, III-Arena",
+      "title": "III-Arena"
+    },
+    "39": {
+      "credit": "The Verkkars",
+      "description": "Οι Verkkars ανεβαίνουν στα Φινλανδικά τσαρτ με ένα εγκάρδιο αφιέρωμα στους ENCE. Μπορεί πραγματικά να είναι τόσο EZ;",
+      "name": "The Verkkars, EZ4ENCE",
+      "title": "EZ4ENCE"
+    },
+    "40": {
+      "credit": "Συλλογή Halo",
+      "description": "Δώστε στην ακουστική εμπειρία του Counter-Strike σας μια επική ανανέωση με το Μουσικό πακέτο συλλογής Master Chief, που διαθέτει εικονικές μουσικές στιγμές από το σύμπαν του Halo. © 2019 343 Industries. Με επιφύλαξη κάθε δικαιώματος. Χρησιμοποιείται με άδεια από 343 Industries. Το λογότυπο Halo: The Master Chief Collection και το λογότυπο Halo logo είναι εμπορικά σήματα της ομάδας εταιρειών Microsoft.",
+      "name": "Συλλογή Halo, The Master Chief",
+      "title": "The Master Chief"
+    },
+    "41": {
+      "credit": "Scarlxrd",
+      "description": "Ο Scarlxrd αναμειγνύει βαριά μπιτάκια trap με μια ροή και απόδοση που δημιουργεί το δικό του μοναδικό υπογένος. Με αυτή την θαυμάσια ανάμειξη τα ζωντανά σόου του αιχμαλωτίζει την προσοχή όλων στο κοινό.",
+      "name": "Scarlxrd: King, Scar",
+      "title": "King, Scar"
+    },
+    "42": {
+      "credit": "Half-Life: Alyx",
+      "description": "Αυτό το μουσικό κουτί τιμά το Half-Life: Alyx, την VR επιστροφή της Valve στη σειρά του Half-Life. Είστε η μοναδική ελπίδα της ανθρωπότητας για επιβίωση. Οι βαθιές περιβαλλοντικές σας αλληλεπιδράσεις συνεχίζονται στο Counter-Strike: Global Offensive.",
+      "name": "Anti-Citizen – Half-Life: Alyx",
+      "title": "Anti-Citizen"
+    },
+    "43": {
+      "credit": "Austin Wintory",
+      "description": "Ο Austin Wintory αναμειγνύει κελτική φαντασία με σφυριχτά ηλεκρονικά και τη γενναιόδωρη βοήθεια των φωνητικών του Peter Hollens σε αυτό το μουσικό κουτί που σπάει τα είδη μουσικής.",
+      "name": "Austin Wintory, Bachram",
+      "title": "Bachram"
+    },
+    "44": {
+      "credit": "Dren",
+      "description": "Αυτό το soundtrack αποκαλυπτικού μαριάτσι από το επιτυχημένο indie παιχνίδι, Gunman Taco Truck, έρχεται στο CS:GO με έντονα μεξικάνικα τραγούδια όπως το Pollo Diablo και το Persecución de Helltain!",
+      "name": "Dren, Gunman Taco Truck",
+      "title": "Gunman Taco Truck"
+    },
+    "45": {
+      "credit": "Daniel Sadowski",
+      "description": "Από τον συνθέτη που σας έφερε το «Total Domination», «The 8-Bit Kit» και το «Crimson Assault», έρχεται το «Eye Of The Dragon». Ο μουσικός συνθέτης Daniel Sadowski αναμιγνύει Νίντζα + Όπλα + Χιπ-χοπ + Τέκνο για να δημιουργήσει ένα μουσικό πακέτο γεμάτο δράση. Οι Νίντζα είναι γνωστοί για τις γρήγορες και ακριβείς επιθέσεις τους, ωστόσο μπορούν να είναι αόρατοι στον εχθρό τους.",
+      "name": "Daniel Sadowski, Eye of the Dragon",
+      "title": "Eye of the Dragon"
+    },
+    "46": {
+      "credit": "Tree Adams and Ben Bromfield",
+      "description": "Αλχημιστές του ισχυρού χάους που είναι το M.U.D.D. FORCE - οι συνθέτες Tree Adams και Ben Bromfield κρατούν επικά μοτίβα μάχης και αλεσμένους συνθετικούς ήχους σε ένα τυφώνα καταστροφής με τέρμα τα γκάζια.",
+      "name": "Tree Adams and Ben Bromfield, M.U.D.D. FORCE",
+      "title": "M.U.D.D. FORCE"
+    },
+    "47": {
+      "credit": "Tim Huling",
+      "description": "Ο συνθέτης Tim Huling παραδίνει κλασικά φιλμ νουάρ κομμάτια αναμειγμένα με σύγχρονα μπιτ και grooves.",
+      "name": "Tim Huling, Neo Noir",
+      "title": "Neo Noir"
+    },
+    "48": {
+      "credit": "Sam Marshall",
+      "description": "Εμπνευσμένος από τη φάνκι μουσική βιντεοπαιχνιδιών στις αρχές των 90s, ο συνθέτης Sam Marshall αναμειγνυέι λίγη νοσταλγία κλασικών παιχνιδιών με μια πικάντικη μοντέρνα σως.",
+      "name": "Sam Marshall, Bodacious",
+      "title": "Bodacious"
+    },
+    "49": {
+      "credit": "Matt Levine",
+      "description": "Ο συνθέτης Matt Levine παραδίδει ωμή μαγκιά σε αυτό το αλανιάρικο φόρο τιμής σε ταινίες άγριας Δύσης. Ποτέ δεν είχε καλύτερη αίσθηση το «έλα λοιπόν, φτιάξε μου τη μέρα...»",
+      "name": "Matt Levine, Drifter",
+      "title": "Drifter"
+    },
+    "50": {
+      "credit": "Amon Tobin",
+      "description": "Ο θρυλικός παραγωγός Amon Tobin δανείζει τη μοναδική αισθητική του στο CS:GO. Αυτή τη φορά μέσω ενισχυτών σωλήνων.",
+      "name": "Amon Tobin, All for Dust",
+      "title": "All for Dust"
+    },
+    "51": {
+      "credit": "Darren Korb",
+      "description": "Σίγουρα, μπορεί να αστοχείτε πού και πού, αλλά αυτό που δεν αστοχεί ποτέ είναι το μουσικό κουτί που ρουφάει το αίμα κατ' ευθείαν από τον Κάτω Κόσμο του Hades, το παιχνίδι εξερεύνησης μπουντρουμιών τύπου rogue.",
+      "name": "Darren Korb, Μουσικό κουτί Hades",
+      "title": "Μουσικό κουτί Hades"
+    },
+    "52": {
+      "credit": "Neck Deep",
+      "description": "Αποδείξτε ότι δεν είστε σαν όλους τους άλλους (και ότι είστε ο καλύτερος στον χάρτη) με το νέο μουσικό κουτί του Neck Deep, που περιλαμβάνει τραγούδια από το άλμπουμ του συγκροτήματος με τίτλο «All Distortions Are Intentional».",
+      "name": "Neck Deep, The Lowlife Pack",
+      "title": "The Lowlife Pack"
+    },
+    "53": {
+      "credit": "Scarlxrd",
+      "description": "ΣΤΟ CHAIN$AW Ο SCARLXRD ΦΤΑΝΕΙ ΣΤΟ ΑΝΕΥ ΠΡΟΗΓΟΥΜΕΝΟΥ ΑΠΟΓΕΙΟ ΤΟΥ ΜΕ ΩΜΗ ΡΟΗ ΣΥΝΔΥΑΣΜΕΝΗ ΜΕ ΒΑΡΙΑ ΜΟΥΣΙΚΑ ΚΟΜΜΑΤΙΑ.",
+      "name": "Scarlxrd, CHAIN$AW.LXADXUT.",
+      "title": "CHAIN$AW.LXADXUT."
+    },
+    "54": {
+      "credit": "Austin Wintory",
+      "description": "Ο Austin Wintory απαντά την ερώτηση που η ανθρωπότητα είχε για χρόνια: τι συμβαίνει αν ενώσεις μουσική μπυραρίας, πόλκα με ακορντεόν, με γκραντζοειδή χέβι μέταλ;",
+      "name": "Austin Wintory, Mocha Petal",
+      "title": "Mocha Petal"
+    },
+    "55": {
+      "credit": "Chipzel",
+      "description": "Ο συνθέτης βιντεοπαιχνιδιών και θρύλος της chiptune μουσικής, Chipzel, φέρνει έναν συνδυασμό υβριδικών στιλ εμπνευσμένων από το παιχνίδι Speak & Spell, γεμάτο διασκέδαση, φανκ και χαρακτήρα.",
+      "name": "Chipzel, ~Yellow Magic~",
+      "title": "~Yellow Magic~"
+    },
+    "56": {
+      "credit": "Freaky DNA",
+      "description": "Όπερα. Ήχοι 8-bit. Αναλογικά συνθεσάιζερ. Υπάρχει κάτι που να μην αρέσει; Ο εξπέρ της chiptune μουσικής Freaky DNA και η σοπράνο Leanne Koch ενώνουν τις δυνάμεις τους για μεγάλα μπιτ και όμορφες στιγμές!",
+      "name": "Freaky DNA, Vici",
+      "title": "Vici"
+    },
+    "57": {
+      "credit": "Jesse Harlin",
+      "description": "Ο συνθέτης Jesse Harlin παραδίδει πομπώδες δράμα διαστημικής όπερας εμπνευσμένο από την κλασική επιστημονική φαντασία των δεκαετιών του 70, 80 και μετέπειτα.",
+      "name": "Jesse Harlin, Astro Bellum",
+      "title": "Astro Bellum"
+    },
+    "58": {
+      "credit": "Laura Shigihara",
+      "description": "Η συνθέτις και προγραμματίστρια βιντεοπαιχνιδιών Laura Shigihara θα σας βοηθήσει να πείτε σε όλους δυνατά και περήφανα ότι είστε οι MVP. Διασκεδάστε με αυτή τη μοναδική μίξη μουσικής dance των 90s, ρετρό συνθεσάιζερ βιντεοπαιχνιδιών και ένα ίχνος Plants vs. Zombies.",
+      "name": "Laura Shigihara: Work Hard, Play Hard",
+      "title": "Work Hard, Play Hard"
+    },
+    "59": {
+      "credit": "Sarah Schachner",
+      "description": "Από τη Sarah Schachner, μία δυστοπική γκοθ χορωδία σκανδιναβικών ρομπότ με αυτεπίγνωση αποφασίζουν ότι η ανθρωπότητα πρέπει να εξαλειφθεί.",
+      "name": "Sarah Schachner, KOLIBRI",
+      "title": "KOLIBRI"
+    },
+    "60": {
+      "credit": "bbno$",
+      "description": "Ο bbno$ διατυπώνει τον τοξικό ύμνο των gamer «u mad! Are u mad? LOL get good scrub». Η έρευνα δείχνει ότι αν παίζετε με αυτό το Μουσικό Κουτί εξοπλισμένο θα μεταβείτε απευθείας από Silver σε Global.",
+      "name": "bbno$, u mad!",
+      "title": "u mad!"
+    },
+    "61": {
+      "credit": "The Verkkars & n0thing",
+      "description": "Από την ηλιόλουστη Καλιφόρνια μέχρι την ψυχρή Λαπωνία, ο θρύλος του Counter-Strike n0thing και οι The Verkkars ενώνουν τις δυνάμεις τους για να δημιουργήσουν το χιτ κομμάτι, Flashbang Dance! 3, 2, 1 you’re blind!",
+      "name": "The Verkkars & n0thing, Flashbang Dance",
+      "title": "Flashbang Dance"
+    },
+    "62": {
+      "credit": "3kliksphilip",
+      "description": "Στο δρόμο για τη κορυφή ή για το γκρεμό; Αφήστε τους συνθετικούς ήχους και τις ονειρικές μελωδίες της δεκαετίας του 80 αυτού του μουσικού κιτ να σας πάνε πίσω. Πίσω, πίσω, πίσω… στις παλιές καλές εποχές.",
+      "name": "3kliksphilip, Heading for the Source",
+      "title": "Heading for the Source"
+    },
+    "63": {
+      "credit": "Humanity's Last Breath",
+      "description": "Το σουηδικό συγκρότημα Humanity's Last Breath έρχεται δυνατά με το μουσικό κιτ του, Void. Τύμπανα που χτυπούν, τεράστια ριφ και μια ατμόσφαιρα που προκαλεί ρίγος.",
+      "name": "Humanity's Last Breath, Void",
+      "title": "Void"
+    },
+    "64": {
+      "credit": "Juelz",
+      "description": "Neo trap συνθετικοί ήχοι, σκληρά 808, ένα επικό riff στο πιάνο και μια πληθώρα ηχητικών εφέ πυροβολισμών. Ο πρωτότυπος τραπ ύμνος «Shooters» από τον Juelz δημιουργεί ένα πραγματικό ξεχωριστό μουσικό κουτί. Κατάλληλο μόνο για MVP.",
+      "name": "Juelz, Shooters",
+      "title": "Shooters"
+    },
+    "65": {
+      "credit": "Knock2",
+      "description": "dashstar*, ο εικονικός χάουζ ύμνος μπάσων από τον Knock2, παρέχει ασταμάτητη ενέργεια που ακολουθεί το μάντρα «άνευ ορίων» του νεαρού από το Σαν Ντιέγκο.",
+      "name": "Knock2, dashstar*",
+      "title": "dashstar*"
+    },
+    "66": {
+      "credit": "Meechy Darko",
+      "description": "Αρπάξτε ένα Glock και εξοπλίστε αυτό το μουσικό κιτ για να μεταφερθείτε στο κέντρο της υπόγειας σκηνής χιπ χοπ της Νέας Υόρκης.",
+      "name": "Meechy Darko, Gothic Luxury",
+      "title": "Gothic Luxury"
+    },
+    "67": {
+      "credit": "Sullivan King",
+      "description": "Σας αρέσει το κυνηγητό; Σκληρό ροκ, μέταλ και dubstep συγκρούονται στη μουσική υπόκρουση του Sullivan King για να γίνετε ασταμάτητοι.",
+      "name": "Sullivan King, Lock Me Up",
+      "title": "Lock Me Up"
+    },
+    "68": {
+      "credit": "Perfect World",
+      "description": "Γιορτάστε την 5η επέτειο της κυκλοφορίας του CS:GO στην Κίνα με ένα ξεχωριστό μουσικό κουτί, το 花脸 Hua Lian (Painted Face). Αυτό το κουτί συνδυάζει λαΐκή όπερα Qinqiang (το παλαιότερο ροκ εντ ρολ κινεζικού στιλ) και μοντέρνο ροκ εντ ρολ. Είτε είτε τυλιγμένοι σε καπνό είτε τυφλωμένοι από μια χειροβομβίδα κρότου λάμψης, δεν θα χαθείτε!",
+      "name": "Perfect World, 花脸 Hua Lian (Painted Face)",
+      "title": "花脸 Hua Lian (Painted Face)"
+    },
+    "69": {
+      "credit": "Denzel Curry",
+      "description": "Ο Denzel φέρνει την ξεχωριστή του ενέργεια στο Counter-Strike, καθώς ενώνει τραπ, τζαζ και μπιτ από ντραμς και μπάσο. Αυτό το μουσικό κουτί διαθέτει τις επιτυχίες του Denzel, «Walkin», «ULTIMATE» και άλλες, οπότε βγάλτε τις επιμεταλλωμένες με νικέλιο Berettas χρώμιού σας και ανεβάστε την ένταση με το ΑΠΟΛΥΤΟ μουσικό κουτί.",
+      "name": "Denzel Curry, ULTIMATE",
+      "title": "ULTIMATE"
+    },
+    "70": {
+      "credit": "Valve",
+      "description": "Το προεπιλεγμένο μουσικό κουτί του CS:GO, που παρουσιάστηκε με την κυκλοφορία του CS:GO το 2012.",
+      "name": "Valve, CS:GO",
+      "title": "CS:GO"
+    },
+    "71": {
+      "credit": "DRYDEN",
+      "description": "Τι άλλο να πούμε δηλαδή; Νιώστε τη δύναμη. Λοκάρετε τον στόχο σας με αυτό το δυναμικό electro μουσικό κουτί από DRYDEN.",
+      "name": "DRYDEN, Feel The Power",
+      "title": "Feel The Power"
+    },
+    "72": {
+      "credit": "ISOxo",
+      "description": "Φτιαγμένο ειδικά για τα παιχνίδια όπου νιώθετε… διαφορετικά. Στοιχειώστε τους εχθρούς σας σε κάθε γύρο, με αυτό το «απάνθρωπο» μουσικό κουτί από ISOxo.",
+      "name": "ISOxo, inhuman",
+      "title": "inhuman"
+    },
+    "73": {
+      "credit": "KILL SCRIPT",
+      "description": "Είστε εραστής ή μαχητής; Ίσως και τα δύο; Δείξτε το σε όλο το λόμπι με το νέο μουσικό κουτί All Night από KILL SCRIPT.",
+      "name": "KILL SCRIPT, All Night",
+      "title": "All Night"
+    },
+    "74": {
+      "credit": "Knock2",
+      "description": "Για τους παίκτες που αντιμετωπίζουν κάθε παιχνίδι σαν να είναι ο Μεγάλος Τελικός κάποιου Major, ακόμα και όταν διακυβεύονται μόνο μερικοί πόντοι κατάταξης CS. Δώστε τα όλα και κερδίστε με το δεύτερο μουσικό κουτί από Knock2, το Make U SWEAT!.",
+      "name": "Knock2, Make U SWEAT!",
+      "title": "Make U SWEAT!"
+    },
+    "75": {
+      "credit": "Rad Cat",
+      "description": "Μερικές φορές, δεν αρκεί ο αφοπλισμός της βόμβας για να γίνει κανείς ο MVP του γύρου. Γιορτάστε κάθε στιγμή, μικρή και μεγάλη, με το μουσικό κουτί Reason από Rad Cat.",
+      "name": "Rad Cat, Reason",
+      "title": "Reason"
+    },
+    "76": {
+      "credit": "TWERL και Ekko & Sidetrack",
+      "description": "Η καλύτερη στιγμή για να τα δώσετε όλα, είναι όταν οι προβολείς είναι πάνω σας. Αφήστε τα τύμπανα και το μπάσο του ύμνου Under Bright Lights από TWERL και Ekko & Sidetrack να συνεπάρουν εσάς και την ομάδα σας.",
+      "name": "TWERL και Ekko & Sidetrack, Under Bright Lights",
+      "title": "Under Bright Lights"
+    },
+    "78": {
+      "credit": "Austin Wintory",
+      "description": "Ο Austin Wintory πουλάει την ψυχή του στον Διάβολο, δημιουργώντας σατανικούς συνδυασμούς βιολιού και κλαμπ EDM.",
+      "name": "Austin Wintory, The Devil Went Clubbing in Georgia",
+      "title": "The Devil Went Clubbing in Georgia"
+    },
+    "79": {
+      "credit": "Ben Bromfield",
+      "description": "Σας πρόδωσαν! Απολαύστε αυτήν τη δυνατή, μελαγχολική και έντονη μουσική υπόκρουση με αέρα τζαζ, από τον συνθέτη ταινιών και σειρών Ben Bromfield, καθώς ανακαλύπτετε μέχρι πού φτάνει αυτή η υπόθεση…",
+      "name": "Ben Bromfield, Rabbit Hole",
+      "title": "Rabbit Hole"
+    },
+    "80": {
+      "credit": "Daniel Sadowski",
+      "description": "Ο Daniel Sadowski προσκαλεί τους παίκτες να μπουν στον κόσμο του «Dead Shot», που συνδυάζει μουσική δράσης, χιπ χοπ, κλασική, ηλεκτρονική, ρετρό και συναισθηματική με ηχητικό σχεδιασμό. Για να μην ζαβλακωθείτε!",
+      "name": "Daniel Sadowski, Dead Shot",
+      "title": "Dead Shot"
+    },
+    "81": {
+      "credit": "Dren McDonald",
+      "description": "Η καφεΐνη είναι στο πλευρό σας. Στο πλευρό όλων μας, δηλαδή, εκτός από το πλευρό των εχθρών σας! Το «Coffee! Kofe! Kahveh!» είναι βαλκανική μουσική χάλκινων οργάνων για γλέντια στους δρόμους, από τον Dren McDonald («Gunman Taco Truck» και «Death’s Head Demolition»), που ηχογραφήθηκε ζωντανά στο Balkancisco!",
+      "name": "Dren McDonald, Coffee! Kofe! Kahveh!",
+      "title": "Coffee! Kofe! Kahveh!"
+    },
+    "82": {
+      "credit": "Matt Levine",
+      "description": "Μπείτε στον επικίνδυνο κόσμο της κατασκοπείας με το μουσικό κουτί «Agency», από τον συνθέτη Matt Levine.",
+      "name": "Matt Levine, Agency",
+      "title": "Agency"
+    },
+    "83": {
+      "credit": "Sam Marshall",
+      "description": "Το «Clutch», η άτυπη συνέχεια του «Bodacious», είναι ένα εφιαλτικό τερατούργημα cyber-funk, που ανέστησε ο Sam Marshall με αλχημείες και μυστικιστικές τελετές.",
+      "name": "Sam Marshall, Clutch",
+      "title": "Clutch"
+    },
+    "84": {
+      "credit": "Tim Huling",
+      "description": "Ανεβάστε την αδρεναλίνη σας με το «Devil's Paintbrush» από τον Tim Huling, μια ξέφρενη εμπειρία groove-metal.",
+      "name": "Tim Huling, Devil's Paintbrush",
+      "title": "Devil's Paintbrush"
+    },
+    "85": {
+      "credit": "Tree Adams",
+      "description": "Εδώ στο «Seventh Moon», ο Tree Adams στρίβει ένα βρόμικο χαρμάνι από διαγαλαξιακή funk, με μια μουσική υπόκρουση για κόντρες αυτοκινήτων.",
+      "name": "Tree Adams, Seventh Moon",
+      "title": "Seventh Moon"
+    },
+    "86": {
+      "credit": "Perfect World",
+      "description": "Συνδυάζοντας παραδοσιακή κινεζική λαϊκή και ηλεκτρονική μουσική, το «Ay Hey» προσφέρει παραστατική αφήγηση και μπιτάκια γεμάτα ενέργεια, για να φέρει κοντά παίκτες διαφορετικών ηλικιών και καταβολών. Με τον ζωηρό του ρυθμό να ακολουθεί τον ενθουσιασμό των παικτών για το παιχνίδι, το «Ay Hey» αποτυπώνει με γλαφυρό τρόπο διάφορες χιουμοριστικές και παιχνιδιάρικες σκηνές μάχης.",
+      "name": "Perfect World, Ay Hey",
+      "title": "Ay Hey"
+    },
+    "87": {
+      "credit": "Adam Beyer",
+      "description": "Ο Σουηδός θρύλος της τέκνο Adam Beyer σάς φέρνει αυτό το ονειρικό μουσικό κουτί για να σας βοηθήσει να βάψετε τους εχθρούς σας κόκκινους.",
+      "name": "Adam Beyer, Red Room",
+      "title": "Red Room"
+    },
+    "88": {
+      "credit": "Ghost",
+      "description": "MESSAGE FROM THE CLERGY—Ο Papa V Perpetua κατήλθε στο Counter-Strike σε ένα λαμπρό υπερθέαμα heavy metal. Ξεφύγετε από τα επίγεια βάσανα καθώς πυροβολείτε και προσεύχεστε στο Unholy See.",
+      "name": "Ghost, Skeletá",
+      "title": "Skeletá"
+    },
+    "89": {
+      "credit": "HEALTH",
+      "description": "Νιώστε τι θα πει HEALTH στο Counter-Strike. Πάρτε τα όπλα και απολαύστε τον σκληρό και βασανιστικό βιομηχανικό μέταλ ήχο του RAT WARS.",
+      "name": "HEALTH, RAT WARS",
+      "title": "RAT WARS"
+    },
+    "90": {
+      "credit": "James and the Cold Gun",
+      "description": "Το ουαλικό ροκ ντουέτο James and the Cold Gun απελευθερώνει καθαρή, αφιλτράριστη ενέργεια, συνδυάζοντας το κλασικό πανκ ύφος με τη φωτιά της σύγχρονης, εναλλακτικής ροκ για να δημιουργήσει ένα εκπληκτικό μουσικό κουτί.",
+      "name": "James and the Cold Gun, Chewing Glass",
+      "title": "Chewing Glass"
+    },
+    "91": {
+      "credit": "Jonathan Young",
+      "description": "Αυτό που λείπει από το παιχνίδι σας είναι η power metal διαστημικών πειρατών. Ταξιδέψτε με το Starship Velociraptor και αφήστε τους ήχους από το άλμπουμ του Jonathan Young, με επιρροές από άνιμε και βιντεοπαιχνίδια, να πάει τους αγώνες σας σε άλλο επίπεδο.",
+      "name": "Jonathan Young, Starship Velociraptor",
+      "title": "Starship Velociraptor"
+    },
+    "92": {
+      "credit": "Juelz",
+      "description": "Χρειάζεστε χώρο; Έχουμε Floorspace! Αυτό το τεράστιο μουσικό κουτί από το πρώτο άλμπουμ του Juelz περιέχει neo-rave συνθεσάιζερ, σκληρά μπάσα και δυνατά trap drums. Το Floorspace έχει επανασχεδιαστεί για το Counter-Strike 2 και ο ύμνος MVP «Gossip» κάνει τους παίκτες να θέλουν να στήσουν έναν τοίχο με LED και έπειτα να «ρίξουν» το μπιτ.",
+      "name": "Juelz, Floorspace",
+      "title": "Floorspace"
+    },
+    "93": {
+      "credit": "Killer Mike",
+      "description": "Απολαύστε αυτό το άλμπουμ χιπ χοπ που έχει βραβευτεί 3 φορές με GRAMMY, στον κόσμο του Counter-Strike. Η φωνή του Killer Mike θα κρατήσει το ηθικό σας ψηλά ενώ ανεβαίνετε βαθμίδες και βελτιώνετε τις ικανότητές σας.",
+      "name": "Killer Mike, MICHAEL",
+      "title": "MICHAEL"
+    },
+    "94": {
+      "credit": "PVRIS",
+      "description": "Ποιο είναι το μόνο πράγμα που αγαπάμε περισσότερο από έναν καλό εχθρό; Μια καλή μουσική υπόκρουση. Αφήστε το νέο μουσικό κουτί των PVRIS να ανεβάσει το ηθικό της ομάδας σας και να κάνει το σερί νικών σας διαχρονικό, σαν το Evergreen.",
+      "name": "PVRIS, Evergreen",
+      "title": "Evergreen"
+    },
+    "95": {
+      "credit": "Selective Response",
+      "description": "Ικανοποιήστε τις επιθυμίες σας με αυτό το δυναμικό μουσικό κουτί υψηλής ενέργειας από το αμερικανικό είδωλο της techno, τον Selective Response. Φορτισμένος και έτοιμος για δράση.",
+      "name": "Selective Response, No Love Only Pleasure",
+      "title": "No Love Only Pleasure"
+    },
+    "96": {
+      "credit": "Tigercub",
+      "description": "Το βρετανικό ροκ συγκρότημα Tigercub φέρνει σκληρές μελωδίες, που συνδυάζουν την ακατέργαστη ένταση του εναλλακτικού ροκ με μια μελαγχολική σύγχρονη πινελιά, δημιουργώντας ένα συγκλονιστικό μουσικό κουτί.",
+      "name": "Tigercub, The Perfume of Decay",
+      "title": "The Perfume of Decay"
+    },
+    "98": {
+      "credit": "ALRT",
+      "description": "Ο χάουζ δίσκος με το ρυθμικό μπάσο από τον ALRT φέρνει το απόλυτο «DOPAMINE HIT», κρατώντας σας σε ετοιμότητα για να «λοκάρετε» και να σταθείτε στο ύψος των περιστάσεων τις σημαντικότερες στιγμές.",
+      "name": "ALRT, DOPAMINE HIT",
+      "title": "DOPAMINE HIT"
+    },
+    "99": {
+      "credit": "Altare",
+      "description": "Το «Change My Mind», ο ευφορικός ύμνος κυμάτων από τον Altare, είναι ιδανικός για όταν είστε σε άψογη φόρμα, όταν νιώθετε ότι κανείς δεν μπορεί να σταθεί στο διάβα σας.",
+      "name": "Altare, Change My Mind",
+      "title": "Change My Mind"
+    },
+    "100": {
+      "credit": "borne",
+      "description": "Το «Give It To Me», η κομματάρα του borne με τα σκληρά μπάσα θα κάνει τους παίκτες να θέλουν να τα δώσουν όλα όταν πολεμούν τους αντιπάλους τους στο Counter-Strike και όχι μόνο.",
+      "name": "borne, Give It To Me",
+      "title": "Give It To Me"
+    },
+    "101": {
+      "credit": "Pirapus",
+      "description": "Το «EVERYNITE», ο ύμνος με ντραμς και μπάσο υψηλών οκτανίων από τους Pirapus σας κάνει να νιώθετε πως μπορείτε να καταφέρετε τα πάντα. Όπως λέει και ο τίτλος του, θα «λοκάρετε» κάθε νύχτα.",
+      "name": "Pirapus, EVERYNITE",
+      "title": "EVERYNITE"
+    },
+    "102": {
+      "credit": "Repiet & Julia Kleijn",
+      "description": "Προετοιμαστείτε για κάθε πρόκληση με το αξέχαστο κομμάτι «On And On» από τους Repiet και Julia Kleijn. Με υψηλές και χαμηλές νότες, αυτή η μελωδία θέτει τον τόνο για να καταρρίψετε κάθε εμπόδιο.",
+      "name": "Repiet & Julia Kleijn, On And On",
+      "title": "On And On"
+    },
+    "103": {
+      "credit": "ShockOne",
+      "description": "Απελευθερωθείτε με τα ανεβαστικά ντραμς και μπάσα του δίσκου «Voices» από τον ShockOne. Αυτό το μουσικό κουτί είναι ό,τι πρέπει για δυνατά κλατσαρίσματα και θα σας οδηγήσει σε πολλά βραβεία MVP με τα δυνατά μπάσα του.",
+      "name": "ShockOne, Voices",
+      "title": "Voices"
+    },
+    "104": {
+      "credit": "Starjunk 95",
+      "description": "Ζήστε την εμπειρία ενός μουσικού κουτιού από τον πιο κουλ σταθμό του γαλαξία, που περιέχει τους νεότερους ήχους του σήμερα αγκαλιασμένους με τη βίντατζ νοσταλγία του χθες. Αυτό είναι το Starjunk 95.",
+      "name": "Starjunk 95, Industrial Sunset Memories",
+      "title": "Industrial Sunset Memories"
+    }
+  },
+  "releases": {
+    "2016-11-28-radicals": "Μουσικό κουτί StatTrak™ Radicals",
+    "2020-04-16-masterminds": "Πακέτο μουσικών κουτιών Masterminds",
+    "2021-08-12-tacticians": "Πακέτο μουσικών κουτιών Tacticians",
+    "2022-08-23-initiators": "Πακέτο μουσικών κουτιών Initiators",
+    "2024-02-06-nightmode": "Πακέτο μουσικών κουτιών NIGHTMODE",
+    "2024-08-20-masterminds-2": "Πακέτο μουσικών κουτιών Masterminds 2",
+    "2025-08-14-deluge": "Πακέτο μουσικών κουτιών Deluge",
+    "2026-05-07-nightmode-ii": "Μουσικά κουτιά NIGHTMODE II"
+  }
+}

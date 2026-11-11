@@ -1,0 +1,620 @@
+{
+  "kits": {
+    "1": {
+      "credit": "Valve",
+      "description": "Valve, Counter-Strike 2\n\nОфициалният музикален комплект на Counter-Strike 2.",
+      "name": "Valve — Counter-Strike 2",
+      "title": "Counter-Strike 2"
+    },
+    "3": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski, Crimson Assault\n\nКомпозиторът на музика за видеоигри Даниел Садовски предоставя разчупено действие, смесено с ИЗОБИЛИЕ ОТ ЩУРИ ритми в този пулсиращ и освежаващ музикален пакет.",
+      "name": "Daniel Sadowski — Crimson Assault",
+      "title": "Crimson Assault"
+    },
+    "4": {
+      "credit": "Noisia",
+      "description": "Noisia, Sharpened\n\nХоландското електронно трио Noisia предоставя наситено филмово усещане с уникално съчетание от традиционни мотиви и прогресивни методи.",
+      "name": "Noisia — Sharpened",
+      "title": "Sharpened"
+    },
+    "5": {
+      "credit": "Robert Allaire",
+      "description": "Robert Allaire, Insurgency\n\nМузика, чрез която ще смажете враговете си, за да ги видите покосени на земята пред Вас, от всепризнатия композитор Робърт Алайр.",
+      "name": "Robert Allaire — Insurgency",
+      "title": "Insurgency"
+    },
+    "6": {
+      "credit": "Sean Murray",
+      "description": "Sean Murray, A*D*8\n\nКомпозиторът на две от най-значимите военни игри представя едно звуково снаряжение, което ще отведе враговете Ви до портите на ада!!",
+      "name": "Sean Murray — A*D*8",
+      "title": "A*D*8"
+    },
+    "7": {
+      "credit": "Feed Me",
+      "description": "Feed Me, High Noon\n\nВсепризнатият електронен музикант Feed Me внася уестърн привкус в съзвучие с модерни ритми.",
+      "name": "Feed Me — High Noon",
+      "title": "High Noon"
+    },
+    "8": {
+      "credit": "Dren",
+      "description": "Dren, Death's Head Demolition\n\nОт композитора на музика за игри Дрен Макдоналд представяме този кинематографичен, УБИЙСТВЕНО жесток, супер героичен метълски музикален пакет!",
+      "name": "Dren — Death's Head Demolition",
+      "title": "Death's Head Demolition"
+    },
+    "9": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory, Desert Fire\n\nПолучилият „Грами“ номинация, композитор на музика за игри Остин Уинтъри пита — защо да си губите времето преследвайки враговете си, когато можете да ги примамите с едно смъртоносно и естествено ненормално танго?",
+      "name": "Austin Wintory — Desert Fire",
+      "title": "Desert Fire"
+    },
+    "10": {
+      "credit": "Sasha",
+      "description": "Sasha, LNOE\n\nПотопете се в този кинематографичен саундтрак, изпълнен с възвишени струнни акомпанименти, пулсиращи мелодии и разчупени барабани от световноизвестния диджей / продуцент Sasha.",
+      "name": "Sasha — LNOE",
+      "title": "LNOE"
+    },
+    "11": {
+      "credit": "Skog",
+      "description": "Skog, Metal\n\nЕдин урок по агресия от метъл продуцента Skog.",
+      "name": "Skog — Metal",
+      "title": "Metal"
+    },
+    "12": {
+      "credit": "Midnight Riders",
+      "description": "Midnight Riders, All I Want for Christmas\n\n„ВЕСЕЛИ ПРАЗНИЦИ, КО****ТА!“\n— Midnight Riders",
+      "name": "Midnight Riders — All I Want for Christmas",
+      "title": "All I Want for Christmas"
+    },
+    "13": {
+      "credit": "Matt Lange",
+      "description": "Matt Lange, IsoRhythm\n\nПоглезете слухови си сетива в колекция от кинематографични, изпълнени с насечена атмосфера и стабилни пулсиращи ритми от електронен продуцент и иноватор Мат Ланге.",
+      "name": "Matt Lange — IsoRhythm",
+      "title": "IsoRhythm"
+    },
+    "14": {
+      "credit": "Mateo Messina",
+      "description": "Mateo Messina, For No Mankind\n\nПоставете враговете си на колене. Неподправено напрежение от спечелилия „Грами“ награда композитор, Матео Месина.",
+      "name": "Mateo Messina — For No Mankind",
+      "title": "For No Mankind"
+    },
+    "15": {
+      "credit": "Различни изпълнители",
+      "description": "Various Artists, Hotline Miami\n\nМножество електронни изпълнители предоставят брутални ритми в този вълнуващ музикален пакет от емблематичната Hotline Miami.",
+      "name": "Различни изпълнители — Hotline Miami",
+      "title": "Hotline Miami"
+    },
+    "16": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski, Total Domination\n\nКомпозиторът Даниел Садовски вдига летвата с агресивни електронни ритми, креативни звукови ефекти и ободряваща, движеща, футуристична атмосфера. „Предупреждение — Ще доведе до покачване на адреналина!“",
+      "name": "Daniel Sadowski — Total Domination",
+      "title": "Total Domination"
+    },
+    "17": {
+      "credit": "Damjan Mravunac",
+      "description": "Damjan Mravunac, The Talos Principle\n\nКомпозиторът Дамиян Мравунак съчетава енергичните кинематографични вълнения с епични хорове в този музикален пакет, включващ мелодии от всепризнатото заглавия на Croteam „The Talos Principle“.",
+      "name": "Damjan Mravunac — The Talos Principle",
+      "title": "The Talos Principle"
+    },
+    "18": {
+      "credit": "Proxy",
+      "description": "Proxy, Battlepack\n\nРуският творец на тежка електронна музика PROXY поднася своята уникалната тежка артилерия в Counter Strike. Смесицата от оръжейни звуци, преплетени с най-изтънчените студийни технологии, правят този пакет единствен по рода си.",
+      "name": "Proxy — Battlepack",
+      "title": "Battlepack"
+    },
+    "19": {
+      "credit": "Ki:Theory",
+      "description": "Ki:Theory, MOLOTOV\n\nЗвукозаписни творци и музикални изпълнители на DOTA TI4, Ki:Theory хвърлят БОМБИ с този безпощаден набор от рязък и мрачен електронен рок.",
+      "name": "Ki:Theory — MOLOTOV",
+      "title": "MOLOTOV"
+    },
+    "20": {
+      "credit": "Troels Folmann",
+      "description": "Troels Folmann, Uber Blasto Phone\n\nТриумфални бурни звуци в съчетание със съвременни свръх пулсации в тази експлозивна колекция от извънредно всепризнатия композитор Троелс Фолман.",
+      "name": "Troels Folmann — Uber Blasto Phone",
+      "title": "Uber Blasto Phone"
+    },
+    "21": {
+      "credit": "Kelly Bailey",
+      "description": "Kelly Bailey, Hazardous Environments\n\nКели Бейли, композитора на Half-Life поредицата от Valve, създава нов арсенал от апокалиптична музика, вдъхновена посредством по-мрачната страна във вселената на Half-Life.",
+      "name": "Kelly Bailey — Hazardous Environments",
+      "title": "Hazardous Environments"
+    },
+    "22": {
+      "credit": "Skog",
+      "description": "Skog, II-Headshot\n\nМетъл композитора и продуцент Джоке Ског се завръща с чисто нов жесток музикален комплект. Той превръща останалите CS:GO музикални комплекти в нещо сладурско, топло и пухкаво. Сега станете НЦИ, така че всички да чуят колко сте грандиозни!",
+      "name": "Skog — II-Headshot",
+      "title": "II-Headshot"
+    },
+    "23": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski, The 8-Bit Kit\n\nДаниел Садовски създава първия по рода си 8 битов музикален комплект за Counter-Strike с правдоподобно ретро озвучаване.",
+      "name": "Daniel Sadowski — The 8-Bit Kit",
+      "title": "The 8-Bit Kit"
+    },
+    "24": {
+      "credit": "AWOLNATION",
+      "description": "AWOLNATION, I Am\n\nАлтернативните рокери от AWOLNATION Ви поднасят един нетленен музикален комплект. Той е претъпкан с подбрани еклектични мелодии и включва откъси от синглите „I Am“ и мултиплатинения хит „Sail“.",
+      "name": "AWOLNATION — I Am",
+      "title": "I Am"
+    },
+    "25": {
+      "credit": "Mord Fustang",
+      "description": "Mord Fustang, Diamonds\n\nДиаманти. Те са вечността. Впуснете се в ритмичните и атмосферни арпежи на Морд Фустанг с този свеж набор.",
+      "name": "Mord Fustang — Diamonds",
+      "title": "Diamonds"
+    },
+    "26": {
+      "credit": "Michael Bross",
+      "description": "Michael Bross, Invasion!\n\nМайкъл Брос извежда наяве епичен, кинематографичен, техно-гръндж, който ще Ви накара да се почувствате като действителни тежкари в битка.",
+      "name": "Michael Bross — Invasion!",
+      "title": "Invasion!"
+    },
+    "27": {
+      "credit": "Ian Hultquist",
+      "description": "Ian Hultquist, Lion's Mouth\n\nСъздавайки смесица от пулсиращи струнни инструменти, синтезатори и силно биещи бойни барабани, Иън Хълткуист Ви подготвя за сражение чрез своя бурен саундтрак.",
+      "name": "Ian Hultquist — Lion's Mouth",
+      "title": "Lion's Mouth"
+    },
+    "28": {
+      "credit": "New Beat Fund",
+      "description": "New Beat Fund, Sponge Fingerz\n\nСлънчев сърф-рок с елементи на хип-хоп, пънк и гаражен поп. Бъдете себе си и продължавахте с изстрелите в главата.",
+      "name": "New Beat Fund — Sponge Fingerz",
+      "title": "Sponge Fingerz"
+    },
+    "29": {
+      "credit": "Beartooth",
+      "description": "Beartooth, Disgusting\n\nBeartooth поднасят класически агресивен хардкор стомп, който подтиква тълпите да се раздвижат и трошат разни неща. Перфектен саундтрак за убийствата Ви без оптика. Рокендрол докат' умрете.",
+      "name": "Beartooth — Disgusting",
+      "title": "Disgusting"
+    },
+    "30": {
+      "credit": "Lennie Moore",
+      "description": "Lennie Moore, Java Havana Funkaloo\n\nКомпозиторът на музика за игри Лени Муур сервира ароматна, пикантно съчетание от джаз фънк. Превъзходно вкусно, когато се сервира студено, като труповете на враговете Ви, след като сте приключили с тях.",
+      "name": "Lennie Moore — Java Havana Funkaloo",
+      "title": "Java Havana Funkaloo"
+    },
+    "31": {
+      "credit": "Darude",
+      "description": "Darude, Moments CS:GO\n\nОтдайте се свободно на звуковите пейзажи от познатите музикални вкусове и тонове на финландския продуцент Darude. Обогатете се с достъпа до тежко преплетените прогресивни обертонове и резки трептящи мелодични структури от звуковата библиотека на един измежду най-известните пионери в денс музиката.",
+      "name": "Darude — Moments CS:GO",
+      "title": "Moments CS:GO"
+    },
+    "32": {
+      "credit": "Beartooth",
+      "description": "Beartooth, Aggressive\n\nBeartooth се завръщат за втори рунд. Този нов музикален комплект има по-тежки парчета и е дори още по-агресивен. Също така направихме химна за НЦИ извънредно тежък, така че опонентите Ви наистина да се почувстват зле, след като загубят срещу Вас.",
+      "name": "Beartooth — Aggressive",
+      "title": "Aggressive"
+    },
+    "33": {
+      "credit": "Blitz Kids",
+      "description": "Blitz Kids, The Good Youth\n\nБританската поп/пънк банда, Blitz Kids Ви поднася перфектния музикален комплект за щурмуване към зоната за бомба „B“, докато си мислите за онези нощни пътувания, които сте правили със своите приятели от гимназията. Този комплект е за бързо движение и младежки усещания.",
+      "name": "Blitz Kids — The Good Youth",
+      "title": "The Good Youth"
+    },
+    "34": {
+      "credit": "Hundredth",
+      "description": "Hundredth, FREE\n\nHundredth поднасят тежкия звук в света на CS:GO със своя уникален подход към мелодичния хардкор. Отприщете се свободно или пък се завърнете към Dust с това перфектно озвучаване за трепане на недостойните.",
+      "name": "Hundredth — FREE",
+      "title": "FREE"
+    },
+    "35": {
+      "credit": "Neck Deep",
+      "description": "Neck Deep, Life's Not Out To Get You\n\nПонякога просто Ви е нужен малко поп пънк, за да изкарате деня. Независимо от това дали се занимавате с дебнещи врагове или губите масивна убийствена серия, Neck Deep ще са там, за да Ви докажат, че Life's Not Out To Get You („Животът не е срещу Вас“), но другият отбор определено е.",
+      "name": "Neck Deep — Life's Not Out To Get You",
+      "title": "Life's Not Out To Get You"
+    },
+    "36": {
+      "credit": "Roam",
+      "description": "Roam, Backbone\n\nRoam предоставят бърз, прям поп пънк, който раздвижва както тълпите, така и играчите. Докажете дали имате Backbone („Кураж“) с това перфектно озвучаване за щурмуване и заличаване на другия отбор още преди да осъзнаят, че са станали преодолима пречка.",
+      "name": "Roam — Backbone",
+      "title": "Backbone"
+    },
+    "37": {
+      "credit": "Twin Atlantic",
+      "description": "Twin Atlantic, GLA\n\nПо-тежки, по-шумни и по-гръмки от всякога, Twin Atlantic идват с готовност към CS:GO, притичвайки Ви се на помощ, така че да разтапяте лицата на своите противници с огневата мощ на Шотландския рок.",
+      "name": "Twin Atlantic — GLA",
+      "title": "GLA"
+    },
+    "38": {
+      "credit": "Skog",
+      "description": "Skog, III-Arena\n\nSkog се завръща с трети смазващ метълски комплект. Този път музикалният обрат е електронно-органично озвучаване, комбиниращо масивни китарни рифове с еквивалентно зашеметяващи стихвания, повтарящи се елементи и синтетични басови орнаменти.",
+      "name": "Skog — III-Arena",
+      "title": "III-Arena"
+    },
+    "39": {
+      "credit": "The Verkkars",
+      "description": "The Verkkars, EZ4ENCE\n\nThe Verkkars се извисяват през финландските класации със сърдечна почит към ENCE. Може ли наистина да е толкова лесно?",
+      "name": "The Verkkars — EZ4ENCE",
+      "title": "EZ4ENCE"
+    },
+    "40": {
+      "credit": "Halo",
+      "description": "Дайте на своето слушателско преживяване в Counter Strike легендарно преобразяване с музикалния пакет „Master Chief Collection“, включващ емблематични музикални моменти от Halo вселената. © 2019 343 Industries. Всички права запазени. Използвано с разрешение от 343 Industries. Halo: The Master Chief Collection и Halo логото са запазени марки на Microsoft групата от компании.",
+      "name": "Halo — The Master Chief Collection",
+      "title": "The Master Chief Collection"
+    },
+    "41": {
+      "credit": "Scarlxrd",
+      "description": "Scarlxrd: King, Scar\n\nScarlxrd смесва тежка ритъм секция в стил „трап“ с темпо и представяне, което създава негов собствен уникален поджанр. С това вълнуващо съчетание представленията му на живо завладяват вниманието на всички в тълпата.",
+      "name": "Scarlxrd — King, Scar",
+      "title": "King, Scar"
+    },
+    "42": {
+      "credit": "Half-Life: Alyx",
+      "description": "Half-Life: Alyx, Anti-Citizen\n\nТози музикален пакет ознаменува „Half-Life: Alyx“. ВР завръщането на Valve към Half-Life поредицата. Вие сте единствения шанс за оцеляване на човечеството. А завладяващите ВИ взаимодействия с обкръжението ще продължат в Counter-Strike: Global Offensive.",
+      "name": "Half-Life: Alyx — Anti-Citizen",
+      "title": "Anti-Citizen"
+    },
+    "43": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory, Bachram\n\nОстин Уинтъри смесва келтската фантазия с пламенни електронни нотки и щедрото подпомагане от вокалите на Питър Холенс в този преплитащ жанровете музикален комплект.",
+      "name": "Austin Wintory — Bachram",
+      "title": "Bachram"
+    },
+    "44": {
+      "credit": "Dren",
+      "description": "Dren, Gunman Taco Truck\n\nАпокалиптичният саундтрак в мариачи стил от популярната независима игра, Gunman Taco Truck, идва към CS:GO с интензивни мелодии, придаващи характерна мексиканска нотка, като например Pollo Diablo и Persecución de Helltain!",
+      "name": "Dren — Gunman Taco Truck",
+      "title": "Gunman Taco Truck"
+    },
+    "45": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski, Eye of the Dragon\n\nОт композитора, който Ви поднесе „Total Domination“, „The 8-Bit Kit“ и „Crimson Assault\", идва „Eye Of The Dragon“. Музикалният композитор Даниел Садовски смесва нинджи + оръжия + хип-хоп + техно, за да създаде изпълнен с действие музикален комплект. Нинджите са известни със своите бързи и прецизни атаки, при все това могат да бъдат невидими за врага си.",
+      "name": "Daniel Sadowski — Eye of the Dragon",
+      "title": "Eye of the Dragon"
+    },
+    "46": {
+      "credit": "Tree Adams и Ben Bromfield",
+      "description": "Tree Adams and Ben Bromfield, M.U.D.D. FORCE\n\nАлхимиците на могъщия хаос, който представляват M.U.D.D. FORCE, композиторите Трий Адамс и Бен Брумфийлд, сплотяват епични бойни мотиви и изтощителни синтезаторни звуци във вихрушка от разрушително ускорение.",
+      "name": "Tree Adams и Ben Bromfield — M.U.D.D. FORCE",
+      "title": "M.U.D.D. FORCE"
+    },
+    "47": {
+      "credit": "Tim Huling",
+      "description": "Tim Huling, Neo Noir\n\nКомпозиторът Тим Хълинг поднася класически песни във филм-ноар стил, съчетани със съвременна ударна секция и ритми.",
+      "name": "Tim Huling — Neo Noir",
+      "title": "Neo Noir"
+    },
+    "48": {
+      "credit": "Sam Marshall",
+      "description": "Sam Marshall, Bodacious\n\nВдъхновен от жизнерадостната музика на видеоигрите от началото на '90, композиторът Сам Маршъл забърква малко носталгия към класическите заглавия с енергичен модерен привкус.",
+      "name": "Sam Marshall — Bodacious",
+      "title": "Bodacious"
+    },
+    "49": {
+      "credit": "Matt Levine",
+      "description": "Matt Levine, Drifter\n\nКомпозиторът Мат Ливайн поднася непринудена напереност в тази същинска препратка към спагетените уестърни. Никога не сте чувствали, че е по-уместно да кажете — „Хайде, разведри ми деня…“",
+      "name": "Matt Levine — Drifter",
+      "title": "Drifter"
+    },
+    "50": {
+      "credit": "Amon Tobin",
+      "description": "Amon Tobin, All for Dust\n\nЛегендарният продуцент, Амон Тобин, придава своята уникална естетика към CS:GO. Но този път, посредством лампови усилватели.",
+      "name": "Amon Tobin — All for Dust",
+      "title": "All for Dust"
+    },
+    "51": {
+      "credit": "Darren Korb",
+      "description": "Darren Korb, Hades Music Kit\n\nРазбира се, може и да не улучвате изстрел от време на време, но това, което винаги е сполучливо, е този музикален комплект, каращ кръвта да бушува, идващ направо от подземния свят на Hades, играта за битки из тъмници с елементи от „Rogue“ на Supergiant.",
+      "name": "Darren Korb — Музикален комплект „Hades“",
+      "title": "Музикален комплект „Hades“"
+    },
+    "52": {
+      "credit": "Neck Deep",
+      "description": "Neck Deep, The Lowlife Pack\n\nДокажете, че не сте просто някой обикновен играч, а сте по-добри от всички останали на картата с новия музикален комплект на Neck Deep, който включва песни на групата от албума All Distortions Are Intentional.",
+      "name": "Neck Deep — The Lowlife Pack",
+      "title": "The Lowlife Pack"
+    },
+    "53": {
+      "credit": "Scarlxrd",
+      "description": "Scarlxrd, CHAIN$AW.LXADXUT.\n\nCHAIN$AW ПОДНАСЯ SCARLXRD НА БЕЗПРЕЦЕДЕНТНО НАЙ-ДОБРОТО МУ НИВО СЪС СУРОВО ТЕМПО И СЪОТВЕТСТВАЩО ТЕЖКО ПАРЧЕ.",
+      "name": "Scarlxrd — CHAIN$AW.LXADXUT.",
+      "title": "CHAIN$AW.LXADXUT."
+    },
+    "54": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory, Mocha Petal\n\nОстин Уинтъри отговаря на въпроса, който човечеството си задава от векове — какво ще случи, ако обедините бирена градинска акордеонна полка музика с грънджарски хеви метъл?",
+      "name": "Austin Wintory — Mocha Petal",
+      "title": "Mocha Petal"
+    },
+    "55": {
+      "credit": "Chipzel",
+      "description": "Chipzel, ~Yellow Magic~\n\nКомпозиторката на музика за видеоигри и чиптюн легендата Chipzel поднася вдъхновена от насечена „Speak & Spell“ аудио смесица от хибридни стилове, изпълнени със закачливост, фънк и характерно настроение.",
+      "name": "Chipzel — ~Yellow Magic~",
+      "title": "~Yellow Magic~"
+    },
+    "56": {
+      "credit": "Freaky DNA",
+      "description": "Freaky DNA, Vici\n\nОпера. 8 битови звуци. Аналогови синтезатори. Как може да не Ви хареса? Чиптюн специалистката Freaky DNA и сопранът Лиан Кох се съюзяват за няколко тежки ритми и добри преживявания!",
+      "name": "Freaky DNA — Vici",
+      "title": "Vici"
+    },
+    "57": {
+      "credit": "Jesse Harlin",
+      "description": "Jesse Harlin, Astro Bellum\n\nКомпозиторът Джеси Харлин поднася бомбастична драматична космическа опера, вдъхновена от класическата научна фантастика през '70 — '80 години, а дори и отвъд.",
+      "name": "Jesse Harlin — Astro Bellum",
+      "title": "Astro Bellum"
+    },
+    "58": {
+      "credit": "Laura Shigihara",
+      "description": "Laura Shigihara: Work Hard, Play Hard\n\nКомпозиторката на музика и разработчик на видеоигри Лаура Шигихара ще Ви помогне да съобщите на всекиго гръмогласно и гордо, че сте НЦИ. Забавлявайте се с това уникално съчетание от танцова музика от '90, ретро синтезатори в стила на видеоигри и съвсем лек привкус от Plants vs. Zombies.",
+      "name": "Laura Shigihara — Work Hard, Play Hard",
+      "title": "Work Hard, Play Hard"
+    },
+    "59": {
+      "credit": "Sarah Schachner",
+      "description": "Sarah Schachner, KOLIBRI\n\nСара Шакнър Ви поднася дистопичен готически хор на самоосъзнали се скандинавски роботи, взели решението, че човечеството трябва да бъде елиминирано.",
+      "name": "Sarah Schachner — KOLIBRI",
+      "title": "KOLIBRI"
+    },
+    "60": {
+      "credit": "bbno$",
+      "description": "bbno$, u mad!\n\nbbno$ формулира олицетворението на химна за токсичните играчи, „u mad!“ (бесни ли сте!). А Вие, бесни ли сте? ПОСМЕШИЩЕ… Я задобрейте, недорасляци. Проучването показва, че ако играете, докато този музикален комплект е екипиран, веднага ще преминете от „Сребърен“ към „Глобален“ ранг.",
+      "name": "bbno$ — u mad!",
+      "title": "u mad!"
+    },
+    "61": {
+      "credit": "The Verkkars & n0thing",
+      "description": "The Verkkars & n0thing, Flashbang Dance\n\nОт слънчева Калифорния до мразовита Лапландия, Counter-Strike легендата n0thing и The Verkkars комбинират своите сили, за да създадат размазващия хит, Flashbang Dance! 3, 2, 1 заслепени сте!",
+      "name": "The Verkkars & n0thing — Flashbang Dance",
+      "title": "Flashbang Dance"
+    },
+    "62": {
+      "credit": "3kliksphilip",
+      "description": "3kliksphilip, Heading for the Source\n\nУстремени сте да станете професионалисти или неволно да пропаднете? Нека синтезаторите от '80 и замечтаните мелодии на този комплект да Ви върнат назад. Назад, назад, назад… към добрите стари дни.",
+      "name": "3kliksphilip — Heading for the Source",
+      "title": "Heading for the Source"
+    },
+    "63": {
+      "credit": "Humanity's Last Breath",
+      "description": "Humanity's Last Breath, Void\n\nШведската банда Humanity's Last Breath се спуска тежко с музикалния си комплект Void. Млатещи барабани, колосални рифове и атмосфера, от която да Ви побият тръпки.",
+      "name": "Humanity's Last Breath — Void",
+      "title": "Void"
+    },
+    "64": {
+      "credit": "Juelz",
+      "description": "Juelz, Shooters\n\nНео трап синтезатори, жестоки ритми от Roland TR-808, епичен пиано риф и множество звукови ефекти от стрелба. Трап химнът от старата школа „Shooters“ на Juelz е наистина елитен музикален комплект. Подходящ само за НЦИ.",
+      "name": "Juelz — Shooters",
+      "title": "Shooters"
+    },
+    "65": {
+      "credit": "Knock2",
+      "description": "Knock2, dashstar*\n\nЕмблематичният бас хаус химн „dashstar*“ от Knock2 предоставя безспирна енергия, която улавя мантрата на младия жител на Сан Диего — „няма граници“.",
+      "name": "Knock2 — dashstar*",
+      "title": "dashstar*"
+    },
+    "66": {
+      "credit": "Meechy Darko",
+      "description": "Meechy Darko, Gothic Luxury\n\nГрабнете Glock и екипирайте този музикален комплект, за да бъдете транспортирани до центъра на нюйоркската ъндърграунд хип-хоп сцена.",
+      "name": "Meechy Darko — Gothic Luxury",
+      "title": "Gothic Luxury"
+    },
+    "67": {
+      "credit": "Sullivan King",
+      "description": "Sullivan King, Lock Me Up\n\nОбичате ли гонитбата? Обичате ли лова? Хард рок, метъл и дъбстеп се сблъскват в саундтрака на Sullivan King, за да станете неудържими.",
+      "name": "Sullivan King — Lock Me Up",
+      "title": "Lock Me Up"
+    },
+    "68": {
+      "credit": "Perfect World",
+      "description": "Perfect World, 花脸 Hua Lian (Painted Face)\n\nЧествайте V годишнина от излизането на CS:GO в Китай с единствен по рода си музикален комплект — „花脸 Hua Lian (Painted Face)“. Този комплект съчетава народна опера Чинчянг (най-ранният рокендрол в китайски стил) и модерен рокендрол. Независимо дали сте погълнати от дим или сте заслепени от заслепяваща граната, не се захласвайте!",
+      "name": "Perfect World — 花脸 Hua Lian (Painted Face)",
+      "title": "花脸 Hua Lian (Painted Face)"
+    },
+    "69": {
+      "credit": "Denzel Curry",
+      "description": "Denzel Curry, ULTIMATE\n\nДензъл поднася характерната си енергия към CS:GO, докато преминава през трап, джаз и дръм енд бейс ритми. Този комплект включва хитовете на Дензъл „Walkin“, „ULTIMATE“, както и още други, така че изкарайте никелираните хромирани Berettas и увеличете интензитета с музикалния комплект ULTIMATE.",
+      "name": "Denzel Curry — ULTIMATE",
+      "title": "ULTIMATE"
+    },
+    "70": {
+      "credit": "Valve",
+      "description": "Valve, CS:GO\n\nМузикалният комплект на CS:GO по подразбиране, представен с излизането на CS:GO през 2012.",
+      "name": "Valve — CS:GO",
+      "title": "CS:GO"
+    },
+    "71": {
+      "credit": "DRYDEN",
+      "description": "DRYDEN, Feel The Power\n\nНужно ли е да се казва още нещо? Усетете мощта. Зареждане и приготвяне за стрелба с този високоенергиен комплект с електронна музика от DRYDEN.",
+      "name": "DRYDEN — Feel The Power",
+      "title": "Feel The Power"
+    },
+    "72": {
+      "credit": "ISOxo",
+      "description": "ISOxo, inhuman\n\nНаправен специално за онези игри, в които се чувствате… различни. Преследвайте враговете си един подир друг рунд с музикалния комплект „inhuman“ от ISOxo.",
+      "name": "ISOxo — inhuman",
+      "title": "inhuman"
+    },
+    "73": {
+      "credit": "KILL SCRIPT",
+      "description": "KILL SCRIPT, All Night\n\nОбичливи ли сте? Или сте бойци? Може би и двете? Нека цялото лоби да узнае с музикалния комплект „All Night“ от KILL SCRIPT.",
+      "name": "KILL SCRIPT — All Night",
+      "title": "All Night"
+    },
+    "74": {
+      "credit": "Knock2",
+      "description": "Knock2, Make U SWEAT!\n\nЗа играчи, които се отнасят към всяка игра като към значителен гранд финал, дори когато на карта са заложени само няколкостотин точки CS рейтинг. Поднасяйте енергията и победите с втория музикален комплект на Knock2, „Make U SWEAT!“.",
+      "name": "Knock2 — Make U SWEAT!",
+      "title": "Make U SWEAT!"
+    },
+    "75": {
+      "credit": "Rad Cat",
+      "description": "Rad Cat, Reason\n\nПонякога обезвреждането на бомбата е достатъчно, за да бъдете НЦИ на рунда. Чествайте всеки миг, бил той голям или малък, с музикалния комплект „Reason“ от Rad Cat.",
+      "name": "Rad Cat — Reason",
+      "title": "Reason"
+    },
+    "76": {
+      "credit": "TWERL и Ekko & Sidetrack",
+      "description": "TWERL and Ekko & Sidetrack, Under Bright Lights\n\nНяма по-добро време да се почувствате живи от това, когато сте в светлината на прожекторите. Нека дръм енд бейс химнът „Under Bright Lights“ от TWERL и Ekko & Sidetrack отнесе Вас и Вашия отбор до нови висоти.",
+      "name": "TWERL и Ekko & Sidetrack — Under Bright Lights",
+      "title": "Under Bright Lights"
+    },
+    "78": {
+      "credit": "Austin Wintory",
+      "description": "Austin Wintory, The Devil Went Clubbing in Georgia\n\nОстин Уинтъри сключва сделка със Сатана, съчетавайки дяволита музика от гъдулка с безпощадно електронно танцувално клубно настроение.",
+      "name": "Austin Wintory — The Devil Went Clubbing in Georgia",
+      "title": "The Devil Went Clubbing in Georgia"
+    },
+    "79": {
+      "credit": "Ben Bromfield",
+      "description": "Ben Bromfield, Rabbit Hole\n\nБяхте изиграни! Изпитайте този висококласен, замислено напрегнат, вдъхновен от джаза саундтрак от филмовия и телевизионен композитор Бен Брумфийлд, докато разкривате точно колко е дълбока тази заешка дупка…",
+      "name": "Ben Bromfield — Rabbit Hole",
+      "title": "Rabbit Hole"
+    },
+    "80": {
+      "credit": "Daniel Sadowski",
+      "description": "Daniel Sadowski, Dead Shot\n\nДаниел Садовски кани играчите да влязат в света на „Dead Shot“, хибридна смес от екшън, хип-хоп, оркестрова, електронна, ретро, ​​емоционална музика и звуков дизайн. Гледайте да не Ви отнесе главата!",
+      "name": "Daniel Sadowski — Dead Shot",
+      "title": "Dead Shot"
+    },
+    "81": {
+      "credit": "Dren McDonald",
+      "description": "Dren McDonald, Coffee! Kofe! Kahveh!\n\nКофеинът е Ваш приятел. Приятел е на всекиго, освен на враговете Ви! „Coffee! Kofe! Kahveh!“ е празнична балканска улична духова музика от Dren McDonald („Gunman Taco Truck“ и „Death’s Head Demolition“), записана на живо в Балканциско!",
+      "name": "Dren McDonald — Coffee! Kofe! Kahveh!",
+      "title": "Coffee! Kofe! Kahveh!"
+    },
+    "82": {
+      "credit": "Matt Levine",
+      "description": "Matt Levine, Agency\n\nВлезте в опасния свят на шпионажа с музикалния комплект „Agency“ от композитора Мат Ливайн.",
+      "name": "Matt Levine — Agency",
+      "title": "Agency"
+    },
+    "83": {
+      "credit": "Sam Marshall",
+      "description": "Sam Marshall, Clutch\n\n„Clutch“, непотвърденото продължение на „Bodacious“, е кибер-фънк, отвратително трескаво бълнуване, въодушевено от Сам Маршъл посредством алхимия и тайнствен ритуал.",
+      "name": "Sam Marshall — Clutch",
+      "title": "Clutch"
+    },
+    "84": {
+      "credit": "Tim Huling",
+      "description": "Tim Huling, Devil's Paintbrush\n\nПовдигнете адреналина си с „Devil's Paintbrush“ от Тим Хълинг, високоенергийно груув-метъл преживяване.",
+      "name": "Tim Huling — Devil's Paintbrush",
+      "title": "Devil's Paintbrush"
+    },
+    "85": {
+      "credit": "Tree Adams",
+      "description": "Tree Adams, Seventh Moon\n\nТук в „Seventh Moon“, Трий Адамс завърта мазна смесица от междугалактически фънк с мотивиращ боен аранжимент.",
+      "name": "Tree Adams — Seventh Moon",
+      "title": "Seventh Moon"
+    },
+    "86": {
+      "credit": "Perfect World",
+      "description": "Perfect World, Ay Hey\n\nСливайки традиционен китайски фолклор и електронна музика, „Ay Hey“ предлага живописен разказ и енергични ритми за свързване на играчи от различни възрасти и произходи. Със своя жизнен ритъм, съответстващ на ентусиазма на играчите за играта, „Ay Hey“ улавя ярко различни хумористични и закачливи бойни сцени.",
+      "name": "Perfect World — Ay Hey",
+      "title": "Ay Hey"
+    },
+    "87": {
+      "credit": "Adam Beyer",
+      "description": "Adam Beyer, Red Room\n\nШведската техно легенда Adam Beyer Ви представя този замечтан музикален комплект. Той ще Ви помогне да оцветите враговете си в червено.",
+      "name": "Adam Beyer — Red Room",
+      "title": "Red Room"
+    },
+    "88": {
+      "credit": "Ghost",
+      "description": "Ghost, Skeletá\n\nПОСЛАНИЕ ОТ ДУХОВЕНСТВОТО — Папа V Перпетуа се спусна връз Counter-Strike в едно прославено хеви метъл зрелище. Избягайте от усилието на ежедневието, докато Стреляне на посоки и се молите на Нечестивия престол.",
+      "name": "Ghost — Skeletá",
+      "title": "Skeletá"
+    },
+    "89": {
+      "credit": "HEALTH",
+      "description": "HEALTH, RAT WARS\n\nПреживейте HEALTH в Counter-Strike.Вземете оръжие в ръце и се насладете на бруталния и наказателен звук на индустриалния метъл от AT WARS.",
+      "name": "HEALTH — RAT WARS",
+      "title": "RAT WARS"
+    },
+    "90": {
+      "credit": "James and the Cold Gun",
+      "description": "James and the Cold Gun, Chewing Glass\n\nУелското рок дуо James and the Cold Gun отприщва чиста, нефилтрирана енергия, смесвайки класическо пънк отношение с модерен алтернативен рок плам, за да създаде зашеметяващ музикален комплект.",
+      "name": "James and the Cold Gun — Chewing Glass",
+      "title": "Chewing Glass"
+    },
+    "91": {
+      "credit": "Jonathan Young",
+      "description": "Jonathan Young, Starship Velociraptor\n\nКосмическият пиратски пауър метъл е онова, което липсва на играта Ви. Яхнете звездния кораб „Велоцираптор“ и нека звуците на вдъхновения от аниме и видеоигри албум на Jonathan Young да издигнат Вашите мачове на ново ниво.",
+      "name": "Jonathan Young — Starship Velociraptor",
+      "title": "Starship Velociraptor"
+    },
+    "92": {
+      "credit": "Juelz",
+      "description": "Juelz, Floorspace\n\nНужно Ви е подово пространство? Този масивен музикален комплект от дебютния албум на Juelz съдържа нео-рейв синтезатори, груби бас линии и силно удрящи трап барабани. Албумът „Floorspace“ е преосмислен за Counter-Strike 2, а НЦИ химнът „Gossip“ кара играчите да искат да установят, а след това съборят с трясък стена от светодиоди.",
+      "name": "Juelz — Floorspace",
+      "title": "Floorspace"
+    },
+    "93": {
+      "credit": "Killer Mike",
+      "description": "Killer Mike, MICHAEL\n\nНаслааждавайте се на трикратно награждавания с „Грами“ хип-хоп албум в света на Counter-Strike. Гласът на Killer Mike ще Ви спомогне да поддържате своята мотивация, докато се издигате през ранговете и подобрявате уменията си.",
+      "name": "Killer Mike — MICHAEL",
+      "title": "MICHAEL"
+    },
+    "94": {
+      "credit": "PVRIS",
+      "description": "PVRIS, Evergreen\n\nЕдинственото нещо, което обичаме повече от добър враг? Добрият саундтрак. Нека новият музикален комплект на PVRIS да надъха отбора Ви и да запази Вашата победна поредица ви серия все вечнозелена.",
+      "name": "PVRIS — Evergreen",
+      "title": "Evergreen"
+    },
+    "95": {
+      "credit": "Selective Response",
+      "description": "Selective Response, No Love Only Pleasure\n\nРаздвижете страстите си с този динамичен, високоенергичен музикален комплект от американската техно икона Selective Response. Заредени и готови за действие.",
+      "name": "Selective Response — No Love Only Pleasure",
+      "title": "No Love Only Pleasure"
+    },
+    "96": {
+      "credit": "Tigercub",
+      "description": "Tigercub, The Perfume of Decay\n\nРок екипът от Обединеното кралство Tigercub поднася непринуден мелодичен удар, преплитайки наситеността на алтернативен рок с мрачна модерна острота, за да създадат смазващ музикален комплект.",
+      "name": "Tigercub — The Perfume of Decay",
+      "title": "The Perfume of Decay"
+    },
+    "98": {
+      "credit": "ALRT",
+      "description": "ALRT, DOPAMINE HIT\n\nХаус албумът с жизнена бас секция на ALRT поднася най-добрата доза допамин („DOPAMINE HIT“), който Ви държи под напрежение и готови да се изправите с проява на висота, когато наистина е от значение.",
+      "name": "ALRT — DOPAMINE HIT",
+      "title": "DOPAMINE HIT"
+    },
+    "99": {
+      "credit": "Altare",
+      "description": "Altare, Change My Mind\n\nЕуфоричният уейв химн на Altare, „Change My Mind“, е перфектен за моментите на върховното възхищение, когато се чувствате така, сякаш никой не може да Ви се противопостави.",
+      "name": "Altare — Change My Mind",
+      "title": "Change My Mind"
+    },
+    "100": {
+      "credit": "borne",
+      "description": "borne, Give It To Me\n\nНепреклонната басова тупалка „Give It To Me“ на Borne ще подготви играчите да се раздават срещу своите опоненти в Counter-Strike, че и отвъд.",
+      "name": "borne — Give It To Me",
+      "title": "Give It To Me"
+    },
+    "101": {
+      "credit": "Pirapus",
+      "description": "Pirapus, EVERYNITE\n\nВисокооктановият дръм енд бейс химн на Pirapus, „EVERYNITE“ („'СЯКА ВЕЧЕР“),навява усещането, че сте на прага на величието. Наистина отговаряйки на името си, тава парче Ви гарантира, че ще сте съсредоточени всяка нощ.",
+      "name": "Pirapus — EVERYNITE",
+      "title": "EVERYNITE"
+    },
+    "102": {
+      "credit": "Repiet & Julia Kleijn",
+      "description": "Repiet & Julia Kleijn — On And On\n\nБъдете подготвени за всякакво предизвикателство със заразителното парче „On And On“ на Repiet & Julia Kleijn. През висините и низините, това е мелодия, която задава тона за атака на всяко препятствие.",
+      "name": "Repiet & Julia Kleijn — On And On",
+      "title": "On And On"
+    },
+    "103": {
+      "credit": "ShockOne",
+      "description": "ShockOne, Voices\n\nОтприщете се свободно с енергичния дръм енд бейс сингъл „Voices“ на ShockOne. Подбуждащ решаващи проигравания в критични схватки, този музикален комплект включва слисващи басови партии, които ще Ви пренесат до много титли за НЦИ.",
+      "name": "ShockOne — Voices",
+      "title": "Voices"
+    },
+    "104": {
+      "credit": "Starjunk 95",
+      "description": "Изпитайте музикален пакет от най-готината станция в галактиката, включваща най-новите съвременни звуци, пропити със старомодна носталгия по отминалото. Това е Starjunk 95.",
+      "name": "Starjunk 95 — Industrial Sunset Memories",
+      "title": "Industrial Sunset Memories"
+    }
+  },
+  "releases": {
+    "2016-11-28-radicals": "StatTrak™ Кутия „Радикали“",
+    "2020-04-16-masterminds": "Кутия с музикални комплекти „Престъпни гении“",
+    "2021-08-12-tacticians": "Кутия с музикални комплекти „Тактици“",
+    "2022-08-23-initiators": "Кутия с музикални комплекти „Инициатори“",
+    "2024-02-06-nightmode": "Кутия с музикални комплекти „NIGHTMODE“",
+    "2024-08-20-masterminds-2": "Кутия с музикални комплекти „Престъпни гении 2“",
+    "2025-08-14-deluge": "Кутия с музикални комплекти „Потоп“",
+    "2026-05-07-nightmode-ii": "Музикални комплекти NIGHTMODE II"
+  }
+}
