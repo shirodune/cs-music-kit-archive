@@ -1,0 +1,36 @@
+# Dependencies and build output
+node_modules/
+dist/
+.astro/
+.cloudflare/
+.wrangler/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.dev.vars*
+
+# Game files and audio never go into git (spec: DATA-2, D-007)
+game-files/
+audio/
+*.vpk
+*.vsnd_c
+*.vtex_c
+*.mp3
+*.wav
+*.ogg
+*.flac
+
+# Test output
+playwright-report/
+test-results/
+coverage/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/*
+!.vscode/extensions.json
