@@ -1,5 +1,19 @@
 [
   {
+    "date": "2012-08-21",
+    "id": "2012-08-21-counter-strike-global-offensive",
+    "kits": [
+      70
+    ],
+    "nameKey": null,
+    "note": "Valve, CS:GO (70) is the default CS:GO music, which shipped with the game. The Steam store gives the release date as 21 Aug, 2012; this announcement was posted the next day. The music became selectable as a music kit on 2014-10-10 and was granted as a separate item on 2023-09-27 (\"CS:GO Players who started playing more than a week ago will receive a commemorative CS:GO coin and CS:GO Music Kit\").",
+    "source": {
+      "quote": "Counter-Strike: Global Offensive is now available on Steam!",
+      "title": "Now Available - Counter-Strike: Global Offensive",
+      "url": "https://store.steampowered.com/news/app/730/view/1478591738299120136"
+    }
+  },
+  {
     "date": "2014-10-10",
     "id": "2014-10-10-music-kits",
     "kits": [
@@ -11,11 +25,10 @@
       8,
       9,
       10,
-      11,
-      70
+      11
     ],
     "nameKey": null,
-    "note": "Valve, CS:GO (70) is the default CS:GO music, in the game since 2012, and became selectable with the first music kits. It was also granted as a separate item on 2023-09-27 (\"CS:GO Players who started playing more than a week ago will receive a commemorative CS:GO coin and CS:GO Music Kit\").",
+    "note": null,
     "source": {
       "quote": "Introducing Music Kits, featuring new music exclusively made for CS:GO by various artists and composers.",
       "title": "Release Notes for 10/10/2014",

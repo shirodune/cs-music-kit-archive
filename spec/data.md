@@ -97,20 +97,21 @@ A release is one official update that made one or more kits available. Releases 
 }
 ```
 
-- DATA-13 The release date is the day a kit first became obtainable in the game (bought, or opened from a box), as announced by Valve, in US Pacific time. For a default kit, which every player has, it is the day the kit could first be chosen as a music kit.
+- DATA-13 The release date is the day a kit first became obtainable in the game (bought, or opened from a box), as announced by Valve, in US Pacific time. For a default kit, which every player has, it is the day its music first shipped with the game.
 - DATA-14 Evidence, in order of preference:
   1. The official release notes for that day (old CS:GO blog up to February 2023, Steam events after).
   2. An official announcement post from the same day, only when no release note mentions the kit.
+  3. For a game launch only: the launch announcement, even if posted a day later, with the Steam store release date. `note` explains the gap.
 
   The GameTracking commit history, `first_sale_date` in `items_game.txt`, the Fandom wiki and the design canvas are only leads for finding the evidence. They are never stored as a source.
 - Rules for `releases.json`, all enforced by CI:
   - DATA-14a Every kit belongs to exactly one release.
-  - DATA-14b Every release has `date`, `source.url`, `source.title` and `source.quote`. `quote` is one or more sentences copied verbatim from the source that announce the release (naming the kits, their box, or the number of kits added). A default kit may instead share the quote of the release that made it selectable, with the inference explained in `note` (D-009).
+  - DATA-14b Every release has `date`, `source.url`, `source.title` and `source.quote`. `quote` is one or more sentences copied verbatim from the source that announce the release (naming the kits, their box, or the number of kits added).
   - DATA-14c `source.url` is on `blog.counter-strike.net`, `store.steampowered.com` or `www.counter-strike.net`.
   - DATA-14d `nameKey` is the localization key of the box or collection name (for example `csgo_crate_musickit_masterminds_capsule`), or `null` for kits released on their own.
   - DATA-14e When `nameKey` is a music kit box in `items_game.txt`, the release's kits are exactly the box's loot list.
 - Special cases:
-  - `defIndex` 70 (Valve, CS:GO) belongs to the 2014-10-10 release, the day music kits became selectable. Its `note` says it had been the default CS:GO music since 2012.
+  - `defIndex` 70 (Valve, CS:GO) belongs to the 2012-08-21 release, the launch of CS:GO (D-009). Its `note` records that it became selectable on 2014-10-10 and a separate item on 2023-09-27.
   - `defIndex` 1 (Valve, Counter-Strike 2) belongs to the 2023-09-27 release ("Added the new CS2 default music kit").
 - `pnpm data:suggest-release` lists candidate notes for kits without a release. It prints suggestions only and never writes `releases.json`.
 

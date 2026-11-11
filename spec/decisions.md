@@ -44,16 +44,16 @@ Every track is the full game file, as csgoskins.gg and the Fandom wiki do.
 
 ## D-008 Release dates come from Valve's release notes
 
-Defined in DATA-13 and DATA-14. All 25 releases have an official note or post. The design canvas matched 24 of 25. The difference: Scarlxrd's "King, Scar" was released on 2019-12-16 (release notes); the canvas used the next day's blog post.
+Defined in DATA-13 and DATA-14. All 26 releases have an official note or post. The design canvas matched 24 of the 25 music kit releases it showed. The difference: Scarlxrd's "King, Scar" was released on 2019-12-16 (release notes); the canvas used the next day's blog post.
 - GameTracking commit history and `first_sale_date` were rejected as sources: the first is the tracking bot's time and breaks when folders move; the second is an internal date that runs days to months early.
 
 ## D-009 Default kits
 
-`defIndex` 70 (Valve, CS:GO) is dated 2014-10-10, the day music kits became selectable. `defIndex` 1 (Valve, Counter-Strike 2) is dated 2023-09-27. `defIndex` 2 is shown as the alternate track set of 70, not as a kit.
-- Why: the archive presents the music a player can choose, not the inventory item. The default CS:GO music became a choice in the music kit slot when the slot was added; `defIndex` 70 itself is a CS2-era number for the same music.
-- Evidence: the 2014-10-10 release notes say "Introducing Music Kits" but do not name the default kit. That it was selectable from that day is an inference from the music kit slot, not a quote. This is the only release whose quote does not name its kits (DATA-14b).
-- History kept in the release `note`: default CS:GO music since 2012; selectable from 2014-10-10; granted as a separate inventory item on 2023-09-27 (CS2 launch notes: "CS:GO Players who started playing more than a week ago will receive a commemorative CS:GO coin and CS:GO Music Kit").
-- Rejected: 2023-09-27 for 70. It is well sourced but dates the inventory item, not the music kit.
+`defIndex` 70 (Valve, CS:GO) is dated 2012-08-21, the launch of CS:GO. `defIndex` 1 (Valve, Counter-Strike 2) is dated 2023-09-27, the launch of CS2. `defIndex` 2 is shown as the alternate track set of 70, not as a kit.
+- Why: the archive is about the music. Valve's own description of 70 says "The default CS:GO music kit, introduced with the launch of CS:GO in 2012", so a default kit is dated by the launch its music shipped with.
+- Evidence: the Steam store gives the release date as "21 Aug, 2012". The launch announcement ("Counter-Strike: Global Offensive is now available on Steam!") was posted on 2012-08-22 Pacific time, so this release cites it under DATA-14 rule 3 and explains the gap in `note`.
+- History kept in the release `note`: selectable as a music kit from 2014-10-10 (inferred: the release notes introduce music kits but do not name the default one); granted as a separate inventory item on 2023-09-27 (CS2 launch notes: "CS:GO Players who started playing more than a week ago will receive a commemorative CS:GO coin and CS:GO Music Kit").
+- Rejected: 2014-10-10 (an inference, no quote names the kit) and 2023-09-27 (dates the inventory item, not the music).
 
 ## D-010 "Artists", not "Composers"
 
