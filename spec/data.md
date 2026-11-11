@@ -58,7 +58,12 @@ Every field has exactly one owner. A field is either generated from an upstream 
 | `alternateTracks` | Upstream | Only on `defIndex` 70 |
 
 - DATA-9 `slug` is the English title in lowercase ASCII words joined by `-`, for example `desert-fire`. Non-ASCII characters are dropped after Unicode normalization (`花脸 Hua Lian (Painted Face)` becomes `hua-lian-painted-face`). When two kits would share a slug, or a title produces an empty slug, `data/curated/overrides.json` sets it. Slugs must be unique and match `^[a-z0-9]+(-[a-z0-9]+)*$`.
-- DATA-10 `title` is the official name with the leading credit and its separator removed. Separators seen in the files are `, `, ` - `, ` – `, ` — `, `: `, `，`, `：`. If a name cannot be split, `overrides.json` must give the title for that locale, or the build fails.
+- DATA-10 `credit` and `title` split the official name `Credit<separator>Title`. A separator is one punctuation mark (`,` `，` `:` `：` `、` or a dash), with or without spaces; separators inside book-title marks or quotation marks (`《》` `「」` `“”` `«»`) do not count. The build tries, in order:
+  1. a known credit text at the start: an artist's name or alias, or the `credit` in `credits.json`;
+  2. the English title at the end, when the locale kept it untranslated;
+  3. a separator from ` — ` ` – ` ` - ` `: ` `：` `，` `、` `, ` that occurs exactly once.
+
+  When none applies, or the result is wrong (some locales put the title first), `overrides.json` → `splits` gives the credit and title for that kit and locale, or the build fails. Credits are translated in some locales ("Various Artists", "TWERL and Ekko & Sidetrack", "Perfect World" → "完美世界"); that is official text and is kept.
 
 ### Track
 
@@ -100,9 +105,10 @@ A release is one official update that made one or more kits available. Releases 
   The GameTracking commit history, `first_sale_date` in `items_game.txt`, the Fandom wiki and the design canvas are only leads for finding the evidence. They are never stored as a source.
 - Rules for `releases.json`, all enforced by CI:
   - DATA-14a Every kit belongs to exactly one release.
-  - DATA-14b Every release has `date`, `source.url`, `source.title` and `source.quote`. `quote` is one sentence copied from the source that names the kit or its box.
+  - DATA-14b Every release has `date`, `source.url`, `source.title` and `source.quote`. `quote` is one or more sentences copied verbatim from the source that announce the release (naming the kits, their box, or the number of kits added).
   - DATA-14c `source.url` is on `blog.counter-strike.net`, `store.steampowered.com` or `www.counter-strike.net`.
   - DATA-14d `nameKey` is the localization key of the box or collection name (for example `csgo_crate_musickit_masterminds_capsule`), or `null` for kits released on their own.
+  - DATA-14e When `nameKey` is a music kit box in `items_game.txt`, the release's kits are exactly the box's loot list.
 - Special cases:
   - `defIndex` 70 (Valve, CS:GO) belongs to the 2014-10-10 release, the day music kits became selectable. Its `note` says it had been the default CS:GO music since 2012.
   - `defIndex` 1 (Valve, Counter-Strike 2) belongs to the 2023-09-27 release ("Added the new CS2 default music kit").
@@ -110,7 +116,7 @@ A release is one official update that made one or more kits available. Releases 
 
 ### Artist
 
-Artists live in `data/curated/artists.json`. Credits live in `data/curated/credits.json`.
+Artists live in `data/curated/artists.json`. Credits live in `data/curated/credits.json`, keyed by `defIndex`: `{ artists: [{ artist, role }], credit }`, where `credit` is the English credit text when it is not an artist's name or alias (for example "Tree Adams and Ben Bromfield"), otherwise `null`.
 
 | Field | Owner | Notes |
 |---|---|---|
@@ -125,6 +131,17 @@ Artists live in `data/curated/artists.json`. Credits live in `data/curated/credi
 - DATA-15 A collaboration credit links to every member that has a kit of their own (Tree Adams and Ben Bromfield; The Verkkars & n0thing links to The Verkkars). A collaboration whose members have no kit of their own is one artist entry (TWERL, Ekko & Sidetrack; Repiet & Julia Kleijn).
 - DATA-16 Every kit has at least one `main` credit. Every artist has at least one kit. Every artist id used in `credits.json` exists.
 - DATA-17 Real composers behind a `brand` credit may be named in its introduction, with sources (PROD-28). They are not separate credits unless Valve credits them.
+
+### Generated files
+
+`pnpm data:build` writes:
+
+| File | Contents |
+|---|---|
+| `data/generated/kits.json` | Kits in rack order (PROD-7), without localized text |
+| `data/generated/releases.json` | Releases by date |
+| `data/generated/artists.json` | Artists with the `defIndex` of their kits in rack order |
+| `data/generated/text/{segment}.json` | Official text for one locale: kit `name`, `credit`, `title`, `description`, and release names. Only strings the game ships in that locale are present; the site falls back to English (I18N, "Text sources by kind") |
 
 ## Covers
 
