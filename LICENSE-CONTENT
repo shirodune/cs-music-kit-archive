@@ -1,9 +1,8 @@
-The written content and curated data in this repository are licensed under
-the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+The written content in this repository is licensed under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0).
 
-This covers:
-  - data/curated/
-  - content/
+This covers content/ (stories and artist introductions).
+The curated data in data/curated/ is CC0 instead (LICENSE-DATA).
 
 It does not cover third-party material. See NOTICE.
 

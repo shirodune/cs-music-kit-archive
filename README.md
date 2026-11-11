@@ -11,5 +11,6 @@ Planning. The specification is in [`spec/`](spec/README.md). The site itself is 
 ## Licence
 
 - Code: [MIT](LICENSE)
-- Our own data and writing (`data/curated/`, `content/`): [CC BY 4.0](LICENSE-CONTENT)
+- Our curated data (`data/curated/`): [CC0 1.0](LICENSE-DATA), public domain
+- Our writing (`content/`): [CC BY 4.0](LICENSE-CONTENT)
 - Third-party material (Valve's names, artwork, audio and game data; ByMykel's data; MusicBrainz links; fonts): see [NOTICE](NOTICE)

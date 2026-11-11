@@ -89,8 +89,10 @@ They are written later, from sourced facts, never copied from wikis (Wikipedia a
 | What | Licence |
 |---|---|
 | Code: `src/`, `scripts/`, tests, configuration | MIT (`LICENSE`) |
-| Our own data and writing: `data/curated/`, `content/` | CC BY 4.0 (`LICENSE-CONTENT`) |
+| Our curated data: `data/curated/` (release dates, artists, credits, overrides) | CC0 1.0 (`LICENSE-DATA`) |
+| Our writing: `content/` (stories, introductions) | CC BY 4.0 (`LICENSE-CONTENT`) |
 | Third-party material: Valve's names, descriptions, covers, audio and release-note quotes; the game data excerpts in `data/upstream/`; ByMykel's data (MIT); MusicBrainz links (CC0); fonts (SIL OFL 1.1) | Not licensed by us. Listed with owners and licences in `NOTICE` |
 
-- Why: MIT matches the tools we build on. CC BY 4.0 lets anyone reuse our dates, artist data and stories with credit. Share-alike and non-commercial terms were left out because they block wikis and other projects from reusing the data.
+- Why: MIT matches the tools we build on. The curated data is facts (dates, credits); CC0, as MusicBrainz uses for its core data, lets projects such as ByMykel's API absorb it without any conditions. Stories are creative writing, so CC BY 4.0 asks for credit. Share-alike and non-commercial terms were left out because they block wikis and other projects from reusing the work; CC BY content can still go into CC BY-SA wikis.
+- Compared with similar projects (ByMykel's API: MIT for everything; PokeAPI: BSD-3 for everything plus a trademark line; GameTracking: no licence), separating our work from third-party material in `NOTICE` is stricter than usual.
 - Self-hosted fonts ship with their OFL licence files.
