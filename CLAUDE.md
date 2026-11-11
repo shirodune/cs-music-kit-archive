@@ -14,12 +14,13 @@ When behaviour changes, update the spec in the same change. Tests that check a r
 
 ## Stack
 
-Astro 7 (static output) with React islands, Tailwind CSS 4, TypeScript, Node 26 (`.node-version`), pnpm, Biome, Vitest, Playwright. Hosted on Cloudflare Workers static assets; audio on R2.
+Astro 7 (static output) with React islands, Tailwind CSS 4, TypeScript 6 (Astro's checker does not support TypeScript 7 yet), Node 26 (`.node-version`), pnpm, Biome, Vitest, Playwright. Hosted on Cloudflare Workers static assets; audio on R2.
 
 ## Rules
 
-- Use `pnpm`, never npm or yarn.
-- Cloudflare: use the `cf` CLI. Never run `cf init` here: it would reconfigure the project for server rendering. `cloudflare.config.ts` and `wrangler.config.ts` are written by hand. Use `npx wrangler` only for commands `cf` does not support yet.
+- Use `pnpm`, never npm or yarn. pnpm refuses packages published less than a day ago; pick an older version instead of adding exclusions. Build scripts are allowed only for the packages in `pnpm-workspace.yaml` (`allowBuilds`).
+- Before pushing, run `pnpm verify` (lint, types, i18n check, unit tests, build, end-to-end tests).
+- Cloudflare: build with `pnpm build`, deploy with Wrangler (`wrangler.jsonc`, D-019). Never run `cf init`, `cf build` or `cf deploy` here: `cf` treats Astro as a server-rendered app. `cf` is fine for account and resource commands (R2, DNS).
 - Astro questions: use the `astro-docs` MCP server (`.mcp.json`) for current APIs instead of memory.
 - Never edit `data/generated/` or `data/upstream/` by hand. Change curated files or scripts, then run `pnpm data:build`.
 - Never commit audio, game files or extracted textures (`.gitignore` blocks the common types).

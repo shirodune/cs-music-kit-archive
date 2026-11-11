@@ -43,7 +43,7 @@ The other style directions and the retired timeline page are not built.
 | `/{locale}/kits/{kit-slug}/` | Record: one music kit |
 | `/{locale}/artists/` | Artists: index |
 | `/{locale}/artists/{artist-slug}/` | Artist: one artist |
-| `/{locale}/404` | Not found |
+| `/{locale}/404.html` | Not found, served with status 404 for unknown paths under that locale. `/404.html` (English) covers paths without a locale |
 
 - PROD-5 `/` sends the visitor to `/{locale}/`, using the remembered choice if there is one, otherwise the best match for the browser's languages, otherwise `en`. Without JavaScript it shows a plain list of the 28 locales.
 - PROD-6 Slugs are the same in every locale (see `data.md`).
