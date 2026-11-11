@@ -1,0 +1,14 @@
+// Cloudflare Workers static assets (spec: D-002). The site is fully prerendered by Astro into dist/,
+// so there is no Worker code (`main`). This follows Cloudflare's guide for static Astro sites.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cs-music-kit-archive",
+  "compatibility_date": "2026-11-11",
+  "assets": {
+    "directory": "./dist",
+    // `foo/index.html` is served at `foo/`; `404.html` stays a file.
+    "html_handling": "auto-trailing-slash",
+    // Unknown paths get the nearest `404.html` with status 404.
+    "not_found_handling": "404-page"
+  }
+}

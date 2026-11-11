@@ -6,7 +6,24 @@ Not affiliated with or endorsed by Valve. See [NOTICE](NOTICE).
 
 ## Status
 
-Planning. The specification is in [`spec/`](spec/README.md). The site itself is not built yet.
+Skeleton. Pages exist in all 28 languages with the shared layout, language picker and not-found pages. There is no music kit data yet. The specification is in [`spec/`](spec/README.md).
+
+## Development
+
+Requires Node 26 (`.node-version`) and pnpm.
+
+```sh
+pnpm install
+pnpm dev          # local dev server
+pnpm verify       # lint, types, i18n check, unit tests, build, end-to-end tests
+```
+
+| Command | What it does |
+|---|---|
+| `pnpm build` | Builds the static site into `dist/` |
+| `pnpm preview` | Serves `dist/` with Wrangler, the same way Cloudflare does |
+| `pnpm i18n:check` | Checks `messages/` against English (plural forms, placeholders, unknown keys) |
+| `pnpm test` / `pnpm test:e2e` | Unit tests (Vitest) / end-to-end tests (Playwright, needs `pnpm build` first) |
 
 ## Licence
 

@@ -1,0 +1,20 @@
+---
+// Artists index (spec: PROD-16, PROD-17). Placeholder until the data exists.
+
+import { LOCALE_SEGMENTS, type LocaleSegment } from "../../../i18n/locales.ts";
+import { createT } from "../../../i18n/t.ts";
+import Base from "../../../layouts/Base.astro";
+
+export function getStaticPaths() {
+  return LOCALE_SEGMENTS.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as LocaleSegment;
+const t = createT(locale);
+---
+
+<Base locale={locale} title={t("artists.title")}>
+  <section class="mx-auto max-w-[1360px] px-4 pt-16 sm:px-10">
+    <h1 class="font-condensed text-6xl font-extrabold uppercase leading-none sm:text-8xl">{t("artists.title")}</h1>
+  </section>
+</Base>

@@ -1,0 +1,7 @@
+---
+// Not-found page for paths without a locale prefix (`/404.html`).
+import NotFound from "../components/NotFound.astro";
+import { DEFAULT_LOCALE } from "../i18n/locales.ts";
+---
+
+<NotFound locale={DEFAULT_LOCALE} />
