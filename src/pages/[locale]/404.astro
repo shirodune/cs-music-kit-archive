@@ -1,0 +1,11 @@
+---
+// Not-found page per locale, moved to `/{locale}/404.html` after the build (see astro.config.ts).
+import NotFound from "../../components/NotFound.astro";
+import { LOCALE_SEGMENTS, type LocaleSegment } from "../../i18n/locales.ts";
+
+export function getStaticPaths() {
+  return LOCALE_SEGMENTS.map((locale) => ({ params: { locale } }));
+}
+---
+
+<NotFound locale={Astro.params.locale as LocaleSegment} />

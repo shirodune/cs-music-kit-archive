@@ -1,0 +1,20 @@
+{
+  "site.name": "CS Music Kit Archive",
+  "site.description": "Every Counter-Strike music kit, from the first batch in 2014 to today, with full tracklists.",
+  "nav.label": "Main",
+  "nav.records": "Records",
+  "nav.artists": "Artists",
+  "lang.label": "Language",
+  "footer.disclaimer": "Unofficial fan project. Not affiliated with or endorsed by Valve. Counter-Strike and all music kit names, artwork and audio belong to Valve and the respective artists.",
+  "footer.source": "Source code",
+  "footer.licences": "Licences",
+  "footer.credits": "Game data via SteamDB GameTracking. Translations via ByMykel's file tracker. Artist links via MusicBrainz.",
+  "root.title": "Choose your language",
+  "records.title": "Records",
+  "records.placeholder": "The rack is being built.",
+  "artists.title": "Artists",
+  "artist.kitCount": { "one": "{count} kit", "other": "{count} kits" },
+  "notFound.title": "Page not found",
+  "notFound.body": "There is no page at this address.",
+  "notFound.home": "Back to the records"
+}

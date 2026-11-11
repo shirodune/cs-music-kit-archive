@@ -34,3 +34,6 @@ Thumbs.db
 .idea/
 .vscode/*
 !.vscode/extensions.json
+
+# Claude Code personal settings (MCP approvals, local permissions)
+.claude/settings.local.json

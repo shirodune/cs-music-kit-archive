@@ -1,0 +1,22 @@
+---
+// Not-found page body, shared by `/404.html` and `/{locale}/404.html`.
+
+import type { LocaleSegment } from "../i18n/locales.ts";
+import { createT } from "../i18n/t.ts";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  locale: LocaleSegment;
+}
+
+const { locale } = Astro.props;
+const t = createT(locale);
+---
+
+<Base locale={locale} title={t("notFound.title")} noindex>
+  <section class="mx-auto max-w-[1360px] px-4 pt-16 sm:px-10">
+    <h1 class="font-condensed text-6xl font-extrabold uppercase leading-none">{t("notFound.title")}</h1>
+    <p class="mt-6 text-body">{t("notFound.body")}</p>
+    <p class="mt-6"><a href={`/${locale}/`} class="text-signal underline underline-offset-4">{t("notFound.home")}</a></p>
+  </section>
+</Base>

@@ -1,0 +1,47 @@
+---
+// `/` picks a locale in the browser and moves on (spec: PROD-5, I18N-4).
+// Without JavaScript the visitor sees the list of 28 locales.
+import { LOCALES } from "../i18n/locales.ts";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, follow" />
+    <title>CS Music Kit Archive</title>
+    {LOCALES.map((l) => <link rel="alternate" hreflang={l.tag} href={new URL(`/${l.segment}/`, Astro.site).href} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL("/en/", Astro.site).href} />
+  </head>
+  <body class="min-h-screen px-4 py-12 sm:px-10">
+    <h1 class="font-stencil text-2xl tracking-wide">CS MUSIC KIT ARCHIVE</h1>
+    <p class="mt-2 font-mono text-xs uppercase tracking-widest text-muted">Choose your language</p>
+    <ul class="mt-8 grid max-w-3xl grid-cols-[repeat(auto-fill,minmax(12rem,1fr))] gap-x-6">
+      {
+        LOCALES.map((l) => (
+          <li>
+            <a href={`/${l.segment}/`} lang={l.tag} hreflang={l.tag} class="flex min-h-11 items-center">
+              {l.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </body>
+</html>
+
+<script>
+  import { DEFAULT_LOCALE, isLocaleSegment } from "../i18n/locales.ts";
+  import { LOCALE_STORAGE_KEY, matchLocale } from "../i18n/match.ts";
+
+  let remembered: string | null = null;
+  try {
+    remembered = localStorage.getItem(LOCALE_STORAGE_KEY);
+  } catch {
+    // Storage can be unavailable (private mode).
+  }
+  const locale = isLocaleSegment(remembered) ? remembered : (matchLocale(navigator.languages) ?? DEFAULT_LOCALE);
+  location.replace(`/${locale}/`);
+</script>

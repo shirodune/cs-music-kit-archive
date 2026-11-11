@@ -1,0 +1,92 @@
+---
+// Shared page shell: head, header, footer (spec: PROD-2, PROD-4, PROD-29, PROD-34, I18N-6).
+import { Font } from "astro:assets";
+import LanguagePicker from "../components/LanguagePicker.astro";
+import { DEFAULT_LOCALE, getLocale, LOCALES, type LocaleSegment } from "../i18n/locales.ts";
+import { createT } from "../i18n/t.ts";
+import "../styles/global.css";
+
+interface Props {
+  locale: LocaleSegment;
+  /** Page title without the site name. Leave out on the home page. */
+  title?: string;
+  description?: string;
+  /** Keep the page out of search results (not-found pages). */
+  noindex?: boolean;
+}
+
+const { locale, title, description, noindex = false } = Astro.props;
+const t = createT(locale);
+const { tag } = getLocale(locale);
+
+// Path after the locale segment: "/en/artists/" → "artists/".
+const rest = Astro.url.pathname.split("/").slice(2).join("/");
+const site = Astro.site ?? new URL("https://musickitarchive.com");
+const urlFor = (segment: LocaleSegment) => new URL(`/${segment}/${rest}`, site).href;
+
+const pageTitle = title ? `${title} · ${t("site.name")}` : t("site.name");
+const pageDescription = description ?? t("site.description");
+const repository = "https://github.com/shirodune/cs-music-kit-archive";
+---
+
+<!doctype html>
+<html lang={tag}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    {
+      noindex ? (
+        <meta name="robots" content="noindex" />
+      ) : (
+        <>
+          <link rel="canonical" href={urlFor(locale)} />
+          {LOCALES.map((l) => (
+            <link rel="alternate" hreflang={l.tag} href={urlFor(l.segment)} />
+          ))}
+          <link rel="alternate" hreflang="x-default" href={urlFor(DEFAULT_LOCALE)} />
+        </>
+      )
+    }
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={urlFor(locale)} />
+    <meta property="og:locale" content={tag.replace("-", "_")} />
+    <meta property="og:type" content="website" />
+    <Font cssVariable="--font-stencil-latin" />
+    <Font cssVariable="--font-condensed-latin" />
+    <Font cssVariable="--font-mono-latin" />
+    <Font cssVariable="--font-sans-latin" preload={[{ subset: "latin", weight: 400 }]} />
+  </head>
+  <body class="grid-lines min-h-screen">
+    <header
+      class="relative z-10 flex min-h-16 flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-rule px-[max(1rem,env(safe-area-inset-left))] py-2 sm:px-10"
+    >
+      <a href={`/${locale}/`} class="font-stencil text-2xl tracking-wide">CS MUSIC KIT ARCHIVE</a>
+      <nav aria-label={t("nav.label")} class="flex items-center gap-7 font-condensed text-base font-semibold uppercase tracking-widest">
+        <a href={`/${locale}/`}>{t("nav.records")}</a>
+        <a href={`/${locale}/artists/`}>{t("nav.artists")}</a>
+        <div class="border-l border-paper/25 pl-2.5 normal-case tracking-normal">
+          <LanguagePicker locale={locale} rest={rest} t={t} />
+        </div>
+      </nav>
+    </header>
+
+    <main class="relative">
+      <slot />
+    </main>
+
+    <footer class="relative mt-24">
+      <div aria-hidden="true" class="hazard h-3.5"></div>
+      <div class="mx-auto flex max-w-[1360px] flex-col gap-3 px-4 py-10 font-mono text-xs leading-relaxed text-muted sm:px-10">
+        <p class="max-w-[72ch]">{t("footer.disclaimer")}</p>
+        <p class="max-w-[72ch]">{t("footer.credits")}</p>
+        <p class="flex gap-6">
+          <a href={repository} class="underline underline-offset-4">{t("footer.source")}</a>
+          <a href={`${repository}/blob/main/NOTICE`} class="underline underline-offset-4">{t("footer.licences")}</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/*
+ * "Supply Depot" design tokens (spec: product.md "Visual design").
+ * Colours come from the design canvas. Font variables point at the Latin faces;
+ * other script groups add their fallbacks after these in a later change (I18N-19).
+ */
+@theme {
+  --color-ground: #1a1c19;
+  --color-panel: #0f100e;
+  --color-paper: #e9e4d6;
+  --color-body: #cfc9b8;
+  --color-muted: #a9a493;
+  --color-faint: #8f8b7c;
+  --color-signal: #d9762f;
+  --color-ink: #15140f;
+  --color-rule: rgb(233 228 214 / 0.16);
+}
+
+@theme inline {
+  --font-stencil: var(--font-stencil-latin);
+  --font-condensed: var(--font-condensed-latin);
+  --font-mono: var(--font-mono-latin);
+  --font-sans: var(--font-sans-latin);
+}
+
+@layer base {
+  html {
+    background-color: var(--color-ground);
+    color: var(--color-paper);
+    font-family: var(--font-sans);
+    /* Single-weight faces must never be faux-bolded (I18N-20). */
+    font-synthesis: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-signal);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      /* biome-ignore lint/complexity/noImportantStyles: the reduced-motion override must beat every component style */
+      animation-duration: 0.01ms !important;
+      /* biome-ignore lint/complexity/noImportantStyles: the reduced-motion override must beat every component style */
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@utility hazard {
+  background: repeating-linear-gradient(-45deg, var(--color-signal) 0 14px, var(--color-ground) 14px 28px);
+}
+
+@utility grid-lines {
+  background: repeating-linear-gradient(90deg, rgb(233 228 214 / 0.045) 0 1px, transparent 1px 120px);
+}
