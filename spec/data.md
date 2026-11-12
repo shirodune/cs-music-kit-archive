@@ -147,6 +147,7 @@ Artists live in `data/curated/artists.json`. Credits live in `data/curated/credi
 ## Covers
 
 - DATA-18 Every kit has a cover. The first source is the Steam CDN icon (256 × 198), which already shows the sleeve with the disc half out. `pnpm data:covers` downloads each icon whose URL changed, stores the original PNG unchanged at `public/covers/{internalName}.png` and records its size in `data/upstream/covers.json`. `pnpm data:build` records `cover = { source: "icon", path, width, height }` and fails when a kit has no stored cover.
+- DATA-18a Pages show a WebP copy of each stored cover, made at build time at `/covers/{internalName}.webp` (quality 90, lossless alpha). It is about a sixth of the PNG's size, which keeps the rack's first cover fast to load (PROD-36). The Open Graph image stays the PNG, because not every link preview reads WebP.
 - DATA-19 When the game's cover texture is extracted and is larger than the icon, it replaces the icon and `cover.source = "texture"`. The texture estimates are 256² for 2014–2016, 512² for 2019–2022 and 1024² for 2023 on; extraction confirms them.
 
 ## Audio

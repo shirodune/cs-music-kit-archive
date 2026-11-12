@@ -1,6 +1,7 @@
 ---
 // A kit's cover and title, linking to its page. Used in kit lists (PROD-14 sections 6 and 7).
 
+import { coverSrc } from "../data/cover.ts";
 import type { Kit } from "../data/schema.ts";
 import { kitTextRequired, type Localized } from "../data/site.ts";
 import type { LocaleSegment } from "../i18n/locales.ts";
@@ -33,7 +34,7 @@ const title = kitTextRequired(locale, kit.defIndex, "title");
     ]}
   >
     <img
-      src={kit.cover.path}
+      src={coverSrc(kit.cover)}
       width={kit.cover.width}
       height={kit.cover.height}
       alt=""

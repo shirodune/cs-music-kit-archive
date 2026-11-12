@@ -1,6 +1,7 @@
 ---
 // Artists index (spec: PROD-16, PROD-17).
 
+import { coverSrc } from "../../../data/cover.ts";
 import type { GeneratedArtist } from "../../../data/schema.ts";
 import { artists, getKit, kitTextRequired } from "../../../data/site.ts";
 import { displayWidth } from "../../../i18n/format.ts";
@@ -85,7 +86,7 @@ const groups = [
                 <span aria-hidden="true" class="flex h-[100px] items-end pl-1">
                   {c.kits.map((k, i) => (
                     <img
-                      src={k.cover.path}
+                      src={coverSrc(k.cover)}
                       width={k.cover.width}
                       height={k.cover.height}
                       alt=""
@@ -133,7 +134,7 @@ const groups = [
                   <li class="min-w-0">
                     <a href={`/${locale}/artists/${artist.id}/`} class="group flex min-h-14 items-center gap-3.5">
                       <img
-                        src={kit.cover.path}
+                        src={coverSrc(kit.cover)}
                         width={kit.cover.width}
                         height={kit.cover.height}
                         alt=""
@@ -173,7 +174,7 @@ const groups = [
                 <span aria-hidden="true" class="flex h-[100px] items-end pl-1">
                   {c.kits.map((k, i) => (
                     <img
-                      src={k.cover.path}
+                      src={coverSrc(k.cover)}
                       width={k.cover.width}
                       height={k.cover.height}
                       alt=""

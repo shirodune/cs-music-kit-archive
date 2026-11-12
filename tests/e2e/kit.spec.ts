@@ -70,6 +70,14 @@ test.describe("record page", () => {
     }
   });
 
+  test("DATA-18a the page shows the WebP copy of the cover and shares the PNG", async ({ page, request }) => {
+    await page.goto("/en/kits/desert-fire/");
+    const src = await page.locator("main img").first().getAttribute("src");
+    expect(src).toMatch(/^\/covers\/[a-z0-9_]+\.webp$/);
+    expect((await request.get(src as string)).headers()["content-type"]).toBe("image/webp");
+    await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", /\/covers\/[a-z0-9_]+\.png$/);
+  });
+
   test("PROD-35 the record page ships no JavaScript besides the language picker", async ({ page }) => {
     await page.goto("/en/kits/desert-fire/");
     const scripts = await page.locator("script[src]").evaluateAll((els) => els.map((e) => e.getAttribute("src")));
