@@ -68,8 +68,20 @@ const repository = "https://github.com/shirodune/cs-music-kit-archive";
     >
       <a href={`/${locale}/`} class="font-stencil text-2xl tracking-wide">CS MUSIC KIT ARCHIVE</a>
       <nav aria-label={t("nav.label")} class="flex items-center gap-7 font-condensed text-base font-semibold uppercase tracking-widest">
-        <a href={`/${locale}/`}>{t("nav.records")}</a>
-        <a href={`/${locale}/artists/`}>{t("nav.artists")}</a>
+        {
+          [
+            { href: `/${locale}/`, label: t("nav.records"), current: rest === "" || rest.startsWith("kits/") },
+            { href: `/${locale}/artists/`, label: t("nav.artists"), current: rest.startsWith("artists/") },
+          ].map((item) => (
+            <a
+              href={item.href}
+              aria-current={item.current && Astro.url.pathname === item.href ? "page" : undefined}
+              class:list={[item.current && "text-signal"]}
+            >
+              {item.label}
+            </a>
+          ))
+        }
         <div class="border-l border-paper/25 pl-2.5 normal-case tracking-normal">
           <LanguagePicker locale={locale} rest={rest} t={t} />
         </div>

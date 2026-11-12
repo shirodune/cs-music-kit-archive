@@ -79,7 +79,7 @@ Sections, top to bottom:
 
 ## Artists index
 
-- PROD-16 Three groups: "More than one kit" (sorted by number of kits, most first, then by name); "One kit each" (grouped by year of release); "Games and official" (credits that are a game, a company or a compilation, see `data.md`).
+- PROD-16 Three groups: "More than one kit" (sorted by number of kits, most first, then by name); "One kit each" (grouped by year of release); "Games and official" (credits that are a game, a company or a compilation, see `data.md`, sorted by first release).
 - PROD-17 Each entry shows the artist name, active years, number of kits and the kit covers.
 
 ## Artist page
@@ -118,7 +118,7 @@ Sections, top to bottom:
 
 ## Performance
 
-- PROD-35 Pages without interactive parts ship no JavaScript except the language picker.
+- PROD-35 Pages without interactive parts ship no JavaScript except the language picker and, on artist pages, the few inline lines that point the back link at the kit in `?from` (PROD-21).
 - PROD-36 Lighthouse performance score of 90 or more on mobile for the Records, Record and Artist pages.
 
 ## Analytics

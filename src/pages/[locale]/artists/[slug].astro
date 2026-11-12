@@ -1,0 +1,250 @@
+---
+// Artist page (spec: PROD-18 to PROD-21).
+// The introduction (content/artists) and MusicBrainz links (PROD-20) are added when they exist.
+
+import type { GeneratedArtist } from "../../../data/schema.ts";
+import { artists, getArtist, getKit, kitText, kitTextRequired, releaseName } from "../../../data/site.ts";
+import { formatDate, listParts } from "../../../i18n/format.ts";
+import { getLocale, LOCALE_SEGMENTS, type LocaleSegment } from "../../../i18n/locales.ts";
+import { createT } from "../../../i18n/t.ts";
+import Base from "../../../layouts/Base.astro";
+
+export function getStaticPaths() {
+  return LOCALE_SEGMENTS.flatMap((locale) =>
+    artists.map((artist) => ({ params: { locale, slug: artist.id }, props: { artist } })),
+  );
+}
+
+interface Props {
+  artist: GeneratedArtist;
+}
+
+const locale = Astro.params.locale as LocaleSegment;
+const { artist } = Astro.props;
+const t = createT(locale);
+const { tag } = getLocale(locale);
+
+const kits = artist.kits.map(getKit);
+const first = kits[0];
+const latest = kits.at(-1);
+if (!first || !latest) throw new Error(`artist ${artist.id} has no kits`);
+const firstYear = first.releaseDate.slice(0, 4);
+const latestYear = latest.releaseDate.slice(0, 4);
+const most = Math.max(...artists.map((a) => a.kits.length));
+const kitCount = t("artist.kitCount", { count: kits.length });
+const kitHref = (slug: string) => `/${locale}/kits/${slug}/`;
+
+const facts = [
+  { label: t("artist.kits"), value: { text: kits.length === most && kits.length > 1 ? t("artist.most", { count: kitCount }) : kitCount, lang: undefined } },
+  { label: t("artist.active"), value: { text: firstYear === latestYear ? firstYear : `${firstYear}–${latestYear}`, lang: undefined } },
+  ...(kits.length > 1
+    ? [
+        { label: t("artist.first"), value: kitTextRequired(locale, first.defIndex, "title") },
+        { label: t("artist.latest"), value: kitTextRequired(locale, latest.defIndex, "title") },
+      ]
+    : []),
+];
+
+// Covers fanned out, overlapping more as the count grows (PROD-18).
+const fanStep = kits.length > 1 ? Math.min(70, Math.floor(140 / (kits.length - 1))) : 0;
+
+// Discography with "N years later" between kits 3 or more years apart (PROD-19).
+const rows = kits.flatMap((kit, i) => {
+  const previous = kits[i - 1];
+  const gap = previous ? Number(kit.releaseDate.slice(0, 4)) - Number(previous.releaseDate.slice(0, 4)) : 0;
+  const title = kitTextRequired(locale, kit.defIndex, "title");
+  const englishTitle = kitTextRequired("en", kit.defIndex, "title").text;
+  const batch = releaseName(locale, kit.releaseId);
+  const others = kit.artists.filter((c) => c.artist !== artist.id).map((c) => getArtist(c.artist));
+  return [
+    ...(gap >= 3 ? [{ kind: "gap" as const, text: t("artist.yearsLater", { count: gap }) }] : []),
+    {
+      kind: "kit" as const,
+      kit,
+      title,
+      englishTitle: title.text === englishTitle ? null : englishTitle,
+      date: formatDate(tag, kit.releaseDate),
+      batch,
+      others,
+      description: kitText(locale, kit.defIndex, "description"),
+    },
+  ];
+});
+
+// "With {names}": the text around the names, so each name can be a link.
+const [withBefore, withAfter] = t("artist.with", { names: "\u0000" }).split("\u0000");
+
+// PROD-21: arriving from a kit page, the back link returns to that kit. The titles are embedded
+// so the inline script below can relabel the link without a request.
+const backTargets = Object.fromEntries(
+  kits.map((k) => [k.slug, { href: kitHref(k.slug), label: `← ${kitTextRequired(locale, k.defIndex, "title").text}` }]),
+);
+
+const nameSize =
+  artist.name.length > 18
+    ? "text-[clamp(3rem,7vw,6.5rem)]"
+    : artist.name.length > 11
+      ? "text-[clamp(3.5rem,9vw,8.5rem)]"
+      : "text-[clamp(4rem,11vw,10.5rem)]";
+const stencilHead = "font-stencil text-[22px] tracking-wider text-signal uppercase";
+---
+
+<Base
+  locale={locale}
+  title={artist.name}
+  description={t("artist.meta", { name: artist.name, count: kitCount })}
+  image={first.cover.path}
+>
+  <section class="relative mx-auto flex max-w-[1360px] flex-wrap gap-10 px-4 pt-5 sm:px-10">
+    <div class="flex min-w-0 flex-[999_1_600px] flex-col justify-between gap-8">
+      <div>
+        <a
+          id="artist-back"
+          href={`/${locale}/artists/`}
+          data-targets={JSON.stringify(backTargets)}
+          class="inline-flex min-h-11 items-center font-mono text-[11px] tracking-widest text-muted uppercase"
+        >
+          {t("artist.back")}
+        </a>
+        <p class="mt-3 font-stencil text-xl tracking-wider text-signal uppercase">{t(`artist.type.${artist.type}`)}</p>
+        <h1
+          class:list={[
+            "mt-3 font-condensed leading-[0.86] font-extrabold uppercase [overflow-wrap:anywhere]",
+            nameSize,
+          ]}
+        >
+          {artist.name}
+        </h1>
+      </div>
+    </div>
+
+    <div class="flex min-w-0 flex-[0_1_400px] flex-col gap-6">
+      <div aria-hidden="true" class="relative h-[160px] sm:h-[220px]">
+        {
+          kits.map((kit, i) => (
+            <a
+              href={kitHref(kit.slug)}
+              tabindex="-1"
+              class="absolute top-0 block w-[200px] drop-shadow-[0_20px_24px_rgba(0,0,0,0.6)] hover:brightness-110 sm:w-[260px]"
+              style={`left: ${i * fanStep}px; z-index: ${i + 1}`}
+            >
+              <img src={kit.cover.path} width={kit.cover.width} height={kit.cover.height} alt="" class="block w-full" />
+            </a>
+          ))
+        }
+      </div>
+      <div class="relative overflow-hidden bg-signal px-[18px] pt-[18px] pb-4 text-ink">
+        <p
+          aria-hidden="true"
+          class="pointer-events-none absolute -top-1.5 -right-2 m-0 rotate-[-8deg] font-stencil text-[76px] leading-none text-ink/20"
+        >
+          {firstYear}
+        </p>
+        <dl class="relative mt-10 border-y-2 border-ink font-mono text-xs">
+          {
+            facts.map((fact, i) => (
+              <div class:list={["flex items-baseline justify-between gap-3 py-2", i > 0 && "border-t border-ink/35"]}>
+                <dt class="flex-none">{fact.label}</dt>
+                <dd lang={fact.value.lang} class="m-0 text-right">
+                  {fact.value.text}
+                </dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div aria-hidden="true" class="hazard relative mt-14 h-3.5"></div>
+
+  <section aria-labelledby="discography-h" class="relative mx-auto max-w-[1360px] px-4 pt-18 sm:px-10">
+    <h2 id="discography-h" class={stencilHead}>{t("artist.discography")}</h2>
+    <ol class="mt-6 list-none p-0">
+      {
+        rows.map((row) =>
+          row.kind === "gap" ? (
+            <li class="flex items-center gap-5 border-t border-rule py-[18px]">
+              <span aria-hidden="true" class="hazard h-2 flex-[0_0_150px] [background-size:auto]" />
+              <span class="font-stencil text-lg tracking-wide text-signal">{row.text}</span>
+            </li>
+          ) : (
+            <li class="border-t border-rule">
+              <article class="grid grid-cols-1 items-start gap-x-10 gap-y-6 pt-8 pb-10 md:grid-cols-[150px_220px_minmax(0,1fr)]">
+                <p class="m-0 font-stencil text-[56px] leading-[0.9]">{row.kit.releaseDate.slice(0, 4)}</p>
+                <div class="w-[220px] drop-shadow-[0_20px_24px_rgba(0,0,0,0.6)]">
+                  <img
+                    src={row.kit.cover.path}
+                    width={row.kit.cover.width}
+                    height={row.kit.cover.height}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    class="block w-full"
+                  />
+                </div>
+                <div class="max-w-[720px] min-w-0">
+                  <p class="m-0 font-mono text-[11px] tracking-wider text-muted">
+                    {row.date}
+                    {row.batch && (
+                      <>
+                        {" · "}
+                        <span lang={row.batch.lang}>{row.batch.text}</span>
+                      </>
+                    )}
+                  </p>
+                  <h3 class="mt-2 font-condensed text-4xl leading-[0.95] font-extrabold uppercase sm:text-[44px]">
+                    <a href={kitHref(row.kit.slug)} lang={row.title.lang}>
+                      {row.title.text} <span aria-hidden="true">→</span>
+                    </a>
+                  </h3>
+                  {row.englishTitle && (
+                    <p lang="en" class="mt-1.5 font-mono text-xs text-muted">
+                      {row.englishTitle}
+                    </p>
+                  )}
+                  {row.others.length > 0 && (
+                    <p class="mt-1.5 font-mono text-xs text-muted">
+                      {withBefore}
+                      {listParts(tag, row.others, (a) => a.name).map((part) =>
+                        part.item ? (
+                          <a href={`/${locale}/artists/${part.item.id}/`} class="underline underline-offset-4">
+                            {part.text}
+                          </a>
+                        ) : (
+                          part.text
+                        ),
+                      )}
+                      {withAfter}
+                    </p>
+                  )}
+                  {row.description && (
+                    <>
+                      <p lang={row.description.lang} class="mt-4 text-[17px] leading-relaxed text-body">
+                        {row.description.text}
+                      </p>
+                      <p class="mt-2 font-mono text-[11px] tracking-[0.14em] text-faint">{t("kit.descriptionBy")}</p>
+                    </>
+                  )}
+                </div>
+              </article>
+            </li>
+          ),
+        )
+      }
+    </ol>
+  </section>
+
+  <script is:inline>
+    // PROD-21: return to the kit the visitor came from.
+    (() => {
+      const link = document.getElementById("artist-back");
+      const from = new URLSearchParams(location.search).get("from");
+      const target = from && link ? JSON.parse(link.dataset.targets || "{}")[from] : undefined;
+      if (target) {
+        link.href = target.href;
+        link.textContent = target.label;
+      }
+    })();
+  </script>
+</Base>

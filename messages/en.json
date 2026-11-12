@@ -63,5 +63,29 @@
   "cue.lostround": "Round lost",
   "cue.deathcam": "Death cam",
   "cue.roundmvpanthem": "MVP anthem",
-  "cue.endofmatch": "Match end"
+  "cue.endofmatch": "Match end",
+  "artists.meta": "Every artist credited on a Counter-Strike music kit, from solo composers to bands, games and studios.",
+  "artists.multiple": "More than one kit",
+  "artists.multipleSub": "By number of kits",
+  "artists.single": "One kit each",
+  "artists.singleSub": "By year of release",
+  "artists.brands": "Games and official",
+  "artists.brandsSub": "Games, studios and compilations",
+  "artist.meta": "{name}: {count} in the CS Music Kit Archive, with tracklists and official descriptions.",
+  "artist.back": "← All artists",
+  "artist.type.person": "Artist",
+  "artist.type.group": "Group",
+  "artist.type.brand": "Games and official",
+  "artist.kits": "Music kits",
+  "artist.most": "{count} · the most of anyone",
+  "artist.active": "Active",
+  "artist.first": "First",
+  "artist.latest": "Latest",
+  "artist.discography": "Music kits",
+  "artist.with": "With {names}",
+  "artist.yearsLater": {
+    "one": "{count} year later",
+    "other": "{count} years later"
+  },
+  "artist.open": "{name}: {titles}"
 }
