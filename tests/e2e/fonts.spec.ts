@@ -45,7 +45,12 @@ test.describe("fonts", () => {
     expect(await usedFonts(page, 'a[href^="/zh-hans/artists/austin-wintory/"]')).toContain("IBM Plex Mono");
   });
 
-  test("I18N-19 Cyrillic text uses Sofia Sans Condensed for titles and IBM Plex Sans for text", async ({ page }) => {
+  test("I18N-19 Cyrillic text uses Tektur, Sofia Sans Condensed and IBM Plex Sans", async ({ page }) => {
+    await open(page, "/ru/kits/desert-fire/");
+    // Stencil section head "Список треков".
+    const heading = await usedFonts(page, "#tracks-h");
+    expect(heading.some((f) => f.startsWith("Tektur"))).toBe(true);
+    expect(heading.filter((f) => f.startsWith("system:"))).toEqual([]);
     await open(page, "/ru/artists/austin-wintory/");
     const description = "main article p.text-\\[17px\\]";
     expect(await usedFonts(page, description)).toContain("IBM Plex Sans");

@@ -26,6 +26,13 @@ test.describe("artists index", () => {
     await expect(entry).toContainText("Desert Fire");
     await expect(entry.locator("img")).toHaveCount(4);
   });
+
+  test("PROD-17 the titles of an entry are separated in every locale", async ({ page }) => {
+    // Intl "unit" lists run titles together in Chinese ("Desert FireBachram").
+    await page.goto("/zh-hans/artists/");
+    const entry = page.getByRole("link", { name: /^Austin Wintory：/ });
+    await expect(entry).toContainText("、");
+  });
 });
 
 test.describe("artist page", () => {

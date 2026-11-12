@@ -3,6 +3,7 @@
 
 import type { GeneratedArtist } from "../../../data/schema.ts";
 import { artists, getKit, kitTextRequired } from "../../../data/site.ts";
+import { displayWidth } from "../../../i18n/format.ts";
 import { getLocale, LOCALE_SEGMENTS, type LocaleSegment } from "../../../i18n/locales.ts";
 import { createT } from "../../../i18n/t.ts";
 import Base from "../../../layouts/Base.astro";
@@ -14,7 +15,9 @@ export function getStaticPaths() {
 const locale = Astro.params.locale as LocaleSegment;
 const t = createT(locale);
 const { tag } = getLocale(locale);
-const list = new Intl.ListFormat(tag, { type: "unit" });
+// "conjunction", not "unit": unit lists have no separator in ru, tr, ja, ko and zh, so
+// multi-word titles would run together ("Desert FireBachram").
+const list = new Intl.ListFormat(tag, { type: "conjunction" });
 
 const byName = (a: GeneratedArtist, b: GeneratedArtist) => a.name.localeCompare(b.name, "en", { sensitivity: "base" });
 const firstDate = (a: GeneratedArtist) => getKit(a.kits[0] as number).releaseDate;
@@ -48,6 +51,9 @@ const singles = Map.groupBy(
   (a) => firstDate(a).slice(0, 4),
 );
 
+// A long one-word title ("Исполнители") must still fit a 360 px phone.
+const titleSize =
+  displayWidth(t("artists.title")).width > 9 ? "text-[clamp(2.75rem,11vw,8.75rem)]" : "text-[clamp(4rem,9vw,8.75rem)]";
 const stencilHead = "font-stencil text-[22px] tracking-wider text-signal uppercase";
 const subHead = "mt-2 font-mono text-[11px] tracking-widest text-muted uppercase";
 const groups = [
@@ -58,7 +64,7 @@ const groups = [
 
 <Base locale={locale} title={t("artists.title")} description={t("artists.meta")}>
   <section class="relative mx-auto max-w-[1360px] px-4 pt-14 sm:px-10">
-    <h1 class="font-condensed text-[clamp(4rem,9vw,8.75rem)] leading-[0.86] font-extrabold uppercase">
+    <h1 class:list={["font-condensed leading-[0.86] font-extrabold uppercase", titleSize]}>
       {t("artists.title")}
     </h1>
   </section>

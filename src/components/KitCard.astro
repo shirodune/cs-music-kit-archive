@@ -44,7 +44,7 @@ const title = kitTextRequired(locale, kit.defIndex, "title");
   </span>
   {
     tag && (
-      <span class:list={["mt-3 font-mono text-[11px] tracking-wider", current ? "text-signal" : "text-muted"]}>
+      <span class:list={["mt-3 font-mono text-[11px] tracking-wider [overflow-wrap:anywhere]", current ? "text-signal" : "text-muted"]}>
         {current && <span aria-hidden="true">▲ </span>}
         {tag}
       </span>
