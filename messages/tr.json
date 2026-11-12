@@ -6,6 +6,7 @@
   "nav.artists": "Sanatçılar",
   "lang.label": "Dil",
   "footer.disclaimer": "Resmî olmayan hayran projesi. Valve ile bağlantılı değildir ve Valve tarafından onaylanmamıştır. Counter-Strike ile tüm müzik kitlerinin adları, görselleri ve sesleri Valve'a ve ilgili sanatçılara aittir.",
+  "footer.short": "Resmî olmayan hayran projesi. Valve ile bağlantılı değildir ve Valve tarafından onaylanmamıştır.",
   "footer.source": "Kaynak kodu",
   "footer.licences": "Lisanslar",
   "footer.credits": "Oyun verileri SteamDB GameTracking'den. Çeviriler ByMykel'in file tracker'ından. Sanatçı bağlantıları MusicBrainz'den.",

@@ -6,6 +6,7 @@
   "nav.artists": "Исполнители",
   "lang.label": "Язык",
   "footer.disclaimer": "Неофициальный фанатский проект. Не связан с Valve и не одобрен Valve. Counter-Strike, а также названия, оформление и звук всех наборов музыки принадлежат Valve и соответствующим исполнителям.",
+  "footer.short": "Неофициальный фанатский проект. Не связан с Valve и не одобрен Valve.",
   "footer.source": "Исходный код",
   "footer.licences": "Лицензии",
   "footer.credits": "Игровые данные — SteamDB GameTracking. Переводы — file tracker от ByMykel. Ссылки на исполнителей — MusicBrainz.",

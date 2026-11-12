@@ -6,6 +6,7 @@
   "nav.artists": "Umělci",
   "lang.label": "Jazyk",
   "footer.disclaimer": "Neoficiální fanouškovský projekt. Nespojený se společností Valve ani jí neschválený. Counter-Strike a názvy, grafika a zvuk všech hudebních balíčků patří společnosti Valve a příslušným umělcům.",
+  "footer.short": "Neoficiální fanouškovský projekt. Nespojený se společností Valve ani jí neschválený.",
   "footer.source": "Zdrojový kód",
   "footer.licences": "Licence",
   "footer.credits": "Herní data ze SteamDB GameTracking. Překlady z file trackeru od ByMykela. Odkazy na umělce z MusicBrainz.",

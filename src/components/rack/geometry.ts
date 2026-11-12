@@ -59,16 +59,8 @@ export function stripToKit(groups: YearGroup[], x: number): number {
   return 0;
 }
 
-/** Sleeve width in px at scale 1. */
+/** Sleeve width in px at scale 1. The stage's `--w` in CSS scales it to the room the page leaves. */
 export const SLEEVE_PX = 420;
-
-/**
- * Scale of the rack for a stage width: 1 from 900 px, smaller below (the interim phone rack).
- * The stage's `--w` in CSS is `SLEEVE_PX * rackScale(width)`, written with container query units.
- */
-export function rackScale(stageWidth: number): number {
-  return stageWidth < 900 ? Math.max(0.5, Math.min(0.8, stageWidth / 760)) : 1;
-}
 
 /**
  * Horizontal offset in px of a sleeve `distance` places from the selected one, at scale 1.

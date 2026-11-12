@@ -6,6 +6,7 @@
   "nav.artists": "Artistit",
   "lang.label": "Kieli",
   "footer.disclaimer": "Epävirallinen faniprojekti. Ei Valven kanssa yhteydessä eikä Valven hyväksymä. Counter-Strike sekä kaikkien musiikkipakkausten nimet, kuvitukset ja äänet kuuluvat Valvelle ja kyseisille artisteille.",
+  "footer.short": "Epävirallinen faniprojekti. Ei Valven kanssa yhteydessä eikä Valven hyväksymä.",
   "footer.source": "Lähdekoodi",
   "footer.licences": "Lisenssit",
   "footer.credits": "Pelin tiedot: SteamDB GameTracking. Käännökset: ByMykelin file tracker. Artistilinkit: MusicBrainz.",

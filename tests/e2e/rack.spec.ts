@@ -77,12 +77,40 @@ test.describe("records rack", () => {
       rack(p)
         .locator("img")
         .evaluateAll((imgs) => imgs.map((img) => img.getBoundingClientRect().toJSON()));
+    // The server-rendered rack before hydration: scripts are blocked, so the island never runs.
     const viewport = page.viewportSize();
-    const staticPage = await (await browser.newContext({ javaScriptEnabled: false, viewport })).newPage();
+    const staticPage = await (await browser.newContext({ viewport })).newPage();
+    await staticPage.route("**/_astro/*.js", (route) => route.abort());
     await staticPage.goto("/en/");
     await page.goto("/en/");
     await expect(page.locator("astro-island:not([ssr])")).toHaveCount(1);
     expect(await boxes(page)).toEqual(await boxes(staticPage));
+  });
+});
+
+test.describe("records page fits the screen", () => {
+  test("PROD-13a the page does not scroll and the one-line footer is on screen", async ({ page }) => {
+    await page.goto("/en/");
+    await expect(rack(page).locator("img").first()).toBeVisible();
+    expect(await page.evaluate(() => document.documentElement.scrollHeight - window.innerHeight)).toBeLessThanOrEqual(
+      0,
+    );
+    const footer = page.locator("footer");
+    await expect(footer).toBeInViewport({ ratio: 1 });
+    await expect(footer).toHaveText(/^Unofficial fan project\. Not affiliated with or endorsed by Valve\./);
+  });
+
+  test("PROD-13a on a screen too short for the page, it scrolls instead of overlapping", async ({ page }) => {
+    await page.setViewportSize({ width: 360, height: 560 });
+    await page.goto("/en/");
+    const open = await page.getByRole("link", { name: "Open the record", exact: true }).boundingBox();
+    const footer = await page.locator("footer").boundingBox();
+    expect((open?.y ?? 0) + (open?.height ?? 0)).toBeLessThanOrEqual(footer?.y ?? 0);
+  });
+
+  test("PROD-13a every gesture on the rack moves the rack, not the page", async ({ page }) => {
+    await page.goto("/en/");
+    await expect(rack(page)).toHaveCSS("touch-action", "none");
   });
 });
 
