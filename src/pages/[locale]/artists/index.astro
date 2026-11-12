@@ -1,7 +1,9 @@
 ---
-// Artists index (spec: PROD-16, PROD-17). Placeholder until the data exists.
+// Artists index (spec: PROD-16, PROD-17).
 
-import { LOCALE_SEGMENTS, type LocaleSegment } from "../../../i18n/locales.ts";
+import type { GeneratedArtist } from "../../../data/schema.ts";
+import { artists, getKit, kitTextRequired } from "../../../data/site.ts";
+import { getLocale, LOCALE_SEGMENTS, type LocaleSegment } from "../../../i18n/locales.ts";
 import { createT } from "../../../i18n/t.ts";
 import Base from "../../../layouts/Base.astro";
 
@@ -11,10 +13,185 @@ export function getStaticPaths() {
 
 const locale = Astro.params.locale as LocaleSegment;
 const t = createT(locale);
+const { tag } = getLocale(locale);
+const list = new Intl.ListFormat(tag, { type: "unit" });
+
+const byName = (a: GeneratedArtist, b: GeneratedArtist) => a.name.localeCompare(b.name, "en", { sensitivity: "base" });
+const firstDate = (a: GeneratedArtist) => getKit(a.kits[0] as number).releaseDate;
+
+function card(artist: GeneratedArtist) {
+  const kits = artist.kits.map(getKit);
+  const years = [...new Set([kits[0], kits.at(-1)].map((k) => k?.releaseDate.slice(0, 4)))].join("–");
+  const titles = kits.map((k) => kitTextRequired(locale, k.defIndex, "title").text);
+  return {
+    artist,
+    kits,
+    meta: `${years} · ${t("artist.kitCount", { count: kits.length })}`,
+    titles: list.format(titles),
+    label: t("artist.open", { name: artist.name, titles: list.format(titles) }),
+  };
+}
+
+// PROD-16: three groups. Games, studios and compilations ("brand") have their own group.
+const multiple = artists
+  .filter((a) => a.type !== "brand" && a.kits.length > 1)
+  .sort((a, b) => b.kits.length - a.kits.length || byName(a, b))
+  .map(card);
+const brands = artists
+  .filter((a) => a.type === "brand")
+  .sort((a, b) => firstDate(a).localeCompare(firstDate(b)) || byName(a, b))
+  .map(card);
+const singles = Map.groupBy(
+  artists
+    .filter((a) => a.type !== "brand" && a.kits.length === 1)
+    .sort((a, b) => firstDate(a).localeCompare(firstDate(b)) || byName(a, b)),
+  (a) => firstDate(a).slice(0, 4),
+);
+
+const stencilHead = "font-stencil text-[22px] tracking-wider text-signal uppercase";
+const subHead = "mt-2 font-mono text-[11px] tracking-widest text-muted uppercase";
+const groups = [
+  { id: "multiple", heading: t("artists.multiple"), sub: t("artists.multipleSub"), cards: multiple },
+  { id: "brands", heading: t("artists.brands"), sub: t("artists.brandsSub"), cards: brands },
+];
 ---
 
-<Base locale={locale} title={t("artists.title")}>
-  <section class="mx-auto max-w-[1360px] px-4 pt-16 sm:px-10">
-    <h1 class="font-condensed text-6xl font-extrabold uppercase leading-none sm:text-8xl">{t("artists.title")}</h1>
+<Base locale={locale} title={t("artists.title")} description={t("artists.meta")}>
+  <section class="relative mx-auto max-w-[1360px] px-4 pt-14 sm:px-10">
+    <h1 class="font-condensed text-[clamp(4rem,9vw,8.75rem)] leading-[0.86] font-extrabold uppercase">
+      {t("artists.title")}
+    </h1>
   </section>
+
+  <div aria-hidden="true" class="hazard relative mt-14 h-3.5"></div>
+
+  {
+    groups.slice(0, 1).map((group) => (
+      <section aria-labelledby={`${group.id}-h`} class="relative mx-auto max-w-[1360px] px-4 pt-18 sm:px-10">
+        <h2 id={`${group.id}-h`} class={stencilHead}>
+          {group.heading}
+        </h2>
+        <p class={subHead}>{group.sub}</p>
+        <ul class="mt-10 grid list-none grid-cols-[repeat(auto-fill,minmax(min(100%,300px),1fr))] gap-x-8 gap-y-14 p-0">
+          {group.cards.map((c) => (
+            <li class="min-w-0">
+              <a href={`/${locale}/artists/${c.artist.id}/`} aria-label={c.label} class="group block">
+                <span aria-hidden="true" class="flex h-[100px] items-end pl-1">
+                  {c.kits.map((k, i) => (
+                    <img
+                      src={k.cover.path}
+                      width={k.cover.width}
+                      height={k.cover.height}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      class:list={[
+                        "relative block w-[96px] drop-shadow-[0_12px_14px_rgba(0,0,0,0.6)] sm:w-[128px]",
+                        i > 0 && "-ml-[54px] sm:-ml-[72px]",
+                      ]}
+                      style={`z-index: ${c.kits.length - i}`}
+                    />
+                  ))}
+                </span>
+                <span class="mt-4 block font-condensed text-3xl leading-none font-extrabold uppercase group-hover:text-signal">
+                  {c.artist.name}
+                </span>
+                <span class="mt-2 block font-mono text-[11px] tracking-wider text-muted">{c.meta}</span>
+                <span class="mt-2 block text-sm leading-normal text-body">{c.titles}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  <section aria-labelledby="single-h" class="relative mx-auto max-w-[1360px] px-4 pt-28 sm:px-10">
+    <h2 id="single-h" class={stencilHead}>{t("artists.single")}</h2>
+    <p class={subHead}>{t("artists.singleSub")}</p>
+    <div class="mt-8">
+      {
+        [...singles].map(([year, group]) => (
+          <section
+            aria-labelledby={`year-${year}`}
+            class="grid grid-cols-1 gap-x-6 gap-y-4 border-t border-rule py-[22px] sm:grid-cols-[160px_minmax(0,1fr)]"
+          >
+            <h3 id={`year-${year}`} class="font-stencil text-[40px] leading-none">
+              {year}
+            </h3>
+            <ul class="grid list-none grid-cols-[repeat(auto-fill,minmax(min(100%,240px),1fr))] gap-x-6 gap-y-3.5 p-0">
+              {group.map((artist) => {
+                const kit = getKit(artist.kits[0] as number);
+                const title = kitTextRequired(locale, kit.defIndex, "title");
+                return (
+                  <li class="min-w-0">
+                    <a href={`/${locale}/artists/${artist.id}/`} class="group flex min-h-14 items-center gap-3.5">
+                      <img
+                        src={kit.cover.path}
+                        width={kit.cover.width}
+                        height={kit.cover.height}
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        class="block w-[72px] flex-none"
+                      />
+                      <span class="min-w-0">
+                        <span class="block font-condensed text-xl leading-[1.05] font-extrabold uppercase group-hover:text-signal">
+                          {artist.name}
+                        </span>
+                        <span lang={title.lang} class="mt-0.5 block truncate font-mono text-xs text-muted">
+                          {title.text}
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+  {
+    groups.slice(1).map((group) => (
+      <section aria-labelledby={`${group.id}-h`} class="relative mx-auto max-w-[1360px] px-4 pt-18 sm:px-10">
+        <h2 id={`${group.id}-h`} class={stencilHead}>
+          {group.heading}
+        </h2>
+        <p class={subHead}>{group.sub}</p>
+        <ul class="mt-10 grid list-none grid-cols-[repeat(auto-fill,minmax(min(100%,300px),1fr))] gap-x-8 gap-y-14 p-0">
+          {group.cards.map((c) => (
+            <li class="min-w-0">
+              <a href={`/${locale}/artists/${c.artist.id}/`} aria-label={c.label} class="group block">
+                <span aria-hidden="true" class="flex h-[100px] items-end pl-1">
+                  {c.kits.map((k, i) => (
+                    <img
+                      src={k.cover.path}
+                      width={k.cover.width}
+                      height={k.cover.height}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      class:list={[
+                        "relative block w-[96px] drop-shadow-[0_12px_14px_rgba(0,0,0,0.6)] sm:w-[128px]",
+                        i > 0 && "-ml-[54px] sm:-ml-[72px]",
+                      ]}
+                      style={`z-index: ${c.kits.length - i}`}
+                    />
+                  ))}
+                </span>
+                <span class="mt-4 block font-condensed text-3xl leading-none font-extrabold uppercase group-hover:text-signal">
+                  {c.artist.name}
+                </span>
+                <span class="mt-2 block font-mono text-[11px] tracking-wider text-muted">{c.meta}</span>
+                <span class="mt-2 block text-sm leading-normal text-body">{c.titles}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
 </Base>

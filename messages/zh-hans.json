@@ -60,5 +60,28 @@
   "cue.lostround": "回合失败",
   "cue.deathcam": "死亡视角",
   "cue.roundmvpanthem": "MVP 主题曲",
-  "cue.endofmatch": "比赛结束"
+  "cue.endofmatch": "比赛结束",
+  "artists.meta": "每一位在 Counter-Strike 音乐盒上署名的艺术家，从独立作曲家到乐队、游戏和工作室。",
+  "artists.multiple": "不止一张",
+  "artists.multipleSub": "按张数排列",
+  "artists.single": "只有一张",
+  "artists.singleSub": "按发行年份",
+  "artists.brands": "游戏与官方",
+  "artists.brandsSub": "游戏、工作室与合辑",
+  "artist.meta": "{name}：CS Music Kit Archive 收录的 {count}，附曲目与官方介绍。",
+  "artist.back": "← 全部艺术家",
+  "artist.type.person": "艺术家",
+  "artist.type.group": "乐队与组合",
+  "artist.type.brand": "游戏与官方",
+  "artist.kits": "音乐盒",
+  "artist.most": "{count} · 最多",
+  "artist.active": "活跃",
+  "artist.first": "第一张",
+  "artist.latest": "最新一张",
+  "artist.discography": "音乐盒",
+  "artist.with": "合作：{names}",
+  "artist.yearsLater": {
+    "other": "{count} 年后"
+  },
+  "artist.open": "{name}：{titles}"
 }
