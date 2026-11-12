@@ -123,10 +123,9 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
     <div class="relative flex-[0_1_380px] self-start overflow-hidden bg-signal px-6 pt-6 pb-5 text-ink">
       <p
         aria-hidden="true"
-        class="pointer-events-none absolute -top-1.5 -right-2 m-0 rotate-[-8deg] font-stencil text-[104px] leading-none text-ink/20"
-      >
-        {year}
-      </p>
+        data-year={year}
+        class="pointer-events-none absolute -top-1.5 -right-2 m-0 rotate-[-8deg] font-stencil text-[104px] leading-none text-ink/20 before:content-[attr(data-year)]"
+      />
       <h1
         lang={title.lang}
         class:list={[

@@ -72,6 +72,18 @@ test.describe("records rack", () => {
     await page.keyboard.press("ArrowRight");
     await expect(card(page).getByRole("heading")).not.toHaveText("Bachram", { timeout: 200 });
   });
+  test("PROD-36 the rack keeps its layout when the island hydrates", async ({ page, browser }) => {
+    const boxes = (p: Page) =>
+      rack(p)
+        .locator("img")
+        .evaluateAll((imgs) => imgs.map((img) => img.getBoundingClientRect().toJSON()));
+    const viewport = page.viewportSize();
+    const staticPage = await (await browser.newContext({ javaScriptEnabled: false, viewport })).newPage();
+    await staticPage.goto("/en/");
+    await page.goto("/en/");
+    await expect(page.locator("astro-island:not([ssr])")).toHaveCount(1);
+    expect(await boxes(page)).toEqual(await boxes(staticPage));
+  });
 });
 
 test.describe("records without JavaScript", () => {

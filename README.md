@@ -1,12 +1,12 @@
 # CS Music Kit Archive
 
-An unofficial, non-commercial fan site that presents every Counter-Strike music kit, from the first batch in October 2014 to today, with full tracklists, in all 28 languages that CS2 supports.
+An unofficial, non-commercial fan site that presents every Counter-Strike music kit, from the default CS:GO music of 2012 to today, with full tracklists, in all 28 languages that CS2 supports.
 
 Not affiliated with or endorsed by Valve. See [NOTICE](NOTICE).
 
 ## Status
 
-Skeleton. Pages exist in all 28 languages with the shared layout, language picker and not-found pages. There is no music kit data yet. The specification is in [`spec/`](spec/README.md).
+In development. The records rack, record pages, artist pages and the sitemap are built in all 28 languages. Audio is not published yet. The specification is in [`spec/`](spec/README.md).
 
 ## Development
 
@@ -24,6 +24,7 @@ pnpm verify       # lint, types, i18n check, unit tests, build, end-to-end tests
 | `pnpm preview` | Serves `dist/` with Wrangler, the same way Cloudflare does |
 | `pnpm i18n:check` | Checks `messages/` against English (plural forms, placeholders, unknown keys) |
 | `pnpm test` / `pnpm test:e2e` | Unit tests (Vitest) / end-to-end tests (Playwright, needs `pnpm build` first) |
+| `pnpm lighthouse` | Lighthouse mobile performance check (PROD-36, needs `pnpm build` first) |
 
 ## Licence
 

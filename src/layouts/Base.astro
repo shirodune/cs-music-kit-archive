@@ -57,9 +57,11 @@ const repository = "https://github.com/shirodune/cs-music-kit-archive";
     <meta property="og:locale" content={tag.replace("-", "_")} />
     <meta property="og:type" content="website" />
     {image && <meta property="og:image" content={new URL(image, site).href} />}
-    <Font cssVariable="--font-stencil-latin" />
-    <Font cssVariable="--font-condensed-latin" />
-    <Font cssVariable="--font-mono-latin" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {/* Preload the faces every page shows above the fold, so they arrive together and the page is laid out once (PROD-36). */}
+    <Font cssVariable="--font-stencil-latin" preload={[{ subset: "latin", weight: 400 }]} />
+    <Font cssVariable="--font-condensed-latin" preload={[{ subset: "latin", weight: 600 }, { subset: "latin", weight: 800 }]} />
+    <Font cssVariable="--font-mono-latin" preload={[{ subset: "latin", weight: 400 }]} />
     <Font cssVariable="--font-sans-latin" preload={[{ subset: "latin", weight: 400 }]} />
   </head>
   <body class="grid-lines min-h-screen">

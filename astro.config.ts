@@ -1,5 +1,6 @@
 import { rename, rm } from "node:fs/promises";
 import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import type { AstroIntegration } from "astro";
 import { defineConfig, fontProviders } from "astro/config";
@@ -25,10 +26,18 @@ const localizedNotFound: AstroIntegration = {
 // The fallback faces for the other script groups are added in a later change.
 const latinSubsets: [string, ...string[]] = ["latin", "latin-ext", "vietnamese"];
 
+// PROD-30: every page in every locale. The alternates live only in each page's head (PROD-29).
+// The root page only picks a locale (noindex), and not-found pages are left out.
+const site = "https://musickitarchive.com";
+const sitemapIntegration = sitemap({
+  filter: (page) => page !== `${site}/` && !/\/404\/?$/.test(page),
+  namespaces: { news: false, xhtml: false, image: false, video: false },
+});
+
 export default defineConfig({
-  site: "https://musickitarchive.com",
+  site,
   trailingSlash: "always",
-  integrations: [react(), localizedNotFound],
+  integrations: [react(), localizedNotFound, sitemapIntegration],
   i18n: {
     locales: [...LOCALE_SEGMENTS],
     defaultLocale: DEFAULT_LOCALE,

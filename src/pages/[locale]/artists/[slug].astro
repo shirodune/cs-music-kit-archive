@@ -46,6 +46,7 @@ const facts = [
 ];
 
 // Covers fanned out, overlapping more as the count grows (PROD-18).
+// The top cover, fully visible, loads first (PROD-36). None is lazy: they are all above the fold.
 const fanStep = kits.length > 1 ? Math.min(70, Math.floor(140 / (kits.length - 1))) : 0;
 
 // Discography with "N years later" between kits 3 or more years apart (PROD-19).
@@ -128,7 +129,14 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
               class="absolute top-0 block w-[200px] drop-shadow-[0_20px_24px_rgba(0,0,0,0.6)] hover:brightness-110 sm:w-[260px]"
               style={`left: ${i * fanStep}px; z-index: ${i + 1}`}
             >
-              <img src={kit.cover.path} width={kit.cover.width} height={kit.cover.height} alt="" class="block w-full" />
+              <img
+                src={kit.cover.path}
+                width={kit.cover.width}
+                height={kit.cover.height}
+                alt=""
+                fetchpriority={i === kits.length - 1 ? "high" : undefined}
+                class="block w-full"
+              />
             </a>
           ))
         }
@@ -136,10 +144,9 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
       <div class="relative overflow-hidden bg-signal px-[18px] pt-[18px] pb-4 text-ink">
         <p
           aria-hidden="true"
-          class="pointer-events-none absolute -top-1.5 -right-2 m-0 rotate-[-8deg] font-stencil text-[76px] leading-none text-ink/20"
-        >
-          {firstYear}
-        </p>
+          data-year={firstYear}
+          class="pointer-events-none absolute -top-1.5 -right-2 m-0 rotate-[-8deg] font-stencil text-[76px] leading-none text-ink/20 before:content-[attr(data-year)]"
+        />
         <dl class="relative mt-10 border-y-2 border-ink font-mono text-xs">
           {
             facts.map((fact, i) => (
