@@ -76,7 +76,7 @@ const repository = "https://github.com/shirodune/cs-music-kit-archive";
       class="relative z-10 flex min-h-16 flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-rule px-[max(1rem,env(safe-area-inset-left))] py-2 sm:px-10"
     >
       <a href={`/${locale}/`} class="font-stencil text-2xl tracking-wide">CS MUSIC KIT ARCHIVE</a>
-      <nav aria-label={t("nav.label")} class="flex items-center gap-7 font-condensed text-base font-semibold uppercase tracking-widest">
+      <nav aria-label={t("nav.label")} class="flex items-center gap-4 font-condensed sm:gap-7 text-base font-semibold uppercase tracking-widest">
         {
           [
             { href: `/${locale}/`, label: t("nav.records"), current: rest === "" || rest.startsWith("kits/") },

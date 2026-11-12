@@ -69,13 +69,16 @@ function lighthouse(url: string): Run {
 let failed = false;
 try {
   await waitForServer();
+  // Warm-up, not scored. In CI the first page always had one run about 10 points below its
+  // other two; a cold Chrome and Wrangler is the likely cause.
+  lighthouse(base + PAGES[0]);
   for (const path of PAGES) {
-    const runs = Array.from({ length: RUNS }, () => lighthouse(base + path)).sort((a, b) => a.score - b.score);
-    const median = runs[Math.floor(RUNS / 2)] as Run;
+    const runs = Array.from({ length: RUNS }, () => lighthouse(base + path));
+    const median = runs.toSorted((a, b) => a.score - b.score)[Math.floor(RUNS / 2)] as Run;
     const ok = median.score >= MIN_SCORE;
     failed ||= !ok;
     console.log(
-      `${ok ? "ok  " : "FAIL"} ${path}  median ${median.score} (runs ${runs.map((r) => r.score).join(", ")})  LCP ${median.lcp}  TBT ${median.tbt}  CLS ${median.cls}`,
+      `${ok ? "ok  " : "FAIL"} ${path}  median ${median.score} (runs in order ${runs.map((r) => r.score).join(", ")})  LCP ${median.lcp}  TBT ${median.tbt}  CLS ${median.cls}`,
     );
   }
 } finally {

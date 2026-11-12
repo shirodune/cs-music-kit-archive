@@ -119,7 +119,7 @@ Sections, top to bottom:
 ## Performance
 
 - PROD-35 Pages without interactive parts ship no JavaScript except the language picker and, on artist pages, the few inline lines that point the back link at the kit in `?from` (PROD-21).
-- PROD-36 Lighthouse performance score of 90 or more on mobile for the Records, Record and Artist pages. CI runs `pnpm lighthouse`: Lighthouse's default mobile settings, three runs per page against the built site served by Wrangler, and the median counts. Local scores swing with machine load, so CI is the reference.
+- PROD-36 Lighthouse performance score of 90 or more on mobile for the Records, Record and Artist pages. CI runs `pnpm lighthouse`: Lighthouse's default mobile settings, one unscored warm-up run, then three runs per page against the built site served by Wrangler, and the median counts. Local scores swing with machine load, so CI is the reference.
 
 ## Analytics
 

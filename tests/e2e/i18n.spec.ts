@@ -58,7 +58,8 @@ test("unknown paths get the not-found page of their locale with status 404", asy
 
 test("PROD-1 the page body never scrolls sideways at phone width", async ({ page }) => {
   await page.setViewportSize({ width: 360, height: 740 });
-  for (const path of ["/en/", "/de/artists/", "/zh-hans/"]) {
+  // Long one-word titles and box names (ru, bg, fi) are the tightest fits.
+  for (const path of ["/en/", "/de/artists/", "/zh-hans/", "/ru/artists/", "/bg/artists/", "/fi/kits/desert-fire/"]) {
     await page.goto(path);
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     expect(overflow, path).toBeLessThanOrEqual(0);
