@@ -1,19 +1,18 @@
 // Pure helpers for `pnpm audio:extract` and `pnpm audio:upload` (spec: DATA-20 to DATA-21).
 
-/** One published file, keyed by its path on audio.musickitarchive.com: `{internalName}/{file}.mp3`. */
+/** One published file, keyed by its path on audio.musickitarchive.com: `{internalName}/{file}.mp3` or `.wav`. */
 export interface ManifestEntry {
   bytes: number;
   sha256: string;
   durationSec: number;
-  /** How the game stores the file: MP3 is published as stored, WAV is encoded once (DATA-20a, DATA-20b). */
-  stored: "mp3" | "wav";
 }
 export type Manifest = Record<string, ManifestEntry>;
 
 export interface WantedFile {
   internalName: string;
   file: string;
-  key: string;
+  /** `{internalName}/{file}`: the key without the extension, which depends on how the game stores the file. */
+  base: string;
 }
 
 interface KitTracks {
@@ -23,12 +22,12 @@ interface KitTracks {
   alternateInternalName: string | null;
 }
 
-/** Every track file the site lists, once each, in key order. The alternate set has its own game folder (DATA-6). */
+/** Every track file the site lists, once each, in order. The alternate set has its own game folder (DATA-6). */
 export function wantedFiles(kits: KitTracks[]): WantedFile[] {
-  const byKey = new Map<string, WantedFile>();
+  const byBase = new Map<string, WantedFile>();
   const add = (internalName: string, file: string) => {
-    const key = `${internalName}/${file}.mp3`;
-    byKey.set(key, { internalName, file, key });
+    const base = `${internalName}/${file}`;
+    byBase.set(base, { internalName, file, base });
   };
   for (const kit of kits) {
     for (const track of kit.tracks) add(kit.internalName, track.file);
@@ -36,20 +35,26 @@ export function wantedFiles(kits: KitTracks[]): WantedFile[] {
       for (const track of kit.alternateTracks ?? []) add(kit.alternateInternalName, track.file);
     }
   }
-  return [...byKey.values()].sort((a, b) => (a.key < b.key ? -1 : 1));
+  return [...byBase.values()].sort((a, b) => (a.base < b.base ? -1 : 1));
 }
 
-/** Keys that are new or whose content changed since the previous manifest, so only those are uploaded. */
-export function changedKeys(previous: Manifest, next: Manifest): string[] {
-  return Object.keys(next)
-    .filter((key) => previous[key]?.sha256 !== next[key]?.sha256)
-    .sort();
+/** What `pnpm audio:upload` does to make the bucket match the manifest (DATA-21). */
+export function uploadPlan(published: Manifest, next: Manifest): { put: string[]; remove: string[] } {
+  return {
+    put: Object.keys(next)
+      .filter((key) => published[key]?.sha256 !== next[key]?.sha256)
+      .sort(),
+    remove: Object.keys(published)
+      .filter((key) => !(key in next))
+      .sort(),
+  };
 }
 
-const CBR_KBPS = [96, 112, 128, 160, 192, 224, 256, 320];
+const CONTENT_TYPES: Record<string, string> = { mp3: "audio/mpeg", wav: "audio/wav" };
 
-/** The constant bitrate closest to a measured one, in kbps (DATA-20b: the kit's `mainmenu` bitrate). */
-export function nearestBitrate(bitsPerSecond: number): number {
-  const kbps = bitsPerSecond / 1000;
-  return CBR_KBPS.reduce((best, b) => (Math.abs(b - kbps) < Math.abs(best - kbps) ? b : best));
+/** Content type of a manifest key, by its extension (DATA-20a). */
+export function contentTypeOf(key: string): string {
+  const type = CONTENT_TYPES[key.slice(key.lastIndexOf(".") + 1)];
+  if (!type) throw new Error(`${key}: not an MP3 or WAV file`);
+  return type;
 }

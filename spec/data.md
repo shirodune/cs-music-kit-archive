@@ -152,10 +152,9 @@ Artists live in `data/curated/artists.json`. Credits live in `data/curated/credi
 
 ## Audio
 
-- DATA-20 Audio files are extracted from the game files with Source2Viewer-CLI and uploaded to the R2 bucket `cs-music-kit-audio`, which serves `audio.musickitarchive.com`, at `/{internalName}/{file}.mp3`. A maintainer runs `pnpm audio:extract` and `pnpm audio:upload` on a machine with CS2 installed through Steam (the README has the steps); the files never pass through git or CI.
-- DATA-20a Files the game stores as MP3 are published exactly as stored, without re-encoding. Today that is every cue except most `startofmatch` and `endofmatch` files.
-- DATA-20b Files the game stores as uncompressed PCM (most `startofmatch` and `endofmatch` files, 44.1 kHz, 16-bit, stereo) are encoded once with ffmpeg to MP3 at the standard bitrate nearest to the same kit's `mainmenu` track, without metadata.
-- DATA-21 `data/upstream/audio-manifest.json` lists every uploaded file by key with bytes, SHA-256, measured duration and how the game stores it (`mp3` or `wav`). `pnpm audio:extract` writes it; `pnpm audio:upload` uploads only new or changed files, then the manifest as `/manifest.json`, so the manifest never names a file that is missing. The site links only to files in the manifest.
+- DATA-20 Audio files are extracted from the game files with Source2Viewer-CLI and uploaded to the R2 bucket `cs-music-kit-audio`, which serves `audio.musickitarchive.com`, at `/{internalName}/{file}.mp3` or `.wav`. A maintainer runs `pnpm audio:extract` and `pnpm audio:upload` on a machine with CS2 installed through Steam (the README has the steps); the files never pass through git or CI.
+- DATA-20a Every file is published exactly as the game stores it, without re-encoding: MP3 as `.mp3` (`audio/mpeg`), uncompressed PCM as `.wav` (`audio/wav`). Today the WAV files are most `startofmatch` and `endofmatch` cues (44.1 kHz, 16-bit, stereo).
+- DATA-21 `data/upstream/audio-manifest.json` lists every uploaded file by key (its path, with the extension) with bytes, SHA-256 and measured duration. `pnpm audio:extract` writes it. `pnpm audio:upload` compares it with the published `/manifest.json`, uploads new or changed files, then the manifest, then deletes the files it no longer lists, so the published manifest never names a missing file. The site links only to files in the manifest.
 - DATA-21a Uploaded files are served with `Cache-Control: public, max-age=604800`: the paths are stable, but a game patch can change a file.
 
 ## Content
