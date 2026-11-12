@@ -3,6 +3,7 @@
 // Audio controls come with the site-wide player once audio is published (PROD-24, DATA-21).
 
 import KitCard from "../../../components/KitCard.astro";
+import { coverSrc } from "../../../data/cover.ts";
 import type { Kit, Track } from "../../../data/schema.ts";
 import {
   getArtist,
@@ -196,14 +197,14 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
       class="relative m-0 flex h-[360px] min-w-0 flex-[999_1_560px] items-center justify-center overflow-hidden bg-panel sm:h-[480px] lg:h-[600px]"
     >
       <img
-        src={kit.cover.path}
+        src={coverSrc(kit.cover)}
         alt=""
         aria-hidden="true"
         class="absolute inset-0 h-full w-full scale-125 object-cover opacity-40 blur-[40px] saturate-110"
       />
       <div aria-hidden="true" class="absolute inset-0 bg-linear-to-r from-panel/25 to-panel/75"></div>
       <img
-        src={kit.cover.path}
+        src={coverSrc(kit.cover)}
         width={kit.cover.width}
         height={kit.cover.height}
         alt={t("kit.coverAlt", { title: title.text })}

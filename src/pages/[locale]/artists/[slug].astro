@@ -2,6 +2,7 @@
 // Artist page (spec: PROD-18 to PROD-21).
 // The introduction (content/artists) and MusicBrainz links (PROD-20) are added when they exist.
 
+import { coverSrc } from "../../../data/cover.ts";
 import type { GeneratedArtist } from "../../../data/schema.ts";
 import { artists, getArtist, getKit, kitText, kitTextRequired, releaseName } from "../../../data/site.ts";
 import { formatDate, listParts } from "../../../i18n/format.ts";
@@ -130,7 +131,7 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
               style={`left: ${i * fanStep}px; z-index: ${i + 1}`}
             >
               <img
-                src={kit.cover.path}
+                src={coverSrc(kit.cover)}
                 width={kit.cover.width}
                 height={kit.cover.height}
                 alt=""
@@ -181,7 +182,7 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
                 <p class="m-0 font-stencil text-[56px] leading-[0.9]">{row.kit.releaseDate.slice(0, 4)}</p>
                 <div class="w-[220px] drop-shadow-[0_20px_24px_rgba(0,0,0,0.6)]">
                   <img
-                    src={row.kit.cover.path}
+                    src={coverSrc(row.kit.cover)}
                     width={row.kit.cover.width}
                     height={row.kit.cover.height}
                     alt=""

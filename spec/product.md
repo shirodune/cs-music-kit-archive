@@ -118,12 +118,12 @@ Sections, top to bottom:
 
 ## Performance
 
-- PROD-35 Pages without interactive parts ship no JavaScript except the language picker and, on artist pages, the few inline lines that point the back link at the kit in `?from` (PROD-21).
+- PROD-35 Pages without interactive parts ship no JavaScript except the language picker, the analytics loader (PROD-37) and, on artist pages, the few inline lines that point the back link at the kit in `?from` (PROD-21).
 - PROD-36 Lighthouse performance score of 90 or more on mobile for the Records, Record and Artist pages. CI runs `pnpm lighthouse`: Lighthouse's default mobile settings, one unscored warm-up run, then three runs per page against the built site served by Wrangler, and the median counts. Local scores swing with machine load, so CI is the reference.
 
 ## Analytics
 
-- PROD-37 Cloudflare Web Analytics only. No cookies, no consent banner.
+- PROD-37 Cloudflare Web Analytics only. No cookies, no consent banner. A few inline lines load Cloudflare's beacon only on the production host musickitarchive.com, so local runs, tests and pull request previews are not counted. The site token in the page is public by design. Automatic injection is off, so the loader in the code is the only one.
 
 ## Open questions
 

@@ -112,5 +112,15 @@ const repository = "https://github.com/shirodune/cs-music-kit-archive";
         </p>
       </div>
     </footer>
+    {/* PROD-37: Cloudflare Web Analytics, only on the production host, so local runs and previews are not counted. */}
+    <script is:inline>
+      if (location.hostname === "musickitarchive.com") {
+        const beacon = document.createElement("script");
+        beacon.defer = true;
+        beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+        beacon.dataset.cfBeacon = '{"token": "b5f6a7aebab6436985241f3818c1663a"}';
+        document.body.append(beacon);
+      }
+    </script>
   </body>
 </html>

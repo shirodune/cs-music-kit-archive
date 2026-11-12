@@ -11,6 +11,7 @@ import {
   useRef,
   useState,
 } from "react";
+import { coverSrc } from "../../data/cover.ts";
 import {
   keyTarget,
   kitToStrip,
@@ -297,7 +298,7 @@ export default function Rack({ kits, strings, initial }: Props) {
           };
           const image = (
             <img
-              src={k.cover.path}
+              src={coverSrc(k.cover)}
               width={k.cover.width}
               height={k.cover.height}
               alt=""
