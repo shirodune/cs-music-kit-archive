@@ -16,9 +16,11 @@ interface Props {
   image?: string | undefined;
   /** Keep the page out of search results (not-found pages). */
   noindex?: boolean;
+  /** Fill the viewport with a one-line footer; the page scrolls only when its content cannot fit (records page, PROD-13a). */
+  fill?: boolean;
 }
 
-const { locale, title, description, image, noindex = false } = Astro.props;
+const { locale, title, description, image, noindex = false, fill = false } = Astro.props;
 const t = createT(locale);
 const { tag, script } = getLocale(locale);
 
@@ -71,9 +73,9 @@ const repository = "https://github.com/shirodune/cs-music-kit-archive";
     <Font cssVariable="--font-sans-latin" preload={[{ subset: "latin", weight: 400 }]} />
     {script !== "latin" && <link rel="stylesheet" href={`/fonts/${script}.css`} />}
   </head>
-  <body class="grid-lines min-h-screen">
+  <body class:list={["grid-lines", fill ? "flex h-dvh min-h-fit flex-col" : "min-h-screen"]}>
     <header
-      class="relative z-10 flex min-h-16 flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-rule px-[max(1rem,env(safe-area-inset-left))] py-2 sm:px-10"
+      class="relative z-10 flex flex-none min-h-16 flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-rule px-[max(1rem,env(safe-area-inset-left))] py-2 sm:px-10"
     >
       <a href={`/${locale}/`} class="font-stencil text-2xl tracking-wide">CS MUSIC KIT ARCHIVE</a>
       <nav aria-label={t("nav.label")} class="flex items-center gap-4 font-condensed sm:gap-7 text-base font-semibold uppercase tracking-widest">
@@ -97,21 +99,42 @@ const repository = "https://github.com/shirodune/cs-music-kit-archive";
       </nav>
     </header>
 
-    <main class="relative">
+    <main class:list={["relative", fill && "flex flex-1 flex-col"]}>
       <slot />
     </main>
 
-    <footer class="relative mt-24">
-      <div aria-hidden="true" class="hazard h-3.5"></div>
-      <div class="mx-auto flex max-w-[1360px] flex-col gap-3 px-4 py-10 font-mono text-xs leading-relaxed text-muted sm:px-10">
-        <p class="max-w-[72ch]">{t("footer.disclaimer")}</p>
-        <p class="max-w-[72ch]">{t("footer.credits")}</p>
-        <p class="flex gap-6">
-          <a href={repository} class="underline underline-offset-4">{t("footer.source")}</a>
-          <a href={`${repository}/blob/main/NOTICE`} class="underline underline-offset-4">{t("footer.licences")}</a>
-        </p>
-      </div>
-    </footer>
+    {
+      fill ? (
+        <footer class="relative flex-none">
+          <div aria-hidden="true" class="hazard h-1.5" />
+          <p class="mx-auto my-0 flex max-w-[1360px] flex-wrap items-baseline gap-x-5 gap-y-0.5 px-4 py-2 font-mono text-[11px] leading-snug text-muted sm:px-10">
+            <span>{t("footer.short")}</span>
+            <a href={repository} class="underline underline-offset-4">
+              {t("footer.source")}
+            </a>
+            <a href={`${repository}/blob/main/NOTICE`} class="underline underline-offset-4">
+              {t("footer.licences")}
+            </a>
+          </p>
+        </footer>
+      ) : (
+        <footer class="relative mt-24">
+          <div aria-hidden="true" class="hazard h-3.5" />
+          <div class="mx-auto flex max-w-[1360px] flex-col gap-3 px-4 py-10 font-mono text-xs leading-relaxed text-muted sm:px-10">
+            <p class="max-w-[72ch]">{t("footer.disclaimer")}</p>
+            <p class="max-w-[72ch]">{t("footer.credits")}</p>
+            <p class="flex gap-6">
+              <a href={repository} class="underline underline-offset-4">
+                {t("footer.source")}
+              </a>
+              <a href={`${repository}/blob/main/NOTICE`} class="underline underline-offset-4">
+                {t("footer.licences")}
+              </a>
+            </p>
+          </div>
+        </footer>
+      )
+    }
     {/* PROD-37: Cloudflare Web Analytics, only on the production host, so local runs and previews are not counted. */}
     <script is:inline>
       if (location.hostname === "musickitarchive.com") {

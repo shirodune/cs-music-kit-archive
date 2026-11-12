@@ -52,13 +52,12 @@ const strings = {
   released: t("kit.released"),
   catalogue: t("kit.catalogue"),
   edition: t("kit.edition"),
-  descriptionBy: t("kit.descriptionBy"),
   open: t("rack.open"),
   yearLabels,
 };
 ---
 
-<Base locale={locale}>
+<Base locale={locale} fill>
   <h1 class="sr-only">{t("records.title")}</h1>
   <!-- The newest kit is selected until the URL hash names another (PROD-12). -->
   <Rack client:load kits={rackKits} strings={strings} initial={rackKits.length - 1} />

@@ -6,6 +6,7 @@
   "nav.artists": "ศิลปิน",
   "lang.label": "ภาษา",
   "footer.disclaimer": "โปรเจกต์ของแฟน ๆ ที่ไม่เป็นทางการ ไม่มีส่วนเกี่ยวข้องและไม่ได้รับการรับรองจาก Valve Counter-Strike รวมถึงชื่อ ภาพ และเสียงของชุดอุปกรณ์เพลงทั้งหมดเป็นของ Valve และศิลปินแต่ละราย",
+  "footer.short": "โปรเจกต์ของแฟน ๆ ที่ไม่เป็นทางการ ไม่มีส่วนเกี่ยวข้องและไม่ได้รับการรับรองจาก Valve",
   "footer.source": "ซอร์สโค้ด",
   "footer.licences": "สัญญาอนุญาต",
   "footer.credits": "ข้อมูลเกมจาก SteamDB GameTracking คำแปลจาก file tracker ของ ByMykel ลิงก์ศิลปินจาก MusicBrainz",

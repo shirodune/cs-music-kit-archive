@@ -27,7 +27,7 @@ The other style directions and the retired timeline page are not built.
 
 - PROD-2 Header on every page: site name linking to the current locale's home, navigation (Records, Artists) and the language picker.
 - PROD-3 The language picker lists all 28 locales by their native name. Choosing one opens the same page in that locale and remembers the choice (see `i18n.md`).
-- PROD-4 Footer on every page:
+- PROD-4 Footer on every page (on the records page a one-line version: the first two sentences of the disclaimer, `footer.short`, and the links; PROD-13a):
   - "Unofficial fan project. Not affiliated with or endorsed by Valve. Counter-Strike and all music kit names, artwork and audio belong to Valve and the respective artists."
   - A link to the source code on GitHub and the licence notice (see `decisions.md`). There is no contact e-mail address.
   - Data credits: Valve game data via SteamDB GameTracking, translations via ByMykel's file tracker, artist links via MusicBrainz.
@@ -56,9 +56,10 @@ The rack holds every kit in order of release. The rack is the timeline.
 - PROD-8 Each kit is a sleeve showing its cover. One sleeve is selected at a time and pulled forward, with its disc partly out of the sleeve.
 - PROD-9 The selected kit's record label card shows: issue date, artist credit (linked), release batch name, catalogue number `Nº {defIndex, 3 digits}` and edition (`Standard and StatTrak™`, `StatTrak™ only` or `Standard only`). The card links to the kit page.
 - PROD-10 The year strip under the shelf lists every year that has a release. Selecting a year jumps to its first kit. Dragging along the strip scrubs through the rack.
-- PROD-11 Input: drag or swipe the rack; mouse wheel scrolls it; Left and Right arrows select the previous or next kit; Page Up and Page Down jump a year; Home and End go to the first and last kit; Enter opens the selected kit. The rack has an accessible name that explains these keys.
+- PROD-11 Input: drag or swipe the rack (on touch screens every gesture on the rack moves the rack, PROD-13a); mouse wheel scrolls it; Left and Right arrows select the previous or next kit; Page Up and Page Down jump a year; Home and End go to the first and last kit; Enter opens the selected kit. The rack has an accessible name that explains these keys.
 - PROD-12 The selected kit is kept in the URL hash (`#{kit-slug}`), so links and the back button return to the same place. Without a hash the newest kit is selected.
 - PROD-13 With `prefers-reduced-motion`, sleeves move without animation.
+- PROD-13a The records page fits the screen and does not scroll, so scrolling never competes with moving the rack. The rack takes the height left over and its sleeves shrink to fit, down to 110 px wide. The selected kit's description is cut to a fixed number of lines (two on a phone, three from 640 px wide, one when the screen is under 700 px tall); the record page shows it in full, attributed to Valve, so the records page leaves out the attribution line. It spans the width beside the "Open the record" button. Below 1024 px the label card shows its four fields in two columns. The footer is one line (PROD-4). On a screen too small for all of this, the page scrolls instead of overlapping, and swipes that start on the rack move only the rack.
 
 ## Record page (one kit)
 

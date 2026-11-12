@@ -12,16 +12,7 @@ import {
   useState,
 } from "react";
 import { coverSrc } from "../../data/cover.ts";
-import {
-  keyTarget,
-  kitToStrip,
-  rackScale,
-  SLEEVE_PX,
-  sleeveOffset,
-  stripToKit,
-  yearGroups,
-  yearOf,
-} from "./geometry.ts";
+import { keyTarget, kitToStrip, SLEEVE_PX, sleeveOffset, stripToKit, yearGroups, yearOf } from "./geometry.ts";
 
 interface Text {
   text: string;
@@ -55,7 +46,6 @@ export interface RackStrings {
   released: string;
   catalogue: string;
   edition: string;
-  descriptionBy: string;
   open: string;
   /** Accessible name of each year button, by year. */
   yearLabels: Record<string, string>;
@@ -197,7 +187,7 @@ export default function Rack({ kits, strings, initial }: Props) {
       p.dragged = true;
       e.currentTarget.setPointerCapture(e.pointerId);
     }
-    if (p.dragged) go(p.target - dx / (DRAG_PX_PER_KIT * rackScale(e.currentTarget.clientWidth)));
+    if (p.dragged) go(p.target - dx / (DRAG_PX_PER_KIT * sleeveScaleOf(e.currentTarget)));
   };
   const onPointerUp = () => {
     const p = press.current;
@@ -221,11 +211,11 @@ export default function Rack({ kits, strings, initial }: Props) {
   }
 
   return (
-    <div className="@container/rack relative">
+    <div className="@container/rack relative flex flex-1 flex-col">
       <section
         aria-label={strings.card}
         aria-live="polite"
-        className="relative z-20 m-4 lg:absolute lg:top-10 lg:left-10 lg:m-0 lg:w-64"
+        className="relative z-20 mx-4 mt-3 mb-1 flex-none lg:absolute lg:top-8 lg:left-10 lg:m-0 lg:w-64"
       >
         <div className="relative overflow-hidden bg-signal px-[18px] pt-[18px] pb-4 text-ink">
           <p
@@ -235,14 +225,15 @@ export default function Rack({ kits, strings, initial }: Props) {
           />
           <h2
             lang={kit.title.lang}
-            className="relative mt-6 mb-3.5 font-condensed text-[clamp(2rem,3vw,2.75rem)] leading-[0.92] font-extrabold uppercase"
+            className="relative mt-3 mb-3 font-condensed text-[clamp(1.75rem,3vw,2.75rem)] lg:mt-6 lg:mb-3.5 leading-[0.92] font-extrabold uppercase"
           >
             <a href={kit.href} className="hover:text-ink hover:underline focus-visible:outline-ink">
               {kit.title.text}
             </a>
           </h2>
-          <dl className="m-0 border-y-2 border-ink font-mono text-xs">
-            <Row label={strings.artist} first>
+          {/* Two columns below lg, so the card leaves the rack room on a phone (PROD-13a). */}
+          <dl className="m-0 grid grid-cols-2 gap-x-4 border-y-2 border-ink font-mono text-xs lg:grid-cols-1">
+            <Row label={strings.artist} index={0}>
               {kit.artistHref ? (
                 <a
                   href={kit.artistHref}
@@ -255,7 +246,7 @@ export default function Rack({ kits, strings, initial }: Props) {
                 <span lang={kit.credit.lang}>{kit.credit.text}</span>
               )}
             </Row>
-            <Row label={strings.released}>
+            <Row label={strings.released} index={1}>
               {kit.date}
               {kit.batch && (
                 <span lang={kit.batch.lang} className="mt-0.5 block opacity-75">
@@ -263,8 +254,12 @@ export default function Rack({ kits, strings, initial }: Props) {
                 </span>
               )}
             </Row>
-            <Row label={strings.catalogue}>{kit.catalogue}</Row>
-            <Row label={strings.edition}>{kit.edition}</Row>
+            <Row label={strings.catalogue} index={2}>
+              {kit.catalogue}
+            </Row>
+            <Row label={strings.edition} index={3}>
+              {kit.edition}
+            </Row>
           </dl>
         </div>
       </section>
@@ -281,8 +276,11 @@ export default function Rack({ kits, strings, initial }: Props) {
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
         // Sizes come from CSS, so the page is laid out right before the island hydrates (PROD-36).
-        // --w is the sleeve width, SLEEVE_PX * rackScale(): 420 px from 900 px, else 55.263cqw (420/760) within 210 to 336 px.
-        className="relative isolate h-[250px] cursor-grab touch-pan-y overflow-hidden select-none [--b:40px] [--c:0px] [--w:clamp(210px,55.263cqw,336px)] focus-visible:outline-offset-[-2px] active:cursor-grabbing @min-[900px]/rack:h-[560px] @min-[900px]/rack:[--b:80px] @min-[900px]/rack:[--c:120px] @min-[900px]/rack:[--w:420px]"
+        // The stage takes the height the page leaves (PROD-13a). --w is the sleeve width: by the rack's width,
+        // 420 px from 900 px, else 55.263cqw (420/760) within 210 to 336 px; and never taller than the stage
+        // (a cover is 198/256 as tall as wide, plus --b below and 24 px above). When the page is taller than the
+        // screen, the stage's height is not definite and 100cqh reads 0, so the sleeve keeps 110 px.
+        className="relative isolate min-h-[144px] flex-1 cursor-grab touch-none overflow-hidden select-none [container-type:size] [--b:36px] [--c:0px] [--w:min(clamp(210px,55.263cqw,336px),max(110px,calc((100cqh_-_var(--b)_-_24px)*1.293)))] focus-visible:outline-offset-[-2px] active:cursor-grabbing @min-[900px]/rack:[--b:64px] @min-[900px]/rack:[--c:120px] @min-[900px]/rack:[--w:min(420px,max(110px,calc((100cqh_-_var(--b)_-_24px)*1.293)))]"
       >
         {sleeves.map((i) => {
           const k = kits[i] as RackKit;
@@ -358,9 +356,9 @@ export default function Rack({ kits, strings, initial }: Props) {
         })}
       </section>
 
-      <nav aria-label={strings.years} className="relative mx-4 overflow-x-clip sm:mx-10">
+      <nav aria-label={strings.years} className="relative mx-4 flex-none overflow-x-clip sm:mx-10">
         <div
-          className="relative flex h-16 cursor-pointer touch-none border-b border-paper/30 select-none"
+          className="relative flex h-12 cursor-pointer touch-none border-b border-paper/30 select-none"
           onPointerDown={(e) => {
             if (e.button !== 0 || (e.target as HTMLElement).closest("button")) return;
             scrubbing.current = true;
@@ -403,23 +401,18 @@ export default function Rack({ kits, strings, initial }: Props) {
         </div>
       </nav>
 
-      <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-6 px-4 pt-7 sm:px-10 lg:pl-[max(2.5rem,calc(50%-316px))]">
-        <section className="max-w-[720px] flex-[1_1_420px]">
-          {kit.description && (
-            <>
-              <p
-                lang={kit.description.lang}
-                className="m-0 min-h-[7.5em] font-condensed text-xl leading-tight font-medium sm:text-2xl"
-              >
-                {kit.description.text}
-              </p>
-              <p className="mt-2.5 font-mono text-[11px] tracking-[0.14em] text-muted">{strings.descriptionBy}</p>
-            </>
-          )}
-        </section>
+      {/* PROD-13a: the description is cut to a fixed number of lines (one on short screens), so the layout does not move
+          between kits. It is only the opening of the quote: the record page shows it in full, attributed to Valve. */}
+      <div className="grid flex-none grid-cols-[1fr_auto] items-end gap-x-10 gap-y-2 px-4 pt-4 pb-3 sm:px-10">
+        <p
+          lang={kit.description?.lang}
+          className="col-span-2 m-0 line-clamp-2 h-[2lh] font-condensed text-xl leading-tight font-medium sm:line-clamp-3 sm:h-[3lh] sm:text-2xl lg:col-span-1 [@media(max-height:700px)]:line-clamp-1 [@media(max-height:700px)]:h-[1lh]"
+        >
+          {kit.description?.text}
+        </p>
         <a
           href={kit.href}
-          className="inline-flex min-h-11 items-center gap-2.5 border-2 border-paper px-[18px] font-condensed text-base font-extrabold tracking-wider uppercase hover:bg-paper hover:text-ink"
+          className="inline-flex min-h-11 items-center gap-2.5 border-2 border-paper px-[18px] font-condensed text-base font-extrabold tracking-wider whitespace-nowrap uppercase hover:bg-paper hover:text-ink col-start-2 lg:row-start-1"
         >
           {strings.open} <span aria-hidden="true">→</span>
         </a>
@@ -428,11 +421,21 @@ export default function Rack({ kits, strings, initial }: Props) {
   );
 }
 
-function Row({ label, first = false, children }: { label: string; first?: boolean; children: ReactNode }) {
+/** Sleeve width over SLEEVE_PX, read from the rendered sleeve (its size comes from CSS). */
+function sleeveScaleOf(stage: HTMLElement): number {
+  const sleeve = stage.firstElementChild as HTMLElement | null;
+  return sleeve ? sleeve.offsetWidth / SLEEVE_PX : 1;
+}
+
+function Row({ label, index, children }: { label: string; index: number; children: ReactNode }) {
+  // Two columns: the first row has no top rule. One column (lg): only the first item has none.
+  const rule = index === 0 ? "" : index === 1 ? "lg:border-t" : "border-t";
   return (
-    <div className={`flex items-baseline justify-between gap-3 py-[7px] ${first ? "" : "border-t border-ink/35"}`}>
-      <dt className="flex-none">{label}</dt>
-      <dd className="m-0 text-right">{children}</dd>
+    <div
+      className={`flex flex-col gap-0.5 border-ink/35 py-[7px] lg:flex-row lg:items-baseline lg:justify-between lg:gap-3 ${rule}`}
+    >
+      <dt className="flex-none opacity-75 lg:opacity-100">{label}</dt>
+      <dd className="m-0 lg:text-right">{children}</dd>
     </div>
   );
 }

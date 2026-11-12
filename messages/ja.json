@@ -6,6 +6,7 @@
   "nav.artists": "アーティスト",
   "lang.label": "言語",
   "footer.disclaimer": "非公式のファンプロジェクトです。Valve とは無関係で、Valve の承認も受けていません。Counter-Strike および全ミュージックキットの名称、アートワーク、音源は Valve と各アーティストに帰属します。",
+  "footer.short": "非公式のファンプロジェクトです。Valve とは無関係で、Valve の承認も受けていません。",
   "footer.source": "ソースコード",
   "footer.licences": "ライセンス",
   "footer.credits": "ゲームデータ：SteamDB GameTracking。翻訳：ByMykel の file tracker。アーティストのリンク：MusicBrainz。",
