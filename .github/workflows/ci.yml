@@ -1,5 +1,6 @@
-# Checks for every pull request and every push to main (spec: D-003).
-# Deploy workflows are added once the Cloudflare account and token exist.
+# Checks for every pull request and every push to main, then deploys (spec: D-003, D-019).
+# Pull requests get a preview on workers.dev; pushes to main go to production after every check passes.
+# Previews of closed pull requests are deleted by preview-cleanup.yml.
 name: CI
 
 on:
@@ -89,3 +90,65 @@ jobs:
           name: dist
           path: dist/
       - run: pnpm lighthouse
+
+  preview:
+    name: Preview
+    needs: checks
+    # Pull requests from forks get no secrets.
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    environment: preview
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist/
+      - id: preview
+        run: |
+          set -o pipefail
+          pnpm exec wrangler preview --name "pr-$PR" | tee wrangler.log
+          echo "url=$(sed -n 's/^Preview URL: //p' wrangler.log)" >> "$GITHUB_OUTPUT"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+      - if: ${{ steps.preview.outputs.url != '' }}
+        run: |
+          gh pr comment "$PR" --edit-last --create-if-none --body "Preview: $URL"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          URL: ${{ steps.preview.outputs.url }}
+
+  deploy:
+    name: Deploy to production
+    needs: [checks, e2e, lighthouse]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://musickitarchive.com
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist/
+      - run: pnpm exec wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

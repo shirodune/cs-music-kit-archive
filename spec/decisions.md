@@ -20,7 +20,9 @@ The deploy tool part is replaced by D-019. Hosting on Workers static assets stil
 ## D-003 Deploy from GitHub Actions
 
 Pull requests run all checks and deploy a named preview. Pushes to `main` deploy to production only after the checks pass. The commands are in D-019.
-- The Cloudflare API token has only the "Workers Scripts: Edit" permission and is stored in the GitHub `production` environment.
+- The Cloudflare API token has only the "Workers Scripts: Edit" permission. The same token is stored in two GitHub environments: `production` (deployments from `main` only) and `preview`. Pull requests from forks get no secrets and no preview.
+- Each pull request gets the preview `pr-<number>` on workers.dev, and a comment with its URL. Cloudflare serves previews with `X-Robots-Tag: noindex`. Closing the pull request deletes the preview (`preview-cleanup.yml`).
+- Adding or changing a custom domain needs the "Workers Routes: Edit" permission on the zone, which the token does not have. A maintainer does that once with `wrangler deploy` from their own machine (done 2026-11-12). After that, deploys that leave the domain unchanged need only the token.
 - Considered: Cloudflare Workers Builds (no secret in GitHub, but deploys do not wait for GitHub checks, and Node 26 was not confirmed in its build image).
 
 ## D-004 Toolchain
@@ -108,6 +110,8 @@ They are written later, from sourced facts, never copied from wikis (Wikipedia a
 Decided 2026-11-11 while building the skeleton.
 
 - `wrangler.jsonc` points `assets.directory` at `./dist`, with `html_handling: "auto-trailing-slash"` and `not_found_handling: "404-page"`. There is no Worker code (`main`).
+- Production is served only at the custom domain musickitarchive.com (`routes`, `workers_dev: false`). `preview_urls: true` turns on the workers.dev URLs that previews use; `wrangler deploy` applies it, not `wrangler preview`.
+- `public/_headers` caches the hashed files under `/_astro/` for a year. Everything else keeps Cloudflare's default (revalidate with the ETag).
 - Build with `pnpm build` (Astro), then deploy with `wrangler deploy`. Pull request previews use `wrangler preview --name pr-<number>` and `wrangler preview delete`.
 - `cf` is still used for account and resource commands (R2 buckets, DNS) from a maintainer's machine. It is not a project dependency.
 - Why: `cf deploy` detects Astro, runs `astro build` itself and then expects the Build Output that only the `@astrojs/cloudflare` adapter writes. That adapter is for on-demand rendering, which this site does not use. Cloudflare's own guide for fully prerendered Astro sites uses a Wrangler configuration and `wrangler deploy`. The Cloudflare plugin's rule ("a project with a Wrangler configuration keeps Wrangler for deploy; `cf` resource commands are fine alongside it") matches this.

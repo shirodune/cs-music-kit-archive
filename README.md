@@ -6,7 +6,7 @@ Not affiliated with or endorsed by Valve. See [NOTICE](NOTICE).
 
 ## Status
 
-In development. The records rack, record pages, artist pages and the sitemap are built in all 28 languages. Audio is not published yet. The specification is in [`spec/`](spec/README.md).
+Live at <https://musickitarchive.com>, still in development. The records rack, record pages, artist pages and the sitemap are built in all 28 languages. Audio is not published yet. The specification is in [`spec/`](spec/README.md).
 
 ## Development
 
@@ -25,6 +25,8 @@ pnpm verify       # lint, types, i18n check, unit tests, build, end-to-end tests
 | `pnpm i18n:check` | Checks `messages/` against English (plural forms, placeholders, unknown keys) |
 | `pnpm test` / `pnpm test:e2e` | Unit tests (Vitest) / end-to-end tests (Playwright, needs `pnpm build` first) |
 | `pnpm lighthouse` | Lighthouse mobile performance check (PROD-36, needs `pnpm build` first) |
+
+Deploys run from GitHub Actions (spec D-003): every pull request gets a preview on workers.dev, and every push to `main` deploys to production after all checks pass.
 
 ## Licence
 

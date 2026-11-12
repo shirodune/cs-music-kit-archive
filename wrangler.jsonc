@@ -1,8 +1,10 @@
-// Cloudflare Workers static assets (spec: D-002). The site is fully prerendered by Astro into dist/,
+// Cloudflare Workers static assets (spec: D-002, D-019). The site is fully prerendered by Astro into dist/,
 // so there is no Worker code (`main`). This follows Cloudflare's guide for static Astro sites.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "cs-music-kit-archive",
+  // Not a secret. Lets CI deploy with a token that has no account read permission.
+  "account_id": "19524d21b66b788897a77e139f8d261e",
   "compatibility_date": "2026-11-11",
   "assets": {
     "directory": "./dist",
@@ -10,5 +12,11 @@
     "html_handling": "auto-trailing-slash",
     // Unknown paths get the nearest `404.html` with status 404.
     "not_found_handling": "404-page"
-  }
+  },
+  // Production is served only at the custom domain (D-016). Pull request previews stay on workers.dev,
+  // where Cloudflare adds `X-Robots-Tag: noindex` (D-003).
+  "routes": [{ "pattern": "musickitarchive.com", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": true,
+  "previews": {}
 }
