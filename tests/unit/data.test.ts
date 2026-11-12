@@ -22,6 +22,7 @@ describe("kit set", () => {
     expect(byIndex.has(2)).toBe(false);
     expect(byIndex.get(70)?.alternateTracks?.length).toBeGreaterThan(0);
     expect(kits.filter((k) => k.alternateTracks).map((k) => k.defIndex)).toEqual([70]);
+    expect(byIndex.get(70)?.alternateInternalName).toBe("valve_02");
   });
 
   test("DATA-8 StatTrak is an edition, not a separate kit", () => {

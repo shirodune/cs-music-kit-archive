@@ -73,7 +73,7 @@ Every field has exactly one owner. A field is either generated from an upstream 
 | `take` | Upstream | 1-based, for cues with several files |
 | `file` | Upstream | File name without extension, for example `startround_02` |
 | `durationSec` | Upstream | `vsnd_duration` from the sound event, else measured from the extracted audio |
-| `audio` | Derived | `{ path, bytes, sha256 }` from `data/generated/audio-manifest.json`, once audio is extracted |
+| `audio` | Derived | `{ path, bytes, sha256 }` from `data/upstream/audio-manifest.json`, once audio is extracted |
 
 - DATA-11 When one sound event lists several takes with a single `vsnd_duration`, that duration applies to each take until the extracted audio gives exact values.
 - DATA-12 Every kit must have a `mainmenu` and at least one `roundmvpanthem` track.
@@ -152,10 +152,11 @@ Artists live in `data/curated/artists.json`. Credits live in `data/curated/credi
 
 ## Audio
 
-- DATA-20 Audio files are extracted from the game files with Source2Viewer-CLI and uploaded to the R2 bucket that serves `audio.musickitarchive.com`, at `/{internalName}/{file}.mp3`.
+- DATA-20 Audio files are extracted from the game files with Source2Viewer-CLI and uploaded to the R2 bucket `cs-music-kit-audio`, which serves `audio.musickitarchive.com`, at `/{internalName}/{file}.mp3`. A maintainer runs `pnpm audio:extract` and `pnpm audio:upload` on a machine with CS2 installed through Steam (the README has the steps); the files never pass through git or CI.
 - DATA-20a Files the game stores as MP3 are published exactly as stored, without re-encoding. Today that is every cue except most `startofmatch` and `endofmatch` files.
-- DATA-20b Files the game stores as uncompressed PCM (most `startofmatch` and `endofmatch` files, 44.1 kHz, 16-bit, stereo) are encoded once with ffmpeg to MP3 at the bitrate of the same kit's `mainmenu` track.
-- DATA-21 `data/generated/audio-manifest.json` lists every uploaded file with bytes, SHA-256 and measured duration. The site links only to files in the manifest.
+- DATA-20b Files the game stores as uncompressed PCM (most `startofmatch` and `endofmatch` files, 44.1 kHz, 16-bit, stereo) are encoded once with ffmpeg to MP3 at the standard bitrate nearest to the same kit's `mainmenu` track, without metadata.
+- DATA-21 `data/upstream/audio-manifest.json` lists every uploaded file by key with bytes, SHA-256, measured duration and how the game stores it (`mp3` or `wav`). `pnpm audio:extract` writes it; `pnpm audio:upload` uploads only new or changed files, then the manifest as `/manifest.json`, so the manifest never names a file that is missing. The site links only to files in the manifest.
+- DATA-21a Uploaded files are served with `Cache-Control: public, max-age=604800`: the paths are stable, but a game patch can change a file.
 
 ## Content
 

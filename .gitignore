@@ -12,8 +12,8 @@ dist/
 .dev.vars*
 
 # Game files and audio never go into git (spec: DATA-2, D-007)
-game-files/
-audio/
+/game-files/
+/audio/
 *.vpk
 *.vsnd_c
 *.vtex_c

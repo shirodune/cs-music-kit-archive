@@ -1,6 +1,7 @@
 // Deterministic JSON output, so that rebuilding the same input gives byte-identical files (DATA-1).
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
 function sortKeys(value: unknown): unknown {
   if (Array.isArray(value)) return value.map(sortKeys);
@@ -19,7 +20,7 @@ export function stringify(value: unknown): string {
 }
 
 export async function writeJson(path: string | URL, value: unknown): Promise<void> {
-  await mkdir(dirname(path instanceof URL ? path.pathname : path), { recursive: true });
+  await mkdir(dirname(path instanceof URL ? fileURLToPath(path) : path), { recursive: true });
   await writeFile(path, stringify(value));
 }
 

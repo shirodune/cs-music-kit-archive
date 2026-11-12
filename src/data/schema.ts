@@ -96,6 +96,8 @@ export const kitSchema = z.strictObject({
   }),
   tracks: z.array(trackSchema).min(1),
   alternateTracks: z.array(trackSchema).nullable(),
+  /** Game folder of the alternate set's files, `sounds/music/{name}/` (DATA-6, DATA-20). */
+  alternateInternalName: z.string().min(1).nullable(),
 });
 export type Kit = z.infer<typeof kitSchema>;
 

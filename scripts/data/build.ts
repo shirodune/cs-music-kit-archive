@@ -225,6 +225,7 @@ async function main(): Promise<void> {
         cover: { source: "icon", path: `/covers/${d.name}.png`, width: cover.width, height: cover.height },
         tracks,
         alternateTracks: alternateName ? buildTracks(alternateName, soundEvents[alternateName]) : null,
+        alternateInternalName: alternateName ?? null,
       }),
     );
   }

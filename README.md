@@ -26,6 +26,23 @@ pnpm verify       # lint, types, i18n check, unit tests, build, end-to-end tests
 | `pnpm test` / `pnpm test:e2e` | Unit tests (Vitest) / end-to-end tests (Playwright, needs `pnpm build` first) |
 | `pnpm lighthouse` | Lighthouse mobile performance check (PROD-36, needs `pnpm build` first) |
 
+## Audio (maintainers)
+
+The audio comes from the game files on a maintainer's machine and goes straight to Cloudflare R2. It never passes through git or CI (spec DATA-20, DATA-21). On Windows:
+
+1. Install CS2 through Steam and let it update.
+2. Install the tools: Git, Node 26, pnpm (`winget install pnpm.pnpm`) and ffmpeg (`winget install Gyan.FFmpeg`, which also puts `ffprobe` on the PATH). Download `cli-windows-x64.zip` from the [ValveResourceFormat releases](https://github.com/ValveResourceFormat/ValveResourceFormat/releases) and unzip it, for example to `C:\tools\s2v\`.
+3. Run, in a clone of this repository, with about 2 GB free:
+
+   ```powershell
+   pnpm install
+   pnpm exec wrangler login
+   pnpm audio:extract --s2v C:\tools\s2v\Source2Viewer-CLI.exe
+   pnpm audio:upload
+   ```
+
+`audio:extract` finds CS2 through Steam, writes the files to `audio/` (ignored by git) and the manifest to `data/upstream/audio-manifest.json`. `audio:upload` uploads only new or changed files, then the manifest. Run both again after a game update that adds kits.
+
 Deploys run from GitHub Actions (spec D-003): every pull request gets a preview on workers.dev, and every push to `main` deploys to production after all checks pass.
 
 ## Licence

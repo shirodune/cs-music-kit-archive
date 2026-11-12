@@ -84,7 +84,7 @@ No ads, sponsors or payments. The footer carries a disclaimer and a link to the 
 
 ## D-016 Domain, repository, analytics
 
-- Domain: musickitarchive.com, registered at Cloudflare Registrar. Audio at `audio.musickitarchive.com`.
+- Domain: musickitarchive.com, registered at Cloudflare Registrar on 2026-11-12. `www` redirects to it with a 301 (a Cloudflare redirect rule). Audio at `audio.musickitarchive.com`, the custom domain of the R2 bucket `cs-music-kit-audio`.
 - Repository: <https://github.com/shirodune/cs-music-kit-archive> (public).
 - Analytics: Cloudflare Web Analytics.
 
