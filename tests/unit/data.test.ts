@@ -99,8 +99,8 @@ describe("releases", () => {
     expect(byIndex.get(41)?.releaseDate).toBe("2019-12-16");
   });
 
-  test("D-009 the default kits are dated 2014-10-10 (CS:GO) and 2023-09-27 (CS2)", () => {
-    expect(byIndex.get(70)?.releaseDate).toBe("2014-10-10");
+  test("D-009 the default kits are dated 2012-08-21 (CS:GO) and 2023-09-27 (CS2)", () => {
+    expect(byIndex.get(70)?.releaseDate).toBe("2012-08-21");
     expect(byIndex.get(1)?.releaseDate).toBe("2023-09-27");
   });
 });

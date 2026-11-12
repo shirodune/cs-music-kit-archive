@@ -1,5 +1,195 @@
 [
   {
+    "alternateTracks": [
+      {
+        "cue": "mainmenu",
+        "durationSec": null,
+        "file": "mainmenu",
+        "take": null
+      },
+      {
+        "cue": "chooseteam",
+        "durationSec": null,
+        "file": "chooseteam",
+        "take": null
+      },
+      {
+        "cue": "startofmatch",
+        "durationSec": null,
+        "file": "startofmatch",
+        "take": null
+      },
+      {
+        "cue": "startround",
+        "durationSec": null,
+        "file": "startround_01",
+        "take": 1
+      },
+      {
+        "cue": "startaction",
+        "durationSec": null,
+        "file": "startaction_01",
+        "take": 1
+      },
+      {
+        "cue": "bombplanted",
+        "durationSec": null,
+        "file": "bombplanted",
+        "take": null
+      },
+      {
+        "cue": "bombtenseccount",
+        "durationSec": null,
+        "file": "bombtenseccount",
+        "take": null
+      },
+      {
+        "cue": "roundtenseccount",
+        "durationSec": null,
+        "file": "roundtenseccount",
+        "take": null
+      },
+      {
+        "cue": "wonround",
+        "durationSec": null,
+        "file": "wonround",
+        "take": null
+      },
+      {
+        "cue": "lostround",
+        "durationSec": null,
+        "file": "lostround",
+        "take": null
+      },
+      {
+        "cue": "deathcam",
+        "durationSec": null,
+        "file": "deathcam",
+        "take": null
+      },
+      {
+        "cue": "roundmvpanthem",
+        "durationSec": null,
+        "file": "roundmvpanthem_01",
+        "take": 1
+      },
+      {
+        "cue": "endofmatch",
+        "durationSec": null,
+        "file": "endofmatch",
+        "take": null
+      }
+    ],
+    "artists": [
+      {
+        "artist": "valve",
+        "role": "main"
+      }
+    ],
+    "cover": {
+      "source": "icon",
+      "url": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuI3qb81NKpNa66wu1Qx-mm8Kx-CYC6aD2bv0-IfPFWGHIkegh5LY4GXzlxU905W7UwsHpLywWgep6oQ"
+    },
+    "defIndex": 70,
+    "edition": "standardOnly",
+    "internalName": "valve_01",
+    "releaseDate": "2012-08-21",
+    "releaseId": "2012-08-21-counter-strike-global-offensive",
+    "slug": "cs-go",
+    "tracks": [
+      {
+        "cue": "mainmenu",
+        "durationSec": null,
+        "file": "mainmenu",
+        "take": null
+      },
+      {
+        "cue": "chooseteam",
+        "durationSec": null,
+        "file": "chooseteam",
+        "take": null
+      },
+      {
+        "cue": "startofmatch",
+        "durationSec": null,
+        "file": "startofmatch",
+        "take": null
+      },
+      {
+        "cue": "startround",
+        "durationSec": null,
+        "file": "startround_01",
+        "take": 1
+      },
+      {
+        "cue": "startround",
+        "durationSec": null,
+        "file": "startround_02",
+        "take": 2
+      },
+      {
+        "cue": "startround",
+        "durationSec": null,
+        "file": "startround_03",
+        "take": 3
+      },
+      {
+        "cue": "startaction",
+        "durationSec": null,
+        "file": "startaction_01",
+        "take": 1
+      },
+      {
+        "cue": "bombplanted",
+        "durationSec": null,
+        "file": "bombplanted",
+        "take": null
+      },
+      {
+        "cue": "bombtenseccount",
+        "durationSec": null,
+        "file": "bombtenseccount",
+        "take": null
+      },
+      {
+        "cue": "roundtenseccount",
+        "durationSec": null,
+        "file": "roundtenseccount",
+        "take": null
+      },
+      {
+        "cue": "wonround",
+        "durationSec": null,
+        "file": "wonround",
+        "take": null
+      },
+      {
+        "cue": "lostround",
+        "durationSec": null,
+        "file": "lostround",
+        "take": null
+      },
+      {
+        "cue": "deathcam",
+        "durationSec": null,
+        "file": "deathcam",
+        "take": null
+      },
+      {
+        "cue": "roundmvpanthem",
+        "durationSec": null,
+        "file": "roundmvpanthem_01",
+        "take": 1
+      },
+      {
+        "cue": "endofmatch",
+        "durationSec": null,
+        "file": "endofmatch",
+        "take": null
+      }
+    ]
+  },
+  {
     "alternateTracks": null,
     "artists": [
       {
@@ -975,196 +1165,6 @@
       {
         "cue": "endofmatch",
         "durationSec": 43.639683,
-        "file": "endofmatch",
-        "take": null
-      }
-    ]
-  },
-  {
-    "alternateTracks": [
-      {
-        "cue": "mainmenu",
-        "durationSec": null,
-        "file": "mainmenu",
-        "take": null
-      },
-      {
-        "cue": "chooseteam",
-        "durationSec": null,
-        "file": "chooseteam",
-        "take": null
-      },
-      {
-        "cue": "startofmatch",
-        "durationSec": null,
-        "file": "startofmatch",
-        "take": null
-      },
-      {
-        "cue": "startround",
-        "durationSec": null,
-        "file": "startround_01",
-        "take": 1
-      },
-      {
-        "cue": "startaction",
-        "durationSec": null,
-        "file": "startaction_01",
-        "take": 1
-      },
-      {
-        "cue": "bombplanted",
-        "durationSec": null,
-        "file": "bombplanted",
-        "take": null
-      },
-      {
-        "cue": "bombtenseccount",
-        "durationSec": null,
-        "file": "bombtenseccount",
-        "take": null
-      },
-      {
-        "cue": "roundtenseccount",
-        "durationSec": null,
-        "file": "roundtenseccount",
-        "take": null
-      },
-      {
-        "cue": "wonround",
-        "durationSec": null,
-        "file": "wonround",
-        "take": null
-      },
-      {
-        "cue": "lostround",
-        "durationSec": null,
-        "file": "lostround",
-        "take": null
-      },
-      {
-        "cue": "deathcam",
-        "durationSec": null,
-        "file": "deathcam",
-        "take": null
-      },
-      {
-        "cue": "roundmvpanthem",
-        "durationSec": null,
-        "file": "roundmvpanthem_01",
-        "take": 1
-      },
-      {
-        "cue": "endofmatch",
-        "durationSec": null,
-        "file": "endofmatch",
-        "take": null
-      }
-    ],
-    "artists": [
-      {
-        "artist": "valve",
-        "role": "main"
-      }
-    ],
-    "cover": {
-      "source": "icon",
-      "url": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuI3qb81NKpNa66wu1Qx-mm8Kx-CYC6aD2bv0-IfPFWGHIkegh5LY4GXzlxU905W7UwsHpLywWgep6oQ"
-    },
-    "defIndex": 70,
-    "edition": "standardOnly",
-    "internalName": "valve_01",
-    "releaseDate": "2014-10-10",
-    "releaseId": "2014-10-10-music-kits",
-    "slug": "cs-go",
-    "tracks": [
-      {
-        "cue": "mainmenu",
-        "durationSec": null,
-        "file": "mainmenu",
-        "take": null
-      },
-      {
-        "cue": "chooseteam",
-        "durationSec": null,
-        "file": "chooseteam",
-        "take": null
-      },
-      {
-        "cue": "startofmatch",
-        "durationSec": null,
-        "file": "startofmatch",
-        "take": null
-      },
-      {
-        "cue": "startround",
-        "durationSec": null,
-        "file": "startround_01",
-        "take": 1
-      },
-      {
-        "cue": "startround",
-        "durationSec": null,
-        "file": "startround_02",
-        "take": 2
-      },
-      {
-        "cue": "startround",
-        "durationSec": null,
-        "file": "startround_03",
-        "take": 3
-      },
-      {
-        "cue": "startaction",
-        "durationSec": null,
-        "file": "startaction_01",
-        "take": 1
-      },
-      {
-        "cue": "bombplanted",
-        "durationSec": null,
-        "file": "bombplanted",
-        "take": null
-      },
-      {
-        "cue": "bombtenseccount",
-        "durationSec": null,
-        "file": "bombtenseccount",
-        "take": null
-      },
-      {
-        "cue": "roundtenseccount",
-        "durationSec": null,
-        "file": "roundtenseccount",
-        "take": null
-      },
-      {
-        "cue": "wonround",
-        "durationSec": null,
-        "file": "wonround",
-        "take": null
-      },
-      {
-        "cue": "lostround",
-        "durationSec": null,
-        "file": "lostround",
-        "take": null
-      },
-      {
-        "cue": "deathcam",
-        "durationSec": null,
-        "file": "deathcam",
-        "take": null
-      },
-      {
-        "cue": "roundmvpanthem",
-        "durationSec": null,
-        "file": "roundmvpanthem_01",
-        "take": 1
-      },
-      {
-        "cue": "endofmatch",
-        "durationSec": null,
         "file": "endofmatch",
         "take": null
       }
