@@ -1,9 +1,11 @@
 ---
-// Records page (spec: PROD-7 to PROD-13). Until the rack is built it lists every kit in rack order.
+// Records page: the rack (spec: PROD-7 to PROD-13).
 
-import KitCard from "../../components/KitCard.astro";
-import { kits, kitTextRequired } from "../../data/site.ts";
-import { LOCALE_SEGMENTS, type LocaleSegment } from "../../i18n/locales.ts";
+import { yearGroups } from "../../components/rack/geometry.ts";
+import Rack, { type RackKit } from "../../components/rack/Rack.tsx";
+import { getArtist, kits, kitText, kitTextRequired, releaseName } from "../../data/site.ts";
+import { catalogueNumber, formatDate } from "../../i18n/format.ts";
+import { getLocale, LOCALE_SEGMENTS, type LocaleSegment } from "../../i18n/locales.ts";
 import { createT } from "../../i18n/t.ts";
 import Base from "../../layouts/Base.astro";
 
@@ -13,26 +15,68 @@ export function getStaticPaths() {
 
 const locale = Astro.params.locale as LocaleSegment;
 const t = createT(locale);
+const { tag } = getLocale(locale);
+
+const rackKits: RackKit[] = kits.map((kit) => {
+  const title = kitTextRequired(locale, kit.defIndex, "title");
+  const credit = kitTextRequired(locale, kit.defIndex, "credit");
+  const year = kit.releaseDate.slice(0, 4);
+  const only = kit.artists.length === 1 ? kit.artists[0] : undefined;
+  return {
+    slug: kit.slug,
+    href: `/${locale}/kits/${kit.slug}/`,
+    year,
+    title,
+    credit,
+    artistHref: only ? `/${locale}/artists/${getArtist(only.artist).id}/?from=${kit.slug}` : null,
+    date: formatDate(tag, kit.releaseDate),
+    batch: releaseName(locale, kit.releaseId),
+    catalogue: catalogueNumber(kit.defIndex),
+    edition: t(`kit.edition.${kit.edition}`),
+    description: kitText(locale, kit.defIndex, "description"),
+    cover: kit.cover,
+    openLabel: t("rack.openLabel", { title: title.text, credit: credit.text, year }),
+    goToLabel: t("rack.goTo", { title: title.text }),
+  };
+});
+
+const yearLabels = Object.fromEntries(
+  yearGroups(rackKits.map((k) => k.year)).map((g) => [g.year, t("rack.yearLabel", { year: g.year, count: g.count })]),
+);
+
+const strings = {
+  region: t("rack.region"),
+  years: t("rack.years"),
+  card: t("rack.card"),
+  artist: t("kit.artist"),
+  released: t("kit.released"),
+  catalogue: t("kit.catalogue"),
+  edition: t("kit.edition"),
+  descriptionBy: t("kit.descriptionBy"),
+  open: t("rack.open"),
+  yearLabels,
+};
 ---
 
 <Base locale={locale}>
-  <section class="mx-auto max-w-[1360px] px-4 pt-16 sm:px-10">
-    <h1 class="font-condensed text-6xl font-extrabold uppercase leading-none sm:text-8xl">{t("records.title")}</h1>
-    <p class="mt-6 text-body">{t("records.placeholder")}</p>
-    <h2 class="mt-16 font-stencil text-[22px] tracking-wider text-signal">{t("records.list")}</h2>
-    <ol class="mt-6 grid list-none grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-x-6 gap-y-8 p-0">
-      {
-        kits.map((kit) => (
-          <li class="min-w-0">
-            <KitCard
-              locale={locale}
-              kit={kit}
-              tag={kit.releaseDate.slice(0, 4)}
-              sub={kitTextRequired(locale, kit.defIndex, "credit")}
-            />
-          </li>
-        ))
-      }
-    </ol>
-  </section>
+  <h1 class="sr-only">{t("records.title")}</h1>
+  <!-- The newest kit is selected until the URL hash names another (PROD-12). -->
+  <Rack client:load kits={rackKits} strings={strings} initial={rackKits.length - 1} />
+  <noscript>
+    <section class="mx-auto max-w-[1360px] px-4 pt-16 sm:px-10">
+      <h2 class="font-stencil text-[22px] tracking-wider text-signal uppercase">{t("records.list")}</h2>
+      <ol class="mt-6 columns-[16rem] font-mono text-sm leading-relaxed">
+        {
+          rackKits.map((k) => (
+            <li>
+              <a href={k.href} lang={k.title.lang} class="underline underline-offset-4">
+                {k.title.text}
+              </a>{" "}
+              <span class="text-muted">· {k.year}</span>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+  </noscript>
 </Base>

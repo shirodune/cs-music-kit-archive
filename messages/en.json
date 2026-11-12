@@ -11,7 +11,6 @@
   "footer.credits": "Game data via SteamDB GameTracking. Translations via ByMykel's file tracker. Artist links via MusicBrainz.",
   "root.title": "Choose your language",
   "records.title": "Records",
-  "records.placeholder": "The rack is being built.",
   "artists.title": "Artists",
   "artist.kitCount": {
     "one": "{count} kit",
@@ -20,7 +19,6 @@
   "notFound.title": "Page not found",
   "notFound.body": "There is no page at this address.",
   "notFound.home": "Back to the records",
-  "records.list": "All records",
   "kit.meta": "{title} by {credit}, a Counter-Strike music kit released on {date}. Full tracklist and official description.",
   "kit.back": "← All records",
   "kit.artist": "Artist",
@@ -87,5 +85,16 @@
     "one": "{count} year later",
     "other": "{count} years later"
   },
-  "artist.open": "{name}: {titles}"
+  "artist.open": "{name}: {titles}",
+  "rack.region": "Records rack, in order of release. Left and Right arrow keys browse, Page Up and Page Down change year, Enter opens the record.",
+  "rack.years": "Years",
+  "rack.card": "Record label",
+  "rack.open": "Open the record",
+  "rack.openLabel": "{title} by {credit}, {year}. Open the record page.",
+  "rack.goTo": "Go to {title}",
+  "rack.yearLabel": {
+    "one": "{year}, {count} kit",
+    "other": "{year}, {count} kits"
+  },
+  "records.list": "All records"
 }

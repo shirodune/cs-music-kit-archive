@@ -26,3 +26,11 @@ export function listParts<T>(tag: string, items: T[], label: (item: T) => string
     part.type === "element" ? { item: items[index++] as T, text: part.value } : { item: undefined, text: part.value },
   );
 }
+
+const WIDE = /[\p{sc=Han}\p{sc=Hangul}\p{sc=Hiragana}\p{sc=Katakana}]/u;
+
+/** Rough display width of a title: wide characters (CJK, Hangul, kana) count double. */
+export function displayWidth(text: string): { width: number; wide: boolean } {
+  const wide = [...text].filter((c) => WIDE.test(c)).length;
+  return { width: [...text].length + wide, wide: wide > 0 };
+}
