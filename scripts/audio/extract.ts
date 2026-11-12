@@ -1,6 +1,6 @@
 // pnpm audio:extract — run on a maintainer's machine with CS2 installed through Steam (spec: DATA-20 to DATA-21).
 // 1. Source2Viewer-CLI decompiles every file under sounds/music/ in the game's VPK into audio/raw/.
-// 2. Files the game stores as MP3 are copied unchanged; WAV (PCM) files are encoded once to MP3 with ffmpeg
+// 2. Files the game stores as MP3 are hard-linked (or copied) unchanged; WAV (PCM) files are encoded once to MP3 with ffmpeg
 //    at the bitrate of the same kit's mainmenu track. Results go to audio/out/{internalName}/{file}.mp3.
 // 3. Writes data/upstream/audio-manifest.json and audio/upload.json (the files that are new or changed).
 // Needs Source2Viewer-CLI, ffmpeg and ffprobe. audio/ is in .gitignore: audio never goes into git (DATA-2).
@@ -8,7 +8,7 @@
 
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { copyFile, mkdir, readFile, stat, writeFile } from "node:fs/promises";
+import { copyFile, link, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
@@ -76,7 +76,9 @@ async function main(): Promise<void> {
     let stored: "mp3" | "wav";
     if (await exists(mp3)) {
       stored = "mp3";
-      await copyFile(mp3, target);
+      // A hard link takes no extra disk space; copy where links are not possible (another drive).
+      await rm(target, { force: true });
+      await link(mp3, target).catch(() => copyFile(mp3, target));
     } else if (await exists(wav)) {
       stored = "wav";
       const mainmenu = join(folder, "mainmenu.mp3");
