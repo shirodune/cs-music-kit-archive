@@ -19,8 +19,8 @@ release-note text belong to Valve Corporation and the respective artists.
     belongs to Valve).
   - data/curated/releases.json quotes one sentence of Valve's release notes
     per release, with a link to the source.
-  - public/covers/ holds the music kit icons from the Steam CDN, converted to
-    WebP. Other cover art and the audio are not stored in this repository.
+  - public/covers/ holds the music kit icons from the Steam CDN, unchanged.
+    Other cover art and the audio are not stored in this repository.
 
 ------------------------------------------------------------------------------
 ByMykel

@@ -37,9 +37,9 @@ describe("kit set", () => {
 });
 
 describe("kits", () => {
-  test("DATA-18 every kit has a stored WebP cover with its size", () => {
+  test("DATA-18 every kit has a stored cover with its size", () => {
     for (const kit of kits) {
-      expect(kit.cover.path, kit.slug).toBe(`/covers/${kit.internalName}.webp`);
+      expect(kit.cover.path, kit.slug).toBe(`/covers/${kit.internalName}.png`);
       expect(existsSync(new URL(`../../public${kit.cover.path}`, import.meta.url)), kit.slug).toBe(true);
     }
   });

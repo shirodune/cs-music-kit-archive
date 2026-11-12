@@ -87,10 +87,10 @@ export const kitSchema = z.strictObject({
   releaseId: slug,
   releaseDate: isoDate,
   artists: z.array(z.strictObject({ artist: slug, role: z.enum(["main", "with"]) })).min(1),
-  /** Site path of the stored WebP cover and its size in pixels (DATA-18). */
+  /** Site path of the stored cover and its size in pixels (DATA-18). */
   cover: z.strictObject({
     source: z.enum(["icon", "texture"]),
-    path: z.string().regex(/^\/covers\/[a-z0-9_]+\.webp$/),
+    path: z.string().regex(/^\/covers\/[a-z0-9_]+\.png$/),
     width: z.number().int().positive(),
     height: z.number().int().positive(),
   }),

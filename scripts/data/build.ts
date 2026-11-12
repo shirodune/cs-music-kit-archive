@@ -222,7 +222,7 @@ async function main(): Promise<void> {
         releaseId: release.id,
         releaseDate: release.date,
         artists: credit.artists,
-        cover: { source: "icon", path: `/covers/${d.name}.webp`, width: cover.width, height: cover.height },
+        cover: { source: "icon", path: `/covers/${d.name}.png`, width: cover.width, height: cover.height },
         tracks,
         alternateTracks: alternateName ? buildTracks(alternateName, soundEvents[alternateName]) : null,
       }),

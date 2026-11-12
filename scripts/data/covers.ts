@@ -1,14 +1,14 @@
-// pnpm data:covers — download each kit's Steam CDN icon and store it as WebP (spec: DATA-18).
-// Writes public/covers/{internalName}.webp and data/upstream/covers.json (size and source URL).
+// pnpm data:covers — download each kit's Steam CDN icon and store the original PNG (spec: DATA-18).
+// Writes public/covers/{internalName}.png and data/upstream/covers.json (size and source URL).
 // Reads the snapshot written by `pnpm data:sync`; only covers whose source URL changed are fetched again.
 // Usage: node scripts/data/covers.ts
 
 import { mkdir, writeFile } from "node:fs/promises";
-import sharp from "sharp";
 import { readJson, writeJson } from "./json.ts";
 
 const UPSTREAM = new URL("../../data/upstream/", import.meta.url);
 const COVERS = new URL("../../public/covers/", import.meta.url);
+const PNG_SIGNATURE = "89504e470d0a1a0a";
 
 export interface CoverInfo {
   sourceUrl: string;
@@ -20,6 +20,12 @@ interface ItemsGame {
   music: Record<string, { name: string }>;
 }
 type Editions = Record<string, { image: string | null }>;
+
+/** Width and height from the PNG header (IHDR, the first chunk). */
+function pngSize(bytes: Buffer, url: string): { width: number; height: number } {
+  if (bytes.subarray(0, 8).toString("hex") !== PNG_SIGNATURE) throw new Error(`not a PNG: ${url}`);
+  return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
+}
 
 async function main(): Promise<void> {
   const itemsGame = await readJson<ItemsGame>(new URL("items-game.json", UPSTREAM));
@@ -40,10 +46,9 @@ async function main(): Promise<void> {
     }
     const response = await fetch(sourceUrl);
     if (!response.ok) throw new Error(`${response.status} ${sourceUrl}`);
-    const image = sharp(Buffer.from(await response.arrayBuffer()));
-    const { width, height } = await image.metadata();
-    await writeFile(new URL(`${name}.webp`, COVERS), await image.webp({ quality: 90, effort: 6 }).toBuffer());
-    covers[name] = { sourceUrl, width, height };
+    const bytes = Buffer.from(await response.arrayBuffer());
+    await writeFile(new URL(`${name}.png`, COVERS), bytes);
+    covers[name] = { sourceUrl, ...pngSize(bytes, sourceUrl) };
     fetched++;
   }
   await writeJson(indexUrl, covers);

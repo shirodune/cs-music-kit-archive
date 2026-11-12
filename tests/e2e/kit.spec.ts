@@ -12,7 +12,7 @@ test.describe("record page", () => {
     await expect(page.getByText("Nº 009")).toBeVisible();
     await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
       "content",
-      "https://musickitarchive.com/covers/austinwintory_01.webp",
+      "https://musickitarchive.com/covers/austinwintory_01.png",
     );
 
     const tracks = page.getByRole("region", { name: "Tracklist" }).getByRole("listitem");
