@@ -1,9 +1,10 @@
 import { rename, rm } from "node:fs/promises";
 import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import type { AstroIntegration } from "astro";
 import { defineConfig, fontProviders } from "astro/config";
-import { DEFAULT_LOCALE, LOCALE_SEGMENTS } from "./src/i18n/locales.ts";
+import { DEFAULT_LOCALE, LOCALE_SEGMENTS, LOCALES } from "./src/i18n/locales.ts";
 
 // Cloudflare serves the nearest `404.html` for unknown paths ("404-page" handling).
 // Astro writes `[locale]/404.astro` to `{locale}/404/index.html`; move it to `{locale}/404.html`
@@ -25,10 +26,30 @@ const localizedNotFound: AstroIntegration = {
 // The fallback faces for the other script groups are added in a later change.
 const latinSubsets: [string, ...string[]] = ["latin", "latin-ext", "vietnamese"];
 
+// PROD-30: every page in every locale, with the same alternates and `x-default` as its head.
+// The sitemap's own `i18n` option is not used: it rejects locale keys with digits, like `es-419`.
+// The root page only picks a locale (noindex), and not-found pages are left out.
+const site = "https://musickitarchive.com";
+const sitemapIntegration = sitemap({
+  filter: (page) => page !== `${site}/` && !/\/404\/?$/.test(page),
+  serialize: (item) => {
+    const rest = new URL(item.url).pathname.split("/").slice(2).join("/");
+    const url = (segment: string) => `${site}/${segment}/${rest}`;
+    item.links = [
+      ...LOCALES.map((l) => ({ lang: l.tag, url: url(l.segment) })),
+      { lang: "x-default", url: url(DEFAULT_LOCALE) },
+    ];
+    return item;
+  },
+  namespaces: { news: false, image: false, video: false },
+  // Each URL carries 29 alternates, so a file holds 1,000 URLs (about 3 MB) instead of the default 45,000.
+  entryLimit: 1000,
+});
+
 export default defineConfig({
-  site: "https://musickitarchive.com",
+  site,
   trailingSlash: "always",
-  integrations: [react(), localizedNotFound],
+  integrations: [react(), localizedNotFound, sitemapIntegration],
   i18n: {
     locales: [...LOCALE_SEGMENTS],
     defaultLocale: DEFAULT_LOCALE,

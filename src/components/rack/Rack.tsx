@@ -11,7 +11,16 @@ import {
   useRef,
   useState,
 } from "react";
-import { keyTarget, kitToStrip, sleeveOffset, stripToKit, yearGroups, yearOf } from "./geometry.ts";
+import {
+  keyTarget,
+  kitToStrip,
+  rackScale,
+  SLEEVE_PX,
+  sleeveOffset,
+  stripToKit,
+  yearGroups,
+  yearOf,
+} from "./geometry.ts";
 
 interface Text {
   text: string;
@@ -75,7 +84,6 @@ export default function Rack({ kits, strings, initial }: Props) {
   // `target` is where the rack is heading; `position` follows it with easing (PROD-13: at once with reduced motion).
   const [target, setTarget] = useState(initial);
   const [position, setPosition] = useState(initial);
-  const [width, setWidth] = useState(1200);
   const stage = useRef<HTMLElement>(null);
   const targetRef = useRef(initial);
   const positionRef = useRef(initial);
@@ -83,9 +91,6 @@ export default function Rack({ kits, strings, initial }: Props) {
   const suppressClick = useRef(false);
   const snapTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const scrubbing = useRef(false);
-
-  const small = width < 900;
-  const scale = small ? Math.max(0.5, Math.min(0.8, width / 760)) : 1;
 
   const go = useCallback(
     (next: number) => {
@@ -149,15 +154,6 @@ export default function Rack({ kits, strings, initial }: Props) {
     if (location.hash !== `#${slug}`) history.replaceState(history.state, "", `#${slug}`);
   }, [settled, target, kits, initial]);
 
-  // Stage width, for the phone layout.
-  useEffect(() => {
-    const el = stage.current;
-    if (!el) return;
-    const observer = new ResizeObserver(([entry]) => entry && setWidth(entry.contentRect.width));
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
   // Mouse wheel (PROD-11). Needs a non-passive listener to stop the page from scrolling.
   useEffect(() => {
     const el = stage.current;
@@ -200,7 +196,7 @@ export default function Rack({ kits, strings, initial }: Props) {
       p.dragged = true;
       e.currentTarget.setPointerCapture(e.pointerId);
     }
-    if (p.dragged) go(p.target - dx / (DRAG_PX_PER_KIT * scale));
+    if (p.dragged) go(p.target - dx / (DRAG_PX_PER_KIT * rackScale(e.currentTarget.clientWidth)));
   };
   const onPointerUp = () => {
     const p = press.current;
@@ -218,15 +214,13 @@ export default function Rack({ kits, strings, initial }: Props) {
 
   const kit = kits[selected] as RackKit;
   const currentYear = yearOf(groups, selected);
-  const sleeveWidth = Math.round(420 * scale);
-  const centre = small ? 0 : 120;
   const sleeves = [];
   for (let i = Math.max(0, Math.floor(position) - WINDOW); i <= Math.min(last, Math.ceil(position) + WINDOW); i++) {
     sleeves.push(i);
   }
 
   return (
-    <div className="relative">
+    <div className="@container/rack relative">
       <section
         aria-label={strings.card}
         aria-live="polite"
@@ -235,10 +229,9 @@ export default function Rack({ kits, strings, initial }: Props) {
         <div className="relative overflow-hidden bg-signal px-[18px] pt-[18px] pb-4 text-ink">
           <p
             aria-hidden="true"
-            className="pointer-events-none absolute -top-1 -right-1.5 m-0 rotate-[-8deg] font-stencil text-[76px] leading-none text-ink/20"
-          >
-            {kit.year}
-          </p>
+            data-year={kit.year}
+            className="pointer-events-none absolute -top-1 -right-1.5 m-0 rotate-[-8deg] font-stencil text-[76px] leading-none text-ink/20 before:content-[attr(data-year)]"
+          />
           <h2
             lang={kit.title.lang}
             className="relative mt-6 mb-3.5 font-condensed text-[clamp(2rem,3vw,2.75rem)] leading-[0.92] font-extrabold uppercase"
@@ -286,8 +279,9 @@ export default function Rack({ kits, strings, initial }: Props) {
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
-        className="relative isolate cursor-grab touch-pan-y overflow-hidden select-none focus-visible:outline-offset-[-2px] active:cursor-grabbing"
-        style={{ height: small ? 250 : 560 }}
+        // Sizes come from CSS, so the page is laid out right before the island hydrates (PROD-36).
+        // --w is the sleeve width, SLEEVE_PX * rackScale(): 420 px from 900 px, else 55.263cqw (420/760) within 210 to 336 px.
+        className="relative isolate h-[250px] cursor-grab touch-pan-y overflow-hidden select-none [--b:40px] [--c:0px] [--w:clamp(210px,55.263cqw,336px)] focus-visible:outline-offset-[-2px] active:cursor-grabbing @min-[900px]/rack:h-[560px] @min-[900px]/rack:[--b:80px] @min-[900px]/rack:[--c:120px] @min-[900px]/rack:[--w:420px]"
       >
         {sleeves.map((i) => {
           const k = kits[i] as RackKit;
@@ -295,11 +289,11 @@ export default function Rack({ kits, strings, initial }: Props) {
           const front = i === selected;
           const sleeveScale = 1 - Math.min(Math.abs(d), 1) * 0.4;
           const style = {
-            width: sleeveWidth,
-            left: `calc(50% + ${centre}px - ${sleeveWidth / 2}px)`,
-            bottom: small ? 40 : 80,
+            width: "var(--w)",
+            left: "calc(50% + var(--c) - var(--w) / 2)",
+            bottom: "var(--b)",
             zIndex: 100 - Math.round(Math.abs(d) * 12),
-            transform: `translate3d(${(sleeveOffset(d) * scale).toFixed(1)}px,0,0)`,
+            transform: `translate3d(calc(var(--w) * ${(sleeveOffset(d) / SLEEVE_PX).toFixed(4)}),0,0)`,
           };
           const image = (
             <img
@@ -308,6 +302,9 @@ export default function Rack({ kits, strings, initial }: Props) {
               height={k.cover.height}
               alt=""
               draggable={false}
+              // The selected sleeve is the largest image on the page; it goes first (PROD-36).
+              fetchPriority={front ? "high" : undefined}
+              loading={front ? undefined : "lazy"}
               className="pointer-events-none block w-full drop-shadow-[0_30px_30px_rgba(0,0,0,0.6)]"
             />
           );
@@ -348,9 +345,8 @@ export default function Rack({ kits, strings, initial }: Props) {
               )}
               <p
                 aria-hidden="true"
-                hidden={small && !front}
                 lang={k.title.lang}
-                className={`absolute top-full left-1/2 m-0 mt-2 w-[min(320px,90vw)] -translate-x-1/2 truncate text-center font-mono text-[11px] tracking-widest uppercase ${front ? "text-signal" : "text-muted"}`}
+                className={`absolute top-full left-1/2 m-0 mt-2 w-[min(320px,90vw)] -translate-x-1/2 truncate text-center font-mono text-[11px] tracking-widest uppercase ${front ? "text-signal" : "text-muted @max-[900px]/rack:hidden"}`}
                 style={{ opacity: Math.max(0, 1 - Math.abs(d) * 0.6) }}
               >
                 {front ? "▲ " : ""}

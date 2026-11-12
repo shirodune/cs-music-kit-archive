@@ -21,10 +21,12 @@
     "test": "vitest run",
     "test:e2e": "playwright test",
     "verify": "pnpm lint && pnpm check && pnpm i18n:check && pnpm data:verify && pnpm test && pnpm build && pnpm test:e2e",
-    "astro": "astro"
+    "astro": "astro",
+    "lighthouse": "node scripts/lighthouse.ts"
   },
   "dependencies": {
     "@astrojs/react": "7.1.5",
+    "@astrojs/sitemap": "3.7.4",
     "@tailwindcss/vite": "^4.3.5",
     "astro": "7.4.8",
     "react": "^19.3.1",

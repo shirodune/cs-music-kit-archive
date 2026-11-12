@@ -12,6 +12,7 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, follow" />
     <title>CS Music Kit Archive</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     {LOCALES.map((l) => <link rel="alternate" hreflang={l.tag} href={new URL(`/${l.segment}/`, Astro.site).href} />)}
     <link rel="alternate" hreflang="x-default" href={new URL("/en/", Astro.site).href} />
   </head>
