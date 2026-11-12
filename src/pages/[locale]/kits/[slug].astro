@@ -1,0 +1,368 @@
+---
+// Record page: one music kit (spec: product.md "Record page", PROD-14, PROD-15, PROD-23).
+// Audio controls come with the site-wide player once audio is published (PROD-24, DATA-21).
+
+import KitCard from "../../../components/KitCard.astro";
+import type { Kit, Track } from "../../../data/schema.ts";
+import {
+  getArtist,
+  getKit,
+  getRelease,
+  kits,
+  kitText,
+  kitTextRequired,
+  type Localized,
+  releaseName,
+} from "../../../data/site.ts";
+import { catalogueNumber, formatDate, formatDuration, listParts } from "../../../i18n/format.ts";
+import { getLocale, LOCALE_SEGMENTS, type LocaleSegment } from "../../../i18n/locales.ts";
+import { createT, type MessageKey } from "../../../i18n/t.ts";
+import Base from "../../../layouts/Base.astro";
+
+export function getStaticPaths() {
+  return LOCALE_SEGMENTS.flatMap((locale) => kits.map((kit) => ({ params: { locale, slug: kit.slug }, props: { kit } })));
+}
+
+interface Props {
+  kit: Kit;
+}
+
+const locale = Astro.params.locale as LocaleSegment;
+const { kit } = Astro.props;
+const t = createT(locale);
+const { tag } = getLocale(locale);
+
+const title = kitTextRequired(locale, kit.defIndex, "title");
+const englishTitle = kitTextRequired("en", kit.defIndex, "title").text;
+const credit = kitTextRequired(locale, kit.defIndex, "credit");
+const description = kitText(locale, kit.defIndex, "description");
+const release = getRelease(kit.releaseId);
+const batch = releaseName(locale, release.id);
+const date = formatDate(tag, kit.releaseDate);
+const year = kit.releaseDate.slice(0, 4);
+const credited = kit.artists.map(({ artist }) => getArtist(artist));
+const artistHref = (id: string) => `/${locale}/artists/${id}/?from=${kit.slug}`;
+
+// Hero title size steps down for long titles so they fit the label card.
+// Wide characters (CJK, Hangul, kana) count double and need more line height.
+const wideChars = [...title.text].filter((c) => /[\p{sc=Han}\p{sc=Hangul}\p{sc=Hiragana}\p{sc=Katakana}]/u.test(c));
+const titleWidth = title.text.length + wideChars.length;
+const titleSize = [
+  titleWidth <= 10 ? "text-7xl sm:text-8xl" : titleWidth <= 20 ? "text-6xl sm:text-7xl" : "text-5xl sm:text-6xl",
+  wideChars.length > 0 ? "leading-[1.05]" : "leading-[0.86]",
+];
+
+const facts: { label: string; value: Localized | string; sub?: Localized | null; link?: string }[] = [
+  {
+    label: t("kit.artist"),
+    value: credit,
+    ...(credited.length === 1 && credited[0] ? { link: artistHref(credited[0].id) } : {}),
+  },
+  { label: t("kit.released"), value: date, sub: batch },
+  { label: t("kit.catalogue"), value: catalogueNumber(kit.defIndex) },
+  { label: t("kit.edition"), value: t(`kit.edition.${kit.edition}`) },
+];
+
+/** Rows in match order with the take shown only when a cue has several (PROD-23). */
+function rows(tracks: Track[]) {
+  const takes = new Map<string, number>();
+  for (const track of tracks) takes.set(track.cue, (takes.get(track.cue) ?? 0) + 1);
+  return tracks.map((track, i) => {
+    const cue = t(`cue.${track.cue}` as MessageKey);
+    return {
+      number: String(i + 1).padStart(2, "0"),
+      name: track.take && (takes.get(track.cue) ?? 0) > 1 ? t("kit.cueTake", { cue, take: track.take }) : cue,
+      file: track.file,
+      duration: track.durationSec === null ? "–" : formatDuration(track.durationSec),
+      mvp: track.cue === "roundmvpanthem",
+    };
+  });
+}
+const tracklists = [
+  { id: "tracks", heading: t("kit.tracklist"), note: null, rows: rows(kit.tracks) },
+  ...(kit.alternateTracks
+    ? [{ id: "alternate", heading: t("kit.alternate"), note: t("kit.alternateNote"), rows: rows(kit.alternateTracks) }]
+    : []),
+];
+
+// Section 6: every credited artist with more than one kit (PROD-14).
+const moreBy = credited
+  .filter((artist) => artist.kits.length > 1)
+  .map((artist) => ({ artist, kits: artist.kits.map(getKit) }));
+
+// Section 7: the rest of the release batch.
+const sameDay = kits.filter((k) => k.releaseId === kit.releaseId && k.defIndex !== kit.defIndex);
+
+// Section 8: neighbours on the rack.
+const index = kits.indexOf(kit);
+const neighbours = [
+  { kit: kits[index - 1], arrow: "←", align: "" },
+  { kit: kits[index + 1], arrow: "→", align: "sm:items-end sm:text-right" },
+];
+
+const section = "relative mx-auto max-w-[1360px] px-4 sm:px-10";
+const stencilHead = "font-stencil text-[22px] tracking-wider text-signal uppercase";
+---
+
+<Base
+  locale={locale}
+  title={title.text}
+  description={t("kit.meta", { title: title.text, credit: credit.text, date })}
+  image={kit.cover.path}
+>
+  <div class:list={[section, "pt-6"]}>
+    <a href={`/${locale}/`} class="inline-flex min-h-11 items-center font-mono text-xs tracking-widest text-muted">
+      {t("kit.back")}
+    </a>
+  </div>
+
+  <!-- 1. Hero -->
+  <section class:list={[section, "flex flex-wrap gap-6 pt-3"]}>
+    <div class="relative flex-[0_1_380px] self-start overflow-hidden bg-signal px-6 pt-6 pb-5 text-ink">
+      <p
+        aria-hidden="true"
+        class="pointer-events-none absolute -top-1.5 -right-2 m-0 rotate-[-8deg] font-stencil text-[104px] leading-none text-ink/20"
+      >
+        {year}
+      </p>
+      <h1
+        lang={title.lang}
+        class:list={[
+          "relative mt-11 font-condensed font-extrabold uppercase [overflow-wrap:anywhere]",
+          ...titleSize,
+        ]}
+      >
+        {title.text}
+      </h1>
+      {
+        title.text !== englishTitle && (
+          <p lang="en" class="relative mt-2 font-mono text-xs tracking-widest uppercase">
+            {englishTitle}
+          </p>
+        )
+      }
+      <dl class="mt-5 border-y-2 border-ink font-mono text-xs">
+        {
+          facts.map((fact, i) => {
+            const value = typeof fact.value === "string" ? { text: fact.value, lang: undefined } : fact.value;
+            return (
+              <div class:list={["flex items-baseline justify-between gap-3 py-2", i > 0 && "border-t border-ink/35"]}>
+                <dt class="flex-none">{fact.label}</dt>
+                <dd class="m-0 text-right">
+                  {fact.link ? (
+                    <a
+                      href={fact.link}
+                      lang={value.lang}
+                      class="inline-flex min-h-7 items-center underline decoration-2 underline-offset-[3px] hover:text-ink hover:decoration-[3px] focus-visible:outline-ink"
+                    >
+                      {value.text} <span aria-hidden="true">&nbsp;→</span>
+                    </a>
+                  ) : (
+                    <span lang={value.lang}>{value.text}</span>
+                  )}
+                  {fact.sub && (
+                    <span lang={fact.sub.lang} class="mt-0.5 block opacity-75">
+                      {fact.sub.text}
+                    </span>
+                  )}
+                </dd>
+              </div>
+            );
+          })
+        }
+      </dl>
+      {
+        credited.length > 1 && (
+          <p class="mt-3 font-mono text-xs">
+            {listParts(tag, credited, (a) => a.name).map((part) =>
+              part.item ? (
+                <a
+                  href={artistHref(part.item.id)}
+                  class="underline decoration-2 underline-offset-[3px] hover:text-ink focus-visible:outline-ink"
+                >
+                  {part.text}
+                </a>
+              ) : (
+                part.text
+              ),
+            )}
+          </p>
+        )
+      }
+    </div>
+
+    <figure
+      class="relative m-0 flex h-[360px] min-w-0 flex-[999_1_560px] items-center justify-center overflow-hidden bg-panel sm:h-[480px] lg:h-[600px]"
+    >
+      <img
+        src={kit.cover.path}
+        alt=""
+        aria-hidden="true"
+        class="absolute inset-0 h-full w-full scale-125 object-cover opacity-40 blur-[40px] saturate-110"
+      />
+      <div aria-hidden="true" class="absolute inset-0 bg-linear-to-r from-panel/25 to-panel/75"></div>
+      <img
+        src={kit.cover.path}
+        width={kit.cover.width}
+        height={kit.cover.height}
+        alt={t("kit.coverAlt", { title: title.text })}
+        fetchpriority="high"
+        class="relative w-[min(86%,540px)] object-contain drop-shadow-[0_40px_40px_rgba(0,0,0,0.6)]"
+      />
+      <figcaption
+        class="absolute right-4 bottom-3 left-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1 font-mono text-[11px] tracking-[0.14em] text-muted uppercase sm:right-7 sm:left-7"
+      >
+        <span>{t("kit.coverCredit")}</span>
+        <span role="status">{t("kit.audioPending")}</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- 3. Tracklist (and the alternate set of the default CS:GO kit, PROD-15) -->
+  {
+    tracklists.map((list) => (
+      <section
+        aria-labelledby={`${list.id}-h`}
+        class:list={[section, "flex flex-wrap gap-x-16 gap-y-6 pt-18"]}
+      >
+        <div class="flex-[0_0_220px]">
+          <h2 id={`${list.id}-h`} class={stencilHead}>
+            {list.heading}
+          </h2>
+          {list.note && <p class="mt-3 text-sm leading-relaxed text-body">{list.note}</p>}
+        </div>
+        <ol class="m-0 max-w-[900px] min-w-0 flex-[999_1_560px] list-none border-t-2 border-paper p-0">
+          {list.rows.map((row) => (
+            <li
+              class:list={[
+                "grid grid-cols-[2.25rem_minmax(0,1fr)_3rem] items-center gap-4 border-b border-rule py-2.5 sm:grid-cols-[2.75rem_minmax(0,1fr)_auto_3rem]",
+                row.mvp && "bg-signal px-3 text-ink",
+              ]}
+            >
+              <span class:list={["font-mono text-xs", row.mvp ? "text-ink" : "text-signal"]}>{row.number}</span>
+              <span class="min-w-0">
+                <span class="block font-condensed text-2xl leading-none font-semibold uppercase">{row.name}</span>
+                {row.mvp && <span class="mt-1 block text-[13px] leading-snug">{t("kit.mvpNote")}</span>}
+              </span>
+              <span class="hidden font-mono text-[11px] opacity-60 sm:block">{row.file}</span>
+              <span class="text-right font-mono text-[13px]">{row.duration}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))
+  }
+
+  <!-- 4. Official description -->
+  {
+    description && (
+      <section class:list={[section, "flex flex-wrap gap-x-16 gap-y-4 pt-22"]}>
+        <div aria-hidden="true" class="hidden flex-[0_0_220px] sm:block" />
+        <figure class="m-0 max-w-[900px] min-w-0 flex-[999_1_560px]">
+          <blockquote lang={description.lang} class="m-0 font-condensed text-3xl leading-tight font-semibold sm:text-[34px]">
+            “{description.text}”
+          </blockquote>
+          <figcaption class="mt-3.5 font-mono text-[11px] tracking-[0.14em] text-muted">{t("kit.descriptionBy")}</figcaption>
+        </figure>
+      </section>
+    )
+  }
+
+  <div aria-hidden="true" class="hazard relative mt-18 h-3.5"></div>
+
+  <!-- 5. Story: added with content/stories (PROD-27). -->
+
+  <!-- 6. More by the same artist or artists -->
+  {
+    moreBy.map(({ artist, kits: theirs }) => (
+      <section aria-labelledby={`more-${artist.id}`} class:list={[section, "pt-28"]}>
+        <h2 id={`more-${artist.id}`} class="font-condensed text-4xl leading-none font-extrabold uppercase sm:text-[56px]">
+          <a href={artistHref(artist.id)}>
+            {t("kit.moreBy", { count: theirs.length, artist: artist.name })} <span aria-hidden="true">→</span>
+          </a>
+        </h2>
+        <ol class="mt-10 grid list-none grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-x-6 gap-y-10 sm:grid-cols-[repeat(auto-fill,minmax(220px,1fr))] sm:gap-x-12 p-0">
+          {theirs.map((k) => {
+            const name = releaseName(locale, k.releaseId);
+            return (
+              <li class="min-w-0">
+                <KitCard
+                  locale={locale}
+                  kit={k}
+                  size="large"
+                  current={k.defIndex === kit.defIndex}
+                  tag={[formatDate(tag, k.releaseDate), name?.text].filter(Boolean).join(" · ")}
+                />
+              </li>
+            );
+          })}
+        </ol>
+      </section>
+    ))
+  }
+
+  <!-- 7. Released the same day -->
+  {
+    sameDay.length > 0 && (
+      <section aria-labelledby="same-day-h" class:list={[section, "pt-28"]}>
+        <div class="flex flex-wrap items-baseline justify-between gap-3 border-b-2 border-paper pb-4">
+          <h2 id="same-day-h" class={stencilHead}>
+            {t("kit.sameDay")}
+          </h2>
+          <p class="font-mono text-[11px] tracking-widest text-muted uppercase">
+            {t("kit.sameDayCount", { count: sameDay.length, date })}
+          </p>
+        </div>
+        <ul class="mt-7 grid list-none grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-x-6 gap-y-8 p-0">
+          {sameDay.map((k) => (
+            <li class="min-w-0">
+              <KitCard locale={locale} kit={k} sub={kitTextRequired(locale, k.defIndex, "credit")} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <!-- 8. Previous and next on the rack -->
+  <nav
+    aria-label={t("kit.neighbours")}
+    class="relative mx-auto mt-28 flex max-w-[1360px] flex-col justify-between gap-4 border-t border-rule px-4 pt-6 sm:flex-row sm:px-10"
+  >
+    {
+      neighbours.map(({ kit: k, arrow, align }) =>
+        k ? (
+          <a href={`/${locale}/kits/${k.slug}/`} class:list={["flex min-h-11 flex-col justify-center", align]}>
+            <span class="font-mono text-[11px] tracking-widest text-muted">
+              {arrow === "←" && "← "}
+              {catalogueNumber(k.defIndex)} · {formatDate(tag, k.releaseDate)}
+              {arrow === "→" && " →"}
+            </span>
+            <span
+              lang={kitTextRequired(locale, k.defIndex, "title").lang}
+              class="font-condensed text-3xl font-extrabold uppercase sm:text-[34px]"
+            >
+              {kitTextRequired(locale, k.defIndex, "title").text}
+            </span>
+          </a>
+        ) : (
+          <span />
+        ),
+      )
+    }
+  </nav>
+
+  <!-- 9. Sources -->
+  <section aria-labelledby="sources-h" class:list={[section, "pt-16"]}>
+    <h2 id="sources-h" class={stencilHead}>{t("kit.sources")}</h2>
+    <ul class="mt-4 list-none p-0 font-mono text-xs leading-relaxed text-muted">
+      <li>
+        {t("kit.releaseSource", { date: formatDate(tag, release.date) })}{": "}
+        <a href={release.source.url} lang="en" class="text-paper underline underline-offset-4">
+          {release.source.title}
+        </a>
+        <q lang="en" class="mt-1 block">{release.source.quote}</q>
+      </li>
+    </ul>
+  </section>
+</Base>

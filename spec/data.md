@@ -12,7 +12,7 @@ Every field has exactly one owner. A field is either generated from an upstream 
 | Derived | `data/generated/` | `pnpm data:build` only |
 
 - DATA-1 `data/generated/` must be byte-identical to a fresh `pnpm data:build` run. CI rebuilds and compares.
-- DATA-2 All of `data/` and `content/` is committed. Audio and extracted game files are never committed.
+- DATA-2 All of `data/`, `content/` and `public/covers/` is committed. Audio and extracted game files are never committed.
 
 ## Upstream sources
 
@@ -146,7 +146,7 @@ Artists live in `data/curated/artists.json`. Credits live in `data/curated/credi
 
 ## Covers
 
-- DATA-18 Every kit has a cover. The first source is the Steam CDN icon (256 × 198). `pnpm data:build` converts it to WebP at `public/covers/{slug}.webp` and records `cover.source = "icon"`.
+- DATA-18 Every kit has a cover. The first source is the Steam CDN icon (256 × 198), which already shows the sleeve with the disc half out. `pnpm data:covers` downloads each icon whose URL changed, stores it as WebP at `public/covers/{internalName}.webp` and records its size in `data/upstream/covers.json`. `pnpm data:build` records `cover = { source: "icon", path, width, height }` and fails when a kit has no stored cover.
 - DATA-19 When the game's cover texture is extracted and is larger than the icon, it replaces the icon and `cover.source = "texture"`. The texture estimates are 256² for 2014–2016, 512² for 2019–2022 and 1024² for 2023 on; extraction confirms them.
 
 ## Audio
@@ -163,5 +163,5 @@ Artists live in `data/curated/artists.json`. Credits live in `data/curated/credi
 
 ## Weekly sync
 
-- DATA-24 A scheduled workflow runs `pnpm data:sync` and `pnpm data:build` every week. When anything changes it opens a pull request.
+- DATA-24 A scheduled workflow runs `pnpm data:sync`, `pnpm data:covers` and `pnpm data:build` every week. When anything changes it opens a pull request.
 - DATA-25 A new kit makes the checks fail until it has a release, credits and, when needed, slug or title overrides. The pull request body lists the missing items and the `data:suggest-release` output.

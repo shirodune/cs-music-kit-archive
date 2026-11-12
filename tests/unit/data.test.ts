@@ -1,4 +1,5 @@
 // Checks on the generated data (spec: data.md). Run `pnpm data:build` first.
+import { existsSync } from "node:fs";
 import { describe, expect, test } from "vitest";
 import artistsJson from "../../data/generated/artists.json";
 import kitsJson from "../../data/generated/kits.json";
@@ -36,6 +37,13 @@ describe("kit set", () => {
 });
 
 describe("kits", () => {
+  test("DATA-18 every kit has a stored WebP cover with its size", () => {
+    for (const kit of kits) {
+      expect(kit.cover.path, kit.slug).toBe(`/covers/${kit.internalName}.webp`);
+      expect(existsSync(new URL(`../../public${kit.cover.path}`, import.meta.url)), kit.slug).toBe(true);
+    }
+  });
+
   test("DATA-9 slugs are unique", () => {
     expect(new Set(kits.map((k) => k.slug)).size).toBe(kits.length);
   });

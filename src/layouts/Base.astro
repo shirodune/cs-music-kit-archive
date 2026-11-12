@@ -11,11 +11,13 @@ interface Props {
   /** Page title without the site name. Leave out on the home page. */
   title?: string;
   description?: string;
+  /** Site path of the Open Graph image, for example a kit cover (PROD-29). */
+  image?: string | undefined;
   /** Keep the page out of search results (not-found pages). */
   noindex?: boolean;
 }
 
-const { locale, title, description, noindex = false } = Astro.props;
+const { locale, title, description, image, noindex = false } = Astro.props;
 const t = createT(locale);
 const { tag } = getLocale(locale);
 
@@ -54,6 +56,7 @@ const repository = "https://github.com/shirodune/cs-music-kit-archive";
     <meta property="og:url" content={urlFor(locale)} />
     <meta property="og:locale" content={tag.replace("-", "_")} />
     <meta property="og:type" content="website" />
+    {image && <meta property="og:image" content={new URL(image, site).href} />}
     <Font cssVariable="--font-stencil-latin" />
     <Font cssVariable="--font-condensed-latin" />
     <Font cssVariable="--font-mono-latin" />
