@@ -2,8 +2,7 @@
 
 /*
  * "Supply Depot" design tokens (spec: product.md "Visual design").
- * Colours come from the design canvas. Font variables point at the Latin faces;
- * other script groups add their fallbacks after these in a later change (I18N-19).
+ * Colours come from the design canvas.
  */
 @theme {
   --color-ground: #1a1c19;
@@ -17,11 +16,12 @@
   --color-rule: rgb(233 228 214 / 0.16);
 }
 
+/* Base.astro sets the stacks: the Latin face, the script group's fallback, a generic family. */
 @theme inline {
-  --font-stencil: var(--font-stencil-latin);
-  --font-condensed: var(--font-condensed-latin);
-  --font-mono: var(--font-mono-latin);
-  --font-sans: var(--font-sans-latin);
+  --font-stencil: var(--font-stencil-stack, sans-serif);
+  --font-condensed: var(--font-condensed-stack, sans-serif);
+  --font-mono: var(--font-mono-stack, monospace);
+  --font-sans: var(--font-sans-stack, sans-serif);
 }
 
 @layer base {

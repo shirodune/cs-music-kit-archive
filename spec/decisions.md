@@ -101,7 +101,7 @@ They are written later, from sourced facts, never copied from wikis (Wikipedia a
 
 - Why: MIT matches the tools we build on. The curated data is facts (dates, credits); CC0, as MusicBrainz uses for its core data, lets projects such as ByMykel's API absorb it without any conditions. Stories are creative writing, so CC BY 4.0 asks for credit. Share-alike and non-commercial terms were left out because they block wikis and other projects from reusing the work; CC BY content can still go into CC BY-SA wikis.
 - Compared with similar projects (ByMykel's API: MIT for everything; PokeAPI: BSD-3 for everything plus a trademark line; GameTracking: no licence), separating our work from third-party material in `NOTICE` is stricter than usual.
-- Self-hosted fonts ship with their OFL licence files.
+- Self-hosted fonts ship with the OFL and their copyright notices in `public/fonts/LICENSE.txt`.
 
 ## D-019 Deploy with Wrangler, not `cf` (replaces the deploy tool in D-002)
 

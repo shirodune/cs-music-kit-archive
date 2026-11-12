@@ -4,6 +4,7 @@ import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import type { AstroIntegration } from "astro";
 import { defineConfig, fontProviders } from "astro/config";
+import { FALLBACK_FAMILIES } from "./src/i18n/fonts.ts";
 import { DEFAULT_LOCALE, LOCALE_SEGMENTS } from "./src/i18n/locales.ts";
 
 // Cloudflare serves the nearest `404.html` for unknown paths ("404-page" handling).
@@ -21,10 +22,31 @@ const localizedNotFound: AstroIntegration = {
   },
 };
 
-// Latin faces of the "Supply Depot" design (spec: product.md "Visual design", i18n.md "Fonts").
-// Fonts are downloaded at build time and self-hosted (I18N-19).
-// The fallback faces for the other script groups are added in a later change.
+// Fonts are downloaded at build time and self-hosted (I18N-19). Each face is split by script
+// (`unicode-range`), so a page downloads only the files for the characters it shows.
+// The Latin faces of the "Supply Depot" design (spec: product.md "Visual design") also bring the
+// Cyrillic and Greek that IBM Plex has; the other scripts use the fallbacks in src/i18n/fonts.ts.
+// No family gets a generic or metric-adjusted fallback here: those would come before the script
+// fallbacks in the font stack and take their characters. Base.astro writes the stacks (fontStacks).
 const latinSubsets: [string, ...string[]] = ["latin", "latin-ext", "vietnamese"];
+// The fallbacks come from Google Fonts: Fontsource serves each CJK weight as one file of about
+// 1 MB, Google as about 100 slices, so a page downloads only the slices for its characters.
+const face = (
+  name: string,
+  cssVariable: string,
+  weights: [number | string, ...(number | string)[]],
+  subsets: [string, ...string[]],
+  provider = fontProviders.fontsource(),
+) => ({
+  provider,
+  name,
+  cssVariable,
+  weights,
+  styles: ["normal"] as ["normal"],
+  subsets,
+  fallbacks: [],
+  optimizedFallbacks: false,
+});
 
 // PROD-30: every page in every locale. The alternates live only in each page's head (PROD-29).
 // The root page only picks a locale (noindex), and not-found pages are left out.
@@ -49,42 +71,11 @@ export default defineConfig({
     },
   },
   fonts: [
-    {
-      provider: fontProviders.fontsource(),
-      name: "Saira Stencil One",
-      cssVariable: "--font-stencil-latin",
-      weights: [400],
-      styles: ["normal"],
-      subsets: latinSubsets,
-      fallbacks: ["sans-serif"],
-    },
-    {
-      provider: fontProviders.fontsource(),
-      name: "Saira Condensed",
-      cssVariable: "--font-condensed-latin",
-      weights: [400, 600, 800],
-      styles: ["normal"],
-      subsets: latinSubsets,
-      fallbacks: ["sans-serif"],
-    },
-    {
-      provider: fontProviders.fontsource(),
-      name: "IBM Plex Mono",
-      cssVariable: "--font-mono-latin",
-      weights: [400, 500],
-      styles: ["normal"],
-      subsets: latinSubsets,
-      fallbacks: ["monospace"],
-    },
-    {
-      provider: fontProviders.fontsource(),
-      name: "IBM Plex Sans",
-      cssVariable: "--font-sans-latin",
-      weights: [400, 500, 600],
-      styles: ["normal"],
-      subsets: latinSubsets,
-      fallbacks: ["sans-serif"],
-    },
+    face("Saira Stencil One", "--font-stencil-latin", [400], latinSubsets),
+    face("Saira Condensed", "--font-condensed-latin", [400, 600, 800], latinSubsets),
+    face("IBM Plex Mono", "--font-mono-latin", [400, 500], [...latinSubsets, "cyrillic", "cyrillic-ext"]),
+    face("IBM Plex Sans", "--font-sans-latin", [400, 500, 600], [...latinSubsets, "cyrillic", "cyrillic-ext", "greek"]),
+    ...FALLBACK_FAMILIES.map((f) => face(f.name, f.cssVariable, f.weights, f.subsets, fontProviders.google())),
   ],
   vite: {
     plugins: [tailwindcss()],

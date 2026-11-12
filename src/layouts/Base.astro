@@ -2,6 +2,7 @@
 // Shared page shell: head, header, footer (spec: PROD-2, PROD-4, PROD-29, PROD-34, I18N-6).
 import { Font } from "astro:assets";
 import LanguagePicker from "../components/LanguagePicker.astro";
+import { fontStacks } from "../i18n/fonts.ts";
 import { DEFAULT_LOCALE, getLocale, LOCALES, type LocaleSegment } from "../i18n/locales.ts";
 import { createT } from "../i18n/t.ts";
 import "../styles/global.css";
@@ -19,7 +20,12 @@ interface Props {
 
 const { locale, title, description, image, noindex = false } = Astro.props;
 const t = createT(locale);
-const { tag } = getLocale(locale);
+const { tag, script } = getLocale(locale);
+
+// I18N-19: the Latin faces plus this page's script group (/fonts/{group}.css), and the font stacks.
+const fontStyle = Object.entries(fontStacks(script))
+  .map(([role, stack]) => `--font-${role}-stack: ${stack}`)
+  .join("; ");
 
 // Path after the locale segment: "/en/artists/" → "artists/".
 const rest = Astro.url.pathname.split("/").slice(2).join("/");
@@ -32,7 +38,7 @@ const repository = "https://github.com/shirodune/cs-music-kit-archive";
 ---
 
 <!doctype html>
-<html lang={tag}>
+<html lang={tag} style={fontStyle}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -63,6 +69,7 @@ const repository = "https://github.com/shirodune/cs-music-kit-archive";
     <Font cssVariable="--font-condensed-latin" preload={[{ subset: "latin", weight: 600 }, { subset: "latin", weight: 800 }]} />
     <Font cssVariable="--font-mono-latin" preload={[{ subset: "latin", weight: 400 }]} />
     <Font cssVariable="--font-sans-latin" preload={[{ subset: "latin", weight: 400 }]} />
+    {script !== "latin" && <link rel="stylesheet" href={`/fonts/${script}.css`} />}
   </head>
   <body class="grid-lines min-h-screen">
     <header
