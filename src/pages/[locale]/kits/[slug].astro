@@ -14,7 +14,7 @@ import {
   type Localized,
   releaseName,
 } from "../../../data/site.ts";
-import { catalogueNumber, formatDate, formatDuration, listParts } from "../../../i18n/format.ts";
+import { catalogueNumber, displayWidth, formatDate, formatDuration, listParts } from "../../../i18n/format.ts";
 import { getLocale, LOCALE_SEGMENTS, type LocaleSegment } from "../../../i18n/locales.ts";
 import { createT, type MessageKey } from "../../../i18n/t.ts";
 import Base from "../../../layouts/Base.astro";
@@ -44,12 +44,14 @@ const credited = kit.artists.map(({ artist }) => getArtist(artist));
 const artistHref = (id: string) => `/${locale}/artists/${id}/?from=${kit.slug}`;
 
 // Hero title size steps down for long titles so they fit the label card.
-// Wide characters (CJK, Hangul, kana) count double and need more line height.
-const wideChars = [...title.text].filter((c) => /[\p{sc=Han}\p{sc=Hangul}\p{sc=Hiragana}\p{sc=Katakana}]/u.test(c));
-const titleWidth = title.text.length + wideChars.length;
+const titleWidth = displayWidth(title.text);
 const titleSize = [
-  titleWidth <= 10 ? "text-7xl sm:text-8xl" : titleWidth <= 20 ? "text-6xl sm:text-7xl" : "text-5xl sm:text-6xl",
-  wideChars.length > 0 ? "leading-[1.05]" : "leading-[0.86]",
+  titleWidth.width <= 10
+    ? "text-7xl sm:text-8xl"
+    : titleWidth.width <= 20
+      ? "text-6xl sm:text-7xl"
+      : "text-5xl sm:text-6xl",
+  titleWidth.wide ? "leading-[1.05]" : "leading-[0.86]",
 ];
 
 const facts: { label: string; value: Localized | string; sub?: Localized | null; link?: string }[] = [

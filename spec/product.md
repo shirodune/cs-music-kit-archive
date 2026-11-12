@@ -52,12 +52,12 @@ The other style directions and the retired timeline page are not built.
 
 The rack holds every kit in order of release. The rack is the timeline.
 
-- PROD-7 Kits are ordered by release date, then by `defIndex`.
+- PROD-7 Kits are ordered by release date, then by `defIndex`. Without JavaScript the page lists every kit as a plain list of links.
 - PROD-8 Each kit is a sleeve showing its cover. One sleeve is selected at a time and pulled forward, with its disc partly out of the sleeve.
 - PROD-9 The selected kit's record label card shows: issue date, artist credit (linked), release batch name, catalogue number `Nº {defIndex, 3 digits}` and edition (`Standard and StatTrak™`, `StatTrak™ only` or `Standard only`). The card links to the kit page.
 - PROD-10 The year strip under the shelf lists every year that has a release. Selecting a year jumps to its first kit. Dragging along the strip scrubs through the rack.
-- PROD-11 Input: drag or swipe the rack; mouse wheel scrolls it; Left and Right arrows select the previous or next kit; Page Up and Page Down jump a year; Enter opens the selected kit. The rack has an accessible name that explains these keys.
-- PROD-12 The selected kit is kept in the URL hash (`#{kit-slug}`), so links and the back button return to the same place.
+- PROD-11 Input: drag or swipe the rack; mouse wheel scrolls it; Left and Right arrows select the previous or next kit; Page Up and Page Down jump a year; Home and End go to the first and last kit; Enter opens the selected kit. The rack has an accessible name that explains these keys.
+- PROD-12 The selected kit is kept in the URL hash (`#{kit-slug}`), so links and the back button return to the same place. Without a hash the newest kit is selected.
 - PROD-13 With `prefers-reduced-motion`, sleeves move without animation.
 
 ## Record page (one kit)
@@ -127,4 +127,4 @@ Sections, top to bottom:
 
 ## Open questions
 
-- Phone layout of the rack. The project owner designs it in the design canvas; the build follows that design.
+- Phone layout of the rack. The project owner designs it in the design canvas; the build follows that design. Until then, below 900 px the label card sits above a smaller rack and only the selected year is labelled on the strip.
