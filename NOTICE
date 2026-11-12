@@ -59,5 +59,6 @@ which is released under CC0.
 ------------------------------------------------------------------------------
 Fonts
 ------------------------------------------------------------------------------
-Self-hosted fonts are licensed under the SIL Open Font License 1.1. Each font's
-licence file ships next to the font files.
+Self-hosted fonts are licensed under the SIL Open Font License 1.1. The
+licence and every font's copyright notice ship with the site in
+public/fonts/LICENSE.txt (served at /fonts/LICENSE.txt).
