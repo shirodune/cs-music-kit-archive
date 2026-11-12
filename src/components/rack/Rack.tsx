@@ -46,7 +46,6 @@ export interface RackStrings {
   released: string;
   catalogue: string;
   edition: string;
-  descriptionBy: string;
   open: string;
   /** Accessible name of each year button, by year. */
   yearLabels: Record<string, string>;
@@ -402,20 +401,18 @@ export default function Rack({ kits, strings, initial }: Props) {
         </div>
       </nav>
 
-      {/* PROD-13a: the description is cut to a fixed number of lines (one on short screens), so the layout does not move between kits. */}
-      <div className="grid flex-none grid-cols-[1fr_auto] items-end gap-x-10 gap-y-2 px-4 pt-4 pb-3 sm:px-10 lg:pl-[max(2.5rem,calc(50%-316px))]">
+      {/* PROD-13a: the description is cut to a fixed number of lines (one on short screens), so the layout does not move
+          between kits. It is only the opening of the quote: the record page shows it in full, attributed to Valve. */}
+      <div className="grid flex-none grid-cols-[1fr_auto] items-end gap-x-10 gap-y-2 px-4 pt-4 pb-3 sm:px-10">
         <p
           lang={kit.description?.lang}
-          className="col-span-2 m-0 line-clamp-2 h-[2lh] max-w-[720px] font-condensed text-xl leading-tight font-medium sm:line-clamp-3 sm:h-[3lh] sm:text-2xl lg:col-span-1 [@media(max-height:700px)]:line-clamp-1 [@media(max-height:700px)]:h-[1lh]"
+          className="col-span-2 m-0 line-clamp-2 h-[2lh] font-condensed text-xl leading-tight font-medium sm:line-clamp-3 sm:h-[3lh] sm:text-2xl lg:col-span-1 [@media(max-height:700px)]:line-clamp-1 [@media(max-height:700px)]:h-[1lh]"
         >
           {kit.description?.text}
         </p>
-        <p className="m-0 font-mono text-[11px] tracking-[0.14em] text-muted lg:row-start-2">
-          {kit.description && strings.descriptionBy}
-        </p>
         <a
           href={kit.href}
-          className="inline-flex min-h-11 items-center gap-2.5 border-2 border-paper px-[18px] font-condensed text-base font-extrabold tracking-wider whitespace-nowrap uppercase hover:bg-paper hover:text-ink lg:col-start-2 lg:row-span-2 lg:row-start-1"
+          className="inline-flex min-h-11 items-center gap-2.5 border-2 border-paper px-[18px] font-condensed text-base font-extrabold tracking-wider whitespace-nowrap uppercase hover:bg-paper hover:text-ink col-start-2 lg:row-start-1"
         >
           {strings.open} <span aria-hidden="true">→</span>
         </a>
