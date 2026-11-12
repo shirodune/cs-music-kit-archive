@@ -46,7 +46,7 @@ const facts = [
 ];
 
 // Covers fanned out, overlapping more as the count grows (PROD-18).
-// The top cover, fully visible, loads first; the others wait for layout (PROD-36).
+// The top cover, fully visible, loads first (PROD-36). None is lazy: they are all above the fold.
 const fanStep = kits.length > 1 ? Math.min(70, Math.floor(140 / (kits.length - 1))) : 0;
 
 // Discography with "N years later" between kits 3 or more years apart (PROD-19).
@@ -135,7 +135,6 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
                 height={kit.cover.height}
                 alt=""
                 fetchpriority={i === kits.length - 1 ? "high" : undefined}
-                loading={i === kits.length - 1 ? undefined : "lazy"}
                 class="block w-full"
               />
             </a>

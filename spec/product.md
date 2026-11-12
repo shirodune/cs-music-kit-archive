@@ -107,7 +107,7 @@ Sections, top to bottom:
 ## SEO and sharing
 
 - PROD-29 Each page has a localized title and description, a canonical URL, `hreflang` links to all 28 locales plus `x-default` (English), and Open Graph tags with the cover image.
-- PROD-30 A sitemap lists every page in every locale with the same alternates as its head (PROD-29). `robots.txt` points to `/sitemap-index.xml`. The root page (`noindex`) and not-found pages are left out.
+- PROD-30 A sitemap lists every page in every locale. `robots.txt` points to `/sitemap-index.xml`. The root page (`noindex`) and not-found pages are left out. The sitemap has no `hreflang` alternates: the page head already has them (PROD-29), and Google says using both methods brings no benefit in Search.
 
 ## Accessibility
 
