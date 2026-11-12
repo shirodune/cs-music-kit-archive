@@ -1,6 +1,8 @@
 ---
-// Records page (spec: PROD-7 to PROD-13). Placeholder until the rack is built.
+// Records page (spec: PROD-7 to PROD-13). Until the rack is built it lists every kit in rack order.
 
+import KitCard from "../../components/KitCard.astro";
+import { kits, kitTextRequired } from "../../data/site.ts";
 import { LOCALE_SEGMENTS, type LocaleSegment } from "../../i18n/locales.ts";
 import { createT } from "../../i18n/t.ts";
 import Base from "../../layouts/Base.astro";
@@ -17,5 +19,20 @@ const t = createT(locale);
   <section class="mx-auto max-w-[1360px] px-4 pt-16 sm:px-10">
     <h1 class="font-condensed text-6xl font-extrabold uppercase leading-none sm:text-8xl">{t("records.title")}</h1>
     <p class="mt-6 text-body">{t("records.placeholder")}</p>
+    <h2 class="mt-16 font-stencil text-[22px] tracking-wider text-signal">{t("records.list")}</h2>
+    <ol class="mt-6 grid list-none grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-x-6 gap-y-8 p-0">
+      {
+        kits.map((kit) => (
+          <li class="min-w-0">
+            <KitCard
+              locale={locale}
+              kit={kit}
+              tag={kit.releaseDate.slice(0, 4)}
+              sub={kitTextRequired(locale, kit.defIndex, "credit")}
+            />
+          </li>
+        ))
+      }
+    </ol>
   </section>
 </Base>

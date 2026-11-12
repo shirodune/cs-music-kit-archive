@@ -1,0 +1,69 @@
+---
+// A kit's cover and title, linking to its page. Used in kit lists (PROD-14 sections 6 and 7).
+
+import type { Kit } from "../data/schema.ts";
+import { kitTextRequired, type Localized } from "../data/site.ts";
+import type { LocaleSegment } from "../i18n/locales.ts";
+
+interface Props {
+  locale: LocaleSegment;
+  kit: Kit;
+  /** Small line above the title, for example the release date. */
+  tag?: string | undefined;
+  /** Small line under the title, for example the artist credit. */
+  sub?: Localized | undefined;
+  /** The page's own kit: marked, and links to itself. */
+  current?: boolean;
+  size?: "small" | "large";
+}
+
+const { locale, kit, tag, sub, current = false, size = "small" } = Astro.props;
+const title = kitTextRequired(locale, kit.defIndex, "title");
+---
+
+<a
+  href={`/${locale}/kits/${kit.slug}/`}
+  aria-current={current ? "page" : undefined}
+  class="group flex flex-col"
+>
+  <span
+    class:list={[
+      "flex aspect-[256/198] w-full items-center justify-center bg-panel",
+      current && "outline-2 outline-offset-4 outline-signal",
+    ]}
+  >
+    <img
+      src={kit.cover.path}
+      width={kit.cover.width}
+      height={kit.cover.height}
+      alt=""
+      loading="lazy"
+      decoding="async"
+      class="h-full w-full object-contain"
+    />
+  </span>
+  {
+    tag && (
+      <span class:list={["mt-3 font-mono text-[11px] tracking-wider", current ? "text-signal" : "text-muted"]}>
+        {current && <span aria-hidden="true">▲ </span>}
+        {tag}
+      </span>
+    )
+  }
+  <span
+    lang={title.lang}
+    class:list={[
+      "mt-1.5 font-condensed font-extrabold uppercase leading-none group-hover:text-signal",
+      size === "large" ? "text-3xl" : "text-xl",
+    ]}
+  >
+    {title.text}
+  </span>
+  {
+    sub && (
+      <span lang={sub.lang} class="mt-1 font-mono text-[11px] text-muted">
+        {sub.text}
+      </span>
+    )
+  }
+</a>

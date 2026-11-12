@@ -41,6 +41,7 @@ interface ItemsGame {
 }
 type SoundEvents = Record<string, { event: string; files: string[]; durationSec: number | null }[]>;
 type Editions = Record<string, { standard: boolean; stattrak: boolean; image: string | null }>;
+type Covers = Record<string, { width: number; height: number }>;
 
 const errors: string[] = [];
 const fail = (message: string) => errors.push(message);
@@ -88,6 +89,7 @@ async function main(): Promise<void> {
   const itemsGame = await readJson<ItemsGame>(new URL("items-game.json", UPSTREAM));
   const soundEvents = await readJson<SoundEvents>(new URL("sound-events.json", UPSTREAM));
   const editions = await readJson<Editions>(new URL("bymykel-music-kits.json", UPSTREAM));
+  const covers = await readJson<Covers>(new URL("covers.json", UPSTREAM));
   const loc = Object.fromEntries(
     await Promise.all(
       LOCALES.map(
@@ -171,6 +173,8 @@ async function main(): Promise<void> {
     const edition = editions[String(defIndex)];
     if (!edition) fail(`kit ${defIndex} (${d.name}) is missing from the CSGO-API data`);
     if (edition && !edition.image) fail(`kit ${defIndex} (${d.name}) has no cover image`);
+    const cover = covers[d.name];
+    if (!cover) fail(`kit ${defIndex} (${d.name}) has no stored cover; run pnpm data:covers (DATA-18)`);
 
     const candidates = creditTexts(defIndex, credit);
     for (const { segment } of LOCALES) {
@@ -208,7 +212,7 @@ async function main(): Promise<void> {
     const alternateOf = Object.entries(ALTERNATE_SETS).find(([, target]) => target === defIndex)?.[0];
     const alternateName = alternateOf ? itemsGame.music[alternateOf]?.name : undefined;
 
-    if (!release || !credit || !edition?.image) continue;
+    if (!release || !credit || !edition || !cover) continue;
     kits.push(
       kitSchema.parse({
         defIndex,
@@ -218,7 +222,7 @@ async function main(): Promise<void> {
         releaseId: release.id,
         releaseDate: release.date,
         artists: credit.artists,
-        cover: { source: "icon", url: edition.image },
+        cover: { source: "icon", path: `/covers/${d.name}.png`, width: cover.width, height: cover.height },
         tracks,
         alternateTracks: alternateName ? buildTracks(alternateName, soundEvents[alternateName]) : null,
       }),

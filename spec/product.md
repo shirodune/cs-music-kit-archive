@@ -2,7 +2,7 @@
 
 ## Purpose
 
-CS Music Kit Archive (musickitarchive.com) is an unofficial, non-commercial fan site that presents every Counter-Strike music kit, from the first batch in October 2014 to today. The in-game preview of music kits is poor. This site lets anyone browse every kit in order of release, listen to every track, and read about the artists, in all 28 languages that CS2 supports.
+CS Music Kit Archive (musickitarchive.com) is an unofficial, non-commercial fan site that presents every Counter-Strike music kit, from the default CS:GO music of 2012 to today. The in-game preview of music kits is poor. This site lets anyone browse every kit in order of release, listen to every track, and read about the artists, in all 28 languages that CS2 supports.
 
 Audience: Counter-Strike players and music fans. No account, no sign-in, no purchases.
 
@@ -64,7 +64,7 @@ The rack holds every kit in order of release. The rack is the timeline.
 
 Sections, top to bottom:
 
-1. Hero: release year, kit title in the current locale, and the English title when it differs. Cover with the disc half out of the sleeve. Facts: artist credit (linked), released (date and batch), catalogue number, edition.
+1. Hero: release year, kit title in the current locale, and the English title when it differs. Cover with the disc half out of the sleeve (the icon already shows this; a cover texture gets a drawn disc, DATA-19). Facts: artist credit (linked), released (date and batch), catalogue number, edition.
 2. A "Play the MVP anthem" button.
 3. Tracklist: every track of the kit (see Audio).
 4. The official description, quoted, attributed to Valve.
@@ -96,6 +96,7 @@ Sections, top to bottom:
 - PROD-23a When the match start and match end files of a kit are the same audio (same SHA-256 after extraction), the kit shows one row labelled "Match start and end".
 - PROD-24 One player for the whole site. Only one track plays at a time. Playback starts only after a click or tap. Changing page within the site does not stop it.
 - PROD-25 A status line shows the playing track, or a clear message when a file cannot load.
+- PROD-25a Until a kit's audio is published (DATA-21), its page shows the tracklist without play buttons, leaves out the MVP button, and the status line says the audio is not published yet.
 - PROD-26 Audio is served from `https://audio.musickitarchive.com/`, never from third-party hosts in production.
 
 ## Content

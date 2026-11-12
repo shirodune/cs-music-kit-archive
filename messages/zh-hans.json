@@ -1,6 +1,6 @@
 {
   "site.name": "CS Music Kit Archive",
-  "site.description": "收录 Counter-Strike 从 2014 年首批到现在的每一个音乐盒，附完整曲目。",
+  "site.description": "收录 Counter-Strike 从 CS:GO 默认音乐到现在的每一个音乐盒，附完整曲目。",
   "nav.label": "主导航",
   "nav.records": "唱片",
   "nav.artists": "艺术家",
@@ -13,8 +13,52 @@
   "records.title": "唱片",
   "records.placeholder": "唱片架正在搭建中。",
   "artists.title": "艺术家",
-  "artist.kitCount": { "other": "{count} 个音乐盒" },
+  "artist.kitCount": {
+    "other": "{count} 个音乐盒"
+  },
   "notFound.title": "找不到页面",
   "notFound.body": "这个地址没有对应的页面。",
-  "notFound.home": "返回唱片架"
+  "notFound.home": "返回唱片架",
+  "records.list": "全部唱片",
+  "kit.meta": "{credit} 的《{title}》，Counter-Strike 音乐盒，发行于 {date}。完整曲目与官方介绍。",
+  "kit.back": "← 全部唱片",
+  "kit.artist": "艺术家",
+  "kit.released": "发行",
+  "kit.catalogue": "编号",
+  "kit.edition": "版本",
+  "kit.edition.both": "普通与 StatTrak™",
+  "kit.edition.stattrakOnly": "仅 StatTrak™",
+  "kit.edition.standardOnly": "仅普通",
+  "kit.coverAlt": "{title}音乐盒：唱片从封套里露出一半",
+  "kit.coverCredit": "官方音乐盒美术 · VALVE",
+  "kit.audioPending": "音频尚未发布",
+  "kit.tracklist": "曲目",
+  "kit.alternate": "备用曲目",
+  "kit.alternateNote": "游戏里附带了第二套默认音乐，它不是单独的物品。",
+  "kit.mvpNote": "你成为本回合 MVP 时，全场都能听到。",
+  "kit.cueTake": "{cue} {take}",
+  "kit.descriptionBy": "— Valve",
+  "kit.moreBy": {
+    "other": "{artist} 的全部 {count} 张"
+  },
+  "kit.sameDay": "同一天发行",
+  "kit.sameDayCount": {
+    "other": "另外 {count} 张 · {date}"
+  },
+  "kit.neighbours": "唱片架上的前一张和后一张",
+  "kit.sources": "来源",
+  "kit.releaseSource": "发行公告，{date}",
+  "cue.mainmenu": "主菜单",
+  "cue.chooseteam": "选择阵营",
+  "cue.startofmatch": "比赛开始",
+  "cue.startround": "回合开始",
+  "cue.startaction": "回合行动",
+  "cue.bombplanted": "炸弹已安放",
+  "cue.bombtenseccount": "炸弹倒计时 10 秒",
+  "cue.roundtenseccount": "回合倒计时 10 秒",
+  "cue.wonround": "回合胜利",
+  "cue.lostround": "回合失败",
+  "cue.deathcam": "死亡视角",
+  "cue.roundmvpanthem": "MVP 主题曲",
+  "cue.endofmatch": "比赛结束"
 }
