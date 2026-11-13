@@ -24,6 +24,7 @@ pnpm verify       # lint, types, i18n check, unit tests, build, end-to-end tests
 | `pnpm preview` | Serves `dist/` with Wrangler, the same way Cloudflare does |
 | `pnpm i18n:check` | Checks `messages/` against English (plural forms, placeholders, unknown keys) |
 | `pnpm test` / `pnpm test:e2e` | Unit tests (Vitest) / end-to-end tests (Playwright, needs `pnpm build` first) |
+| `pnpm data:changes` | Lists the game's sound files and cover textures that changed since the site's audio and covers were extracted (needs `pnpm data:sync` first; spec DATA-26) |
 | `pnpm data:links` | Fetches artist links from MusicBrainz for every `musicbrainzId` in `data/curated/artists.json`; run `pnpm data:build` after |
 | `pnpm lighthouse` | Lighthouse desktop performance check (PROD-36, needs `pnpm build` first) |
 
@@ -48,6 +49,13 @@ Cover textures (spec DATA-19) come from the same game files. Export them and sto
 C:\tools\s2v\Source2Viewer-CLI.exe -i "steam:730/game/csgo/pak01_dir.vpk" -f materials/models/inventory_items/music_kit/ -e vtex_c -d -o game-files
 pnpm data:textures
 pnpm data:build
+```
+
+After extracting audio or textures, record the game files they came from, so `pnpm data:changes` stops listing them:
+
+```powershell
+pnpm data:sync
+pnpm data:changes --accept
 ```
 
 `audio:extract` finds CS2 through Steam, writes the files to `audio/` (ignored by git) and the manifest to `data/upstream/audio-manifest.json`. `audio:upload` compares it with the published manifest: it uploads new or changed files, then the manifest, then deletes files that are no longer listed. Run both again after a game update that adds kits.

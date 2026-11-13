@@ -7,6 +7,7 @@ import kitsJson from "../../data/generated/kits.json";
 import releasesJson from "../../data/generated/releases.json";
 import en from "../../data/generated/text/en.json";
 import manifest from "../../data/upstream/audio-manifest.json";
+import gameFiles from "../../data/upstream/game-files.json";
 import { generatedArtistSchema, kitSchema, releaseSchema } from "../../src/data/schema.ts";
 
 const kits = kitsJson.map((k) => kitSchema.parse(k));
@@ -67,6 +68,21 @@ describe("kits", () => {
         }
       }
     }
+  });
+
+  test("DATA-26 the game file snapshot lists every track's file and a cover texture folder per kit", () => {
+    const paths = Object.keys(gameFiles);
+    for (const kit of kits) {
+      const lists = [
+        { folder: kit.internalName, tracks: kit.tracks },
+        { folder: kit.alternateInternalName, tracks: kit.alternateTracks ?? [] },
+      ];
+      for (const { folder, tracks } of lists) {
+        for (const track of tracks) expect(paths, kit.slug).toContain(`sounds/music/${folder}/${track.file}.vsnd_c`);
+      }
+    }
+    const textureFolders = new Set(paths.filter((p) => p.startsWith("materials/")).map((p) => p.split("/")[4]));
+    expect(textureFolders.size).toBe(kits.length);
   });
 
   test("DATA-9 slugs are unique", () => {

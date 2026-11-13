@@ -2,7 +2,15 @@
   "boxes": [
     {
       "itemId": "4287",
-      "kits": ["beartooth_02", "blitzkids_01", "hundredth_01", "neckdeep_01", "roam_01", "skog_03", "twinatlantic_01"],
+      "kits": [
+        "beartooth_02",
+        "blitzkids_01",
+        "hundredth_01",
+        "neckdeep_01",
+        "roam_01",
+        "skog_03",
+        "twinatlantic_01"
+      ],
       "name": "crate_musickit_radicals_stattrak_capsule",
       "nameKey": "csgo_crate_musickit_radicals_stattrak_capsule",
       "stattrak": true
@@ -52,7 +60,14 @@
     },
     {
       "itemId": "4848",
-      "kits": ["3kliksphilip_01", "hlb_01", "juelz_01", "knock2_01", "meechydarko_01", "sullivanking_01"],
+      "kits": [
+        "3kliksphilip_01",
+        "hlb_01",
+        "juelz_01",
+        "knock2_01",
+        "meechydarko_01",
+        "sullivanking_01"
+      ],
       "name": "crate_musickit_initiators_capsule",
       "nameKey": "csgo_crate_musickit_initiators_capsule",
       "stattrak": false
@@ -66,7 +81,14 @@
     },
     {
       "itemId": "4914",
-      "kits": ["dryden_01", "isoxo_01", "killscript_01", "knock2_02", "radcat_01", "twerl_01"],
+      "kits": [
+        "dryden_01",
+        "isoxo_01",
+        "killscript_01",
+        "knock2_02",
+        "radcat_01",
+        "twerl_01"
+      ],
       "name": "crate_musickit_nightmode_capsule",
       "nameKey": "csgo_crate_musickit_nightmode_capsule",
       "stattrak": false
