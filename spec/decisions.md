@@ -125,3 +125,11 @@ Decided 2026-11-13 by the project owner.
 - Tracks play only on their record page; leaving the page stops them. The tracklist rows, the MVP button and the status line under the cover follow the design canvas. A slider to seek and elapsed time on the current row were added, because main menu tracks run up to six and a half minutes.
 - The player is a plain script of about 3 KB, inlined into the page, with one `<audio>` element. It needs no framework: React would add about 66 KB (compressed) to every record page.
 - Why not a site-wide player: playing across pages needs Astro's client-side router (`<ClientRouter />`, about 8 KB on every page), changes to how the existing scripts run after navigation, and a now-playing bar that the design does not have and that would take height from the one-screen records page (PROD-13a).
+
+## D-021 Phones are supported, not prioritized
+
+Decided 2026-11-13 by the project owner.
+
+- Kept: pages work on a phone and never scroll sideways (PROD-1), checked at 390 px wide.
+- Dropped: the 360 px minimum width, the 44 px touch target rule (PROD-33), Lighthouse's mobile settings (PROD-36 now uses the desktop preset) and the end-to-end run in a simulated phone (every test ran twice). The phone design of the rack is no longer an open task.
+- Why: the project owner wants work to go to the site's content and desktop experience first. Cloudflare Web Analytics records device types; revisit if most visitors turn out to use phones.

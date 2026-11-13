@@ -79,8 +79,8 @@ test.describe("artist page", () => {
     await expect(page.getByRole("link", { name: "← All artists" })).toHaveAttribute("href", "/en/artists/");
   });
 
-  test("PROD-1 artist pages do not scroll sideways at 360 px", async ({ page }) => {
-    await page.setViewportSize({ width: 360, height: 740 });
+  test("PROD-1 artist pages do not scroll sideways on a phone", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
     for (const path of ["/en/artists/", "/en/artists/twerl-ekko-sidetrack/", "/zh-hans/artists/daniel-sadowski/"]) {
       await page.goto(path);
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
