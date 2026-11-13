@@ -41,8 +41,9 @@ One kit per `defIndex`. The edition field says whether StatTrak™ exists. Seven
 ## D-007 Full-length audio, hosted on R2, never in git
 
 Every track is the full game file, as csgoskins.gg and the Fandom wiki do.
-- MP3 files are published exactly as the game stores them (mostly 128 kbps; a few 160 or 256 kbps). csgoskins.gg serves the same files: its Desert Fire main menu file is 2,615,589 bytes, the game's is 2,616,389 bytes including the container. Only the uncompressed match start and match end files are encoded to MP3 (DATA-20b): as stored they are 926 MB for 2 hours of audio.
-- Not in git because of size (about 650 MB), because a takedown on a public repository would remove the whole repository, and because the files can be rebuilt from the game.
+- Files are published exactly as the game stores them (DATA-20a). The MP3 files are mostly 128 kbps; a few are 160 or 256 kbps. csgoskins.gg serves the same files: its Desert Fire main menu file is 2,615,589 bytes, the game's is 2,616,389 bytes including the container.
+- The uncompressed match start and match end files stay WAV, at the project owner's choice (2026-11-12): the archive keeps the game's files lossless. They are 136 files, 915 MB for 2 hours of audio, against 85 MB as 128 kbps MP3. R2 charges nothing for downloads, so the cost is the visitor's download time, about ten times longer for these two cues.
+- Not in git because of size (about 1.6 GB), because a takedown on a public repository would remove the whole repository, and because the files can be rebuilt from the game.
 
 ## D-008 Release dates come from Valve's release notes
 
@@ -84,7 +85,7 @@ No ads, sponsors or payments. The footer carries a disclaimer and a link to the 
 
 ## D-016 Domain, repository, analytics
 
-- Domain: musickitarchive.com, registered at Cloudflare Registrar. Audio at `audio.musickitarchive.com`.
+- Domain: musickitarchive.com, registered at Cloudflare Registrar on 2026-11-12. `www` redirects to it with a 301 (a Cloudflare redirect rule). Audio at `audio.musickitarchive.com`, the custom domain of the R2 bucket `cs-music-kit-audio`.
 - Repository: <https://github.com/shirodune/cs-music-kit-archive> (public).
 - Analytics: Cloudflare Web Analytics.
 

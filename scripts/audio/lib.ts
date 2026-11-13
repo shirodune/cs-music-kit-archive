@@ -1,0 +1,60 @@
+// Pure helpers for `pnpm audio:extract` and `pnpm audio:upload` (spec: DATA-20 to DATA-21).
+
+/** One published file, keyed by its path on audio.musickitarchive.com: `{internalName}/{file}.mp3` or `.wav`. */
+export interface ManifestEntry {
+  bytes: number;
+  sha256: string;
+  durationSec: number;
+}
+export type Manifest = Record<string, ManifestEntry>;
+
+export interface WantedFile {
+  internalName: string;
+  file: string;
+  /** `{internalName}/{file}`: the key without the extension, which depends on how the game stores the file. */
+  base: string;
+}
+
+interface KitTracks {
+  internalName: string;
+  tracks: { file: string }[];
+  alternateTracks: { file: string }[] | null;
+  alternateInternalName: string | null;
+}
+
+/** Every track file the site lists, once each, in order. The alternate set has its own game folder (DATA-6). */
+export function wantedFiles(kits: KitTracks[]): WantedFile[] {
+  const byBase = new Map<string, WantedFile>();
+  const add = (internalName: string, file: string) => {
+    const base = `${internalName}/${file}`;
+    byBase.set(base, { internalName, file, base });
+  };
+  for (const kit of kits) {
+    for (const track of kit.tracks) add(kit.internalName, track.file);
+    if (kit.alternateInternalName) {
+      for (const track of kit.alternateTracks ?? []) add(kit.alternateInternalName, track.file);
+    }
+  }
+  return [...byBase.values()].sort((a, b) => (a.base < b.base ? -1 : 1));
+}
+
+/** What `pnpm audio:upload` does to make the bucket match the manifest (DATA-21). */
+export function uploadPlan(published: Manifest, next: Manifest): { put: string[]; remove: string[] } {
+  return {
+    put: Object.keys(next)
+      .filter((key) => published[key]?.sha256 !== next[key]?.sha256)
+      .sort(),
+    remove: Object.keys(published)
+      .filter((key) => !(key in next))
+      .sort(),
+  };
+}
+
+const CONTENT_TYPES: Record<string, string> = { mp3: "audio/mpeg", wav: "audio/wav" };
+
+/** Content type of a manifest key, by its extension (DATA-20a). */
+export function contentTypeOf(key: string): string {
+  const type = CONTENT_TYPES[key.slice(key.lastIndexOf(".") + 1)];
+  if (!type) throw new Error(`${key}: not an MP3 or WAV file`);
+  return type;
+}
