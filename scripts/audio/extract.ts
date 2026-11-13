@@ -6,7 +6,8 @@
 // 2. Each track's compiled sound is copied out of the VPK, checked against its CRC, to audio/vsnd/{internalName}/.
 // 3. Source2Viewer-CLI decompiles them to audio/out/{internalName}/{file}.mp3 or .wav: the game's own data, never
 //    re-encoded (DATA-20a). Valve strips the header from WAV files; Source2Viewer writes the standard one back.
-// 4. Writes data/upstream/audio-manifest.json; next, pnpm audio:upload.
+// 4. Writes data/upstream/audio-manifest.json, and records the CRC and size of every sound file it read in
+//    data/upstream/game-files-extracted.json (DATA-26). Next, pnpm audio:upload.
 // Needs Source2Viewer-CLI and ffprobe (part of ffmpeg). audio/ is in .gitignore: audio never goes into git (DATA-2).
 // Usage: node scripts/audio/extract.ts [--game <folder with pak01_dir.vpk>] [--s2v <path to Source2Viewer-CLI>] [--all]
 
@@ -47,10 +48,13 @@ async function main(): Promise<void> {
   const vpk = await readVpkDir(dirFile);
   const kits = await readJson<Parameters<typeof wantedFiles>[0]>(join(ROOT, "data", "generated", "kits.json"));
   const previous = existsSync(MANIFEST) ? await readJson<Manifest>(MANIFEST) : {};
-  const extracted = existsSync(EXTRACTED) ? await readJson<Record<string, { crc: string }>>(EXTRACTED) : {};
+  const extracted = existsSync(EXTRACTED)
+    ? await readJson<Record<string, { crc: string; bytes: number }>>(EXTRACTED)
+    : {};
 
   const manifest: Manifest = {};
   const toRead: string[] = [];
+  const read: Record<string, { crc: string; bytes: number }> = {};
   const notInGame: string[] = [];
   const missingArchives = new Set<string>();
   await rm(VSND, { recursive: true, force: true });
@@ -68,6 +72,11 @@ async function main(): Promise<void> {
       await mkdir(join(VSND, internalName), { recursive: true });
       await writeFile(join(VSND, `${base}.vsnd_c`), await readVpkFile(dirFile, entry));
       toRead.push(base);
+      // Written the way GameTracking's VPK listing writes it, which `pnpm data:sync` copies.
+      read[`sounds/music/${base}.vsnd_c`] = {
+        crc: entry.crc.toString(16).padStart(10, "0"),
+        bytes: entry.preload.length + entry.length,
+      };
     }
   }
   if (notInGame.length > 0) {
@@ -97,6 +106,7 @@ async function main(): Promise<void> {
   }
 
   await writeJson(MANIFEST, manifest);
+  await writeJson(EXTRACTED, { ...extracted, ...read });
   const keys = Object.keys(manifest);
   const wavCount = keys.filter((key) => key.endsWith(".wav")).length;
   console.log(

@@ -1295,10 +1295,6 @@
     "bytes": 159207,
     "crc": "00658ea92a"
   },
-  "sounds/music/austinwintory_03/roundmvpanthem_02.vsnd_c": {
-    "bytes": 159207,
-    "crc": "0059bd4d95"
-  },
   "sounds/music/austinwintory_03/roundtenseccount.vsnd_c": {
     "bytes": 216885,
     "crc": "0013760091"
@@ -1486,10 +1482,6 @@
   "sounds/music/bbnos_01/roundmvpanthem_01.vsnd_c": {
     "bytes": 119501,
     "crc": "00481a254b"
-  },
-  "sounds/music/bbnos_01/roundmvpanthem.vsnd_c": {
-    "bytes": 119501,
-    "crc": "005c8bc015"
   },
   "sounds/music/bbnos_01/roundtenseccount.vsnd_c": {
     "bytes": 185120,
@@ -2423,10 +2415,6 @@
     "bytes": 80615,
     "crc": "00f2de7738"
   },
-  "sounds/music/dren_02/mainmenu_02.vsnd_c": {
-    "bytes": 3165989,
-    "crc": "004d70afa6"
-  },
   "sounds/music/dren_02/mainmenu.vsnd_c": {
     "bytes": 2850848,
     "crc": "007b84b40a"
@@ -2999,10 +2987,6 @@
     "bytes": 8113846,
     "crc": "0077e19dc1"
   },
-  "sounds/music/hlalyx_01/loading.vsnd_c": {
-    "bytes": 14944706,
-    "crc": "002e9a32ce"
-  },
   "sounds/music/hlalyx_01/lostround.vsnd_c": {
     "bytes": 173402,
     "crc": "00fcac3065"
@@ -3058,10 +3042,6 @@
   "sounds/music/hlb_01/bombtenseccount.vsnd_c": {
     "bytes": 246143,
     "crc": "006852303d"
-  },
-  "sounds/music/hlb_01/bombtenseccountx.vsnd_c": {
-    "bytes": 187210,
-    "crc": "0054e1e1f4"
   },
   "sounds/music/hlb_01/chooseteam.vsnd_c": {
     "bytes": 433790,
@@ -3147,14 +3127,6 @@
     "bytes": 128278,
     "crc": "0009e61a7e"
   },
-  "sounds/music/hotlinemiami_01/mainmenu_02.vsnd_c": {
-    "bytes": 6339988,
-    "crc": "005344d78e"
-  },
-  "sounds/music/hotlinemiami_01/mainmenu_03.vsnd_c": {
-    "bytes": 3398391,
-    "crc": "00db3ad83a"
-  },
   "sounds/music/hotlinemiami_01/mainmenu.vsnd_c": {
     "bytes": 4637640,
     "crc": "0045d0a4f2"
@@ -3162,10 +3134,6 @@
   "sounds/music/hotlinemiami_01/roundmvpanthem_01.vsnd_c": {
     "bytes": 115321,
     "crc": "0021a351d5"
-  },
-  "sounds/music/hotlinemiami_01/roundmvpanthem_02.vsnd_c": {
-    "bytes": 144160,
-    "crc": "004fd50703"
   },
   "sounds/music/hotlinemiami_01/roundtenseccount.vsnd_c": {
     "bytes": 161715,
@@ -3474,10 +3442,6 @@
   "sounds/music/jesseharlin_01/lostround.vsnd_c": {
     "bytes": 145832,
     "crc": "00950a4cf3"
-  },
-  "sounds/music/jesseharlin_01/mainmenu_02.vsnd_c": {
-    "bytes": 2338028,
-    "crc": "00acd9581e"
   },
   "sounds/music/jesseharlin_01/mainmenu.vsnd_c": {
     "bytes": 2305845,
@@ -4191,21 +4155,9 @@
     "bytes": 9776980,
     "crc": "006291fc79"
   },
-  "sounds/music/mateomessina_01/loading.vsnd_c": {
-    "bytes": 13918908,
-    "crc": "0003f58683"
-  },
   "sounds/music/mateomessina_01/lostround.vsnd_c": {
     "bytes": 113649,
     "crc": "0064ca310f"
-  },
-  "sounds/music/mateomessina_01/mainmenu_02.vsnd_c": {
-    "bytes": 2609284,
-    "crc": "00553c0f78"
-  },
-  "sounds/music/mateomessina_01/mainmenu_03.vsnd_c": {
-    "bytes": 3492850,
-    "crc": "009440c969"
   },
   "sounds/music/mateomessina_01/mainmenu.vsnd_c": {
     "bytes": 2531125,
@@ -4214,14 +4166,6 @@
   "sounds/music/mateomessina_01/roundmvpanthem_01.vsnd_c": {
     "bytes": 118665,
     "crc": "00f076e558"
-  },
-  "sounds/music/mateomessina_01/roundmvpanthem_02.vsnd_c": {
-    "bytes": 120337,
-    "crc": "003da8cf59"
-  },
-  "sounds/music/mateomessina_01/roundmvpanthem_03.vsnd_c": {
-    "bytes": 119501,
-    "crc": "0052890cdc"
   },
   "sounds/music/mateomessina_01/roundtenseccount.vsnd_c": {
     "bytes": 165476,
@@ -4290,10 +4234,6 @@
   "sounds/music/mattlange_01/roundmvpanthem_01.vsnd_c": {
     "bytes": 118247,
     "crc": "00deeba3d1"
-  },
-  "sounds/music/mattlange_01/roundmvpanthem_02.vsnd_c": {
-    "bytes": 132040,
-    "crc": "009d36bf67"
   },
   "sounds/music/mattlange_01/roundtenseccount.vsnd_c": {
     "bytes": 166312,
@@ -4923,10 +4863,6 @@
     "bytes": 135801,
     "crc": "0029c7efb8"
   },
-  "sounds/music/noisia_01/roundmvpanthem_02.vsnd_c": {
-    "bytes": 137055,
-    "crc": "0085ec0671"
-  },
   "sounds/music/noisia_01/roundtenseccount.vsnd_c": {
     "bytes": 223155,
     "crc": "002cbc2849"
@@ -5470,10 +5406,6 @@
   "sounds/music/robertallaire_01/endofmatch.vsnd_c": {
     "bytes": 8759980,
     "crc": "004d0240d7"
-  },
-  "sounds/music/robertallaire_01/loading.vsnd_c": {
-    "bytes": 16306416,
-    "crc": "0074bb5483"
   },
   "sounds/music/robertallaire_01/lostround.vsnd_c": {
     "bytes": 180523,

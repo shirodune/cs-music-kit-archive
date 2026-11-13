@@ -53,12 +53,20 @@ pnpm data:textures
 pnpm data:build
 ```
 
-After extracting audio or textures, record the game files they came from, so `pnpm data:changes` stops listing them:
+`audio:extract` records the game files it read. After exporting textures, record them too, so `pnpm data:changes` stops listing them:
 
 ```powershell
 pnpm data:sync
 pnpm data:changes --accept
 ```
+
+## Weekly sync (maintainers)
+
+`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts and uploads the audio of game files that changed, and opens or updates the pull request on the branch `data-sync`. Cover textures that changed are listed in that pull request; export them by hand as above. One-time setup:
+
+1. In Cloudflare, create an API token (My Profile → API Tokens → Create Custom Token) with the permission Account → Workers R2 Storage → Edit, limited to this account.
+2. In GitHub, create the environment `audio` (Settings → Environments), limit its deployment branches to `main`, and add the token as the secret `R2_API_TOKEN`.
+3. In GitHub, allow workflows to open pull requests: Settings → Actions → General → Workflow permissions → "Allow GitHub Actions to create and approve pull requests".
 
 Deploys run from GitHub Actions (spec D-003): every pull request gets a preview on workers.dev, and every push to `main` deploys to production after all checks pass.
 
