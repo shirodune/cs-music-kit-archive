@@ -21,7 +21,7 @@ The other style directions and the retired timeline page are not built.
 - Dark olive ground `#1A1C19`, warm off-white text `#E9E4D6`, muted text `#A9A493`, signal orange `#D9762F`.
 - Type: Saira Stencil One for small section heads, Saira Condensed 800 for large titles, IBM Plex Mono for labels, IBM Plex Sans for running text. Non-Latin scripts use the fallback fonts in `i18n.md`.
 - Motifs: record sleeves on a rack, vinyl discs, the orange in-game record label, hazard stripes.
-- PROD-1 Pages must work from 360 px wide. At phone width menus stack and tables scroll inside their own box; the rack follows the phone design (see Open questions). The page body never scrolls sideways.
+- PROD-1 Pages work on a phone: the page body never scrolls sideways. Beyond that, the phone layout is not a priority (D-021).
 
 ## Global elements
 
@@ -114,13 +114,13 @@ Sections, top to bottom:
 
 - PROD-31 Text contrast meets WCAG 2.2 AA (4.5:1 for body text, 3:1 for large text).
 - PROD-32 Every control is a real `button`, `a` or form element, reachable by keyboard, with a visible focus outline. Icon-only buttons have an accessible name.
-- PROD-33 Touch targets are at least 44 × 44 px.
+- PROD-33 Withdrawn on 2026-11-13 (D-021).
 - PROD-34 Every page sets `lang` on `<html>`. Text in another language, such as an English kit title on a Russian page, carries its own `lang`.
 
 ## Performance
 
 - PROD-35 Pages without interactive parts ship no JavaScript except the language picker, the analytics loader (PROD-37) and, on artist pages, the few inline lines that point the back link at the kit in `?from` (PROD-21). The record page adds its player as one small inline script (about 3 KB), without a framework.
-- PROD-36 Lighthouse performance score of 90 or more on mobile for the Records, Record and Artist pages. CI runs `pnpm lighthouse`: Lighthouse's default mobile settings, one unscored warm-up run, then three runs per page against the built site served by Wrangler, and the median counts. Local scores swing with machine load, so CI is the reference.
+- PROD-36 Lighthouse performance score of 90 or more on desktop for the Records, Record and Artist pages. CI runs `pnpm lighthouse`: Lighthouse's desktop preset, one unscored warm-up run, then three runs per page against the built site served by Wrangler, and the median counts. Local scores swing with machine load, so CI is the reference.
 
 ## Analytics
 
@@ -128,4 +128,4 @@ Sections, top to bottom:
 
 ## Open questions
 
-- Phone layout of the rack. The project owner designs it in the design canvas; the build follows that design. Until then, below 900 px the label card sits above a smaller rack and only the selected year is labelled on the strip.
+- Phone layout of the rack. Not a priority (D-021). Below 900 px the label card sits above a smaller rack and only the selected year is labelled on the strip.

@@ -17,8 +17,6 @@ async function open(page: Page, path: string) {
 }
 
 test.describe("fonts", () => {
-  test.skip(({ isMobile }) => isMobile, "same fonts on every device");
-
   test("I18N-19 a page links only its own script group's font stylesheet", async ({ page, request }) => {
     const fontSheets = () =>
       page

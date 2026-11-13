@@ -1,6 +1,6 @@
-// PROD-36: Lighthouse mobile performance score of 90 or more on the Records, Record and Artist pages.
+// PROD-36: Lighthouse desktop performance score of 90 or more on the Records, Record and Artist pages.
 // Serves dist/ with Wrangler (run `pnpm build` first), runs Lighthouse three times per page with its
-// default mobile settings and checks the median. Scores swing on a busy machine; CI is the reference.
+// desktop preset and checks the median. Scores swing on a busy machine; CI is the reference.
 import { execFileSync, spawn } from "node:child_process";
 import { chromium } from "@playwright/test";
 
@@ -45,6 +45,7 @@ function lighthouse(url: string): Run {
       LIGHTHOUSE,
       url,
       "--only-categories=performance",
+      "--preset=desktop",
       "--output=json",
       "--output-path=stdout",
       "--quiet",
@@ -85,6 +86,6 @@ try {
   stopServer();
 }
 if (failed) {
-  console.error(`PROD-36: every page needs a median mobile performance score of ${MIN_SCORE} or more.`);
+  console.error(`PROD-36: every page needs a median desktop performance score of ${MIN_SCORE} or more.`);
   process.exit(1);
 }

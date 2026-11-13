@@ -24,7 +24,7 @@ pnpm verify       # lint, types, i18n check, unit tests, build, end-to-end tests
 | `pnpm preview` | Serves `dist/` with Wrangler, the same way Cloudflare does |
 | `pnpm i18n:check` | Checks `messages/` against English (plural forms, placeholders, unknown keys) |
 | `pnpm test` / `pnpm test:e2e` | Unit tests (Vitest) / end-to-end tests (Playwright, needs `pnpm build` first) |
-| `pnpm lighthouse` | Lighthouse mobile performance check (PROD-36, needs `pnpm build` first) |
+| `pnpm lighthouse` | Lighthouse desktop performance check (PROD-36, needs `pnpm build` first) |
 
 ## Audio (maintainers)
 

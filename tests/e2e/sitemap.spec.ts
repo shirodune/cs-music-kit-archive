@@ -9,8 +9,6 @@ const pagesPerLocale = 2 + count("../../data/generated/kits.json") + count("../.
 const locs = (xml: string) => [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1] as string);
 
 test.describe("sitemap", () => {
-  test.skip(({ isMobile }) => isMobile, "same files on every device");
-
   test("PROD-30 the sitemap lists every page in every locale", async ({ request }) => {
     const robots = await (await request.get("/robots.txt")).text();
     expect(robots).toContain(`Sitemap: ${site}/sitemap-index.xml`);

@@ -57,8 +57,8 @@ test.describe("record page", () => {
     await expect(neighbours.getByRole("link")).toHaveCount(1);
   });
 
-  test("PROD-1 the record page does not scroll sideways at 360 px", async ({ page }) => {
-    await page.setViewportSize({ width: 360, height: 740 });
+  test("PROD-1 the record page does not scroll sideways on a phone", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
     for (const path of [
       "/en/kits/the-devil-went-clubbing-in-georgia/",
       "/zh-hans/kits/cs-go/",
