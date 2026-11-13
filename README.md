@@ -37,13 +37,12 @@ The audio comes from the game's own files and goes straight to Cloudflare R2. It
 
    ```sh
    pnpm install
-   pnpm exec wrangler login
    pnpm game:download --depotdownloader <path to DepotDownloader>
    pnpm audio:extract --s2v <path to Source2Viewer-CLI>
    pnpm audio:upload
    ```
 
-`game:download` downloads, anonymously from Steam, the game's VPK directory (about 8 MB) and only the archives that hold new or changed tracks, about 100 MB each, into `game-files/` (ignored by git). `audio:extract` reads those tracks, has Source2Viewer decompile them into `audio/out/` (ignored by git) and writes the manifest to `data/upstream/audio-manifest.json`; the other tracks keep their entry. Add `--all` to both to read every track again (about 9 GB of archives). With CS2 installed through Steam, skip `game:download` and pass `--game "C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo"` to `audio:extract`. `audio:upload` compares the manifest with the published one: it uploads new or changed files, then the manifest, then deletes files that are no longer listed.
+`game:download` downloads, anonymously from Steam, the game's VPK directory (about 8 MB) and only the archives that hold new or changed tracks, about 100 MB each, into `game-files/` (ignored by git). `audio:extract` reads those tracks, has Source2Viewer decompile them into `audio/out/` (ignored by git) and writes the manifest to `data/upstream/audio-manifest.json`; the other tracks keep their entry. Add `--all` to both to read every track again (about 9 GB of archives). With CS2 installed through Steam, skip `game:download` and pass `--game "C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo"` to `audio:extract`. `audio:upload` needs the bucket's S3 credentials in `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY` (see "Weekly sync"). It compares the manifest with the published one: it uploads new or changed files, then the manifest, then deletes files that are no longer listed.
 
 Cover textures (spec DATA-19) come from the same game files. Export them and store them in `public/covers/textures/`, which is committed:
 
@@ -62,10 +61,10 @@ pnpm data:changes --accept
 
 ## Weekly sync (maintainers)
 
-`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts and uploads the audio of game files that changed, and opens or updates the pull request on the branch `data-sync`. Cover textures that changed are listed in that pull request; export them by hand as above. One-time setup:
+`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts and uploads the audio of game files that changed, and opens or updates the pull request on the branch `data-sync`. Cover textures that changed are listed in that pull request; export them by hand as above. One-time setup (done 2026-11-13):
 
-1. In Cloudflare, create an API token (My Profile → API Tokens → Create Custom Token) with the permission Account → Workers R2 Storage → Edit, limited to this account.
-2. In GitHub, create the environment `audio` (Settings → Environments), limit its deployment branches to `main`, and add the token as the secret `R2_API_TOKEN`.
+1. Create an R2 token limited to the bucket: in Cloudflare, R2 → Manage API tokens → Create Account API token, permission "Object Read & Write", bucket `cs-music-kit-audio`. It shows an Access Key ID and a Secret Access Key.
+2. In GitHub, create the environment `audio` (Settings → Environments), limit its deployment branches to `main`, and add the two values as the secrets `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`.
 3. In GitHub, allow workflows to open pull requests: Settings → Actions → General → Workflow permissions → "Allow GitHub Actions to create and approve pull requests".
 
 Deploys run from GitHub Actions (spec D-003): every pull request gets a preview on workers.dev, and every push to `main` deploys to production after all checks pass.

@@ -2,7 +2,8 @@
 # 1. sync: fetches the upstream data and artist links, builds, and lists the game files that changed. When sound
 #    files changed, downloads only their VPK archives from Steam and extracts their audio. It runs third-party tools
 #    (DepotDownloader, Source2Viewer), so it gets no secrets and cannot write to the repository.
-# 2. upload: publishes the extracted audio to R2. The only job with the R2 token; it runs only this project's code.
+# 2. upload: publishes the extracted audio to R2. The only job with the R2 credentials, limited to the audio bucket;
+#    it runs only this project's code.
 # 3. pull-request: commits the changed data to the branch data-sync and opens or updates its pull request.
 name: Weekly sync
 
@@ -117,7 +118,8 @@ jobs:
           path: audio/out/
       - run: pnpm audio:upload
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.R2_API_TOKEN }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
 
   pull-request:
     name: Open the pull request
