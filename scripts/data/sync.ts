@@ -17,9 +17,8 @@ const REPOS = {
 
 const AUDIO_MANIFEST = "https://audio.musickitarchive.com/manifest.json";
 
-/** Every kit's sound files and cover textures in the game's VPK (DATA-26). */
-const GAME_FILES =
-  /^(sounds\/music\/[^/]+\/[^/]+\.vsnd_c|materials\/models\/inventory_items\/music_kit\/[^/]+\/mp3_screen_color[^/]*\.vtex_c)$/;
+/** Every kit's cover textures in the game's VPK (DATA-26). Sound files are the ones the sound events play. */
+const COVER_TEXTURES = /^materials\/models\/inventory_items\/music_kit\/[^/]+\/mp3_screen_color[^/]*\.vtex_c$/;
 
 /** Localization keys we keep, compared in lower case (DATA-3). */
 const KEY_PREFIXES = ["musickit_", "csgo_crate_musickit_"];
@@ -156,12 +155,18 @@ async function main(): Promise<void> {
   }
   await writeJson(new URL("sound-events.json", OUT), soundEvents);
 
-  // The game files the site publishes, with their CRC and size from the VPK listing (DATA-26).
+  // The game files the site publishes, with their CRC and size from the VPK listing (DATA-26): every sound file a
+  // kit's sound events play, and every cover texture. A kit folder also holds files no event plays; they are left out.
+  const played = new Set(
+    Object.entries(soundEvents).flatMap(([name, events]) =>
+      events.flatMap((e) => e.files.map((file) => `sounds/music/${name}/${file}.vsnd_c`)),
+    ),
+  );
   const listing = await (await get(raw(gt, shas.gameTracking, "game/csgo/pak01_dir.txt"))).text();
   const gameFiles: Record<string, { crc: string; bytes: number }> = {};
   for (const line of listing.split("\n")) {
     const match = /^(\S+) CRC:([0-9a-f]+) size:(\d+)$/.exec(line.trim());
-    if (match && GAME_FILES.test(match[1] as string)) {
+    if (match && (played.has(match[1] as string) || COVER_TEXTURES.test(match[1] as string))) {
       gameFiles[match[1] as string] = { crc: match[2] as string, bytes: Number(match[3]) };
     }
   }

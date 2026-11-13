@@ -1,0 +1,196 @@
+# Weekly data sync (spec: DATA-24 to DATA-26, D-023). Also runs on demand from the Actions tab.
+# 1. sync: fetches the upstream data and artist links, builds, and lists the game files that changed. When sound
+#    files changed, downloads only their VPK archives from Steam and extracts their audio. It runs third-party tools
+#    (DepotDownloader, Source2Viewer), so it gets no secrets and cannot write to the repository.
+# 2. upload: publishes the extracted audio to R2. The only job with the R2 credentials, limited to the audio bucket;
+#    it runs only this project's code.
+# 3. pull-request: commits the changed data to the branch data-sync and opens or updates its pull request.
+name: Weekly sync
+
+on:
+  schedule:
+    - cron: "17 6 * * 1" # Mondays, 06:17 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: weekly-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    name: Fetch data and extract audio
+    runs-on: ubuntu-latest
+    outputs:
+      audio: ${{ steps.extract.outcome == 'success' }}
+      build: ${{ steps.build.outputs.ok }}
+    env:
+      DEPOTDOWNLOADER_URL: https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.4.0/DepotDownloader-linux-x64.zip
+      DEPOTDOWNLOADER_SHA256: a999dec66b4850fc961bd50366696d23c2d0fad7b18790e6a5647b2f19097a53
+      S2V_URL: https://github.com/ValveResourceFormat/ValveResourceFormat/releases/download/20.1/cli-linux-x64.zip
+      S2V_SHA256: 29d25a6d6b62377fc5386c3e5145b0a2180a401a50041afe9494b3f503deaef5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Fetch upstream data
+        run: |
+          pnpm data:sync
+          pnpm data:covers
+          pnpm data:links
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      # A new kit fails the build until it has a release and credits (DATA-25). The pull request reports it.
+      - name: Build
+        id: build
+        run: |
+          if pnpm data:build > "$RUNNER_TEMP/build.log" 2>&1; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; fi
+          cat "$RUNNER_TEMP/build.log"
+      - name: List changed game files
+        id: changes
+        run: |
+          if pnpm -s data:changes > "$RUNNER_TEMP/changes.log"; then echo "changed=false" >> "$GITHUB_OUTPUT"; else echo "changed=true" >> "$GITHUB_OUTPUT"; fi
+          cat "$RUNNER_TEMP/changes.log"
+      # Tracks of a kit that is not built yet are extracted on a later run, once the build passes.
+      - name: Extract changed audio
+        id: extract
+        if: steps.changes.outputs.changed == 'true' && steps.build.outputs.ok == 'true'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          tools="$RUNNER_TEMP/tools"
+          mkdir -p "$tools"
+          curl -fsSL -o "$tools/dd.zip" "$DEPOTDOWNLOADER_URL"
+          curl -fsSL -o "$tools/s2v.zip" "$S2V_URL"
+          echo "$DEPOTDOWNLOADER_SHA256  $tools/dd.zip" | sha256sum -c -
+          echo "$S2V_SHA256  $tools/s2v.zip" | sha256sum -c -
+          unzip -q "$tools/dd.zip" -d "$tools/dd"
+          unzip -q "$tools/s2v.zip" -d "$tools/s2v"
+          chmod +x "$tools/dd/DepotDownloader" "$tools/s2v/Source2Viewer-CLI"
+          pnpm game:download --depotdownloader "$tools/dd/DepotDownloader"
+          pnpm audio:extract --s2v "$tools/s2v/Source2Viewer-CLI"
+          pnpm data:build
+          pnpm -s data:changes > "$RUNNER_TEMP/changes.log" || true
+      - name: Keep the logs for the pull request
+        run: |
+          mkdir -p sync-logs
+          cp "$RUNNER_TEMP/build.log" "$RUNNER_TEMP/changes.log" sync-logs/
+      - uses: actions/upload-artifact@v7
+        with:
+          name: data
+          path: |
+            data/
+            public/covers/*.png
+            sync-logs/
+          retention-days: 3
+      - if: steps.extract.outcome == 'success'
+        uses: actions/upload-artifact@v7
+        with:
+          name: audio
+          path: audio/out/
+          retention-days: 1
+
+  upload:
+    name: Upload audio
+    needs: sync
+    if: needs.sync.outputs.audio == 'true'
+    runs-on: ubuntu-latest
+    environment: audio
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: actions/download-artifact@v8
+        with:
+          name: data
+      - uses: actions/download-artifact@v8
+        with:
+          name: audio
+          path: audio/out/
+      - run: pnpm audio:upload
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+
+  pull-request:
+    name: Open the pull request
+    needs: [sync, upload]
+    if: ${{ !cancelled() && needs.sync.result == 'success' && needs.upload.result != 'failure' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          name: data
+      - name: Commit and open or update the pull request
+        run: |
+          mv sync-logs "$RUNNER_TEMP/"
+          # meta.json records the fetch time, so it changes on every run.
+          if [ -z "$(git status --porcelain -- . ':!data/upstream/meta.json')" ]; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C data-sync
+          git add -A
+          git commit -q -m "Sync upstream data"
+          git push -q --force origin data-sync
+
+          body="$RUNNER_TEMP/body.md"
+          {
+            echo "Weekly data sync (spec DATA-24), from [this run]($RUN_URL)."
+            echo
+            echo "## Changed files"
+            echo
+            echo '```'
+            git show --stat --format= HEAD
+            echo '```'
+            echo
+            echo "## Game files (pnpm data:changes, after extraction)"
+            echo
+            echo '```'
+            cat "$RUNNER_TEMP/sync-logs/changes.log"
+            echo '```'
+            if [ "$AUDIO" = "true" ]; then
+              echo
+              echo "The audio of changed sound files was extracted and uploaded to R2."
+            fi
+            if [ "$BUILD" != "true" ]; then
+              echo
+              echo "## pnpm data:build failed (DATA-25)"
+              echo
+              echo "A new kit needs a release, credits and, when needed, slug or title overrides. Its audio is extracted on the first run after the build passes."
+              echo
+              echo '```'
+              tail -n 40 "$RUNNER_TEMP/sync-logs/build.log"
+              echo '```'
+            fi
+          } > "$body"
+
+          number=$(gh pr list --head data-sync --state open --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh pr edit "$number" --body-file "$body"
+          else
+            gh pr create --head data-sync --base main --title "Sync upstream data" --body-file "$body"
+          fi
+          # Pushes made with the workflow's token start no workflows, so start the checks explicitly.
+          gh workflow run ci.yml --ref data-sync
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          AUDIO: ${{ needs.sync.outputs.audio }}
+          BUILD: ${{ needs.sync.outputs.build }}

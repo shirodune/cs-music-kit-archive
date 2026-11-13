@@ -1,12 +1,14 @@
 # Checks for every pull request and every push to main, then deploys (spec: D-003, D-019).
 # Pull requests get a preview on workers.dev; pushes to main go to production after every check passes.
 # Previews of closed pull requests are deleted by preview-cleanup.yml.
+# weekly-sync.yml starts it by hand on its branch: pushes made with the workflow token start no workflows.
 name: CI
 
 on:
   pull_request:
   push:
     branches: [main]
+  workflow_dispatch:
 
 concurrency:
   group: ci-${{ github.ref }}

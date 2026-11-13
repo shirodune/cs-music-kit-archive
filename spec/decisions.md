@@ -142,3 +142,16 @@ Decided 2026-11-13 by the project owner.
 - The textures are stored unchanged as PNG in `public/covers/textures/` and committed, like the Steam icons: about 69 MB. This is the one exception to "extracted game files are never committed" (DATA-2). The pages never send the PNG; they show WebP copies made at build time (DATA-18a).
 - Considered: committing only lossy WebP copies (about 11 MB), or keeping the PNGs on R2 like the audio. The project owner chose the original files in the repository: the build stays self-contained, and the stored file is what the game ships.
 - A texture is flat sleeve art, so the disc is drawn on the page, as the design canvas does (DATA-19a).
+
+## D-023 The weekly sync extracts and uploads audio in GitHub Actions
+
+Decided 2026-11-13 by the project owner. Replaces "audio never passes through CI" from DATA-20 as written before.
+
+- The game's files can be downloaded anonymously from Steam (DepotDownloader, app 730, depot 2347770), and only the VPK archives that hold changed tracks are needed (DATA-20, DATA-26). So the weekly sync (DATA-24) extracts and uploads new audio itself instead of waiting for a maintainer's machine.
+- The workflow has three jobs:
+  - The job that runs third-party tools (DepotDownloader and Source2Viewer, pinned versions checked by SHA-256) has no secrets and read-only access to the repository.
+  - Only the upload job gets the R2 credentials. It runs only this project's code. The token is stored in the GitHub environment `audio`, which only `main` can use.
+  - The last job commits and opens the pull request.
+- The token is limited to the bucket `cs-music-kit-audio` (permission "Workers R2 Storage Bucket Item Write", shown as "Object Read & Write"). The account holds other projects' buckets, and an account-wide "Workers R2 Storage: Edit" token could change or delete them. Tokens limited to one bucket work only with R2's S3-compatible API, and Wrangler gets 403 with them. So `pnpm audio:upload` uploads through the S3 API (`aws4fetch` signs the requests) instead of `wrangler r2`. The token is stored as its S3 credentials, `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`.
+- Pushes and pull requests made with the workflow's own token start no workflows, so the sync starts CI on its branch with `workflow_dispatch`. This avoids storing a personal access token.
+- Audio passes through workflow artifacts, kept for one day. It still never goes into git.
