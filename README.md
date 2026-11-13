@@ -6,7 +6,7 @@ Not affiliated with or endorsed by Valve. See [NOTICE](NOTICE).
 
 ## Status
 
-Live at <https://musickitarchive.com>, still in development. The records rack, record pages, artist pages and the sitemap are built in all 28 languages. Audio is not published yet. The specification is in [`spec/`](spec/README.md).
+Live at <https://musickitarchive.com>, still in development. The records rack, record pages, artist pages and the sitemap are built in all 28 languages. Every track plays on its record page, from the game's own files. The specification is in [`spec/`](spec/README.md).
 
 ## Development
 

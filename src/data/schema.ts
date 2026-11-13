@@ -76,6 +76,14 @@ export const trackSchema = z.strictObject({
   take: z.number().int().positive().nullable(),
   file: z.string().min(1),
   durationSec: z.number().positive().nullable(),
+  /** The published file (DATA-20, DATA-21): its path on the audio host, size and SHA-256. Null until uploaded. */
+  audio: z
+    .strictObject({
+      path: z.string().regex(/^\/[a-z0-9_]+\/[a-z0-9_]+\.(mp3|wav)$/),
+      bytes: z.number().int().positive(),
+      sha256: z.string().regex(/^[0-9a-f]{64}$/),
+    })
+    .nullable(),
 });
 export type Track = z.infer<typeof trackSchema>;
 

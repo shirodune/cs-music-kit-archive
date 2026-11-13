@@ -5,7 +5,7 @@ To change one, add a new entry that replaces it and mark the old one "Replaced b
 
 ## D-001 Static site built with Astro 7
 
-The site is generated at build time with Astro (static output). Interactive parts (rack, player, language picker) are React islands.
+The site is generated at build time with Astro (static output). The rack is a React island. The player and the language picker are small plain scripts (D-020).
 - Why: the content changes about once a week and is the same for every visitor. Astro is built for content sites, ships no JavaScript by default, and produces about one HTML file per page. That matters with about 190 pages × 28 locales and the 20,000-file limit of Workers static assets on the free plan.
 - Considered: Next.js static export (ships the React runtime and RSC payload files for every page); Next.js server rendering on Workers with vinext or OpenNext (vinext is beta, the free plan allows 10 ms CPU per request, and every view would be a Worker invocation); Next.js on Vercel.
 
@@ -117,3 +117,11 @@ Decided 2026-11-11 while building the skeleton.
 - `cf` is still used for account and resource commands (R2 buckets, DNS) from a maintainer's machine. It is not a project dependency.
 - Why: `cf deploy` detects Astro, runs `astro build` itself and then expects the Build Output that only the `@astrojs/cloudflare` adapter writes. That adapter is for on-demand rendering, which this site does not use. Cloudflare's own guide for fully prerendered Astro sites uses a Wrangler configuration and `wrangler deploy`. The Cloudflare plugin's rule ("a project with a Wrangler configuration keeps Wrangler for deploy; `cf` resource commands are fine alongside it") matches this.
 - Revisit when `cf` supports static framework output without an adapter.
+
+## D-020 The player lives on the record page (replaces the site-wide player)
+
+Decided 2026-11-13 by the project owner.
+
+- Tracks play only on their record page; leaving the page stops them. The tracklist rows, the MVP button and the status line under the cover follow the design canvas. A slider to seek and elapsed time on the current row were added, because main menu tracks run up to six and a half minutes.
+- The player is a plain script of about 3 KB, inlined into the page, with one `<audio>` element. It needs no framework: React would add about 66 KB (compressed) to every record page.
+- Why not a site-wide player: playing across pages needs Astro's client-side router (`<ClientRouter />`, about 8 KB on every page), changes to how the existing scripts run after navigation, and a now-playing bar that the design does not have and that would take height from the one-screen records page (PROD-13a).

@@ -17,7 +17,7 @@ test.describe("record page", () => {
 
     const tracks = page.getByRole("region", { name: "Tracklist" }).getByRole("listitem");
     await expect(tracks.first()).toContainText("Main menu");
-    await expect(tracks.last()).toContainText("Match end");
+    await expect(tracks.last()).toContainText("MVP anthem");
     await expect(tracks.filter({ hasText: "MVP anthem" })).toHaveCount(1);
 
     await expect(page.locator("blockquote")).toContainText("Austin Wintory");
@@ -78,7 +78,9 @@ test.describe("record page", () => {
     await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", /\/covers\/[a-z0-9_]+\.png$/);
   });
 
-  test("PROD-35 the record page ships no JavaScript besides the language picker", async ({ page }) => {
+  test("PROD-35 the record page loads no script files besides the language picker; the player is inline", async ({
+    page,
+  }) => {
     await page.goto("/en/kits/desert-fire/");
     const scripts = await page.locator("script[src]").evaluateAll((els) => els.map((e) => e.getAttribute("src")));
     expect(scripts.every((src) => src?.includes("LanguagePicker"))).toBe(true);
