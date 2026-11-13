@@ -30,6 +30,7 @@ Every field has exactly one owner. A field is either generated from an upstream 
 - DATA-3 `data/upstream/meta.json` records the commit SHA and fetch time of every upstream repository. `pnpm data:sync` writes only the subsets we use (music definitions, music boxes, the music kit sound events, and localization keys starting with `musickit_`, `csgo_crate_musickit_` and the few others listed in the sync script), so snapshots stay small.
 - DATA-4 MusicBrainz requests send a descriptive User-Agent and are spaced at least 1.1 seconds apart.
 - DATA-4a `pnpm data:links` reads each artist's MusicBrainz URL relations that have not ended and keeps one link of each kind the artist page shows: official site, Bandcamp, Spotify, Apple Music, SoundCloud and YouTube, in that order (the first by URL when there are several). It writes them to `data/upstream/musicbrainz.json`, keyed by MBID. `pnpm data:build` adds the MusicBrainz page itself as the last link, and fails when an artist has an MBID that the file does not list.
+- DATA-4b MusicBrainz can keep a link after the site is gone or its domain has changed hands. `overrides.json` → `hiddenLinks` lists such URLs with the reason and the date checked; `pnpm data:build` leaves them out, and fails when one is no longer on MusicBrainz. Five official sites were hidden on 2026-11-13, two of them now casino or gambling sites. Check the official sites again when adding an MBID.
 
 ## Kit set
 

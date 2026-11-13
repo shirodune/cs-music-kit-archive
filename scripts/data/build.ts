@@ -269,11 +269,17 @@ async function main(): Promise<void> {
       kits: kits.filter((k) => k.artists.some((c) => c.artist === a.id)).map((k) => k.defIndex),
       // PROD-20: the links MusicBrainz knows, then the MusicBrainz page, which credits the source.
       links: a.musicbrainzId
-        ? [...(fetched ?? []), { kind: "musicbrainz", url: `https://musicbrainz.org/artist/${a.musicbrainzId}` }]
+        ? [
+            ...(fetched ?? []).filter((l) => !(l.url in overrides.hiddenLinks)),
+            { kind: "musicbrainz", url: `https://musicbrainz.org/artist/${a.musicbrainzId}` },
+          ]
         : [],
     });
   });
   for (const a of generatedArtists) if (a.kits.length === 0) fail(`artist ${a.id} has no kits (DATA-16)`);
+  const fetchedUrls = new Set(Object.values(musicbrainz).flatMap((links) => links.map((l) => l.url)));
+  for (const url of Object.keys(overrides.hiddenLinks))
+    if (!fetchedUrls.has(url)) fail(`overrides.json: hidden link ${url} is no longer on MusicBrainz; remove it`);
 
   const generatedReleases = [...releases]
     .sort((a, b) => a.date.localeCompare(b.date))

@@ -50,6 +50,8 @@ export const overridesSchema = z.strictObject({
   slugs: z.record(z.string(), slug),
   /** Credit and title for names the rules cannot split, by defIndex and locale (DATA-10). */
   splits: z.record(z.string(), z.record(z.string(), z.strictObject({ credit: z.string(), title: z.string().min(1) }))),
+  /** MusicBrainz links left out, with the reason: the site is gone or the domain changed hands (DATA-4b). */
+  hiddenLinks: z.record(z.url(), z.string().min(1)),
 });
 
 // ---------- Generated output (data/generated/) ----------

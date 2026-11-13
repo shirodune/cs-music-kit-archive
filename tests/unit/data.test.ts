@@ -1,6 +1,7 @@
 // Checks on the generated data (spec: data.md). Run `pnpm data:build` first.
 import { existsSync } from "node:fs";
 import { describe, expect, test } from "vitest";
+import overrides from "../../data/curated/overrides.json";
 import artistsJson from "../../data/generated/artists.json";
 import kitsJson from "../../data/generated/kits.json";
 import releasesJson from "../../data/generated/releases.json";
@@ -112,6 +113,12 @@ describe("kits", () => {
       expect(new Set(kinds).size, a.id).toBe(kinds.length);
     }
     expect(artists.find((a) => a.id === "halo")?.links).toEqual([]);
+  });
+
+  test("DATA-4b hidden links stay off the site", () => {
+    const urls = artists.flatMap((a) => a.links.map((l) => l.url));
+    for (const url of Object.keys(overrides.hiddenLinks)) expect(urls).not.toContain(url);
+    expect(Object.keys(overrides.hiddenLinks)).toContain("https://www.scarlxrd.com/");
   });
 
   test("DATA-10 every English name splits into credit and title", () => {
