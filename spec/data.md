@@ -6,7 +6,7 @@ Every field has exactly one owner. A field is either generated from an upstream 
 
 | Owner | Where it lives | Edited by |
 |---|---|---|
-| Upstream snapshot | `data/upstream/` | `pnpm data:sync` only |
+| Upstream snapshot | `data/upstream/` | The `pnpm data:*` and `pnpm audio:*` scripts only |
 | Curated | `data/curated/` | People, reviewed in pull requests |
 | Content | `content/` | People, reviewed in pull requests |
 | Derived | `data/generated/` | `pnpm data:build` only |
@@ -27,7 +27,7 @@ Every field has exactly one owner. A field is either generated from an upstream 
 | [MusicBrainz](https://musicbrainz.org/doc/MusicBrainz_API) | Artist links | MBID per artist |
 | Game files on a maintainer's machine | Audio, high-resolution cover textures | File hashes |
 
-- DATA-3 `data/upstream/meta.json` records the commit SHA and fetch time of every upstream repository. `pnpm data:sync` writes only the subsets we use (music definitions, music boxes, the music kit sound events, and localization keys starting with `musickit_`, `csgo_crate_musickit_` and the few others listed in the sync script), so snapshots stay small.
+- DATA-3 `data/upstream/meta.json` records the commit SHA and fetch time of every upstream repository. `pnpm data:sync` writes only the subsets we use (music definitions, music boxes, the music kit sound events, the VPK listing of each kit's sound files and cover textures (DATA-26), and localization keys starting with `musickit_`, `csgo_crate_musickit_` and the few others listed in the sync script), so snapshots stay small.
 - DATA-4 MusicBrainz requests send a descriptive User-Agent and are spaced at least 1.1 seconds apart.
 - DATA-4a `pnpm data:links` reads each artist's MusicBrainz URL relations that have not ended and keeps one link of each kind the artist page shows: official site, Bandcamp, Spotify, Apple Music, SoundCloud and YouTube, in that order (the first by URL when there are several). It writes them to `data/upstream/musicbrainz.json`, keyed by MBID. `pnpm data:build` adds the MusicBrainz page itself as the last link, and fails when an artist has an MBID that the file does not list.
 - DATA-4b MusicBrainz can keep a link after the site is gone or its domain has changed hands. `overrides.json` → `hiddenLinks` lists such URLs with the reason and the date checked; `pnpm data:build` leaves them out, and fails when one is no longer on MusicBrainz. Five official sites were hidden on 2026-11-13, two of them now casino or gambling sites. Check the official sites again when adding an MBID.
@@ -168,5 +168,6 @@ Artists live in `data/curated/artists.json`. Credits live in `data/curated/credi
 
 ## Weekly sync
 
-- DATA-24 A scheduled workflow runs `pnpm data:sync`, `pnpm data:covers` and `pnpm data:build` every week. When anything changes it opens a pull request.
+- DATA-24 A scheduled workflow runs `pnpm data:sync`, `pnpm data:covers` and `pnpm data:build` every week. When anything changes it opens a pull request. Its body includes the `pnpm data:changes` output (DATA-26).
 - DATA-25 A new kit makes the checks fail until it has a release, credits and, when needed, slug or title overrides. The pull request body lists the missing items and the `data:suggest-release` output.
+- DATA-26 The site's audio and cover textures are extracted from the game files by hand (DATA-19, DATA-20), so a sync records when those files change. `pnpm data:sync` writes `data/upstream/game-files.json`: the CRC and size of every file under `sounds/music/{folder}/` and every `mp3_screen_color` texture under `materials/models/inventory_items/music_kit/`, from the VPK listing GameTracking-CS2 keeps (`game/csgo/pak01_dir.txt`). `data/upstream/game-files-extracted.json` holds the same for the files the published audio and stored textures came from. `pnpm data:changes` lists every file that is new, changed or removed between the two and exits with 1 if there is any; nothing needs downloading to tell. After extracting and uploading, a maintainer runs `pnpm data:sync` and then `pnpm data:changes --accept`, which copies the first file to the second. The first record (2026-11-13) was accepted without a new extraction: these entries in the VPK listing have not changed since at least 2026-11-03, before the audio and textures were extracted, and every published audio file is 772 to 1,347 bytes (the container header) smaller than its game file.

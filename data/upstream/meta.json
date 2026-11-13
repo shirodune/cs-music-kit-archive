@@ -1,20 +1,20 @@
 {
-  "fetchedAt": "2026-11-11T14:57:09.666Z",
+  "fetchedAt": "2026-11-13T12:51:06.126Z",
   "sources": {
     "csgoApi": {
       "branch": "main",
       "repo": "ByMykel/CSGO-API",
-      "sha": "c52da3543f4cb57958d1e5c1847e6b692c02af4c"
+      "sha": "9282a816ccad8a2dc0299deefe2e67e9497a1d47"
     },
     "fileTracker": {
       "branch": "main",
       "repo": "ByMykel/counter-strike-file-tracker",
-      "sha": "3dd5ac1b06c3ff0fe73dfee2527665f1aeb888fc"
+      "sha": "60b915fd633fd637edaf804d445ba63c8a9138b8"
     },
     "gameTracking": {
       "branch": "master",
       "repo": "SteamTracking/GameTracking-CS2",
-      "sha": "cce7bf1f190144c1c08fb0fe75fd3c9514f2637f"
+      "sha": "82e2b9d62cc97f1358c68a220a4a392c9e41c509"
     }
   }
 }
