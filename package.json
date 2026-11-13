@@ -20,6 +20,7 @@
     "data:changes": "node scripts/data/changes.ts",
     "data:covers": "node scripts/data/covers.ts",
     "data:build": "node scripts/data/build.ts",
+    "game:download": "node scripts/game/download.ts",
     "audio:extract": "node scripts/audio/extract.ts",
     "audio:upload": "node scripts/audio/upload.ts",
     "data:verify": "node scripts/data/build.ts && git diff --exit-code --stat -- data/generated",

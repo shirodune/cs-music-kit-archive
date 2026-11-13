@@ -50,6 +50,21 @@ export function uploadPlan(published: Manifest, next: Manifest): { put: string[]
   };
 }
 
+/**
+ * Whether a track has to be read from the game again: its game file is not the one the published audio came from
+ * (DATA-26), or the manifest has no entry for it.
+ */
+export function needsExtraction(
+  base: string,
+  crc: number,
+  extracted: Record<string, { crc: string }>,
+  manifest: Manifest,
+): boolean {
+  const record = extracted[`sounds/music/${base}.vsnd_c`];
+  const published = ["mp3", "wav"].some((ext) => `${base}.${ext}` in manifest);
+  return !published || !record || Number.parseInt(record.crc, 16) !== crc;
+}
+
 const CONTENT_TYPES: Record<string, string> = { mp3: "audio/mpeg", wav: "audio/wav" };
 
 /** Content type of a manifest key, by its extension (DATA-20a). */

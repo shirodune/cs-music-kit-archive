@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { contentTypeOf, type Manifest, uploadPlan, wantedFiles } from "../../scripts/audio/lib.ts";
+import { contentTypeOf, type Manifest, needsExtraction, uploadPlan, wantedFiles } from "../../scripts/audio/lib.ts";
 
 const entry = (sha256: string) => ({ bytes: 1, sha256, durationSec: 1 });
 
@@ -37,5 +37,14 @@ describe("audio scripts", () => {
     expect(contentTypeOf("valve_01/mainmenu.mp3")).toBe("audio/mpeg");
     expect(contentTypeOf("valve_01/startofmatch.wav")).toBe("audio/wav");
     expect(() => contentTypeOf("valve_01/startofmatch.ogg")).toThrow();
+  });
+
+  test("DATA-20 DATA-26 a track is read from the game again when its game file changed or it is not published", () => {
+    const extracted = { "sounds/music/a/x.vsnd_c": { crc: "0050b94538" } };
+    const manifest: Manifest = { "a/x.mp3": entry("1") };
+    expect(needsExtraction("a/x", 0x50b94538, extracted, manifest)).toBe(false);
+    expect(needsExtraction("a/x", 0x12345678, extracted, manifest)).toBe(true);
+    expect(needsExtraction("a/x", 0x50b94538, extracted, {})).toBe(true);
+    expect(needsExtraction("b/new", 1, extracted, manifest)).toBe(true);
   });
 });

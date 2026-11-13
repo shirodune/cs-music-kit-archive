@@ -1,40 +1,40 @@
-// pnpm audio:extract — run on a maintainer's machine with CS2 installed through Steam (spec: DATA-20 to DATA-21).
-// 1. Source2Viewer-CLI decompiles every file under sounds/music/ in the game's VPK into audio/raw/.
-// 2. Every file the site lists is published as the game stores it, MP3 or WAV, never re-encoded (DATA-20a).
-//    The files are hard-linked (or copied) to audio/out/{internalName}/{file}.mp3 or .wav.
-// 3. Writes data/upstream/audio-manifest.json; `pnpm audio:upload` compares it with the published one.
+// pnpm audio:extract — read every track the site lists from the game's VPK and write the published files
+// (spec: DATA-20 to DATA-21).
+// 1. The VPK comes from `pnpm game:download` (game-files/game/csgo/) or from a Steam install of CS2 (--game).
+//    A track whose game file is unchanged since the last extraction (DATA-26) keeps its manifest entry, so only
+//    the archives that hold new or changed tracks are needed. --all reads every track again.
+// 2. Each track's compiled sound is copied out of the VPK, checked against its CRC, to audio/vsnd/{internalName}/.
+// 3. Source2Viewer-CLI decompiles them to audio/out/{internalName}/{file}.mp3 or .wav: the game's own data, never
+//    re-encoded (DATA-20a). Valve strips the header from WAV files; Source2Viewer writes the standard one back.
+// 4. Writes data/upstream/audio-manifest.json; next, pnpm audio:upload.
 // Needs Source2Viewer-CLI and ffprobe (part of ffmpeg). audio/ is in .gitignore: audio never goes into git (DATA-2).
-// Usage: node scripts/audio/extract.ts [--s2v <path to Source2Viewer-CLI>] [--input <vpk>] [--skip-extract]
+// Usage: node scripts/audio/extract.ts [--game <folder with pak01_dir.vpk>] [--s2v <path to Source2Viewer-CLI>] [--all]
 
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { copyFile, link, mkdir, readFile, rm, stat } from "node:fs/promises";
+import { existsSync } from "node:fs";
+import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
 import { readJson, writeJson } from "../data/json.ts";
-import type { Manifest } from "./lib.ts";
-import { wantedFiles } from "./lib.ts";
+import { archivePath, readVpkDir, readVpkFile } from "../game/vpk.ts";
+import { type Manifest, needsExtraction, wantedFiles } from "./lib.ts";
 
 const ROOT = fileURLToPath(new URL("../../", import.meta.url));
-const RAW = join(ROOT, "audio", "raw");
+const VSND = join(ROOT, "audio", "vsnd");
 const OUT = join(ROOT, "audio", "out");
 const MANIFEST = join(ROOT, "data", "upstream", "audio-manifest.json");
+const EXTRACTED = join(ROOT, "data", "upstream", "game-files-extracted.json");
 
 const { values: args } = parseArgs({
   options: {
+    // On Windows, for example "C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo".
+    game: { type: "string", default: join(ROOT, "game-files", "game", "csgo") },
     s2v: { type: "string", default: "Source2Viewer-CLI" },
-    // A path relative to the Steam install of CS2 (app 730); Source2Viewer-CLI finds the Steam library.
-    input: { type: "string", default: "steam:730/game/csgo/pak01_dir.vpk" },
-    "skip-extract": { type: "boolean", default: false },
+    all: { type: "boolean", default: false },
   },
 });
-
-const exists = (path: string) =>
-  stat(path).then(
-    () => true,
-    () => false,
-  );
 
 function durationOf(path: string): number {
   const json = execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "json", path]);
@@ -43,52 +43,66 @@ function durationOf(path: string): number {
 }
 
 async function main(): Promise<void> {
-  if (!args["skip-extract"]) {
-    console.log(`Extracting sounds/music/ from ${args.input} …`);
-    execFileSync(
-      args.s2v,
-      ["-i", args.input, "-f", "sounds/music/", "-e", "vsnd_c", "-d", "-o", RAW, "-q", "--threads", "4"],
-      { stdio: "inherit" },
+  const dirFile = join(args.game, "pak01_dir.vpk");
+  const vpk = await readVpkDir(dirFile);
+  const kits = await readJson<Parameters<typeof wantedFiles>[0]>(join(ROOT, "data", "generated", "kits.json"));
+  const previous = existsSync(MANIFEST) ? await readJson<Manifest>(MANIFEST) : {};
+  const extracted = existsSync(EXTRACTED) ? await readJson<Record<string, { crc: string }>>(EXTRACTED) : {};
+
+  const manifest: Manifest = {};
+  const toRead: string[] = [];
+  const notInGame: string[] = [];
+  const missingArchives = new Set<string>();
+  await rm(VSND, { recursive: true, force: true });
+  await rm(OUT, { recursive: true, force: true });
+
+  for (const { internalName, base } of wantedFiles(kits)) {
+    const entry = vpk.get(`sounds/music/${base}.vsnd_c`);
+    if (!entry) {
+      notInGame.push(base);
+    } else if (!args.all && !needsExtraction(base, entry.crc, extracted, previous)) {
+      for (const key of [`${base}.mp3`, `${base}.wav`]) if (previous[key]) manifest[key] = previous[key];
+    } else if (!existsSync(archivePath(dirFile, entry))) {
+      missingArchives.add(archivePath(dirFile, entry));
+    } else {
+      await mkdir(join(VSND, internalName), { recursive: true });
+      await writeFile(join(VSND, `${base}.vsnd_c`), await readVpkFile(dirFile, entry));
+      toRead.push(base);
+    }
+  }
+  if (notInGame.length > 0) {
+    throw new Error(
+      `${notInGame.length} tracks are not in the game's VPK, for example: ${notInGame.slice(0, 5).join(", ")}`,
+    );
+  }
+  if (missingArchives.size > 0) {
+    throw new Error(
+      `${missingArchives.size} VPK archives are missing (run pnpm game:download): ${[...missingArchives].join(", ")}`,
     );
   }
 
-  const kits = await readJson<Parameters<typeof wantedFiles>[0]>(join(ROOT, "data", "generated", "kits.json"));
-  const wanted = wantedFiles(kits);
-  const manifest: Manifest = {};
-  const missing: string[] = [];
-  await rm(OUT, { recursive: true, force: true });
-
-  for (const { internalName, base } of wanted) {
-    let key: string | undefined;
-    for (const ext of ["mp3", "wav"]) {
-      if (await exists(join(RAW, "sounds", "music", `${base}.${ext}`))) key = `${base}.${ext}`;
-    }
-    if (!key) {
-      missing.push(base);
-      continue;
-    }
-    const source = join(RAW, "sounds", "music", key);
-    const target = join(OUT, key);
-    await mkdir(join(OUT, internalName), { recursive: true });
-    // A hard link takes no extra disk space; copy where links are not possible (another drive).
-    await link(source, target).catch(() => copyFile(source, target));
-    const bytes = await readFile(target);
+  if (toRead.length > 0) {
+    console.log(`Decompiling ${toRead.length} sounds …`);
+    execFileSync(args.s2v, ["-i", VSND, "--recursive", "-d", "-o", OUT, "--threads", "4"], { stdio: "inherit" });
+  }
+  for (const base of toRead) {
+    const key = [`${base}.mp3`, `${base}.wav`].find((k) => existsSync(join(OUT, k)));
+    if (!key) throw new Error(`Source2Viewer wrote no MP3 or WAV for ${base}`);
+    const bytes = await readFile(join(OUT, key));
     manifest[key] = {
       bytes: bytes.length,
       sha256: createHash("sha256").update(bytes).digest("hex"),
-      durationSec: durationOf(target),
+      durationSec: durationOf(join(OUT, key)),
     };
   }
 
-  if (missing.length > 0) {
-    throw new Error(`${missing.length} files not found under ${RAW}, for example: ${missing.slice(0, 5).join(", ")}`);
-  }
-
   await writeJson(MANIFEST, manifest);
-  const entries = Object.entries(manifest);
-  const wavCount = entries.filter(([key]) => key.endsWith(".wav")).length;
-  const totalMb = entries.reduce((sum, [, e]) => sum + e.bytes, 0) / 1e6;
-  console.log(`${entries.length} files (${wavCount} WAV), ${totalMb.toFixed(0)} MB. Next: pnpm audio:upload.`);
+  const keys = Object.keys(manifest);
+  const wavCount = keys.filter((key) => key.endsWith(".wav")).length;
+  console.log(
+    `${toRead.length} files read from the game, ${keys.length - toRead.length} unchanged; ${keys.length} in the manifest (${wavCount} WAV).` +
+      (toRead.length > 0 ? " Next: pnpm audio:upload." : ""),
+  );
 }
 
 await main();
