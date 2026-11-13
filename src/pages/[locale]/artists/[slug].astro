@@ -2,7 +2,7 @@
 // Artist page (spec: PROD-18 to PROD-21).
 // The introduction (content/artists) and MusicBrainz links (PROD-20) are added when they exist.
 
-import { coverSrc } from "../../../data/cover.ts";
+import Cover from "../../../components/Cover.astro";
 import type { GeneratedArtist } from "../../../data/schema.ts";
 import { artists, getArtist, getKit, kitText, kitTextRequired, releaseName } from "../../../data/site.ts";
 import { formatDate, listParts } from "../../../i18n/format.ts";
@@ -130,11 +130,9 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
               class="absolute top-0 block w-[200px] drop-shadow-[0_20px_24px_rgba(0,0,0,0.6)] hover:brightness-110 sm:w-[260px]"
               style={`left: ${i * fanStep}px; z-index: ${i + 1}`}
             >
-              <img
-                src={coverSrc(kit.cover)}
-                width={kit.cover.width}
-                height={kit.cover.height}
-                alt=""
+              <Cover
+                cover={kit.cover}
+                sizes="260px"
                 fetchpriority={i === kits.length - 1 ? "high" : undefined}
                 class="block w-full"
               />
@@ -181,15 +179,7 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
               <article class="grid grid-cols-1 items-start gap-x-10 gap-y-6 pt-8 pb-10 md:grid-cols-[150px_220px_minmax(0,1fr)]">
                 <p class="m-0 font-stencil text-[56px] leading-[0.9]">{row.kit.releaseDate.slice(0, 4)}</p>
                 <div class="w-[220px] drop-shadow-[0_20px_24px_rgba(0,0,0,0.6)]">
-                  <img
-                    src={coverSrc(row.kit.cover)}
-                    width={row.kit.cover.width}
-                    height={row.kit.cover.height}
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    class="block w-full"
-                  />
+                  <Cover cover={row.kit.cover} sizes="220px" loading="lazy" decoding="async" class="block w-full" />
                 </div>
                 <div class="max-w-[720px] min-w-0">
                   <p class="m-0 font-mono text-[11px] tracking-wider text-muted">

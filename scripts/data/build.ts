@@ -100,6 +100,7 @@ async function main(): Promise<void> {
   const soundEvents = await readJson<SoundEvents>(new URL("sound-events.json", UPSTREAM));
   const editions = await readJson<Editions>(new URL("bymykel-music-kits.json", UPSTREAM));
   const covers = await readJson<Covers>(new URL("covers.json", UPSTREAM));
+  const textures = await readJson<Covers>(new URL("textures.json", UPSTREAM)).catch(() => ({}) as Covers);
   const audio = await readJson<AudioManifest>(new URL("audio-manifest.json", UPSTREAM)).catch(() => ({}));
   const loc = Object.fromEntries(
     await Promise.all(
@@ -233,7 +234,10 @@ async function main(): Promise<void> {
         releaseId: release.id,
         releaseDate: release.date,
         artists: credit.artists,
-        cover: { source: "icon", path: `/covers/${d.name}.png`, width: cover.width, height: cover.height },
+        // The game's cover texture replaces the Steam icon when it was extracted (DATA-19).
+        cover: textures[d.name]
+          ? { source: "texture", path: `/covers/textures/${d.name}.png`, ...textures[d.name] }
+          : { source: "icon", path: `/covers/${d.name}.png`, width: cover.width, height: cover.height },
         tracks,
         alternateTracks: alternateName ? buildTracks(alternateName, soundEvents[alternateName], audio) : null,
         alternateInternalName: alternateName ?? null,

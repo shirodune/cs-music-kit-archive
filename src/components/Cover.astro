@@ -1,0 +1,41 @@
+---
+// A kit's cover (DATA-18, DATA-19). A Steam icon already shows the sleeve with the disc half out; a texture is
+// the flat sleeve art, so it gets a drawn disc behind it, in the same 256:198 frame (styles: .record in global.css).
+import { type CoverRef, coverSrc, coverSrcSet } from "../data/cover.ts";
+
+interface Props {
+  cover: CoverRef;
+  class?: string;
+  alt?: string;
+  /** Rendered width of the cover, for picking the small or large copy of a texture. */
+  sizes?: string;
+  loading?: "lazy" | "eager" | undefined;
+  decoding?: "async";
+  fetchpriority?: "high" | undefined;
+  style?: string;
+}
+
+const { cover, class: className, alt = "", sizes, loading, decoding, fetchpriority, style } = Astro.props;
+const srcset = coverSrcSet(cover);
+const img = {
+  src: coverSrc(cover),
+  srcset,
+  sizes: srcset ? sizes : undefined,
+  width: cover.width,
+  height: cover.height,
+  loading,
+  decoding,
+  fetchpriority,
+};
+---
+
+{
+  cover.source === "texture" ? (
+    <span class:list={["record", className]} style={style}>
+      <span class="record-disc" aria-hidden="true" />
+      <img class="record-sleeve" alt={alt} {...img} />
+    </span>
+  ) : (
+    <img class={className} style={style} alt={alt} {...img} />
+  )
+}

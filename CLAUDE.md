@@ -23,7 +23,7 @@ Astro 7 (static output) with React islands, Tailwind CSS 4, TypeScript 6 (Astro'
 - Cloudflare: build with `pnpm build`, deploy with Wrangler (`wrangler.jsonc`, D-019). Never run `cf init`, `cf build` or `cf deploy` here: `cf` treats Astro as a server-rendered app. `cf` is fine for account and resource commands (R2, DNS).
 - Astro questions: use the `astro-docs` MCP server (`.mcp.json`) for current APIs instead of memory.
 - Never edit `data/generated/` or `data/upstream/` by hand. Change curated files or scripts, then run `pnpm data:build`.
-- Never commit audio, game files or extracted textures (`.gitignore` blocks the common types).
+- Never commit audio or game files (`.gitignore` blocks the common types). The one exception is the cover textures in `public/covers/textures/`, written by `pnpm data:textures` (D-022).
 - Release dates come only from Valve release notes or same-day announcements, with URL and quote (DATA-13, DATA-14). Never take a date from git history, `first_sale_date`, wikis or the design canvas.
 - Official Valve text (kit names, descriptions, box names) is never edited or machine translated.
 - UI strings go through `t()` with plural objects (I18N-7 to I18N-11). Never build plurals by string concatenation.

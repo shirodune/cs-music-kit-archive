@@ -11,7 +11,7 @@ import {
   useRef,
   useState,
 } from "react";
-import { coverSrc } from "../../data/cover.ts";
+import { type CoverRef, coverSrc } from "../../data/cover.ts";
 import { keyTarget, kitToStrip, SLEEVE_PX, sleeveOffset, stripToKit, yearGroups, yearOf } from "./geometry.ts";
 
 interface Text {
@@ -32,7 +32,7 @@ export interface RackKit {
   catalogue: string;
   edition: string;
   description: Text | null;
-  cover: { path: string; width: number; height: number };
+  cover: CoverRef;
   /** Accessible names: the selected sleeve (a link) and the others (buttons). */
   openLabel: string;
   goToLabel: string;
@@ -294,7 +294,7 @@ export default function Rack({ kits, strings, initial }: Props) {
             zIndex: 100 - Math.round(Math.abs(d) * 12),
             transform: `translate3d(calc(var(--w) * ${(sleeveOffset(d) / SLEEVE_PX).toFixed(4)}),0,0)`,
           };
-          const image = (
+          const img = (className: string) => (
             <img
               src={coverSrc(k.cover)}
               width={k.cover.width}
@@ -304,9 +304,20 @@ export default function Rack({ kits, strings, initial }: Props) {
               // The selected sleeve is the largest image on the page; it goes first (PROD-36).
               fetchPriority={front ? "high" : undefined}
               loading={front ? undefined : "lazy"}
-              className="pointer-events-none block w-full drop-shadow-[0_30px_30px_rgba(0,0,0,0.6)]"
+              className={className}
             />
           );
+          const shadow = "pointer-events-none block w-full drop-shadow-[0_30px_30px_rgba(0,0,0,0.6)]";
+          // A texture gets the drawn disc of Cover.astro (DATA-19).
+          const image =
+            k.cover.source === "texture" ? (
+              <span className={`record ${shadow}`}>
+                <span className="record-disc" aria-hidden="true" />
+                {img("record-sleeve")}
+              </span>
+            ) : (
+              img(shadow)
+            );
           const sleeveClass = "block w-full origin-bottom";
           const sleeveStyle = { transform: `scale(${sleeveScale.toFixed(3)})` };
           return (

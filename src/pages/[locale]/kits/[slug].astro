@@ -2,6 +2,7 @@
 // Record page: one music kit (spec: product.md "Record page", PROD-14, PROD-15, PROD-23 to PROD-25).
 // The player script (components/player.ts) reads the data-* attributes on the tracklist rows.
 
+import Cover from "../../../components/Cover.astro";
 import KitCard from "../../../components/KitCard.astro";
 import { audioSrc } from "../../../data/audio.ts";
 import { coverSrc } from "../../../data/cover.ts";
@@ -250,10 +251,8 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
         class="absolute inset-0 h-full w-full scale-125 object-cover opacity-40 blur-[40px] saturate-110"
       />
       <div aria-hidden="true" class="absolute inset-0 bg-linear-to-r from-panel/25 to-panel/75"></div>
-      <img
-        src={coverSrc(kit.cover)}
-        width={kit.cover.width}
-        height={kit.cover.height}
+      <Cover
+        cover={kit.cover}
         alt={t("kit.coverAlt", { title: title.text })}
         fetchpriority="high"
         class="relative w-[min(86%,540px)] object-contain drop-shadow-[0_40px_40px_rgba(0,0,0,0.6)]"

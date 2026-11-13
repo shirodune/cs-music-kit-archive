@@ -153,10 +153,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/valve_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/valve_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 70,
     "edition": "standardOnly",
@@ -342,9 +342,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/danielsadowski_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/danielsadowski_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 3,
@@ -509,9 +509,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/noisia_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/noisia_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 4,
@@ -698,9 +698,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/robertallaire_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/robertallaire_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 5,
@@ -887,9 +887,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/seanmurray_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/seanmurray_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 6,
@@ -1076,9 +1076,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/feedme_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/feedme_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 7,
@@ -1254,9 +1254,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/dren_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/dren_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 8,
@@ -1465,9 +1465,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/austinwintory_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/austinwintory_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 9,
@@ -1654,9 +1654,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/sasha_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/sasha_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 10,
@@ -1821,9 +1821,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/skog_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/skog_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 11,
@@ -2010,9 +2010,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/midnightriders_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/midnightriders_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 12,
@@ -2199,9 +2199,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/mattlange_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/mattlange_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 13,
@@ -2377,9 +2377,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/mateomessina_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/mateomessina_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 14,
@@ -2588,9 +2588,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/hotlinemiami_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/hotlinemiami_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 15,
@@ -2777,9 +2777,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/danielsadowski_02.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/danielsadowski_02.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 16,
@@ -2944,9 +2944,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/damjanmravunac_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/damjanmravunac_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 17,
@@ -3133,9 +3133,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/proxy_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/proxy_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 18,
@@ -3322,9 +3322,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/kitheory_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/kitheory_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 19,
@@ -3489,9 +3489,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/troelsfolmann_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/troelsfolmann_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 20,
@@ -3678,9 +3678,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/kellybailey_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/kellybailey_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 21,
@@ -3867,9 +3867,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/skog_02.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/skog_02.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 22,
@@ -4034,9 +4034,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/danielsadowski_03.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/danielsadowski_03.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 23,
@@ -4201,9 +4201,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/awolnation_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/awolnation_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 24,
@@ -4412,9 +4412,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/mordfustang_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/mordfustang_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 25,
@@ -4601,9 +4601,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/michaelbross_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/michaelbross_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 26,
@@ -4768,9 +4768,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/ianhultquist_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/ianhultquist_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 27,
@@ -4979,9 +4979,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/newbeatfund_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/newbeatfund_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 28,
@@ -5168,9 +5168,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/beartooth_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/beartooth_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 29,
@@ -5357,9 +5357,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/lenniemoore_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/lenniemoore_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 30,
@@ -5568,9 +5568,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/darude_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/darude_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 31,
@@ -5779,9 +5779,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/beartooth_02.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/beartooth_02.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 32,
@@ -5968,9 +5968,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/blitzkids_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/blitzkids_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 33,
@@ -6157,9 +6157,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/hundredth_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/hundredth_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 34,
@@ -6368,9 +6368,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/neckdeep_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/neckdeep_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 35,
@@ -6579,9 +6579,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/roam_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/roam_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 36,
@@ -6790,9 +6790,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/twinatlantic_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/twinatlantic_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 37,
@@ -7001,9 +7001,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/skog_03.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/skog_03.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 38,
@@ -7168,9 +7168,9 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/theverkkars_01.png",
-      "source": "icon",
+      "height": 256,
+      "path": "/covers/textures/theverkkars_01.png",
+      "source": "texture",
       "width": 256
     },
     "defIndex": 39,
@@ -7357,10 +7357,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/halo_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/halo_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 40,
     "edition": "standardOnly",
@@ -7546,10 +7546,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/scarlxrd_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/scarlxrd_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 41,
     "edition": "both",
@@ -7713,10 +7713,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/hlalyx_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/hlalyx_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 42,
     "edition": "standardOnly",
@@ -7924,10 +7924,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/austinwintory_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/austinwintory_02.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 43,
     "edition": "both",
@@ -8113,10 +8113,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/dren_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/dren_02.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 44,
     "edition": "both",
@@ -8324,10 +8324,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/danielsadowski_04.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/danielsadowski_04.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 45,
     "edition": "both",
@@ -8495,10 +8495,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/treeadams_benbromfield_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/treeadams_benbromfield_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 46,
     "edition": "both",
@@ -8684,10 +8684,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/timhuling_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/timhuling_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 47,
     "edition": "both",
@@ -8895,10 +8895,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/sammarshall_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/sammarshall_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 48,
     "edition": "both",
@@ -9084,10 +9084,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/mattlevine_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/mattlevine_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 49,
     "edition": "both",
@@ -9295,10 +9295,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/amontobin_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/amontobin_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 50,
     "edition": "both",
@@ -9506,10 +9506,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/hades_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/hades_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 51,
     "edition": "standardOnly",
@@ -9717,10 +9717,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/neckdeep_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/neckdeep_02.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 52,
     "edition": "both",
@@ -9928,10 +9928,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/scarlxrd_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/scarlxrd_02.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 53,
     "edition": "both",
@@ -10117,10 +10117,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/austinwintory_03.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/austinwintory_03.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 54,
     "edition": "both",
@@ -10306,10 +10306,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/chipzel_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/chipzel_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 55,
     "edition": "both",
@@ -10473,10 +10473,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/freakydna_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/freakydna_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 56,
     "edition": "both",
@@ -10684,10 +10684,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/jesseharlin_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/jesseharlin_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 57,
     "edition": "both",
@@ -10851,10 +10851,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/laurashigihara_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/laurashigihara_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 58,
     "edition": "both",
@@ -11062,10 +11062,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/sarahschachner_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/sarahschachner_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 59,
     "edition": "both",
@@ -11262,10 +11262,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/bbnos_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/bbnos_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 60,
     "edition": "both",
@@ -11429,10 +11429,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/theverkkars_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/theverkkars_02.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 61,
     "edition": "both",
@@ -11618,10 +11618,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/3kliksphilip_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/3kliksphilip_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 62,
     "edition": "both",
@@ -11829,10 +11829,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/hlb_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/hlb_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 63,
     "edition": "both",
@@ -12040,10 +12040,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/juelz_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/juelz_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 64,
     "edition": "both",
@@ -12229,10 +12229,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/knock2_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/knock2_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 65,
     "edition": "both",
@@ -12407,10 +12407,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/meechydarko_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/meechydarko_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 66,
     "edition": "both",
@@ -12618,10 +12618,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/sullivanking_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/sullivanking_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 67,
     "edition": "both",
@@ -12807,10 +12807,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/perfectworld_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/perfectworld_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 68,
     "edition": "both",
@@ -12974,10 +12974,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/denzelcurry_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 512,
+      "path": "/covers/textures/denzelcurry_01.png",
+      "source": "texture",
+      "width": 512
     },
     "defIndex": 69,
     "edition": "both",
@@ -13185,10 +13185,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/valve_cs2_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/valve_cs2_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 1,
     "edition": "standardOnly",
@@ -13363,10 +13363,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/dryden_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/dryden_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 71,
     "edition": "both",
@@ -13552,10 +13552,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/isoxo_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/isoxo_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 72,
     "edition": "both",
@@ -13741,10 +13741,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/killscript_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/killscript_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 73,
     "edition": "both",
@@ -13930,10 +13930,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/knock2_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/knock2_02.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 74,
     "edition": "both",
@@ -14119,10 +14119,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/radcat_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/radcat_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 75,
     "edition": "both",
@@ -14308,10 +14308,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/twerl_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/twerl_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 76,
     "edition": "both",
@@ -14497,10 +14497,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/austinwintory_04.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/austinwintory_04.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 78,
     "edition": "both",
@@ -14686,10 +14686,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/benbromfield_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/benbromfield_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 79,
     "edition": "both",
@@ -14875,10 +14875,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/danielsadowski_05.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/danielsadowski_05.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 80,
     "edition": "both",
@@ -15042,10 +15042,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/dren_03.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/dren_03.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 81,
     "edition": "both",
@@ -15253,10 +15253,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/mattlevine_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/mattlevine_02.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 82,
     "edition": "both",
@@ -15464,10 +15464,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/sammarshall_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/sammarshall_02.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 83,
     "edition": "both",
@@ -15675,10 +15675,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/timhuling_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/timhuling_02.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 84,
     "edition": "both",
@@ -15886,10 +15886,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/treeadams_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/treeadams_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 85,
     "edition": "both",
@@ -16064,10 +16064,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/perfectworld_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/perfectworld_02.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 86,
     "edition": "both",
@@ -16242,10 +16242,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/adambeyer_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/adambeyer_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 87,
     "edition": "both",
@@ -16442,10 +16442,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/ghost_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/ghost_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 88,
     "edition": "both",
@@ -16653,10 +16653,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/health_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/health_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 89,
     "edition": "both",
@@ -16842,10 +16842,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/jamesandthecoldgun_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/jamesandthecoldgun_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 90,
     "edition": "both",
@@ -17031,10 +17031,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/jonathanyoung_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/jonathanyoung_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 91,
     "edition": "both",
@@ -17198,10 +17198,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/juelz_02.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/juelz_02.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 92,
     "edition": "both",
@@ -17409,10 +17409,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/killermike_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/killermike_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 93,
     "edition": "both",
@@ -17598,10 +17598,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/pvris_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/pvris_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 94,
     "edition": "both",
@@ -17809,10 +17809,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/selectiveresponse_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/selectiveresponse_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 95,
     "edition": "both",
@@ -17998,10 +17998,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/tigercub_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/tigercub_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 96,
     "edition": "both",
@@ -18165,10 +18165,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/alrt_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/alrt_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 98,
     "edition": "both",
@@ -18387,10 +18387,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/altare_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/altare_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 99,
     "edition": "both",
@@ -18587,10 +18587,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/borne_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/borne_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 100,
     "edition": "both",
@@ -18809,10 +18809,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/pirapus_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/pirapus_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 101,
     "edition": "both",
@@ -19009,10 +19009,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/repiet_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/repiet_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 102,
     "edition": "both",
@@ -19220,10 +19220,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/shockone_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/shockone_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 103,
     "edition": "both",
@@ -19420,10 +19420,10 @@
       }
     ],
     "cover": {
-      "height": 198,
-      "path": "/covers/starjunk95_01.png",
-      "source": "icon",
-      "width": 256
+      "height": 1024,
+      "path": "/covers/textures/starjunk95_01.png",
+      "source": "texture",
+      "width": 1024
     },
     "defIndex": 104,
     "edition": "both",

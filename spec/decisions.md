@@ -133,3 +133,12 @@ Decided 2026-11-13 by the project owner.
 - Kept: pages work on a phone and never scroll sideways (PROD-1), checked at 390 px wide.
 - Dropped: the 360 px minimum width, the 44 px touch target rule (PROD-33), Lighthouse's mobile settings (PROD-36 now uses the desktop preset) and the end-to-end run in a simulated phone (every test ran twice). The phone design of the rack is no longer an open task.
 - Why: the project owner wants work to go to the site's content and desktop experience first. Cloudflare Web Analytics records device types; revisit if most visitors turn out to use phones.
+
+## D-022 Covers from the game's textures, committed as stored
+
+Decided 2026-11-13 by the project owner.
+
+- Every kit's cover is the game's own cover texture (DATA-19) instead of the 256 × 198 Steam icon. The textures are 256² to 1024², and the icon's sleeve is only about 190 px wide.
+- The textures are stored unchanged as PNG in `public/covers/textures/` and committed, like the Steam icons: about 69 MB. This is the one exception to "extracted game files are never committed" (DATA-2). The pages never send the PNG; they show WebP copies made at build time (DATA-18a).
+- Considered: committing only lossy WebP copies (about 11 MB), or keeping the PNGs on R2 like the audio. The project owner chose the original files in the repository: the build stays self-contained, and the stored file is what the game ships.
+- A texture is flat sleeve art, so the disc is drawn on the page, as the design canvas does (DATA-19a).

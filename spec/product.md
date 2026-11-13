@@ -65,7 +65,7 @@ The rack holds every kit in order of release. The rack is the timeline.
 
 Sections, top to bottom:
 
-1. Hero: release year, kit title in the current locale, and the English title when it differs. Cover with the disc half out of the sleeve (the icon already shows this; a cover texture gets a drawn disc, DATA-19). Facts: artist credit (linked), released (date and batch), catalogue number, edition.
+1. Hero: release year, kit title in the current locale, and the English title when it differs. Cover with the disc half out of the sleeve (a drawn disc, DATA-19a); while a track plays, the disc slides further out and turns (still with reduced motion). Facts: artist credit (linked), released (date and batch), catalogue number, edition.
 2. A "Play the MVP anthem" button.
 3. Tracklist: every track of the kit (see Audio).
 4. The official description, quoted, attributed to Valve.

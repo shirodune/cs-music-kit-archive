@@ -103,6 +103,18 @@ test.describe("record page player", () => {
     await expect(mvp).toHaveAttribute("aria-pressed", "false");
   });
 
+  test("DATA-19 the drawn disc of a texture cover slides out while a track plays", async ({ page }) => {
+    await serveAudio(page);
+    await page.goto("/en/kits/desert-fire/");
+    const hero = page.locator("[data-player]");
+    await expect(hero.locator(".record .record-disc")).toHaveCount(1);
+    await expect(hero).not.toHaveAttribute("data-playing");
+    await play(page, "Main menu").click();
+    await expect(hero).toHaveAttribute("data-playing", "");
+    await play(page, "Main menu").click();
+    await expect(hero).not.toHaveAttribute("data-playing");
+  });
+
   test("PROD-25 a file that cannot load gives a clear message", async ({ page }) => {
     await serveAudio(page, 404);
     await page.goto("/en/kits/desert-fire/");
