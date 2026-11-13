@@ -2,8 +2,8 @@
 // Compares data/upstream/game-files.json (the current game, written by `pnpm data:sync`) with
 // data/upstream/game-files-extracted.json (the game files the published audio and stored textures came from).
 // Exits with 1 when anything is new, changed or removed, so a workflow can tell.
-// `pnpm audio:extract` records the sound files it reads. After exporting textures (README, "Audio"), run
-// `pnpm data:sync` and then `pnpm data:changes --accept`, which records all current game files as extracted.
+// `pnpm audio:extract` and `pnpm data:textures` record the files they read. `pnpm data:changes --accept` records
+// every current game file as extracted, for files that need no extraction (for example a removed one).
 // Usage: node scripts/data/changes.ts [--accept]
 
 import { existsSync } from "node:fs";
@@ -39,8 +39,8 @@ if (lines.length === 0) {
   console.log(`${lines.length} game files differ from the ones the site's audio and covers came from:`);
   for (const line of lines) console.log(`  ${line}`);
   console.log(
-    "Sound files: pnpm game:download, pnpm audio:extract, pnpm audio:upload (the weekly sync does this). " +
-      "Cover textures: export them (README, “Audio”), then pnpm data:sync and pnpm data:changes --accept.",
+    "Extract them with pnpm game:download, pnpm audio:extract, pnpm data:textures and pnpm audio:upload " +
+      "(the weekly sync does this; README, “Audio”).",
   );
   process.exitCode = 1;
 }

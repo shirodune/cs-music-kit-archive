@@ -42,26 +42,20 @@ The audio comes from the game's own files and goes straight to Cloudflare R2. It
    pnpm audio:upload
    ```
 
-`game:download` downloads, anonymously from Steam, the game's VPK directory (about 8 MB) and only the archives that hold new or changed tracks, about 100 MB each, into `game-files/` (ignored by git). `audio:extract` reads those tracks, has Source2Viewer decompile them into `audio/out/` (ignored by git) and writes the manifest to `data/upstream/audio-manifest.json`; the other tracks keep their entry. Add `--all` to both to read every track again (about 9 GB of archives). With CS2 installed through Steam, skip `game:download` and pass `--game "C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo"` to `audio:extract`. `audio:upload` needs the bucket's S3 credentials in `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY` (see "Weekly sync"). It compares the manifest with the published one: it uploads new or changed files, then the manifest, then deletes files that are no longer listed.
+`game:download` downloads, anonymously from Steam, the game's VPK directory (about 8 MB) and only the archives that hold new or changed tracks and cover textures, about 100 MB each, into `game-files/` (ignored by git). `audio:extract` reads those tracks, has Source2Viewer decompile them into `audio/out/` (ignored by git) and writes the manifest to `data/upstream/audio-manifest.json`; the other tracks keep their entry. Add `--all` to both to read every track again (about 12 GB of archives, with the covers). With CS2 installed through Steam, skip `game:download` and pass `--game "C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo"` to `audio:extract`. `audio:upload` needs the bucket's S3 credentials in `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY` (see "Weekly sync"). It compares the manifest with the published one: it uploads new or changed files, then the manifest, then deletes files that are no longer listed.
 
-Cover textures (spec DATA-19) come from the same game files. Export them and store them in `public/covers/textures/`, which is committed:
+Cover textures (spec DATA-19) come from the same game files and are committed in `public/covers/textures/`. `game:download` also fetches the archives of covers whose textures changed; then:
 
-```powershell
-C:\tools\s2v\Source2Viewer-CLI.exe -i "steam:730/game/csgo/pak01_dir.vpk" -f materials/models/inventory_items/music_kit/ -e vtex_c -d -o game-files
-pnpm data:textures
+```sh
+pnpm data:textures --s2v <path to Source2Viewer-CLI>
 pnpm data:build
 ```
 
-`audio:extract` records the game files it read. After exporting textures, record them too, so `pnpm data:changes` stops listing them:
-
-```powershell
-pnpm data:sync
-pnpm data:changes --accept
-```
+`audio:extract` and `data:textures` record the game files they read, so `pnpm data:changes` stops listing them. `pnpm data:changes --accept` records every current game file as extracted, for files that need no extraction (for example a removed one).
 
 ## Weekly sync (maintainers)
 
-`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts and uploads the audio of game files that changed, and opens or updates the pull request on the branch `data-sync`. Cover textures that changed are listed in that pull request; export them by hand as above. One-time setup (done 2026-11-13):
+`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts the audio and cover textures of game files that changed, uploads the audio, and opens or updates the pull request on the branch `data-sync` with everything else, the covers included. One-time setup (done 2026-11-13):
 
 1. Create an R2 token limited to the bucket: in Cloudflare, R2 → Manage API tokens → Create Account API token, permission "Object Read & Write", bucket `cs-music-kit-audio`. It shows an Access Key ID and a Secret Access Key.
 2. In GitHub, create the environment `audio` (Settings → Environments), limit its deployment branches to `main`, and add the two values as the secrets `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`.
