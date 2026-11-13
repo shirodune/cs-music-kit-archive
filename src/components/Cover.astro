@@ -23,7 +23,6 @@ const img = {
   sizes: srcset ? sizes : undefined,
   width: cover.width,
   height: cover.height,
-  alt,
   loading,
   decoding,
   fetchpriority,
@@ -34,9 +33,9 @@ const img = {
   cover.source === "texture" ? (
     <span class:list={["record", className]} style={style}>
       <span class="record-disc" aria-hidden="true" />
-      <img class="record-sleeve" {...img} />
+      <img class="record-sleeve" alt={alt} {...img} />
     </span>
   ) : (
-    <img class={className} style={style} {...img} />
+    <img class={className} style={style} alt={alt} {...img} />
   )
 }
