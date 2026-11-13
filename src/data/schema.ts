@@ -109,9 +109,20 @@ export const kitSchema = z.strictObject({
 });
 export type Kit = z.infer<typeof kitSchema>;
 
+/** The kinds of link the artist page shows, in this order (PROD-20). */
+export const LINK_KINDS = ["official", "bandcamp", "spotify", "apple-music", "soundcloud", "youtube"] as const;
+export type LinkKind = (typeof LINK_KINDS)[number];
+
 export const generatedArtistSchema = artistSchema.extend({
   /** defIndex of every kit the artist is credited on, in release order. */
   kits: z.array(z.number().int().positive()).min(1),
+  /** From MusicBrainz, one per kind, in LINK_KINDS order, then the MusicBrainz page itself (PROD-20). */
+  links: z.array(
+    z.strictObject({
+      kind: z.enum([...LINK_KINDS, "musicbrainz"]),
+      url: z.url({ protocol: /^https?$/ }),
+    }),
+  ),
 });
 export type GeneratedArtist = z.infer<typeof generatedArtistSchema>;
 

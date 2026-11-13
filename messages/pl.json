@@ -95,6 +95,8 @@
   "artist.latest": "Najnowszy",
   "artist.discography": "Zestawy utworów",
   "artist.with": "Razem z: {names}",
+  "artist.links": "Linki",
+  "artist.officialSite": "Oficjalna strona",
   "artist.yearsLater": {
     "one": "{count} rok później",
     "few": "{count} lata później",

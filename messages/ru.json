@@ -95,6 +95,8 @@
   "artist.latest": "Последний",
   "artist.discography": "Наборы музыки",
   "artist.with": "Вместе с: {names}",
+  "artist.links": "Ссылки",
+  "artist.officialSite": "Официальный сайт",
   "artist.yearsLater": {
     "one": "{count} год спустя",
     "few": "{count} года спустя",

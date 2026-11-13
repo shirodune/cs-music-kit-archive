@@ -92,6 +92,8 @@
   "artist.latest": "Mais recente",
   "artist.discography": "Trilhas sonoras",
   "artist.with": "Com {names}",
+  "artist.links": "Links",
+  "artist.officialSite": "Site oficial",
   "artist.yearsLater": {
     "one": "{count} ano depois",
     "many": "{count} de anos depois",

@@ -95,6 +95,8 @@
   "artist.latest": "Nejnovější",
   "artist.discography": "Hudební balíčky",
   "artist.with": "Spolu s: {names}",
+  "artist.links": "Odkazy",
+  "artist.officialSite": "Oficiální web",
   "artist.yearsLater": {
     "one": "O {count} rok později",
     "few": "O {count} roky později",

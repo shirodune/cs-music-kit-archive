@@ -89,6 +89,8 @@
   "artist.latest": "Latest",
   "artist.discography": "Music kits",
   "artist.with": "With {names}",
+  "artist.links": "Links",
+  "artist.officialSite": "Official site",
   "artist.yearsLater": {
     "one": "{count} year later",
     "other": "{count} years later"

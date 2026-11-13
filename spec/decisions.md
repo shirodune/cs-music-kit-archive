@@ -77,7 +77,7 @@ Google Fonts has no stencil face for any non-Latin script. Each script gets heav
 
 ## D-014 Covers start from the Steam icons
 
-256 × 198 icons now. High-resolution textures from the game files replace them where they exist (mostly 2019 and later). No 3D models.
+256 × 198 icons at first. The game's cover textures have since replaced them for every kit (D-022). No 3D models.
 
 ## D-015 Non-commercial fan project
 

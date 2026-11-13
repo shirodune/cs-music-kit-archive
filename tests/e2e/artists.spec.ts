@@ -65,6 +65,21 @@ test.describe("artist page", () => {
     );
   });
 
+  test("PROD-20 MusicBrainz links, the official site translated and service names as they are", async ({ page }) => {
+    await page.goto("/zh-hans/artists/austin-wintory/");
+    const links = page.getByRole("navigation", { name: "链接" }).getByRole("link");
+    await expect(links.first()).toHaveAccessibleName("官方网站");
+    await expect(links.last()).toHaveAccessibleName("MusicBrainz");
+    await expect(links.last()).toHaveAttribute(
+      "href",
+      "https://musicbrainz.org/artist/78f15956-c5e1-46d6-a46b-fa6f46681ec8",
+    );
+    await expect(links.filter({ hasText: "Spotify" })).toHaveCount(1);
+
+    await page.goto("/en/artists/halo/");
+    await expect(page.getByRole("navigation", { name: "Links" })).toHaveCount(0);
+  });
+
   test("PROD-21 the back link returns to the kit the visitor came from", async ({ page }) => {
     await page.goto("/en/kits/eye-of-the-dragon/");
     await page

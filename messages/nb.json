@@ -89,6 +89,8 @@
   "artist.latest": "Nyeste",
   "artist.discography": "Musikksett",
   "artist.with": "Med {names}",
+  "artist.links": "Lenker",
+  "artist.officialSite": "Offisiell nettside",
   "artist.yearsLater": {
     "one": "{count} år senere",
     "other": "{count} år senere"

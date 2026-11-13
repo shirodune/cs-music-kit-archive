@@ -95,6 +95,8 @@
   "artist.latest": "Найновіший",
   "artist.discography": "Музичні альбоми",
   "artist.with": "Разом із: {names}",
+  "artist.links": "Посилання",
+  "artist.officialSite": "Офіційний сайт",
   "artist.yearsLater": {
     "one": "{count} рік по тому",
     "few": "{count} роки по тому",

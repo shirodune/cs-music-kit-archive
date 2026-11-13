@@ -1,6 +1,6 @@
 ---
 // Artist page (spec: PROD-18 to PROD-21).
-// The introduction (content/artists) and MusicBrainz links (PROD-20) are added when they exist.
+// The introduction (content/artists) is added when it exists.
 
 import Cover from "../../../components/Cover.astro";
 import type { GeneratedArtist } from "../../../data/schema.ts";
@@ -82,6 +82,20 @@ const backTargets = Object.fromEntries(
   kits.map((k) => [k.slug, { href: kitHref(k.slug), label: `← ${kitTextRequired(locale, k.defIndex, "title").text}` }]),
 );
 
+// PROD-20: service names are not translated.
+const SERVICES = {
+  bandcamp: "Bandcamp",
+  spotify: "Spotify",
+  "apple-music": "Apple Music",
+  soundcloud: "SoundCloud",
+  youtube: "YouTube",
+  musicbrainz: "MusicBrainz",
+} as const;
+const links = artist.links.map((link) => ({
+  url: link.url,
+  label: link.kind === "official" ? t("artist.officialSite") : SERVICES[link.kind],
+}));
+
 const nameSize =
   artist.name.length > 18
     ? "text-[clamp(3rem,7vw,6.5rem)]"
@@ -159,6 +173,28 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
           }
         </dl>
       </div>
+      {
+        links.length > 0 && (
+          <nav aria-labelledby="links-h">
+            <h2 id="links-h" class="font-mono text-[11px] tracking-widest text-muted uppercase">
+              {t("artist.links")}
+            </h2>
+            <ul class="mt-1 flex list-none flex-wrap gap-x-5 p-0">
+              {links.map((link) => (
+                <li>
+                  <a
+                    href={link.url}
+                    class="inline-flex min-h-11 items-center gap-1 font-mono text-xs tracking-wider uppercase underline underline-offset-4 hover:text-signal"
+                  >
+                    {link.label}
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )
+      }
     </div>
   </section>
 

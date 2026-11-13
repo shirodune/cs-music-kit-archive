@@ -92,6 +92,8 @@
   "artist.latest": "Ultimo",
   "artist.discography": "Temi musicali",
   "artist.with": "Con {names}",
+  "artist.links": "Link",
+  "artist.officialSite": "Sito ufficiale",
   "artist.yearsLater": {
     "one": "{count} anno dopo",
     "many": "{count} di anni dopo",

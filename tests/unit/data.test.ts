@@ -97,6 +97,23 @@ describe("kits", () => {
     for (const a of artists) expect(a.kits.length, a.id).toBeGreaterThan(0);
   });
 
+  test("DATA-4a DATA-15a artists with an MBID link to MusicBrainz last, one link of each kind", () => {
+    expect(artists.filter((a) => a.musicbrainzId)).toHaveLength(69);
+    for (const a of artists) {
+      if (!a.musicbrainzId) {
+        expect(a.links, a.id).toEqual([]);
+        continue;
+      }
+      expect(a.links.at(-1), a.id).toEqual({
+        kind: "musicbrainz",
+        url: `https://musicbrainz.org/artist/${a.musicbrainzId}`,
+      });
+      const kinds = a.links.map((l) => l.kind);
+      expect(new Set(kinds).size, a.id).toBe(kinds.length);
+    }
+    expect(artists.find((a) => a.id === "halo")?.links).toEqual([]);
+  });
+
   test("DATA-10 every English name splits into credit and title", () => {
     for (const [defIndex, text] of Object.entries(en.kits)) {
       expect(text.title, defIndex).not.toBe("");

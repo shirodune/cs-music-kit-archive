@@ -89,6 +89,8 @@
   "artist.latest": "Senaste",
   "artist.discography": "Musikpaket",
   "artist.with": "Med {names}",
+  "artist.links": "Länkar",
+  "artist.officialSite": "Officiell webbplats",
   "artist.yearsLater": {
     "one": "{count} år senare",
     "other": "{count} år senare"

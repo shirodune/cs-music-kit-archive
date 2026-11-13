@@ -29,6 +29,7 @@ Every field has exactly one owner. A field is either generated from an upstream 
 
 - DATA-3 `data/upstream/meta.json` records the commit SHA and fetch time of every upstream repository. `pnpm data:sync` writes only the subsets we use (music definitions, music boxes, the music kit sound events, and localization keys starting with `musickit_`, `csgo_crate_musickit_` and the few others listed in the sync script), so snapshots stay small.
 - DATA-4 MusicBrainz requests send a descriptive User-Agent and are spaced at least 1.1 seconds apart.
+- DATA-4a `pnpm data:links` reads each artist's MusicBrainz URL relations that have not ended and keeps one link of each kind the artist page shows: official site, Bandcamp, Spotify, Apple Music, SoundCloud and YouTube, in that order (the first by URL when there are several). It writes them to `data/upstream/musicbrainz.json`, keyed by MBID. `pnpm data:build` adds the MusicBrainz page itself as the last link, and fails when an artist has an MBID that the file does not list.
 
 ## Kit set
 
@@ -126,10 +127,11 @@ Artists live in `data/curated/artists.json`. Credits live in `data/curated/credi
 | `type` | Curated | `person`, `group` or `brand`. `brand` covers games, companies and compilations, such as Valve, Halo, Half-Life: Alyx, Perfect World and Various Artists (Hotline Miami) |
 | `aliases` | Curated | Other official credit spellings, for example Dren and Dren McDonald |
 | `members` | Curated | Artist ids, for groups and collaborations that have their own page |
-| `musicbrainzId` | Curated | Optional |
-| `links` | Upstream | From MusicBrainz, written to `data/generated/` |
+| `musicbrainzId` | Curated | Set only when the MusicBrainz entry is clearly the credited artist: its releases include the kit's music, or its description fits (DATA-15a) |
+| `links` | Upstream | From MusicBrainz (DATA-4a), written to `data/generated/` |
 
 - DATA-15 A collaboration credit links to every member that has a kit of their own (Tree Adams and Ben Bromfield; The Verkkars & n0thing links to The Verkkars). A collaboration whose members have no kit of their own is one artist entry (TWERL, Ekko & Sidetrack; Repiet & Julia Kleijn).
+- DATA-15a `musicbrainzId` stays `null` when no single entry fits: brands without a music entry of their own (Halo, Half-Life: Alyx, Perfect World, Various Artists), collaborations that MusicBrainz lists only as their members (TWERL, Ekko & Sidetrack; Repiet & Julia Kleijn), and names that match several artists or none (Skog, Tim Huling, Matt Levine). 69 of 78 artists have one (2026-11-13).
 - DATA-16 Every kit has at least one `main` credit. Every artist has at least one kit. Every artist id used in `credits.json` exists.
 - DATA-17 Real composers behind a `brand` credit may be named in its introduction, with sources (PROD-28). They are not separate credits unless Valve credits them.
 
