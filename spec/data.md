@@ -12,7 +12,7 @@ Every field has exactly one owner. A field is either generated from an upstream 
 | Derived | `data/generated/` | `pnpm data:build` only |
 
 - DATA-1 `data/generated/` must be byte-identical to a fresh `pnpm data:build` run. CI rebuilds and compares.
-- DATA-2 All of `data/`, `content/` and `public/covers/` is committed. Audio and extracted game files are never committed.
+- DATA-2 All of `data/`, `content/` and `public/covers/` is committed. Audio and extracted game files are never committed, with one exception: the cover textures in `public/covers/textures/` (DATA-19, D-022).
 
 ## Upstream sources
 
@@ -147,8 +147,9 @@ Artists live in `data/curated/artists.json`. Credits live in `data/curated/credi
 ## Covers
 
 - DATA-18 Every kit has a cover. The first source is the Steam CDN icon (256 × 198), which already shows the sleeve with the disc half out. `pnpm data:covers` downloads each icon whose URL changed, stores the original PNG unchanged at `public/covers/{internalName}.png` and records its size in `data/upstream/covers.json`. `pnpm data:build` records `cover = { source: "icon", path, width, height }` and fails when a kit has no stored cover.
-- DATA-18a Pages show a WebP copy of each stored cover, made at build time at `/covers/{internalName}.webp` (quality 90, lossless alpha). It is about a sixth of the PNG's size, which keeps the rack's first cover fast to load (PROD-36). The Open Graph image stays the PNG, because not every link preview reads WebP.
-- DATA-19 When the game's cover texture is extracted and is larger than the icon, it replaces the icon and `cover.source = "texture"`. The texture estimates are 256² for 2014–2016, 512² for 2019–2022 and 1024² for 2023 on; extraction confirms them.
+- DATA-18a Pages show WebP copies of each stored cover, made at build time next to the PNG (quality 90, lossless alpha): `{name}.webp` at most 768 px wide, and for a texture also `{name}-320.webp`, which thumbnails pick through `srcset`. They are a small part of the PNG's size, which keeps the rack's first cover fast to load (PROD-36). The Open Graph image stays the PNG, because not every link preview reads WebP.
+- DATA-19 When the game's cover texture is extracted, it replaces the icon and `cover.source = "texture"`. A maintainer exports `materials/models/inventory_items/music_kit/` with Source2Viewer-CLI into `game-files/` (the README has the command); `pnpm data:textures` stores each kit's `mp3_screen_color` texture unchanged at `public/covers/textures/{internalName}.png` and records its size in `data/upstream/textures.json`. The game ships each cover twice, compressed two ways; the larger PNG is the less compressed one. All 101 kits have one (2026-11-13): 37 at 256², 29 at 512², 35 at 1024². Even 256² is sharper than the icon, whose sleeve is about 190 px wide. One folder is named differently from its kit (`midnight_riders_01`).
+- DATA-19a A texture is the flat sleeve art, so pages draw the disc half out of the sleeve, in the icon's 256:198 frame (`Cover.astro`, `.record` in `global.css`). The texture is shown as stored, even where the game lightens it with its material (the grey of Desert Fire).
 
 ## Audio
 

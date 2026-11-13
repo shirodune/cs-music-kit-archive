@@ -98,7 +98,7 @@ export const kitSchema = z.strictObject({
   /** Site path of the stored cover and its size in pixels (DATA-18). */
   cover: z.strictObject({
     source: z.enum(["icon", "texture"]),
-    path: z.string().regex(/^\/covers\/[a-z0-9_]+\.png$/),
+    path: z.string().regex(/^\/covers\/(textures\/)?[a-z0-9_]+\.png$/),
     width: z.number().int().positive(),
     height: z.number().int().positive(),
   }),

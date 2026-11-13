@@ -39,11 +39,13 @@ describe("kit set", () => {
 });
 
 describe("kits", () => {
-  test("DATA-18 every kit has a stored cover with its size", () => {
+  test("DATA-18 DATA-19 every kit has a stored cover with its size, the game's texture when extracted", () => {
     for (const kit of kits) {
-      expect(kit.cover.path, kit.slug).toBe(`/covers/${kit.internalName}.png`);
+      const folder = kit.cover.source === "texture" ? "/covers/textures" : "/covers";
+      expect(kit.cover.path, kit.slug).toBe(`${folder}/${kit.internalName}.png`);
       expect(existsSync(new URL(`../../public${kit.cover.path}`, import.meta.url)), kit.slug).toBe(true);
     }
+    expect(kits.filter((kit) => kit.cover.source === "texture")).toHaveLength(kits.length);
   });
 
   test("DATA-21 every track links to its published file, with the measured duration", () => {

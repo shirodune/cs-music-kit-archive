@@ -46,6 +46,8 @@ function render(): void {
   const playing = current !== null && !audio.paused;
   if (current) parts(current).button?.setAttribute("aria-pressed", String(playing));
   current?.toggleAttribute("data-playing", playing);
+  // The hero's drawn disc slides out and turns while a track plays (global.css, .record).
+  document.querySelector("[data-player]")?.toggleAttribute("data-playing", playing);
   mvpButton?.setAttribute("aria-pressed", String(playing && current?.dataset.mvp !== undefined));
   if (current) setStatus(fill(playing ? status?.dataset.now : status?.dataset.paused, current.dataset.name ?? ""));
 }
@@ -87,6 +89,7 @@ async function start(): Promise<void> {
 function fail(): void {
   if (current) release(current);
   current = null;
+  document.querySelector("[data-player]")?.removeAttribute("data-playing");
   mvpButton?.setAttribute("aria-pressed", "false");
   setStatus(status?.dataset.error ?? "", true);
 }

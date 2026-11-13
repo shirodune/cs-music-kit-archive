@@ -41,6 +41,14 @@ The audio comes from the game files on a maintainer's machine and goes straight 
    pnpm audio:upload
    ```
 
+Cover textures (spec DATA-19) come from the same game files. Export them and store them in `public/covers/textures/`, which is committed:
+
+```powershell
+C:\tools\s2v\Source2Viewer-CLI.exe -i "steam:730/game/csgo/pak01_dir.vpk" -f materials/models/inventory_items/music_kit/ -e vtex_c -d -o game-files
+pnpm data:textures
+pnpm data:build
+```
+
 `audio:extract` finds CS2 through Steam, writes the files to `audio/` (ignored by git) and the manifest to `data/upstream/audio-manifest.json`. `audio:upload` compares it with the published manifest: it uploads new or changed files, then the manifest, then deletes files that are no longer listed. Run both again after a game update that adds kits.
 
 Deploys run from GitHub Actions (spec D-003): every pull request gets a preview on workers.dev, and every push to `main` deploys to production after all checks pass.

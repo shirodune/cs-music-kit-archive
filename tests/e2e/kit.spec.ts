@@ -12,7 +12,7 @@ test.describe("record page", () => {
     await expect(page.getByText("Nº 009")).toBeVisible();
     await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
       "content",
-      "https://musickitarchive.com/covers/austinwintory_01.png",
+      "https://musickitarchive.com/covers/textures/austinwintory_01.png",
     );
 
     const tracks = page.getByRole("region", { name: "Tracklist" }).getByRole("listitem");
@@ -71,11 +71,15 @@ test.describe("record page", () => {
   });
 
   test("DATA-18a the page shows the WebP copy of the cover and shares the PNG", async ({ page, request }) => {
-    await page.goto("/en/kits/desert-fire/");
-    const src = await page.locator("main img").first().getAttribute("src");
-    expect(src).toMatch(/^\/covers\/[a-z0-9_]+\.webp$/);
-    expect((await request.get(src as string)).headers()["content-type"]).toBe("image/webp");
-    await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", /\/covers\/[a-z0-9_]+\.png$/);
+    await page.goto("/en/kits/industrial-sunset-memories/");
+    const cover = page.getByRole("img", { name: /Industrial Sunset Memories music kit/ });
+    expect(await cover.getAttribute("src")).toBe("/covers/textures/starjunk95_01.webp");
+    const small = await request.get("/covers/textures/starjunk95_01-320.webp");
+    expect(small.headers()["content-type"]).toBe("image/webp");
+    await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
+      "content",
+      "https://musickitarchive.com/covers/textures/starjunk95_01.png",
+    );
   });
 
   test("PROD-35 the record page loads no script files besides the language picker; the player is inline", async ({
