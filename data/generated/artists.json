@@ -9,8 +9,34 @@
       45,
       80
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.soundrama.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/0Rhr6fup6H3Ve8sc7NpSZ5"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/296296052"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/danieladowski"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCIM9EV6hc4Xd34SuThxzfPg"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/a5c7929b-e028-4180-8be8-cfad6887f511"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "a5c7929b-e028-4180-8be8-cfad6887f511",
     "name": "Daniel Sadowski",
     "type": "person"
   },
@@ -20,8 +46,38 @@
     "kits": [
       4
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.noisia.nl/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://noisia.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2xxJoYYDhyNCKJFiytx23n"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/nl/artist/103804740"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/noisia"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCPSso4A-41Rth8KMf0O40iw"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/ec22a32b-acab-432e-a88c-ffe6ae68fa16"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "ec22a32b-acab-432e-a88c-ffe6ae68fa16",
     "name": "Noisia",
     "type": "group"
   },
@@ -31,8 +87,26 @@
     "kits": [
       5
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.allairemusic.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://robertallaire.bandcamp.com/"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/allairemusic"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/cfcb64f8-160f-42bb-ba75-762d9836b642"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "cfcb64f8-160f-42bb-ba75-762d9836b642",
     "name": "Robert Allaire",
     "type": "person"
   },
@@ -42,8 +116,30 @@
     "kits": [
       6
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/4eSQMlnSUDwVfRYhLqikyd"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/310322524"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/seanmurray-music"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCE6egp-xo1Ek3RX53COqD8Q"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/488b7c17-5e57-479e-8d4d-551c7a88a016"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "488b7c17-5e57-479e-8d4d-551c7a88a016",
     "name": "Sean Murray",
     "type": "person"
   },
@@ -53,8 +149,34 @@
     "kits": [
       7
     ],
+    "links": [
+      {
+        "kind": "bandcamp",
+        "url": "https://feedme.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/5FWi1mowu6uiU2ZHwr1rby"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/294992333"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/feedme"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCVWLOM5QBtzP2hD-h232XwA"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/c8eec78b-f3c5-4d59-a010-e709f7be4508"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "c8eec78b-f3c5-4d59-a010-e709f7be4508",
     "name": "Feed Me",
     "type": "person"
   },
@@ -68,8 +190,22 @@
       44,
       81
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.nerdtracks.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://drenmcdonald.bandcamp.com/"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/69559c98-ff7d-45ea-b7ff-66642c420d68"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "69559c98-ff7d-45ea-b7ff-66642c420d68",
     "name": "Dren McDonald",
     "type": "person"
   },
@@ -82,8 +218,38 @@
       54,
       78
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://austinwintory.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://austinwintory.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/3Rwlus4QnnBSnTe8pJV0rw"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/280949326"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/awintory"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCdprwTDYzaW2cpDG2A7MygA"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/78f15956-c5e1-46d6-a46b-fa6f46681ec8"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "78f15956-c5e1-46d6-a46b-fa6f46681ec8",
     "name": "Austin Wintory",
     "type": "person"
   },
@@ -93,8 +259,38 @@
     "kits": [
       10
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.djsasha.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://sasha.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/02QYcz7JjwzKiKGHg53rZY"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/414607074"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/sashaofficial"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/djsasha"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/68be8273-cb12-4053-964d-157b7e5cf265"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "68be8273-cb12-4053-964d-157b7e5cf265",
     "name": "Sasha",
     "type": "person"
   },
@@ -106,6 +302,7 @@
       22,
       38
     ],
+    "links": [],
     "members": [],
     "musicbrainzId": null,
     "name": "Skog",
@@ -117,8 +314,22 @@
     "kits": [
       12
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.midnight-riders.com/"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/user/MidnightRidersBand"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/7a0a6afb-917a-4314-af7a-594c3a635dc5"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "7a0a6afb-917a-4314-af7a-594c3a635dc5",
     "name": "Midnight Riders",
     "type": "group"
   },
@@ -128,8 +339,34 @@
     "kits": [
       13
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.mattlange.net/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://isorhythm.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2AmHV6vxRxvHdlxSHxnHE9"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/325712400"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/mattlange"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/b7b19d40-b192-404b-8ba6-b32f11ada274"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "b7b19d40-b192-404b-8ba6-b32f11ada274",
     "name": "Matt Lange",
     "type": "person"
   },
@@ -139,8 +376,18 @@
     "kits": [
       14
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.mateomessina.com/"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/6cc14953-8882-4197-8c3d-3bb9dd929be6"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "6cc14953-8882-4197-8c3d-3bb9dd929be6",
     "name": "Mateo Messina",
     "type": "person"
   },
@@ -150,6 +397,7 @@
     "kits": [
       15
     ],
+    "links": [],
     "members": [],
     "musicbrainzId": null,
     "name": "Various Artists",
@@ -161,8 +409,38 @@
     "kits": [
       17
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.damjanmravunac.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://damjanmravunac.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/4JCHmi2aI31AP3VsVKE2ks"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/726774063"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/damjan-mravunac"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCJ22ph4hf3bsQJ4G6FQVlwQ"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/21d2c7d9-1637-4be1-b84a-f6edf84f48e0"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "21d2c7d9-1637-4be1-b84a-f6edf84f48e0",
     "name": "Damjan Mravunac",
     "type": "person"
   },
@@ -172,8 +450,34 @@
     "kits": [
       18
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://proxyofficial.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/3KOzW9NF2ZGwYRo0KfID1R"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/202626629"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/useproxy"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/proxytv"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/93c0acdc-4b9a-4a75-a1be-0742dcb008c8"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "93c0acdc-4b9a-4a75-a1be-0742dcb008c8",
     "name": "Proxy",
     "type": "person"
   },
@@ -183,8 +487,26 @@
     "kits": [
       19
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://kitheory.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/1mB4aweE1XGdjbFVFC8i5m"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCMXJOGxhM0dRR-ZAGLRuKkQ"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/407aac3b-696c-4fef-af14-aac7121a7041"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "407aac3b-696c-4fef-af14-aac7121a7041",
     "name": "Ki:Theory",
     "type": "person"
   },
@@ -194,8 +516,18 @@
     "kits": [
       20
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2cIxGaF8qXxVby5XTjTMl9"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/0859ee6e-e414-4bf2-bd2a-383e8a8a642f"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "0859ee6e-e414-4bf2-bd2a-383e8a8a642f",
     "name": "Troels Folmann",
     "type": "person"
   },
@@ -205,8 +537,18 @@
     "kits": [
       21
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2QUDFgPgXxkj5ROewDnmM4"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/4c8a43b8-1944-4f39-8046-ffa7e76db2af"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "4c8a43b8-1944-4f39-8046-ffa7e76db2af",
     "name": "Kelly Bailey",
     "type": "person"
   },
@@ -216,8 +558,38 @@
     "kits": [
       24
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://awolnationmusic.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://awolnation.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/4njdEjTnLfcGImKZu1iSrz"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/371362363"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/awolnation"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UC6nHSpckOIcVmMfl_878Vuw"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/77b29df2-056e-409e-a1b2-5e2bbfe421c4"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "77b29df2-056e-409e-a1b2-5e2bbfe421c4",
     "name": "AWOLNATION",
     "type": "group"
   },
@@ -227,8 +599,30 @@
     "kits": [
       25
     ],
+    "links": [
+      {
+        "kind": "bandcamp",
+        "url": "https://mordfustangofficial.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/34hwBP1esafQoCVtLz7F6K"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/ee/artist/426559393"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/mordfustang"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/eb2204a7-a65f-441e-97de-af695f9f1441"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "eb2204a7-a65f-441e-97de-af695f9f1441",
     "name": "Mord Fustang",
     "type": "person"
   },
@@ -238,8 +632,26 @@
     "kits": [
       26
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.bross.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/7sIg0E3Cz3upSZio5LNEHM"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/3977776"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/696fab30-64f7-4790-9273-90332098ae59"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "696fab30-64f7-4790-9273-90332098ae59",
     "name": "Michael Bross",
     "type": "person"
   },
@@ -249,8 +661,26 @@
     "kits": [
       27
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://ianhultquist.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2KcLrCao2zAX5Ez6gZzgW9"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/373256284"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/4bae00ab-5dd9-4ccc-9487-74fc55fa006c"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "4bae00ab-5dd9-4ccc-9487-74fc55fa006c",
     "name": "Ian Hultquist",
     "type": "person"
   },
@@ -260,8 +690,26 @@
     "kits": [
       28
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://newbeatfund.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/5IqdTZwvASXwM39z5qPqAA"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/503555574"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/3d9def5c-8223-4d06-a609-c2d296fdf0e5"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "3d9def5c-8223-4d06-a609-c2d296fdf0e5",
     "name": "New Beat Fund",
     "type": "group"
   },
@@ -272,8 +720,38 @@
       29,
       32
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.beartoothband.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://beartoothband.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/6vwjIs0tbIiseJMR3pqwiL"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/590762561"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/beartoothband"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/user/BEARTOOTHband"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/98a1e0ab-35fa-40dd-b62c-9fda46fdb061"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "98a1e0ab-35fa-40dd-b62c-9fda46fdb061",
     "name": "Beartooth",
     "type": "group"
   },
@@ -283,8 +761,30 @@
     "kits": [
       30
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.lenniemoore.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/4jhqmfdj5qiutSpoXgiIMo"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/180812297"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/lenniemoore"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/f56e6bc6-5ee3-44ee-860d-6cf7fd754bf4"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "f56e6bc6-5ee3-44ee-860d-6cf7fd754bf4",
     "name": "Lennie Moore",
     "type": "person"
   },
@@ -294,8 +794,38 @@
     "kits": [
       31
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.darude.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://darude.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/0LhHRmSd1EYM5QdNeNnCoQ"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/1472380750"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/darude"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/@darude"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/9ffad8aa-b671-4a9a-a527-a95bdaaa0ec4"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "9ffad8aa-b671-4a9a-a527-a95bdaaa0ec4",
     "name": "Darude",
     "type": "person"
   },
@@ -305,8 +835,22 @@
     "kits": [
       33
     ],
+    "links": [
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/blitzkids"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/user/blitzkidsofficial"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/843d7768-a3d8-4e66-b632-ede0a0f0122e"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "843d7768-a3d8-4e66-b632-ede0a0f0122e",
     "name": "Blitz Kids",
     "type": "group"
   },
@@ -316,8 +860,30 @@
     "kits": [
       34
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.hundredthworldwide.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://hundredth.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2rtsR8zno5naTxY0iJr7M0"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/297952933"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/66b2f925-e924-4cde-b09f-27ec21d29564"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "66b2f925-e924-4cde-b09f-27ec21d29564",
     "name": "Hundredth",
     "type": "group"
   },
@@ -328,8 +894,38 @@
       35,
       52
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.neckdeepuk.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://neckdeeppoppunk.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2TM0qnbJH4QPhGMCdPt7fH"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/554682150"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/neck-deep-official"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCvW1rSUzDMoT4Qdeep-c-Ow"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/c41dd59f-d805-41df-9e0e-83ec0f9f468e"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "c41dd59f-d805-41df-9e0e-83ec0f9f468e",
     "name": "Neck Deep",
     "type": "group"
   },
@@ -339,8 +935,30 @@
     "kits": [
       36
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.roam.uk.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://roamuk.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/0q74f5UdR3j14Lis4AKKxq"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/uk/artist/932156260"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/74d76812-2ebf-4850-938b-2c3e02b0eb9f"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "74d76812-2ebf-4850-938b-2c3e02b0eb9f",
     "name": "Roam",
     "type": "group"
   },
@@ -350,8 +968,30 @@
     "kits": [
       37
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.twinatlantic.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/4A9xtvezlouTD7H0kyUje9"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/268647665"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/user/twinatlantic"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/98a819b7-2634-4987-815b-bc66182dc97f"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "98a819b7-2634-4987-815b-bc66182dc97f",
     "name": "Twin Atlantic",
     "type": "group"
   },
@@ -362,8 +1002,30 @@
       39,
       61
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://warnermusic.fi/artistit/the-verkkars"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/6G8D4xDyY4yocHtXiXxYmI"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/fi/artist/1453222467"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCrMYXW5wwfr8dojZkHt0qlQ"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/d08531ce-3789-42c9-86c2-75d40457246b"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "d08531ce-3789-42c9-86c2-75d40457246b",
     "name": "The Verkkars",
     "type": "group"
   },
@@ -373,6 +1035,7 @@
     "kits": [
       40
     ],
+    "links": [],
     "members": [],
     "musicbrainzId": null,
     "name": "Halo",
@@ -385,8 +1048,30 @@
       41,
       53
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/5q9wVInrKvKDPmF3SOOXq6"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/1123771392"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/scarlxrd"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/@takalxrd7732"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/f03c0c1d-eca8-4386-bdf7-566b6f950c3a"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "f03c0c1d-eca8-4386-bdf7-566b6f950c3a",
     "name": "Scarlxrd",
     "type": "person"
   },
@@ -396,6 +1081,7 @@
     "kits": [
       42
     ],
+    "links": [],
     "members": [],
     "musicbrainzId": null,
     "name": "Half-Life: Alyx",
@@ -408,8 +1094,30 @@
       46,
       85
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.treeadams.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2Dx84Mxlx9fpW7s20ezDji"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/267083468"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/tree-adams"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/5eb58661-6c5a-46aa-aed2-eab6d6253370"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "5eb58661-6c5a-46aa-aed2-eab6d6253370",
     "name": "Tree Adams",
     "type": "person"
   },
@@ -420,8 +1128,14 @@
       46,
       79
     ],
+    "links": [
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/0156b80d-73c1-4354-a86e-8136c02eee5f"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "0156b80d-73c1-4354-a86e-8136c02eee5f",
     "name": "Ben Bromfield",
     "type": "person"
   },
@@ -432,6 +1146,7 @@
       47,
       84
     ],
+    "links": [],
     "members": [],
     "musicbrainzId": null,
     "name": "Tim Huling",
@@ -444,8 +1159,30 @@
       48,
       83
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.sammarshallmusic.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/4NsihZ0Z3B9rZop5mvhAYW"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/sammarshallmusic"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCikT_u0pI9gozXasEp-sp-w"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/472b5c9c-8d75-4a45-b513-29279c870a34"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "472b5c9c-8d75-4a45-b513-29279c870a34",
     "name": "Sam Marshall",
     "type": "person"
   },
@@ -456,6 +1193,7 @@
       49,
       82
     ],
+    "links": [],
     "members": [],
     "musicbrainzId": null,
     "name": "Matt Levine",
@@ -467,8 +1205,38 @@
     "kits": [
       50
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.amontobin.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://amontobin.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/3mvkWMe6swnknwscwvGCHO"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/416213737"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/amon-tobin"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCxD2f0Xh4WlcKJO9W8nIOWA"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/630662ea-1c7d-4208-99fd-ba3afec20f0c"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "630662ea-1c7d-4208-99fd-ba3afec20f0c",
     "name": "Amon Tobin",
     "type": "person"
   },
@@ -478,8 +1246,30 @@
     "kits": [
       51
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.darrenkorb.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/0ZMWrgLff357yxLyEU77a1"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/459457290"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCxcelUjL7OrIaR6_UnZv9TQ"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/a7e3c900-1c91-444c-9fce-77d230e5791b"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "a7e3c900-1c91-444c-9fce-77d230e5791b",
     "name": "Darren Korb",
     "type": "person"
   },
@@ -489,8 +1279,38 @@
     "kits": [
       55
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://chipzel.co.uk/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://chipzelmusic.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/6mgvN6ZusGnE2uz5WWO3nC"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/354085427"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/chipzel"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UClC_P0hcSh4M2YzpdfzXvUw"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/a09cea0e-9d05-48f7-9507-7f60532cf53f"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "a09cea0e-9d05-48f7-9507-7f60532cf53f",
     "name": "Chipzel",
     "type": "person"
   },
@@ -500,8 +1320,14 @@
     "kits": [
       56
     ],
+    "links": [
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/cec708a0-ee01-4ae9-978c-2cb2564e00c8"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "cec708a0-ee01-4ae9-978c-2cb2564e00c8",
     "name": "Freaky DNA",
     "type": "person"
   },
@@ -511,8 +1337,26 @@
     "kits": [
       57
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/6pnW910AvtKYfko81yp1pT"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/1144037008"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/jharlin"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/a6d422ef-c5d3-48b1-aca2-502b6558ccdf"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "a6d422ef-c5d3-48b1-aca2-502b6558ccdf",
     "name": "Jesse Harlin",
     "type": "person"
   },
@@ -522,8 +1366,34 @@
     "kits": [
       58
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.laurashigihara.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://laurashigihara.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2RnGA202UcoKq6KjzQCbNR"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/448514975"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCaYNVIORCDQ30YKHlCbFkCQ"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/e6be9a18-87fe-47c4-9c46-e6e92b88878c"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "e6be9a18-87fe-47c4-9c46-e6e92b88878c",
     "name": "Laura Shigihara",
     "type": "person"
   },
@@ -533,8 +1403,38 @@
     "kits": [
       59
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.sarahschachner.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://sarahschachner.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/692KvxElsJHIJQCS6Eoc32"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/541618172"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/sarahschachner"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCmdwugGE-ma0on5ctJdGigQ"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/9730322f-38ca-44e6-9d79-45c5406d3fad"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "9730322f-38ca-44e6-9d79-45c5406d3fad",
     "name": "Sarah Schachner",
     "type": "person"
   },
@@ -544,8 +1444,38 @@
     "kits": [
       60
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://bbnomula.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://bbnomoney.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/41X1TR6hrK8Q2ZCpp2EqCz"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/ca/artist/1161580951"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/bbnomula"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCC8FSfSnbjiZ6vGr68ZLtzg"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/27638856-79a1-4495-b7da-1912899560c7"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "27638856-79a1-4495-b7da-1912899560c7",
     "name": "bbno$",
     "type": "person"
   },
@@ -555,8 +1485,34 @@
     "kits": [
       62
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://3kliksphilip.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://3kliksphilip.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/35Z4wAFS4EgoX0r4zHH6RO"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/3kliksphilip"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UC0a8nteER_pU4Aj6hmEyJAQ"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/10a802f2-2798-4395-a9e0-df270a9adb01"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "10a802f2-2798-4395-a9e0-df270a9adb01",
     "name": "3kliksphilip",
     "type": "person"
   },
@@ -566,8 +1522,34 @@
     "kits": [
       63
     ],
+    "links": [
+      {
+        "kind": "bandcamp",
+        "url": "https://humanityslastbreathofficial.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/7nKz8GVqHk0bUGmBm6wm3E"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/se/artist/387105055"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/humanityslastbreath"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/HLBofficial"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/f2883c50-5a86-46f4-9f94-6567cc0a07f1"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "f2883c50-5a86-46f4-9f94-6567cc0a07f1",
     "name": "Humanity's Last Breath",
     "type": "group"
   },
@@ -578,8 +1560,34 @@
       64,
       92
     ],
+    "links": [
+      {
+        "kind": "bandcamp",
+        "url": "https://bbjuelz.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/04p1jV00pBnrmh2rKl0jnT"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/ca/artist/1261892"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/bbjuelz"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCNjmMgrfZAc5fkIQCCuIb0Q"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/578ed90a-5993-42c3-953a-aba335910e6d"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "578ed90a-5993-42c3-953a-aba335910e6d",
     "name": "Juelz",
     "type": "person"
   },
@@ -590,8 +1598,34 @@
       65,
       74
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.knock2music.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/6mmSS7itNWKbapgG2eZbIg"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/966450646"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/knock2music"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCdb3pfoDoMOl-oMS1Ldsmiw"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/4a5d133b-46f3-4c19-aae1-ec199787658d"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "4a5d133b-46f3-4c19-aae1-ec199787658d",
     "name": "Knock2",
     "type": "person"
   },
@@ -601,8 +1635,18 @@
     "kits": [
       66
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/5QRlmTynCos8JyojtmgNq6"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/c399347c-3a6a-438f-8b46-196d2d41fec8"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "c399347c-3a6a-438f-8b46-196d2d41fec8",
     "name": "Meechy Darko",
     "type": "person"
   },
@@ -612,8 +1656,30 @@
     "kits": [
       67
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/1CXuuw8HJhyN80HlNzvL1e"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/833869649"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/sullivankingmusic"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCiUtkoBARJmuFVyBwini_MA"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/f1e0c3fb-1ecb-49fa-bebd-5b0aedb33737"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "f1e0c3fb-1ecb-49fa-bebd-5b0aedb33737",
     "name": "Sullivan King",
     "type": "person"
   },
@@ -624,6 +1690,7 @@
       68,
       86
     ],
+    "links": [],
     "members": [],
     "musicbrainzId": null,
     "name": "Perfect World",
@@ -635,8 +1702,38 @@
     "kits": [
       69
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://denzelcurry.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://denzelcurrymusic.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/6fxyWrfmjcbj5d12gXeiNV"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/631440154"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/denzelcurryph"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCiKxNv_MHAShqT2lATxG_Wg"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/5f95440d-7737-4a36-9bcf-c05337f7129b"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "5f95440d-7737-4a36-9bcf-c05337f7129b",
     "name": "Denzel Curry",
     "type": "person"
   },
@@ -647,8 +1744,30 @@
       70,
       1
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.valvesoftware.com/en/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/16qqOddo0ydmympG5G2oPQ"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/1502418150"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCg0FSqPeiGD_lIiPaaAehQg"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/b22f3ebb-c248-4956-965b-ff0e55f082b5"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "b22f3ebb-c248-4956-965b-ff0e55f082b5",
     "name": "Valve",
     "type": "brand"
   },
@@ -658,8 +1777,22 @@
     "kits": [
       71
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/1kV6qHk870w9QS3CJByHbJ"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/hiimdryden"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/d7a4596b-0911-4322-9f40-a72748a82012"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "d7a4596b-0911-4322-9f40-a72748a82012",
     "name": "DRYDEN",
     "type": "person"
   },
@@ -669,8 +1802,30 @@
     "kits": [
       72
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://isoxo.world/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/4zVCMnjw54nkhGHU4e1Pav"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/1480858530"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/isoxo"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/8f9a7d46-778a-48b6-8b4c-0c0938a95053"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "8f9a7d46-778a-48b6-8b4c-0c0938a95053",
     "name": "ISOxo",
     "type": "person"
   },
@@ -680,8 +1835,26 @@
     "kits": [
       73
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/1wvo1Xor4CLS2ySK1HywfH"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/1534615285"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/killscript"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/165d0fa6-e548-4cbc-97c2-4b5cfd155b53"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "165d0fa6-e548-4cbc-97c2-4b5cfd155b53",
     "name": "KILL SCRIPT",
     "type": "person"
   },
@@ -691,8 +1864,26 @@
     "kits": [
       75
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/4wrWMxa1wnZX5ZDhV6qk6f"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/962150690"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/radcatmusic"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/9f4558da-00fd-4253-bd29-b6e73fb7d63a"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "9f4558da-00fd-4253-bd29-b6e73fb7d63a",
     "name": "Rad Cat",
     "type": "person"
   },
@@ -702,6 +1893,7 @@
     "kits": [
       76
     ],
+    "links": [],
     "members": [],
     "musicbrainzId": null,
     "name": "TWERL and Ekko & Sidetrack",
@@ -713,8 +1905,34 @@
     "kits": [
       87
     ],
+    "links": [
+      {
+        "kind": "bandcamp",
+        "url": "https://adambeyer.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/1btv9qmIpbp7q1ixCYNdHu"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/101672291"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/adambeyer"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCKSaUpNBAL4i5psUcMVCPrw"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/0d6daf47-0be9-44ee-a9e8-fb5a7b718538"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "0d6daf47-0be9-44ee-a9e8-fb5a7b718538",
     "name": "Adam Beyer",
     "type": "person"
   },
@@ -724,8 +1942,38 @@
     "kits": [
       88
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://ghost-official.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://ghost.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/1Qp56T7n950O3EGMsSl81D"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/se/artist/600730426"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/thebandghost"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCAOiVaJJlH0Oduv48NN0mMA"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/2bcf2e02-5bc3-4c76-bf76-41126cb11444"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "2bcf2e02-5bc3-4c76-bf76-41126cb11444",
     "name": "Ghost",
     "type": "group"
   },
@@ -735,8 +1983,38 @@
     "kits": [
       89
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.youwillloveeachother.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://youwillloveeachother.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/6FfjnGXMhxSsJTuGLWBDth"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/317478211"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/healthnoise"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCet0ZrYmw-V_hsGPb7KsiOQ"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/6805e4d5-f550-40fe-b731-05dc8229e74b"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "6805e4d5-f550-40fe-b731-05dc8229e74b",
     "name": "HEALTH",
     "type": "group"
   },
@@ -746,8 +2024,26 @@
     "kits": [
       90
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://jamesandthecoldgun.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://jamesandthecoldgun.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/5YFIVhzlaYH9Yadjw9gSUx"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/e32f7fd4-9b61-4058-acb9-569e1eb38419"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "e32f7fd4-9b61-4058-acb9-569e1eb38419",
     "name": "James and the Cold Gun",
     "type": "group"
   },
@@ -757,8 +2053,38 @@
     "kits": [
       91
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://jonathanyoungmusic.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://jonathanyoung.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2IeMt1qx6ZVt1HFjdfE5tl"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/657465486"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/jonathanyoung-music"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UC40gs0opj389ohjLnJIAJzA"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/5ec79d60-04dc-4e3e-84d4-67357759049e"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "5ec79d60-04dc-4e3e-84d4-67357759049e",
     "name": "Jonathan Young",
     "type": "person"
   },
@@ -768,8 +2094,34 @@
     "kits": [
       93
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://killermike.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://killermike.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2N4EYkIlG1kv25g6Wv8LGI"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/1320637"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/killermikegto"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/47864525-aea7-439a-800f-17c57e51cbcc"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "47864525-aea7-439a-800f-17c57e51cbcc",
     "name": "Killer Mike",
     "type": "person"
   },
@@ -779,8 +2131,38 @@
     "kits": [
       94
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "https://www.pvris.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://parisofficial.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/6oFs3qk4VepIVFdoD4jmsy"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/847482820"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/thisispvris"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UC16zGxZ1weXDUXzRYwtfPqg"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/de210c9e-fbf6-4827-987f-dd8885f5d890"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "de210c9e-fbf6-4827-987f-dd8885f5d890",
     "name": "PVRIS",
     "type": "group"
   },
@@ -790,8 +2172,30 @@
     "kits": [
       95
     ],
+    "links": [
+      {
+        "kind": "bandcamp",
+        "url": "https://selectiveresponse.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/5ZHl0NazgmWTepb24O1P57"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/1455572315"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/selectiveresponse1"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/8a746db8-fbad-409f-819d-1798c70c69c1"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "8a746db8-fbad-409f-819d-1798c70c69c1",
     "name": "Selective Response",
     "type": "person"
   },
@@ -801,8 +2205,30 @@
     "kits": [
       96
     ],
+    "links": [
+      {
+        "kind": "bandcamp",
+        "url": "https://tigercubtigercub.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/6ekYAO2D1JkI58CF4uRRqw"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/658911023"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/@tigercubtigercub"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/f99aa6eb-c17d-480f-bcfb-1a6d95895524"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "f99aa6eb-c17d-480f-bcfb-1a6d95895524",
     "name": "Tigercub",
     "type": "group"
   },
@@ -812,8 +2238,30 @@
     "kits": [
       98
     ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.alrtmusic.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/4XH5qVwKcWRS0Z6tr85exf"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/us/artist/1362025781"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/alrtmusic"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/3666f670-8b9d-4313-aeb7-e29a033fe04c"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "3666f670-8b9d-4313-aeb7-e29a033fe04c",
     "name": "ALRT",
     "type": "person"
   },
@@ -823,8 +2271,34 @@
     "kits": [
       99
     ],
+    "links": [
+      {
+        "kind": "bandcamp",
+        "url": "https://altaremusic.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/3W3dTmUEXbo2D9CQzNTSaI"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/307419819"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/altare2"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCcNS0xgMUdwIuNEkS2vM9mw"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/b0e17ade-e0cd-42dd-ab9f-cd67dd83b217"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "b0e17ade-e0cd-42dd-ab9f-cd67dd83b217",
     "name": "Altare",
     "type": "person"
   },
@@ -834,8 +2308,26 @@
     "kits": [
       100
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/3NaqR0cf5IwAY1b1AaPAtB"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/ca/artist/1614258187"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCgQINnYDDlrn8zpeSb4E9Ow"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/24c8b594-89f0-4fd7-a5b2-171e1eff1908"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "24c8b594-89f0-4fd7-a5b2-171e1eff1908",
     "name": "borne",
     "type": "person"
   },
@@ -845,8 +2337,26 @@
     "kits": [
       101
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/7KgEOoJ0CawH7NOaLe34Qe"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/nz/artist/1440437428"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/pirapus"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/a4bda490-ba3b-4c09-9727-29e1e48b7371"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "a4bda490-ba3b-4c09-9727-29e1e48b7371",
     "name": "Pirapus",
     "type": "group"
   },
@@ -856,6 +2366,7 @@
     "kits": [
       102
     ],
+    "links": [],
     "members": [],
     "musicbrainzId": null,
     "name": "Repiet & Julia Kleijn",
@@ -867,8 +2378,30 @@
     "kits": [
       103
     ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/1yShtQaHjChbToQboKRzgH"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/au/artist/303114540"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/shockone"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCjfSOcNTCQOtnAqdPsDETgw"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/df76ffff-c150-4aa1-ab1d-e2714d865038"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "df76ffff-c150-4aa1-ab1d-e2714d865038",
     "name": "ShockOne",
     "type": "person"
   },
@@ -878,8 +2411,34 @@
     "kits": [
       104
     ],
+    "links": [
+      {
+        "kind": "bandcamp",
+        "url": "https://starjunk95.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/523iXWyHL26prJR3GKjRhx"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/gb/artist/1526352957"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/starjunk95"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCXJHU9XieRDQEXunkrgY4tg"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/18822272-d7dd-4619-bb3e-dd619b2cd179"
+      }
+    ],
     "members": [],
-    "musicbrainzId": null,
+    "musicbrainzId": "18822272-d7dd-4619-bb3e-dd619b2cd179",
     "name": "Starjunk 95",
     "type": "person"
   }

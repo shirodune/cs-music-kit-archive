@@ -86,6 +86,8 @@
   "artist.latest": "Mới nhất",
   "artist.discography": "Gói âm thanh",
   "artist.with": "Cùng {names}",
+  "artist.links": "Liên kết",
+  "artist.officialSite": "Trang web chính thức",
   "artist.yearsLater": {
     "other": "{count} năm sau"
   },

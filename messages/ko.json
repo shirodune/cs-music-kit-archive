@@ -86,6 +86,8 @@
   "artist.latest": "최신 키트",
   "artist.discography": "음악 키트",
   "artist.with": "함께한 아티스트: {names}",
+  "artist.links": "링크",
+  "artist.officialSite": "공식 웹사이트",
   "artist.yearsLater": {
     "other": "{count}년 후"
   },

@@ -89,6 +89,8 @@
   "artist.latest": "Πιο πρόσφατο",
   "artist.discography": "Μουσικά κουτιά",
   "artist.with": "Μαζί με: {names}",
+  "artist.links": "Σύνδεσμοι",
+  "artist.officialSite": "Επίσημος ιστότοπος",
   "artist.yearsLater": {
     "one": "{count} χρόνο αργότερα",
     "other": "{count} χρόνια αργότερα"

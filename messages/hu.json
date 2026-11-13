@@ -89,6 +89,8 @@
   "artist.latest": "Legújabb",
   "artist.discography": "Zenekészletek",
   "artist.with": "Közreműködik: {names}",
+  "artist.links": "Linkek",
+  "artist.officialSite": "Hivatalos oldal",
   "artist.yearsLater": {
     "one": "{count} évvel később",
     "other": "{count} évvel később"

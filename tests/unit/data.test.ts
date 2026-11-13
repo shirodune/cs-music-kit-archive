@@ -1,6 +1,7 @@
 // Checks on the generated data (spec: data.md). Run `pnpm data:build` first.
 import { existsSync } from "node:fs";
 import { describe, expect, test } from "vitest";
+import overrides from "../../data/curated/overrides.json";
 import artistsJson from "../../data/generated/artists.json";
 import kitsJson from "../../data/generated/kits.json";
 import releasesJson from "../../data/generated/releases.json";
@@ -95,6 +96,29 @@ describe("kits", () => {
       for (const a of k.artists) expect(ids.has(a.artist), a.artist).toBe(true);
     }
     for (const a of artists) expect(a.kits.length, a.id).toBeGreaterThan(0);
+  });
+
+  test("DATA-4a DATA-15a artists with an MBID link to MusicBrainz last, one link of each kind", () => {
+    expect(artists.filter((a) => a.musicbrainzId)).toHaveLength(69);
+    for (const a of artists) {
+      if (!a.musicbrainzId) {
+        expect(a.links, a.id).toEqual([]);
+        continue;
+      }
+      expect(a.links.at(-1), a.id).toEqual({
+        kind: "musicbrainz",
+        url: `https://musicbrainz.org/artist/${a.musicbrainzId}`,
+      });
+      const kinds = a.links.map((l) => l.kind);
+      expect(new Set(kinds).size, a.id).toBe(kinds.length);
+    }
+    expect(artists.find((a) => a.id === "halo")?.links).toEqual([]);
+  });
+
+  test("DATA-4b hidden links stay off the site", () => {
+    const urls = artists.flatMap((a) => a.links.map((l) => l.url));
+    for (const url of Object.keys(overrides.hiddenLinks)) expect(urls).not.toContain(url);
+    expect(Object.keys(overrides.hiddenLinks)).toContain("https://www.scarlxrd.com/");
   });
 
   test("DATA-10 every English name splits into credit and title", () => {

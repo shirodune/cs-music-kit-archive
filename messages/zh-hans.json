@@ -86,6 +86,8 @@
   "artist.latest": "最新一张",
   "artist.discography": "音乐盒",
   "artist.with": "合作：{names}",
+  "artist.links": "链接",
+  "artist.officialSite": "官方网站",
   "artist.yearsLater": {
     "other": "{count} 年后"
   },

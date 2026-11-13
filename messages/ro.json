@@ -92,6 +92,8 @@
   "artist.latest": "Cel mai recent",
   "artist.discography": "Pachete muzicale",
   "artist.with": "Cu {names}",
+  "artist.links": "Linkuri",
+  "artist.officialSite": "Site oficial",
   "artist.yearsLater": {
     "one": "După {count} an",
     "few": "După {count} ani",

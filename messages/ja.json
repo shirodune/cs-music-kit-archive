@@ -86,6 +86,8 @@
   "artist.latest": "最新",
   "artist.discography": "ミュージックキット",
   "artist.with": "共演：{names}",
+  "artist.links": "リンク",
+  "artist.officialSite": "公式サイト",
   "artist.yearsLater": {
     "other": "{count} 年後"
   },

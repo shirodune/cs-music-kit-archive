@@ -89,6 +89,8 @@
   "artist.latest": "En yeni",
   "artist.discography": "Müzik kitleri",
   "artist.with": "Birlikte: {names}",
+  "artist.links": "Bağlantılar",
+  "artist.officialSite": "Resmî site",
   "artist.yearsLater": {
     "one": "{count} yıl sonra",
     "other": "{count} yıl sonra"

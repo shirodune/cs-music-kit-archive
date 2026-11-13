@@ -12,6 +12,7 @@ import {
   creditSchema,
   cueSchema,
   type GeneratedArtist,
+  generatedArtistSchema,
   type Kit,
   kitSchema,
   type LocaleText,
@@ -102,6 +103,9 @@ async function main(): Promise<void> {
   const covers = await readJson<Covers>(new URL("covers.json", UPSTREAM));
   const textures = await readJson<Covers>(new URL("textures.json", UPSTREAM)).catch(() => ({}) as Covers);
   const audio = await readJson<AudioManifest>(new URL("audio-manifest.json", UPSTREAM)).catch(() => ({}));
+  const musicbrainz = await readJson<Record<string, GeneratedArtist["links"]>>(
+    new URL("musicbrainz.json", UPSTREAM),
+  ).catch(() => ({}) as Record<string, GeneratedArtist["links"]>);
   const loc = Object.fromEntries(
     await Promise.all(
       LOCALES.map(
@@ -257,11 +261,25 @@ async function main(): Promise<void> {
   kits.sort((a, b) => a.releaseDate.localeCompare(b.releaseDate) || a.defIndex - b.defIndex);
   const order = new Map(kits.map((k, i) => [k.defIndex, i]));
 
-  const generatedArtists: GeneratedArtist[] = artists.map((a) => ({
-    ...a,
-    kits: kits.filter((k) => k.artists.some((c) => c.artist === a.id)).map((k) => k.defIndex),
-  }));
+  const generatedArtists: GeneratedArtist[] = artists.map((a) => {
+    const fetched = a.musicbrainzId ? musicbrainz[a.musicbrainzId] : [];
+    if (!fetched) fail(`artist ${a.id}: no MusicBrainz links fetched for ${a.musicbrainzId}, run pnpm data:links`);
+    return generatedArtistSchema.parse({
+      ...a,
+      kits: kits.filter((k) => k.artists.some((c) => c.artist === a.id)).map((k) => k.defIndex),
+      // PROD-20: the links MusicBrainz knows, then the MusicBrainz page, which credits the source.
+      links: a.musicbrainzId
+        ? [
+            ...(fetched ?? []).filter((l) => !(l.url in overrides.hiddenLinks)),
+            { kind: "musicbrainz", url: `https://musicbrainz.org/artist/${a.musicbrainzId}` },
+          ]
+        : [],
+    });
+  });
   for (const a of generatedArtists) if (a.kits.length === 0) fail(`artist ${a.id} has no kits (DATA-16)`);
+  const fetchedUrls = new Set(Object.values(musicbrainz).flatMap((links) => links.map((l) => l.url)));
+  for (const url of Object.keys(overrides.hiddenLinks))
+    if (!fetchedUrls.has(url)) fail(`overrides.json: hidden link ${url} is no longer on MusicBrainz; remove it`);
 
   const generatedReleases = [...releases]
     .sort((a, b) => a.date.localeCompare(b.date))

@@ -86,6 +86,8 @@
   "artist.latest": "ชุดล่าสุด",
   "artist.discography": "ชุดอุปกรณ์เพลง",
   "artist.with": "ร่วมกับ {names}",
+  "artist.links": "ลิงก์",
+  "artist.officialSite": "เว็บไซต์ทางการ",
   "artist.yearsLater": {
     "other": "{count} ปีต่อมา"
   },

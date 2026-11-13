@@ -16,6 +16,7 @@
     "i18n:check": "node scripts/i18n-check.ts",
     "data:sync": "node scripts/data/sync.ts",
     "data:textures": "node scripts/data/textures.ts",
+    "data:links": "node scripts/data/links.ts",
     "data:covers": "node scripts/data/covers.ts",
     "data:build": "node scripts/data/build.ts",
     "audio:extract": "node scripts/audio/extract.ts",

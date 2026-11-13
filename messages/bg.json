@@ -89,6 +89,8 @@
   "artist.latest": "Най-нов",
   "artist.discography": "Музикални комплекти",
   "artist.with": "Заедно с: {names}",
+  "artist.links": "Връзки",
+  "artist.officialSite": "Официален сайт",
   "artist.yearsLater": {
     "one": "{count} година по-късно",
     "other": "{count} години по-късно"

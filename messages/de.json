@@ -89,6 +89,8 @@
   "artist.latest": "Neuestes",
   "artist.discography": "Musikkits",
   "artist.with": "Mit {names}",
+  "artist.links": "Links",
+  "artist.officialSite": "Offizielle Website",
   "artist.yearsLater": {
     "one": "{count} Jahr später",
     "other": "{count} Jahre später"

@@ -89,6 +89,8 @@
   "artist.latest": "Uusin",
   "artist.discography": "Musiikkipakkaukset",
   "artist.with": "Mukana {names}",
+  "artist.links": "Linkit",
+  "artist.officialSite": "Virallinen sivusto",
   "artist.yearsLater": {
     "one": "{count} vuosi myöhemmin",
     "other": "{count} vuotta myöhemmin"

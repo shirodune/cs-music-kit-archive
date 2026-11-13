@@ -89,6 +89,8 @@
   "artist.latest": "Nieuwste",
   "artist.discography": "Muzieksets",
   "artist.with": "Met {names}",
+  "artist.links": "Links",
+  "artist.officialSite": "Officiële website",
   "artist.yearsLater": {
     "one": "{count} jaar later",
     "other": "{count} jaar later"

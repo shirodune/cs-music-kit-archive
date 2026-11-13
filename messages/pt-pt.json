@@ -92,6 +92,8 @@
   "artist.latest": "Mais recente",
   "artist.discography": "Kits de música",
   "artist.with": "Com {names}",
+  "artist.links": "Ligações",
+  "artist.officialSite": "Site oficial",
   "artist.yearsLater": {
     "one": "{count} ano depois",
     "many": "{count} de anos depois",
