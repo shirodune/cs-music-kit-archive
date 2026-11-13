@@ -1,8 +1,9 @@
 ---
-// Record page: one music kit (spec: product.md "Record page", PROD-14, PROD-15, PROD-23).
-// Audio controls come with the site-wide player once audio is published (PROD-24, DATA-21).
+// Record page: one music kit (spec: product.md "Record page", PROD-14, PROD-15, PROD-23 to PROD-25).
+// The player script (components/player.ts) reads the data-* attributes on the tracklist rows.
 
 import KitCard from "../../../components/KitCard.astro";
+import { audioSrc } from "../../../data/audio.ts";
 import { coverSrc } from "../../../data/cover.ts";
 import type { Kit, Track } from "../../../data/schema.ts";
 import {
@@ -66,27 +67,51 @@ const facts: { label: string; value: Localized | string; sub?: Localized | null;
   { label: t("kit.edition"), value: t(`kit.edition.${kit.edition}`) },
 ];
 
-/** Rows in match order with the take shown only when a cue has several (PROD-23). */
-function rows(tracks: Track[]) {
+/**
+ * Rows in match order with the take shown only when a cue has several (PROD-23). When the match start and
+ * match end files are the same audio, they are one row (PROD-23a).
+ */
+function rows(tracks: Track[], main: boolean) {
+  const sha = (cue: Track["cue"]) => tracks.find((track) => track.cue === cue)?.audio?.sha256;
+  const sameStartEnd = sha("startofmatch") !== undefined && sha("startofmatch") === sha("endofmatch");
+  const listed = sameStartEnd ? tracks.filter((track) => track.cue !== "endofmatch") : tracks;
   const takes = new Map<string, number>();
-  for (const track of tracks) takes.set(track.cue, (takes.get(track.cue) ?? 0) + 1);
-  return tracks.map((track, i) => {
-    const cue = t(`cue.${track.cue}` as MessageKey);
+  for (const track of listed) takes.set(track.cue, (takes.get(track.cue) ?? 0) + 1);
+  const firstMvp = listed.find((track) => track.cue === "roundmvpanthem");
+  return listed.map((track, i) => {
+    const cue =
+      sameStartEnd && track.cue === "startofmatch" ? t("kit.matchStartEnd") : t(`cue.${track.cue}` as MessageKey);
     return {
       number: String(i + 1).padStart(2, "0"),
       name: track.take && (takes.get(track.cue) ?? 0) > 1 ? t("kit.cueTake", { cue, take: track.take }) : cue,
       file: track.file,
+      durationSec: track.durationSec,
       duration: track.durationSec === null ? "–" : formatDuration(track.durationSec),
+      src: track.audio ? audioSrc(track.audio) : null,
       mvp: track.cue === "roundmvpanthem",
+      // The MVP button plays the first MVP anthem of the kit's own tracklist (section 2).
+      mvpButton: main && track === firstMvp,
     };
   });
 }
 const tracklists = [
-  { id: "tracks", heading: t("kit.tracklist"), note: null, rows: rows(kit.tracks) },
+  { id: "tracks", heading: t("kit.tracklist"), note: null, rows: rows(kit.tracks, true) },
   ...(kit.alternateTracks
-    ? [{ id: "alternate", heading: t("kit.alternate"), note: t("kit.alternateNote"), rows: rows(kit.alternateTracks) }]
+    ? [
+        {
+          id: "alternate",
+          heading: t("kit.alternate"),
+          note: t("kit.alternateNote"),
+          rows: rows(kit.alternateTracks, false),
+        },
+      ]
     : []),
 ];
+// PROD-25a: play buttons only for published files; the MVP button only when its anthem is published.
+const hasAudio = tracklists.some((list) => list.rows.some((row) => row.src));
+const mvpPlayable = tracklists[0]?.rows.some((row) => row.mvpButton && row.src) ?? false;
+const iconPlay = "M7 4.5v15l12-7.5z";
+const iconPause = "M6 5h4v14H6zM14 5h4v14h-4z";
 
 // Section 6: every credited artist with more than one kit (PROD-14).
 const moreBy = credited
@@ -120,7 +145,13 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
   </div>
 
   <!-- 1. Hero -->
-  <section class:list={[section, "flex flex-wrap gap-6 pt-3"]}>
+  <section
+    class:list={[section, "flex flex-wrap gap-6 pt-3"]}
+    data-player
+    data-album={title.text}
+    data-artist={credit.text}
+    data-cover={coverSrc(kit.cover)}
+  >
     <div class="relative flex-[0_1_380px] self-start overflow-hidden bg-signal px-6 pt-6 pb-5 text-ink">
       <p
         aria-hidden="true"
@@ -191,6 +222,22 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
           </p>
         )
       }
+      {
+        mvpPlayable && (
+          <button
+            type="button"
+            data-play-mvp
+            aria-pressed="false"
+            class="group relative mt-4 flex min-h-12 w-full cursor-pointer items-center justify-center gap-2.5 border-2 border-ink bg-ink font-condensed text-lg font-extrabold tracking-[0.08em] text-signal uppercase hover:brightness-125 focus-visible:outline-offset-4 focus-visible:outline-paper"
+          >
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d={iconPlay} class="group-aria-pressed:hidden" />
+              <path d={iconPause} class="hidden group-aria-pressed:block" />
+            </svg>
+            {t("kit.listen")}
+          </button>
+        )
+      }
     </div>
 
     <figure
@@ -215,7 +262,15 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
         class="absolute right-4 bottom-3 left-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1 font-mono text-[11px] tracking-[0.14em] text-muted uppercase sm:right-7 sm:left-7"
       >
         <span>{t("kit.coverCredit")}</span>
-        <span role="status">{t("kit.audioPending")}</span>
+        <span
+          role="status"
+          data-status
+          data-now={t("kit.nowPlaying", { track: "{track}" })}
+          data-paused={t("kit.paused", { track: "{track}" })}
+          data-error={t("kit.audioError")}
+        >
+          {hasAudio ? "" : t("kit.audioPending")}
+        </span>
       </figcaption>
     </figure>
   </section>
@@ -236,9 +291,14 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
         <ol class="m-0 max-w-[900px] min-w-0 flex-[999_1_560px] list-none border-t-2 border-paper p-0">
           {list.rows.map((row) => (
             <li
+              data-track={row.src ? "" : undefined}
+              data-src={row.src}
+              data-name={row.name}
+              data-duration={row.durationSec}
+              data-mvp={row.mvpButton ? "" : undefined}
               class:list={[
-                "grid grid-cols-[2.25rem_minmax(0,1fr)_3rem] items-center gap-4 border-b border-rule py-2.5 sm:grid-cols-[2.75rem_minmax(0,1fr)_auto_3rem]",
-                row.mvp && "bg-signal px-3 text-ink",
+                "grid grid-cols-[2.25rem_minmax(0,1fr)_auto_2.75rem] items-center gap-x-4 border-b border-rule py-1.5 sm:grid-cols-[2.75rem_minmax(0,1fr)_auto_auto_2.75rem]",
+                row.mvp ? "bg-signal px-3 text-ink" : "data-playing:bg-signal/14 data-playing:px-3",
               ]}
             >
               <span class:list={["font-mono text-xs", row.mvp ? "text-ink" : "text-signal"]}>{row.number}</span>
@@ -247,7 +307,43 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
                 {row.mvp && <span class="mt-1 block text-[13px] leading-snug">{t("kit.mvpNote")}</span>}
               </span>
               <span class="hidden font-mono text-[11px] opacity-60 sm:block">{row.file}</span>
-              <span class="text-right font-mono text-[13px]">{row.duration}</span>
+              <span data-time class="text-right font-mono text-[13px] tabular-nums">
+                {row.duration}
+              </span>
+              {row.src ? (
+                <button
+                  type="button"
+                  data-play
+                  aria-pressed="false"
+                  aria-label={t("kit.play", { track: row.name })}
+                  class:list={[
+                    "group flex size-11 cursor-pointer items-center justify-center border hover:brightness-125",
+                    row.mvp
+                      ? "border-ink text-ink aria-pressed:bg-ink aria-pressed:text-signal"
+                      : "border-paper/50 text-paper aria-pressed:border-signal aria-pressed:bg-signal aria-pressed:text-ink",
+                  ]}
+                >
+                  <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d={iconPlay} class="group-aria-pressed:hidden" />
+                    <path d={iconPause} class="hidden group-aria-pressed:block" />
+                  </svg>
+                </button>
+              ) : (
+                <span />
+              )}
+              {row.src && (
+                <div data-progress hidden class="col-span-full">
+                  <input
+                    type="range"
+                    min="0"
+                    max={row.durationSec ?? 0}
+                    step="any"
+                    value="0"
+                    aria-label={t("kit.seek", { track: row.name })}
+                    class:list={["block h-11 w-full cursor-pointer", row.mvp ? "accent-ink" : "accent-signal"]}
+                  />
+                </div>
+              )}
             </li>
           ))}
         </ol>
@@ -367,4 +463,12 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
       </li>
     </ul>
   </section>
+
+  {
+    hasAudio && (
+      <script>
+        import "../../../components/player.ts";
+      </script>
+    )
+  }
 </Base>

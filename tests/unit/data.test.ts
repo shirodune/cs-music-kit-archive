@@ -5,6 +5,7 @@ import artistsJson from "../../data/generated/artists.json";
 import kitsJson from "../../data/generated/kits.json";
 import releasesJson from "../../data/generated/releases.json";
 import en from "../../data/generated/text/en.json";
+import manifest from "../../data/upstream/audio-manifest.json";
 import { generatedArtistSchema, kitSchema, releaseSchema } from "../../src/data/schema.ts";
 
 const kits = kitsJson.map((k) => kitSchema.parse(k));
@@ -42,6 +43,26 @@ describe("kits", () => {
     for (const kit of kits) {
       expect(kit.cover.path, kit.slug).toBe(`/covers/${kit.internalName}.png`);
       expect(existsSync(new URL(`../../public${kit.cover.path}`, import.meta.url)), kit.slug).toBe(true);
+    }
+  });
+
+  test("DATA-21 every track links to its published file, with the measured duration", () => {
+    const published = manifest as Record<string, { sha256: string; durationSec: number }>;
+    for (const kit of kits) {
+      const lists = [
+        { folder: kit.internalName, tracks: kit.tracks },
+        { folder: kit.alternateInternalName, tracks: kit.alternateTracks ?? [] },
+      ];
+      for (const { folder, tracks } of lists) {
+        for (const track of tracks) {
+          const entry = track.audio && published[track.audio.path.slice(1)];
+          expect(track.audio?.path, `${kit.slug} ${track.file}`).toMatch(
+            new RegExp(`^/${folder}/${track.file}\\.(mp3|wav)$`),
+          );
+          expect(entry?.sha256, `${kit.slug} ${track.file}`).toBe(track.audio?.sha256);
+          expect(track.durationSec, `${kit.slug} ${track.file}`).toBe(entry?.durationSec);
+        }
+      }
     }
   });
 

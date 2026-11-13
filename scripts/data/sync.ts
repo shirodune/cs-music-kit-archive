@@ -15,6 +15,8 @@ const REPOS = {
   csgoApi: { repo: "ByMykel/CSGO-API", branch: "main" },
 } as const;
 
+const AUDIO_MANIFEST = "https://audio.musickitarchive.com/manifest.json";
+
 /** Localization keys we keep, compared in lower case (DATA-3). */
 const KEY_PREFIXES = ["musickit_", "csgo_crate_musickit_"];
 const EXTRA_KEYS = ["store_nav_section_coupon_nightmode2", "csgo_type_musickit"];
@@ -173,6 +175,10 @@ async function main(): Promise<void> {
   }
   await writeJson(new URL("bymykel-music-kits.json", OUT), editions);
 
+  // The published audio manifest (DATA-21). It names only files that are uploaded.
+  const audio = (await (await get(AUDIO_MANIFEST)).json()) as Record<string, unknown>;
+  await writeJson(new URL("audio-manifest.json", OUT), audio);
+
   await writeJson(new URL("meta.json", OUT), {
     fetchedAt: new Date().toISOString(),
     sources: Object.fromEntries(
@@ -185,7 +191,7 @@ async function main(): Promise<void> {
 
   console.log(
     `Synced ${Object.keys(itemsGame.music).length} music definitions, ${itemsGame.boxes.length} boxes, ` +
-      `${names.length} sound event files, ${LOCALES.length} languages, ${apiKits.length} API entries.`,
+      `${names.length} sound event files, ${LOCALES.length} languages, ${apiKits.length} API entries, ${Object.keys(audio).length} audio files.`,
   );
 }
 

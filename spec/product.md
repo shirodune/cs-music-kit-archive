@@ -93,10 +93,10 @@ Sections, top to bottom:
 ## Audio
 
 - PROD-22 Every track is the full-length file from the game.
-- PROD-23 Tracks are listed in the order a match plays them: main menu, choose team, match start, round start (each take), round start action (each take), bomb planted, bomb 10-second warning, round 10-second warning, round won, round lost, death cam, MVP anthem (each take), match end. Each row shows the localized cue name, the take number when there is more than one, the duration and a play or stop button.
+- PROD-23 Tracks are listed in the order a match plays them: main menu, choose team, match start, round start (each take), round start action (each take), bomb planted, bomb 10-second warning, round 10-second warning, round won, round lost, death cam, MVP anthem (each take), match end. Each row shows the localized cue name, the take number when there is more than one, the duration and a play or pause button. The current track's row also shows elapsed and total time and a slider that seeks.
 - PROD-23a When the match start and match end files of a kit are the same audio (same SHA-256 after extraction), the kit shows one row labelled "Match start and end".
-- PROD-24 One player for the whole site. Only one track plays at a time. Playback starts only after a click or tap. Changing page within the site does not stop it.
-- PROD-25 A status line shows the playing track, or a clear message when a file cannot load.
+- PROD-24 The record page has one player for its tracklists and the MVP button. Only one track plays at a time. Playback starts only after a click or tap. Leaving the page stops it (D-020).
+- PROD-25 A status line under the cover shows the playing or paused track, or a clear message when a file cannot load. Phones show the track, kit and cover on the lock screen (Media Session API).
 - PROD-25a Until a kit's audio is published (DATA-21), its page shows the tracklist without play buttons, leaves out the MVP button, and the status line says the audio is not published yet.
 - PROD-26 Audio is served from `https://audio.musickitarchive.com/`, never from third-party hosts in production.
 
@@ -119,7 +119,7 @@ Sections, top to bottom:
 
 ## Performance
 
-- PROD-35 Pages without interactive parts ship no JavaScript except the language picker, the analytics loader (PROD-37) and, on artist pages, the few inline lines that point the back link at the kit in `?from` (PROD-21).
+- PROD-35 Pages without interactive parts ship no JavaScript except the language picker, the analytics loader (PROD-37) and, on artist pages, the few inline lines that point the back link at the kit in `?from` (PROD-21). The record page adds its player as one small inline script (about 3 KB), without a framework.
 - PROD-36 Lighthouse performance score of 90 or more on mobile for the Records, Record and Artist pages. CI runs `pnpm lighthouse`: Lighthouse's default mobile settings, one unscored warm-up run, then three runs per page against the built site served by Wrangler, and the median counts. Local scores swing with machine load, so CI is the reference.
 
 ## Analytics

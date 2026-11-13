@@ -42,6 +42,7 @@ interface ItemsGame {
 type SoundEvents = Record<string, { event: string; files: string[]; durationSec: number | null }[]>;
 type Editions = Record<string, { standard: boolean; stattrak: boolean; image: string | null }>;
 type Covers = Record<string, { width: number; height: number }>;
+type AudioManifest = Record<string, { bytes: number; sha256: string; durationSec: number }>;
 
 const errors: string[] = [];
 const fail = (message: string) => errors.push(message);
@@ -55,8 +56,8 @@ function parseCurated<T>(schema: z.ZodType<T>, value: unknown, file: string): T 
   return result.data;
 }
 
-/** Track list for one internal name, in the order a match plays it (PROD-23, DATA-11). */
-function buildTracks(internalName: string, events: SoundEvents[string] | undefined): Track[] {
+/** Track list for one internal name, in the order a match plays it (PROD-23, DATA-11, DATA-21). */
+function buildTracks(internalName: string, events: SoundEvents[string] | undefined, audio: AudioManifest): Track[] {
   if (!events) {
     fail(`${internalName}: no sound events`);
     return [];
@@ -79,7 +80,16 @@ function buildTracks(internalName: string, events: SoundEvents[string] | undefin
       continue;
     }
     const take = match?.[2] ? Number(match[2]) : null;
-    tracks.push({ cue: cue.data, take, file, durationSec: single.get(file) ?? shared.get(file) ?? null });
+    // The published file, MP3 or WAV as the game stores it (DATA-20a). Its measured duration is exact.
+    const key = [`${internalName}/${file}.mp3`, `${internalName}/${file}.wav`].find((k) => k in audio);
+    const published = key ? audio[key] : undefined;
+    tracks.push({
+      cue: cue.data,
+      take,
+      file,
+      durationSec: published?.durationSec ?? single.get(file) ?? shared.get(file) ?? null,
+      audio: key && published ? { path: `/${key}`, bytes: published.bytes, sha256: published.sha256 } : null,
+    });
   }
   const rank = (cue: Cue) => CUE_ORDER.indexOf(cue);
   return tracks.sort((a, b) => rank(a.cue) - rank(b.cue) || (a.take ?? 0) - (b.take ?? 0));
@@ -90,6 +100,7 @@ async function main(): Promise<void> {
   const soundEvents = await readJson<SoundEvents>(new URL("sound-events.json", UPSTREAM));
   const editions = await readJson<Editions>(new URL("bymykel-music-kits.json", UPSTREAM));
   const covers = await readJson<Covers>(new URL("covers.json", UPSTREAM));
+  const audio = await readJson<AudioManifest>(new URL("audio-manifest.json", UPSTREAM)).catch(() => ({}));
   const loc = Object.fromEntries(
     await Promise.all(
       LOCALES.map(
@@ -205,7 +216,7 @@ async function main(): Promise<void> {
     if (slugs.has(slug)) fail(`kits ${slugs.get(slug)} and ${defIndex} share the slug ${slug}; add overrides.slugs`);
     slugs.set(slug, defIndex);
 
-    const tracks = buildTracks(d.name, soundEvents[d.name]);
+    const tracks = buildTracks(d.name, soundEvents[d.name], audio);
     if (!tracks.some((t) => t.cue === "mainmenu")) fail(`kit ${defIndex}: no mainmenu track (DATA-12)`);
     if (!tracks.some((t) => t.cue === "roundmvpanthem")) fail(`kit ${defIndex}: no MVP anthem (DATA-12)`);
 
@@ -224,7 +235,7 @@ async function main(): Promise<void> {
         artists: credit.artists,
         cover: { source: "icon", path: `/covers/${d.name}.png`, width: cover.width, height: cover.height },
         tracks,
-        alternateTracks: alternateName ? buildTracks(alternateName, soundEvents[alternateName]) : null,
+        alternateTracks: alternateName ? buildTracks(alternateName, soundEvents[alternateName], audio) : null,
         alternateInternalName: alternateName ?? null,
       }),
     );
