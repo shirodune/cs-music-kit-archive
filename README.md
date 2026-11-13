@@ -30,18 +30,20 @@ pnpm verify       # lint, types, i18n check, unit tests, build, end-to-end tests
 
 ## Audio (maintainers)
 
-The audio comes from the game files on a maintainer's machine and goes straight to Cloudflare R2. It never passes through git or CI (spec DATA-20, DATA-21). On Windows:
+The audio comes from the game's own files and goes straight to Cloudflare R2. It never passes through git (spec DATA-20, DATA-21). No Steam account or CS2 install is needed:
 
-1. Install CS2 through Steam and let it update.
-2. Install the tools: Git, Node 26, pnpm (`winget install pnpm.pnpm`) and ffmpeg (`winget install Gyan.FFmpeg`; the script uses its `ffprobe` to measure durations). Download `cli-windows-x64.zip` from the [ValveResourceFormat releases](https://github.com/ValveResourceFormat/ValveResourceFormat/releases) and unzip it, for example to `C:\tools\s2v\`.
-3. Run, in a clone of this repository, with about 2 GB free (the published files are hard links to the extracted ones):
+1. Install the tools: Node 26, pnpm, ffmpeg (the script uses its `ffprobe` to measure durations), [DepotDownloader](https://github.com/SteamRE/DepotDownloader/releases) and the Source2Viewer CLI (`cli-*.zip` from the [ValveResourceFormat releases](https://github.com/ValveResourceFormat/ValveResourceFormat/releases)).
+2. Run, in a clone of this repository:
 
-   ```powershell
+   ```sh
    pnpm install
    pnpm exec wrangler login
-   pnpm audio:extract --s2v C:\tools\s2v\Source2Viewer-CLI.exe
+   pnpm game:download --depotdownloader <path to DepotDownloader>
+   pnpm audio:extract --s2v <path to Source2Viewer-CLI>
    pnpm audio:upload
    ```
+
+`game:download` downloads, anonymously from Steam, the game's VPK directory (about 8 MB) and only the archives that hold new or changed tracks, about 100 MB each, into `game-files/` (ignored by git). `audio:extract` reads those tracks, has Source2Viewer decompile them into `audio/out/` (ignored by git) and writes the manifest to `data/upstream/audio-manifest.json`; the other tracks keep their entry. Add `--all` to both to read every track again (about 9 GB of archives). With CS2 installed through Steam, skip `game:download` and pass `--game "C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo"` to `audio:extract`. `audio:upload` compares the manifest with the published one: it uploads new or changed files, then the manifest, then deletes files that are no longer listed.
 
 Cover textures (spec DATA-19) come from the same game files. Export them and store them in `public/covers/textures/`, which is committed:
 
@@ -57,8 +59,6 @@ After extracting audio or textures, record the game files they came from, so `pn
 pnpm data:sync
 pnpm data:changes --accept
 ```
-
-`audio:extract` finds CS2 through Steam, writes the files to `audio/` (ignored by git) and the manifest to `data/upstream/audio-manifest.json`. `audio:upload` compares it with the published manifest: it uploads new or changed files, then the manifest, then deletes files that are no longer listed. Run both again after a game update that adds kits.
 
 Deploys run from GitHub Actions (spec D-003): every pull request gets a preview on workers.dev, and every push to `main` deploys to production after all checks pass.
 
