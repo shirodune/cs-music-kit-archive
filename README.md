@@ -54,6 +54,12 @@ Found a wrong date, name or link? [Open an issue](https://github.com/shirodune/c
 
 Not affiliated with or endorsed by Valve. Counter-Strike and all music kit names, artwork and audio belong to Valve and the respective artists.
 
-## Thanks
+## Credits
 
-[SteamDB GameTracking](https://github.com/SteamTracking/GameTracking-CS2) for the game data, ByMykel's [file tracker](https://github.com/ByMykel/counter-strike-file-tracker) and [CSGO-API](https://github.com/ByMykel/CSGO-API) for the translations and item data, [MusicBrainz](https://musicbrainz.org) for the artist links, and [Source 2 Viewer](https://github.com/ValveResourceFormat/ValveResourceFormat) and [DepotDownloader](https://github.com/SteamRE/DepotDownloader) for reading the game files.
+This site is built on other people's work:
+
+- [SteamTracking/GameTracking-CS2](https://github.com/SteamTracking/GameTracking-CS2): Valve's game data, the music kit definitions and the list of game files.
+- [ByMykel/counter-strike-file-tracker](https://github.com/ByMykel/counter-strike-file-tracker): the game's text in all 28 languages.
+- [ByMykel/CSGO-API](https://github.com/ByMykel/CSGO-API): editions and the Steam icons of the kits.
+- [MusicBrainz](https://musicbrainz.org): links to the artists' sites and streaming pages.
+- [Source 2 Viewer](https://github.com/ValveResourceFormat/ValveResourceFormat) and [DepotDownloader](https://github.com/SteamRE/DepotDownloader): reading the audio and covers from the game files.

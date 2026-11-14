@@ -8,8 +8,12 @@ import { readJson, writeJson } from "./json.ts";
 
 const ROOT = new URL("../../data/", import.meta.url);
 
-// DATA-4: a descriptive User-Agent, requests at least 1.1 seconds apart.
-const headers = { "User-Agent": "cs-music-kit-archive data sync", Accept: "application/json" };
+// DATA-4: a User-Agent in the form MusicBrainz asks for ("Application/version ( contact )"), requests at least
+// 1.1 seconds apart. The contact is the repository, where its issues reach the maintainer.
+const headers = {
+  "User-Agent": "cs-music-kit-archive/1.0 ( https://github.com/shirodune/cs-music-kit-archive )",
+  Accept: "application/json",
+};
 const SPACING_MS = 1100;
 
 interface Relation {
