@@ -102,8 +102,8 @@ Sections, top to bottom:
 
 ## Content
 
-- PROD-27 Stories (kit pages) and introductions (artist pages) are optional. A page without one hides that section.
-- PROD-28 Every factual claim in a story or introduction has a source listed with it. Sources are shown under the text.
+- PROD-27 Stories (kit pages) and introductions (artist pages) are optional. A page without one hides that section. The story is section 5 of the record page, headed "Story". The introduction, headed "About", comes after the artist's facts and links and before the discography.
+- PROD-28 Every factual claim in a story or introduction has a source listed with it. Sources are shown under the text, as a numbered list of links.
 
 ## SEO and sharing
 

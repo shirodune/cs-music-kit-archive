@@ -57,6 +57,7 @@
   "kit.neighbours": "Vorige en volgende plaat in de bak",
   "kit.sources": "Bronnen",
   "kit.releaseSource": "Aankondiging van de release, {date}",
+  "kit.story": "Het verhaal",
   "cue.mainmenu": "Hoofdmenu",
   "cue.chooseteam": "Team kiezen",
   "cue.startofmatch": "Begin van de wedstrijd",
@@ -90,6 +91,7 @@
   "artist.discography": "Muzieksets",
   "artist.with": "Met {names}",
   "artist.links": "Links",
+  "artist.introduction": "Profiel",
   "artist.officialSite": "Officiële website",
   "artist.yearsLater": {
     "one": "{count} jaar later",
@@ -106,5 +108,8 @@
     "one": "{year}, {count} set",
     "other": "{year}, {count} sets"
   },
-  "records.list": "Alle platen"
+  "records.list": "Alle platen",
+  "content.sources": "Bronnen",
+  "content.machine": "Automatisch vertaald uit het Engels.",
+  "content.untranslated": "Nog niet vertaald. Getoond in het Engels."
 }

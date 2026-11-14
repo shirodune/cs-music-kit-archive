@@ -54,6 +54,7 @@
   "kit.neighbours": "ラックの前後のレコード",
   "kit.sources": "出典",
   "kit.releaseSource": "リリース告知、{date}",
+  "kit.story": "ストーリー",
   "cue.mainmenu": "メインメニュー",
   "cue.chooseteam": "チーム選択",
   "cue.startofmatch": "マッチ開始",
@@ -87,6 +88,7 @@
   "artist.discography": "ミュージックキット",
   "artist.with": "共演：{names}",
   "artist.links": "リンク",
+  "artist.introduction": "紹介",
   "artist.officialSite": "公式サイト",
   "artist.yearsLater": {
     "other": "{count} 年後"
@@ -101,5 +103,8 @@
   "rack.yearLabel": {
     "other": "{year} 年、{count} 作品"
   },
-  "records.list": "すべてのレコード"
+  "records.list": "すべてのレコード",
+  "content.sources": "出典",
+  "content.machine": "英語からの機械翻訳です。",
+  "content.untranslated": "まだ翻訳されていません。英語で表示しています。"
 }

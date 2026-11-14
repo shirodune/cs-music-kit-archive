@@ -54,6 +54,7 @@
   "kit.neighbours": "랙의 이전 레코드와 다음 레코드",
   "kit.sources": "출처",
   "kit.releaseSource": "출시 공지, {date}",
+  "kit.story": "이야기",
   "cue.mainmenu": "메인 메뉴",
   "cue.chooseteam": "팀 선택",
   "cue.startofmatch": "경기 시작",
@@ -87,6 +88,7 @@
   "artist.discography": "음악 키트",
   "artist.with": "함께한 아티스트: {names}",
   "artist.links": "링크",
+  "artist.introduction": "소개",
   "artist.officialSite": "공식 웹사이트",
   "artist.yearsLater": {
     "other": "{count}년 후"
@@ -101,5 +103,8 @@
   "rack.yearLabel": {
     "other": "{year}년, 키트 {count}개"
   },
-  "records.list": "모든 레코드"
+  "records.list": "모든 레코드",
+  "content.sources": "출처",
+  "content.machine": "영어에서 기계 번역되었습니다.",
+  "content.untranslated": "아직 번역되지 않았습니다. 영어로 표시합니다."
 }

@@ -60,6 +60,7 @@
   "kit.neighbours": "Discul anterior și următorul de pe raft",
   "kit.sources": "Surse",
   "kit.releaseSource": "Anunțul lansării, {date}",
+  "kit.story": "Povestea",
   "cue.mainmenu": "Meniu principal",
   "cue.chooseteam": "Alegerea echipei",
   "cue.startofmatch": "Începutul meciului",
@@ -93,6 +94,7 @@
   "artist.discography": "Pachete muzicale",
   "artist.with": "Cu {names}",
   "artist.links": "Linkuri",
+  "artist.introduction": "Profil",
   "artist.officialSite": "Site oficial",
   "artist.yearsLater": {
     "one": "După {count} an",
@@ -111,5 +113,8 @@
     "few": "{year}, {count} pachete",
     "other": "{year}, {count} de pachete"
   },
-  "records.list": "Toate discurile"
+  "records.list": "Toate discurile",
+  "content.sources": "Surse",
+  "content.machine": "Tradus automat din engleză.",
+  "content.untranslated": "Încă netradus. Afișat în engleză."
 }

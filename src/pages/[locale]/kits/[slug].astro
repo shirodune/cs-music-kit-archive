@@ -4,6 +4,7 @@
 
 import Cover from "../../../components/Cover.astro";
 import KitCard from "../../../components/KitCard.astro";
+import Writing from "../../../components/Writing.astro";
 import { audioSrc } from "../../../data/audio.ts";
 import { coverSrc } from "../../../data/cover.ts";
 import type { Kit, Track } from "../../../data/schema.ts";
@@ -367,7 +368,8 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
 
   <div aria-hidden="true" class="hazard relative mt-18 h-3.5"></div>
 
-  <!-- 5. Story: added with content/stories (PROD-27). -->
+  <!-- 5. Story (PROD-27) -->
+  <Writing collection="stories" slug={kit.slug} locale={locale} heading={t("kit.story")} />
 
   <!-- 6. More by the same artist or artists -->
   {

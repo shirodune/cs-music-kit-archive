@@ -57,6 +57,7 @@
   "kit.neighbours": "Previous and next record on the rack",
   "kit.sources": "Sources",
   "kit.releaseSource": "Release announcement, {date}",
+  "kit.story": "Story",
   "cue.mainmenu": "Main menu",
   "cue.chooseteam": "Choose team",
   "cue.startofmatch": "Match start",
@@ -90,6 +91,7 @@
   "artist.discography": "Music kits",
   "artist.with": "With {names}",
   "artist.links": "Links",
+  "artist.introduction": "About",
   "artist.officialSite": "Official site",
   "artist.yearsLater": {
     "one": "{count} year later",
@@ -106,5 +108,8 @@
     "one": "{year}, {count} kit",
     "other": "{year}, {count} kits"
   },
-  "records.list": "All records"
+  "records.list": "All records",
+  "content.sources": "Sources",
+  "content.machine": "Machine translated from English.",
+  "content.untranslated": "Not translated yet. Shown in English."
 }

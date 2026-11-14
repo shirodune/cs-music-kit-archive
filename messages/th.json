@@ -54,6 +54,7 @@
   "kit.neighbours": "แผ่นก่อนหน้าและแผ่นถัดไปบนชั้น",
   "kit.sources": "แหล่งที่มา",
   "kit.releaseSource": "ประกาศวางจำหน่าย {date}",
+  "kit.story": "เรื่องราว",
   "cue.mainmenu": "เมนูหลัก",
   "cue.chooseteam": "เลือกทีม",
   "cue.startofmatch": "เริ่มแมตช์",
@@ -87,6 +88,7 @@
   "artist.discography": "ชุดอุปกรณ์เพลง",
   "artist.with": "ร่วมกับ {names}",
   "artist.links": "ลิงก์",
+  "artist.introduction": "ประวัติ",
   "artist.officialSite": "เว็บไซต์ทางการ",
   "artist.yearsLater": {
     "other": "{count} ปีต่อมา"
@@ -101,5 +103,8 @@
   "rack.yearLabel": {
     "other": "{year}, {count} ชุด"
   },
-  "records.list": "แผ่นเสียงทั้งหมด"
+  "records.list": "แผ่นเสียงทั้งหมด",
+  "content.sources": "แหล่งที่มา",
+  "content.machine": "แปลด้วยเครื่องจากภาษาอังกฤษ",
+  "content.untranslated": "ยังไม่ได้แปล แสดงเป็นภาษาอังกฤษ"
 }

@@ -57,6 +57,7 @@
   "kit.neighbours": "Vorherige und nächste Platte im Regal",
   "kit.sources": "Quellen",
   "kit.releaseSource": "Ankündigung der Veröffentlichung, {date}",
+  "kit.story": "Geschichte",
   "cue.mainmenu": "Hauptmenü",
   "cue.chooseteam": "Teamwahl",
   "cue.startofmatch": "Matchbeginn",
@@ -90,6 +91,7 @@
   "artist.discography": "Musikkits",
   "artist.with": "Mit {names}",
   "artist.links": "Links",
+  "artist.introduction": "Porträt",
   "artist.officialSite": "Offizielle Website",
   "artist.yearsLater": {
     "one": "{count} Jahr später",
@@ -106,5 +108,8 @@
     "one": "{year}, {count} Kit",
     "other": "{year}, {count} Kits"
   },
-  "records.list": "Alle Platten"
+  "records.list": "Alle Platten",
+  "content.sources": "Quellen",
+  "content.machine": "Maschinell aus dem Englischen übersetzt.",
+  "content.untranslated": "Noch nicht übersetzt. Auf Englisch angezeigt."
 }

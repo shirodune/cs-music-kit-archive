@@ -89,4 +89,13 @@ test.describe("record page", () => {
     const scripts = await page.locator("script[src]").evaluateAll((els) => els.map((e) => e.getAttribute("src")));
     expect(scripts.every((src) => src?.includes("LanguagePicker"))).toBe(true);
   });
+
+  test("PROD-14 PROD-27 a kit or artist without a story or introduction leaves the section out", async ({ page }) => {
+    await page.goto("/en/kits/desert-fire/");
+    await expect(page.getByRole("heading", { name: "Tracklist" })).toBeVisible();
+    await expect(page.locator("[data-writing]")).toHaveCount(0);
+    await page.goto("/en/artists/austin-wintory/");
+    await expect(page.getByRole("heading", { name: "Music kits", level: 2 })).toBeVisible();
+    await expect(page.locator("[data-writing]")).toHaveCount(0);
+  });
 });

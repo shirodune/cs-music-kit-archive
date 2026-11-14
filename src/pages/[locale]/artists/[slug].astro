@@ -1,8 +1,8 @@
 ---
 // Artist page (spec: PROD-18 to PROD-21).
-// The introduction (content/artists) is added when it exists.
 
 import Cover from "../../../components/Cover.astro";
+import Writing from "../../../components/Writing.astro";
 import type { GeneratedArtist } from "../../../data/schema.ts";
 import { artists, getArtist, getKit, kitText, kitTextRequired, releaseName } from "../../../data/site.ts";
 import { formatDate, listParts } from "../../../i18n/format.ts";
@@ -199,6 +199,8 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
   </section>
 
   <div aria-hidden="true" class="hazard relative mt-14 h-3.5"></div>
+
+  <Writing collection="introductions" slug={artist.id} locale={locale} heading={t("artist.introduction")} />
 
   <section aria-labelledby="discography-h" class="relative mx-auto max-w-[1360px] px-4 pt-18 sm:px-10">
     <h2 id="discography-h" class={stencilHead}>{t("artist.discography")}</h2>

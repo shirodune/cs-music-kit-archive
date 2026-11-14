@@ -63,6 +63,7 @@
   "kit.neighbours": "Предыдущая и следующая пластинка на полке",
   "kit.sources": "Источники",
   "kit.releaseSource": "Анонс выхода, {date}",
+  "kit.story": "История",
   "cue.mainmenu": "Главное меню",
   "cue.chooseteam": "Выбор команды",
   "cue.startofmatch": "Начало матча",
@@ -96,6 +97,7 @@
   "artist.discography": "Наборы музыки",
   "artist.with": "Вместе с: {names}",
   "artist.links": "Ссылки",
+  "artist.introduction": "Профиль",
   "artist.officialSite": "Официальный сайт",
   "artist.yearsLater": {
     "one": "{count} год спустя",
@@ -116,5 +118,8 @@
     "many": "{year}, {count} наборов",
     "other": "{year}, {count} набора"
   },
-  "records.list": "Все пластинки"
+  "records.list": "Все пластинки",
+  "content.sources": "Источники",
+  "content.machine": "Машинный перевод с английского.",
+  "content.untranslated": "Ещё не переведено. Показано на английском."
 }

@@ -60,6 +60,7 @@
   "kit.neighbours": "Disco anterior e seguinte na prateleira",
   "kit.sources": "Fontes",
   "kit.releaseSource": "Anúncio de lançamento, {date}",
+  "kit.story": "A história",
   "cue.mainmenu": "Menu principal",
   "cue.chooseteam": "Escolha de equipa",
   "cue.startofmatch": "Início da partida",
@@ -93,6 +94,7 @@
   "artist.discography": "Kits de música",
   "artist.with": "Com {names}",
   "artist.links": "Ligações",
+  "artist.introduction": "Sobre",
   "artist.officialSite": "Site oficial",
   "artist.yearsLater": {
     "one": "{count} ano depois",
@@ -111,5 +113,8 @@
     "many": "{year}, {count} de kits",
     "other": "{year}, {count} kits"
   },
-  "records.list": "Todos os discos"
+  "records.list": "Todos os discos",
+  "content.sources": "Fontes",
+  "content.machine": "Tradução automática do inglês.",
+  "content.untranslated": "Ainda não traduzido. Apresentado em inglês."
 }

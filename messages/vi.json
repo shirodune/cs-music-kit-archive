@@ -54,6 +54,7 @@
   "kit.neighbours": "Đĩa trước và đĩa sau trên kệ",
   "kit.sources": "Nguồn",
   "kit.releaseSource": "Thông báo phát hành, {date}",
+  "kit.story": "Câu chuyện",
   "cue.mainmenu": "Menu chính",
   "cue.chooseteam": "Chọn phe",
   "cue.startofmatch": "Bắt đầu trận",
@@ -87,6 +88,7 @@
   "artist.discography": "Gói âm thanh",
   "artist.with": "Cùng {names}",
   "artist.links": "Liên kết",
+  "artist.introduction": "Giới thiệu",
   "artist.officialSite": "Trang web chính thức",
   "artist.yearsLater": {
     "other": "{count} năm sau"
@@ -101,5 +103,8 @@
   "rack.yearLabel": {
     "other": "{year}, {count} gói"
   },
-  "records.list": "Tất cả đĩa nhạc"
+  "records.list": "Tất cả đĩa nhạc",
+  "content.sources": "Nguồn",
+  "content.machine": "Dịch máy từ tiếng Anh.",
+  "content.untranslated": "Chưa được dịch. Hiển thị bằng tiếng Anh."
 }

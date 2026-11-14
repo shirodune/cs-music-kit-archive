@@ -57,6 +57,7 @@
   "kit.neighbours": "Προηγούμενος και επόμενος δίσκος στο ράφι",
   "kit.sources": "Πηγές",
   "kit.releaseSource": "Ανακοίνωση κυκλοφορίας, {date}",
+  "kit.story": "Η ιστορία",
   "cue.mainmenu": "Κύριο μενού",
   "cue.chooseteam": "Επιλογή ομάδας",
   "cue.startofmatch": "Έναρξη αγώνα",
@@ -90,6 +91,7 @@
   "artist.discography": "Μουσικά κουτιά",
   "artist.with": "Μαζί με: {names}",
   "artist.links": "Σύνδεσμοι",
+  "artist.introduction": "Προφίλ",
   "artist.officialSite": "Επίσημος ιστότοπος",
   "artist.yearsLater": {
     "one": "{count} χρόνο αργότερα",
@@ -106,5 +108,8 @@
     "one": "{year}, {count} κουτί",
     "other": "{year}, {count} κουτιά"
   },
-  "records.list": "Όλοι οι δίσκοι"
+  "records.list": "Όλοι οι δίσκοι",
+  "content.sources": "Πηγές",
+  "content.machine": "Αυτόματη μετάφραση από τα αγγλικά.",
+  "content.untranslated": "Δεν έχει μεταφραστεί ακόμη. Εμφανίζεται στα αγγλικά."
 }

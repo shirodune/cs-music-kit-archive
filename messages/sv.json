@@ -57,6 +57,7 @@
   "kit.neighbours": "Föregående och nästa skiva i backen",
   "kit.sources": "Källor",
   "kit.releaseSource": "Tillkännagivande av släppet, {date}",
+  "kit.story": "Berättelsen",
   "cue.mainmenu": "Huvudmeny",
   "cue.chooseteam": "Välj lag",
   "cue.startofmatch": "Matchstart",
@@ -90,6 +91,7 @@
   "artist.discography": "Musikpaket",
   "artist.with": "Med {names}",
   "artist.links": "Länkar",
+  "artist.introduction": "Profil",
   "artist.officialSite": "Officiell webbplats",
   "artist.yearsLater": {
     "one": "{count} år senare",
@@ -106,5 +108,8 @@
     "one": "{year}, {count} paket",
     "other": "{year}, {count} paket"
   },
-  "records.list": "Alla skivor"
+  "records.list": "Alla skivor",
+  "content.sources": "Källor",
+  "content.machine": "Maskinöversatt från engelska.",
+  "content.untranslated": "Inte översatt än. Visas på engelska."
 }
