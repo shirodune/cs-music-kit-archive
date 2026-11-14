@@ -123,7 +123,13 @@ export default function Rack({ kits, strings, initial }: Props) {
   // PROD-12: the selected kit lives in the URL hash.
   useEffect(() => {
     const fromHash = () => {
-      const i = indexOf.get(decodeURIComponent(location.hash.slice(1)));
+      let slug: string;
+      try {
+        slug = decodeURIComponent(location.hash.slice(1));
+      } catch {
+        return; // A malformed hash such as #100% selects nothing.
+      }
+      const i = indexOf.get(slug);
       if (i === undefined) return;
       targetRef.current = i;
       positionRef.current = i;
@@ -177,6 +183,8 @@ export default function Rack({ kits, strings, initial }: Props) {
 
   const onPointerDown = (e: PointerEvent<HTMLElement>) => {
     if (e.button !== 0) return;
+    // A drag that ended off a sleeve fires no click there, so the flag from that drag is cleared by the next press.
+    suppressClick.current = false;
     press.current = { x: e.clientX, target: targetRef.current, dragged: false };
   };
   const onPointerMove = (e: PointerEvent<HTMLElement>) => {

@@ -107,7 +107,10 @@ function setMediaSession(row: HTMLElement): void {
 }
 
 if ("mediaSession" in navigator) {
-  navigator.mediaSession.setActionHandler("play", () => void start());
+  // After a track ends nothing is current, though the audio element keeps its file; a play key then does nothing.
+  navigator.mediaSession.setActionHandler("play", () => {
+    if (current) void start();
+  });
   navigator.mediaSession.setActionHandler("pause", () => audio.pause());
   navigator.mediaSession.setActionHandler("seekto", (details) => {
     if (details.seekTime !== undefined) audio.currentTime = details.seekTime;

@@ -20,10 +20,17 @@ interface Run {
 const base = `http://127.0.0.1:${PORT}`;
 const server = spawn("pnpm", ["exec", "wrangler", "dev", "--port", String(PORT), "--ip", "127.0.0.1"], {
   env: { ...process.env, WRANGLER_SEND_METRICS: "false" },
-  stdio: "ignore",
+  // Wrangler's errors go to the log, so a server that fails to start can be diagnosed.
+  stdio: ["ignore", "ignore", "inherit"],
   detached: true,
 });
-const stopServer = () => server.pid && process.kill(-server.pid);
+const stopServer = () => {
+  try {
+    if (server.pid) process.kill(-server.pid);
+  } catch {
+    // Already gone, for example when it failed to start; keep the original error.
+  }
+};
 
 async function waitForServer() {
   for (let i = 0; i < 60; i++) {
@@ -58,6 +65,9 @@ function lighthouse(url: string): Run {
     },
   );
   const report = JSON.parse(json.toString());
+  // A page that failed to load has no score; say why instead of reporting 0.
+  if (report.runtimeError || report.categories.performance.score === null)
+    throw new Error(`Lighthouse could not measure ${url}: ${report.runtimeError?.message ?? "no performance score"}`);
   const value = (id: string) => String(report.audits[id].displayValue);
   return {
     score: Math.round(report.categories.performance.score * 100),

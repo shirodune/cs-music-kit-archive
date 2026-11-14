@@ -2,6 +2,7 @@
 // Never edit data/generated/ by hand: CI rebuilds it and fails on any difference (DATA-1).
 // Usage: node scripts/data/build.ts
 
+import { existsSync } from "node:fs";
 import { readdir, rm } from "node:fs/promises";
 import { z } from "zod";
 import {
@@ -57,6 +58,19 @@ function parseCurated<T>(schema: z.ZodType<T>, value: unknown, file: string): T 
   return result.data;
 }
 
+/** Validates generated output; a problem is reported with the others instead of stopping the build. */
+function check<T>(schema: z.ZodType<T>, value: unknown, label: string): T | undefined {
+  const result = schema.safeParse(value);
+  if (result.success) return result.data;
+  for (const issue of result.error.issues) fail(`${label}: ${issue.path.join(".")}: ${issue.message}`);
+  return undefined;
+}
+
+/** An upstream file that may not exist yet: missing gives the fallback, but a broken file is an error. */
+async function readOptional<T>(url: URL, fallback: T): Promise<T> {
+  return existsSync(url) ? readJson<T>(url) : fallback;
+}
+
 /** Track list for one internal name, in the order a match plays it (PROD-23, DATA-11, DATA-21). */
 function buildTracks(internalName: string, events: SoundEvents[string] | undefined, audio: AudioManifest): Track[] {
   if (!events) {
@@ -101,11 +115,12 @@ async function main(): Promise<void> {
   const soundEvents = await readJson<SoundEvents>(new URL("sound-events.json", UPSTREAM));
   const editions = await readJson<Editions>(new URL("bymykel-music-kits.json", UPSTREAM));
   const covers = await readJson<Covers>(new URL("covers.json", UPSTREAM));
-  const textures = await readJson<Covers>(new URL("textures.json", UPSTREAM)).catch(() => ({}) as Covers);
-  const audio = await readJson<AudioManifest>(new URL("audio-manifest.json", UPSTREAM)).catch(() => ({}));
-  const musicbrainz = await readJson<Record<string, GeneratedArtist["links"]>>(
+  const textures = await readOptional<Covers>(new URL("textures.json", UPSTREAM), {});
+  const audio = await readOptional<AudioManifest>(new URL("audio-manifest.json", UPSTREAM), {});
+  const musicbrainz = await readOptional<Record<string, GeneratedArtist["links"]>>(
     new URL("musicbrainz.json", UPSTREAM),
-  ).catch(() => ({}) as Record<string, GeneratedArtist["links"]>);
+    {},
+  );
   const loc = Object.fromEntries(
     await Promise.all(
       LOCALES.map(
@@ -229,8 +244,9 @@ async function main(): Promise<void> {
     const alternateName = alternateOf ? itemsGame.music[alternateOf]?.name : undefined;
 
     if (!release || !credit || !edition || !cover) continue;
-    kits.push(
-      kitSchema.parse({
+    const kit = check(
+      kitSchema,
+      {
         defIndex,
         internalName: d.name,
         slug,
@@ -245,8 +261,10 @@ async function main(): Promise<void> {
         tracks,
         alternateTracks: alternateName ? buildTracks(alternateName, soundEvents[alternateName], audio) : null,
         alternateInternalName: alternateName ?? null,
-      }),
+      },
+      `kit ${defIndex}`,
     );
+    if (kit) kits.push(kit);
   }
 
   // Release names in every locale.
@@ -261,22 +279,31 @@ async function main(): Promise<void> {
   kits.sort((a, b) => a.releaseDate.localeCompare(b.releaseDate) || a.defIndex - b.defIndex);
   const order = new Map(kits.map((k, i) => [k.defIndex, i]));
 
-  const generatedArtists: GeneratedArtist[] = artists.map((a) => {
+  const generatedArtists: GeneratedArtist[] = artists.flatMap((a) => {
     const fetched = a.musicbrainzId ? musicbrainz[a.musicbrainzId] : [];
     if (!fetched) fail(`artist ${a.id}: no MusicBrainz links fetched for ${a.musicbrainzId}, run pnpm data:links`);
-    return generatedArtistSchema.parse({
-      ...a,
-      kits: kits.filter((k) => k.artists.some((c) => c.artist === a.id)).map((k) => k.defIndex),
-      // PROD-20: the links MusicBrainz knows, then the MusicBrainz page, which credits the source.
-      links: a.musicbrainzId
-        ? [
-            ...(fetched ?? []).filter((l) => !(l.url in overrides.hiddenLinks)),
-            { kind: "musicbrainz", url: `https://musicbrainz.org/artist/${a.musicbrainzId}` },
-          ]
-        : [],
-    });
+    const theirs = kits.filter((k) => k.artists.some((c) => c.artist === a.id)).map((k) => k.defIndex);
+    if (theirs.length === 0) {
+      fail(`artist ${a.id} has no kits (DATA-16)`);
+      return [];
+    }
+    const artist = check(
+      generatedArtistSchema,
+      {
+        ...a,
+        kits: theirs,
+        // PROD-20: the links MusicBrainz knows, then the MusicBrainz page, which credits the source.
+        links: a.musicbrainzId
+          ? [
+              ...(fetched ?? []).filter((l) => !(l.url in overrides.hiddenLinks)),
+              { kind: "musicbrainz", url: `https://musicbrainz.org/artist/${a.musicbrainzId}` },
+            ]
+          : [],
+      },
+      `artist ${a.id}`,
+    );
+    return artist ? [artist] : [];
   });
-  for (const a of generatedArtists) if (a.kits.length === 0) fail(`artist ${a.id} has no kits (DATA-16)`);
   const fetchedUrls = new Set(Object.values(musicbrainz).flatMap((links) => links.map((l) => l.url)));
   for (const url of Object.keys(overrides.hiddenLinks))
     if (!fetchedUrls.has(url)) fail(`overrides.json: hidden link ${url} is no longer on MusicBrainz; remove it`);
@@ -284,6 +311,8 @@ async function main(): Promise<void> {
   const generatedReleases = [...releases]
     .sort((a, b) => a.date.localeCompare(b.date))
     .map((r) => ({ ...r, kits: [...r.kits].sort((x, y) => (order.get(x) ?? 0) - (order.get(y) ?? 0)) }));
+
+  for (const [segment, text] of Object.entries(texts)) check(textSchema, text, `text ${segment}`);
 
   if (errors.length) {
     for (const e of errors) console.error(`error  ${e}`);

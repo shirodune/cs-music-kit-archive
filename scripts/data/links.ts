@@ -8,8 +8,12 @@ import { readJson, writeJson } from "./json.ts";
 
 const ROOT = new URL("../../data/", import.meta.url);
 
-// DATA-4: a descriptive User-Agent, requests at least 1.1 seconds apart.
-const headers = { "User-Agent": "cs-music-kit-archive data sync", Accept: "application/json" };
+// DATA-4: a User-Agent in the form MusicBrainz asks for ("Application/version ( contact )"), requests at least
+// 1.1 seconds apart. The contact is the repository, where its issues reach the maintainer.
+const headers = {
+  "User-Agent": "cs-music-kit-archive/1.0 ( https://github.com/shirodune/cs-music-kit-archive )",
+  Accept: "application/json",
+};
 const SPACING_MS = 1100;
 
 interface Relation {
@@ -32,8 +36,14 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function links(mbid: string): Promise<{ kind: LinkKind; url: string }[]> {
   for (let attempt = 1; ; attempt++) {
-    const response = await fetch(`https://musicbrainz.org/ws/2/artist/${mbid}?inc=url-rels&fmt=json`, { headers });
-    if (response.ok) {
+    // A network error is retried like a 503; after the last attempt it is thrown.
+    const response = await fetch(`https://musicbrainz.org/ws/2/artist/${mbid}?inc=url-rels&fmt=json`, {
+      headers,
+    }).catch((error: unknown) => {
+      if (attempt >= 4) throw error;
+      return null;
+    });
+    if (response?.ok) {
       const { relations = [] } = (await response.json()) as { relations?: Relation[] };
       // The first of each kind in URL order, so the result does not depend on the order MusicBrainz returns.
       const found = new Map<LinkKind, string>();
@@ -49,8 +59,10 @@ async function links(mbid: string): Promise<{ kind: LinkKind; url: string }[]> {
         return url ? [{ kind, url }] : [];
       });
     }
-    // MusicBrainz answers 503 when requests come too fast.
-    if (attempt >= 4 || response.status === 404) throw new Error(`${response.status} MusicBrainz artist ${mbid}`);
+    // MusicBrainz answers 503 when requests come too fast; other client errors will not change on a retry.
+    const status = response?.status ?? 0;
+    const clientError = status >= 400 && status < 500 && status !== 429;
+    if (response && (attempt >= 4 || clientError)) throw new Error(`${status} MusicBrainz artist ${mbid}`);
     await sleep(SPACING_MS * 3 * attempt);
   }
 }

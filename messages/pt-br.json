@@ -120,7 +120,7 @@
   "about.title": "Sobre",
   "about.meta": "O que é o CS Music Kit Archive, de onde vêm os dados e como relatar um erro.",
   "about.what": "O que é",
-  "about.whatText": "Um arquivo de fãs, não oficial e sem fins comerciais, de todos os kits de música de Counter-Strike. Cada kit tem sua página com a lista completa de faixas, que tocam no navegador, nos 28 idiomas do CS2.",
+  "about.whatText": "Um arquivo de fãs, não oficial, de todos os kits de música de Counter-Strike. Cada kit tem sua página com a lista completa de faixas, que tocam no navegador, nos 28 idiomas do CS2.",
   "about.data": "De onde vêm os dados",
   "about.dataText": "As faixas e as capas vêm dos arquivos do jogo e são publicadas sem alterações. Os nomes e descrições dos kits são os textos da Valve em cada idioma. As datas de lançamento vêm das notas de atualização da Valve, com link na página de cada kit. Os links dos artistas vêm do MusicBrainz. Toda semana o site verifica o jogo em busca de kits novos ou alterados.",
   "about.source": "Código aberto",

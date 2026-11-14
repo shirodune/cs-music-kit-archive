@@ -10,9 +10,12 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# A newer push to a pull request cancels the older run. On main nothing is cancelled: a manual run must not cancel
+# a push run that is about to deploy, and a deploy must not stop halfway. preview-cleanup.yml joins a pull
+# request's group to cancel a run that would recreate the preview after the pull request is closed.
 concurrency:
-  group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  group: ci-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
   contents: read
@@ -96,8 +99,11 @@ jobs:
   preview:
     name: Preview
     needs: checks
-    # Pull requests from forks get no secrets.
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    # Pull requests from forks get no secrets. The weekly sync starts CI on its branch by hand (workflow_dispatch),
+    # so that pull request gets a preview too.
+    if: >-
+      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'workflow_dispatch' && github.ref != 'refs/heads/main')
     runs-on: ubuntu-latest
     environment: preview
     permissions:
@@ -115,20 +121,28 @@ jobs:
         with:
           name: dist
           path: dist/
+      - id: pr
+        run: |
+          number="${PR:-$(gh pr view "$GITHUB_REF_NAME" --json number --jq .number 2>/dev/null || true)}"
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
       - id: preview
+        if: steps.pr.outputs.number != ''
         run: |
           set -o pipefail
           pnpm exec wrangler preview --name "pr-$PR" | tee wrangler.log
           echo "url=$(sed -n 's/^Preview URL: //p' wrangler.log)" >> "$GITHUB_OUTPUT"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          PR: ${{ github.event.pull_request.number }}
+          PR: ${{ steps.pr.outputs.number }}
       - if: ${{ steps.preview.outputs.url != '' }}
         run: |
           gh pr comment "$PR" --edit-last --create-if-none --body "Preview: $URL"
         env:
           GH_TOKEN: ${{ github.token }}
-          PR: ${{ github.event.pull_request.number }}
+          PR: ${{ steps.pr.outputs.number }}
           URL: ${{ steps.preview.outputs.url }}
 
   deploy:

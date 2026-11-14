@@ -56,6 +56,9 @@ const current = getLocale(locale);
 
   for (const link of document.querySelectorAll<HTMLAnchorElement>(".language-picker a[data-locale]")) {
     link.addEventListener("click", () => {
+      // Keep the selected kit (#slug, PROD-12) and the kit an artist page was opened from (?from=, PROD-21).
+      link.search = location.search;
+      link.hash = location.hash;
       try {
         localStorage.setItem(LOCALE_STORAGE_KEY, link.dataset.locale ?? "");
       } catch {

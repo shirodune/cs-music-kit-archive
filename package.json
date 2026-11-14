@@ -24,7 +24,7 @@
     "game:download": "node scripts/game/download.ts",
     "audio:extract": "node scripts/audio/extract.ts",
     "audio:upload": "node scripts/audio/upload.ts",
-    "data:verify": "node scripts/data/build.ts && git diff --exit-code --stat -- data/generated",
+    "data:verify": "node scripts/data/build.ts && git diff --exit-code --stat -- data/generated && test -z \"$(git ls-files --others --exclude-standard -- data/generated)\"",
     "test": "vitest run",
     "test:e2e": "playwright test",
     "verify": "pnpm lint && pnpm check && pnpm i18n:check && pnpm data:verify && pnpm test && pnpm build && pnpm test:e2e",

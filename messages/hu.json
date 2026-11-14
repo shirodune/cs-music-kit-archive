@@ -115,7 +115,7 @@
   "about.title": "Az oldalról",
   "about.meta": "Mi a CS Music Kit Archive, honnan származnak az adatai, és hogyan lehet hibát jelezni.",
   "about.what": "Mi ez",
-  "about.whatText": "Nem hivatalos, nem kereskedelmi rajongói archívum a Counter-Strike összes zenekészletéről. Minden készletnek saját oldala van a teljes számlistával, amely a böngészőben lejátszható, a CS2 mind a 28 nyelvén.",
+  "about.whatText": "Nem hivatalos rajongói archívum a Counter-Strike összes zenekészletéről. Minden készletnek saját oldala van a teljes számlistával, amely a böngészőben lejátszható, a CS2 mind a 28 nyelvén.",
   "about.data": "Honnan származnak az adatok",
   "about.dataText": "A számok és a borítók a játék saját fájljaiból származnak, és változatlanul jelennek meg. A készletek nevei és leírásai a Valve saját szövegei minden nyelven. A megjelenési dátumok a Valve frissítési jegyzeteiből származnak, minden készlet oldalán hivatkozással. Az előadók hivatkozásai a MusicBrainzről származnak. Az oldal hetente ellenőrzi a játékot új és megváltozott készletek után kutatva.",
   "about.source": "Nyílt forráskód",
