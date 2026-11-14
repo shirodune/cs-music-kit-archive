@@ -16,7 +16,7 @@
 
 ## About
 
-An unofficial, non-commercial fan site. In the game you only hear a short preview of a music kit; here every kit has its own page where each track plays in full.
+An unofficial fan site. In the game you only hear a short preview of a music kit; here every kit has its own page where each track plays in full.
 
 - **Every kit**, from the default CS:GO music of 2012 to today, on a rack in order of release.
 - **Straight from the game**: tracks and covers are taken from CS2's own files and published unchanged. Names and descriptions are Valve's own text in each language.

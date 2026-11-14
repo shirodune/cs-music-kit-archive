@@ -110,7 +110,7 @@
   "about.title": "關於",
   "about.meta": "CS Music Kit Archive 是什麼、資料從哪裡來，以及如何回報錯誤。",
   "about.what": "這是什麼",
-  "about.whatText": "一個非官方、非商業的粉絲檔案館，收錄 Counter-Strike 的全部音樂包。每款音樂包都有自己的頁面，列出完整曲目，可以直接在瀏覽器中播放，支援 CS2 的全部 28 種語言。",
+  "about.whatText": "一個非官方的粉絲檔案館，收錄 Counter-Strike 的全部音樂包。每款音樂包都有自己的頁面，列出完整曲目，可以直接在瀏覽器中播放，支援 CS2 的全部 28 種語言。",
   "about.data": "資料來源",
   "about.dataText": "曲目和封面直接取自遊戲檔案，原樣發布。音樂包名稱和描述是 Valve 在各語言中的官方文字。發售日期來自 Valve 的更新說明，每款音樂包的頁面都附有連結。藝人連結來自 MusicBrainz。網站每週檢查一次遊戲，收錄新增和變更的音樂包。",
   "about.source": "開放原始碼",
