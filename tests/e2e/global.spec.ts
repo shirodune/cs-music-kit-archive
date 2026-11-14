@@ -4,16 +4,13 @@ import { LOCALES } from "../../src/i18n/locales.ts";
 const repository = "https://github.com/shirodune/cs-music-kit-archive";
 
 test.describe("every page", () => {
-  test("PROD-4 the footer is one line: not affiliated with Valve, and links", async ({ page }) => {
+  test("PROD-4 there is no footer; the header links to the source code", async ({ page }) => {
     await page.goto("/en/artists/");
-    const footer = page.locator("body > footer");
-    await expect(footer).toHaveText(/^Not affiliated with Valve\.\s*Source code\s*Licences$/);
-    await expect(footer.getByRole("link", { name: "Source code" })).toHaveAttribute("href", repository);
-    await expect(footer.getByRole("link", { name: "Licences" })).toHaveAttribute(
+    await expect(page.locator("footer")).toHaveCount(0);
+    await expect(page.locator("body > header").getByRole("link", { name: "GitHub" })).toHaveAttribute(
       "href",
-      `${repository}/blob/main/NOTICE`,
+      repository,
     );
-    await expect(footer).not.toContainText("@");
   });
 
   test("PROD-6 I18N-3 every route starts with its locale and keeps the same slug in every locale", async ({ page }) => {
@@ -50,7 +47,7 @@ test.describe("every page", () => {
     await page.goto("/ru/");
     await expect(page.locator("astro-island").first()).toHaveAttribute("props", /Пластинки|Годы|[А-Яа-я]/);
     expect(scripts.length).toBeGreaterThan(0);
-    for (const script of scripts) expect(script).not.toContain("footer.disclaimer");
+    for (const script of scripts) expect(script).not.toContain("about.whatText");
   });
 
   test("DATA-19a a texture cover is drawn in the icon's 256:198 frame with the disc half out", async ({ page }) => {

@@ -1,5 +1,5 @@
 ---
-// Shared page shell: head, header, footer (spec: PROD-2, PROD-4, PROD-29, PROD-31).
+// Shared page shell: head and header (spec: PROD-2, PROD-4, PROD-29, PROD-31).
 import { Font } from "astro:assets";
 import LanguagePicker from "../components/LanguagePicker.astro";
 import { REPOSITORY } from "../data/site.ts";
@@ -17,7 +17,7 @@ interface Props {
   image?: string | undefined;
   /** Keep the page out of search results (not-found pages). */
   noindex?: boolean;
-  /** Fill the viewport, without a footer; the page scrolls only when its content cannot fit (records page, PROD-13a). */
+  /** Fill the viewport; the page scrolls only when its content cannot fit (records page, PROD-13a). */
   fill?: boolean;
 }
 
@@ -109,26 +109,10 @@ const githubMark =
       </nav>
     </header>
 
-    <main class:list={["relative", fill && "flex flex-1 flex-col pb-6"]}>
+    <main class:list={["relative", fill ? "flex flex-1 flex-col pb-6" : "pb-24"]}>
       <slot />
     </main>
 
-    {
-      !fill && (
-        <footer class="relative mt-24">
-          <div aria-hidden="true" class="hazard h-3.5" />
-          <p class="mx-auto my-0 flex max-w-[1360px] flex-wrap gap-x-6 gap-y-2 px-4 py-8 font-mono text-xs leading-relaxed text-muted sm:px-10">
-            <span>{t("footer.disclaimer")}</span>
-            <a href={REPOSITORY} class="underline underline-offset-4">
-              {t("footer.source")}
-            </a>
-            <a href={`${REPOSITORY}/blob/main/NOTICE`} class="underline underline-offset-4">
-              {t("footer.licences")}
-            </a>
-          </p>
-        </footer>
-      )
-    }
     {/* PROD-37: Cloudflare Web Analytics, only on the production host, so local runs and previews are not counted. */}
     <script is:inline>
       if (location.hostname === "musickitarchive.com") {

@@ -109,7 +109,7 @@ test.describe("records rack", () => {
 });
 
 test.describe("records page fits the screen", () => {
-  test("PROD-4 PROD-13a the page does not scroll and has no footer", async ({ page }) => {
+  test("PROD-13a the page does not scroll", async ({ page }) => {
     await page.goto("/en/");
     await expect(rack(page).locator("img").first()).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollHeight - window.innerHeight)).toBeLessThanOrEqual(

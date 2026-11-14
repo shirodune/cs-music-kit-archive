@@ -20,6 +20,7 @@ test.describe("header and about page", () => {
     await page.goto("/en/about/");
     await expect(page).toHaveTitle("About · CS Music Kit Archive");
     await expect(page.getByRole("link", { name: "About" })).toHaveAttribute("aria-current", "page");
+    await expect(page.getByRole("region", { name: "What this is" })).toContainText("Not affiliated with Valve.");
     const data = page.getByRole("region", { name: "Where it comes from" });
     await expect(data).toContainText("release notes");
     await expect(data).toContainText("ByMykel's file tracker and CSGO-API");
