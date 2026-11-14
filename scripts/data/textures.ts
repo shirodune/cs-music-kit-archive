@@ -15,7 +15,15 @@ import { copyFile, mkdir, readdir, readFile, rm, stat, writeFile } from "node:fs
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
-import { coverNeedsExtraction, coverTextures, EXTRACTED, readExtracted, recordOf } from "../game/extracted.ts";
+import {
+  coverNeedsExtraction,
+  coverStored,
+  coverTextures,
+  EXTRACTED,
+  pruneRecord,
+  readExtracted,
+  recordOf,
+} from "../game/extracted.ts";
 import { archivePath, readVpkDir, readVpkFile, type VpkEntry } from "../game/vpk.ts";
 import { readJson, writeJson } from "./json.ts";
 
@@ -45,7 +53,7 @@ async function main(): Promise<void> {
     join(ROOT, "data/upstream/items-game.json"),
   );
   const previous = existsSync(INDEX) ? await readJson<Record<string, TextureInfo>>(INDEX) : {};
-  const record = await readExtracted();
+  const record = pruneRecord(await readExtracted(), vpk);
 
   const textures: Record<string, TextureInfo> = {};
   const toRead: { name: string; files: [string, VpkEntry][] }[] = [];
@@ -55,7 +63,7 @@ async function main(): Promise<void> {
 
   for (const { name } of Object.values(itemsGame.music)) {
     const files = coverTextures(vpk, name);
-    const stored = name in previous && existsSync(join(OUT, `${name}.png`));
+    const stored = coverStored(name, previous);
     if (files.length === 0) {
       missing.push(name);
     } else if (!args.all && !coverNeedsExtraction(files, stored, record)) {

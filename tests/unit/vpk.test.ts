@@ -1,8 +1,9 @@
 import { mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { crc32 } from "node:zlib";
 import { describe, expect, test } from "vitest";
-import { archivePath, crc32, parseVpkDir, readVpkDir, readVpkFile } from "../../scripts/game/vpk.ts";
+import { archivePath, parseVpkDir, readVpkDir, readVpkFile } from "../../scripts/game/vpk.ts";
 
 /** A version 2 VPK directory with the given files: `[path, bytes, archive, offset, preload bytes]`. */
 function vpkDir(files: [string, Buffer, number, number, number][]): Buffer {
@@ -35,7 +36,7 @@ function vpkDir(files: [string, Buffer, number, number, number][]): Buffer {
 }
 
 describe("VPK reader", () => {
-  test("DATA-20 crc32 is the standard CRC-32 the VPK directory records", () => {
+  test("DATA-20 zlib's crc32 is the standard CRC-32 the VPK directory records", () => {
     expect(crc32(Buffer.from("123456789"))).toBe(0xcbf43926);
   });
 

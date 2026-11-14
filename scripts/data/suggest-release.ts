@@ -92,12 +92,17 @@ async function main(): Promise<void> {
     }
     groups.set(key, {
       nameKey: box?.nameKey ?? null,
-      kits: box ? box.kits.map((n) => defIndexOf.get(n) ?? 0).sort((a, b) => a - b) : [kit.defIndex],
+      kits: box
+        ? box.kits
+            .map((n) => defIndexOf.get(n))
+            .filter((d) => d !== undefined)
+            .sort((a, b) => a - b)
+        : [kit.defIndex],
       heading: boxName ?? kit.title,
       found: box
         ? candidates(
             events,
-            box.kits.flatMap((n) => kitTerms(nameOf(defIndexOf.get(n) ?? 0) ?? "", boxName)),
+            box.kits.flatMap((n) => kitTerms(nameOf(defIndexOf.get(n) ?? -1) ?? "", boxName)),
           )
         : found,
     });

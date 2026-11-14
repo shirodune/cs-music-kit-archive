@@ -19,7 +19,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
 import { readJson, writeJson } from "../data/json.ts";
-import { EXTRACTED, readExtracted, recordOf } from "../game/extracted.ts";
+import { EXTRACTED, pruneRecord, readExtracted, recordOf } from "../game/extracted.ts";
 import { archivePath, readVpkDir, readVpkFile } from "../game/vpk.ts";
 import { type Manifest, needsExtraction, wantedFiles } from "./lib.ts";
 
@@ -48,7 +48,7 @@ async function main(): Promise<void> {
   const vpk = await readVpkDir(dirFile);
   const kits = await readJson<Parameters<typeof wantedFiles>[0]>(join(ROOT, "data", "generated", "kits.json"));
   const previous = existsSync(MANIFEST) ? await readJson<Manifest>(MANIFEST) : {};
-  const extracted = await readExtracted();
+  const extracted = pruneRecord(await readExtracted(), vpk);
 
   const manifest: Manifest = {};
   const toRead: string[] = [];

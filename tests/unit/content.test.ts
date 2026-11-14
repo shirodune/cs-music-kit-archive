@@ -9,6 +9,11 @@ describe("stories and introductions", () => {
     expect(contentSchema.safeParse({ sources, translation: "machine" }).success).toBe(true);
     expect(contentSchema.safeParse({ sources: [], translation: "original" }).success).toBe(false);
     expect(contentSchema.safeParse({ sources, translation: "auto" }).success).toBe(false);
+    // A source is a web page; a javascript: link would run on every page that lists it.
+    expect(
+      contentSchema.safeParse({ sources: [{ title: "x", url: "javascript:alert(1)" }], translation: "original" })
+        .success,
+    ).toBe(false);
     expect(
       contentSchema.safeParse({ sources: [{ title: "x", url: "not a url" }], translation: "original" }).success,
     ).toBe(false);

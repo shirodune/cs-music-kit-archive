@@ -24,12 +24,19 @@ const COVER_TEXTURES = /^materials\/models\/inventory_items\/music_kit\/[^/]+\/m
 const KEY_PREFIXES = ["musickit_", "csgo_crate_musickit_"];
 const EXTRA_KEYS = ["store_nav_section_coupon_nightmode2", "csgo_type_musickit"];
 
-const headers: Record<string, string> = { "User-Agent": "cs-music-kit-archive data sync" };
-if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+const GITHUB_HOSTS = new Set(["api.github.com", "raw.githubusercontent.com"]);
+
+/** The GitHub token goes only to GitHub, never to the audio host. */
+function headersFor(url: string): Record<string, string> {
+  const headers: Record<string, string> = { "User-Agent": "cs-music-kit-archive data sync" };
+  if (process.env.GITHUB_TOKEN && GITHUB_HOSTS.has(new URL(url).host))
+    headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+  return headers;
+}
 
 async function get(url: string): Promise<Response> {
   for (let attempt = 1; ; attempt++) {
-    const response = await fetch(url, { headers });
+    const response = await fetch(url, { headers: headersFor(url) });
     if (response.ok) return response;
     if (attempt >= 3 || response.status === 404) throw new Error(`${response.status} ${url}`);
     await new Promise((resolve) => setTimeout(resolve, 1000 * attempt));

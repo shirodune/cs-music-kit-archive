@@ -36,11 +36,11 @@ pnpm data:textures --s2v <path to Source2Viewer-CLI>
 pnpm data:build
 ```
 
-`audio:extract` and `data:textures` record the game files they read, so `pnpm data:changes` stops listing them. `pnpm data:changes --accept` records every current game file as extracted, for files that need no extraction (for example a removed one).
+`audio:extract` and `data:textures` record the game files they read, and drop files that are gone from the game, so `pnpm data:changes` stops listing them.
 
 ## Weekly sync
 
-`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts the audio and cover textures of game files that changed, uploads the audio, and opens or updates the pull request on the branch `data-sync` with everything else, the covers included. When a new kit fails the build, the pull request lists the errors and the `pnpm data:suggest-release` output; add the release (checked against its page) and credits on that branch. One-time setup (done 2026-11-13):
+`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts the audio and cover textures of game files that changed, uploads the audio, and opens or updates the pull request on the branch `data-sync` with everything else, the covers included. When a new kit fails the build, the pull request lists the errors and the `pnpm data:suggest-release` output; add the release (checked against its page) and credits to `main` in a pull request of their own, then run the workflow again from the Actions tab. Do not push to `data-sync`: every run rebuilds it from `main`. One-time setup (done 2026-11-13):
 
 1. Create an R2 token limited to the bucket: in Cloudflare, R2 → Manage API tokens → Create Account API token, permission "Object Read & Write", bucket `cs-music-kit-audio`. It shows an Access Key ID and a Secret Access Key.
 2. In GitHub, create the environment `audio` (Settings → Environments), limit its deployment branches to `main`, and add the two values as the secrets `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`.

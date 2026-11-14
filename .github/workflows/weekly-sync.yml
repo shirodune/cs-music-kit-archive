@@ -1,8 +1,9 @@
 # Weekly data sync (spec: DATA-24 to DATA-26, D-023). Also runs on demand from the Actions tab.
 # 1. sync: fetches the upstream data and artist links, builds, and lists the game files that changed. When sound
 #    files or cover textures changed, downloads only their VPK archives from Steam and extracts their audio and
-#    covers. It runs third-party tools (DepotDownloader, Source2Viewer), so it gets no secrets and cannot write to
-#    the repository. It hands its changes to the other jobs as a git patch.
+#    covers. It runs third-party tools (DepotDownloader, Source2Viewer), so it gets no secrets, keeps no token in
+#    its checkout, cannot write to the repository and saves no cache another job restores. It hands its changes to
+#    the other jobs as a git patch.
 # 2. upload: publishes the extracted audio to R2. The only job with the R2 credentials, limited to the audio bucket;
 #    it runs only this project's code.
 # 3. pull-request: commits the changed data to the branch data-sync and opens or updates its pull request.
@@ -26,6 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       audio: ${{ steps.extract.outputs.audio == 'true' }}
+      files: ${{ steps.extract.outputs.files == 'true' }}
       build: ${{ steps.build.outputs.ok }}
     env:
       DEPOTDOWNLOADER_URL: https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.4.0/DepotDownloader-linux-x64.zip
@@ -34,15 +36,19 @@ jobs:
       S2V_SHA256: 29d25a6d6b62377fc5386c3e5145b0a2180a401a50041afe9494b3f503deaef5
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - uses: pnpm/action-setup@v6
+      # No pnpm cache: this job runs third-party tools, and the upload job, which holds the R2 credentials,
+      # would restore a cache saved here.
       - uses: actions/setup-node@v7
         with:
           node-version-file: .node-version
-          cache: pnpm
       - run: pnpm install --frozen-lockfile
       - name: Fetch upstream data
         run: |
           pnpm data:sync
+          cp data/upstream/audio-manifest.json "$RUNNER_TEMP/published-manifest.json"
           pnpm data:covers
           pnpm data:links
         env:
@@ -85,7 +91,9 @@ jobs:
           pnpm data:textures --s2v "$tools/s2v/Source2Viewer-CLI"
           pnpm data:build
           pnpm -s data:changes > "$RUNNER_TEMP/changes.log" || true
-          if [ -n "$(ls -A audio/out 2>/dev/null)" ]; then echo "audio=true" >> "$GITHUB_OUTPUT"; fi
+          # Upload when the manifest differs from the published one, also when tracks were only removed.
+          if ! cmp -s data/upstream/audio-manifest.json "$RUNNER_TEMP/published-manifest.json"; then echo "audio=true" >> "$GITHUB_OUTPUT"; fi
+          if [ -n "$(ls -A audio/out 2>/dev/null)" ]; then echo "files=true" >> "$GITHUB_OUTPUT"; fi
       # The patch carries every change, binary covers and deleted files included; game-files/ and audio/ are ignored.
       - name: Collect the changes
         run: |
@@ -99,7 +107,7 @@ jobs:
           name: data
           path: ${{ runner.temp }}/out/
           retention-days: 3
-      - if: steps.extract.outputs.audio == 'true'
+      - if: steps.extract.outputs.files == 'true'
         uses: actions/upload-artifact@v7
         with:
           name: audio
@@ -125,7 +133,8 @@ jobs:
           name: data
           path: ${{ runner.temp }}/data/
       - run: git apply --binary "$RUNNER_TEMP/data/changes.patch"
-      - uses: actions/download-artifact@v8
+      - if: needs.sync.outputs.files == 'true'
+        uses: actions/download-artifact@v8
         with:
           name: audio
           path: audio/out/
@@ -188,7 +197,7 @@ jobs:
               echo
               echo "## pnpm data:build failed (DATA-25)"
               echo
-              echo "A new kit needs a release, credits and, when needed, slug or title overrides. Its audio is extracted on the first run after the build passes."
+              echo "A new kit needs a release, credits and, when needed, slug or title overrides. Add them to main in a pull request of their own, then run this workflow again: it rebuilds this branch from main on every run, so commits pushed here are lost. The kit's audio and cover are extracted on the first run after the build passes."
               echo
               echo '```'
               tail -n 40 "$RUNNER_TEMP/sync-logs/build.log"
