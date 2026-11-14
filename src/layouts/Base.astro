@@ -17,7 +17,7 @@ interface Props {
   image?: string | undefined;
   /** Keep the page out of search results (not-found pages). */
   noindex?: boolean;
-  /** Fill the viewport with a one-line footer; the page scrolls only when its content cannot fit (records page, PROD-13a). */
+  /** Fill the viewport, without a footer; the page scrolls only when its content cannot fit (records page, PROD-13a). */
   fill?: boolean;
 }
 
@@ -37,7 +37,6 @@ const urlFor = (segment: LocaleSegment) => new URL(`/${segment}/${rest}`, site).
 
 const pageTitle = title ? `${title} · ${t("site.name")}` : t("site.name");
 const pageDescription = description ?? t("site.description");
-const repository = REPOSITORY;
 // Open Graph wants language_TERRITORY; these tags have a script or a region code instead of a territory.
 const OG_LOCALES: Record<string, string> = { "zh-Hans": "zh_CN", "zh-Hant": "zh_TW", "es-419": "es_LA" };
 // GitHub's mark (Octicons "mark-github", MIT).
@@ -83,7 +82,7 @@ const githubMark =
     <header
       class="relative z-10 flex flex-none min-h-16 flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-rule px-[max(1rem,env(safe-area-inset-left))] py-2 sm:px-10"
     >
-      <a href={`/${locale}/`} class="font-stencil text-2xl tracking-wide">CS MUSIC KIT ARCHIVE</a>
+      <a href={`/${locale}/`} class="font-stencil text-2xl tracking-wide uppercase">{t("site.name")}</a>
       <nav aria-label={t("nav.label")} class="flex flex-wrap items-center justify-end gap-x-3 font-condensed sm:gap-x-7 text-base font-semibold whitespace-nowrap uppercase tracking-widest">
         {
           [
@@ -103,42 +102,29 @@ const githubMark =
         <div class="border-l border-paper/25 pl-2.5 normal-case tracking-normal">
           <LanguagePicker locale={locale} rest={rest} t={t} />
         </div>
-        <a href={repository} class="flex size-11 items-center justify-center hover:text-signal max-sm:hidden">
+        <a href={REPOSITORY} class="flex h-11 items-center hover:text-signal max-sm:hidden">
           <span class="sr-only">GitHub</span>
           <svg aria-hidden="true" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d={githubMark} /></svg>
         </a>
       </nav>
     </header>
 
-    <main class:list={["relative", fill && "flex flex-1 flex-col"]}>
+    <main class:list={["relative", fill && "flex flex-1 flex-col pb-6"]}>
       <slot />
     </main>
 
     {
-      fill ? (
-        <footer class="relative flex-none">
-          <div aria-hidden="true" class="hazard h-1.5" />
-          <p class="mx-auto my-0 flex max-w-[1360px] flex-wrap items-baseline gap-x-5 gap-y-0.5 px-4 py-2 font-mono text-[11px] leading-snug text-muted sm:px-10">
-            <span>{t("footer.short")}</span>
-            <a href={repository} class="underline underline-offset-4">
-              {t("footer.source")}
-            </a>
-            <a href={`${repository}/blob/main/NOTICE`} class="underline underline-offset-4">
-              {t("footer.licences")}
-            </a>
-          </p>
-        </footer>
-      ) : (
+      !fill && (
         <footer class="relative mt-24">
           <div aria-hidden="true" class="hazard h-3.5" />
           <div class="mx-auto flex max-w-[1360px] flex-col gap-3 px-4 py-10 font-mono text-xs leading-relaxed text-muted sm:px-10">
             <p class="max-w-[72ch]">{t("footer.disclaimer")}</p>
             <p class="max-w-[72ch]">{t("footer.credits")}</p>
             <p class="flex gap-6">
-              <a href={repository} class="underline underline-offset-4">
+              <a href={REPOSITORY} class="underline underline-offset-4">
                 {t("footer.source")}
               </a>
-              <a href={`${repository}/blob/main/NOTICE`} class="underline underline-offset-4">
+              <a href={`${REPOSITORY}/blob/main/NOTICE`} class="underline underline-offset-4">
                 {t("footer.licences")}
               </a>
             </p>

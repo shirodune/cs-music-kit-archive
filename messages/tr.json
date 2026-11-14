@@ -7,11 +7,9 @@
   "nav.about": "Hakkında",
   "lang.label": "Dil",
   "footer.disclaimer": "Valve ile bağlantılı değildir. Counter-Strike ile tüm müzik kitlerinin adları, görselleri ve sesleri Valve'a ve ilgili sanatçılara aittir.",
-  "footer.short": "Valve ile bağlantılı değildir.",
   "footer.source": "Kaynak kodu",
   "footer.licences": "Lisanslar",
-  "footer.credits": "Oyun verileri SteamDB GameTracking'den. Çeviriler ByMykel'in file tracker'ından. Sanatçı bağlantıları MusicBrainz'den.",
-  "root.title": "Dilini seç",
+  "footer.credits": "Oyun verileri SteamDB GameTracking'den. Çeviriler ve eşya verileri ByMykel'in file tracker'ından ve CSGO-API'sinden. Sanatçı bağlantıları MusicBrainz'den.",
   "records.title": "Plaklar",
   "artists.title": "Sanatçılar",
   "artist.kitCount": {

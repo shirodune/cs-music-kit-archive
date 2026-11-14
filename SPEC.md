@@ -12,13 +12,13 @@ The design reference is the claude.ai Design canvas "CS Music Kits Archive", pag
 
 Records (the rack, the home page), one page per kit, the artists index, one page per artist, About, and a not-found page, each in every language.
 
-- PROD-2 Header: site name, Records, Artists, About, the language picker (opens the same page in another language, keeping the selected kit) and a link to the source code.
-- PROD-4 Footer: not affiliated with Valve; the names, artwork and audio belong to Valve and the artists; data credits; links to the source code and licences.
+- PROD-2 Header: site name, Records, Artists, About, the language picker (opens the same page in another language, keeping the selected kit) and a link to the source code (on phones only in the footer).
+- PROD-4 Footer: not affiliated with Valve; the names, artwork and audio belong to Valve and the artists; data credits; links to the source code and licences. The records page has no footer: it is the one-screen home page, and the header links to the source code.
 - PROD-5 The root address opens the visitor's remembered language, else the best match for the browser, else English.
 - PROD-6 A page has the same address in every language apart from the language segment.
 - PROD-7 The rack holds every kit by release date. It works without JavaScript as a list of links.
 - PROD-12 The selected kit is kept in the address, so links and the back button return to it. Without one, the newest kit is selected.
-- PROD-13a The records page fits the screen and does not scroll, so scrolling never competes with moving the rack.
+- PROD-13a The records page fits the screen, so scrolling never competes with moving the rack. Only a screen too small for it scrolls, rather than overlap.
 - PROD-14 A kit page shows: title, cover and facts; the MVP anthem; the tracklist; Valve's description; the story; more by the same artists; kits released the same day; previous and next; the release note as source. Empty sections are left out.
 - PROD-15 The default CS:GO kit also shows its unnamed alternate set of tracks, with a note that it is not a separate item.
 - PROD-16 Artists index: more than one kit (most first); one kit each, by year; games and official, by first release.
@@ -75,7 +75,7 @@ Every field has one owner, and derived data is never edited by hand:
 - DATA-19 Covers are the game's own cover textures, stored unchanged; the Steam icon is the fallback until a texture is extracted.
 - DATA-19a A texture is flat sleeve art, so pages draw the disc half out, in the icon's frame.
 - DATA-20 Audio comes from the game files, downloaded anonymously from Steam, and is published exactly as the game stores it, never re-encoded.
-- DATA-21 The site links only to audio files that are published, with their measured durations.
+- DATA-21 The site links only to audio files that are published, with their measured durations. Publishing never deletes a file: the live site may still link it until the sync's pull request is merged.
 - DATA-22 Stories and introductions are Markdown files per page and language in `content/`. English is the original and must exist (`content/README.md`).
 - DATA-23 Each states its sources and whether it is the original, a human translation or a machine translation.
 - DATA-24 A weekly sync fetches the data, extracts new or changed audio and covers from the game, publishes the audio, and opens one pull request with the rest. It rebuilds that pull request's branch from `main` every time.

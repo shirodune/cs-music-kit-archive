@@ -103,7 +103,7 @@ function buildTracks(internalName: string, events: SoundEvents[string] | undefin
       take,
       file,
       durationSec: published?.durationSec ?? single.get(file) ?? shared.get(file) ?? null,
-      audio: key && published ? { path: `/${key}`, bytes: published.bytes, sha256: published.sha256 } : null,
+      audio: key && published ? { path: `/${key}`, sha256: published.sha256 } : null,
     });
   }
   const rank = (cue: Cue) => CUE_ORDER.indexOf(cue);

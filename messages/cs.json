@@ -7,11 +7,9 @@
   "nav.about": "O webu",
   "lang.label": "Jazyk",
   "footer.disclaimer": "Není spojen se společností Valve. Counter-Strike a názvy, grafika a zvuk všech hudebních balíčků patří společnosti Valve a příslušným umělcům.",
-  "footer.short": "Není spojen se společností Valve.",
   "footer.source": "Zdrojový kód",
   "footer.licences": "Licence",
-  "footer.credits": "Herní data ze SteamDB GameTracking. Překlady z file trackeru od ByMykela. Odkazy na umělce z MusicBrainz.",
-  "root.title": "Vyberte jazyk",
+  "footer.credits": "Herní data ze SteamDB GameTracking. Překlady a data předmětů z file trackeru a CSGO-API od ByMykela. Odkazy na umělce z MusicBrainz.",
   "records.title": "Desky",
   "artists.title": "Umělci",
   "artist.kitCount": {

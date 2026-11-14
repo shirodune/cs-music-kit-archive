@@ -23,7 +23,7 @@ describe("locale table", () => {
     expect(isLocaleSegment(undefined)).toBe(false);
   });
 
-  test("plural categories per locale are the ones listed in the spec", () => {
+  test("plural categories per locale are the ones Intl reports for its tag", () => {
     const expected: Record<string, string[]> = {
       other: ["vi", "th", "ja", "ko", "zh-hans", "zh-hant"],
       "one,other": ["en", "de", "nl", "da", "nb", "sv", "fi", "hu", "tr", "bg", "el"],

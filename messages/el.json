@@ -7,11 +7,9 @@
   "nav.about": "Σχετικά",
   "lang.label": "Γλώσσα",
   "footer.disclaimer": "Δεν συνδέεται με τη Valve. Το Counter-Strike, καθώς και τα ονόματα, τα γραφικά και ο ήχος όλων των μουσικών κουτιών, ανήκουν στη Valve και στους αντίστοιχους καλλιτέχνες.",
-  "footer.short": "Δεν συνδέεται με τη Valve.",
   "footer.source": "Πηγαίος κώδικας",
   "footer.licences": "Άδειες",
-  "footer.credits": "Δεδομένα παιχνιδιού από το SteamDB GameTracking. Μεταφράσεις από το file tracker του ByMykel. Σύνδεσμοι καλλιτεχνών από το MusicBrainz.",
-  "root.title": "Επιλέξτε γλώσσα",
+  "footer.credits": "Δεδομένα παιχνιδιού από το SteamDB GameTracking. Μεταφράσεις και δεδομένα αντικειμένων από το file tracker και το CSGO-API του ByMykel. Σύνδεσμοι καλλιτεχνών από το MusicBrainz.",
   "records.title": "Δίσκοι",
   "artists.title": "Καλλιτέχνες",
   "artist.kitCount": {

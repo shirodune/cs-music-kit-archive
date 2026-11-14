@@ -7,11 +7,9 @@
   "nav.about": "За сайта",
   "lang.label": "Език",
   "footer.disclaimer": "Не е свързан с Valve. Counter-Strike, както и имената, графиките и звукът на всички музикални комплекти принадлежат на Valve и на съответните изпълнители.",
-  "footer.short": "Не е свързан с Valve.",
   "footer.source": "Изходен код",
   "footer.licences": "Лицензи",
-  "footer.credits": "Данни за играта от SteamDB GameTracking. Преводи от file tracker-а на ByMykel. Връзки към изпълнители от MusicBrainz.",
-  "root.title": "Изберете език",
+  "footer.credits": "Данни за играта от SteamDB GameTracking. Преводи и данни за предметите от file tracker-а и CSGO-API на ByMykel. Връзки към изпълнители от MusicBrainz.",
   "records.title": "Плочи",
   "artists.title": "Изпълнители",
   "artist.kitCount": {

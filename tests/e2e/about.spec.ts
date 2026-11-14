@@ -8,7 +8,7 @@ test.describe("header and about page", () => {
   }) => {
     await page.goto("/de/artists/");
     const header = page.locator("body > header");
-    await expect(header.getByRole("link", { name: "CS MUSIC KIT ARCHIVE" })).toHaveAttribute("href", "/de/");
+    await expect(header.getByRole("link", { name: /^CS Music Kit Archive$/i })).toHaveAttribute("href", "/de/");
     const nav = header.getByRole("navigation");
     await expect(nav.getByRole("link", { name: "Über" })).toHaveAttribute("href", "/de/about/");
     await expect(nav.getByRole("link", { name: "GitHub" })).toHaveAttribute("href", repository);

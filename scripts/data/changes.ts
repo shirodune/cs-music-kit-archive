@@ -7,18 +7,11 @@
 // extracted without reading it would hide it from the extraction for good.
 // Usage: node scripts/data/changes.ts
 
-import { existsSync } from "node:fs";
+import { type GameFileRecord, readExtracted } from "../game/extracted.ts";
 import { readJson } from "./json.ts";
 
-type GameFiles = Record<string, { crc: string; bytes: number }>;
-
-const UPSTREAM = new URL("../../data/upstream/", import.meta.url);
-const CURRENT = new URL("game-files.json", UPSTREAM);
-const EXTRACTED = new URL("game-files-extracted.json", UPSTREAM);
-
-const current = await readJson<GameFiles>(CURRENT);
-
-const extracted = existsSync(EXTRACTED) ? await readJson<GameFiles>(EXTRACTED) : {};
+const current = await readJson<GameFileRecord>(new URL("../../data/upstream/game-files.json", import.meta.url));
+const extracted = await readExtracted();
 const lines: string[] = [];
 for (const path of Object.keys({ ...extracted, ...current }).sort()) {
   const before = extracted[path];

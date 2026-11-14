@@ -7,11 +7,9 @@
   "nav.about": "概要",
   "lang.label": "言語",
   "footer.disclaimer": "Valve とは無関係です。Counter-Strike および全ミュージックキットの名称、アートワーク、音源は Valve と各アーティストに帰属します。",
-  "footer.short": "Valve とは無関係です。",
   "footer.source": "ソースコード",
   "footer.licences": "ライセンス",
-  "footer.credits": "ゲームデータ：SteamDB GameTracking。翻訳：ByMykel の file tracker。アーティストのリンク：MusicBrainz。",
-  "root.title": "言語を選択",
+  "footer.credits": "ゲームデータ：SteamDB GameTracking。翻訳とアイテムデータ：ByMykel の file tracker と CSGO-API。アーティストのリンク：MusicBrainz。",
   "records.title": "レコード",
   "artists.title": "アーティスト",
   "artist.kitCount": {

@@ -8,6 +8,9 @@ const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 
 // ---------- Curated input (data/curated/) ----------
 
+/** Where a release's source may be (DATA-14c). */
+export const VALVE_HOSTS = ["blog.counter-strike.net", "store.steampowered.com", "www.counter-strike.net"];
+
 export const releaseSchema = z.strictObject({
   id: slug,
   date: isoDate,
@@ -15,13 +18,7 @@ export const releaseSchema = z.strictObject({
   nameKey: z.string().nullable(),
   kits: z.array(z.number().int().positive()).min(1),
   source: z.strictObject({
-    url: z
-      .url()
-      .refine(
-        (u) =>
-          ["blog.counter-strike.net", "store.steampowered.com", "www.counter-strike.net"].includes(new URL(u).host),
-        "source.url must be a Valve page (DATA-14c)",
-      ),
+    url: z.url().refine((u) => VALVE_HOSTS.includes(new URL(u).host), "source.url must be a Valve page (DATA-14c)"),
     title: z.string().min(1),
     quote: z.string().min(1),
   }),
@@ -34,7 +31,6 @@ export const artistSchema = z.strictObject({
   name: z.string().min(1),
   type: z.enum(["person", "group", "brand"]),
   aliases: z.array(z.string().min(1)),
-  members: z.array(slug),
   musicbrainzId: z.uuid().nullable(),
 });
 export type Artist = z.infer<typeof artistSchema>;
@@ -78,11 +74,10 @@ export const trackSchema = z.strictObject({
   take: z.number().int().positive().nullable(),
   file: z.string().min(1),
   durationSec: z.number().positive().nullable(),
-  /** The published file (DATA-20, DATA-21): its path on the audio host, size and SHA-256. Null until uploaded. */
+  /** The published file (DATA-20, DATA-21): its path on the audio host and SHA-256 (PROD-23a). Null until uploaded. */
   audio: z
     .strictObject({
       path: z.string().regex(/^\/[a-z0-9_]+\/[a-z0-9_]+\.(mp3|wav)$/),
-      bytes: z.number().int().positive(),
       sha256: z.string().regex(/^[0-9a-f]{64}$/),
     })
     .nullable(),

@@ -4,9 +4,7 @@ import { LOCALES } from "../../src/i18n/locales.ts";
 const repository = "https://github.com/shirodune/cs-music-kit-archive";
 
 test.describe("every page", () => {
-  test("PROD-4 the footer has the disclaimer, data credits and links; the records page has the one-line version", async ({
-    page,
-  }) => {
+  test("PROD-4 the footer has the disclaimer, data credits and links", async ({ page }) => {
     await page.goto("/en/artists/");
     const footer = page.locator("body > footer");
     await expect(footer).toContainText("Not affiliated with Valve.");
@@ -18,12 +16,6 @@ test.describe("every page", () => {
       `${repository}/blob/main/NOTICE`,
     );
     await expect(footer).not.toContainText("@");
-
-    await page.goto("/en/");
-    const short = page.locator("body > footer");
-    await expect(short).toContainText("Not affiliated with Valve.");
-    await expect(short).not.toContainText("respective artists");
-    await expect(short.getByRole("link")).toHaveCount(2);
   });
 
   test("PROD-6 I18N-3 every route starts with its locale and keeps the same slug in every locale", async ({ page }) => {

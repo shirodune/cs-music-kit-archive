@@ -27,10 +27,10 @@ describe("audio scripts", () => {
     ]);
   });
 
-  test("DATA-21 only new or changed files are uploaded, and files no longer listed are deleted", () => {
+  test("DATA-21 only new or changed files are uploaded; files no longer listed stay, as the live site links them", () => {
     const published: Manifest = { "a/x.mp3": entry("1"), "a/y.mp3": entry("2"), "a/old.mp3": entry("5") };
     const next: Manifest = { "a/x.mp3": entry("1"), "a/y.mp3": entry("3"), "b/z.wav": entry("4") };
-    expect(uploadPlan(published, next)).toEqual({ put: ["a/y.mp3", "b/z.wav"], remove: ["a/old.mp3"] });
+    expect(uploadPlan(published, next)).toEqual(["a/y.mp3", "b/z.wav"]);
   });
 
   test("DATA-20 files keep the game's format: MP3 as audio/mpeg, WAV as audio/wav", () => {

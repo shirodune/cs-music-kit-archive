@@ -11,7 +11,7 @@ import manifest from "../../data/upstream/audio-manifest.json";
 import gameFiles from "../../data/upstream/game-files.json";
 import itemsGame from "../../data/upstream/items-game.json";
 import meta from "../../data/upstream/meta.json";
-import { generatedArtistSchema, kitSchema, releaseSchema } from "../../src/data/schema.ts";
+import { generatedArtistSchema, kitSchema, releaseSchema, VALVE_HOSTS } from "../../src/data/schema.ts";
 
 const kits = kitsJson.map((k) => kitSchema.parse(k));
 const artists = artistsJson.map((a) => generatedArtistSchema.parse(a));
@@ -166,7 +166,7 @@ describe("releases", () => {
   test("DATA-14b DATA-14c every release cites a Valve page with a quote", () => {
     for (const r of releases) {
       expect(r.source.quote.length, r.id).toBeGreaterThan(10);
-      expect(["blog.counter-strike.net", "store.steampowered.com"]).toContain(new URL(r.source.url).host);
+      expect(VALVE_HOSTS).toContain(new URL(r.source.url).host);
     }
   });
 

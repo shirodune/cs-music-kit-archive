@@ -7,11 +7,9 @@
   "nav.about": "Giới thiệu",
   "lang.label": "Ngôn ngữ",
   "footer.disclaimer": "Không liên kết với Valve. Counter-Strike cùng tên, hình ảnh và âm thanh của mọi gói âm thanh thuộc về Valve và các nghệ sĩ tương ứng.",
-  "footer.short": "Không liên kết với Valve.",
   "footer.source": "Mã nguồn",
   "footer.licences": "Giấy phép",
-  "footer.credits": "Dữ liệu trò chơi từ SteamDB GameTracking. Bản dịch từ file tracker của ByMykel. Liên kết nghệ sĩ từ MusicBrainz.",
-  "root.title": "Chọn ngôn ngữ",
+  "footer.credits": "Dữ liệu trò chơi từ SteamDB GameTracking. Bản dịch và dữ liệu vật phẩm từ file tracker và CSGO-API của ByMykel. Liên kết nghệ sĩ từ MusicBrainz.",
   "records.title": "Đĩa nhạc",
   "artists.title": "Nghệ sĩ",
   "artist.kitCount": {

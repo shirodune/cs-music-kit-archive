@@ -7,11 +7,9 @@
   "nav.about": "Om",
   "lang.label": "Språk",
   "footer.disclaimer": "Inte knutet till Valve. Counter-Strike samt namn, grafik och ljud för alla musikpaket tillhör Valve och respektive artister.",
-  "footer.short": "Inte knutet till Valve.",
   "footer.source": "Källkod",
   "footer.licences": "Licenser",
-  "footer.credits": "Speldata via SteamDB GameTracking. Översättningar via ByMykels file tracker. Artistlänkar via MusicBrainz.",
-  "root.title": "Välj språk",
+  "footer.credits": "Speldata via SteamDB GameTracking. Översättningar och föremålsdata via ByMykels file tracker och CSGO-API. Artistlänkar via MusicBrainz.",
   "records.title": "Skivor",
   "artists.title": "Artister",
   "artist.kitCount": {

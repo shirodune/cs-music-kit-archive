@@ -7,11 +7,9 @@
   "nav.about": "Sobre",
   "lang.label": "Idioma",
   "footer.disclaimer": "Não é afiliado à Valve. Counter-Strike e os nomes, ilustrações e áudio de todos os kits de música pertencem à Valve e aos respetivos artistas.",
-  "footer.short": "Não é afiliado à Valve.",
   "footer.source": "Código-fonte",
   "footer.licences": "Licenças",
-  "footer.credits": "Dados do jogo através do SteamDB GameTracking. Traduções através do file tracker de ByMykel. Ligações para artistas através do MusicBrainz.",
-  "root.title": "Escolhe o teu idioma",
+  "footer.credits": "Dados do jogo através do SteamDB GameTracking. Traduções e dados de itens através do file tracker e da CSGO-API de ByMykel. Ligações para artistas através do MusicBrainz.",
   "records.title": "Discos",
   "artists.title": "Artistas",
   "artist.kitCount": {

@@ -7,11 +7,9 @@
   "nav.about": "關於",
   "lang.label": "語言",
   "footer.disclaimer": "與 Valve 無關。Counter-Strike 以及所有音樂包的名稱、美術與音訊均屬於 Valve 及各藝人所有。",
-  "footer.short": "與 Valve 無關。",
   "footer.source": "原始碼",
   "footer.licences": "授權條款",
-  "footer.credits": "遊戲資料來自 SteamDB GameTracking，翻譯來自 ByMykel 的 file tracker，藝人連結來自 MusicBrainz。",
-  "root.title": "選擇語言",
+  "footer.credits": "遊戲資料來自 SteamDB GameTracking，翻譯和物品資料來自 ByMykel 的 file tracker 和 CSGO-API，藝人連結來自 MusicBrainz。",
   "records.title": "唱片",
   "artists.title": "藝人",
   "artist.kitCount": {

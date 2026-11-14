@@ -6,12 +6,12 @@ import releasesJson from "../../data/generated/releases.json";
 import type { LocaleSegment } from "../i18n/locales.ts";
 import type { GeneratedArtist, Kit, LocaleText, Release } from "./schema.ts";
 
-/** Kits in rack order (PROD-7). */
 /** The public repository: source code, issues and the licence notice (PROD-4, PROD-38). */
 export const REPOSITORY = "https://github.com/shirodune/cs-music-kit-archive";
 
+/** Kits in rack order (PROD-7). */
 export const kits = kitsJson as Kit[];
-export const releases = releasesJson as Release[];
+const releases = releasesJson as Release[];
 export const artists = artistsJson as GeneratedArtist[];
 
 const kitByIndex = new Map(kits.map((k) => [k.defIndex, k]));
@@ -42,11 +42,16 @@ export interface Localized {
 
 type KitField = "name" | "title" | "credit" | "description";
 
-export function kitText(segment: LocaleSegment, defIndex: number, field: KitField): Localized | null {
-  const own = textFor(segment).kits[defIndex]?.[field];
+/** The locale's own text, else the English text marked as English. */
+function localized(segment: LocaleSegment, pick: (text: LocaleText) => string | null | undefined): Localized | null {
+  const own = pick(textFor(segment));
   if (own) return { text: own, lang: undefined };
-  const english = textFor("en").kits[defIndex]?.[field];
+  const english = pick(textFor("en"));
   return english ? { text: english, lang: segment === "en" ? undefined : "en" } : null;
+}
+
+export function kitText(segment: LocaleSegment, defIndex: number, field: KitField): Localized | null {
+  return localized(segment, (text) => text.kits[defIndex]?.[field]);
 }
 
 /** Like kitText, for fields every kit has in English. */
@@ -56,8 +61,5 @@ export function kitTextRequired(segment: LocaleSegment, defIndex: number, field:
 
 /** Official box or collection name of a release, or null for kits released on their own (DATA-14d). */
 export function releaseName(segment: LocaleSegment, releaseId: string): Localized | null {
-  const own = textFor(segment).releases[releaseId];
-  if (own) return { text: own, lang: undefined };
-  const english = textFor("en").releases[releaseId];
-  return english ? { text: english, lang: segment === "en" ? undefined : "en" } : null;
+  return localized(segment, (text) => text.releases[releaseId]);
 }

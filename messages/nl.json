@@ -7,11 +7,9 @@
   "nav.about": "Over",
   "lang.label": "Taal",
   "footer.disclaimer": "Niet verbonden aan Valve. Counter-Strike en de namen, artwork en audio van alle muzieksets zijn eigendom van Valve en de betreffende artiesten.",
-  "footer.short": "Niet verbonden aan Valve.",
   "footer.source": "Broncode",
   "footer.licences": "Licenties",
-  "footer.credits": "Speldata via SteamDB GameTracking. Vertalingen via de file tracker van ByMykel. Artiestenlinks via MusicBrainz.",
-  "root.title": "Kies je taal",
+  "footer.credits": "Speldata via SteamDB GameTracking. Vertalingen en itemgegevens via de file tracker en de CSGO-API van ByMykel. Artiestenlinks via MusicBrainz.",
   "records.title": "Platen",
   "artists.title": "Artiesten",
   "artist.kitCount": {

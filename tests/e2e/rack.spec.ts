@@ -109,23 +109,25 @@ test.describe("records rack", () => {
 });
 
 test.describe("records page fits the screen", () => {
-  test("PROD-13a the page does not scroll and the one-line footer is on screen", async ({ page }) => {
+  test("PROD-4 PROD-13a the page does not scroll and has no footer", async ({ page }) => {
     await page.goto("/en/");
     await expect(rack(page).locator("img").first()).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollHeight - window.innerHeight)).toBeLessThanOrEqual(
       0,
     );
-    const footer = page.locator("footer");
-    await expect(footer).toBeInViewport({ ratio: 1 });
-    await expect(footer).toHaveText(/^Not affiliated with Valve\./);
+    await expect(page.locator("footer")).toHaveCount(0);
   });
 
   test("PROD-13a on a screen too short for the page, it scrolls instead of overlapping", async ({ page }) => {
     await page.setViewportSize({ width: 360, height: 560 });
     await page.goto("/en/");
     const open = await page.getByRole("link", { name: "Open the record", exact: true }).boundingBox();
-    const footer = await page.locator("footer").boundingBox();
-    expect((open?.y ?? 0) + (open?.height ?? 0)).toBeLessThanOrEqual(footer?.y ?? 0);
+    const { scroll, viewport } = await page.evaluate(() => ({
+      scroll: document.documentElement.scrollHeight,
+      viewport: window.innerHeight,
+    }));
+    expect(scroll).toBeGreaterThan(viewport);
+    expect((open?.y ?? 0) + (open?.height ?? 0)).toBeLessThanOrEqual(scroll);
   });
 
   test("PROD-13a every gesture on the rack moves the rack, not the page", async ({ page }) => {
@@ -137,7 +139,7 @@ test.describe("records page fits the screen", () => {
 test.describe("records without JavaScript", () => {
   test.use({ javaScriptEnabled: false });
 
-  test("PROD-5 every kit is still reachable as a plain list", async ({ page }) => {
+  test("PROD-7 every kit is still reachable as a plain list", async ({ page }) => {
     await page.goto("/en/");
     await expect(page.getByRole("link", { name: "Desert Fire", exact: true }).first()).toHaveAttribute(
       "href",

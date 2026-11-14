@@ -7,11 +7,9 @@
   "nav.about": "Rólunk",
   "lang.label": "Nyelv",
   "footer.disclaimer": "Nem áll kapcsolatban a Valve-val. A Counter-Strike, valamint az összes zenekészlet neve, grafikája és hanganyaga a Valve és az adott előadók tulajdona.",
-  "footer.short": "Nem áll kapcsolatban a Valve-val.",
   "footer.source": "Forráskód",
   "footer.licences": "Licencek",
-  "footer.credits": "Játékadatok: SteamDB GameTracking. Fordítások: ByMykel file trackere. Előadói hivatkozások: MusicBrainz.",
-  "root.title": "Válassz nyelvet",
+  "footer.credits": "Játékadatok: SteamDB GameTracking. Fordítások és tárgyadatok: ByMykel file trackere és CSGO-API-ja. Előadói hivatkozások: MusicBrainz.",
   "records.title": "Lemezek",
   "artists.title": "Előadók",
   "artist.kitCount": {

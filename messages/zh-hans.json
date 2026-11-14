@@ -7,11 +7,9 @@
   "nav.about": "关于",
   "lang.label": "语言",
   "footer.disclaimer": "与 Valve 无关。Counter-Strike 以及所有音乐盒的名称、美术和音频均归 Valve 及各艺术家所有。",
-  "footer.short": "与 Valve 无关。",
   "footer.source": "源代码",
   "footer.licences": "许可证",
-  "footer.credits": "游戏数据来自 SteamDB GameTracking，翻译来自 ByMykel 的文件追踪仓库，艺术家链接来自 MusicBrainz。",
-  "root.title": "选择语言",
+  "footer.credits": "游戏数据来自 SteamDB GameTracking，翻译和物品数据来自 ByMykel 的文件追踪仓库和 CSGO-API，艺术家链接来自 MusicBrainz。",
   "records.title": "唱片",
   "artists.title": "艺术家",
   "artist.kitCount": {

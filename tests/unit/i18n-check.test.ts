@@ -9,7 +9,7 @@ const en = {
 
 test("a key that is not in English is an error", () => {
   const { errors } = checkCatalog("de", "de", { "nav.extra": "x" }, en);
-  expect(errors).toEqual(['de: "nav.extra" is not in en.json']);
+  expect(errors).toContain('de: "nav.extra" is not in en.json');
 });
 
 test("a plural must have exactly the categories the locale uses", () => {
@@ -34,10 +34,9 @@ test("a string where English has a plural is an error", () => {
   expect(errors.join()).toMatch(/must be a plural object/);
 });
 
-test("missing keys are warnings, not errors", () => {
-  const { errors, warnings } = checkCatalog("de", "de", {}, en);
-  expect(errors).toEqual([]);
-  expect(warnings).toHaveLength(2);
+test("I18N-12a a missing key is an error: every locale has every message", () => {
+  const { errors } = checkCatalog("de", "de", {}, en);
+  expect(errors).toHaveLength(2);
 });
 
 test("keys are flat and dot-separated; a value is a string or a plural object", () => {

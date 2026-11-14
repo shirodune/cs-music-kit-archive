@@ -7,11 +7,9 @@
   "nav.about": "소개",
   "lang.label": "언어",
   "footer.disclaimer": "Valve와 관련이 없습니다. Counter-Strike와 모든 음악 키트의 이름, 아트워크, 오디오는 Valve와 각 아티스트에게 있습니다.",
-  "footer.short": "Valve와 관련이 없습니다.",
   "footer.source": "소스 코드",
   "footer.licences": "라이선스",
-  "footer.credits": "게임 데이터: SteamDB GameTracking. 번역: ByMykel의 file tracker. 아티스트 링크: MusicBrainz.",
-  "root.title": "언어 선택",
+  "footer.credits": "게임 데이터: SteamDB GameTracking. 번역과 아이템 데이터: ByMykel의 file tracker와 CSGO-API. 아티스트 링크: MusicBrainz.",
   "records.title": "레코드",
   "artists.title": "아티스트",
   "artist.kitCount": {

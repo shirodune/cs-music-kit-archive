@@ -7,11 +7,9 @@
   "nav.about": "Tietoja",
   "lang.label": "Kieli",
   "footer.disclaimer": "Ei Valven kanssa yhteydessä. Counter-Strike sekä kaikkien musiikkipakkausten nimet, kuvitukset ja äänet kuuluvat Valvelle ja kyseisille artisteille.",
-  "footer.short": "Ei Valven kanssa yhteydessä.",
   "footer.source": "Lähdekoodi",
   "footer.licences": "Lisenssit",
-  "footer.credits": "Pelin tiedot: SteamDB GameTracking. Käännökset: ByMykelin file tracker. Artistilinkit: MusicBrainz.",
-  "root.title": "Valitse kieli",
+  "footer.credits": "Pelin tiedot: SteamDB GameTracking. Käännökset ja esinetiedot: ByMykelin file tracker ja CSGO-API. Artistilinkit: MusicBrainz.",
   "records.title": "Levyt",
   "artists.title": "Artistit",
   "artist.kitCount": {

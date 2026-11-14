@@ -34,7 +34,7 @@ export function cleanText(value: string, { singleLine }: { singleLine: boolean }
 const LEADING_SEPARATOR = /^\s*[,，:：、\-–—]\s*/u;
 const TRAILING_SEPARATOR = /\s*[,，:：、\-–—]\s*$/u;
 
-const escapeRegExp = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+export const escapeRegExp = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const QUOTE_PAIRS: Record<string, string> = { "《": "》", "「": "」", "『": "』", "“": "”", "«": "»", "„": "“" };
 

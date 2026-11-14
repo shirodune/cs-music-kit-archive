@@ -7,11 +7,9 @@
   "nav.about": "Om",
   "lang.label": "Språk",
   "footer.disclaimer": "Ikke tilknyttet Valve. Counter-Strike og navn, grafikk og lyd for alle musikksett tilhører Valve og de respektive artistene.",
-  "footer.short": "Ikke tilknyttet Valve.",
   "footer.source": "Kildekode",
   "footer.licences": "Lisenser",
-  "footer.credits": "Spilldata via SteamDB GameTracking. Oversettelser via ByMykels file tracker. Artistlenker via MusicBrainz.",
-  "root.title": "Velg språk",
+  "footer.credits": "Spilldata via SteamDB GameTracking. Oversettelser og gjenstandsdata via ByMykels file tracker og CSGO-API. Artistlenker via MusicBrainz.",
   "records.title": "Plater",
   "artists.title": "Artister",
   "artist.kitCount": {
