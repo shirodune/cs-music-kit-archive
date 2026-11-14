@@ -32,3 +32,8 @@ test("rejects unbalanced braces", () => {
   expect(() => parseVdf(`"a" {`)).toThrow(/unclosed/);
   expect(() => parseVdf(`}`)).toThrow(/unexpected closing/);
 });
+
+test("DATA-3 a __proto__ key is refused, so it cannot change any object's prototype", () => {
+  expect(() => parseVdf('"root" { "__proto__" { "polluted" "1" } }')).toThrow("__proto__");
+  expect(({} as Record<string, unknown>).polluted).toBeUndefined();
+});

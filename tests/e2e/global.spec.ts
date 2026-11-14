@@ -71,4 +71,9 @@ test.describe("every page", () => {
     if (box) expect(box.width / box.height).toBeCloseTo(256 / 198, 2);
     await expect(record.locator(".record-disc")).toHaveCount(1);
   });
+
+  test("PROD-2 the not-found page marks no section as current", async ({ page }) => {
+    await page.goto("/no-such-page/");
+    await expect(page.getByRole("navigation").getByRole("link", { name: "Records" })).not.toHaveClass(/text-signal/);
+  });
 });

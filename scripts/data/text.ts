@@ -42,7 +42,8 @@ const QUOTE_PAIRS: Record<string, string> = { "《": "》", "「": "」", "『":
 function outsideQuotes(text: string): boolean[] {
   const result: boolean[] = [];
   const closers: string[] = [];
-  for (const char of text) {
+  // By UTF-16 code unit, like the match indexes splitName looks up; every quote mark is one unit.
+  for (const char of text.split("")) {
     const closer = QUOTE_PAIRS[char];
     if (closers.length && char === closers[closers.length - 1]) {
       closers.pop();

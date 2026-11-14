@@ -65,3 +65,23 @@ test("PROD-1 the page body never scrolls sideways at phone width", async ({ page
     expect(overflow, path).toBeLessThanOrEqual(0);
   }
 });
+
+test("PROD-3 PROD-12 switching language keeps the selected kit and the kit an artist page came from", async ({
+  page,
+}) => {
+  await page.goto("/en/#bachram");
+  await page.getByRole("group").locator("summary").click();
+  await page.getByRole("link", { name: "Deutsch" }).click();
+  await expect(page).toHaveURL("/de/#bachram");
+  await page.goto("/en/artists/austin-wintory/?from=desert-fire");
+  await page.getByRole("group").locator("summary").click();
+  await page.getByRole("link", { name: "Deutsch" }).click();
+  await expect(page).toHaveURL("/de/artists/austin-wintory/?from=desert-fire");
+});
+
+test("PROD-29 og:locale is language_TERRITORY for script and region tags", async ({ page }) => {
+  await page.goto("/zh-hans/");
+  await expect(page.locator('meta[property="og:locale"]')).toHaveAttribute("content", "zh_CN");
+  await page.goto("/pt-br/");
+  await expect(page.locator('meta[property="og:locale"]')).toHaveAttribute("content", "pt_BR");
+});

@@ -56,7 +56,9 @@ function* tokenize(text: string): Generator<Token> {
 }
 
 function merge(target: VdfObject, key: string, value: VdfValue): void {
-  const existing = target[key];
+  // Assigning "__proto__" would change the object's prototype instead of adding a key.
+  if (key === "__proto__") throw new Error("VDF key __proto__ is not supported");
+  const existing = Object.hasOwn(target, key) ? target[key] : undefined;
   if (existing !== undefined && typeof existing === "object" && typeof value === "object") {
     for (const [k, v] of Object.entries(value)) merge(existing, k, v);
   } else {

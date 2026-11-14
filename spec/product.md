@@ -87,7 +87,7 @@ Sections, top to bottom:
 ## Artist page
 
 - PROD-18 Shows: name; introduction (optional); a fan of the artist's covers; facts card with number of kits (marked when it is the most of any artist), active years, first and latest kit.
-- PROD-19 Discography in order of release. Each row shows: year, cover, release date and batch, title (localized, plus the English title when it differs), collaborators ("with …") and the official description. Between two kits that are 3 or more years apart, a divider says "N years later".
+- PROD-19 Discography in order of release. Each row shows: year, cover, release date and batch, title (localized, plus the English title when it differs), collaborators ("with …") and the official description. Between two kits whose release years differ by 3 or more, a divider says "N years later", counting calendar years (2022 to 2025 is 3 years).
 - PROD-20 External links from MusicBrainz when known (DATA-4a), under the facts card: official site, Bandcamp, Spotify, Apple Music, SoundCloud, YouTube, then the artist's MusicBrainz page. Service names are not translated. An artist without an MBID shows no links.
 - PROD-21 Arriving from a kit page (`?from={kit-slug}`), the back link returns to that kit. Otherwise it goes to the Artists index.
 

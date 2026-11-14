@@ -23,7 +23,7 @@ type Editions = Record<string, { image: string | null }>;
 
 /** Width and height from the PNG header (IHDR, the first chunk). */
 function pngSize(bytes: Buffer, url: string): { width: number; height: number } {
-  if (bytes.subarray(0, 8).toString("hex") !== PNG_SIGNATURE) throw new Error(`not a PNG: ${url}`);
+  if (bytes.length < 24 || bytes.subarray(0, 8).toString("hex") !== PNG_SIGNATURE) throw new Error(`not a PNG: ${url}`);
   return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
 }
 
@@ -47,8 +47,10 @@ async function main(): Promise<void> {
     const response = await fetch(sourceUrl);
     if (!response.ok) throw new Error(`${response.status} ${sourceUrl}`);
     const bytes = Buffer.from(await response.arrayBuffer());
+    // Check before writing, so an error page never replaces a committed cover.
+    const size = pngSize(bytes, sourceUrl);
     await writeFile(new URL(`${name}.png`, COVERS), bytes);
-    covers[name] = { sourceUrl, ...pngSize(bytes, sourceUrl) };
+    covers[name] = { sourceUrl, ...size };
     fetched++;
   }
   await writeJson(indexUrl, covers);

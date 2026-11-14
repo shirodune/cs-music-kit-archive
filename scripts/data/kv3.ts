@@ -123,6 +123,8 @@ export function parseKv3(text: string): Kv3Object {
       const key = readKey();
       skip();
       if (text[i] !== "=") fail(`expected = after key ${key}`);
+      // Assigning "__proto__" would change the object's prototype instead of adding a key.
+      if (key === "__proto__") fail("key __proto__ is not supported");
       i++;
       object[key] = readValue();
     }

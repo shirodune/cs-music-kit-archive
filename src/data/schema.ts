@@ -4,7 +4,14 @@
 import { z } from "zod";
 
 const slug = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, "slug must be lowercase ASCII words joined by -");
-const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
+/** A real calendar date: 2023-02-30 has the right shape but is not one. */
+const isoDate = z
+  .string()
+  .regex(/^\d{4}-\d{2}-\d{2}$/)
+  .refine((d) => {
+    const date = new Date(`${d}T00:00:00Z`);
+    return !Number.isNaN(date.getTime()) && date.toISOString().startsWith(d);
+  }, "not a calendar date");
 
 // ---------- Curated input (data/curated/) ----------
 

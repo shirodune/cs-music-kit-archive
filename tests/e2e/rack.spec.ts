@@ -65,6 +65,26 @@ test.describe("records rack", () => {
     await expect(rack(page).getByRole("link", { name: /^Anti-Citizen by/ })).toBeVisible();
   });
 
+  test("PROD-8 after a drag that ends off a sleeve, the next click on a sleeve still selects it", async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await page.goto("/en/#bachram");
+    const box = await rack(page).boundingBox();
+    if (!box) throw new Error("no rack");
+    // Drag along the top edge of the stage, above the sleeves, so the release lands on no sleeve.
+    const y = box.y + 8;
+    await page.mouse.move(box.x + box.width / 2, y);
+    await page.mouse.down();
+    await page.mouse.move(box.x + box.width / 2 + 60, y, { steps: 5 });
+    await page.mouse.up();
+    // Back to Bachram without reloading, so the rack keeps its state, then click the same neighbour as above.
+    await page.evaluate(() => {
+      location.hash = "#bachram";
+    });
+    await expect(card(page).getByRole("heading")).toHaveText("Bachram");
+    await page.getByRole("button", { name: "Go to Anti-Citizen" }).click();
+    await expect(page).toHaveURL(/#anti-citizen$/);
+  });
+
   test("PROD-13 with reduced motion the rack moves at once", async ({ page }) => {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto("/en/#bachram");

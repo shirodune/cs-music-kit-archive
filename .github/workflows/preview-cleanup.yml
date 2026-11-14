@@ -8,6 +8,12 @@ on:
 permissions:
   contents: read
 
+# The same group as the pull request's CI runs (ci.yml), so a run still on its way to the preview step is cancelled
+# instead of recreating the preview after it is deleted.
+concurrency:
+  group: ci-pull_request-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   delete:
     name: Delete preview
@@ -22,7 +28,10 @@ jobs:
           node-version-file: .node-version
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm exec wrangler preview delete --name "pr-$PR" --skip-confirmation
+      # A pull request whose checks failed never got a preview; that is not an error.
+      - run: |
+          out=$(pnpm exec wrangler preview delete --name "pr-$PR" --skip-confirmation 2>&1) || grep -q "was not found" <<< "$out" || { echo "$out"; exit 1; }
+          echo "$out"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           PR: ${{ github.event.pull_request.number }}
