@@ -6,14 +6,13 @@
 // Usage: node scripts/game/download.ts [--depotdownloader <path>] [--all]
 
 import { execFileSync } from "node:child_process";
-import { existsSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 import { join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
 import { type Manifest, needsExtraction, wantedFiles } from "../audio/lib.ts";
 import { readJson } from "../data/json.ts";
-import { coverNeedsExtraction, coverTextures, readExtracted } from "./extracted.ts";
+import { coverNeedsExtraction, coverStored, coverTextures, readExtracted } from "./extracted.ts";
 import { archivePath, readVpkDir, type VpkEntry } from "./vpk.ts";
 
 const ROOT = fileURLToPath(new URL("../../", import.meta.url));
@@ -61,7 +60,7 @@ async function main(): Promise<void> {
   }
   for (const { name } of Object.values(itemsGame.music)) {
     const files = coverTextures(vpk, name);
-    const stored = name in textures && existsSync(join(ROOT, "public", "covers", "textures", `${name}.png`));
+    const stored = coverStored(name, textures);
     if (files.length === 0 || !(args.all || coverNeedsExtraction(files, stored, record))) continue;
     covers++;
     needed.push(...files.map(([, entry]) => entry));

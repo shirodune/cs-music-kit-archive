@@ -2,12 +2,13 @@
 // Compares data/upstream/game-files.json (the current game, written by `pnpm data:sync`) with
 // data/upstream/game-files-extracted.json (the game files the published audio and stored textures came from).
 // Exits with 1 when anything is new, changed or removed, so a workflow can tell.
-// `pnpm audio:extract` and `pnpm data:textures` record the files they read. `pnpm data:changes --accept` records
-// every current game file as extracted, for files that need no extraction (for example a removed one).
-// Usage: node scripts/data/changes.ts [--accept]
+// `pnpm audio:extract` and `pnpm data:textures` record the files they read and drop the ones gone from the game, so
+// the weekly sync's extraction step also clears a removed file. Nothing else writes the record: marking a file as
+// extracted without reading it would hide it from the extraction for good.
+// Usage: node scripts/data/changes.ts
 
 import { existsSync } from "node:fs";
-import { readJson, writeJson } from "./json.ts";
+import { readJson } from "./json.ts";
 
 type GameFiles = Record<string, { crc: string; bytes: number }>;
 
@@ -16,12 +17,6 @@ const CURRENT = new URL("game-files.json", UPSTREAM);
 const EXTRACTED = new URL("game-files-extracted.json", UPSTREAM);
 
 const current = await readJson<GameFiles>(CURRENT);
-
-if (process.argv.includes("--accept")) {
-  await writeJson(EXTRACTED, current);
-  console.log(`Recorded ${Object.keys(current).length} game files as extracted.`);
-  process.exit(0);
-}
 
 const extracted = existsSync(EXTRACTED) ? await readJson<GameFiles>(EXTRACTED) : {};
 const lines: string[] = [];

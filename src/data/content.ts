@@ -6,7 +6,7 @@ import { DEFAULT_LOCALE, LOCALE_SEGMENTS, type LocaleSegment } from "../i18n/loc
 
 /** Front matter (DATA-23). Every factual claim has a source (PROD-28), so there is at least one. */
 export const contentSchema = z.strictObject({
-  sources: z.array(z.strictObject({ title: z.string().min(1), url: z.url() })).min(1),
+  sources: z.array(z.strictObject({ title: z.string().min(1), url: z.url({ protocol: /^https?$/ }) })).min(1),
   translation: z.enum(["original", "human", "machine"]),
 });
 export type ContentData = z.infer<typeof contentSchema>;

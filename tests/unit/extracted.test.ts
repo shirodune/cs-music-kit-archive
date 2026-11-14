@@ -1,5 +1,11 @@
 import { describe, expect, test } from "vitest";
-import { coverNeedsExtraction, coverTextures, isRecorded, recordOf } from "../../scripts/game/extracted.ts";
+import {
+  coverNeedsExtraction,
+  coverTextures,
+  isRecorded,
+  pruneRecord,
+  recordOf,
+} from "../../scripts/game/extracted.ts";
 import type { VpkEntry } from "../../scripts/game/vpk.ts";
 
 const entry = (crc: number, length = 10): VpkEntry => ({
@@ -43,5 +49,14 @@ describe("record of extracted game files", () => {
     expect(coverNeedsExtraction(files, true, record)).toBe(false);
     expect(coverNeedsExtraction(files, false, record)).toBe(true);
     expect(coverNeedsExtraction(files, true, { "x/a.vtex_c": recordOf(entry(1)) })).toBe(true);
+  });
+
+  test("DATA-26 files gone from the game drop out of the record, such as a recompiled texture's old name", () => {
+    const record = { "old_15a5ebc9.vtex_c": recordOf(entry(1)), "kept.vsnd_c": recordOf(entry(2)) };
+    const vpk = new Map([
+      ["kept.vsnd_c", entry(2)],
+      ["new_9266f3b6.vtex_c", entry(3)],
+    ]);
+    expect(pruneRecord(record, vpk)).toEqual({ "kept.vsnd_c": recordOf(entry(2)) });
   });
 });

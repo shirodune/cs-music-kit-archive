@@ -78,4 +78,8 @@ describe("data:suggest-release", () => {
       ["ALRT, DOPAMINE HIT"],
     ]);
   });
+
+  test("DATA-14 a kit with no usable term matches nothing", () => {
+    expect(candidates([event("1", 12, 0, "[p]Fixed a bug.[/p]")], [])).toEqual([]);
+  });
 });

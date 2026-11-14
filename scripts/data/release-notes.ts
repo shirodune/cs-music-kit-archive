@@ -64,6 +64,8 @@ function matcher(terms: string[]): RegExp {
  * kit are usually fixes.
  */
 export function candidates(events: SteamEvent[], terms: string[]): Candidate[] {
+  // No terms would make an empty pattern, which matches every sentence.
+  if (terms.length === 0) return [];
   const names = matcher(terms);
   const scanned = events.map((event) => ({
     date: pacificDate(event.announcement_body.posttime),
