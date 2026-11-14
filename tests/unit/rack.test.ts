@@ -5,7 +5,7 @@ const years = ["2012", "2014", "2014", "2014", "2015", "2015", "2015", "2015", "
 const groups = yearGroups(years);
 
 describe("rack geometry", () => {
-  test("PROD-10 the year strip has one segment per year, with a minimum width", () => {
+  test("the year strip has one segment per year, with a minimum width", () => {
     expect(groups.map((g) => [g.year, g.first, g.count])).toEqual([
       ["2012", 0, 1],
       ["2014", 1, 3],
@@ -18,13 +18,13 @@ describe("rack geometry", () => {
     expect(groups.at(-1)?.to).toBe(1);
   });
 
-  test("PROD-10 scrubbing the strip and the playhead agree", () => {
+  test("scrubbing the strip and the playhead agree", () => {
     for (let i = 0; i < years.length; i++) expect(stripToKit(groups, kitToStrip(groups, i, years.length))).toBe(i);
     expect(stripToKit(groups, 0)).toBe(0);
     expect(stripToKit(groups, 0.9999)).toBe(9);
   });
 
-  test("PROD-11 arrow keys step, Page Up and Page Down jump a year, Home and End go to the ends", () => {
+  test("arrow keys step, Page Up and Page Down jump a year, Home and End go to the ends", () => {
     expect(keyTarget(groups, "ArrowRight", 2, 10)).toBe(3);
     expect(keyTarget(groups, "ArrowLeft", 0, 10)).toBe(0);
     expect(keyTarget(groups, "PageDown", 2, 10)).toBe(4);
@@ -36,7 +36,7 @@ describe("rack geometry", () => {
     expect(keyTarget(groups, "Tab", 6, 10)).toBeNull();
   });
 
-  test("PROD-8 the selected sleeve sits in the middle with more room on its right", () => {
+  test("the selected sleeve sits in the middle with more room on its right", () => {
     expect(sleeveOffset(0)).toBe(0);
     expect(sleeveOffset(1)).toBeGreaterThan(-sleeveOffset(-1));
     expect(sleeveOffset(2) - sleeveOffset(1)).toBe(270);

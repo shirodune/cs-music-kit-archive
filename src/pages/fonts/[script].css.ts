@@ -1,4 +1,4 @@
-// The @font-face rules of a script group's fallback faces, as one cacheable stylesheet (I18N-19).
+// The @font-face rules of a script group's fallback faces, as one cacheable stylesheet.
 // <Font> would inline them into every page: a CJK group has hundreds of rules (one per slice).
 // The CSS comes from the same module Astro's own <Font> component reads.
 

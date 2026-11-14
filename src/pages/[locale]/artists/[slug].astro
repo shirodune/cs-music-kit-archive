@@ -1,5 +1,5 @@
 ---
-// Artist page (spec: PROD-18 to PROD-21).
+// Artist page (spec: PROD-19 to PROD-21).
 
 import Cover from "../../../components/Cover.astro";
 import Writing from "../../../components/Writing.astro";
@@ -46,7 +46,7 @@ const facts = [
     : []),
 ];
 
-// Covers fanned out, overlapping more as the count grows (PROD-18).
+// Covers fanned out, overlapping more as the count grows.
 // The top cover, fully visible, loads first (PROD-36). None is lazy: they are all above the fold.
 const fanStep = kits.length > 1 ? Math.min(70, Math.floor(140 / (kits.length - 1))) : 0;
 

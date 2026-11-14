@@ -1,5 +1,5 @@
 ---
-// `/` picks a locale in the browser and moves on (spec: PROD-5, I18N-4).
+// `/` picks a locale in the browser and moves on (spec: PROD-5).
 // Without JavaScript the visitor sees the list of 28 locales.
 import { LOCALES } from "../i18n/locales.ts";
 import "../styles/global.css";
@@ -17,7 +17,7 @@ import "../styles/global.css";
     <link rel="alternate" hreflang="x-default" href={new URL("/en/", Astro.site).href} />
   </head>
   <body class="min-h-screen px-4 py-12 sm:px-10">
-    <h1 class="font-stencil text-2xl tracking-wide">CS MUSIC KIT ARCHIVE</h1>
+    <h1 class="font-stencil text-2xl tracking-wide uppercase">CS Music Kit Archive</h1>
     <p class="mt-2 font-mono text-xs uppercase tracking-widest text-muted">Choose your language</p>
     <ul class="mt-8 grid max-w-3xl grid-cols-[repeat(auto-fill,minmax(12rem,1fr))] gap-x-6">
       {

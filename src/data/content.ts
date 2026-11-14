@@ -30,7 +30,7 @@ export function pickContent<T extends Entry>(
 
 /**
  * What is wrong with a collection: a folder that is not a page, a file name that is not a locale, or a page whose
- * English original is missing (stories and introductions are written in English first, i18n "Text sources by kind").
+ * English original is missing (stories and introductions are written in English first, SPEC.md "Languages").
  */
 export function contentProblems(kind: string, entries: readonly Entry[], slugs: ReadonlySet<string>): string[] {
   const problems: string[] = [];

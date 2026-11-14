@@ -1,4 +1,4 @@
-// Pure geometry of the records rack (spec: PROD-7 to PROD-11). No DOM access, so it is unit-tested.
+// Pure geometry of the records rack (spec: PROD-7). No DOM access, so it is unit-tested.
 
 export interface YearGroup {
   year: string;
@@ -72,7 +72,7 @@ export function sleeveOffset(distance: number): number {
   return Math.min(d, 1) * 470 + Math.max(d - 1, 0) * 270;
 }
 
-/** Next selection for a key press (PROD-11), or null when the key does nothing. */
+/** Next selection for a key press, or null when the key does nothing. */
 export function keyTarget(groups: YearGroup[], key: string, current: number, kitCount: number): number | null {
   const y = yearOf(groups, current);
   const group = groups[y] as YearGroup;

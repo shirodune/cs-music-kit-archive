@@ -1,6 +1,6 @@
 // Finding the Steam events that announce a kit (spec: DATA-14, `pnpm data:suggest-release`).
 
-import { splitName } from "./text.ts";
+import { escapeRegExp, splitName } from "./text.ts";
 
 /** One CS2 event from the Steam events API, with the fields used here. */
 export interface SteamEvent {
@@ -50,7 +50,6 @@ export function kitTerms(name: string, boxName?: string): string[] {
 }
 
 const normalize = (text: string) => text.normalize("NFKC").replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
-const escapeRegExp = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 /** Whole words, in the case Valve writes them: the credit HEALTH, not "health". */
 function matcher(terms: string[]): RegExp {

@@ -6,7 +6,7 @@ import { LOCALES } from "../../src/i18n/locales.ts";
 const LATIN_FAMILIES = ["Saira Stencil One", "Saira Condensed", "IBM Plex Mono", "IBM Plex Sans"];
 
 describe("fonts", () => {
-  test("I18N-19 every stack starts with the Latin face, then the group fallback, then a generic family", () => {
+  test("every stack starts with the Latin face, then the group fallback, then a generic family", () => {
     for (const { script } of LOCALES) {
       for (const [role, stack] of Object.entries(fontStacks(script))) {
         const parts = stack.split(", ");
@@ -19,7 +19,7 @@ describe("fonts", () => {
     expect(fontStacks("zh-hans").stencil).toBe("var(--font-stencil-latin), var(--font-noto-sans-sc-900), sans-serif");
   });
 
-  test("I18N-19 the fallbacks load only their own script, never Latin", () => {
+  test("the fallbacks load only their own script, never Latin", () => {
     for (const family of FALLBACK_FAMILIES) {
       expect(
         family.subsets.filter((s) => s.startsWith("latin") || s === "vietnamese"),

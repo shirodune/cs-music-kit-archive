@@ -1,4 +1,4 @@
-// pnpm data:sync — fetch the upstream subsets we use into data/upstream/ (spec: data.md, DATA-3).
+// pnpm data:sync — fetch the upstream subsets we use into data/upstream/ (SPEC.md: DATA-3).
 // Every upstream repository is read at one commit, recorded in data/upstream/meta.json.
 // Usage: node scripts/data/sync.ts   (set GITHUB_TOKEN to raise the GitHub API rate limit)
 

@@ -1,5 +1,5 @@
-// Checks messages/{segment}.json against English (spec: I18N-11).
-// Errors fail the run. Missing keys are warnings, because English fallback is allowed.
+// Checks messages/{segment}.json against English (conventions in CLAUDE.md).
+// Any problem fails the run, a missing key included: every locale has every message (SPEC.md: I18N-12a).
 // Usage: node scripts/i18n-check.ts
 
 import { readFileSync } from "node:fs";
@@ -10,7 +10,6 @@ type Catalog = Record<string, Message>;
 
 export interface CheckResult {
   errors: string[];
-  warnings: string[];
 }
 
 const PLACEHOLDER = /\{(\w+)\}/g;
@@ -29,7 +28,6 @@ export function requiredCategories(tag: string): string[] {
 
 export function checkCatalog(segment: string, tag: string, catalog: Catalog, source: Catalog): CheckResult {
   const errors: string[] = [];
-  const warnings: string[] = [];
   const need = requiredCategories(tag);
 
   for (const [key, message] of Object.entries(catalog)) {
@@ -60,10 +58,10 @@ export function checkCatalog(segment: string, tag: string, catalog: Catalog, sou
   }
 
   for (const key of Object.keys(source)) {
-    if (!(key in catalog)) warnings.push(`${segment}: "${key}" is missing (English is shown)`);
+    if (!(key in catalog)) errors.push(`${segment}: "${key}" is missing`);
   }
 
-  return { errors, warnings };
+  return { errors };
 }
 
 function load(segment: string): Catalog {
@@ -72,28 +70,14 @@ function load(segment: string): Catalog {
 
 function main(): void {
   const source = load("en");
-  const result: CheckResult = { errors: [], warnings: [] };
+  const result: CheckResult = { errors: [] };
 
-  for (const { segment, tag } of LOCALES) {
-    const { errors, warnings } = checkCatalog(segment, tag, load(segment), source);
-    result.errors.push(...errors);
-    result.warnings.push(...warnings);
-  }
+  for (const { segment, tag } of LOCALES)
+    result.errors.push(...checkCatalog(segment, tag, load(segment), source).errors);
 
-  const missingByLocale = new Map<string, number>();
-  for (const w of result.warnings) {
-    const segment = w.slice(0, w.indexOf(":"));
-    missingByLocale.set(segment, (missingByLocale.get(segment) ?? 0) + 1);
-  }
-  if (missingByLocale.size) {
-    const summary = [...missingByLocale].map(([s, n]) => `${s} ${n}`).join(", ");
-    console.warn(`Missing keys (English fallback): ${summary}`);
-  }
   for (const e of result.errors) console.error(`error  ${e}`);
 
-  console.log(
-    `${LOCALES.length} locales checked: ${result.errors.length} errors, ${result.warnings.length} missing keys`,
-  );
+  console.log(`${LOCALES.length} locales checked: ${result.errors.length} errors`);
   if (result.errors.length) process.exitCode = 1;
 }
 

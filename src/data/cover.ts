@@ -1,4 +1,4 @@
-// Covers are stored as the original PNG (DATA-18, DATA-19); pages show WebP copies made at build time (DATA-18a).
+// Covers are stored as the original PNG (DATA-19); pages show WebP copies made at build time.
 // A texture cover also gets a small copy for thumbnails. No data imports here: the rack island imports this too.
 
 export interface CoverRef {

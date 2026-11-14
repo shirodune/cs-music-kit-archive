@@ -14,7 +14,7 @@ export default defineConfig({
     baseURL: `http://127.0.0.1:${port}`,
     trace: "retain-on-failure",
   },
-  // Desktop only; PROD-1 tests set a phone-sized viewport themselves (D-021).
+  // Desktop only; tests of phone layout set a phone-sized viewport themselves (D-021).
   projects: [{ name: "desktop", use: { ...devices["Desktop Chrome"] } }],
   webServer: {
     command: `wrangler dev --port ${port} --ip 127.0.0.1`,
