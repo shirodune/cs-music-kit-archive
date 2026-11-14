@@ -47,12 +47,19 @@ jobs:
           pnpm data:links
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      # A new kit fails the build until it has a release and credits (DATA-25). The pull request reports it.
+      # A new kit fails the build until it has a release and credits (DATA-25). The pull request reports it, with
+      # the release notes that may announce it.
       - name: Build
         id: build
         run: |
-          if pnpm data:build > "$RUNNER_TEMP/build.log" 2>&1; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; fi
-          cat "$RUNNER_TEMP/build.log"
+          : > "$RUNNER_TEMP/suggest.md"
+          if pnpm data:build > "$RUNNER_TEMP/build.log" 2>&1; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            pnpm -s data:suggest-release > "$RUNNER_TEMP/suggest.md" || echo "pnpm data:suggest-release failed." >> "$RUNNER_TEMP/suggest.md"
+          fi
+          cat "$RUNNER_TEMP/build.log" "$RUNNER_TEMP/suggest.md"
       - name: List changed game files
         id: changes
         run: |
@@ -84,7 +91,7 @@ jobs:
         run: |
           out="$RUNNER_TEMP/out"
           mkdir -p "$out"
-          cp "$RUNNER_TEMP/build.log" "$RUNNER_TEMP/changes.log" "$out/"
+          cp "$RUNNER_TEMP/build.log" "$RUNNER_TEMP/changes.log" "$RUNNER_TEMP/suggest.md" "$out/"
           git add -A
           git diff --cached --binary > "$out/changes.patch"
       - uses: actions/upload-artifact@v7
@@ -186,6 +193,12 @@ jobs:
               echo '```'
               tail -n 40 "$RUNNER_TEMP/sync-logs/build.log"
               echo '```'
+              echo
+              echo "## Release suggestions (pnpm data:suggest-release)"
+              echo
+              echo "Steam posts that may announce the new kits. Check each draft against its page before adding it to data/curated/releases.json (DATA-13, DATA-14)."
+              echo
+              cat "$RUNNER_TEMP/sync-logs/suggest.md"
             fi
           } > "$body"
 

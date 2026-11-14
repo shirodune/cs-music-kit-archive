@@ -25,6 +25,7 @@ pnpm verify       # lint, types, i18n check, unit tests, build, end-to-end tests
 | `pnpm i18n:check` | Checks `messages/` against English (plural forms, placeholders, unknown keys) |
 | `pnpm test` / `pnpm test:e2e` | Unit tests (Vitest) / end-to-end tests (Playwright, needs `pnpm build` first) |
 | `pnpm data:changes` | Lists the game's sound files and cover textures that changed since the site's audio and covers were extracted (needs `pnpm data:sync` first; spec DATA-26) |
+| `pnpm data:suggest-release` | For each kit without a release, lists the CS2 Steam posts since the newest release that name it, release notes first, with a draft entry for `data/curated/releases.json`; it never writes the file (spec DATA-14, DATA-25) |
 | `pnpm data:links` | Fetches artist links from MusicBrainz for every `musicbrainzId` in `data/curated/artists.json`; run `pnpm data:build` after |
 | `pnpm lighthouse` | Lighthouse desktop performance check (PROD-36, needs `pnpm build` first) |
 
@@ -55,7 +56,7 @@ pnpm data:build
 
 ## Weekly sync (maintainers)
 
-`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts the audio and cover textures of game files that changed, uploads the audio, and opens or updates the pull request on the branch `data-sync` with everything else, the covers included. One-time setup (done 2026-11-13):
+`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts the audio and cover textures of game files that changed, uploads the audio, and opens or updates the pull request on the branch `data-sync` with everything else, the covers included. When a new kit fails the build, the pull request lists the errors and the `pnpm data:suggest-release` output; add the release (checked against its page) and credits on that branch. One-time setup (done 2026-11-13):
 
 1. Create an R2 token limited to the bucket: in Cloudflare, R2 → Manage API tokens → Create Account API token, permission "Object Read & Write", bucket `cs-music-kit-audio`. It shows an Access Key ID and a Secret Access Key.
 2. In GitHub, create the environment `audio` (Settings → Environments), limit its deployment branches to `main`, and add the two values as the secrets `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`.
