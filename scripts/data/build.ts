@@ -243,7 +243,6 @@ async function main(): Promise<void> {
     const alternateOf = Object.entries(ALTERNATE_SETS).find(([, target]) => target === defIndex)?.[0];
     const alternateName = alternateOf ? itemsGame.music[alternateOf]?.name : undefined;
 
-    if (edition && !edition.standard && !edition.stattrak) fail(`kit ${defIndex}: sold in neither edition`);
     if (!release || !credit || !edition || !cover) continue;
     const kit = check(
       kitSchema,

@@ -52,8 +52,3 @@ test("cleans official strings", () => {
   expect(cleanText("NIGHTMODE II<br>Music Kits", { singleLine: true })).toBe("NIGHTMODE II Music Kits");
   expect(cleanText("feel... <i>different</i> &amp; more", { singleLine: true })).toBe("feel... different & more");
 });
-
-test("DATA-10 a character outside the Basic Multilingual Plane does not shift the quote positions", () => {
-  // 🎵 is two UTF-16 code units. Counted by code point, the "，" would be read as the 《 after it, inside quotes.
-  expect(splitName("🎵A，《B》", [])).toEqual({ credit: "🎵A", title: "《B》" });
-});

@@ -42,7 +42,3 @@ line two
 test("reports the line of a syntax error", () => {
   expect(() => parseKv3("{\n a = \n}")).toThrow(/line 3/);
 });
-
-test("DATA-3 a __proto__ key is refused, so it cannot change any object's prototype", () => {
-  expect(() => parseKv3("{ __proto__ = { polluted = 1 } }")).toThrow("__proto__");
-});

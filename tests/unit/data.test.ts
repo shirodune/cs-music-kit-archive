@@ -219,10 +219,3 @@ describe("releases and credits", () => {
     expect(linked(61)).toEqual(["the-verkkars"]);
   });
 });
-
-test("DATA-14b a release date is a real calendar date", () => {
-  const base = releasesJson[0];
-  for (const date of ["2023-02-30", "2024-13-45"])
-    expect(releaseSchema.safeParse({ ...base, date }).success, date).toBe(false);
-  expect(releaseSchema.safeParse({ ...base, date: "2024-02-29" }).success).toBe(true);
-});

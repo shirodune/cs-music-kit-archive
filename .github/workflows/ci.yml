@@ -133,8 +133,7 @@ jobs:
         run: |
           set -o pipefail
           pnpm exec wrangler preview --name "pr-$PR" | tee wrangler.log
-          # The first preview URL, whatever the layout of wrangler's summary.
-          echo "url=$(grep -o "https://pr-$PR-[^[:space:]]*workers\.dev" wrangler.log | head -n 1)" >> "$GITHUB_OUTPUT"
+          echo "url=$(sed -n 's/^Preview URL: //p' wrangler.log)" >> "$GITHUB_OUTPUT"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           PR: ${{ steps.pr.outputs.number }}

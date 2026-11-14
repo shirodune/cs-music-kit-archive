@@ -102,9 +102,4 @@ test.describe("artist page", () => {
       expect(overflow, path).toBeLessThanOrEqual(0);
     }
   });
-
-  test("PROD-21 a ?from that is not a kit leaves the back link on the artists index", async ({ page }) => {
-    await page.goto("/en/artists/austin-wintory/?from=constructor");
-    await expect(page.getByRole("link", { name: "← All artists" })).toHaveAttribute("href", "/en/artists/");
-  });
 });

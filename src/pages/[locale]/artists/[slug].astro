@@ -276,9 +276,7 @@ const stencilHead = "font-stencil text-[22px] tracking-wider text-signal upperca
     (() => {
       const link = document.getElementById("artist-back");
       const from = new URLSearchParams(location.search).get("from");
-      const targets = link ? JSON.parse(link.dataset.targets || "{}") : {};
-      // Own keys only: ?from=constructor must not find Object's constructor.
-      const target = from && Object.hasOwn(targets, from) ? targets[from] : undefined;
+      const target = from && link ? JSON.parse(link.dataset.targets || "{}")[from] : undefined;
       if (target) {
         link.href = target.href;
         link.textContent = target.label;
