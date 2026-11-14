@@ -40,7 +40,7 @@ if (lines.length === 0) {
   for (const line of lines) console.log(`  ${line}`);
   console.log(
     "Extract them with pnpm game:download, pnpm audio:extract, pnpm data:textures and pnpm audio:upload " +
-      "(the weekly sync does this; README, “Audio”).",
+      "(the weekly sync does this; docs/maintainers.md, “Audio”).",
   );
   process.exitCode = 1;
 }

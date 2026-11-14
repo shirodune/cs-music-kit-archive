@@ -3,7 +3,7 @@
 // files, then the manifest, then deletes files the manifest no longer lists. So the published manifest never names
 // a missing file; `pnpm data:sync` reads it.
 // Uploads through R2's S3-compatible API with a token limited to this one bucket ("Object Read & Write"), which
-// Wrangler cannot use. Set R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY to its S3 credentials (README, "Weekly sync").
+// Wrangler cannot use. Set R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY to its S3 credentials (docs/maintainers.md, "Weekly sync").
 
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
