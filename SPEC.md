@@ -13,7 +13,7 @@ The design reference is the claude.ai Design canvas "CS Music Kits Archive", pag
 Records (the rack, the home page), one page per kit, the artists index, one page per artist, About, and a not-found page, each in every language.
 
 - PROD-2 Header: site name; Records, Artists, About; then, after a divider, the language picker (opens the same page in another language, keeping the selected kit) and a GitHub icon linking to the source code (left out on phones; the footer has the link).
-- PROD-4 Footer: not affiliated with Valve; the names, artwork and audio belong to Valve and the artists; data credits; links to the source code and licences. The records page has no footer: it is the one-screen home page, and the header links to the source code.
+- PROD-4 Footer, one line: not affiliated with Valve, and links to the source code and licences. The records page has no footer: it is the one-screen home page, and the header links to the source code.
 - PROD-5 The root address opens the visitor's remembered language, else the best match for the browser, else English.
 - PROD-6 A page has the same address in every language apart from the language segment.
 - PROD-7 The rack holds every kit by release date. It works without JavaScript as a list of links.
@@ -37,7 +37,7 @@ Records (the rack, the home page), one page per kit, the artists index, one page
 - PROD-31 Accessible to WCAG 2.2 AA: readable contrast, every control usable by keyboard with a visible focus, text marked with its language.
 - PROD-36 Fast: a Lighthouse desktop performance score of 90 or more on the records, kit and artist pages. Only the rack, the player, the language picker and a few small scripts use JavaScript.
 - PROD-37 Visits are counted with Cloudflare Web Analytics only, on the live site only. No cookies, no banner.
-- PROD-38 About page: what the site is, where the data comes from, links to the code, issues and licences.
+- PROD-38 About page: what the site is; where the data comes from, crediting each source; that the names, artwork and audio belong to Valve and the artists; links to the code, issues and licences.
 
 ## Data
 

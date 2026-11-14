@@ -6,10 +6,9 @@
   "nav.artists": "藝人",
   "nav.about": "關於",
   "lang.label": "語言",
-  "footer.disclaimer": "與 Valve 無關。Counter-Strike 以及所有音樂包的名稱、美術與音訊均屬於 Valve 及各藝人所有。",
+  "footer.disclaimer": "與 Valve 無關。",
   "footer.source": "原始碼",
   "footer.licences": "授權條款",
-  "footer.credits": "遊戲資料來自 SteamDB GameTracking，翻譯和物品資料來自 ByMykel 的 file tracker 和 CSGO-API，藝人連結來自 MusicBrainz。",
   "records.title": "唱片",
   "artists.title": "藝人",
   "artist.kitCount": {
@@ -111,6 +110,7 @@
   "about.whatText": "一個非官方的檔案館，收錄 Counter-Strike 的全部音樂包。每款音樂包都有自己的頁面，列出完整曲目，可以直接在瀏覽器中播放，支援 CS2 的所有語言。",
   "about.data": "資料來源",
   "about.dataText": "曲目和封面直接取自遊戲檔案，原樣發布。音樂包名稱和描述是 Valve 在各語言中的官方文字。發售日期來自 Valve 的更新說明，每款音樂包的頁面都附有連結。藝人連結來自 MusicBrainz。網站每週檢查一次遊戲，收錄新增和變更的音樂包。",
+  "about.credits": "遊戲資料來自 SteamDB GameTracking，翻譯和物品資料來自 ByMykel 的 file tracker 和 CSGO-API，藝人連結來自 MusicBrainz。",
   "about.source": "開放原始碼",
   "about.sourceText": "程式碼採用 MIT 授權，我們整理的資料採用 CC0，我們撰寫的文字採用 CC BY 4.0。名稱、圖片和音訊歸 Valve 及各位藝人所有。",
   "about.report": "回報錯誤"

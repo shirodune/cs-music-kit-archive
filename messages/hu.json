@@ -6,10 +6,9 @@
   "nav.artists": "Előadók",
   "nav.about": "Rólunk",
   "lang.label": "Nyelv",
-  "footer.disclaimer": "Nem áll kapcsolatban a Valve-val. A Counter-Strike, valamint az összes zenekészlet neve, grafikája és hanganyaga a Valve és az adott előadók tulajdona.",
+  "footer.disclaimer": "Nem áll kapcsolatban a Valve-val.",
   "footer.source": "Forráskód",
   "footer.licences": "Licencek",
-  "footer.credits": "Játékadatok: SteamDB GameTracking. Fordítások és tárgyadatok: ByMykel file trackere és CSGO-API-ja. Előadói hivatkozások: MusicBrainz.",
   "records.title": "Lemezek",
   "artists.title": "Előadók",
   "artist.kitCount": {
@@ -116,6 +115,7 @@
   "about.whatText": "Nem hivatalos archívum a Counter-Strike összes zenekészletéről. Minden készletnek saját oldala van a teljes számlistával, amely a böngészőben lejátszható, a CS2 összes nyelvén.",
   "about.data": "Honnan származnak az adatok",
   "about.dataText": "A számok és a borítók a játék saját fájljaiból származnak, és változatlanul jelennek meg. A készletek nevei és leírásai a Valve saját szövegei minden nyelven. A megjelenési dátumok a Valve frissítési jegyzeteiből származnak, minden készlet oldalán hivatkozással. Az előadók hivatkozásai a MusicBrainzről származnak. Az oldal hetente ellenőrzi a játékot új és megváltozott készletek után kutatva.",
+  "about.credits": "Játékadatok: SteamDB GameTracking. Fordítások és tárgyadatok: ByMykel file trackere és CSGO-API-ja. Előadói hivatkozások: MusicBrainz.",
   "about.source": "Nyílt forráskód",
   "about.sourceText": "A kód MIT-licenc alatt áll, az általunk gyűjtött adatok CC0, a saját szövegeink CC BY 4.0 alatt. A nevek, képek és hangok a Valve és az előadók tulajdonát képezik.",
   "about.report": "Hiba jelzése"

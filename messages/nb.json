@@ -6,10 +6,9 @@
   "nav.artists": "Artister",
   "nav.about": "Om",
   "lang.label": "Språk",
-  "footer.disclaimer": "Ikke tilknyttet Valve. Counter-Strike og navn, grafikk og lyd for alle musikksett tilhører Valve og de respektive artistene.",
+  "footer.disclaimer": "Ikke tilknyttet Valve.",
   "footer.source": "Kildekode",
   "footer.licences": "Lisenser",
-  "footer.credits": "Spilldata via SteamDB GameTracking. Oversettelser og gjenstandsdata via ByMykels file tracker og CSGO-API. Artistlenker via MusicBrainz.",
   "records.title": "Plater",
   "artists.title": "Artister",
   "artist.kitCount": {
@@ -116,6 +115,7 @@
   "about.whatText": "Et uoffisielt arkiv over alle musikksett i Counter-Strike. Hvert sett har sin egen side med hele sporlisten, som kan spilles av i nettleseren, på alle språkene i CS2.",
   "about.data": "Hvor dataene kommer fra",
   "about.dataText": "Spor og omslag hentes fra spillets egne filer og publiseres uendret. Navn og beskrivelser av sett er Valves egne tekster på hvert språk. Utgivelsesdatoer kommer fra Valves oppdateringsnotater, med lenke på hvert setts side. Lenker til artister kommer fra MusicBrainz. Hver uke sjekker nettstedet spillet for nye og endrede sett.",
+  "about.credits": "Spilldata via SteamDB GameTracking. Oversettelser og gjenstandsdata via ByMykels file tracker og CSGO-API. Artistlenker via MusicBrainz.",
   "about.source": "Åpen kildekode",
   "about.sourceText": "Koden er under MIT-lisensen, våre data under CC0 og våre tekster under CC BY 4.0. Navn, grafikk og lyd tilhører Valve og artistene.",
   "about.report": "Meld fra om en feil"

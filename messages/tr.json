@@ -6,10 +6,9 @@
   "nav.artists": "Sanatçılar",
   "nav.about": "Hakkında",
   "lang.label": "Dil",
-  "footer.disclaimer": "Valve ile bağlantılı değildir. Counter-Strike ile tüm müzik kitlerinin adları, görselleri ve sesleri Valve'a ve ilgili sanatçılara aittir.",
+  "footer.disclaimer": "Valve ile bağlantılı değildir.",
   "footer.source": "Kaynak kodu",
   "footer.licences": "Lisanslar",
-  "footer.credits": "Oyun verileri SteamDB GameTracking'den. Çeviriler ve eşya verileri ByMykel'in file tracker'ından ve CSGO-API'sinden. Sanatçı bağlantıları MusicBrainz'den.",
   "records.title": "Plaklar",
   "artists.title": "Sanatçılar",
   "artist.kitCount": {
@@ -116,6 +115,7 @@
   "about.whatText": "Counter-Strike'ın tüm müzik kitlerini toplayan resmî olmayan bir arşiv. Her kitin, tarayıcıda çalınabilen tam parça listesini içeren kendi sayfası vardır; CS2'nin tüm dillerinde.",
   "about.data": "Veriler nereden geliyor",
   "about.dataText": "Parçalar ve kapaklar oyunun kendi dosyalarından alınır ve değiştirilmeden yayımlanır. Kit adları ve açıklamaları, her dilde Valve'ın kendi metinleridir. Çıkış tarihleri Valve'ın güncelleme notlarından gelir ve her kitin sayfasında bağlantısı vardır. Sanatçı bağlantıları MusicBrainz'den gelir. Site her hafta oyunu yeni ve değişen kitler için kontrol eder.",
+  "about.credits": "Oyun verileri SteamDB GameTracking'den. Çeviriler ve eşya verileri ByMykel'in file tracker'ından ve CSGO-API'sinden. Sanatçı bağlantıları MusicBrainz'den.",
   "about.source": "Açık kaynak",
   "about.sourceText": "Kod MIT lisansı, derlediğimiz veriler CC0, yazdığımız metinler CC BY 4.0 kapsamındadır. Adlar, görseller ve sesler Valve'a ve sanatçılara aittir.",
   "about.report": "Hata bildir"

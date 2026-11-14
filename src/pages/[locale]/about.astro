@@ -44,6 +44,7 @@ const links = [
         </h2>
         <div class="max-w-[720px] min-w-0 flex-[999_1_560px] text-lg leading-relaxed text-body">
           <p>{s.text}</p>
+          {s.id === "data" && <p class="mt-4 font-mono text-sm text-muted">{t("about.credits")}</p>}
           {s.id === "source" && (
             <ul class="mt-6 flex list-none flex-wrap gap-x-8 gap-y-2 p-0 font-mono text-sm">
               {links.map((link) => (

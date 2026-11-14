@@ -6,10 +6,9 @@
   "nav.artists": "아티스트",
   "nav.about": "소개",
   "lang.label": "언어",
-  "footer.disclaimer": "Valve와 관련이 없습니다. Counter-Strike와 모든 음악 키트의 이름, 아트워크, 오디오는 Valve와 각 아티스트에게 있습니다.",
+  "footer.disclaimer": "Valve와 관련이 없습니다.",
   "footer.source": "소스 코드",
   "footer.licences": "라이선스",
-  "footer.credits": "게임 데이터: SteamDB GameTracking. 번역과 아이템 데이터: ByMykel의 file tracker와 CSGO-API. 아티스트 링크: MusicBrainz.",
   "records.title": "레코드",
   "artists.title": "아티스트",
   "artist.kitCount": {
@@ -111,6 +110,7 @@
   "about.whatText": "Counter-Strike의 모든 음악 키트를 모은 비공식 아카이브입니다. 키트마다 전체 트랙 목록이 있는 페이지가 있고, 브라우저에서 바로 재생할 수 있으며, CS2의 모든 언어를 지원합니다.",
   "about.data": "데이터 출처",
   "about.dataText": "트랙과 커버는 게임 파일에서 가져와 그대로 공개합니다. 키트 이름과 설명은 각 언어로 된 Valve의 공식 문구입니다. 출시일은 Valve의 업데이트 노트를 따르며, 각 키트 페이지에 링크가 있습니다. 아티스트 링크는 MusicBrainz에서 가져옵니다. 매주 게임을 확인해 새 키트와 변경 사항을 반영합니다.",
+  "about.credits": "게임 데이터: SteamDB GameTracking. 번역과 아이템 데이터: ByMykel의 file tracker와 CSGO-API. 아티스트 링크: MusicBrainz.",
   "about.source": "오픈 소스",
   "about.sourceText": "코드는 MIT 라이선스, 정리한 데이터는 CC0, 직접 쓴 글은 CC BY 4.0입니다. 이름, 아트워크, 오디오는 Valve와 각 아티스트에게 있습니다.",
   "about.report": "오류 신고"

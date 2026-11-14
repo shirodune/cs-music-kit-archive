@@ -6,10 +6,9 @@
   "nav.artists": "アーティスト",
   "nav.about": "概要",
   "lang.label": "言語",
-  "footer.disclaimer": "Valve とは無関係です。Counter-Strike および全ミュージックキットの名称、アートワーク、音源は Valve と各アーティストに帰属します。",
+  "footer.disclaimer": "Valve とは無関係です。",
   "footer.source": "ソースコード",
   "footer.licences": "ライセンス",
-  "footer.credits": "ゲームデータ：SteamDB GameTracking。翻訳とアイテムデータ：ByMykel の file tracker と CSGO-API。アーティストのリンク：MusicBrainz。",
   "records.title": "レコード",
   "artists.title": "アーティスト",
   "artist.kitCount": {
@@ -111,6 +110,7 @@
   "about.whatText": "Counter-Strike のすべてのミュージックキットを集めた、非公式のアーカイブです。キットごとにページがあり、全トラックをブラウザで再生できます。CS2 のすべての言語に対応しています。",
   "about.data": "データの出典",
   "about.dataText": "トラックとカバーはゲームのファイルから取り出し、そのまま公開しています。キット名と説明文は各言語の Valve 公式テキストです。発売日は Valve のリリースノートに基づき、各キットのページにリンクがあります。アーティストのリンクは MusicBrainz から取得しています。毎週ゲームを確認し、新しいキットや変更を反映しています。",
+  "about.credits": "ゲームデータ：SteamDB GameTracking。翻訳とアイテムデータ：ByMykel の file tracker と CSGO-API。アーティストのリンク：MusicBrainz。",
   "about.source": "オープンソース",
   "about.sourceText": "コードは MIT ライセンス、整理したデータは CC0、執筆した文章は CC BY 4.0 です。名称、アートワーク、音声は Valve と各アーティストに帰属します。",
   "about.report": "誤りを報告"

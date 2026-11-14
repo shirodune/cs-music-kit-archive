@@ -6,10 +6,9 @@
   "nav.artists": "Artisti",
   "nav.about": "Info",
   "lang.label": "Lingua",
-  "footer.disclaimer": "Non affiliato a Valve. Counter-Strike e i nomi, le illustrazioni e l'audio di tutti i temi musicali appartengono a Valve e ai rispettivi artisti.",
+  "footer.disclaimer": "Non affiliato a Valve.",
   "footer.source": "Codice sorgente",
   "footer.licences": "Licenze",
-  "footer.credits": "Dati di gioco tramite SteamDB GameTracking. Traduzioni e dati degli oggetti tramite il file tracker e la CSGO-API di ByMykel. Link agli artisti tramite MusicBrainz.",
   "records.title": "Dischi",
   "artists.title": "Artisti",
   "artist.kitCount": {
@@ -121,6 +120,7 @@
   "about.whatText": "Un archivio non ufficiale di tutti i kit musicali di Counter-Strike. Ogni kit ha la sua pagina con l'elenco completo delle tracce, ascoltabili nel browser, in tutte le lingue di CS2.",
   "about.data": "Da dove vengono i dati",
   "about.dataText": "Tracce e copertine provengono dai file del gioco e sono pubblicate senza modifiche. Nomi e descrizioni dei kit sono i testi di Valve in ogni lingua. Le date di uscita vengono dalle note di aggiornamento di Valve, linkate nella pagina di ogni kit. I link degli artisti vengono da MusicBrainz. Ogni settimana il sito controlla il gioco per kit nuovi o modificati.",
+  "about.credits": "Dati di gioco tramite SteamDB GameTracking. Traduzioni e dati degli oggetti tramite il file tracker e la CSGO-API di ByMykel. Link agli artisti tramite MusicBrainz.",
   "about.source": "Open source",
   "about.sourceText": "Il codice è sotto licenza MIT, i nostri dati sotto CC0 e i nostri testi sotto CC BY 4.0. Nomi, immagini e audio appartengono a Valve e agli artisti.",
   "about.report": "Segnala un errore"

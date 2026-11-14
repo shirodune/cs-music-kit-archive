@@ -117,18 +117,15 @@ const githubMark =
       !fill && (
         <footer class="relative mt-24">
           <div aria-hidden="true" class="hazard h-3.5" />
-          <div class="mx-auto flex max-w-[1360px] flex-col gap-3 px-4 py-10 font-mono text-xs leading-relaxed text-muted sm:px-10">
-            <p class="max-w-[72ch]">{t("footer.disclaimer")}</p>
-            <p class="max-w-[72ch]">{t("footer.credits")}</p>
-            <p class="flex gap-6">
-              <a href={REPOSITORY} class="underline underline-offset-4">
-                {t("footer.source")}
-              </a>
-              <a href={`${REPOSITORY}/blob/main/NOTICE`} class="underline underline-offset-4">
-                {t("footer.licences")}
-              </a>
-            </p>
-          </div>
+          <p class="mx-auto my-0 flex max-w-[1360px] flex-wrap gap-x-6 gap-y-2 px-4 py-8 font-mono text-xs leading-relaxed text-muted sm:px-10">
+            <span>{t("footer.disclaimer")}</span>
+            <a href={REPOSITORY} class="underline underline-offset-4">
+              {t("footer.source")}
+            </a>
+            <a href={`${REPOSITORY}/blob/main/NOTICE`} class="underline underline-offset-4">
+              {t("footer.licences")}
+            </a>
+          </p>
         </footer>
       )
     }

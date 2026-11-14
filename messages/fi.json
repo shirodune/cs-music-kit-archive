@@ -6,10 +6,9 @@
   "nav.artists": "Artistit",
   "nav.about": "Tietoja",
   "lang.label": "Kieli",
-  "footer.disclaimer": "Ei Valven kanssa yhteydessä. Counter-Strike sekä kaikkien musiikkipakkausten nimet, kuvitukset ja äänet kuuluvat Valvelle ja kyseisille artisteille.",
+  "footer.disclaimer": "Ei Valven kanssa yhteydessä.",
   "footer.source": "Lähdekoodi",
   "footer.licences": "Lisenssit",
-  "footer.credits": "Pelin tiedot: SteamDB GameTracking. Käännökset ja esinetiedot: ByMykelin file tracker ja CSGO-API. Artistilinkit: MusicBrainz.",
   "records.title": "Levyt",
   "artists.title": "Artistit",
   "artist.kitCount": {
@@ -116,6 +115,7 @@
   "about.whatText": "Epävirallinen arkisto kaikista Counter-Striken musiikkipaketeista. Jokaisella paketilla on oma sivu, jolla on koko kappalelista kuunneltavana selaimessa, kaikilla CS2:n kielillä.",
   "about.data": "Mistä tiedot tulevat",
   "about.dataText": "Kappaleet ja kansikuvat otetaan pelin omista tiedostoista ja julkaistaan muuttamattomina. Pakettien nimet ja kuvaukset ovat Valven omia tekstejä kullakin kielellä. Julkaisupäivät tulevat Valven päivitysmuistiinpanoista, joihin on linkki kunkin paketin sivulla. Artistien linkit tulevat MusicBrainzista. Sivusto tarkistaa pelin joka viikko uusien ja muuttuneiden pakettien varalta.",
+  "about.credits": "Pelin tiedot: SteamDB GameTracking. Käännökset ja esinetiedot: ByMykelin file tracker ja CSGO-API. Artistilinkit: MusicBrainz.",
   "about.source": "Avoin lähdekoodi",
   "about.sourceText": "Koodi on MIT-lisenssin alainen, keräämämme tiedot CC0 ja kirjoittamamme tekstit CC BY 4.0. Nimet, kuvat ja äänet kuuluvat Valvelle ja artisteille.",
   "about.report": "Ilmoita virheestä"

@@ -6,10 +6,9 @@
   "nav.artists": "Umělci",
   "nav.about": "O webu",
   "lang.label": "Jazyk",
-  "footer.disclaimer": "Není spojen se společností Valve. Counter-Strike a názvy, grafika a zvuk všech hudebních balíčků patří společnosti Valve a příslušným umělcům.",
+  "footer.disclaimer": "Není spojen se společností Valve.",
   "footer.source": "Zdrojový kód",
   "footer.licences": "Licence",
-  "footer.credits": "Herní data ze SteamDB GameTracking. Překlady a data předmětů z file trackeru a CSGO-API od ByMykela. Odkazy na umělce z MusicBrainz.",
   "records.title": "Desky",
   "artists.title": "Umělci",
   "artist.kitCount": {
@@ -126,6 +125,7 @@
   "about.whatText": "Neoficiální archiv všech hudebních sad ze hry Counter-Strike. Každá sada má vlastní stránku s úplným seznamem skladeb, které lze přehrát v prohlížeči, ve všech jazycích CS2.",
   "about.data": "Odkud pocházejí data",
   "about.dataText": "Skladby a obaly pocházejí přímo ze souborů hry a jsou zveřejněny beze změn. Názvy a popisy sad jsou texty společnosti Valve v každém jazyce. Data vydání pocházejí z poznámek k aktualizacím od Valve, odkázaných na stránce každé sady. Odkazy na umělce pocházejí z MusicBrainz. Web každý týden kontroluje hru kvůli novým a změněným sadám.",
+  "about.credits": "Herní data ze SteamDB GameTracking. Překlady a data předmětů z file trackeru a CSGO-API od ByMykela. Odkazy na umělce z MusicBrainz.",
   "about.source": "Otevřený kód",
   "about.sourceText": "Kód je pod licencí MIT, naše data pod CC0 a naše texty pod CC BY 4.0. Názvy, grafika a zvuk patří společnosti Valve a umělcům.",
   "about.report": "Nahlásit chybu"

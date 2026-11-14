@@ -4,12 +4,10 @@ import { LOCALES } from "../../src/i18n/locales.ts";
 const repository = "https://github.com/shirodune/cs-music-kit-archive";
 
 test.describe("every page", () => {
-  test("PROD-4 the footer has the disclaimer, data credits and links", async ({ page }) => {
+  test("PROD-4 the footer is one line: not affiliated with Valve, and links", async ({ page }) => {
     await page.goto("/en/artists/");
     const footer = page.locator("body > footer");
-    await expect(footer).toContainText("Not affiliated with Valve.");
-    await expect(footer).toContainText("belong to Valve and the respective artists.");
-    await expect(footer).toContainText("MusicBrainz");
+    await expect(footer).toHaveText(/^Not affiliated with Valve\.\s*Source code\s*Licences$/);
     await expect(footer.getByRole("link", { name: "Source code" })).toHaveAttribute("href", repository);
     await expect(footer.getByRole("link", { name: "Licences" })).toHaveAttribute(
       "href",
