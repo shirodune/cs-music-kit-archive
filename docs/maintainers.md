@@ -1,13 +1,13 @@
 # Maintainers
 
-How the data, audio and covers are kept up to date. Contributors do not need any of this: `pnpm verify` works without game files or credentials. The specification in [`spec/`](../spec/README.md) explains why things are done this way.
+How the data, audio and covers are kept up to date. Contributors do not need any of this: `pnpm verify` works without game files or credentials. [`SPEC.md`](../SPEC.md) has the rules and why things are done this way.
 
 ## Data commands
 
 | Command | What it does |
 |---|---|
 | `pnpm data:sync` | Fetches the upstream data: Valve's game data from SteamDB GameTracking, the 28 languages from ByMykel's file tracker, item data from ByMykel's CSGO-API and the published audio manifest (spec DATA-3) |
-| `pnpm data:covers` | Downloads each kit's Steam icon whose URL changed (spec DATA-18) |
+| `pnpm data:covers` | Downloads each kit's Steam icon whose URL changed (spec DATA-19) |
 | `pnpm data:build` | Validates the curated and upstream data and writes `data/generated/` (never edit that folder by hand) |
 | `pnpm data:changes` | Lists the game's sound files and cover textures that changed since the site's audio and covers were extracted (needs `pnpm data:sync` first; spec DATA-26) |
 | `pnpm data:suggest-release` | For each kit without a release, lists the CS2 Steam posts since the newest release that name it, release notes first, with a draft entry for `data/curated/releases.json`; it never writes the file (spec DATA-14, DATA-25) |

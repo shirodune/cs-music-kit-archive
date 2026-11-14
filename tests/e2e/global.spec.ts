@@ -4,26 +4,16 @@ import { LOCALES } from "../../src/i18n/locales.ts";
 const repository = "https://github.com/shirodune/cs-music-kit-archive";
 
 test.describe("every page", () => {
-  test("PROD-4 the footer has the disclaimer, data credits and links; the records page has the one-line version", async ({
-    page,
-  }) => {
+  test("PROD-4 the footer is one line: not affiliated with Valve, and links", async ({ page }) => {
     await page.goto("/en/artists/");
     const footer = page.locator("body > footer");
-    await expect(footer).toContainText("Not affiliated with or endorsed by Valve.");
-    await expect(footer).toContainText("belong to Valve and the respective artists.");
-    await expect(footer).toContainText("MusicBrainz");
+    await expect(footer).toHaveText(/^Not affiliated with Valve\.\s*Source code\s*Licences$/);
     await expect(footer.getByRole("link", { name: "Source code" })).toHaveAttribute("href", repository);
     await expect(footer.getByRole("link", { name: "Licences" })).toHaveAttribute(
       "href",
       `${repository}/blob/main/NOTICE`,
     );
     await expect(footer).not.toContainText("@");
-
-    await page.goto("/en/");
-    const short = page.locator("body > footer");
-    await expect(short).toContainText("Unofficial fan project. Not affiliated with or endorsed by Valve.");
-    await expect(short).not.toContainText("respective artists");
-    await expect(short.getByRole("link")).toHaveCount(2);
   });
 
   test("PROD-6 I18N-3 every route starts with its locale and keeps the same slug in every locale", async ({ page }) => {
@@ -38,20 +28,20 @@ test.describe("every page", () => {
     for (const href of internal) expect(href, href).toMatch(/^\/ru\//);
   });
 
-  test("I18N-16 uppercase comes from CSS; the text keeps its case", async ({ page }) => {
+  test("uppercase comes from CSS; the text keeps its case", async ({ page }) => {
     await page.goto("/de/artists/");
     const nav = page.getByRole("navigation").getByRole("link", { name: "Künstler" });
     await expect(nav).toHaveText("Künstler");
     await expect(nav).toHaveCSS("text-transform", "uppercase");
   });
 
-  test("I18N-20 fonts are never synthesised", async ({ page }) => {
+  test("fonts are never synthesised", async ({ page }) => {
     await page.goto("/zh-hans/kits/desert-fire/");
     for (const selector of ["html", "h1", "h2"])
       await expect(page.locator(selector).first()).toHaveCSS("font-synthesis", "none");
   });
 
-  test("I18N-12 no message catalogue ships to the browser; the rack gets its strings as props", async ({ page }) => {
+  test("no message catalogue ships to the browser; the rack gets its strings as props", async ({ page }) => {
     const scripts: string[] = [];
     page.on("response", async (response) => {
       if (response.request().resourceType() === "script" && response.url().startsWith("http://127.0.0.1"))
@@ -75,5 +65,25 @@ test.describe("every page", () => {
   test("PROD-2 the not-found page marks no section as current", async ({ page }) => {
     await page.goto("/no-such-page/");
     await expect(page.getByRole("navigation").getByRole("link", { name: "Records" })).not.toHaveClass(/text-signal/);
+  });
+
+  test("the header, the records page and the other pages share one left edge", async ({ page }) => {
+    for (const width of [1024, 1440, 1920]) {
+      await page.setViewportSize({ width, height: 900 });
+      const edges: number[] = [];
+      await page.goto("/en/about/");
+      edges.push(
+        await page
+          .locator("body > header a")
+          .first()
+          .evaluate((el) => el.getBoundingClientRect().left),
+      );
+      edges.push(await page.locator("main h1").evaluate((el) => el.getBoundingClientRect().left));
+      await page.goto("/en/");
+      edges.push(
+        await page.getByRole("region", { name: "Record label" }).evaluate((el) => el.getBoundingClientRect().left),
+      );
+      expect(new Set(edges.map(Math.round)).size, `${width}: ${edges}`).toBe(1);
+    }
   });
 });

@@ -5,7 +5,7 @@
 //    the archives that hold new or changed tracks are needed. --all reads every track again.
 // 2. Each track's compiled sound is copied out of the VPK, checked against its CRC, to audio/vsnd/{internalName}/.
 // 3. Source2Viewer-CLI decompiles them to audio/out/{internalName}/{file}.mp3 or .wav: the game's own data, never
-//    re-encoded (DATA-20a). Valve strips the header from WAV files; Source2Viewer writes the standard one back.
+//    re-encoded (DATA-20). Valve strips the header from WAV files; Source2Viewer writes the standard one back.
 // 4. Writes data/upstream/audio-manifest.json, and records the CRC and size of every sound file it read in
 //    data/upstream/game-files-extracted.json (DATA-26). Next, pnpm audio:upload.
 // Needs Source2Viewer-CLI and ffprobe (part of ffmpeg). audio/ is in .gitignore: audio never goes into git (DATA-2).

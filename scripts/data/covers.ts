@@ -1,4 +1,4 @@
-// pnpm data:covers — download each kit's Steam CDN icon and store the original PNG (spec: DATA-18).
+// pnpm data:covers — download each kit's Steam CDN icon and store the original PNG (spec: DATA-19, the icon is the fallback).
 // Writes public/covers/{internalName}.png and data/upstream/covers.json (size and source URL).
 // Reads the snapshot written by `pnpm data:sync`; only covers whose source URL changed are fetched again.
 // Usage: node scripts/data/covers.ts

@@ -1,4 +1,4 @@
-// Checks on the generated data (spec: data.md). Run `pnpm data:build` first.
+// Checks on the generated data (SPEC.md, "Data"). Run `pnpm data:build` first.
 import { execFileSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { describe, expect, test } from "vitest";
@@ -11,7 +11,7 @@ import manifest from "../../data/upstream/audio-manifest.json";
 import gameFiles from "../../data/upstream/game-files.json";
 import itemsGame from "../../data/upstream/items-game.json";
 import meta from "../../data/upstream/meta.json";
-import { generatedArtistSchema, kitSchema, releaseSchema } from "../../src/data/schema.ts";
+import { generatedArtistSchema, kitSchema, releaseSchema, VALVE_HOSTS } from "../../src/data/schema.ts";
 
 const kits = kitsJson.map((k) => kitSchema.parse(k));
 const artists = artistsJson.map((a) => generatedArtistSchema.parse(a));
@@ -44,7 +44,7 @@ describe("kit set", () => {
 });
 
 describe("kits", () => {
-  test("DATA-18 DATA-19 every kit has a stored cover with its size, the game's texture when extracted", () => {
+  test("DATA-19 every kit has a stored cover with its size, the game's texture when extracted", () => {
     for (const kit of kits) {
       const folder = kit.cover.source === "texture" ? "/covers/textures" : "/covers";
       expect(kit.cover.path, kit.slug).toBe(`${folder}/${kit.internalName}.png`);
@@ -117,7 +117,7 @@ describe("kits", () => {
     for (const a of artists) expect(a.kits.length, a.id).toBeGreaterThan(0);
   });
 
-  test("DATA-4a DATA-15a artists with an MBID link to MusicBrainz last, one link of each kind", () => {
+  test("PROD-20 DATA-15a artists with an MBID link to MusicBrainz last, one link of each kind", () => {
     expect(artists.filter((a) => a.musicbrainzId)).toHaveLength(69);
     for (const a of artists) {
       if (!a.musicbrainzId) {
@@ -166,7 +166,7 @@ describe("releases", () => {
   test("DATA-14b DATA-14c every release cites a Valve page with a quote", () => {
     for (const r of releases) {
       expect(r.source.quote.length, r.id).toBeGreaterThan(10);
-      expect(["blog.counter-strike.net", "store.steampowered.com"]).toContain(new URL(r.source.url).host);
+      expect(VALVE_HOSTS).toContain(new URL(r.source.url).host);
     }
   });
 
@@ -192,7 +192,7 @@ describe("repository and upstream", () => {
     for (const source of Object.values(meta.sources)) expect(source.sha, source.repo).toMatch(/^[0-9a-f]{40}$/);
   });
 
-  test("DATA-7 unused definition numbers are not kits", () => {
+  test("DATA-5 unused definition numbers are not kits", () => {
     for (const unused of [77, 97]) {
       expect(unused in itemsGame.music).toBe(false);
       expect(byIndex.has(unused)).toBe(false);

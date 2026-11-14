@@ -1,5 +1,5 @@
-// pnpm data:build — combine data/upstream/ and data/curated/ into data/generated/ (spec: data.md).
-// Never edit data/generated/ by hand: CI rebuilds it and fails on any difference (DATA-1).
+// pnpm data:build — combine data/upstream/ and data/curated/ into data/generated/ (SPEC.md, "Data").
+// Never edit data/generated/ by hand: CI rebuilds it and fails on any difference (pnpm data:verify).
 // Usage: node scripts/data/build.ts
 
 import { existsSync } from "node:fs";
@@ -71,7 +71,7 @@ async function readOptional<T>(url: URL, fallback: T): Promise<T> {
   return existsSync(url) ? readJson<T>(url) : fallback;
 }
 
-/** Track list for one internal name, in the order a match plays it (PROD-23, DATA-11, DATA-21). */
+/** Track list for one internal name, in the order a match plays it (DATA-21). */
 function buildTracks(internalName: string, events: SoundEvents[string] | undefined, audio: AudioManifest): Track[] {
   if (!events) {
     fail(`${internalName}: no sound events`);
@@ -95,7 +95,7 @@ function buildTracks(internalName: string, events: SoundEvents[string] | undefin
       continue;
     }
     const take = match?.[2] ? Number(match[2]) : null;
-    // The published file, MP3 or WAV as the game stores it (DATA-20a). Its measured duration is exact.
+    // The published file, MP3 or WAV as the game stores it (DATA-20). Its measured duration is exact.
     const key = [`${internalName}/${file}.mp3`, `${internalName}/${file}.wav`].find((k) => k in audio);
     const published = key ? audio[key] : undefined;
     tracks.push({
@@ -103,7 +103,7 @@ function buildTracks(internalName: string, events: SoundEvents[string] | undefin
       take,
       file,
       durationSec: published?.durationSec ?? single.get(file) ?? shared.get(file) ?? null,
-      audio: key && published ? { path: `/${key}`, bytes: published.bytes, sha256: published.sha256 } : null,
+      audio: key && published ? { path: `/${key}`, sha256: published.sha256 } : null,
     });
   }
   const rank = (cue: Cue) => CUE_ORDER.indexOf(cue);
@@ -205,7 +205,7 @@ async function main(): Promise<void> {
     if (!edition) fail(`kit ${defIndex} (${d.name}) is missing from the CSGO-API data`);
     if (edition && !edition.image) fail(`kit ${defIndex} (${d.name}) has no cover image`);
     const cover = covers[d.name];
-    if (!cover) fail(`kit ${defIndex} (${d.name}) has no stored cover; run pnpm data:covers (DATA-18)`);
+    if (!cover) fail(`kit ${defIndex} (${d.name}) has no stored cover; run pnpm data:covers (DATA-19)`);
 
     const candidates = creditTexts(defIndex, credit);
     for (const { segment } of LOCALES) {

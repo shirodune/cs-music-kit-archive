@@ -25,7 +25,7 @@ test.describe("root without a match", () => {
   });
 });
 
-test("PROD-3 I18N-5 the language picker opens the same page in another locale and remembers it", async ({ page }) => {
+test("PROD-2 the language picker opens the same page in another locale and remembers it", async ({ page }) => {
   await page.goto("/en/artists/");
   await page.getByRole("group").locator("summary").click();
   await page.getByRole("link", { name: "简体中文" }).click();
@@ -34,7 +34,7 @@ test("PROD-3 I18N-5 the language picker opens the same page in another locale an
   expect(await page.evaluate(() => localStorage.getItem("mka:locale"))).toBe("zh-hans");
 });
 
-test("I18N-6 every page links all 28 locales plus x-default", async ({ page }) => {
+test("PROD-29 every page links all 28 locales plus x-default", async ({ page }) => {
   await page.goto("/de/");
   const alternates = page.locator('head link[rel="alternate"][hreflang]');
   await expect(alternates).toHaveCount(29);
@@ -56,7 +56,7 @@ test("unknown paths get the not-found page of their locale with status 404", asy
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
 });
 
-test("PROD-1 the page body never scrolls sideways at phone width", async ({ page }) => {
+test("the page body never scrolls sideways at phone width", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   // Long one-word titles and box names (ru, bg, fi) are the tightest fits.
   for (const path of ["/en/", "/de/artists/", "/zh-hans/", "/ru/artists/", "/bg/artists/", "/fi/kits/desert-fire/"]) {
@@ -66,7 +66,7 @@ test("PROD-1 the page body never scrolls sideways at phone width", async ({ page
   }
 });
 
-test("PROD-3 PROD-12 switching language keeps the selected kit and the kit an artist page came from", async ({
+test("PROD-2 PROD-12 switching language keeps the selected kit and the kit an artist page came from", async ({
   page,
 }) => {
   await page.goto("/en/#bachram");

@@ -1,16 +1,10 @@
 # CS Music Kit Archive
 
-Unofficial, non-commercial fan site that presents every Counter-Strike music kit with full tracklists, in all 28 CS2 languages. Live at musickitarchive.com.
+Unofficial site that presents every Counter-Strike music kit with full tracklists, in every language CS2 ships. Live at musickitarchive.com.
 
 ## Read the spec first
 
-`spec/` is the single source of truth. Read `spec/README.md`, then the file for the area you are working on, before changing anything.
-- `spec/product.md`: pages, routes, interactions (PROD-*)
-- `spec/data.md`: data sources, field ownership, release dates (DATA-*)
-- `spec/i18n.md`: locales, messages, plurals, fonts (I18N-*)
-- `spec/decisions.md`: decisions and their reasons (D-*)
-
-When behaviour changes, update the spec in the same change. Tests that check a requirement name its ID in the test title, for example `test("DATA-14a every kit belongs to one release", …)`.
+`SPEC.md` is the single source of truth: pages, data rules, languages (PROD-*, DATA-*, I18N-*) and decisions with their reasons (D-*). Read it before changing behaviour, and update it in the same change. It holds only what the code and tests do not show. Tests that check a requirement name its ID in the test title, for example `test("DATA-14a every kit belongs to one release", …)`.
 
 ## Stack
 
@@ -26,7 +20,8 @@ Astro 7 (static output) with React islands, Tailwind CSS 4, TypeScript 6 (Astro'
 - Never commit audio or game files (`.gitignore` blocks the common types). The one exception is the cover textures in `public/covers/textures/`, written by `pnpm data:textures` (D-022).
 - Release dates come only from Valve release notes or same-day announcements, with URL and quote (DATA-13, DATA-14). Never take a date from git history, `first_sale_date`, wikis or the design canvas.
 - Official Valve text (kit names, descriptions, box names) is never edited or machine translated.
-- UI strings go through `t()` with plural objects (I18N-7 to I18N-11). Never build plurals by string concatenation.
+- UI strings go through `t()` (`src/i18n/t.ts`) in `messages/{segment}.json`: flat dot-separated keys; a plural is an object with exactly the CLDR categories the locale uses, the number is `{count}`. Never build plurals by string concatenation. `pnpm i18n:check` enforces this.
+- No translation library in the browser: islands get their strings as props. Format dates in UTC so the day never shifts. Uppercase comes from CSS (`text-transform`), never from changing the string. `font-synthesis: none` everywhere; each script's fallback fonts are in `src/i18n/fonts.ts`.
 - Secrets never go in the repository. The deploy token lives in the GitHub `production` and `preview` environments.
 
 ## Language

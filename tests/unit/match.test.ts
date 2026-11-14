@@ -24,16 +24,16 @@ test.each([
   ["de-AT", "de"],
   ["EN-us", "en"],
   ["uk-UA", "uk"],
-])("I18N-4 maps %s to %s", (tag, segment) => {
+])("PROD-5 maps %s to %s", (tag, segment) => {
   expect(matchTag(tag)).toBe(segment);
 });
 
-test("I18N-4 unknown languages do not match", () => {
+test("PROD-5 unknown languages do not match", () => {
   expect(matchTag("ar-EG")).toBeNull();
   expect(matchTag("")).toBeNull();
 });
 
-test("I18N-4 the first matching browser language wins", () => {
+test("PROD-5 the first matching browser language wins", () => {
   expect(matchLocale(["ar", "he", "ru-RU", "en"])).toBe("ru");
   expect(matchLocale(["ar", "he"])).toBeNull();
   expect(matchLocale([])).toBeNull();

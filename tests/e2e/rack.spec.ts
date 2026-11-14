@@ -13,7 +13,7 @@ test.describe("records rack", () => {
     await expect(page).toHaveURL(/\/en\/#[a-z0-9-]+$/);
   });
 
-  test("PROD-9 the label card shows date, batch, catalogue number, edition and a linked artist", async ({ page }) => {
+  test("the label card shows date, batch, catalogue number, edition and a linked artist", async ({ page }) => {
     await page.goto("/en/#bachram");
     const label = card(page);
     await expect(label.getByRole("heading")).toHaveText("Bachram");
@@ -28,7 +28,7 @@ test.describe("records rack", () => {
     await expect(label.getByRole("link", { name: "Bachram" })).toHaveAttribute("href", "/en/kits/bachram/");
   });
 
-  test("PROD-11 keyboard: arrows browse, Page Up jumps to the year's first kit, Enter opens it", async ({ page }) => {
+  test("keyboard: arrows browse, Page Up jumps to the year's first kit, Enter opens it", async ({ page }) => {
     await page.goto("/en/#bachram");
     await rack(page).focus();
     await page.keyboard.press("ArrowRight");
@@ -44,7 +44,7 @@ test.describe("records rack", () => {
     await expect(page).toHaveURL("/en/kits/ez4ence/");
   });
 
-  test("PROD-10 a year button jumps to that year's first kit", async ({ page }) => {
+  test("a year button jumps to that year's first kit", async ({ page }) => {
     await page.goto("/en/");
     await page.getByRole("button", { name: "2014, 10 kits" }).click({ force: true });
     await expect(page).toHaveURL("/en/#crimson-assault");
@@ -58,14 +58,14 @@ test.describe("records rack", () => {
     await expect(card(page).getByRole("heading")).toHaveText("Desert Fire");
   });
 
-  test("PROD-8 clicking a neighbouring sleeve selects it", async ({ page }) => {
+  test("clicking a neighbouring sleeve selects it", async ({ page }) => {
     await page.goto("/en/#bachram");
     await page.getByRole("button", { name: "Go to Anti-Citizen" }).click();
     await expect(page).toHaveURL(/#anti-citizen$/);
     await expect(rack(page).getByRole("link", { name: /^Anti-Citizen by/ })).toBeVisible();
   });
 
-  test("PROD-8 after a drag that ends off a sleeve, the next click on a sleeve still selects it", async ({ page }) => {
+  test("after a drag that ends off a sleeve, the next click on a sleeve still selects it", async ({ page }) => {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto("/en/#bachram");
     const box = await rack(page).boundingBox();
@@ -85,7 +85,7 @@ test.describe("records rack", () => {
     await expect(page).toHaveURL(/#anti-citizen$/);
   });
 
-  test("PROD-13 with reduced motion the rack moves at once", async ({ page }) => {
+  test("with reduced motion the rack moves at once", async ({ page }) => {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto("/en/#bachram");
     await rack(page).focus();
@@ -109,23 +109,25 @@ test.describe("records rack", () => {
 });
 
 test.describe("records page fits the screen", () => {
-  test("PROD-13a the page does not scroll and the one-line footer is on screen", async ({ page }) => {
+  test("PROD-4 PROD-13a the page does not scroll and has no footer", async ({ page }) => {
     await page.goto("/en/");
     await expect(rack(page).locator("img").first()).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollHeight - window.innerHeight)).toBeLessThanOrEqual(
       0,
     );
-    const footer = page.locator("footer");
-    await expect(footer).toBeInViewport({ ratio: 1 });
-    await expect(footer).toHaveText(/^Unofficial fan project\. Not affiliated with or endorsed by Valve\./);
+    await expect(page.locator("footer")).toHaveCount(0);
   });
 
   test("PROD-13a on a screen too short for the page, it scrolls instead of overlapping", async ({ page }) => {
     await page.setViewportSize({ width: 360, height: 560 });
     await page.goto("/en/");
     const open = await page.getByRole("link", { name: "Open the record", exact: true }).boundingBox();
-    const footer = await page.locator("footer").boundingBox();
-    expect((open?.y ?? 0) + (open?.height ?? 0)).toBeLessThanOrEqual(footer?.y ?? 0);
+    const { scroll, viewport } = await page.evaluate(() => ({
+      scroll: document.documentElement.scrollHeight,
+      viewport: window.innerHeight,
+    }));
+    expect(scroll).toBeGreaterThan(viewport);
+    expect((open?.y ?? 0) + (open?.height ?? 0)).toBeLessThanOrEqual(scroll);
   });
 
   test("PROD-13a every gesture on the rack moves the rack, not the page", async ({ page }) => {
@@ -137,7 +139,7 @@ test.describe("records page fits the screen", () => {
 test.describe("records without JavaScript", () => {
   test.use({ javaScriptEnabled: false });
 
-  test("PROD-5 every kit is still reachable as a plain list", async ({ page }) => {
+  test("PROD-7 every kit is still reachable as a plain list", async ({ page }) => {
     await page.goto("/en/");
     await expect(page.getByRole("link", { name: "Desert Fire", exact: true }).first()).toHaveAttribute(
       "href",

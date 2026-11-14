@@ -1,24 +1,24 @@
-// Locale-aware formatting (spec: I18N-13 to I18N-15).
+// Locale-aware formatting (conventions in CLAUDE.md).
 
-/** Formats a date-only value (YYYY-MM-DD) without shifting the day (I18N-13). */
+/** Formats a date-only value (YYYY-MM-DD) without shifting the day. */
 export function formatDate(tag: string, isoDate: string): string {
   return new Intl.DateTimeFormat(tag, { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }).format(
     new Date(`${isoDate}T00:00:00Z`),
   );
 }
 
-/** m:ss (I18N-14). */
+/** m:ss. */
 export function formatDuration(seconds: number): string {
   const total = Math.round(seconds);
   return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, "0")}`;
 }
 
-/** Catalogue number, "Nº 009" (PROD-9). */
+/** Catalogue number, "Nº 009". */
 export function catalogueNumber(defIndex: number): string {
   return `Nº ${String(defIndex).padStart(3, "0")}`;
 }
 
-/** Splits a conjunction list into parts so each item can be wrapped, for example in a link (I18N-15). */
+/** Splits a conjunction list into parts so each item can be wrapped, for example in a link. */
 export function listParts<T>(tag: string, items: T[], label: (item: T) => string) {
   const parts = new Intl.ListFormat(tag, { type: "conjunction" }).formatToParts(items.map(label));
   let index = 0;

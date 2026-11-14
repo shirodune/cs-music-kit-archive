@@ -1,5 +1,5 @@
-// The records rack: every kit in order of release (spec: PROD-7 to PROD-13).
-// A React island. All text arrives as props, already translated and formatted (I18N-12).
+// The records rack: every kit in order of release (spec: PROD-7, PROD-12, PROD-13a).
+// A React island. All text arrives as props, already translated and formatted, so no translation code ships.
 
 import {
   type KeyboardEvent,
@@ -72,7 +72,7 @@ export default function Rack({ kits, strings, initial }: Props) {
   const groups = useMemo(() => yearGroups(kits.map((k) => k.year)), [kits]);
   const indexOf = useMemo(() => new Map(kits.map((k, i) => [k.slug, i])), [kits]);
 
-  // `target` is where the rack is heading; `position` follows it with easing (PROD-13: at once with reduced motion).
+  // `target` is where the rack is heading; `position` follows it with easing (at once with reduced motion).
   const [target, setTarget] = useState(initial);
   const [position, setPosition] = useState(initial);
   const stage = useRef<HTMLElement>(null);
@@ -151,7 +151,7 @@ export default function Rack({ kits, strings, initial }: Props) {
     if (location.hash !== `#${slug}`) history.replaceState(history.state, "", `#${slug}`);
   }, [settled, target, kits, initial]);
 
-  // Mouse wheel (PROD-11). Needs a non-passive listener to stop the page from scrolling.
+  // Mouse wheel. Needs a non-passive listener to stop the page from scrolling.
   useEffect(() => {
     const el = stage.current;
     if (!el) return;
@@ -223,7 +223,7 @@ export default function Rack({ kits, strings, initial }: Props) {
       <section
         aria-label={strings.card}
         aria-live="polite"
-        className="relative z-20 mx-4 mt-3 mb-1 flex-none lg:absolute lg:top-8 lg:left-10 lg:m-0 lg:w-64"
+        className="relative z-20 mx-4 mt-3 mb-1 flex-none lg:absolute lg:top-8 lg:left-(--gutter) lg:m-0 lg:w-64"
       >
         <div className="relative overflow-hidden bg-signal px-[18px] pt-[18px] pb-4 text-ink">
           <p
@@ -276,7 +276,7 @@ export default function Rack({ kits, strings, initial }: Props) {
         ref={stage}
         aria-roledescription="carousel"
         aria-label={strings.region}
-        // biome-ignore lint/a11y/noNoninteractiveTabindex: the rack is a keyboard-operable carousel (PROD-11)
+        // biome-ignore lint/a11y/noNoninteractiveTabindex: the rack is a keyboard-operable carousel
         tabIndex={0}
         onKeyDown={onKeyDown}
         onPointerDown={onPointerDown}
@@ -375,7 +375,7 @@ export default function Rack({ kits, strings, initial }: Props) {
         })}
       </section>
 
-      <nav aria-label={strings.years} className="relative mx-4 flex-none overflow-x-clip sm:mx-10">
+      <nav aria-label={strings.years} className="relative mx-4 flex-none overflow-x-clip sm:mx-(--gutter)">
         <div
           className="relative flex h-12 cursor-pointer touch-none border-b border-paper/30 select-none"
           onPointerDown={(e) => {
@@ -422,7 +422,7 @@ export default function Rack({ kits, strings, initial }: Props) {
 
       {/* PROD-13a: the description is cut to a fixed number of lines (one on short screens), so the layout does not move
           between kits. It is only the opening of the quote: the record page shows it in full, attributed to Valve. */}
-      <div className="grid flex-none grid-cols-[1fr_auto] items-end gap-x-10 gap-y-2 px-4 pt-4 pb-3 sm:px-10">
+      <div className="grid flex-none grid-cols-[1fr_auto] items-end gap-x-10 gap-y-2 px-4 pt-4 pb-3 sm:px-(--gutter)">
         <p
           lang={kit.description?.lang}
           className="col-span-2 m-0 line-clamp-2 h-[2lh] font-condensed text-xl leading-tight font-medium sm:line-clamp-3 sm:h-[3lh] sm:text-2xl lg:col-span-1 [@media(max-height:700px)]:line-clamp-1 [@media(max-height:700px)]:h-[1lh]"

@@ -1,10 +1,10 @@
 import { isLocaleSegment, type LocaleSegment } from "./locales.ts";
 
-/** `localStorage` key for the visitor's chosen locale (I18N-4, I18N-5). */
+/** `localStorage` key for the visitor's chosen locale (PROD-5). */
 export const LOCALE_STORAGE_KEY = "mka:locale";
 
 /**
- * Maps one browser language tag to a site locale, or `null` when none fits (I18N-4).
+ * Maps one browser language tag to a site locale, or `null` when none fits (PROD-5).
  * Examples: `zh-TW` → `zh-hant`, `pt-AO` → `pt-pt`, `es-MX` → `es-419`, `de-AT` → `de`.
  */
 export function matchTag(tag: string): LocaleSegment | null {
@@ -27,7 +27,7 @@ export function matchTag(tag: string): LocaleSegment | null {
   return isLocaleSegment(primary) ? primary : null;
 }
 
-/** Picks the first browser language that maps to a site locale (I18N-4). */
+/** Picks the first browser language that maps to a site locale (PROD-5). */
 export function matchLocale(languages: readonly string[]): LocaleSegment | null {
   for (const tag of languages) {
     const match = matchTag(tag);

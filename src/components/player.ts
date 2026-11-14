@@ -1,4 +1,4 @@
-// The record page's audio player (spec: PROD-23 to PROD-25). One <audio> for the page, so only one track plays.
+// The record page's audio player (spec: PROD-24, PROD-25a). One <audio> for the page, so only one track plays.
 // Markup comes from the record page: each playable row is [data-track] with a [data-play] toggle button, a
 // [data-time] duration and a hidden [data-progress] slider; the MVP button is [data-play-mvp]; the status line
 // is [data-status]. Playback starts only from a click (PROD-24). Leaving the page stops it (D-020).
@@ -28,7 +28,7 @@ function setStatus(text: string, error = false): void {
   status.classList.toggle("text-signal", error);
 }
 
-/** Elapsed and total time while a row is current, its duration otherwise (PROD-23). */
+/** Elapsed and total time while a row is current, its duration otherwise. */
 function showTime(row: HTMLElement): void {
   const { time, slider } = parts(row);
   const total = Number.isFinite(audio.duration) ? audio.duration : Number(row.dataset.duration);

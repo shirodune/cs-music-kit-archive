@@ -17,7 +17,7 @@ async function open(page: Page, path: string) {
 }
 
 test.describe("fonts", () => {
-  test("I18N-19 a page links only its own script group's font stylesheet", async ({ page, request }) => {
+  test("a page links only its own script group's font stylesheet", async ({ page, request }) => {
     const fontSheets = () =>
       page
         .locator('link[rel="stylesheet"][href^="/fonts/"]')
@@ -35,7 +35,7 @@ test.describe("fonts", () => {
     expect(css).toContain("--font-noto-sans-sc-900");
   });
 
-  test("I18N-19 Chinese text uses Noto Sans SC and Latin text keeps the design faces", async ({ page }) => {
+  test("Chinese text uses Noto Sans SC and Latin text keeps the design faces", async ({ page }) => {
     await open(page, "/zh-hans/kits/desert-fire/");
     // "沙漠之焰"
     expect((await usedFonts(page, "h1")).join()).toMatch(/^Noto Sans SC/);
@@ -43,7 +43,7 @@ test.describe("fonts", () => {
     expect(await usedFonts(page, 'a[href^="/zh-hans/artists/austin-wintory/"]')).toContain("IBM Plex Mono");
   });
 
-  test("I18N-19 Cyrillic text uses Tektur, Sofia Sans Condensed and IBM Plex Sans", async ({ page }) => {
+  test("Cyrillic text uses Tektur, Sofia Sans Condensed and IBM Plex Sans", async ({ page }) => {
     await open(page, "/ru/kits/desert-fire/");
     // Stencil section head "Список треков".
     const heading = await usedFonts(page, "#tracks-h");

@@ -35,7 +35,7 @@ jobs:
       - run: pnpm lint
       - run: pnpm check
       - run: pnpm i18n:check
-      # data/generated/ must match a fresh build (DATA-1).
+      # data/generated/ must match a fresh build.
       - run: pnpm data:verify
       - run: pnpm test
       - run: pnpm build

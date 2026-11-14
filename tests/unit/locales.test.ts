@@ -7,7 +7,7 @@ describe("locale table", () => {
     expect(DEFAULT_LOCALE).toBe("en");
   });
 
-  test("I18N-2 segments are unique lowercase URL segments and tags are valid BCP 47", () => {
+  test("I18N-1 segments are unique lowercase URL segments and tags are valid BCP 47", () => {
     expect(new Set(LOCALE_SEGMENTS).size).toBe(LOCALES.length);
     for (const l of LOCALES) {
       expect(l.segment).toMatch(/^[a-z]{2}(-[a-z0-9]+)?$/);
@@ -16,14 +16,14 @@ describe("locale table", () => {
     }
   });
 
-  test("I18N-2 lookups by segment", () => {
+  test("I18N-1 lookups by segment", () => {
     expect(getLocale("zh-hans").tag).toBe("zh-Hans");
     expect(isLocaleSegment("pt-br")).toBe(true);
     expect(isLocaleSegment("pt-BR")).toBe(false);
     expect(isLocaleSegment(undefined)).toBe(false);
   });
 
-  test("I18N-8 plural categories per locale are the ones listed in the spec", () => {
+  test("plural categories per locale are the ones Intl reports for its tag", () => {
     const expected: Record<string, string[]> = {
       other: ["vi", "th", "ja", "ko", "zh-hans", "zh-hant"],
       "one,other": ["en", "de", "nl", "da", "nb", "sv", "fi", "hu", "tr", "bg", "el"],

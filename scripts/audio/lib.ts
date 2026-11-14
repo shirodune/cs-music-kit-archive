@@ -38,16 +38,14 @@ export function wantedFiles(kits: KitTracks[]): WantedFile[] {
   return [...byBase.values()].sort((a, b) => (a.base < b.base ? -1 : 1));
 }
 
-/** What `pnpm audio:upload` does to make the bucket match the manifest (DATA-21). */
-export function uploadPlan(published: Manifest, next: Manifest): { put: string[]; remove: string[] } {
-  return {
-    put: Object.keys(next)
-      .filter((key) => published[key]?.sha256 !== next[key]?.sha256)
-      .sort(),
-    remove: Object.keys(published)
-      .filter((key) => !(key in next))
-      .sort(),
-  };
+/**
+ * The files `pnpm audio:upload` uploads: new or changed ones (DATA-21). Files the manifest no longer lists are not
+ * deleted: the live site links them until the weekly sync's pull request is merged.
+ */
+export function uploadPlan(published: Manifest, next: Manifest): string[] {
+  return Object.keys(next)
+    .filter((key) => published[key]?.sha256 !== next[key]?.sha256)
+    .sort();
 }
 
 /**
@@ -67,7 +65,7 @@ export function needsExtraction(
 
 const CONTENT_TYPES: Record<string, string> = { mp3: "audio/mpeg", wav: "audio/wav" };
 
-/** Content type of a manifest key, by its extension (DATA-20a). */
+/** Content type of a manifest key, by its extension (DATA-20). */
 export function contentTypeOf(key: string): string {
   const type = CONTENT_TYPES[key.slice(key.lastIndexOf(".") + 1)];
   if (!type) throw new Error(`${key}: not an MP3 or WAV file`);

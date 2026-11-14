@@ -1,4 +1,4 @@
-// WebP copies of the stored PNG covers, made at build time (DATA-18a): /covers/{name}.webp for icons and
+// WebP copies of the stored PNG covers, made at build time (DATA-19): /covers/{name}.webp for icons and
 // /covers/textures/{name}.webp (at most 768 px) plus {name}-320.webp for textures. The PNG stays the original.
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
