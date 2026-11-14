@@ -4,6 +4,7 @@
   "nav.label": "Päävalikko",
   "nav.records": "Levyt",
   "nav.artists": "Artistit",
+  "nav.about": "Tietoja",
   "lang.label": "Kieli",
   "footer.disclaimer": "Epävirallinen faniprojekti. Ei Valven kanssa yhteydessä eikä Valven hyväksymä. Counter-Strike sekä kaikkien musiikkipakkausten nimet, kuvitukset ja äänet kuuluvat Valvelle ja kyseisille artisteille.",
   "footer.short": "Epävirallinen faniprojekti. Ei Valven kanssa yhteydessä eikä Valven hyväksymä.",
@@ -110,5 +111,14 @@
   "records.list": "Kaikki levyt",
   "content.sources": "Lähteet",
   "content.machine": "Konekäännetty englannista.",
-  "content.untranslated": "Ei vielä käännetty. Näytetään englanniksi."
+  "content.untranslated": "Ei vielä käännetty. Näytetään englanniksi.",
+  "about.title": "Tietoja sivustosta",
+  "about.meta": "Mikä CS Music Kit Archive on, mistä sen tiedot tulevat ja miten virheestä ilmoitetaan.",
+  "about.what": "Mikä tämä on",
+  "about.whatText": "Epävirallinen, ei-kaupallinen faniarkisto kaikista Counter-Striken musiikkipaketeista. Jokaisella paketilla on oma sivu, jolla on koko kappalelista kuunneltavana selaimessa, kaikilla CS2:n 28 kielellä.",
+  "about.data": "Mistä tiedot tulevat",
+  "about.dataText": "Kappaleet ja kansikuvat otetaan pelin omista tiedostoista ja julkaistaan muuttamattomina. Pakettien nimet ja kuvaukset ovat Valven omia tekstejä kullakin kielellä. Julkaisupäivät tulevat Valven päivitysmuistiinpanoista, joihin on linkki kunkin paketin sivulla. Artistien linkit tulevat MusicBrainzista. Sivusto tarkistaa pelin joka viikko uusien ja muuttuneiden pakettien varalta.",
+  "about.source": "Avoin lähdekoodi",
+  "about.sourceText": "Koodi on MIT-lisenssin alainen, keräämämme tiedot CC0 ja kirjoittamamme tekstit CC BY 4.0. Nimet, kuvat ja äänet kuuluvat Valvelle ja artisteille.",
+  "about.report": "Ilmoita virheestä"
 }

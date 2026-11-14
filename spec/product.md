@@ -25,7 +25,7 @@ The other style directions and the retired timeline page are not built.
 
 ## Global elements
 
-- PROD-2 Header on every page: site name linking to the current locale's home, navigation (Records, Artists) and the language picker.
+- PROD-2 Header on every page: site name linking to the current locale's home, navigation (Records, Artists, About), the language picker and GitHub's mark linking to the repository (accessible name "GitHub"). Below 640 px the picker shows only its globe (its accessible name still names the language), the GitHub mark is left out (the footer links to the source code), and the navigation wraps rather than overflow.
 - PROD-3 The language picker lists all 28 locales by their native name. Choosing one opens the same page in that locale and remembers the choice (see `i18n.md`).
 - PROD-4 Footer on every page (on the records page a one-line version: the first two sentences of the disclaimer, `footer.short`, and the links; PROD-13a):
   - "Unofficial fan project. Not affiliated with or endorsed by Valve. Counter-Strike and all music kit names, artwork and audio belong to Valve and the respective artists."
@@ -43,6 +43,7 @@ The other style directions and the retired timeline page are not built.
 | `/{locale}/kits/{kit-slug}/` | Record: one music kit |
 | `/{locale}/artists/` | Artists: index |
 | `/{locale}/artists/{artist-slug}/` | Artist: one artist |
+| `/{locale}/about/` | About |
 | `/{locale}/404.html` | Not found, served with status 404 for unknown paths under that locale. `/404.html` (English) covers paths without a locale |
 
 - PROD-5 `/` sends the visitor to `/{locale}/`, using the remembered choice if there is one, otherwise the best match for the browser's languages, otherwise `en`. Without JavaScript it shows a plain list of the 28 locales.
@@ -104,6 +105,10 @@ Sections, top to bottom:
 
 - PROD-27 Stories (kit pages) and introductions (artist pages) are optional. A page without one hides that section. The story is section 5 of the record page, headed "Story". The introduction, headed "About", comes after the artist's facts and links and before the discography.
 - PROD-28 Every factual claim in a story or introduction has a source listed with it. Sources are shown under the text, as a numbered list of links. Sources may be primary (Valve, the artist, interviews) or secondary (encyclopedias such as Wikipedia, the press); a claim taken from a source is checked against it. Release dates still come only from DATA-14's sources.
+
+## About page
+
+- PROD-38 Three short sections: what the site is, where its data comes from (game files, Valve's text, release notes, MusicBrainz, the weekly check), and open source (licences, with links to the source code, GitHub issues for reporting a mistake, and the licence notice). UI messages, so every locale has it.
 
 ## SEO and sharing
 

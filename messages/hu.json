@@ -4,6 +4,7 @@
   "nav.label": "Főmenü",
   "nav.records": "Lemezek",
   "nav.artists": "Előadók",
+  "nav.about": "Rólunk",
   "lang.label": "Nyelv",
   "footer.disclaimer": "Nem hivatalos rajongói projekt. Nem áll kapcsolatban a Valve-val, és a Valve nem hagyta jóvá. A Counter-Strike, valamint az összes zenekészlet neve, grafikája és hanganyaga a Valve és az adott előadók tulajdona.",
   "footer.short": "Nem hivatalos rajongói projekt. Nem áll kapcsolatban a Valve-val, és a Valve nem hagyta jóvá.",
@@ -110,5 +111,14 @@
   "records.list": "Összes lemez",
   "content.sources": "Források",
   "content.machine": "Gépi fordítás angolból.",
-  "content.untranslated": "Még nincs lefordítva. Angolul jelenik meg."
+  "content.untranslated": "Még nincs lefordítva. Angolul jelenik meg.",
+  "about.title": "Az oldalról",
+  "about.meta": "Mi a CS Music Kit Archive, honnan származnak az adatai, és hogyan lehet hibát jelezni.",
+  "about.what": "Mi ez",
+  "about.whatText": "Nem hivatalos, nem kereskedelmi rajongói archívum a Counter-Strike összes zenekészletéről. Minden készletnek saját oldala van a teljes számlistával, amely a böngészőben lejátszható, a CS2 mind a 28 nyelvén.",
+  "about.data": "Honnan származnak az adatok",
+  "about.dataText": "A számok és a borítók a játék saját fájljaiból származnak, és változatlanul jelennek meg. A készletek nevei és leírásai a Valve saját szövegei minden nyelven. A megjelenési dátumok a Valve frissítési jegyzeteiből származnak, minden készlet oldalán hivatkozással. Az előadók hivatkozásai a MusicBrainzről származnak. Az oldal hetente ellenőrzi a játékot új és megváltozott készletek után kutatva.",
+  "about.source": "Nyílt forráskód",
+  "about.sourceText": "A kód MIT-licenc alatt áll, az általunk gyűjtött adatok CC0, a saját szövegeink CC BY 4.0 alatt. A nevek, képek és hangok a Valve és az előadók tulajdonát képezik.",
+  "about.report": "Hiba jelzése"
 }

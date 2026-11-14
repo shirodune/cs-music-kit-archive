@@ -4,6 +4,7 @@
   "nav.label": "Ana menü",
   "nav.records": "Plaklar",
   "nav.artists": "Sanatçılar",
+  "nav.about": "Hakkında",
   "lang.label": "Dil",
   "footer.disclaimer": "Resmî olmayan hayran projesi. Valve ile bağlantılı değildir ve Valve tarafından onaylanmamıştır. Counter-Strike ile tüm müzik kitlerinin adları, görselleri ve sesleri Valve'a ve ilgili sanatçılara aittir.",
   "footer.short": "Resmî olmayan hayran projesi. Valve ile bağlantılı değildir ve Valve tarafından onaylanmamıştır.",
@@ -110,5 +111,14 @@
   "records.list": "Tüm plaklar",
   "content.sources": "Kaynaklar",
   "content.machine": "İngilizceden makine çevirisi.",
-  "content.untranslated": "Henüz çevrilmedi. İngilizce gösteriliyor."
+  "content.untranslated": "Henüz çevrilmedi. İngilizce gösteriliyor.",
+  "about.title": "Hakkında",
+  "about.meta": "CS Music Kit Archive nedir, verileri nereden gelir ve bir hata nasıl bildirilir.",
+  "about.what": "Bu nedir",
+  "about.whatText": "Counter-Strike'ın tüm müzik kitlerini toplayan resmî olmayan, ticari olmayan bir hayran arşivi. Her kitin, tarayıcıda çalınabilen tam parça listesini içeren kendi sayfası vardır; CS2'nin 28 dilinin tamamında.",
+  "about.data": "Veriler nereden geliyor",
+  "about.dataText": "Parçalar ve kapaklar oyunun kendi dosyalarından alınır ve değiştirilmeden yayımlanır. Kit adları ve açıklamaları, her dilde Valve'ın kendi metinleridir. Çıkış tarihleri Valve'ın güncelleme notlarından gelir ve her kitin sayfasında bağlantısı vardır. Sanatçı bağlantıları MusicBrainz'den gelir. Site her hafta oyunu yeni ve değişen kitler için kontrol eder.",
+  "about.source": "Açık kaynak",
+  "about.sourceText": "Kod MIT lisansı, derlediğimiz veriler CC0, yazdığımız metinler CC BY 4.0 kapsamındadır. Adlar, görseller ve sesler Valve'a ve sanatçılara aittir.",
+  "about.report": "Hata bildir"
 }

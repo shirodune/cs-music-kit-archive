@@ -4,6 +4,7 @@
   "nav.label": "Principal",
   "nav.records": "Discos",
   "nav.artists": "Artistas",
+  "nav.about": "Sobre",
   "lang.label": "Idioma",
   "footer.disclaimer": "Projeto de fãs não oficial. Não é afiliado à Valve nem aprovado pela Valve. Counter-Strike e os nomes, ilustrações e áudio de todos os kits de música pertencem à Valve e aos respetivos artistas.",
   "footer.short": "Projeto de fãs não oficial. Não é afiliado à Valve nem aprovado pela Valve.",
@@ -115,5 +116,14 @@
   "records.list": "Todos os discos",
   "content.sources": "Fontes",
   "content.machine": "Tradução automática do inglês.",
-  "content.untranslated": "Ainda não traduzido. Apresentado em inglês."
+  "content.untranslated": "Ainda não traduzido. Apresentado em inglês.",
+  "about.title": "Sobre",
+  "about.meta": "O que é o CS Music Kit Archive, de onde vêm os dados e como comunicar um erro.",
+  "about.what": "O que é",
+  "about.whatText": "Um arquivo de fãs, não oficial e sem fins comerciais, de todos os kits de música de Counter-Strike. Cada kit tem a sua página com a lista completa de faixas, que se ouvem no navegador, nas 28 línguas do CS2.",
+  "about.data": "De onde vêm os dados",
+  "about.dataText": "As faixas e as capas vêm dos ficheiros do jogo e são publicadas sem alterações. Os nomes e descrições dos kits são os textos da Valve em cada língua. As datas de lançamento vêm das notas de atualização da Valve, com ligação na página de cada kit. As ligações dos artistas vêm do MusicBrainz. Todas as semanas o site verifica o jogo à procura de kits novos ou alterados.",
+  "about.source": "Código aberto",
+  "about.sourceText": "O código está sob a licença MIT, os nossos dados sob CC0 e os nossos textos sob CC BY 4.0. Nomes, imagens e áudio pertencem à Valve e aos artistas.",
+  "about.report": "Comunicar um erro"
 }

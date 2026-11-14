@@ -8,6 +8,7 @@ const pages = [
   "/en/kits/cs-go/",
   "/en/artists/",
   "/en/artists/austin-wintory/",
+  "/en/about/",
   "/en/no-such-page/",
   "/zh-hans/kits/desert-fire/",
   "/ru/artists/austin-wintory/",

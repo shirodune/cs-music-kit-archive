@@ -4,6 +4,7 @@
   "nav.label": "Meniu principal",
   "nav.records": "Discuri",
   "nav.artists": "Artiști",
+  "nav.about": "Despre",
   "lang.label": "Limbă",
   "footer.disclaimer": "Proiect neoficial al fanilor. Nu este afiliat cu Valve și nici aprobat de Valve. Counter-Strike și numele, grafica și sunetul tuturor pachetelor muzicale aparțin Valve și artiștilor respectivi.",
   "footer.short": "Proiect neoficial al fanilor. Nu este afiliat cu Valve și nici aprobat de Valve.",
@@ -115,5 +116,14 @@
   "records.list": "Toate discurile",
   "content.sources": "Surse",
   "content.machine": "Tradus automat din engleză.",
-  "content.untranslated": "Încă netradus. Afișat în engleză."
+  "content.untranslated": "Încă netradus. Afișat în engleză.",
+  "about.title": "Despre site",
+  "about.meta": "Ce este CS Music Kit Archive, de unde provin datele și cum raportezi o greșeală.",
+  "about.what": "Ce este",
+  "about.whatText": "O arhivă neoficială și necomercială, făcută de fani, cu toate kiturile de muzică din Counter-Strike. Fiecare kit are pagina lui cu lista completă de piese, care pot fi ascultate în browser, în toate cele 28 de limbi ale CS2.",
+  "about.data": "De unde provin datele",
+  "about.dataText": "Piesele și copertele provin din fișierele jocului și sunt publicate neschimbate. Numele și descrierile kiturilor sunt textele Valve în fiecare limbă. Datele de lansare provin din notele de actualizare ale Valve, cu link pe pagina fiecărui kit. Linkurile artiștilor provin de la MusicBrainz. În fiecare săptămână, site-ul verifică jocul pentru kituri noi sau modificate.",
+  "about.source": "Sursă deschisă",
+  "about.sourceText": "Codul este sub licența MIT, datele noastre sub CC0, iar textele noastre sub CC BY 4.0. Numele, grafica și sunetul aparțin Valve și artiștilor.",
+  "about.report": "Raportează o greșeală"
 }

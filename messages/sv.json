@@ -4,6 +4,7 @@
   "nav.label": "Huvudmeny",
   "nav.records": "Skivor",
   "nav.artists": "Artister",
+  "nav.about": "Om",
   "lang.label": "Språk",
   "footer.disclaimer": "Inofficiellt fanprojekt. Inte knutet till eller godkänt av Valve. Counter-Strike samt namn, grafik och ljud för alla musikpaket tillhör Valve och respektive artister.",
   "footer.short": "Inofficiellt fanprojekt. Inte knutet till eller godkänt av Valve.",
@@ -110,5 +111,14 @@
   "records.list": "Alla skivor",
   "content.sources": "Källor",
   "content.machine": "Maskinöversatt från engelska.",
-  "content.untranslated": "Inte översatt än. Visas på engelska."
+  "content.untranslated": "Inte översatt än. Visas på engelska.",
+  "about.title": "Om webbplatsen",
+  "about.meta": "Vad CS Music Kit Archive är, var datan kommer ifrån och hur du rapporterar ett fel.",
+  "about.what": "Vad det här är",
+  "about.whatText": "Ett inofficiellt, icke-kommersiellt fanarkiv över alla musikpaket i Counter-Strike. Varje paket har en egen sida med hela låtlistan, spelbar i webbläsaren, på alla 28 språk i CS2.",
+  "about.data": "Var datan kommer ifrån",
+  "about.dataText": "Låtar och omslag hämtas ur spelets egna filer och publiceras oförändrade. Namn och beskrivningar av paket är Valves egna texter på varje språk. Releasedatum kommer från Valves uppdateringsanteckningar, länkade på varje pakets sida. Länkar till artister kommer från MusicBrainz. Varje vecka kontrollerar webbplatsen spelet efter nya och ändrade paket.",
+  "about.source": "Öppen källkod",
+  "about.sourceText": "Koden omfattas av MIT-licensen, vår data av CC0 och våra texter av CC BY 4.0. Namn, grafik och ljud tillhör Valve och artisterna.",
+  "about.report": "Rapportera ett fel"
 }
