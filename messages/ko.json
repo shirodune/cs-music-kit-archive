@@ -4,6 +4,7 @@
   "nav.label": "주 메뉴",
   "nav.records": "레코드",
   "nav.artists": "아티스트",
+  "nav.about": "소개",
   "lang.label": "언어",
   "footer.disclaimer": "비공식 팬 프로젝트입니다. Valve와 관련이 없으며 Valve의 승인을 받지 않았습니다. Counter-Strike와 모든 음악 키트의 이름, 아트워크, 오디오는 Valve와 각 아티스트에게 있습니다.",
   "footer.short": "비공식 팬 프로젝트입니다. Valve와 관련이 없으며 Valve의 승인을 받지 않았습니다.",
@@ -93,7 +94,6 @@
   "artist.yearsLater": {
     "other": "{count}년 후"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "레코드 랙, 출시 순서. 왼쪽과 오른쪽 화살표 키로 둘러보고, Page Up과 Page Down으로 연도를 바꾸고, Enter로 레코드를 엽니다.",
   "rack.years": "연도",
   "rack.card": "레코드 라벨",
@@ -106,5 +106,14 @@
   "records.list": "모든 레코드",
   "content.sources": "출처",
   "content.machine": "영어에서 기계 번역되었습니다.",
-  "content.untranslated": "아직 번역되지 않았습니다. 영어로 표시합니다."
+  "content.untranslated": "아직 번역되지 않았습니다. 영어로 표시합니다.",
+  "about.title": "사이트 소개",
+  "about.meta": "CS Music Kit Archive가 무엇인지, 데이터의 출처와 오류 신고 방법.",
+  "about.what": "이 사이트는",
+  "about.whatText": "Counter-Strike의 모든 음악 키트를 모은 비공식·비영리 팬 아카이브입니다. 키트마다 전체 트랙 목록이 있는 페이지가 있고, 브라우저에서 바로 재생할 수 있으며, CS2의 28개 언어를 모두 지원합니다.",
+  "about.data": "데이터 출처",
+  "about.dataText": "트랙과 커버는 게임 파일에서 가져와 그대로 공개합니다. 키트 이름과 설명은 각 언어로 된 Valve의 공식 문구입니다. 출시일은 Valve의 업데이트 노트를 따르며, 각 키트 페이지에 링크가 있습니다. 아티스트 링크는 MusicBrainz에서 가져옵니다. 매주 게임을 확인해 새 키트와 변경 사항을 반영합니다.",
+  "about.source": "오픈 소스",
+  "about.sourceText": "코드는 MIT 라이선스, 정리한 데이터는 CC0, 직접 쓴 글은 CC BY 4.0입니다. 이름, 아트워크, 오디오는 Valve와 각 아티스트에게 있습니다.",
+  "about.report": "오류 신고"
 }

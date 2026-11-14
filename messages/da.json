@@ -4,6 +4,7 @@
   "nav.label": "Hovedmenu",
   "nav.records": "Plader",
   "nav.artists": "Kunstnere",
+  "nav.about": "Om",
   "lang.label": "Sprog",
   "footer.disclaimer": "Uofficielt fanprojekt. Ikke tilknyttet eller godkendt af Valve. Counter-Strike samt navne, grafik og lyd for alle musiksæt tilhører Valve og de respektive kunstnere.",
   "footer.short": "Uofficielt fanprojekt. Ikke tilknyttet eller godkendt af Valve.",
@@ -97,7 +98,6 @@
     "one": "{count} år senere",
     "other": "{count} år senere"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Pladereol i udgivelsesrækkefølge. Venstre og højre piletast bladrer, Page Up og Page Down skifter år, Enter åbner pladen.",
   "rack.years": "År",
   "rack.card": "Pladeetiket",
@@ -111,5 +111,14 @@
   "records.list": "Alle plader",
   "content.sources": "Kilder",
   "content.machine": "Maskinoversat fra engelsk.",
-  "content.untranslated": "Endnu ikke oversat. Vises på engelsk."
+  "content.untranslated": "Endnu ikke oversat. Vises på engelsk.",
+  "about.title": "Om siden",
+  "about.meta": "Hvad CS Music Kit Archive er, hvor dataene kommer fra, og hvordan du melder en fejl.",
+  "about.what": "Hvad det er",
+  "about.whatText": "Et uofficielt, ikke-kommercielt fanarkiv over alle musiksæt i Counter-Strike. Hvert sæt har sin egen side med den fulde nummerliste, som kan afspilles i browseren, på alle 28 sprog i CS2.",
+  "about.data": "Hvor dataene kommer fra",
+  "about.dataText": "Numre og covers kommer fra spillets egne filer og offentliggøres uændret. Navne og beskrivelser af sæt er Valves egne tekster på hvert sprog. Udgivelsesdatoer kommer fra Valves opdateringsnoter, med link på hvert sæts side. Links til kunstnere kommer fra MusicBrainz. Hver uge tjekker siden spillet for nye og ændrede sæt.",
+  "about.source": "Open source",
+  "about.sourceText": "Koden er under MIT-licensen, vores data under CC0 og vores tekster under CC BY 4.0. Navne, grafik og lyd tilhører Valve og kunstnerne.",
+  "about.report": "Meld en fejl"
 }

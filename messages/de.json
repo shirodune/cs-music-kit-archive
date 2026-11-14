@@ -4,6 +4,7 @@
   "nav.label": "Hauptmenü",
   "nav.records": "Platten",
   "nav.artists": "Künstler",
+  "nav.about": "Über",
   "lang.label": "Sprache",
   "footer.disclaimer": "Inoffizielles Fanprojekt. Nicht mit Valve verbunden und nicht von Valve unterstützt. Counter-Strike sowie die Namen, Artworks und Audiodateien aller Musikkits gehören Valve und den jeweiligen Künstlern.",
   "footer.short": "Inoffizielles Fanprojekt. Nicht mit Valve verbunden und nicht von Valve unterstützt.",
@@ -97,7 +98,6 @@
     "one": "{count} Jahr später",
     "other": "{count} Jahre später"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Plattenregal, nach Erscheinungsdatum sortiert. Pfeiltasten links und rechts blättern, Bild auf und Bild ab wechseln das Jahr, Eingabe öffnet die Platte.",
   "rack.years": "Jahre",
   "rack.card": "Plattenetikett",
@@ -111,5 +111,14 @@
   "records.list": "Alle Platten",
   "content.sources": "Quellen",
   "content.machine": "Maschinell aus dem Englischen übersetzt.",
-  "content.untranslated": "Noch nicht übersetzt. Auf Englisch angezeigt."
+  "content.untranslated": "Noch nicht übersetzt. Auf Englisch angezeigt.",
+  "about.title": "Über diese Seite",
+  "about.meta": "Was CS Music Kit Archive ist, woher die Daten stammen und wie man einen Fehler meldet.",
+  "about.what": "Worum es geht",
+  "about.whatText": "Ein inoffizielles, nicht kommerzielles Fan-Archiv aller Counter-Strike-Musikkits. Jedes Kit hat eine eigene Seite mit der vollständigen Titelliste, abspielbar im Browser, in allen 28 Sprachen von CS2.",
+  "about.data": "Woher die Daten stammen",
+  "about.dataText": "Titel und Cover stammen aus den Dateien des Spiels und werden unverändert veröffentlicht. Namen und Beschreibungen der Kits sind Valves eigene Texte in jeder Sprache. Erscheinungsdaten stammen aus Valves Patchnotes, verlinkt auf der Seite jedes Kits. Links zu den Künstlern stammen von MusicBrainz. Jede Woche prüft die Seite das Spiel auf neue und geänderte Kits.",
+  "about.source": "Open Source",
+  "about.sourceText": "Der Code steht unter der MIT-Lizenz, unsere Daten unter CC0 und unsere Texte unter CC BY 4.0. Namen, Artwork und Audio gehören Valve und den Künstlern.",
+  "about.report": "Fehler melden"
 }

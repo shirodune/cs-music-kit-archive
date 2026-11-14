@@ -1,0 +1,62 @@
+---
+// About page (spec: PROD-38): what the site is, where its data comes from, and where the code lives.
+
+import { REPOSITORY } from "../../data/site.ts";
+import { LOCALE_SEGMENTS, type LocaleSegment } from "../../i18n/locales.ts";
+import { createT } from "../../i18n/t.ts";
+import Base from "../../layouts/Base.astro";
+
+export function getStaticPaths() {
+  return LOCALE_SEGMENTS.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as LocaleSegment;
+const t = createT(locale);
+const sections = [
+  { id: "what", heading: t("about.what"), text: t("about.whatText") },
+  { id: "data", heading: t("about.data"), text: t("about.dataText") },
+  { id: "source", heading: t("about.source"), text: t("about.sourceText") },
+];
+const links = [
+  { href: REPOSITORY, label: t("footer.source") },
+  { href: `${REPOSITORY}/issues`, label: t("about.report") },
+  { href: `${REPOSITORY}/blob/main/NOTICE`, label: t("footer.licences") },
+];
+---
+
+<Base locale={locale} title={t("about.title")} description={t("about.meta")}>
+  <section class="relative mx-auto max-w-[1360px] px-4 pt-14 sm:px-10">
+    <h1 class="font-condensed text-[clamp(4rem,9vw,8.75rem)] leading-[0.86] font-extrabold uppercase">
+      {t("about.title")}
+    </h1>
+  </section>
+
+  <div aria-hidden="true" class="hazard relative mt-14 h-3.5"></div>
+
+  {
+    sections.map((s) => (
+      <section
+        aria-labelledby={`${s.id}-h`}
+        class="relative mx-auto flex max-w-[1360px] flex-wrap gap-x-16 gap-y-4 px-4 pt-18 sm:px-10"
+      >
+        <h2 id={`${s.id}-h`} class="flex-[0_0_220px] font-stencil text-[22px] tracking-wider text-signal uppercase">
+          {s.heading}
+        </h2>
+        <div class="max-w-[720px] min-w-0 flex-[999_1_560px] text-lg leading-relaxed text-body">
+          <p>{s.text}</p>
+          {s.id === "source" && (
+            <ul class="mt-6 flex list-none flex-wrap gap-x-8 gap-y-2 p-0 font-mono text-sm">
+              {links.map((link) => (
+                <li>
+                  <a href={link.href} class="text-paper underline underline-offset-4">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </section>
+    ))
+  }
+</Base>

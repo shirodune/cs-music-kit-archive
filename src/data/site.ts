@@ -7,6 +7,9 @@ import type { LocaleSegment } from "../i18n/locales.ts";
 import type { GeneratedArtist, Kit, LocaleText, Release } from "./schema.ts";
 
 /** Kits in rack order (PROD-7). */
+/** The public repository: source code, issues and the licence notice (PROD-4, PROD-38). */
+export const REPOSITORY = "https://github.com/shirodune/cs-music-kit-archive";
+
 export const kits = kitsJson as Kit[];
 export const releases = releasesJson as Release[];
 export const artists = artistsJson as GeneratedArtist[];

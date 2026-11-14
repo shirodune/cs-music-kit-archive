@@ -4,6 +4,7 @@
   "nav.label": "メイン",
   "nav.records": "レコード",
   "nav.artists": "アーティスト",
+  "nav.about": "概要",
   "lang.label": "言語",
   "footer.disclaimer": "非公式のファンプロジェクトです。Valve とは無関係で、Valve の承認も受けていません。Counter-Strike および全ミュージックキットの名称、アートワーク、音源は Valve と各アーティストに帰属します。",
   "footer.short": "非公式のファンプロジェクトです。Valve とは無関係で、Valve の承認も受けていません。",
@@ -93,7 +94,6 @@
   "artist.yearsLater": {
     "other": "{count} 年後"
   },
-  "artist.open": "{name}：{titles}",
   "rack.region": "レコードラック（リリース順）。左右の矢印キーで移動、Page Up と Page Down で年を切り替え、Enter でレコードを開きます。",
   "rack.years": "年",
   "rack.card": "レコードのラベル",
@@ -106,5 +106,14 @@
   "records.list": "すべてのレコード",
   "content.sources": "出典",
   "content.machine": "英語からの機械翻訳です。",
-  "content.untranslated": "まだ翻訳されていません。英語で表示しています。"
+  "content.untranslated": "まだ翻訳されていません。英語で表示しています。",
+  "about.title": "このサイトについて",
+  "about.meta": "CS Music Kit Archive とは何か、データの出典、誤りの報告方法。",
+  "about.what": "このサイトについて",
+  "about.whatText": "Counter-Strike のすべてのミュージックキットを集めた、非公式・非営利のファンアーカイブです。キットごとにページがあり、全トラックをブラウザで再生できます。CS2 の 28 言語すべてに対応しています。",
+  "about.data": "データの出典",
+  "about.dataText": "トラックとカバーはゲームのファイルから取り出し、そのまま公開しています。キット名と説明文は各言語の Valve 公式テキストです。発売日は Valve のリリースノートに基づき、各キットのページにリンクがあります。アーティストのリンクは MusicBrainz から取得しています。毎週ゲームを確認し、新しいキットや変更を反映しています。",
+  "about.source": "オープンソース",
+  "about.sourceText": "コードは MIT ライセンス、整理したデータは CC0、執筆した文章は CC BY 4.0 です。名称、アートワーク、音声は Valve と各アーティストに帰属します。",
+  "about.report": "誤りを報告"
 }

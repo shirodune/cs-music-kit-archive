@@ -1,12 +1,30 @@
-# CS Music Kit Archive
+<h1 align="center">CS Music Kit Archive</h1>
 
-An unofficial, non-commercial fan site that presents every Counter-Strike music kit, from the default CS:GO music of 2012 to today, with full tracklists, in all 28 languages that CS2 supports.
+<p align="center">
+  Every Counter-Strike music kit, with its full tracklist, in all 28 languages of CS2.
+  <br />
+  <a href="https://musickitarchive.com">Website</a>
+  ·
+  <a href="https://musickitarchive.com/en/about/">About</a>
+  ·
+  <a href="https://github.com/shirodune/cs-music-kit-archive/issues">Report a mistake</a>
+</p>
 
-Not affiliated with or endorsed by Valve. See [NOTICE](NOTICE).
+<p align="center">
+  <img src="docs/screenshot.webp" alt="The records rack on musickitarchive.com, with Desert Fire by Austin Wintory selected" width="1100">
+</p>
 
-## Status
+## About
 
-Live at <https://musickitarchive.com>, still in development. The records rack, record pages, artist pages and the sitemap are built in all 28 languages. Every track plays on its record page, from the game's own files. The specification is in [`spec/`](spec/README.md).
+An unofficial, non-commercial fan site. In the game you only hear a short preview of a music kit; here every kit has its own page where each track plays in full.
+
+- **Every kit**, from the default CS:GO music of 2012 to today, on a rack in order of release.
+- **Straight from the game**: tracks and covers are taken from CS2's own files and published unchanged. Names and descriptions are Valve's own text in each language.
+- **Sourced release dates**: each one links to the Valve release note that announced it.
+- **Artists**: a page per artist with their kits and links from MusicBrainz.
+- **28 languages**, the same ones CS2 has.
+
+A weekly job checks the game for new and changed kits and opens a pull request.
 
 ## Development
 
@@ -18,51 +36,14 @@ pnpm dev          # local dev server
 pnpm verify       # lint, types, i18n check, unit tests, build, end-to-end tests
 ```
 
-| Command | What it does |
-|---|---|
-| `pnpm build` | Builds the static site into `dist/` |
-| `pnpm preview` | Serves `dist/` with Wrangler, the same way Cloudflare does |
-| `pnpm i18n:check` | Checks `messages/` against English (plural forms, placeholders, unknown keys) |
-| `pnpm test` / `pnpm test:e2e` | Unit tests (Vitest) / end-to-end tests (Playwright, needs `pnpm build` first) |
-| `pnpm data:changes` | Lists the game's sound files and cover textures that changed since the site's audio and covers were extracted (needs `pnpm data:sync` first; spec DATA-26) |
-| `pnpm data:suggest-release` | For each kit without a release, lists the CS2 Steam posts since the newest release that name it, release notes first, with a draft entry for `data/curated/releases.json`; it never writes the file (spec DATA-14, DATA-25) |
-| `pnpm data:links` | Fetches artist links from MusicBrainz for every `musicbrainzId` in `data/curated/artists.json`; run `pnpm data:build` after |
-| `pnpm lighthouse` | Lighthouse desktop performance check (PROD-36, needs `pnpm build` first) |
+Astro (static output) with React islands, Tailwind CSS, TypeScript, Vitest and Playwright. Hosted on Cloudflare Workers, audio on Cloudflare R2.
 
-## Audio (maintainers)
+- [`spec/`](spec/README.md) is the source of truth for what the site does and why. Read it before changing behaviour, and update it in the same change.
+- [`docs/maintainers.md`](docs/maintainers.md) covers the data commands, extracting audio and covers from the game, and the weekly sync. Contributors do not need it.
 
-The audio comes from the game's own files and goes straight to Cloudflare R2. It never passes through git (spec DATA-20, DATA-21). No Steam account or CS2 install is needed:
+## Contributing
 
-1. Install the tools: Node 26, pnpm, ffmpeg (the script uses its `ffprobe` to measure durations), [DepotDownloader](https://github.com/SteamRE/DepotDownloader/releases) and the Source2Viewer CLI (`cli-*.zip` from the [ValveResourceFormat releases](https://github.com/ValveResourceFormat/ValveResourceFormat/releases)).
-2. Run, in a clone of this repository:
-
-   ```sh
-   pnpm install
-   pnpm game:download --depotdownloader <path to DepotDownloader>
-   pnpm audio:extract --s2v <path to Source2Viewer-CLI>
-   pnpm audio:upload
-   ```
-
-`game:download` downloads, anonymously from Steam, the game's VPK directory (about 8 MB) and only the archives that hold new or changed tracks and cover textures, about 100 MB each, into `game-files/` (ignored by git). `audio:extract` reads those tracks, has Source2Viewer decompile them into `audio/out/` (ignored by git) and writes the manifest to `data/upstream/audio-manifest.json`; the other tracks keep their entry. Add `--all` to both to read every track again (about 12 GB of archives, with the covers). With CS2 installed through Steam, skip `game:download` and pass `--game "C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo"` to `audio:extract`. `audio:upload` needs the bucket's S3 credentials in `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY` (see "Weekly sync"). It compares the manifest with the published one: it uploads new or changed files, then the manifest, then deletes files that are no longer listed.
-
-Cover textures (spec DATA-19) come from the same game files and are committed in `public/covers/textures/`. `game:download` also fetches the archives of covers whose textures changed; then:
-
-```sh
-pnpm data:textures --s2v <path to Source2Viewer-CLI>
-pnpm data:build
-```
-
-`audio:extract` and `data:textures` record the game files they read, so `pnpm data:changes` stops listing them. `pnpm data:changes --accept` records every current game file as extracted, for files that need no extraction (for example a removed one).
-
-## Weekly sync (maintainers)
-
-`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts the audio and cover textures of game files that changed, uploads the audio, and opens or updates the pull request on the branch `data-sync` with everything else, the covers included. When a new kit fails the build, the pull request lists the errors and the `pnpm data:suggest-release` output; add the release (checked against its page) and credits on that branch. One-time setup (done 2026-11-13):
-
-1. Create an R2 token limited to the bucket: in Cloudflare, R2 → Manage API tokens → Create Account API token, permission "Object Read & Write", bucket `cs-music-kit-audio`. It shows an Access Key ID and a Secret Access Key.
-2. In GitHub, create the environment `audio` (Settings → Environments), limit its deployment branches to `main`, and add the two values as the secrets `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`.
-3. In GitHub, allow workflows to open pull requests: Settings → Actions → General → Workflow permissions → "Allow GitHub Actions to create and approve pull requests".
-
-Deploys run from GitHub Actions (spec D-003): every pull request gets a preview on workers.dev, and every push to `main` deploys to production after all checks pass.
+Found a wrong date, name or link? [Open an issue](https://github.com/shirodune/cs-music-kit-archive/issues). Pull requests are welcome: run `pnpm verify` first. Release dates need a Valve source (spec DATA-13, DATA-14), and Valve's own text is never edited or machine translated.
 
 ## Licence
 
@@ -70,3 +51,9 @@ Deploys run from GitHub Actions (spec D-003): every pull request gets a preview 
 - Our curated data (`data/curated/`): [CC0 1.0](LICENSE-DATA), public domain
 - Our writing (`content/`): [CC BY 4.0](LICENSE-CONTENT)
 - Third-party material (Valve's names, artwork, audio and game data; ByMykel's data; MusicBrainz links; fonts): see [NOTICE](NOTICE)
+
+Not affiliated with or endorsed by Valve. Counter-Strike and all music kit names, artwork and audio belong to Valve and the respective artists.
+
+## Thanks
+
+[SteamDB GameTracking](https://github.com/SteamTracking/GameTracking-CS2) for the game data, ByMykel's [file tracker](https://github.com/ByMykel/counter-strike-file-tracker) and [CSGO-API](https://github.com/ByMykel/CSGO-API) for the translations and item data, [MusicBrainz](https://musicbrainz.org) for the artist links, and [Source 2 Viewer](https://github.com/ValveResourceFormat/ValveResourceFormat) and [DepotDownloader](https://github.com/SteamRE/DepotDownloader) for reading the game files.

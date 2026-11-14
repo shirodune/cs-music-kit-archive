@@ -4,6 +4,7 @@
   "nav.label": "Hoofdmenu",
   "nav.records": "Platen",
   "nav.artists": "Artiesten",
+  "nav.about": "Over",
   "lang.label": "Taal",
   "footer.disclaimer": "Onofficieel fanproject. Niet verbonden aan of goedgekeurd door Valve. Counter-Strike en de namen, artwork en audio van alle muzieksets zijn eigendom van Valve en de betreffende artiesten.",
   "footer.short": "Onofficieel fanproject. Niet verbonden aan of goedgekeurd door Valve.",
@@ -97,7 +98,6 @@
     "one": "{count} jaar later",
     "other": "{count} jaar later"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Platenbak, op volgorde van uitgave. De pijltjestoetsen links en rechts bladeren, Page Up en Page Down wisselen van jaar, Enter opent de plaat.",
   "rack.years": "Jaren",
   "rack.card": "Platenlabel",
@@ -111,5 +111,14 @@
   "records.list": "Alle platen",
   "content.sources": "Bronnen",
   "content.machine": "Automatisch vertaald uit het Engels.",
-  "content.untranslated": "Nog niet vertaald. Getoond in het Engels."
+  "content.untranslated": "Nog niet vertaald. Getoond in het Engels.",
+  "about.title": "Over deze site",
+  "about.meta": "Wat CS Music Kit Archive is, waar de gegevens vandaan komen en hoe je een fout meldt.",
+  "about.what": "Wat dit is",
+  "about.whatText": "Een onofficieel, niet-commercieel fanarchief van alle muziekkits van Counter-Strike. Elke kit heeft een eigen pagina met de volledige tracklijst, af te spelen in de browser, in alle 28 talen van CS2.",
+  "about.data": "Waar de gegevens vandaan komen",
+  "about.dataText": "Nummers en hoezen komen uit de bestanden van de game en worden ongewijzigd gepubliceerd. Namen en beschrijvingen van kits zijn de teksten van Valve in elke taal. Releasedatums komen uit de patchnotes van Valve, gelinkt op de pagina van elke kit. Links naar artiesten komen van MusicBrainz. Elke week controleert de site de game op nieuwe en gewijzigde kits.",
+  "about.source": "Open source",
+  "about.sourceText": "De code valt onder de MIT-licentie, onze gegevens onder CC0 en onze teksten onder CC BY 4.0. Namen, artwork en audio zijn van Valve en de artiesten.",
+  "about.report": "Een fout melden"
 }

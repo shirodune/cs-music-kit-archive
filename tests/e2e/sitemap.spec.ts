@@ -4,8 +4,8 @@ import { LOCALES } from "../../src/i18n/locales.ts";
 
 const site = "https://musickitarchive.com";
 const count = (file: string) => (JSON.parse(readFileSync(new URL(file, import.meta.url), "utf8")) as unknown[]).length;
-// Home, artists index, one page per kit and one per artist, in every locale.
-const pagesPerLocale = 2 + count("../../data/generated/kits.json") + count("../../data/generated/artists.json");
+// Home, artists index, about page, one page per kit and one per artist, in every locale.
+const pagesPerLocale = 3 + count("../../data/generated/kits.json") + count("../../data/generated/artists.json");
 const locs = (xml: string) => [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1] as string);
 
 test.describe("sitemap", () => {

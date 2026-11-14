@@ -4,6 +4,7 @@
   "nav.label": "Hovedmeny",
   "nav.records": "Plater",
   "nav.artists": "Artister",
+  "nav.about": "Om",
   "lang.label": "Språk",
   "footer.disclaimer": "Uoffisielt fanprosjekt. Ikke tilknyttet eller godkjent av Valve. Counter-Strike og navn, grafikk og lyd for alle musikksett tilhører Valve og de respektive artistene.",
   "footer.short": "Uoffisielt fanprosjekt. Ikke tilknyttet eller godkjent av Valve.",
@@ -97,7 +98,6 @@
     "one": "{count} år senere",
     "other": "{count} år senere"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Platehylle i utgivelsesrekkefølge. Venstre og høyre piltast blar, Page Up og Page Down bytter år, Enter åpner platen.",
   "rack.years": "År",
   "rack.card": "Plateetikett",
@@ -111,5 +111,14 @@
   "records.list": "Alle plater",
   "content.sources": "Kilder",
   "content.machine": "Maskinoversatt fra engelsk.",
-  "content.untranslated": "Ikke oversatt ennå. Vises på engelsk."
+  "content.untranslated": "Ikke oversatt ennå. Vises på engelsk.",
+  "about.title": "Om nettstedet",
+  "about.meta": "Hva CS Music Kit Archive er, hvor dataene kommer fra og hvordan du melder fra om en feil.",
+  "about.what": "Hva dette er",
+  "about.whatText": "Et uoffisielt, ikke-kommersielt fanarkiv over alle musikksett i Counter-Strike. Hvert sett har sin egen side med hele sporlisten, som kan spilles av i nettleseren, på alle de 28 språkene i CS2.",
+  "about.data": "Hvor dataene kommer fra",
+  "about.dataText": "Spor og omslag hentes fra spillets egne filer og publiseres uendret. Navn og beskrivelser av sett er Valves egne tekster på hvert språk. Utgivelsesdatoer kommer fra Valves oppdateringsnotater, med lenke på hvert setts side. Lenker til artister kommer fra MusicBrainz. Hver uke sjekker nettstedet spillet for nye og endrede sett.",
+  "about.source": "Åpen kildekode",
+  "about.sourceText": "Koden er under MIT-lisensen, våre data under CC0 og våre tekster under CC BY 4.0. Navn, grafikk og lyd tilhører Valve og artistene.",
+  "about.report": "Meld fra om en feil"
 }
