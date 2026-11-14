@@ -99,13 +99,13 @@ const githubMark =
             </a>
           ))
         }
-        <div class="border-l border-paper/25 pl-2.5 normal-case tracking-normal">
+        <div class="flex items-center gap-2 border-l border-paper/25 pl-2.5 normal-case tracking-normal">
           <LanguagePicker locale={locale} rest={rest} t={t} />
+          <a href={REPOSITORY} class="flex h-11 items-center px-1 hover:text-signal max-sm:hidden">
+            <span class="sr-only">GitHub</span>
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d={githubMark} /></svg>
+          </a>
         </div>
-        <a href={REPOSITORY} class="flex h-11 items-center hover:text-signal max-sm:hidden">
-          <span class="sr-only">GitHub</span>
-          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d={githubMark} /></svg>
-        </a>
       </nav>
     </header>
 

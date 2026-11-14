@@ -12,7 +12,7 @@ The design reference is the claude.ai Design canvas "CS Music Kits Archive", pag
 
 Records (the rack, the home page), one page per kit, the artists index, one page per artist, About, and a not-found page, each in every language.
 
-- PROD-2 Header: site name, Records, Artists, About, the language picker (opens the same page in another language, keeping the selected kit) and a link to the source code (on phones only in the footer).
+- PROD-2 Header: site name; Records, Artists, About; then, after a divider, the language picker (opens the same page in another language, keeping the selected kit) and a GitHub icon linking to the source code (left out on phones; the footer has the link).
 - PROD-4 Footer: not affiliated with Valve; the names, artwork and audio belong to Valve and the artists; data credits; links to the source code and licences. The records page has no footer: it is the one-screen home page, and the header links to the source code.
 - PROD-5 The root address opens the visitor's remembered language, else the best match for the browser, else English.
 - PROD-6 A page has the same address in every language apart from the language segment.
