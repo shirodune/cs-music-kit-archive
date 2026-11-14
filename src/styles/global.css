@@ -25,6 +25,12 @@
 }
 
 @layer base {
+  /* The left and right edge of page content: a 1360 px container with 40 px padding, centred. The header and the
+     records page use it too, so every page lines up. */
+  :root {
+    --gutter: max(2.5rem, calc((100% - 1280px) / 2));
+  }
+
   html {
     background-color: var(--color-ground);
     color: var(--color-paper);

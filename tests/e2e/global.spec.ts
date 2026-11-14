@@ -68,4 +68,24 @@ test.describe("every page", () => {
     await page.goto("/no-such-page/");
     await expect(page.getByRole("navigation").getByRole("link", { name: "Records" })).not.toHaveClass(/text-signal/);
   });
+
+  test("the header, the records page and the other pages share one left edge", async ({ page }) => {
+    for (const width of [1024, 1440, 1920]) {
+      await page.setViewportSize({ width, height: 900 });
+      const edges: number[] = [];
+      await page.goto("/en/about/");
+      edges.push(
+        await page
+          .locator("body > header a")
+          .first()
+          .evaluate((el) => el.getBoundingClientRect().left),
+      );
+      edges.push(await page.locator("main h1").evaluate((el) => el.getBoundingClientRect().left));
+      await page.goto("/en/");
+      edges.push(
+        await page.getByRole("region", { name: "Record label" }).evaluate((el) => el.getBoundingClientRect().left),
+      );
+      expect(new Set(edges.map(Math.round)).size, `${width}: ${edges}`).toBe(1);
+    }
+  });
 });

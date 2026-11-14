@@ -80,7 +80,7 @@ const githubMark =
   </head>
   <body class:list={["grid-lines", fill ? "flex h-dvh min-h-fit flex-col" : "min-h-screen"]}>
     <header
-      class="relative z-10 flex flex-none min-h-16 flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-rule px-[max(1rem,env(safe-area-inset-left))] py-2 sm:px-10"
+      class="relative z-10 flex flex-none min-h-16 flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-rule px-[max(1rem,env(safe-area-inset-left))] py-2 sm:px-(--gutter)"
     >
       <a href={`/${locale}/`} class="font-stencil text-2xl tracking-wide uppercase">{t("site.name")}</a>
       <nav aria-label={t("nav.label")} class="flex flex-wrap items-center justify-end gap-x-3 font-condensed sm:gap-x-7 text-base font-semibold whitespace-nowrap uppercase tracking-widest">
