@@ -63,6 +63,7 @@
   "kit.neighbours": "Попередня й наступна платівка на полиці",
   "kit.sources": "Джерела",
   "kit.releaseSource": "Анонс виходу, {date}",
+  "kit.story": "Історія",
   "cue.mainmenu": "Головне меню",
   "cue.chooseteam": "Вибір команди",
   "cue.startofmatch": "Початок матчу",
@@ -96,6 +97,7 @@
   "artist.discography": "Музичні альбоми",
   "artist.with": "Разом із: {names}",
   "artist.links": "Посилання",
+  "artist.introduction": "Профіль",
   "artist.officialSite": "Офіційний сайт",
   "artist.yearsLater": {
     "one": "{count} рік по тому",
@@ -116,5 +118,8 @@
     "many": "{year}, {count} альбомів",
     "other": "{year}, {count} альбому"
   },
-  "records.list": "Усі платівки"
+  "records.list": "Усі платівки",
+  "content.sources": "Джерела",
+  "content.machine": "Машинний переклад з англійської.",
+  "content.untranslated": "Ще не перекладено. Показано англійською."
 }

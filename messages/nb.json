@@ -57,6 +57,7 @@
   "kit.neighbours": "Forrige og neste plate i hylla",
   "kit.sources": "Kilder",
   "kit.releaseSource": "Kunngjøring av utgivelsen, {date}",
+  "kit.story": "Historien",
   "cue.mainmenu": "Hovedmeny",
   "cue.chooseteam": "Velg lag",
   "cue.startofmatch": "Kampstart",
@@ -90,6 +91,7 @@
   "artist.discography": "Musikksett",
   "artist.with": "Med {names}",
   "artist.links": "Lenker",
+  "artist.introduction": "Profil",
   "artist.officialSite": "Offisiell nettside",
   "artist.yearsLater": {
     "one": "{count} år senere",
@@ -106,5 +108,8 @@
     "one": "{year}, {count} sett",
     "other": "{year}, {count} sett"
   },
-  "records.list": "Alle plater"
+  "records.list": "Alle plater",
+  "content.sources": "Kilder",
+  "content.machine": "Maskinoversatt fra engelsk.",
+  "content.untranslated": "Ikke oversatt ennå. Vises på engelsk."
 }

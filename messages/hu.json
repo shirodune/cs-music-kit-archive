@@ -57,6 +57,7 @@
   "kit.neighbours": "Előző és következő lemez a polcon",
   "kit.sources": "Források",
   "kit.releaseSource": "Megjelenési bejelentés, {date}",
+  "kit.story": "A történet",
   "cue.mainmenu": "Főmenü",
   "cue.chooseteam": "Csapatválasztás",
   "cue.startofmatch": "Meccs kezdete",
@@ -90,6 +91,7 @@
   "artist.discography": "Zenekészletek",
   "artist.with": "Közreműködik: {names}",
   "artist.links": "Linkek",
+  "artist.introduction": "Bemutatkozás",
   "artist.officialSite": "Hivatalos oldal",
   "artist.yearsLater": {
     "one": "{count} évvel később",
@@ -106,5 +108,8 @@
     "one": "{year}, {count} készlet",
     "other": "{year}, {count} készlet"
   },
-  "records.list": "Összes lemez"
+  "records.list": "Összes lemez",
+  "content.sources": "Források",
+  "content.machine": "Gépi fordítás angolból.",
+  "content.untranslated": "Még nincs lefordítva. Angolul jelenik meg."
 }

@@ -57,6 +57,7 @@
   "kit.neighbours": "Raftaki önceki ve sonraki plak",
   "kit.sources": "Kaynaklar",
   "kit.releaseSource": "Çıkış duyurusu, {date}",
+  "kit.story": "Hikâye",
   "cue.mainmenu": "Ana menü",
   "cue.chooseteam": "Takım seçimi",
   "cue.startofmatch": "Maç başlangıcı",
@@ -90,6 +91,7 @@
   "artist.discography": "Müzik kitleri",
   "artist.with": "Birlikte: {names}",
   "artist.links": "Bağlantılar",
+  "artist.introduction": "Profil",
   "artist.officialSite": "Resmî site",
   "artist.yearsLater": {
     "one": "{count} yıl sonra",
@@ -106,5 +108,8 @@
     "one": "{year}, {count} kit",
     "other": "{year}, {count} kit"
   },
-  "records.list": "Tüm plaklar"
+  "records.list": "Tüm plaklar",
+  "content.sources": "Kaynaklar",
+  "content.machine": "İngilizceden makine çevirisi.",
+  "content.untranslated": "Henüz çevrilmedi. İngilizce gösteriliyor."
 }

@@ -57,6 +57,7 @@
   "kit.neighbours": "Edellinen ja seuraava levy telineessä",
   "kit.sources": "Lähteet",
   "kit.releaseSource": "Julkaisutiedote, {date}",
+  "kit.story": "Tarina",
   "cue.mainmenu": "Päävalikko",
   "cue.chooseteam": "Joukkueen valinta",
   "cue.startofmatch": "Ottelun alku",
@@ -90,6 +91,7 @@
   "artist.discography": "Musiikkipakkaukset",
   "artist.with": "Mukana {names}",
   "artist.links": "Linkit",
+  "artist.introduction": "Esittely",
   "artist.officialSite": "Virallinen sivusto",
   "artist.yearsLater": {
     "one": "{count} vuosi myöhemmin",
@@ -106,5 +108,8 @@
     "one": "{year}, {count} pakkaus",
     "other": "{year}, {count} pakkausta"
   },
-  "records.list": "Kaikki levyt"
+  "records.list": "Kaikki levyt",
+  "content.sources": "Lähteet",
+  "content.machine": "Konekäännetty englannista.",
+  "content.untranslated": "Ei vielä käännetty. Näytetään englanniksi."
 }

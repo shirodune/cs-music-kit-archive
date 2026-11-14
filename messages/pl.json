@@ -63,6 +63,7 @@
   "kit.neighbours": "Poprzednia i następna płyta na półce",
   "kit.sources": "Źródła",
   "kit.releaseSource": "Ogłoszenie premiery, {date}",
+  "kit.story": "Historia",
   "cue.mainmenu": "Menu główne",
   "cue.chooseteam": "Wybór drużyny",
   "cue.startofmatch": "Początek meczu",
@@ -96,6 +97,7 @@
   "artist.discography": "Zestawy utworów",
   "artist.with": "Razem z: {names}",
   "artist.links": "Linki",
+  "artist.introduction": "Profil",
   "artist.officialSite": "Oficjalna strona",
   "artist.yearsLater": {
     "one": "{count} rok później",
@@ -116,5 +118,8 @@
     "many": "{year}, {count} zestawów",
     "other": "{year}, {count} zestawu"
   },
-  "records.list": "Wszystkie płyty"
+  "records.list": "Wszystkie płyty",
+  "content.sources": "Źródła",
+  "content.machine": "Przetłumaczono maszynowo z angielskiego.",
+  "content.untranslated": "Jeszcze nieprzetłumaczone. Wyświetlane po angielsku."
 }

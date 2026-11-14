@@ -57,6 +57,7 @@
   "kit.neighbours": "Forrige og næste plade i reolen",
   "kit.sources": "Kilder",
   "kit.releaseSource": "Udgivelsesmeddelelse, {date}",
+  "kit.story": "Historien",
   "cue.mainmenu": "Hovedmenu",
   "cue.chooseteam": "Vælg hold",
   "cue.startofmatch": "Kampstart",
@@ -90,6 +91,7 @@
   "artist.discography": "Musiksæt",
   "artist.with": "Med {names}",
   "artist.links": "Links",
+  "artist.introduction": "Profil",
   "artist.officialSite": "Officiel hjemmeside",
   "artist.yearsLater": {
     "one": "{count} år senere",
@@ -106,5 +108,8 @@
     "one": "{year}, {count} sæt",
     "other": "{year}, {count} sæt"
   },
-  "records.list": "Alle plader"
+  "records.list": "Alle plader",
+  "content.sources": "Kilder",
+  "content.machine": "Maskinoversat fra engelsk.",
+  "content.untranslated": "Endnu ikke oversat. Vises på engelsk."
 }

@@ -54,6 +54,7 @@
   "kit.neighbours": "唱片架上的前一张和后一张",
   "kit.sources": "来源",
   "kit.releaseSource": "发行公告，{date}",
+  "kit.story": "故事",
   "cue.mainmenu": "主菜单",
   "cue.chooseteam": "选择阵营",
   "cue.startofmatch": "比赛开始",
@@ -87,6 +88,7 @@
   "artist.discography": "音乐盒",
   "artist.with": "合作：{names}",
   "artist.links": "链接",
+  "artist.introduction": "简介",
   "artist.officialSite": "官方网站",
   "artist.yearsLater": {
     "other": "{count} 年后"
@@ -101,5 +103,8 @@
   "rack.yearLabel": {
     "other": "{year} 年，{count} 张"
   },
-  "records.list": "全部唱片"
+  "records.list": "全部唱片",
+  "content.sources": "来源",
+  "content.machine": "由英文机器翻译。",
+  "content.untranslated": "尚未翻译，以英文显示。"
 }

@@ -163,8 +163,8 @@ Artists live in `data/curated/artists.json`. Credits live in `data/curated/credi
 
 ## Content
 
-- DATA-22 Stories are `content/stories/{kit-slug}/{locale}.md`. Introductions are `content/artists/{artist-slug}/{locale}.md`.
-- DATA-23 Front matter: `sources` (list of `{ title, url }`, at least one) and `translation` (`original`, `human` or `machine`).
+- DATA-22 Stories are `content/stories/{kit-slug}/{locale}.md`. Introductions are `content/artists/{artist-slug}/{locale}.md`. They are written in English first, so `en.md` is the original and every page with content has one. The build fails on a folder that is not a kit or artist slug, a file name that is not a locale, or a missing English file (`src/data/content.ts`). `content/README.md` shows the format.
+- DATA-23 Front matter: `sources` (list of `{ title, url }`, at least one) and `translation` (`original`, `human` or `machine`). Only the English file is `original`.
 
 ## Weekly sync
 

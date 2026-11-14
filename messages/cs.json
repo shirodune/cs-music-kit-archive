@@ -63,6 +63,7 @@
   "kit.neighbours": "Předchozí a další deska v regálu",
   "kit.sources": "Zdroje",
   "kit.releaseSource": "Oznámení vydání, {date}",
+  "kit.story": "Příběh",
   "cue.mainmenu": "Hlavní nabídka",
   "cue.chooseteam": "Výběr týmu",
   "cue.startofmatch": "Začátek zápasu",
@@ -96,6 +97,7 @@
   "artist.discography": "Hudební balíčky",
   "artist.with": "Spolu s: {names}",
   "artist.links": "Odkazy",
+  "artist.introduction": "Profil",
   "artist.officialSite": "Oficiální web",
   "artist.yearsLater": {
     "one": "O {count} rok později",
@@ -116,5 +118,8 @@
     "many": "{year}, {count} balíčku",
     "other": "{year}, {count} balíčků"
   },
-  "records.list": "Všechny desky"
+  "records.list": "Všechny desky",
+  "content.sources": "Zdroje",
+  "content.machine": "Strojově přeloženo z angličtiny.",
+  "content.untranslated": "Zatím nepřeloženo. Zobrazeno v angličtině."
 }
