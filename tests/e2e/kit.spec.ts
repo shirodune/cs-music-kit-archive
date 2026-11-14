@@ -91,11 +91,44 @@ test.describe("record page", () => {
   });
 
   test("PROD-14 PROD-27 a kit or artist without a story or introduction leaves the section out", async ({ page }) => {
-    await page.goto("/en/kits/desert-fire/");
+    await page.goto("/en/kits/red-room/");
     await expect(page.getByRole("heading", { name: "Tracklist" })).toBeVisible();
     await expect(page.locator("[data-writing]")).toHaveCount(0);
-    await page.goto("/en/artists/austin-wintory/");
+    await page.goto("/en/artists/adam-beyer/");
     await expect(page.getByRole("heading", { name: "Music kits", level: 2 })).toBeVisible();
     await expect(page.locator("[data-writing]")).toHaveCount(0);
+  });
+
+  test("PROD-27 PROD-28 the story sits under the description, with its sources under the text", async ({ page }) => {
+    await page.goto("/en/kits/desert-fire/");
+    const story = page.getByRole("region", { name: "Story" });
+    await expect(story).toContainText("Tom Strahle on guitar");
+    await expect(story.getByRole("link", { name: /Introducing Music Kits!/ })).toHaveAttribute(
+      "href",
+      "https://blog.counter-strike.net/2014/10/10432/",
+    );
+    await expect(story.locator('[lang="en"]')).toHaveCount(0);
+  });
+
+  test("I18N-17 I18N-18 a machine translation says so; a locale without one shows the English text", async ({
+    page,
+  }) => {
+    await page.goto("/zh-hans/kits/desert-fire/");
+    const story = page.locator('[data-writing="stories"]');
+    await expect(story).toContainText("由英文机器翻译。");
+    await expect(story).toContainText("Tom Strahle 弹吉他");
+    await page.goto("/de/kits/desert-fire/");
+    await expect(page.locator('[data-writing="stories"]')).toContainText("Noch nicht übersetzt.");
+    await expect(page.locator('[data-writing="stories"] .writing')).toHaveAttribute("lang", "en");
+  });
+
+  test("PROD-18 PROD-27 an artist's introduction comes before the discography", async ({ page }) => {
+    await page.goto("/en/artists/austin-wintory/");
+    const about = page.getByRole("region", { name: "About" });
+    await expect(about).toContainText("first game score ever nominated for a Grammy");
+    const order = await page
+      .locator("[data-writing], #discography-h")
+      .evaluateAll((els) => els.map((el) => el.getAttribute("data-writing") ?? el.id));
+    expect(order).toEqual(["introductions", "discography-h"]);
   });
 });
