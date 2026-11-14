@@ -147,7 +147,7 @@ Decided 2026-11-13 by the project owner.
 
 Decided 2026-11-13 by the project owner. Replaces "audio never passes through CI" from DATA-20 as written before.
 
-- The game's files can be downloaded anonymously from Steam (DepotDownloader, app 730, depot 2347770), and only the VPK archives that hold changed tracks are needed (DATA-20, DATA-26). So the weekly sync (DATA-24) extracts and uploads new audio itself instead of waiting for a maintainer's machine.
+- The game's files can be downloaded anonymously from Steam (DepotDownloader, app 730, depot 2347770), and only the VPK archives that hold changed tracks and cover textures are needed (DATA-19, DATA-20, DATA-26). So the weekly sync (DATA-24) extracts new audio and covers itself instead of waiting for a maintainer's machine. Covers go into the pull request (they are committed, D-022); audio goes to R2.
 - The workflow has three jobs:
   - The job that runs third-party tools (DepotDownloader and Source2Viewer, pinned versions checked by SHA-256) has no secrets and read-only access to the repository.
   - Only the upload job gets the R2 credentials. It runs only this project's code. The token is stored in the GitHub environment `audio`, which only `main` can use.

@@ -1,7 +1,8 @@
 # Weekly data sync (spec: DATA-24 to DATA-26, D-023). Also runs on demand from the Actions tab.
 # 1. sync: fetches the upstream data and artist links, builds, and lists the game files that changed. When sound
-#    files changed, downloads only their VPK archives from Steam and extracts their audio. It runs third-party tools
-#    (DepotDownloader, Source2Viewer), so it gets no secrets and cannot write to the repository.
+#    files or cover textures changed, downloads only their VPK archives from Steam and extracts their audio and
+#    covers. It runs third-party tools (DepotDownloader, Source2Viewer), so it gets no secrets and cannot write to
+#    the repository. It hands its changes to the other jobs as a git patch.
 # 2. upload: publishes the extracted audio to R2. The only job with the R2 credentials, limited to the audio bucket;
 #    it runs only this project's code.
 # 3. pull-request: commits the changed data to the branch data-sync and opens or updates its pull request.
@@ -21,10 +22,10 @@ permissions:
 
 jobs:
   sync:
-    name: Fetch data and extract audio
+    name: Fetch data and extract game files
     runs-on: ubuntu-latest
     outputs:
-      audio: ${{ steps.extract.outcome == 'success' }}
+      audio: ${{ steps.extract.outputs.audio == 'true' }}
       build: ${{ steps.build.outputs.ok }}
     env:
       DEPOTDOWNLOADER_URL: https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_3.4.0/DepotDownloader-linux-x64.zip
@@ -58,7 +59,7 @@ jobs:
           if pnpm -s data:changes > "$RUNNER_TEMP/changes.log"; then echo "changed=false" >> "$GITHUB_OUTPUT"; else echo "changed=true" >> "$GITHUB_OUTPUT"; fi
           cat "$RUNNER_TEMP/changes.log"
       # Tracks of a kit that is not built yet are extracted on a later run, once the build passes.
-      - name: Extract changed audio
+      - name: Extract changed audio and covers
         id: extract
         if: steps.changes.outputs.changed == 'true' && steps.build.outputs.ok == 'true'
         run: |
@@ -74,21 +75,24 @@ jobs:
           chmod +x "$tools/dd/DepotDownloader" "$tools/s2v/Source2Viewer-CLI"
           pnpm game:download --depotdownloader "$tools/dd/DepotDownloader"
           pnpm audio:extract --s2v "$tools/s2v/Source2Viewer-CLI"
+          pnpm data:textures --s2v "$tools/s2v/Source2Viewer-CLI"
           pnpm data:build
           pnpm -s data:changes > "$RUNNER_TEMP/changes.log" || true
-      - name: Keep the logs for the pull request
+          if [ -n "$(ls -A audio/out 2>/dev/null)" ]; then echo "audio=true" >> "$GITHUB_OUTPUT"; fi
+      # The patch carries every change, binary covers and deleted files included; game-files/ and audio/ are ignored.
+      - name: Collect the changes
         run: |
-          mkdir -p sync-logs
-          cp "$RUNNER_TEMP/build.log" "$RUNNER_TEMP/changes.log" sync-logs/
+          out="$RUNNER_TEMP/out"
+          mkdir -p "$out"
+          cp "$RUNNER_TEMP/build.log" "$RUNNER_TEMP/changes.log" "$out/"
+          git add -A
+          git diff --cached --binary > "$out/changes.patch"
       - uses: actions/upload-artifact@v7
         with:
           name: data
-          path: |
-            data/
-            public/covers/*.png
-            sync-logs/
+          path: ${{ runner.temp }}/out/
           retention-days: 3
-      - if: steps.extract.outcome == 'success'
+      - if: steps.extract.outputs.audio == 'true'
         uses: actions/upload-artifact@v7
         with:
           name: audio
@@ -112,6 +116,8 @@ jobs:
       - uses: actions/download-artifact@v8
         with:
           name: data
+          path: ${{ runner.temp }}/data/
+      - run: git apply --binary "$RUNNER_TEMP/data/changes.patch"
       - uses: actions/download-artifact@v8
         with:
           name: audio
@@ -135,9 +141,11 @@ jobs:
       - uses: actions/download-artifact@v8
         with:
           name: data
+          path: ${{ runner.temp }}/sync-logs/
       - name: Commit and open or update the pull request
         run: |
-          mv sync-logs "$RUNNER_TEMP/"
+          patch="$RUNNER_TEMP/sync-logs/changes.patch"
+          if [ -s "$patch" ]; then git apply --binary "$patch"; fi
           # meta.json records the fetch time, so it changes on every run.
           if [ -z "$(git status --porcelain -- . ':!data/upstream/meta.json')" ]; then
             echo "Nothing changed."

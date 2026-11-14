@@ -19,6 +19,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
 import { readJson, writeJson } from "../data/json.ts";
+import { EXTRACTED, readExtracted, recordOf } from "../game/extracted.ts";
 import { archivePath, readVpkDir, readVpkFile } from "../game/vpk.ts";
 import { type Manifest, needsExtraction, wantedFiles } from "./lib.ts";
 
@@ -26,7 +27,6 @@ const ROOT = fileURLToPath(new URL("../../", import.meta.url));
 const VSND = join(ROOT, "audio", "vsnd");
 const OUT = join(ROOT, "audio", "out");
 const MANIFEST = join(ROOT, "data", "upstream", "audio-manifest.json");
-const EXTRACTED = join(ROOT, "data", "upstream", "game-files-extracted.json");
 
 const { values: args } = parseArgs({
   options: {
@@ -48,9 +48,7 @@ async function main(): Promise<void> {
   const vpk = await readVpkDir(dirFile);
   const kits = await readJson<Parameters<typeof wantedFiles>[0]>(join(ROOT, "data", "generated", "kits.json"));
   const previous = existsSync(MANIFEST) ? await readJson<Manifest>(MANIFEST) : {};
-  const extracted = existsSync(EXTRACTED)
-    ? await readJson<Record<string, { crc: string; bytes: number }>>(EXTRACTED)
-    : {};
+  const extracted = await readExtracted();
 
   const manifest: Manifest = {};
   const toRead: string[] = [];
@@ -72,11 +70,7 @@ async function main(): Promise<void> {
       await mkdir(join(VSND, internalName), { recursive: true });
       await writeFile(join(VSND, `${base}.vsnd_c`), await readVpkFile(dirFile, entry));
       toRead.push(base);
-      // Written the way GameTracking's VPK listing writes it, which `pnpm data:sync` copies.
-      read[`sounds/music/${base}.vsnd_c`] = {
-        crc: entry.crc.toString(16).padStart(10, "0"),
-        bytes: entry.preload.length + entry.length,
-      };
+      read[`sounds/music/${base}.vsnd_c`] = recordOf(entry);
     }
   }
   if (notInGame.length > 0) {
