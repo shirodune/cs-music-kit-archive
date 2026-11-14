@@ -93,7 +93,6 @@
   "artist.yearsLater": {
     "other": "{count} 年後"
   },
-  "artist.open": "{name}：{titles}",
   "rack.region": "レコードラック（リリース順）。左右の矢印キーで移動、Page Up と Page Down で年を切り替え、Enter でレコードを開きます。",
   "rack.years": "年",
   "rack.card": "レコードのラベル",

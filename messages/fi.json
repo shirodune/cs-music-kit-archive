@@ -97,7 +97,6 @@
     "one": "{count} vuosi myöhemmin",
     "other": "{count} vuotta myöhemmin"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Levyteline julkaisujärjestyksessä. Vasen ja oikea nuolinäppäin selaavat, Page Up ja Page Down vaihtavat vuotta, Enter avaa levyn.",
   "rack.years": "Vuodet",
   "rack.card": "Levyn etiketti",

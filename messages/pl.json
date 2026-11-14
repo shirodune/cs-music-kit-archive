@@ -105,7 +105,6 @@
     "many": "{count} lat później",
     "other": "{count} roku później"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Półka z płytami, w kolejności wydania. Strzałki w lewo i w prawo przeglądają płyty, Page Up i Page Down zmieniają rok, Enter otwiera płytę.",
   "rack.years": "Lata",
   "rack.card": "Etykieta płyty",

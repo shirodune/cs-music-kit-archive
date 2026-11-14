@@ -21,7 +21,7 @@ test.describe("artists index", () => {
 
   test("PROD-17 an entry shows name, active years, number of kits and titles", async ({ page }) => {
     await page.goto("/en/artists/");
-    const entry = page.getByRole("link", { name: /^Austin Wintory:/ });
+    const entry = page.getByRole("link", { name: /^Austin Wintory/ });
     await expect(entry).toContainText("2014–2024 · 4 kits");
     await expect(entry).toContainText("Desert Fire");
     await expect(entry.locator("img")).toHaveCount(4);
@@ -30,7 +30,7 @@ test.describe("artists index", () => {
   test("PROD-17 the titles of an entry are separated in every locale", async ({ page }) => {
     // Intl "unit" lists run titles together in Chinese ("Desert FireBachram").
     await page.goto("/zh-hans/artists/");
-    const entry = page.getByRole("link", { name: /^Austin Wintory：/ });
+    const entry = page.getByRole("link", { name: /^Austin Wintory/ });
     await expect(entry).toContainText("、");
   });
 });

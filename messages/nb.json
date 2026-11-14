@@ -97,7 +97,6 @@
     "one": "{count} år senere",
     "other": "{count} år senere"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Platehylle i utgivelsesrekkefølge. Venstre og høyre piltast blar, Page Up og Page Down bytter år, Enter åpner platen.",
   "rack.years": "År",
   "rack.card": "Plateetikett",

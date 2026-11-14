@@ -93,7 +93,6 @@
   "artist.yearsLater": {
     "other": "{count}년 후"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "레코드 랙, 출시 순서. 왼쪽과 오른쪽 화살표 키로 둘러보고, Page Up과 Page Down으로 연도를 바꾸고, Enter로 레코드를 엽니다.",
   "rack.years": "연도",
   "rack.card": "레코드 라벨",

@@ -101,7 +101,6 @@
     "many": "{count} de años después",
     "other": "{count} años después"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Estante de discos, por orden de publicación. Las flechas izquierda y derecha recorren los discos, Re Pág y Av Pág cambian de año, Intro abre el disco.",
   "rack.years": "Años",
   "rack.card": "Etiqueta del disco",

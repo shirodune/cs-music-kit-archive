@@ -32,7 +32,6 @@ function card(artist: GeneratedArtist) {
     kits,
     meta: `${years} · ${t("artist.kitCount", { count: kits.length })}`,
     titles: list.format(titles),
-    label: t("artist.open", { name: artist.name, titles: list.format(titles) }),
   };
 }
 
@@ -82,7 +81,7 @@ const groups = [
         <ul class="mt-10 grid list-none grid-cols-[repeat(auto-fill,minmax(min(100%,300px),1fr))] gap-x-8 gap-y-14 p-0">
           {group.cards.map((c) => (
             <li class="min-w-0">
-              <a href={`/${locale}/artists/${c.artist.id}/`} aria-label={c.label} class="group block">
+              <a href={`/${locale}/artists/${c.artist.id}/`} class="group block">
                 <span aria-hidden="true" class="flex h-[100px] items-end pl-1">
                   {c.kits.map((k, i) => (
                     <Cover
@@ -166,7 +165,7 @@ const groups = [
         <ul class="mt-10 grid list-none grid-cols-[repeat(auto-fill,minmax(min(100%,300px),1fr))] gap-x-8 gap-y-14 p-0">
           {group.cards.map((c) => (
             <li class="min-w-0">
-              <a href={`/${locale}/artists/${c.artist.id}/`} aria-label={c.label} class="group block">
+              <a href={`/${locale}/artists/${c.artist.id}/`} class="group block">
                 <span aria-hidden="true" class="flex h-[100px] items-end pl-1">
                   {c.kits.map((k, i) => (
                     <Cover

@@ -97,7 +97,6 @@
     "one": "{count} jaar later",
     "other": "{count} jaar later"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Platenbak, op volgorde van uitgave. De pijltjestoetsen links en rechts bladeren, Page Up en Page Down wisselen van jaar, Enter opent de plaat.",
   "rack.years": "Jaren",
   "rack.card": "Platenlabel",

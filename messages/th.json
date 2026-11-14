@@ -93,7 +93,6 @@
   "artist.yearsLater": {
     "other": "{count} ปีต่อมา"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "ชั้นวางแผ่นเสียง เรียงตามลำดับการวางจำหน่าย ปุ่มลูกศรซ้ายและขวาใช้เลื่อนดู Page Up และ Page Down ใช้เปลี่ยนปี Enter ใช้เปิดแผ่นเสียง",
   "rack.years": "ปี",
   "rack.card": "ฉลากแผ่นเสียง",

@@ -97,7 +97,6 @@
     "one": "{count} Jahr später",
     "other": "{count} Jahre später"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Plattenregal, nach Erscheinungsdatum sortiert. Pfeiltasten links und rechts blättern, Bild auf und Bild ab wechseln das Jahr, Eingabe öffnet die Platte.",
   "rack.years": "Jahre",
   "rack.card": "Plattenetikett",

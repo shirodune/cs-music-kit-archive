@@ -93,7 +93,6 @@
   "artist.yearsLater": {
     "other": "{count} năm sau"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Kệ đĩa, theo thứ tự phát hành. Phím mũi tên trái và phải để duyệt, Page Up và Page Down để đổi năm, Enter để mở đĩa.",
   "rack.years": "Năm",
   "rack.card": "Nhãn đĩa",

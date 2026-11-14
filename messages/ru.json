@@ -105,7 +105,6 @@
     "many": "{count} лет спустя",
     "other": "{count} года спустя"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Полка с пластинками в порядке выхода. Стрелки влево и вправо листают, Page Up и Page Down меняют год, Enter открывает пластинку.",
   "rack.years": "Годы",
   "rack.card": "Этикетка пластинки",

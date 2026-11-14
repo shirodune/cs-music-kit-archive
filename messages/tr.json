@@ -97,7 +97,6 @@
     "one": "{count} yıl sonra",
     "other": "{count} yıl sonra"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Plak rafı, çıkış sırasına göre. Sol ve sağ ok tuşları gezinir, Page Up ve Page Down yılı değiştirir, Enter plağı açar.",
   "rack.years": "Yıllar",
   "rack.card": "Plak etiketi",

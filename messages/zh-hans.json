@@ -93,7 +93,6 @@
   "artist.yearsLater": {
     "other": "{count} 年后"
   },
-  "artist.open": "{name}：{titles}",
   "rack.region": "唱片架，按发行顺序排列。左右方向键浏览，Page Up 和 Page Down 切换年份，回车打开唱片。",
   "rack.years": "年份",
   "rack.card": "唱片标签",

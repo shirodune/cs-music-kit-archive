@@ -97,7 +97,6 @@
     "one": "{count} år senare",
     "other": "{count} år senare"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Skivback i utgivningsordning. Vänster- och högerpil bläddrar, Page Up och Page Down byter år, Enter öppnar skivan.",
   "rack.years": "År",
   "rack.card": "Skivetikett",

@@ -97,7 +97,6 @@
     "one": "{count} år senere",
     "other": "{count} år senere"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Pladereol i udgivelsesrækkefølge. Venstre og højre piletast bladrer, Page Up og Page Down skifter år, Enter åbner pladen.",
   "rack.years": "År",
   "rack.card": "Pladeetiket",

@@ -101,7 +101,6 @@
     "many": "{count} de anos depois",
     "other": "{count} anos depois"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Prateleira de discos, por ordem de lançamento. As setas para a esquerda e para a direita percorrem os discos, Page Up e Page Down mudam de ano, Enter abre o disco.",
   "rack.years": "Anos",
   "rack.card": "Rótulo do disco",

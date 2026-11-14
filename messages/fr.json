@@ -101,7 +101,6 @@
     "many": "{count} ans plus tard",
     "other": "{count} ans plus tard"
   },
-  "artist.open": "{name} : {titles}",
   "rack.region": "Bac à disques, par ordre de sortie. Les flèches gauche et droite parcourent les disques, Page précédente et Page suivante changent d'année, Entrée ouvre le disque.",
   "rack.years": "Années",
   "rack.card": "Étiquette du disque",

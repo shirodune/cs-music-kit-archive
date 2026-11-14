@@ -101,7 +101,6 @@
     "few": "După {count} ani",
     "other": "După {count} de ani"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Raft cu discuri, în ordinea lansării. Săgețile stânga și dreapta răsfoiesc, Page Up și Page Down schimbă anul, Enter deschide discul.",
   "rack.years": "Ani",
   "rack.card": "Eticheta discului",

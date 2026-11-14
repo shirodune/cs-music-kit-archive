@@ -114,6 +114,7 @@ Sections, top to bottom:
 
 - PROD-31 Text contrast meets WCAG 2.2 AA (4.5:1 for body text, 3:1 for large text).
 - PROD-32 Every control is a real `button`, `a` or form element, reachable by keyboard, with a visible focus outline. Icon-only buttons have an accessible name.
+- PROD-32a The end-to-end tests check PROD-31 and PROD-32 with axe (WCAG 2.2 A and AA rules) on each kind of page in English and two other scripts, and press Tab through the start of each kind of page to check that every focused control shows an outline. A link's accessible name is its visible text, so screen readers and voice control use the same words.
 - PROD-33 Withdrawn on 2026-11-13 (D-021).
 - PROD-34 Every page sets `lang` on `<html>`. Text in another language, such as an English kit title on a Russian page, carries its own `lang`.
 

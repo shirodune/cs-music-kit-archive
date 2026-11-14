@@ -101,7 +101,6 @@
     "many": "{count} di anni dopo",
     "other": "{count} anni dopo"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Scaffale dei dischi, in ordine di uscita. Le frecce sinistra e destra scorrono i dischi, Pagina su e Pagina giù cambiano anno, Invio apre il disco.",
   "rack.years": "Anni",
   "rack.card": "Etichetta del disco",

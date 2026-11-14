@@ -101,7 +101,6 @@
     "many": "{count} de anos depois",
     "other": "{count} anos depois"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Estante de discos, em ordem de lançamento. As setas para esquerda e direita navegam, Page Up e Page Down mudam o ano, Enter abre o disco.",
   "rack.years": "Anos",
   "rack.card": "Selo do disco",

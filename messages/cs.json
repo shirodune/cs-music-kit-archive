@@ -105,7 +105,6 @@
     "many": "O {count} roku později",
     "other": "O {count} let později"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Regál s deskami v pořadí vydání. Šipky doleva a doprava listují, Page Up a Page Down mění rok, Enter otevře desku.",
   "rack.years": "Roky",
   "rack.card": "Etiketa desky",

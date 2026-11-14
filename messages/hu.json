@@ -97,7 +97,6 @@
     "one": "{count} évvel később",
     "other": "{count} évvel később"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Lemezpolc, megjelenési sorrendben. A bal és jobb nyíl lapoz, a Page Up és Page Down évet vált, az Enter megnyitja a lemezt.",
   "rack.years": "Évek",
   "rack.card": "Lemezcímke",

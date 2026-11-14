@@ -97,7 +97,6 @@
     "one": "{count} year later",
     "other": "{count} years later"
   },
-  "artist.open": "{name}: {titles}",
   "rack.region": "Records rack, in order of release. Left and Right arrow keys browse, Page Up and Page Down change year, Enter opens the record.",
   "rack.years": "Years",
   "rack.card": "Record label",
