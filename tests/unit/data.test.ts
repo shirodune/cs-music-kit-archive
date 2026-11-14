@@ -1,4 +1,4 @@
-// Checks on the generated data (spec: data.md). Run `pnpm data:build` first.
+// Checks on the generated data (SPEC.md, "Data"). Run `pnpm data:build` first.
 import { execFileSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { describe, expect, test } from "vitest";
@@ -44,7 +44,7 @@ describe("kit set", () => {
 });
 
 describe("kits", () => {
-  test("DATA-18 DATA-19 every kit has a stored cover with its size, the game's texture when extracted", () => {
+  test("DATA-19 every kit has a stored cover with its size, the game's texture when extracted", () => {
     for (const kit of kits) {
       const folder = kit.cover.source === "texture" ? "/covers/textures" : "/covers";
       expect(kit.cover.path, kit.slug).toBe(`${folder}/${kit.internalName}.png`);
@@ -192,7 +192,7 @@ describe("repository and upstream", () => {
     for (const source of Object.values(meta.sources)) expect(source.sha, source.repo).toMatch(/^[0-9a-f]{40}$/);
   });
 
-  test("DATA-7 unused definition numbers are not kits", () => {
+  test("DATA-5 unused definition numbers are not kits", () => {
     for (const unused of [77, 97]) {
       expect(unused in itemsGame.music).toBe(false);
       expect(byIndex.has(unused)).toBe(false);

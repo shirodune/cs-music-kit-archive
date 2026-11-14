@@ -24,7 +24,7 @@ const localizedNotFound: AstroIntegration = {
 
 // Fonts are downloaded at build time and self-hosted (I18N-19). Each face is split by script
 // (`unicode-range`), so a page downloads only the files for the characters it shows.
-// The Latin faces of the "Supply Depot" design (spec: product.md "Visual design") also bring the
+// The Latin faces of the "Supply Depot" design (the design reference in CLAUDE.md) also bring the
 // Cyrillic and Greek that IBM Plex has; the other scripts use the fallbacks in src/i18n/fonts.ts.
 // No family gets a generic or metric-adjusted fallback here: those would come before the script
 // fallbacks in the font stack and take their characters. Base.astro writes the stacks (fontStacks).

@@ -1,4 +1,4 @@
-// Checks messages/{segment}.json against English (spec: I18N-11).
+// Checks messages/{segment}.json against English (spec: I18N-7).
 // Errors fail the run. Missing keys are warnings, because English fallback is allowed.
 // Usage: node scripts/i18n-check.ts
 

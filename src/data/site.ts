@@ -1,4 +1,4 @@
-// Read-only access to data/generated/ for pages (spec: data.md "Generated files").
+// Read-only access to data/generated/ for pages (SPEC.md, "Data").
 
 import artistsJson from "../../data/generated/artists.json";
 import kitsJson from "../../data/generated/kits.json";

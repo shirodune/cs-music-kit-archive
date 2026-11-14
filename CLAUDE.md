@@ -1,16 +1,10 @@
 # CS Music Kit Archive
 
-Unofficial, non-commercial fan site that presents every Counter-Strike music kit with full tracklists, in all 28 CS2 languages. Live at musickitarchive.com.
+Unofficial fan site that presents every Counter-Strike music kit with full tracklists, in all 28 CS2 languages. Live at musickitarchive.com.
 
 ## Read the spec first
 
-`spec/` is the single source of truth. Read `spec/README.md`, then the file for the area you are working on, before changing anything.
-- `spec/product.md`: pages, routes, interactions (PROD-*)
-- `spec/data.md`: data sources, field ownership, release dates (DATA-*)
-- `spec/i18n.md`: locales, messages, plurals, fonts (I18N-*)
-- `spec/decisions.md`: decisions and their reasons (D-*)
-
-When behaviour changes, update the spec in the same change. Tests that check a requirement name its ID in the test title, for example `test("DATA-14a every kit belongs to one release", …)`.
+`SPEC.md` is the single source of truth: pages, data rules, languages (PROD-*, DATA-*, I18N-*) and decisions with their reasons (D-*). Read it before changing behaviour, and update it in the same change. It holds only what the code and tests do not show. Tests that check a requirement name its ID in the test title, for example `test("DATA-14a every kit belongs to one release", …)`.
 
 ## Stack
 

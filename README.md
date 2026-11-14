@@ -38,7 +38,7 @@ pnpm verify       # lint, types, i18n check, unit tests, build, end-to-end tests
 
 Astro (static output) with React islands, Tailwind CSS, TypeScript, Vitest and Playwright. Hosted on Cloudflare Workers, audio on Cloudflare R2.
 
-- [`spec/`](spec/README.md) is the source of truth for what the site does and why. Read it before changing behaviour, and update it in the same change.
+- [`SPEC.md`](SPEC.md) is the source of truth for what the site does, the rules its data follows, and the decisions behind them. Read it before changing behaviour, and update it in the same change.
 - [`docs/maintainers.md`](docs/maintainers.md) covers the data commands, extracting audio and covers from the game, and the weekly sync. Contributors do not need it.
 
 ## Contributing

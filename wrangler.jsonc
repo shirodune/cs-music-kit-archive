@@ -1,4 +1,4 @@
-// Cloudflare Workers static assets (spec: D-002, D-019). The site is fully prerendered by Astro into dist/,
+// Cloudflare Workers static assets (spec: D-001, D-019). The site is fully prerendered by Astro into dist/,
 // so there is no Worker code (`main`). This follows Cloudflare's guide for static Astro sites.
 {
   "$schema": "node_modules/wrangler/config-schema.json",

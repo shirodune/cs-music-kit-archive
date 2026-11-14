@@ -19,7 +19,7 @@ test.describe("artists index", () => {
     await expect(brands.getByRole("listitem").first()).toContainText("Valve");
   });
 
-  test("PROD-17 an entry shows name, active years, number of kits and titles", async ({ page }) => {
+  test("an entry shows name, active years, number of kits and titles", async ({ page }) => {
     await page.goto("/en/artists/");
     const entry = page.getByRole("link", { name: /^Austin Wintory/ });
     await expect(entry).toContainText("2014–2024 · 4 kits");
@@ -27,7 +27,7 @@ test.describe("artists index", () => {
     await expect(entry.locator("img")).toHaveCount(4);
   });
 
-  test("PROD-17 the titles of an entry are separated in every locale", async ({ page }) => {
+  test("the titles of an entry are separated in every locale", async ({ page }) => {
     // Intl "unit" lists run titles together in Chinese ("Desert FireBachram").
     await page.goto("/zh-hans/artists/");
     const entry = page.getByRole("link", { name: /^Austin Wintory/ });
@@ -36,7 +36,7 @@ test.describe("artists index", () => {
 });
 
 test.describe("artist page", () => {
-  test("PROD-18 facts card marks the most kits of any artist", async ({ page }) => {
+  test("facts card marks the most kits of any artist", async ({ page }) => {
     await page.goto("/en/artists/daniel-sadowski/");
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("Daniel Sadowski");
     await expect(page.getByText("5 kits · the most of anyone")).toBeVisible();

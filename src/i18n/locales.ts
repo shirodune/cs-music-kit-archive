@@ -1,4 +1,4 @@
-// The 28 languages CS2 ships (spec: i18n.md, I18N-1, I18N-2).
+// The 28 languages CS2 ships (SPEC.md: I18N-1).
 // This is the only place the locale table is written down. Everything else imports it.
 
 export type ScriptGroup = "latin" | "cyrillic" | "greek" | "thai" | "ja" | "ko" | "zh-hans" | "zh-hant";

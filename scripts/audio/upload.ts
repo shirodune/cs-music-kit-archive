@@ -34,7 +34,7 @@ async function send(method: "PUT" | "DELETE", key: string, body?: Buffer, header
   }
 }
 
-// Paths are stable, but Valve can update a file in a game patch (DATA-21a).
+// Paths are stable, but Valve can update a file in a game patch.
 const put = async (key: string) =>
   send("PUT", key, await readFile(join(OUT, key)), {
     "Content-Type": contentTypeOf(key),

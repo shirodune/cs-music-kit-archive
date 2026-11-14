@@ -7,19 +7,19 @@ const en = {
   "artist.kitCount": { one: "{count} kit", other: "{count} kits" },
 };
 
-test("I18N-11 a key that is not in English is an error", () => {
+test("I18N-7 a key that is not in English is an error", () => {
   const { errors } = checkCatalog("de", "de", { "nav.extra": "x" }, en);
   expect(errors).toEqual(['de: "nav.extra" is not in en.json']);
 });
 
-test("I18N-11 a plural must have exactly the categories the locale uses", () => {
+test("I18N-7 a plural must have exactly the categories the locale uses", () => {
   const missing = checkCatalog("ru", "ru", { "artist.kitCount": { one: "{count}", other: "{count}" } }, en);
   expect(missing.errors.join()).toMatch(/missing plural forms: few, many/);
   const extra = checkCatalog("ja", "ja", { "artist.kitCount": { one: "{count}", other: "{count}" } }, en);
   expect(extra.errors.join()).toMatch(/does not use: one/);
 });
 
-test("I18N-11 placeholders must match English", () => {
+test("I18N-7 placeholders must match English", () => {
   const { errors } = checkCatalog(
     "fr",
     "fr",
@@ -29,12 +29,12 @@ test("I18N-11 placeholders must match English", () => {
   expect(errors.join()).toMatch(/placeholders \{n\} differ from English \{count\}/);
 });
 
-test("I18N-11 a string where English has a plural is an error", () => {
+test("I18N-7 a string where English has a plural is an error", () => {
   const { errors } = checkCatalog("de", "de", { "artist.kitCount": "kits" }, en);
   expect(errors.join()).toMatch(/must be a plural object/);
 });
 
-test("I18N-11 missing keys are warnings, not errors", () => {
+test("I18N-7 missing keys are warnings, not errors", () => {
   const { errors, warnings } = checkCatalog("de", "de", {}, en);
   expect(errors).toEqual([]);
   expect(warnings).toHaveLength(2);

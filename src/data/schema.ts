@@ -1,4 +1,4 @@
-// Data shapes for curated input and generated output (spec: data.md).
+// Data shapes for curated input and generated output (SPEC.md, "Data").
 // Used by scripts/data/build.ts to validate, and by the site to type what it reads.
 
 import { z } from "zod";
@@ -97,7 +97,7 @@ export const kitSchema = z.strictObject({
   releaseId: slug,
   releaseDate: isoDate,
   artists: z.array(z.strictObject({ artist: slug, role: z.enum(["main", "with"]) })).min(1),
-  /** Site path of the stored cover and its size in pixels (DATA-18). */
+  /** Site path of the stored cover and its size in pixels (DATA-19). */
   cover: z.strictObject({
     source: z.enum(["icon", "texture"]),
     path: z.string().regex(/^\/covers\/(textures\/)?[a-z0-9_]+\.png$/),

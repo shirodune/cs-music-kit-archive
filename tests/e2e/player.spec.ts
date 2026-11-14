@@ -67,7 +67,7 @@ test.describe("record page player", () => {
     await expect(status(page)).toHaveText("Paused · Choose team");
   });
 
-  test("PROD-23 the playing row shows elapsed and total time, and the slider seeks", async ({ page }) => {
+  test("the playing row shows elapsed and total time, and the slider seeks", async ({ page }) => {
     await serveAudio(page);
     await page.goto("/en/kits/desert-fire/");
     await play(page, "Main menu").click();
@@ -115,7 +115,7 @@ test.describe("record page player", () => {
     await expect(hero).not.toHaveAttribute("data-playing");
   });
 
-  test("PROD-25 a file that cannot load gives a clear message", async ({ page }) => {
+  test("a file that cannot load gives a clear message", async ({ page }) => {
     await serveAudio(page, 404);
     await page.goto("/en/kits/desert-fire/");
     await play(page, "Main menu").click();

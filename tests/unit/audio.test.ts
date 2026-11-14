@@ -33,7 +33,7 @@ describe("audio scripts", () => {
     expect(uploadPlan(published, next)).toEqual({ put: ["a/y.mp3", "b/z.wav"], remove: ["a/old.mp3"] });
   });
 
-  test("DATA-20a files keep the game's format: MP3 as audio/mpeg, WAV as audio/wav", () => {
+  test("DATA-20 files keep the game's format: MP3 as audio/mpeg, WAV as audio/wav", () => {
     expect(contentTypeOf("valve_01/mainmenu.mp3")).toBe("audio/mpeg");
     expect(contentTypeOf("valve_01/startofmatch.wav")).toBe("audio/wav");
     expect(() => contentTypeOf("valve_01/startofmatch.ogg")).toThrow();

@@ -67,7 +67,7 @@ export function needsExtraction(
 
 const CONTENT_TYPES: Record<string, string> = { mp3: "audio/mpeg", wav: "audio/wav" };
 
-/** Content type of a manifest key, by its extension (DATA-20a). */
+/** Content type of a manifest key, by its extension (DATA-20). */
 export function contentTypeOf(key: string): string {
   const type = CONTENT_TYPES[key.slice(key.lastIndexOf(".") + 1)];
   if (!type) throw new Error(`${key}: not an MP3 or WAV file`);

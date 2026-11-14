@@ -6,7 +6,7 @@ const ru: Catalog = {
   "artist.kitCount": { one: "{count} набор", few: "{count} набора", many: "{count} наборов", other: "{count} набора" },
 };
 
-test("I18N-10 picks the plural form with Intl.PluralRules", () => {
+test("I18N-7 picks the plural form with Intl.PluralRules", () => {
   const t = createT("ru", ru);
   expect(t("artist.kitCount", { count: 1 })).toBe("1 набор");
   expect(t("artist.kitCount", { count: 2 })).toBe("2 набора");
@@ -15,7 +15,7 @@ test("I18N-10 picks the plural form with Intl.PluralRules", () => {
   expect(t("artist.kitCount", { count: 22 })).toBe("22 набора");
 });
 
-test("I18N-10 formats numbers in placeholders for the locale", () => {
+test("I18N-7 formats numbers in placeholders for the locale", () => {
   const t = createT("ru", ru);
   const ruNumber = new Intl.NumberFormat("ru").format(1234);
   // 1234 ends in 4, so Russian uses the "few" form.
@@ -24,22 +24,22 @@ test("I18N-10 formats numbers in placeholders for the locale", () => {
   expect(createT("en")("artist.kitCount", { count: 1234 })).toBe("1,234 kits");
 });
 
-test("I18N-10 falls back to English for a missing key", () => {
+test("I18N-7 falls back to English for a missing key", () => {
   const t = createT("ru", ru);
   expect(t("nav.records")).toBe("Пластинки");
   expect(t("nav.artists")).toBe("Artists");
 });
 
-test("I18N-10 falls back to the other form when an English plural is used for another locale", () => {
+test("I18N-7 falls back to the other form when an English plural is used for another locale", () => {
   expect(createT("pl", {})("artist.kitCount", { count: 2 })).toBe("2 kits");
 });
 
-test("I18N-10 reads the real catalogs", () => {
+test("I18N-7 reads the real catalogs", () => {
   expect(createT("zh-hans")("nav.records")).toBe("唱片");
   expect(createT("zh-hans")("artist.kitCount", { count: 5 })).toBe("5 个音乐盒");
 });
 
-test("I18N-9 a plural message needs a numeric count, and every placeholder needs a value", () => {
+test("I18N-7 a plural message needs a numeric count, and every placeholder needs a value", () => {
   const t = createT("en");
   expect(() => t("artist.kitCount")).toThrow(/numeric \{count\}/);
 });

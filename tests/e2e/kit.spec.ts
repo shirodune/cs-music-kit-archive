@@ -34,7 +34,7 @@ test.describe("record page", () => {
     );
   });
 
-  test("PROD-23 the take number shows only when a cue has several takes", async ({ page }) => {
+  test("the take number shows only when a cue has several takes", async ({ page }) => {
     await page.goto("/en/kits/desert-fire/");
     const tracks = page.getByRole("region", { name: "Tracklist" }).getByRole("listitem");
     await expect(tracks.filter({ hasText: "Round start 2" })).toHaveCount(1);
@@ -70,7 +70,7 @@ test.describe("record page", () => {
     }
   });
 
-  test("DATA-18a the page shows the WebP copy of the cover and shares the PNG", async ({ page, request }) => {
+  test("DATA-19 the page shows the WebP copy of the cover and shares the PNG", async ({ page, request }) => {
     await page.goto("/en/kits/industrial-sunset-memories/");
     const cover = page.getByRole("img", { name: /Industrial Sunset Memories music kit/ });
     expect(await cover.getAttribute("src")).toBe("/covers/textures/starjunk95_01.webp");
@@ -122,7 +122,7 @@ test.describe("record page", () => {
     await expect(page.locator('[data-writing="stories"] .writing')).toHaveAttribute("lang", "en");
   });
 
-  test("PROD-18 PROD-27 an artist's introduction comes before the discography", async ({ page }) => {
+  test("PROD-27 an artist's introduction comes before the discography", async ({ page }) => {
     await page.goto("/en/artists/austin-wintory/");
     const about = page.getByRole("region", { name: "About" });
     await expect(about).toContainText("first game score ever nominated for a Grammy");

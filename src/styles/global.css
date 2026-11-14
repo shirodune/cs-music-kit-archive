@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
- * "Supply Depot" design tokens (spec: product.md "Visual design").
+ * "Supply Depot" design tokens (the design reference in CLAUDE.md).
  * Colours come from the design canvas.
  */
 @theme {

@@ -1,4 +1,4 @@
-// The records rack: every kit in order of release (spec: PROD-7 to PROD-13).
+// The records rack: every kit in order of release (spec: PROD-7, PROD-12, PROD-13a).
 // A React island. All text arrives as props, already translated and formatted (I18N-12).
 
 import {
@@ -72,7 +72,7 @@ export default function Rack({ kits, strings, initial }: Props) {
   const groups = useMemo(() => yearGroups(kits.map((k) => k.year)), [kits]);
   const indexOf = useMemo(() => new Map(kits.map((k, i) => [k.slug, i])), [kits]);
 
-  // `target` is where the rack is heading; `position` follows it with easing (PROD-13: at once with reduced motion).
+  // `target` is where the rack is heading; `position` follows it with easing (at once with reduced motion).
   const [target, setTarget] = useState(initial);
   const [position, setPosition] = useState(initial);
   const stage = useRef<HTMLElement>(null);
@@ -151,7 +151,7 @@ export default function Rack({ kits, strings, initial }: Props) {
     if (location.hash !== `#${slug}`) history.replaceState(history.state, "", `#${slug}`);
   }, [settled, target, kits, initial]);
 
-  // Mouse wheel (PROD-11). Needs a non-passive listener to stop the page from scrolling.
+  // Mouse wheel. Needs a non-passive listener to stop the page from scrolling.
   useEffect(() => {
     const el = stage.current;
     if (!el) return;
@@ -276,7 +276,7 @@ export default function Rack({ kits, strings, initial }: Props) {
         ref={stage}
         aria-roledescription="carousel"
         aria-label={strings.region}
-        // biome-ignore lint/a11y/noNoninteractiveTabindex: the rack is a keyboard-operable carousel (PROD-11)
+        // biome-ignore lint/a11y/noNoninteractiveTabindex: the rack is a keyboard-operable carousel
         tabIndex={0}
         onKeyDown={onKeyDown}
         onPointerDown={onPointerDown}

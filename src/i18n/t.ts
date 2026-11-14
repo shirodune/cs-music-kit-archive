@@ -1,4 +1,4 @@
-// UI message lookup (spec: I18N-7 to I18N-10).
+// UI message lookup (spec: I18N-7).
 // Messages live in messages/{segment}.json. English is the source and the fallback.
 
 import en from "../../messages/en.json";
@@ -19,7 +19,7 @@ export function getCatalog(segment: LocaleSegment): Catalog {
 
 const PLACEHOLDER = /\{(\w+)\}/g;
 
-/** Returns `t()` for one locale (I18N-10). */
+/** Returns `t()` for one locale. */
 export function createT(segment: LocaleSegment, catalog: Catalog = getCatalog(segment)): Translate {
   const { tag } = getLocale(segment);
   const plurals = new Intl.PluralRules(tag);

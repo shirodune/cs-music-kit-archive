@@ -1,5 +1,5 @@
 ---
-// Record page: one music kit (spec: product.md "Record page", PROD-14, PROD-15, PROD-23 to PROD-25).
+// Record page: one music kit (SPEC.md: PROD-14, PROD-15, PROD-22 to PROD-25a).
 // The player script (components/player.ts) reads the data-* attributes on the tracklist rows.
 
 import Cover from "../../../components/Cover.astro";
@@ -70,7 +70,7 @@ const facts: { label: string; value: Localized | string; sub?: Localized | null;
 ];
 
 /**
- * Rows in match order with the take shown only when a cue has several (PROD-23). When the match start and
+ * Rows in match order with the take shown only when a cue has several. When the match start and
  * match end files are the same audio, they are one row (PROD-23a).
  */
 function rows(tracks: Track[], main: boolean) {
