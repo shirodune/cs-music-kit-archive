@@ -25,7 +25,7 @@ test.describe("root without a match", () => {
   });
 });
 
-test("PROD-3 the language picker opens the same page in another locale and remembers it", async ({ page }) => {
+test("PROD-3 I18N-5 the language picker opens the same page in another locale and remembers it", async ({ page }) => {
   await page.goto("/en/artists/");
   await page.getByRole("group").locator("summary").click();
   await page.getByRole("link", { name: "简体中文" }).click();

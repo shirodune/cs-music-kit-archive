@@ -1,4 +1,5 @@
 import { expect, test } from "vitest";
+import enMessages from "../../messages/en.json";
 import { checkCatalog } from "../../scripts/i18n-check.ts";
 
 const en = {
@@ -37,4 +38,15 @@ test("I18N-11 missing keys are warnings, not errors", () => {
   const { errors, warnings } = checkCatalog("de", "de", {}, en);
   expect(errors).toEqual([]);
   expect(warnings).toHaveLength(2);
+});
+
+test("I18N-7 keys are flat and dot-separated; a value is a string or a plural object", () => {
+  for (const [key, value] of Object.entries(enMessages)) {
+    expect(key).toMatch(/^[a-z][a-zA-Z0-9]*(\.[a-zA-Z0-9]+)+$/);
+    if (typeof value === "string") continue;
+    for (const [form, text] of Object.entries(value)) {
+      expect(["zero", "one", "two", "few", "many", "other"], key).toContain(form);
+      expect(typeof text, key).toBe("string");
+    }
+  }
 });
