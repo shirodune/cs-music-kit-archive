@@ -1,5 +1,5 @@
 // pnpm data:build — combine data/upstream/ and data/curated/ into data/generated/ (SPEC.md, "Data").
-// Never edit data/generated/ by hand: CI rebuilds it and fails on any difference (DATA-1).
+// Never edit data/generated/ by hand: CI rebuilds it and fails on any difference (pnpm data:verify).
 // Usage: node scripts/data/build.ts
 
 import { existsSync } from "node:fs";

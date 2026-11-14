@@ -1,4 +1,4 @@
-// Fallback faces for the non-Latin script groups (SPEC.md: I18N-19, D-013), chosen on the specimen https://claude.ai/artifact/CjfcNqJMpgT4XQCjsHXm99.
+// Fallback faces for the non-Latin script groups (SPEC.md: D-013), chosen on the specimen https://claude.ai/artifact/CjfcNqJMpgT4XQCjsHXm99.
 // This is the only place the table is written down: astro.config.ts loads the families,
 // and Base.astro puts them into the font stacks of the pages that need them.
 

@@ -117,7 +117,7 @@ describe("kits", () => {
     for (const a of artists) expect(a.kits.length, a.id).toBeGreaterThan(0);
   });
 
-  test("DATA-4a DATA-15a artists with an MBID link to MusicBrainz last, one link of each kind", () => {
+  test("PROD-20 DATA-15a artists with an MBID link to MusicBrainz last, one link of each kind", () => {
     expect(artists.filter((a) => a.musicbrainzId)).toHaveLength(69);
     for (const a of artists) {
       if (!a.musicbrainzId) {

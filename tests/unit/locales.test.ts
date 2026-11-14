@@ -23,7 +23,7 @@ describe("locale table", () => {
     expect(isLocaleSegment(undefined)).toBe(false);
   });
 
-  test("I18N-7 plural categories per locale are the ones listed in the spec", () => {
+  test("plural categories per locale are the ones listed in the spec", () => {
     const expected: Record<string, string[]> = {
       other: ["vi", "th", "ja", "ko", "zh-hans", "zh-hant"],
       "one,other": ["en", "de", "nl", "da", "nb", "sv", "fi", "hu", "tr", "bg", "el"],

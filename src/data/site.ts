@@ -33,7 +33,7 @@ const textFor = (segment: LocaleSegment): LocaleText =>
 
 /**
  * Official text in one locale. `lang` is "en" when the game does not ship the string in that locale
- * and the English text is shown instead (I18N "Text sources by kind", PROD-34); otherwise undefined.
+ * and the English text is shown instead (SPEC.md, "Languages"; PROD-31); otherwise undefined.
  */
 export interface Localized {
   text: string;

@@ -1,4 +1,4 @@
-// Deterministic JSON output, so that rebuilding the same input gives byte-identical files (DATA-1).
+// Deterministic JSON output, so that rebuilding the same input gives byte-identical files (pnpm data:verify).
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";

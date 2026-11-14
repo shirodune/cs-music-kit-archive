@@ -56,7 +56,7 @@ test("unknown paths get the not-found page of their locale with status 404", asy
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
 });
 
-test("PROD-1 the page body never scrolls sideways at phone width", async ({ page }) => {
+test("the page body never scrolls sideways at phone width", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   // Long one-word titles and box names (ru, bg, fi) are the tightest fits.
   for (const path of ["/en/", "/de/artists/", "/zh-hans/", "/ru/artists/", "/bg/artists/", "/fi/kits/desert-fire/"]) {

@@ -9,7 +9,7 @@ test.describe("every page", () => {
   }) => {
     await page.goto("/en/artists/");
     const footer = page.locator("body > footer");
-    await expect(footer).toContainText("Not affiliated with or endorsed by Valve.");
+    await expect(footer).toContainText("Not affiliated with Valve.");
     await expect(footer).toContainText("belong to Valve and the respective artists.");
     await expect(footer).toContainText("MusicBrainz");
     await expect(footer.getByRole("link", { name: "Source code" })).toHaveAttribute("href", repository);
@@ -21,7 +21,7 @@ test.describe("every page", () => {
 
     await page.goto("/en/");
     const short = page.locator("body > footer");
-    await expect(short).toContainText("Unofficial fan project. Not affiliated with or endorsed by Valve.");
+    await expect(short).toContainText("Not affiliated with Valve.");
     await expect(short).not.toContainText("respective artists");
     await expect(short.getByRole("link")).toHaveCount(2);
   });
@@ -38,20 +38,20 @@ test.describe("every page", () => {
     for (const href of internal) expect(href, href).toMatch(/^\/ru\//);
   });
 
-  test("I18N-16 uppercase comes from CSS; the text keeps its case", async ({ page }) => {
+  test("uppercase comes from CSS; the text keeps its case", async ({ page }) => {
     await page.goto("/de/artists/");
     const nav = page.getByRole("navigation").getByRole("link", { name: "Künstler" });
     await expect(nav).toHaveText("Künstler");
     await expect(nav).toHaveCSS("text-transform", "uppercase");
   });
 
-  test("I18N-20 fonts are never synthesised", async ({ page }) => {
+  test("fonts are never synthesised", async ({ page }) => {
     await page.goto("/zh-hans/kits/desert-fire/");
     for (const selector of ["html", "h1", "h2"])
       await expect(page.locator(selector).first()).toHaveCSS("font-synthesis", "none");
   });
 
-  test("I18N-12 no message catalogue ships to the browser; the rack gets its strings as props", async ({ page }) => {
+  test("no message catalogue ships to the browser; the rack gets its strings as props", async ({ page }) => {
     const scripts: string[] = [];
     page.on("response", async (response) => {
       if (response.request().resourceType() === "script" && response.url().startsWith("http://127.0.0.1"))

@@ -117,7 +117,7 @@ test.describe("records page fits the screen", () => {
     );
     const footer = page.locator("footer");
     await expect(footer).toBeInViewport({ ratio: 1 });
-    await expect(footer).toHaveText(/^Unofficial fan project\. Not affiliated with or endorsed by Valve\./);
+    await expect(footer).toHaveText(/^Not affiliated with Valve\./);
   });
 
   test("PROD-13a on a screen too short for the page, it scrolls instead of overlapping", async ({ page }) => {

@@ -1,5 +1,5 @@
 // The records rack: every kit in order of release (spec: PROD-7, PROD-12, PROD-13a).
-// A React island. All text arrives as props, already translated and formatted (I18N-12).
+// A React island. All text arrives as props, already translated and formatted, so no translation code ships.
 
 import {
   type KeyboardEvent,

@@ -2,7 +2,7 @@ import { describe, expect, test } from "vitest";
 import { catalogueNumber, formatDate, formatDuration, listParts } from "../../src/i18n/format.ts";
 
 describe("format", () => {
-  test("I18N-13 date-only values never shift a day", () => {
+  test("date-only values never shift a day", () => {
     expect(formatDate("en", "2014-10-10")).toBe("Oct 10, 2014");
     expect(formatDate("zh-Hans", "2012-08-21")).toBe("2012年8月21日");
   });

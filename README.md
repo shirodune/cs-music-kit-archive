@@ -1,7 +1,7 @@
 <h1 align="center">CS Music Kit Archive</h1>
 
 <p align="center">
-  Every Counter-Strike music kit, with its full tracklist, in all 28 languages of CS2.
+  Every Counter-Strike music kit, with its full tracklist, in every language of CS2.
   <br />
   <a href="https://musickitarchive.com">Website</a>
   ·
@@ -16,13 +16,13 @@
 
 ## About
 
-An unofficial fan site. In the game you only hear a short preview of a music kit; here every kit has its own page where each track plays in full.
+An unofficial site. In the game you only hear a short preview of a music kit; here every kit has its own page where each track plays in full.
 
 - **Every kit**, from the default CS:GO music of 2012 to today, on a rack in order of release.
 - **Straight from the game**: tracks and covers are taken from CS2's own files and published unchanged. Names and descriptions are Valve's own text in each language.
 - **Sourced release dates**: each one links to the Valve release note that announced it.
 - **Artists**: a page per artist with their kits and links from MusicBrainz.
-- **28 languages**, the same ones CS2 has.
+- **Every language CS2 has.**
 
 A weekly job checks the game for new and changed kits and opens a pull request.
 
@@ -59,7 +59,7 @@ Not affiliated with or endorsed by Valve. Counter-Strike and all music kit names
 This site is built on other people's work:
 
 - [SteamTracking/GameTracking-CS2](https://github.com/SteamTracking/GameTracking-CS2): Valve's game data, the music kit definitions and the list of game files.
-- [ByMykel/counter-strike-file-tracker](https://github.com/ByMykel/counter-strike-file-tracker): the game's text in all 28 languages.
+- [ByMykel/counter-strike-file-tracker](https://github.com/ByMykel/counter-strike-file-tracker): the game's text in every language.
 - [ByMykel/CSGO-API](https://github.com/ByMykel/CSGO-API): editions and the Steam icons of the kits.
 - [MusicBrainz](https://musicbrainz.org): links to the artists' sites and streaming pages.
 - [Source 2 Viewer](https://github.com/ValveResourceFormat/ValveResourceFormat) and [DepotDownloader](https://github.com/SteamRE/DepotDownloader): reading the audio and covers from the game files.

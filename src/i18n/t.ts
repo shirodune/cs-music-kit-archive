@@ -1,4 +1,4 @@
-// UI message lookup (spec: I18N-7).
+// UI message lookup (conventions in CLAUDE.md, D-012).
 // Messages live in messages/{segment}.json. English is the source and the fallback.
 
 import en from "../../messages/en.json";

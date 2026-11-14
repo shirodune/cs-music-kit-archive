@@ -1,52 +1,42 @@
 # CS Music Kit Archive: spec
 
-What the site does and the rules its data follows, limited to what the code and tests do not already show. Change it in the same pull request as the behaviour. Requirements have IDs; a test that checks one names its ID in the title. Numbers skip where a requirement was removed. Decisions are at the end (D-*).
+What the site does, the rules its data follows, and why. Only what the code and tests do not already show; how things are built is in the code, and coding conventions are in `CLAUDE.md`. Change this file in the same pull request as the behaviour. Requirements have IDs, and a test that checks one names its ID in the title; numbers skip where a requirement was removed. Decisions are at the end (D-*).
 
 ## Purpose
 
-An unofficial fan site that presents every Counter-Strike music kit, from the default CS:GO music of 2012 to today, at musickitarchive.com. The game's own preview of a kit is short; here every track plays in full. All 28 languages CS2 ships. No accounts, no user content, no prices or trading, no 3D models, no server rendering.
+An unofficial site that presents every Counter-Strike music kit, from the default CS:GO music of 2012 to today, at musickitarchive.com. The game's own preview of a kit is short; here every track plays in full, in every language CS2 ships. No accounts, no user content, no prices or trading, no 3D models.
 
 The design reference is the claude.ai Design canvas "CS Music Kits Archive", page "Current design", style A "Supply Depot" (link in `CLAUDE.md`).
 
 ## Pages
 
-| Route | Page |
-|---|---|
-| `/` | Picks a locale (PROD-5) |
-| `/{locale}/` | Records: the rack |
-| `/{locale}/kits/{kit-slug}/` | Record: one kit |
-| `/{locale}/artists/` and `/{locale}/artists/{artist-slug}/` | Artists |
-| `/{locale}/about/` | About |
-| `/{locale}/404.html`, `/404.html` | Not found, status 404 |
+Records (the rack, the home page), one page per kit, the artists index, one page per artist, About, and a not-found page, each in every language.
 
-- PROD-1 Pages work on a phone and never scroll sideways. Beyond that, phones are not a priority (D-021).
-- PROD-2 Header: site name, Records, Artists, About, the language picker (all 28 locales by native name; opens the same page, keeping `#kit` and `?from=`) and a GitHub link. Below 640 px the picker shows only its globe and the GitHub link is left out.
-- PROD-4 Footer: "Unofficial fan project. Not affiliated with or endorsed by Valve. Counter-Strike and all music kit names, artwork and audio belong to Valve and the respective artists.", data credits, links to the source code and `NOTICE`. No contact e-mail. The records page has a one-line version.
-- PROD-5 `/` opens the remembered locale (`localStorage` `mka:locale`), else the best match for the browser's languages, else `en`. Without JavaScript it lists the 28 locales.
-- PROD-6 Slugs are the same in every locale.
-- PROD-7 The rack holds every kit by release date, then `defIndex`. Without JavaScript it is a list of links.
-- PROD-12 The selected kit is kept in the URL hash (`#{kit-slug}`). Without a hash the newest kit is selected.
-- PROD-13a The records page fits the screen and does not scroll, so scrolling never competes with moving the rack; on a screen too small it scrolls instead of overlapping.
-- PROD-14 Record page, top to bottom: hero (title, English title when different, cover, facts), MVP anthem button, tracklist, Valve's description, story, more by the same artists, released the same day, previous and next, sources (the release note). Empty sections are left out.
-- PROD-15 The default CS:GO kit (`defIndex` 70) also shows the unnamed alternate set (`defIndex` 2) as a second tracklist with a note.
-- PROD-16 Artists index: more than one kit (most first); one kit each, by year; games and official (`brand`), by first release.
-- PROD-19 An artist's discography is in release order, with "N years later" between kits whose release years differ by 3 or more.
-- PROD-20 An artist with an MBID shows its MusicBrainz links (DATA-4a), service names untranslated, the MusicBrainz page last.
-- PROD-21 An artist page opened from a kit (`?from={kit-slug}`) links back to that kit, else to the Artists index.
+- PROD-2 Header: site name, Records, Artists, About, the language picker (opens the same page in another language, keeping the selected kit) and a link to the source code.
+- PROD-4 Footer: not affiliated with Valve; the names, artwork and audio belong to Valve and the artists; data credits; links to the source code and licences.
+- PROD-5 The root address opens the visitor's remembered language, else the best match for the browser, else English.
+- PROD-6 A page has the same address in every language apart from the language segment.
+- PROD-7 The rack holds every kit by release date. It works without JavaScript as a list of links.
+- PROD-12 The selected kit is kept in the address, so links and the back button return to it. Without one, the newest kit is selected.
+- PROD-13a The records page fits the screen and does not scroll, so scrolling never competes with moving the rack.
+- PROD-14 A kit page shows: title, cover and facts; the MVP anthem; the tracklist; Valve's description; the story; more by the same artists; kits released the same day; previous and next; the release note as source. Empty sections are left out.
+- PROD-15 The default CS:GO kit also shows its unnamed alternate set of tracks, with a note that it is not a separate item.
+- PROD-16 Artists index: more than one kit (most first); one kit each, by year; games and official, by first release.
+- PROD-19 An artist's kits are in release order, with "N years later" between kits whose release years differ by 3 or more.
+- PROD-20 An artist page links the artist's official site and music services found on MusicBrainz, and the MusicBrainz page.
+- PROD-21 An artist page opened from a kit links back to that kit, else to the artists index.
 - PROD-22 Every track is the full file from the game.
-- PROD-23a When match start and match end are the same audio (same SHA-256), the kit shows one row, "Match start and end".
-- PROD-24 One player per record page; one track at a time; playback starts only on a click; leaving the page stops it (D-020).
-- PROD-25a A kit whose audio is not published yet shows its tracklist without play buttons or MVP button, and says so.
-- PROD-26 Audio comes only from `https://audio.musickitarchive.com/`.
-- PROD-27 Stories (kit pages, "Story") and introductions (artist pages, "About", before the discography) are optional.
-- PROD-28 Every factual claim in a story or introduction has a source, listed under the text. Primary or secondary sources (Wikipedia, the press) are fine, facts only, never copied text. Release dates still come only from DATA-14.
-- PROD-29 Every page has a localized title and description, a canonical URL, `hreflang` for all 28 locales plus `x-default` (`en`), and Open Graph tags with the cover.
-- PROD-30 The sitemap lists every page in every locale, without the root and not-found pages and without `hreflang` (the page heads have it).
-- PROD-31 WCAG 2.2 AA: contrast, real buttons and links reachable by keyboard with a visible focus outline. The end-to-end tests run axe on each kind of page and Tab through each.
-- PROD-34 Every page sets `lang`; text in another language (an English kit title on a Russian page) has its own `lang`.
-- PROD-35 No JavaScript beyond the root page's locale pick, the language picker, the analytics loader, the rack (a React island), the record page's player (about 3 KB, no framework) and the artist page's back link.
-- PROD-36 Lighthouse desktop performance 90 or more on the Records, Record and Artist pages: median of three runs in CI (`pnpm lighthouse`).
-- PROD-37 Cloudflare Web Analytics only, loaded only on musickitarchive.com. No cookies, no banner.
+- PROD-23a When a kit's match start and match end are the same audio, they are one row, "Match start and end".
+- PROD-24 One track plays at a time, only after a click, and stops when the visitor leaves the page (D-020).
+- PROD-25a A kit whose audio is not published yet shows its tracklist without play buttons, and says so.
+- PROD-26 Audio is served only from the site's own audio host.
+- PROD-27 Stories (on kit pages) and introductions (on artist pages, before the kits) are optional.
+- PROD-28 Every factual claim in a story or introduction has a source, listed under the text. Primary or secondary sources (Wikipedia, the press) are fine, for facts only, never copied text. Release dates still come only from DATA-14.
+- PROD-29 Every page has a title and description in its language, and tells search engines and link previews about its other languages and its cover.
+- PROD-30 A sitemap lists every page in every language.
+- PROD-31 Accessible to WCAG 2.2 AA: readable contrast, every control usable by keyboard with a visible focus, text marked with its language.
+- PROD-36 Fast: a Lighthouse desktop performance score of 90 or more on the records, kit and artist pages. Only the rack, the player, the language picker and a few small scripts use JavaScript.
+- PROD-37 Visits are counted with Cloudflare Web Analytics only, on the live site only. No cookies, no banner.
 - PROD-38 About page: what the site is, where the data comes from, links to the code, issues and licences.
 
 ## Data
@@ -55,81 +45,73 @@ Every field has one owner, and derived data is never edited by hand:
 
 | Owner | Where | Edited by |
 |---|---|---|
-| Upstream snapshot | `data/upstream/` | `pnpm data:*` and `pnpm audio:*` scripts |
+| Upstream snapshot | `data/upstream/` | The `pnpm data:*` and `pnpm audio:*` scripts |
 | Curated | `data/curated/` | People, in pull requests |
 | Content | `content/` | People, in pull requests |
 | Derived | `data/generated/` | `pnpm data:build` |
 
-- DATA-1 `data/generated/` is exactly what `pnpm data:build` writes (`pnpm data:verify` in CI).
-- DATA-2 Audio and game files are never committed. The one exception is the cover textures in `public/covers/textures/` (D-022).
-- DATA-3 Sources, each pinned by commit in `data/upstream/meta.json`: SteamTracking/GameTracking-CS2 (music definitions, boxes, sound events, the VPK listing), ByMykel/counter-strike-file-tracker (the game's text in 28 languages), ByMykel/CSGO-API (editions, Steam icons). `pnpm data:sync` keeps only the subsets the site uses.
-- DATA-4 MusicBrainz requests send `cs-music-kit-archive/1.0 ( https://github.com/shirodune/cs-music-kit-archive )` and are at least 1.1 s apart.
-- DATA-4a `pnpm data:links` keeps one current link per kind: official site, Bandcamp, Spotify, Apple Music, SoundCloud, YouTube.
-- DATA-4b `overrides.json` → `hiddenLinks` hides links whose site is gone or has changed hands (some became casino sites); the build fails when one is no longer on MusicBrainz. Check official sites when adding an MBID.
+- DATA-2 Audio and game files are never committed. The one exception is the cover textures (D-022).
+- DATA-3 Sources: Valve's game data via SteamTracking/GameTracking-CS2; the game's text in every language via ByMykel/counter-strike-file-tracker; editions and Steam icons via ByMykel/CSGO-API; artist links via MusicBrainz; audio and covers from the game files. Each upstream snapshot records the commit it came from.
+- DATA-4 MusicBrainz is used as it asks: requests name the project with a contact, about one a second.
+- DATA-4b Links whose site is gone or has changed hands (some became casino sites) are hidden in `overrides.json`. Check an artist's official site when adding them.
 - DATA-5 A kit is a music definition with an English name: 101 today.
-- DATA-6 `defIndex` 2 has audio but no name: it is the alternate set of 70, not a kit.
-- DATA-8 StatTrak™ is an edition, not a kit: one kit per `defIndex`.
-- DATA-9 The slug is the English title in lowercase ASCII words joined by `-`; `overrides.json` sets it when two would clash or it would be empty.
-- DATA-10 The official name `Credit<separator>Title` is split into credit and title: a known credit at the start, else the English title at the end, else a separator that occurs once outside quotation marks. Otherwise `overrides.json` → `splits`, or the build fails. Translated credits are official text and kept.
+- DATA-6 The unnamed definition 2 is the alternate track set of the default CS:GO kit, not a kit.
+- DATA-8 StatTrak™ is an edition of a kit, not another kit.
+- DATA-9 A kit's address uses its English title (`desert-fire`); `overrides.json` sets it when two would clash.
+- DATA-10 Official names are split into credit and title by the build; `overrides.json` gives the split where the build cannot. Translated credits are official text and kept.
 - DATA-12 Every kit has a main menu track and an MVP anthem.
 - DATA-13 A kit's release date is the day it first became obtainable in the game, as announced by Valve, in US Pacific time. A default kit is dated by the launch its music shipped with (D-009).
-- DATA-14 Evidence, in order: the release notes of that day (old CS:GO blog to February 2023, Steam events after); an official post the same day when no release note names the kit; for a game launch only, the launch announcement with the Steam store date, the gap explained in `note`. GameTracking history, `first_sale_date`, wikis and the design canvas are leads, never sources.
+- DATA-14 Evidence, in order: the release notes of that day; an official post the same day when no release note names the kit; for a game launch only, the launch announcement with the Steam store date, the gap explained in the release's note. GameTracking history, `first_sale_date`, wikis and the design canvas are leads, never sources.
   - DATA-14a Every kit is in exactly one release.
-  - DATA-14b A release has `date`, `source.url`, `source.title` and `source.quote`, the quote copied verbatim and announcing the release.
-  - DATA-14c `source.url` is on `blog.counter-strike.net`, `store.steampowered.com` or `www.counter-strike.net`.
-  - DATA-14d `nameKey` is the box or collection's localization key, or `null`.
-  - DATA-14e A box release lists exactly the box's loot.
-  - `pnpm data:suggest-release` finds candidate posts for a kit without a release; it never writes `releases.json`.
-- DATA-15 A collaboration credit links every member that has a kit of their own (Tree Adams and Ben Bromfield); otherwise the collaboration is one artist (TWERL, Ekko & Sidetrack).
-- DATA-15a `musicbrainzId` is set only when the entry is clearly the credited artist, and stays `null` for brands without one, collaborations MusicBrainz lists only as members, and ambiguous names (Skog, Tim Huling, Matt Levine).
-- DATA-16 Every kit has a main credit; every artist has a kit.
-- DATA-17 Composers behind a `brand` credit may be named in its introduction, with sources; they are not credits unless Valve credits them.
-- DATA-19 Covers are the game's own textures (`mp3_screen_color`), stored unchanged as PNG; pages show WebP copies. The Steam icon is the fallback until a texture is extracted.
-- DATA-19a A texture is flat sleeve art: pages draw the disc, in the icon's 256:198 frame.
-- DATA-20 Audio is read from the game's VPK (downloaded anonymously from Steam, app 730, depot 2347770, only the archives needed) and published to R2 at `/{internalName}/{file}.mp3` or `.wav`, exactly as the game stores it, never re-encoded.
-- DATA-21 `audio-manifest.json` lists every published file with bytes, SHA-256 and measured duration; the site links only to listed files, and the measured duration wins over the sound events'. `pnpm audio:upload` uploads, then the manifest, then deletes, so the manifest never names a missing file.
-- DATA-22 Stories are `content/stories/{kit-slug}/{locale}.md`, introductions `content/artists/{artist-slug}/{locale}.md`. `en.md` is the original and must exist (`content/README.md`).
-- DATA-23 Front matter: `sources` (at least one `{ title, url }`, http or https) and `translation` (`original` only for English, `human` or `machine`).
-- DATA-24 The weekly sync (`.github/workflows/weekly-sync.yml`, Mondays and on demand) fetches the data, extracts changed audio and covers, uploads the audio, and opens one pull request on `data-sync`. Every run rebuilds that branch from `main`.
-- DATA-25 A new kit fails the build until it has a release and credits. The pull request lists the errors and the release suggestions; the fixes go to `main` in their own pull request, then the workflow runs again.
-- DATA-26 `game-files.json` (from GameTracking's VPK listing) and `game-files-extracted.json` record the CRC of every sound file and cover texture the site uses, so `pnpm data:changes` tells what to extract without downloading anything. Only the extractors write the second file.
+  - DATA-14b A release cites its source with a quote copied verbatim that announces the release.
+  - DATA-14c The source is a Valve page: the Counter-Strike blog, the Steam store or counter-strike.net.
+  - DATA-14d A release names its box or collection, or none for a kit released on its own.
+  - DATA-14e A box release lists exactly the box's kits.
+  - `pnpm data:suggest-release` finds candidate posts for a kit without a release; a person checks them and writes the entry.
+- DATA-15 A collaboration links every member that has a kit of their own (Tree Adams and Ben Bromfield); otherwise the collaboration is one artist (TWERL, Ekko & Sidetrack).
+- DATA-15a An artist gets a MusicBrainz entry only when it is clearly the credited artist; brands, collaborations MusicBrainz lists only as members, and ambiguous names (Skog, Tim Huling, Matt Levine) get none.
+- DATA-16 Every kit has a main credit, and every artist has a kit.
+- DATA-17 Composers behind a game or company credit may be named in its introduction, with sources; they are not credits unless Valve credits them.
+- DATA-19 Covers are the game's own cover textures, stored unchanged; the Steam icon is the fallback until a texture is extracted.
+- DATA-19a A texture is flat sleeve art, so pages draw the disc half out, in the icon's frame.
+- DATA-20 Audio comes from the game files, downloaded anonymously from Steam, and is published exactly as the game stores it, never re-encoded.
+- DATA-21 The site links only to audio files that are published, with their measured durations.
+- DATA-22 Stories and introductions are Markdown files per page and language in `content/`. English is the original and must exist (`content/README.md`).
+- DATA-23 Each states its sources and whether it is the original, a human translation or a machine translation.
+- DATA-24 A weekly sync fetches the data, extracts new or changed audio and covers from the game, publishes the audio, and opens one pull request with the rest. It rebuilds that pull request's branch from `main` every time.
+- DATA-25 A new kit fails the build until it has a release and credits. The pull request lists what is missing and suggests the release; the fixes go to `main`, then the sync runs again.
+- DATA-26 The sync tells from GameTracking's listing of the game files which audio and covers changed, so nothing is downloaded when nothing changed.
 
 ## Languages
 
-- I18N-1 28 locales, all left to right, default `en`. The table lives once, in `src/i18n/locales.ts`.
-- I18N-3 Every route starts with the locale, English included.
-- I18N-7 UI messages are `messages/{segment}.json`, English the source. Keys are flat and dot-separated; a value is a string or a plural object with exactly the CLDR categories the locale uses; placeholders are `{name}`, the number `{count}`. `pnpm i18n:check` enforces this.
-- I18N-12 No translation library ships to the browser; islands get their strings as props.
-- I18N-12a Every locale has every message. The 27 translations are machine translated; Simplified Chinese is reviewed by the project owner, the other 26 are not reviewed yet. Game terms follow the game's own localization.
-- I18N-13 Dates are formatted in UTC, so the day never shifts.
-- I18N-16 Uppercase comes from CSS, never from changing the string.
-- I18N-17 Content marked `machine` says so.
-- I18N-18 A story or introduction missing in a locale shows the English text with `lang="en"` and a "not translated yet" notice.
-- I18N-19 Fonts are self-hosted and split by script; a page loads the Latin faces plus its own script's fallbacks (`src/i18n/fonts.ts`).
-- I18N-20 `font-synthesis: none` everywhere.
+- I18N-1 Every language CS2 ships: 28 today, all left to right, English the default. When Valve adds one, add it to `src/i18n/locales.ts`, `messages/` and, for a new script, `src/i18n/fonts.ts`.
+- I18N-3 Every address starts with its language, English included.
+- I18N-12a Every language has every interface message. The translations are machine translations; Simplified Chinese is reviewed by the project owner, the others are not reviewed yet. Game terms follow the game's own translations.
+- I18N-17 A story or introduction that is a machine translation says so.
+- I18N-18 A story or introduction missing in a language shows the English text, marked as English, with a "not translated yet" notice.
 
 | Text | Source | Translation |
 |---|---|---|
-| Kit names, descriptions, box names | The game | Never edited or machine translated; missing in a locale → English with `lang="en"` |
-| UI messages | `messages/` | Machine translation allowed |
+| Kit names, descriptions, box names | The game | Never edited or machine translated; missing in a language → English |
+| Interface messages | `messages/` | Machine translation allowed |
 | Stories and introductions | `content/` | English first, Simplified Chinese next, others may be machine translated |
 
 ## Decisions
 
 Each: the decision, then why. To change one, add a new one and mark the old one replaced.
 
-- D-001 Static site with Astro; the rack is a React island. The content changes weekly and is the same for everyone; about 5,000 pages fit Workers static assets.
-- D-003 GitHub Actions deploy: every pull request gets a preview `pr-<number>` and a comment; `main` deploys after all checks. The Cloudflare token can only edit Workers scripts; fork pull requests get no secrets.
-- D-005 Valve's game data (GameTracking, ByMykel's file tracker) is the source, not item sites: it is Valve's own and updates with every patch.
-- D-007 Full-length audio on R2, never in git: about 1.6 GB, and a takedown of a public repository would remove all of it. Match start and end stay lossless WAV at the owner's choice.
-- D-009 Default kits are dated by their game's launch (CS:GO 2012-08-21, CS2 2023-09-27): the archive is about the music, and Valve's description dates 70 to the CS:GO launch.
+- D-001 A static site built with Astro, on Cloudflare Workers static assets. The content changes weekly and is the same for everyone.
+- D-003 Every pull request gets a preview; `main` deploys after all checks. Pull requests from forks get no secrets.
+- D-005 Valve's own game data is the source, not item sites: it updates with every game patch.
+- D-007 Full-length audio on R2, never in git: about 1.6 GB, and a takedown of a public repository would remove all of it. Match start and end stay lossless at the owner's choice.
+- D-009 Default kits are dated by their game's launch (CS:GO 2012-08-21, CS2 2023-09-27): the archive is about the music, and Valve's description dates the CS:GO kit to that launch.
 - D-010 "Artists", not "Composers": bands, rappers, games and companies are credited too.
-- D-012 Own `t()` helper (about 20 lines) instead of an i18n library: nothing ships to the browser.
-- D-013 Each script gets heavy, geometric fallback fonts: no stencil face exists for non-Latin scripts.
-- D-016 Domain musickitarchive.com (Cloudflare), audio at audio.musickitarchive.com, public repository, Cloudflare Web Analytics.
-- D-018 Licences: code MIT, `data/curated/` CC0, `content/` CC BY 4.0; third-party material is listed in `NOTICE`. No share-alike or non-commercial terms, so wikis and other projects can reuse the work.
-- D-019 Build with Astro and deploy with Wrangler, not `cf deploy`: `cf` expects an adapter's server output, which a static site does not have. `cf` is fine for account and resource commands.
-- D-020 The player lives on the record page: a site-wide player would need client-side routing on every page and a now-playing bar the design does not have.
-- D-021 Phones are supported, not prioritized: work goes to content and desktop first; revisit if analytics show mostly phones.
-- D-022 Covers are the game's textures, committed as stored (about 69 MB): the build stays self-contained.
-- D-023 The weekly sync extracts and uploads audio in GitHub Actions. The job that runs third-party tools gets no secrets; only the upload job gets the R2 credentials, limited to the one bucket and only on `main`. R2's S3 API is used because Wrangler cannot use a bucket-scoped token. The sync starts CI on its branch with `workflow_dispatch`, because pushes with the workflow token start none.
+- D-012 An own small translation helper instead of an i18n library, so nothing ships to the browser.
+- D-013 Each script gets heavy, geometric fallback fonts, because no stencil font exists for non-Latin scripts.
+- D-016 Domain musickitarchive.com, audio at audio.musickitarchive.com, a public repository.
+- D-018 Licences: code MIT, curated data CC0, writing CC BY 4.0; third-party material in `NOTICE`. No share-alike or non-commercial terms, so wikis and other projects can reuse the work.
+- D-019 Deploy with Wrangler, not `cf deploy`, which expects a server build this static site does not have.
+- D-020 The player lives on the kit page: playing across pages would need client-side navigation everywhere and a now-playing bar the design does not have.
+- D-021 Phones are supported, not prioritized: pages must not scroll sideways on a phone, but work goes to content and desktop first. Revisit if most visitors use phones.
+- D-022 Covers are the game's textures, committed as stored (about 69 MB), so the build is self-contained.
+- D-023 The weekly sync extracts and publishes audio itself. The step that runs third-party tools gets no secrets; only the upload gets the storage credentials, limited to the one bucket.

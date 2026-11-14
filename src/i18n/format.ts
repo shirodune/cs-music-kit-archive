@@ -1,6 +1,6 @@
-// Locale-aware formatting (spec: I18N-13).
+// Locale-aware formatting (conventions in CLAUDE.md).
 
-/** Formats a date-only value (YYYY-MM-DD) without shifting the day (I18N-13). */
+/** Formats a date-only value (YYYY-MM-DD) without shifting the day. */
 export function formatDate(tag: string, isoDate: string): string {
   return new Intl.DateTimeFormat(tag, { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }).format(
     new Date(`${isoDate}T00:00:00Z`),
