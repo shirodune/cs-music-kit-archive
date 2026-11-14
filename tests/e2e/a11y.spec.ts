@@ -16,7 +16,7 @@ const pages = [
 
 test.describe("accessibility", () => {
   for (const path of pages) {
-    test(`PROD-31 PROD-32 ${path} has no WCAG 2.2 AA violations`, async ({ page }) => {
+    test(`PROD-31 PROD-32 PROD-32a ${path} has no WCAG 2.2 AA violations`, async ({ page }) => {
       await page.goto(path);
       const { violations } = await new AxeBuilder({ page })
         .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])

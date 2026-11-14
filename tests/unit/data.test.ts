@@ -1,4 +1,5 @@
 // Checks on the generated data (spec: data.md). Run `pnpm data:build` first.
+import { execFileSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { describe, expect, test } from "vitest";
 import overrides from "../../data/curated/overrides.json";
@@ -8,6 +9,8 @@ import releasesJson from "../../data/generated/releases.json";
 import en from "../../data/generated/text/en.json";
 import manifest from "../../data/upstream/audio-manifest.json";
 import gameFiles from "../../data/upstream/game-files.json";
+import itemsGame from "../../data/upstream/items-game.json";
+import meta from "../../data/upstream/meta.json";
 import { generatedArtistSchema, kitSchema, releaseSchema } from "../../src/data/schema.ts";
 
 const kits = kitsJson.map((k) => kitSchema.parse(k));
@@ -50,7 +53,7 @@ describe("kits", () => {
     expect(kits.filter((kit) => kit.cover.source === "texture")).toHaveLength(kits.length);
   });
 
-  test("DATA-21 every track links to its published file, with the measured duration", () => {
+  test("DATA-21 PROD-22 every track links to its published file, with the measured duration", () => {
     const published = manifest as Record<string, { sha256: string; durationSec: number }>;
     for (const kit of kits) {
       const lists = [
@@ -174,5 +177,45 @@ describe("releases", () => {
   test("D-009 the default kits are dated 2012-08-21 (CS:GO) and 2023-09-27 (CS2)", () => {
     expect(byIndex.get(70)?.releaseDate).toBe("2012-08-21");
     expect(byIndex.get(1)?.releaseDate).toBe("2023-09-27");
+  });
+});
+
+describe("repository and upstream", () => {
+  test("DATA-2 no audio or game files are committed; the cover textures are", () => {
+    const files = execFileSync("git", ["ls-files"], { encoding: "utf8" }).split("\n");
+    expect(files.filter((f) => /\.(mp3|wav|ogg|flac|vpk|vsnd_c|vtex_c)$/i.test(f))).toEqual([]);
+    expect(files.filter((f) => f.startsWith("public/covers/textures/") && f.endsWith(".png")).length).toBe(kits.length);
+  });
+
+  test("DATA-3 meta.json records the commit and fetch time of every upstream repository", () => {
+    expect(Number.isNaN(Date.parse(meta.fetchedAt))).toBe(false);
+    for (const source of Object.values(meta.sources)) expect(source.sha, source.repo).toMatch(/^[0-9a-f]{40}$/);
+  });
+
+  test("DATA-7 unused definition numbers are not kits", () => {
+    for (const unused of [77, 97]) {
+      expect(unused in itemsGame.music).toBe(false);
+      expect(byIndex.has(unused)).toBe(false);
+    }
+  });
+});
+
+describe("releases and credits", () => {
+  test("DATA-14d DATA-14e a box release names its box and lists exactly its loot", () => {
+    const strings = en as { releases: Record<string, string> };
+    for (const r of releases) {
+      if (r.nameKey === null) continue;
+      expect(strings.releases[r.id], r.id).toBeTruthy();
+      const box = itemsGame.boxes.find((b) => b.nameKey === r.nameKey);
+      if (!box) continue;
+      const names = r.kits.map((d) => byIndex.get(d)?.internalName).sort();
+      expect(names, r.id).toEqual([...box.kits].sort());
+    }
+  });
+
+  test("DATA-15 a collaboration links to every member with a kit of their own", () => {
+    const linked = (d: number) => byIndex.get(d)?.artists.map((a) => a.artist);
+    expect(linked(46)).toEqual(["tree-adams", "ben-bromfield"]);
+    expect(linked(61)).toEqual(["the-verkkars"]);
   });
 });
