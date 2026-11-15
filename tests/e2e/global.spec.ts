@@ -25,6 +25,16 @@ test.describe("every page", () => {
     for (const href of internal) expect(href, href).toMatch(/^\/ru\//);
   });
 
+  test("pages and assets are served with the security headers", async ({ request }) => {
+    for (const path of ["/en/", "/en/no-such-page/", "/favicon.svg"]) {
+      const headers = (await request.get(path)).headers();
+      expect(headers["x-content-type-options"], path).toBe("nosniff");
+      expect(headers["referrer-policy"], path).toBe("strict-origin-when-cross-origin");
+      expect(headers["strict-transport-security"], path).toContain("max-age=");
+      expect(headers["content-security-policy"], path).toBe("frame-ancestors 'none'");
+    }
+  });
+
   test("uppercase comes from CSS; the text keeps its case", async ({ page }) => {
     await page.goto("/de/artists/");
     const nav = page.getByRole("navigation").getByRole("link", { name: "Künstler" });
