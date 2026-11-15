@@ -13,7 +13,7 @@ Astro 7 (static output) with React islands, Tailwind CSS 4, TypeScript 6 (Astro'
 ## Rules
 
 - Use `pnpm`, never npm or yarn. pnpm refuses packages published less than a day ago; pick an older version instead of adding exclusions. Build scripts are allowed only for the packages in `pnpm-workspace.yaml` (`allowBuilds`).
-- Before pushing, run `pnpm verify` (lint, types, i18n check, unit tests, build, end-to-end tests).
+- Every change reaches `main` through a squash-merged pull request; a ruleset requires it and the CI checks. Before pushing, run `pnpm verify` (lint, types, i18n check, unit tests, build, end-to-end tests).
 - Cloudflare: build with `pnpm build`, deploy with Wrangler (`wrangler.jsonc`, D-019). Never run `cf init`, `cf build` or `cf deploy` here: `cf` treats Astro as a server-rendered app. `cf` is fine for account and resource commands (R2, DNS).
 - Astro questions: use the `astro-docs` MCP server (`.mcp.json`) for current APIs instead of memory.
 - Never edit `data/generated/` or `data/upstream/` by hand. Change curated files or scripts, then run `pnpm data:build`.
