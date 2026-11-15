@@ -1,7 +1,7 @@
 <h1 align="center">CS Music Kit Archive</h1>
 
 <p align="center">
-  Every Counter-Strike music kit, with its full tracklist, in every language of CS2.
+  Every Counter-Strike music kit.
   <br />
   <a href="https://musickitarchive.com">Website</a>
   ·

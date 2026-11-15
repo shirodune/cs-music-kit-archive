@@ -114,7 +114,7 @@
   "about.title": "Despre site",
   "about.meta": "Ce este CS Music Kit Archive, de unde provin datele și cum raportezi o greșeală.",
   "about.what": "Ce este",
-  "about.whatText": "O arhivă neoficială cu toate kiturile de muzică din Counter-Strike. Fiecare kit are pagina lui cu lista completă de piese, care pot fi ascultate în browser, în toate limbile CS2.",
+  "about.whatText": "O arhivă neoficială cu toate kiturile de muzică din Counter-Strike. Fiecare kit are pagina lui cu lista completă de piese, care pot fi ascultate în browser.",
   "about.notAffiliated": "Nu este afiliat cu Valve.",
   "about.data": "De unde provin datele",
   "about.dataText": "Piesele și copertele provin din fișierele jocului și sunt publicate neschimbate. Numele și descrierile kiturilor sunt textele Valve în fiecare limbă. Datele de lansare provin din notele de actualizare ale Valve, cu link pe pagina fiecărui kit. Linkurile artiștilor provin de la MusicBrainz. În fiecare săptămână, site-ul verifică jocul pentru kituri noi sau modificate.",

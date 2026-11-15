@@ -4,7 +4,7 @@ What the site does, the rules its data follows, and why. Only what the code and 
 
 ## Purpose
 
-An unofficial site that presents every Counter-Strike music kit, from the default CS:GO music of 2012 to today, at musickitarchive.com. The game's own preview of a kit is short; here every track plays in full, in every language CS2 ships. No accounts, no user content, no prices or trading, no 3D models.
+An unofficial site that presents every Counter-Strike music kit, from the default CS:GO music of 2012 to today, at musickitarchive.com. The game's own preview of a kit is short; here every track plays in full. No accounts, no user content, no prices or trading, no 3D models.
 
 The design reference is the claude.ai Design canvas "CS Music Kits Archive", page "Current design", style A "Supply Depot" (link in `CLAUDE.md`).
 
