@@ -1,6 +1,6 @@
 # CS Music Kit Archive
 
-Unofficial site that presents every Counter-Strike music kit with full tracklists, in every language CS2 ships. Live at musickitarchive.com.
+Unofficial site that presents every Counter-Strike music kit with full tracklists. Live at musickitarchive.com.
 
 ## Read the spec first
 

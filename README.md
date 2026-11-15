@@ -1,18 +1,8 @@
-<h1 align="center">CS Music Kit Archive</h1>
+# [CS Music Kit Archive](https://musickitarchive.com)
 
-<p align="center">
-  Every Counter-Strike music kit, with its full tracklist, in every language of CS2.
-  <br />
-  <a href="https://musickitarchive.com">Website</a>
-  ·
-  <a href="https://musickitarchive.com/en/about/">About</a>
-  ·
-  <a href="https://github.com/shirodune/cs-music-kit-archive/issues">Report a mistake</a>
-</p>
+Every Counter-Strike music kit.
 
-<p align="center">
-  <img src="docs/screenshot.webp" alt="The records rack on musickitarchive.com, with Desert Fire by Austin Wintory selected" width="1100">
-</p>
+![The records rack on musickitarchive.com, with Desert Fire by Austin Wintory selected](docs/screenshot.webp)
 
 ## About
 
