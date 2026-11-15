@@ -130,6 +130,18 @@ test.describe("records page fits the screen", () => {
     expect((open?.y ?? 0) + (open?.height ?? 0)).toBeLessThanOrEqual(scroll);
   });
 
+  test("on a phone, no year label runs past the end of the year strip", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto("/en/");
+    const strip = await page.getByRole("navigation", { name: "Years" }).boundingBox();
+    const labels = page.getByRole("navigation", { name: "Years" }).getByRole("button");
+    expect(await labels.count()).toBeGreaterThan(1);
+    for (const label of await labels.all()) {
+      const box = await label.boundingBox();
+      expect((box?.x ?? 0) + (box?.width ?? 0)).toBeLessThanOrEqual((strip?.x ?? 0) + (strip?.width ?? 0) + 1);
+    }
+  });
+
   test("PROD-13a every gesture on the rack moves the rack, not the page", async ({ page }) => {
     await page.goto("/en/");
     await expect(rack(page)).toHaveCSS("touch-action", "none");

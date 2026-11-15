@@ -67,6 +67,15 @@ const WHEEL_PER_KIT = 650;
 
 const clampTo = (n: number, max: number) => Math.max(0, Math.min(max, n));
 
+/**
+ * Leftward shift of year label `i` so it never runs past the end of the year strip, as the last years' labels would on
+ * a phone. Each of the `count` years has a 1 px border plus its flex share of the rest, so the room from the year's
+ * start to the strip's end is (100cqw − count px) × (1 − from) + (count − i) px; 100% is the label's own width.
+ */
+function labelShift(i: number, count: number, from: number): string {
+  return `min(0px, calc((100cqw - ${count}px) * ${1 - from} + ${count - i}px - 100%))`;
+}
+
 export default function Rack({ kits, strings, initial }: Props) {
   const last = kits.length - 1;
   const groups = useMemo(() => yearGroups(kits.map((k) => k.year)), [kits]);
@@ -377,7 +386,7 @@ export default function Rack({ kits, strings, initial }: Props) {
 
       <nav aria-label={strings.years} className="relative mx-4 flex-none overflow-x-clip sm:mx-(--gutter)">
         <div
-          className="relative flex h-12 cursor-pointer touch-none border-b border-paper/30 select-none"
+          className="@container relative flex h-12 cursor-pointer touch-none border-b border-paper/30 select-none"
           onPointerDown={(e) => {
             if (e.button !== 0 || (e.target as HTMLElement).closest("button")) return;
             scrubbing.current = true;
@@ -405,6 +414,7 @@ export default function Rack({ kits, strings, initial }: Props) {
                   aria-current={on ? "true" : undefined}
                   aria-label={strings.yearLabels[g.year]}
                   onClick={() => go(g.first)}
+                  style={{ translate: labelShift(i, groups.length, g.from) }}
                   className={`block min-h-11 cursor-pointer border-0 bg-transparent pl-[7px] font-condensed text-[15px] tracking-wider whitespace-nowrap hover:text-paper ${on ? "font-extrabold text-signal" : "font-semibold text-muted max-sm:opacity-0 max-sm:focus-visible:opacity-100"}`}
                 >
                   {g.year}
