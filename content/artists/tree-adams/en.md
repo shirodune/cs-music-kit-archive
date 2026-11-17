@@ -1,7 +1,7 @@
 ---
 sources:
   - title: "Composer, Tree Adams's official site"
-    url: http://www.treeadams.com/composer
+    url: https://www.treeadams.com/composer
   - title: "Meet the Emmy-Nominated Composers Behind Ginny & Georgia, What's on Netflix, 31 July 2023"
     url: https://www.whats-on-netflix.com/news/meet-the-emmy-nominated-composers-behind-ginny-georgia/
 translation: original

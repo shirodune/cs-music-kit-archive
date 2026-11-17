@@ -12,4 +12,4 @@ translation: original
 ---
 Beartooth is an American rock band from Columbus, Ohio. Caleb Shomo started it in 2012 as a studio project, playing every instrument himself, while he was still in the metalcore band Attack Attack!. Their first album, Disgusting (2014), reached No. 48 on the Billboard 200 and the second, Aggressive (2016), No. 25. In 2016 they won Best Breakthrough Band at the Metal Hammer Golden Gods.
 
-Both albums became music kits. Disgusting came in September 2015, together with the first StatTrak™ music kits, which count your MVPs in competitive matches. Aggressive followed in November 2016 in the StatTrak™ Radicals Box.
+Both albums became music kits. Disgusting came in September 2015, together with the first StatTrak™ music kits, which count your MVPs in official competitive matches. Aggressive followed in November 2016 in the StatTrak™ Radicals Box.

@@ -125,7 +125,7 @@ test.describe("record page", () => {
   test("PROD-27 an artist's introduction comes before the discography", async ({ page }) => {
     await page.goto("/en/artists/austin-wintory/");
     const about = page.getByRole("region", { name: "About" });
-    await expect(about).toContainText("first game score ever nominated for a Grammy");
+    await expect(about).toContainText("first game score to receive a Grammy nomination");
     const order = await page
       .locator("[data-writing], #discography-h")
       .evaluateAll((els) => els.map((el) => el.getAttribute("data-writing") ?? el.id));
