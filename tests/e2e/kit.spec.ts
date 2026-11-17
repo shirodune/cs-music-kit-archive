@@ -91,10 +91,10 @@ test.describe("record page", () => {
   });
 
   test("PROD-14 PROD-27 a kit or artist without a story or introduction leaves the section out", async ({ page }) => {
-    await page.goto("/en/kits/red-room/");
+    await page.goto("/en/kits/high-noon/");
     await expect(page.getByRole("heading", { name: "Tracklist" })).toBeVisible();
     await expect(page.locator("[data-writing]")).toHaveCount(0);
-    await page.goto("/en/artists/adam-beyer/");
+    await page.goto("/en/artists/various-artists/");
     await expect(page.getByRole("heading", { name: "Music kits", level: 2 })).toBeVisible();
     await expect(page.locator("[data-writing]")).toHaveCount(0);
   });
