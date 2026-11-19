@@ -10,6 +10,6 @@ sources:
     url: https://austinwintory.bandcamp.com/album/counter-strike-global-offensive-bachram
 translation: machine
 ---
-Austin Wintory 是美国的游戏和电影作曲家，1984 年生于丹佛。他最为人熟知的作品是《风之旅人》（Journey）的配乐：2012 年 12 月，它成为史上第一部获得格莱美提名的游戏配乐，提名奖项是“最佳视觉媒体配乐原声”。他的其他游戏配乐还有《旗帜的传说》三部曲、《ABZÛ》和《刺客信条：枭雄》。
+Austin Wintory 是美国的游戏和电影作曲家，1984 年生于丹佛。他为《风之旅人》（Journey）作曲，这部配乐在 2012 年 12 月成为史上第一部获得格莱美提名的游戏配乐，提名奖项是“最佳视觉媒体配乐原声”。他的其他游戏配乐还有《旗帜的传说》三部曲、《ABZÛ》和《刺客信条：枭雄》。
 
 在 Counter-Strike 里，他从一开始就在：2014 年 10 月音乐盒推出时的首批九款中，就有他的《沙漠之焰》。之后，由 Peter Hollens 参与的《巴克拉姆》收录在决策大师音乐盒集，《咖啡拉花》收录在战术大师音乐盒集，《恶魔舞厅》收录在决策大师2号音乐盒集。
