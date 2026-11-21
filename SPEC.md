@@ -19,7 +19,7 @@ Records (the rack, the home page), one page per kit, the artists index, one page
 - PROD-7 The rack holds every kit by release date. It works without JavaScript as a list of links.
 - PROD-12 The selected kit is kept in the address, so links and the back button return to it. Without one, the newest kit is selected.
 - PROD-13a The records page fits the screen, so scrolling never competes with moving the rack. Only a screen too small for it scrolls, rather than overlap.
-- PROD-14 A kit page shows: title, cover and facts; the MVP anthem; the tracklist; Valve's description; the story; more by the same artists; kits released the same day; previous and next; the release note as source. Empty sections are left out.
+- PROD-14 A kit page shows: title and facts; the cover, with a button on it that plays the MVP anthem; the tracklist; Valve's description; the story; more by the same artists; kits released the same day; previous and next; the release note as source. Empty sections are left out.
 - PROD-15 The default CS:GO kit also shows its unnamed alternate set of tracks, with a note that it is not a separate item.
 - PROD-16 Artists index: more than one kit (most first); one kit each, by year; games and official, by first release.
 - PROD-19 An artist's kits are in release order, with "N years later" between kits whose release years differ by 3 or more.
