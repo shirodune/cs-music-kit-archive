@@ -8,4 +8,4 @@ sources:
     url: https://adambeyer.bandcamp.com/album/lets-begin
 translation: original
 ---
-The kit shares its name with Red Room, the closing track of Let's Begin, a three-track EP Adam Beyer released on Drumcode (DC297) in February 2024. The label's notes call it "a dreamy belter" and describe UK hard dance influences and an industrial synth section. Beyer described the EP as "an ode to Drumcode's earlier material" and "a take on the '90s sound blended with new modern elements".
+The track Red Room closes Let's Begin, a three-track EP Adam Beyer released on Drumcode (DC297) in February 2024. The label's notes call it "a dreamy belter" and describe UK hard dance influences and an industrial synth section. Beyer described the EP as "an ode to Drumcode's earlier material" and "a take on the '90s sound blended with new modern elements".

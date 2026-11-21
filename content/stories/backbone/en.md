@@ -6,4 +6,4 @@ sources:
     url: https://blog.counter-strike.net/2016/11/17118/
 translation: original
 ---
-Backbone shares its name with Roam's debut album, released through Hopeless Records on 22 January 2016, ten months before the kit. Drew Lawson produced and mixed it, and it was recorded at studios in Sheffield, Manchester and East Sussex.
+Roam's debut album, Backbone, came out through Hopeless Records on 22 January 2016, ten months before the kit. Drew Lawson produced and mixed it, and it was recorded at studios in Sheffield, Manchester and East Sussex.

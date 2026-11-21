@@ -8,4 +8,4 @@ sources:
     url: https://nerdist.com/article/disney-songs-thrashing-metal-covers/
 translation: original
 ---
-The kit shares its name with Starship Velociraptor, an eleven-track power metal album released on 25 March 2021 and credited to Galactikraken & Jonathan Young. Young's site calls Galactikraken "Jonathan Young's band", and jokes that it is "a real band from the future and not just Jonathan Young by himself". Ninja Brian is featured on one track, Best Band in the Universe.
+Starship Velociraptor, an eleven-track power metal album credited to Galactikraken & Jonathan Young, came out on 25 March 2021. Young's site calls Galactikraken "Jonathan Young's band", and jokes that it is "a real band from the future and not just Jonathan Young by himself". Ninja Brian is featured on one track, Best Band in the Universe.

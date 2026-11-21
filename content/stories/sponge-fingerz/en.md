@@ -8,4 +8,4 @@ sources:
     url: https://music.apple.com/us/album/sikka-takin-the-hard-way/993921938?i=993922436
 translation: original
 ---
-Sponge Fingerz shares its name with New Beat Fund's debut album, released by Red Bull Records in June 2015. On the label's page for the kit, the featured song was "Sikka Takin' the Hard Way", a track from that album.
+New Beat Fund's debut album, Sponge Fingerz, was released by Red Bull Records in June 2015. On the label's page for the kit, the featured song was "Sikka Takin' the Hard Way", a track from that album.

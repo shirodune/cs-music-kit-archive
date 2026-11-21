@@ -10,4 +10,4 @@ sources:
     url: https://valvestudioorchestra.bandcamp.com/
 translation: machine
 ---
-2023 年 11 月 1 日，一张名为《Counter-Strike 2》的三曲专辑以 Valve Studio Orchestra 的名义发行，专辑名与这款音乐盒的英文名相同。Steam 上称它为“The official soundtrack of Counter-Strike 2”（Counter-Strike 2 官方原声），第一首曲目也叫《Counter-Strike 2》。维基百科称，它的数字版由 Ipecac Recordings 厂牌发行。在 Bandcamp 上，《Team Fortress 2》和《Dota 2》的原声也署名 Valve Studio Orchestra。
+2023 年 11 月 1 日，一张名为《Counter-Strike 2》的三曲专辑以 Valve Studio Orchestra 的名义发行。Steam 上称它为“The official soundtrack of Counter-Strike 2”（Counter-Strike 2 官方原声），第一首曲目也叫《Counter-Strike 2》。维基百科称，它的数字版由 Ipecac Recordings 厂牌发行。在 Bandcamp 上，《Team Fortress 2》和《Dota 2》的原声也署名 Valve Studio Orchestra。

@@ -4,4 +4,4 @@ sources:
     url: https://freshmusicfreaks.com/alrt-drops-high-energy-single-dopamine-hit-featuring-liam-elliott-via-nightmode/
 translation: original
 ---
-DOPAMINE HIT shares its name with a single by ALRT featuring the vocalist Liam Elliott, released by NIGHTMODE on 28 March 2025; it was his third release on the label, after The Need and Big Bass. The release notes describe a track built on UK garage and bassline. ALRT said it took him back to growing up in the 1990s, when he discovered new music on late-night MTV.
+ALRT's single DOPAMINE HIT, featuring the vocalist Liam Elliott, was released by NIGHTMODE on 28 March 2025; it was his third release on the label, after The Need and Big Bass. The release notes describe a track built on UK garage and bassline. ALRT said it took him back to growing up in the 1990s, when he discovered new music on late-night MTV.

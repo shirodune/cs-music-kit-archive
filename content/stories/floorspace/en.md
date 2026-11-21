@@ -8,4 +8,4 @@ sources:
     url: https://steamcommunity.com/market/listings/730/Music%20Kit%20%7C%20Juelz%2C%20Floorspace
 translation: original
 ---
-The kit draws on Juelz's first album, a 15-track record also called Floorspace. Juelz called it "my maximalist magnum opus". He said the writing stretched over two years in which he quit his day job, went broke and played some of the largest shows of his career. The title, he explained, points to the dance floor, but also means "having the creative room to do what I want". Los Angeles heard it live first, at a sold-out show that was also his debut as a headliner.
+The kit draws on Juelz's first album, Floorspace, a 15-track record. Juelz called it "my maximalist magnum opus". He said the writing stretched over two years in which he quit his day job, went broke and played some of the largest shows of his career. The title, he explained, points to the dance floor, but also means "having the creative room to do what I want". Los Angeles heard it live first, at a sold-out show that was also his debut as a headliner.

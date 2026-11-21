@@ -6,4 +6,4 @@ sources:
     url: https://crisisofman.bandcamp.com/
 translation: original
 ---
-No Love Only Pleasure shares its name with a Selective Response track that his label, Crisis Of Man, released on 30 June 2023 under catalogue number COM020.
+Selective Response's label, Crisis Of Man, released his track No Love Only Pleasure on 30 June 2023 under catalogue number COM020.

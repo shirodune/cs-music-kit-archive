@@ -8,4 +8,4 @@ sources:
     url: https://blog.counter-strike.net/2022/08/39352/
 translation: machine
 ---
-《哥特浮华》的英文名 Gothic Luxury 与 Meechy Darko 的首张个人专辑同名，这张专辑于 2022 年 8 月 26 日发行，比音乐盒晚三天。专辑由 Dot Da Genius 担任执行制作人，13 首曲目中有 Black Thought、Busta Rhymes、Denzel Curry、Freddie Gibbs、A-Trak、Kirk Knight 和 Vita 客串。
+Meechy Darko 的首张个人专辑《Gothic Luxury》于 2022 年 8 月 26 日发行，比这款音乐盒晚三天。专辑由 Dot Da Genius 担任执行制作人，13 首曲目中有 Black Thought、Busta Rhymes、Denzel Curry、Freddie Gibbs、A-Trak、Kirk Knight 和 Vita 客串。

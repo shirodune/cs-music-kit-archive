@@ -8,4 +8,4 @@ sources:
     url: https://en.wikipedia.org/wiki/Knock2
 translation: original
 ---
-dashstar* shares its name with a Knock2 single that Night Mode released on 5 February 2021; Dancing Astronaut noted that anyone who had watched his virtual sets the year before would already know it. At EDC Las Vegas 2022 it was the third most-played track of the festival, according to Billboard, and as of 2024 it remained his most-streamed song.
+Night Mode released Knock2's single dashstar* on 5 February 2021; Dancing Astronaut noted that anyone who had watched his virtual sets the year before would already know it. At EDC Las Vegas 2022 it was the third most-played track of the festival, according to Billboard, and as of 2024 it remained his most-streamed song.

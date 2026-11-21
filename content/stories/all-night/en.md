@@ -8,4 +8,4 @@ sources:
     url: https://www.edmtunes.com/2023/02/kill-script-returns-to-nightmode-with-all-night/
 translation: original
 ---
-The kit shares its name with All Night, a progressive house single KILL SCRIPT released on NIGHTMODE in February 2023, his first project with the label since VIRTUAL ENVIRONMENT. The song had its live debut at a sold-out Exchange LA in Los Angeles. "If you're alone in your room or raving at a show, I hope 'All Night' can help you feel connected and loved," he said.
+KILL SCRIPT released the progressive house single All Night on NIGHTMODE in February 2023, his first project with the label since VIRTUAL ENVIRONMENT. The song had its live debut at a sold-out Exchange LA in Los Angeles. "If you're alone in your room or raving at a show, I hope 'All Night' can help you feel connected and loved," he said.

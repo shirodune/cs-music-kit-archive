@@ -6,4 +6,4 @@ sources:
     url: https://crisisofman.bandcamp.com/
 translation: machine
 ---
-《纵欲狂欢》的英文名 No Love Only Pleasure 与 Selective Response 的一首曲目《No Love Only Pleasure》相同，这首曲目由他的厂牌 Crisis Of Man 于 2023 年 6 月 30 日发行，目录编号 COM020。
+Selective Response 的曲目《No Love Only Pleasure》由他的厂牌 Crisis Of Man 于 2023 年 6 月 30 日发行，目录编号 COM020。

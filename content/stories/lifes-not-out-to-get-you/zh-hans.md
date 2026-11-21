@@ -4,4 +4,4 @@ sources:
     url: https://en.wikipedia.org/wiki/Life%27s_Not_Out_to_Get_You
 translation: machine
 ---
-《人生何处不青山》的英文名 Life's Not Out To Get You 与 Neck Deep 的专辑《Life's Not Out to Get You》同名。这张专辑于 2015 年 8 月 14 日由 Hopeless Records 发行，制作人是 Jeremy McKinnon 和 Andrew Wade，Wade 还负责了录音和混音。
+Neck Deep 的专辑《Life's Not Out to Get You》于 2015 年 8 月 14 日由 Hopeless Records 发行，制作人是 Jeremy McKinnon 和 Andrew Wade，Wade 还负责了录音和混音。
