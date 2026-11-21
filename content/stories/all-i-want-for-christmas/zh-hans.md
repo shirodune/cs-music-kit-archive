@@ -6,4 +6,4 @@ sources:
     url: https://shacknews.com/article/61756/left-4-dead-2s-midnight
 translation: machine
 ---
-《圣诞之欲》的英文名与 Valve 在 2009 年 12 月为这支乐队发布的一首圣诞歌曲的开头几个词相同：《All I Want for Christmas (Is to Kick Your Ass)》。据 Shacknews 报道，在乐队的虚构设定里，这首歌是 1998 年一段被遗忘的录音，为一张圣诞专辑而录，而乐队当年是“grudgingly agreed”（勉强同意）参加那张专辑的。
+2009 年 12 月，Valve 为这支乐队发布了圣诞歌曲《All I Want for Christmas (Is to Kick Your Ass)》，这款音乐盒的英文名 All I Want for Christmas 就是歌名的开头几个词。据 Shacknews 报道，在乐队的虚构设定里，这首歌是 1998 年一段被遗忘的录音，为一张圣诞专辑而录，而乐队当年是“grudgingly agreed”（勉强同意）参加那张专辑的。
