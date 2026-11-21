@@ -8,4 +8,4 @@ sources:
     url: https://music.apple.com/us/album/all-i-need-ep/1690225824
 translation: original
 ---
-The kit shares its name with reason, the third of four tracks on Rad Cat's EP all i need *, which NIGHTMODE released on 30 June 2023. He produced the whole EP on his own, moving between future bass and future house.
+The track reason is the third of four on Rad Cat's EP all i need *, which NIGHTMODE released on 30 June 2023. He produced the whole EP on his own, moving between future bass and future house.

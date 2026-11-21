@@ -10,4 +10,4 @@ sources:
     url: https://valvestudioorchestra.bandcamp.com/
 translation: original
 ---
-The three-track album Counter-Strike 2 was released under the name Valve Studio Orchestra on 1 November 2023, and its title is the kit's name. Steam lists it as "The official soundtrack of Counter-Strike 2", and its first track is also called Counter-Strike 2. Wikipedia names Ipecac Recordings as the label behind its digital release. On Bandcamp, Valve Studio Orchestra is also the name on the Team Fortress 2 and Dota 2 soundtracks.
+The three-track album Counter-Strike 2 was released under the name Valve Studio Orchestra on 1 November 2023. Steam lists it as "The official soundtrack of Counter-Strike 2", and its first track is also called Counter-Strike 2. Wikipedia names Ipecac Recordings as the label behind its digital release. On Bandcamp, Valve Studio Orchestra is also the name on the Team Fortress 2 and Dota 2 soundtracks.

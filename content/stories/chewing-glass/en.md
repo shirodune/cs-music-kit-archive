@@ -10,4 +10,4 @@ sources:
     url: https://jamesandthecoldgun.bandcamp.com/album/james-and-the-cold-gun
 translation: original
 ---
-The kit shares its name with Chewing Glass, a single James and the Cold Gun released on Loosegroove in November 2022, their first new music after the debut EP False Start. James Joseph has said the song came out of a hard period for him, and that it was the band's first self-produced song, "which in itself was an act of persistence". It later opened their self-titled debut album in July 2023.
+James and the Cold Gun released the single Chewing Glass on Loosegroove in November 2022, their first new music after the debut EP False Start. James Joseph has said the song came out of a hard period for him, and that it was the band's first self-produced song, "which in itself was an act of persistence". It later opened their self-titled debut album in July 2023.

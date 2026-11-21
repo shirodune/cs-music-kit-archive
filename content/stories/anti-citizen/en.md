@@ -6,4 +6,4 @@ sources:
     url: https://store.steampowered.com/app/1310460
 translation: original
 ---
-Anti-Citizen was not sold. Valve gave it away, together with a Genuine Alyx Pin, to people who had pre-purchased Valve Index hardware, in the same update that added Half-Life: Alyx pins, stickers and patches to the in-game store to celebrate the game's release. The kit shares its name with a track on the official Half-Life: Alyx soundtrack: Anti-Citizen is number 23 of the 72 tracks in the Steam edition.
+Anti-Citizen was not sold. Valve gave it away, together with a Genuine Alyx Pin, to people who had pre-purchased Valve Index hardware, in the same update that added Half-Life: Alyx pins, stickers and patches to the in-game store to celebrate the game's release. The official Half-Life: Alyx soundtrack has a track called Anti-Citizen, number 23 of the 72 tracks in the Steam edition.

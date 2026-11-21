@@ -8,4 +8,4 @@ sources:
     url: https://blog.counter-strike.net/2022/08/39352/
 translation: original
 ---
-Gothic Luxury shares its name with Meechy Darko's first solo album, which came out on 26 August 2022, three days after the kit. Dot Da Genius was its executive producer, and its 13 tracks bring in Black Thought, Busta Rhymes, Denzel Curry, Freddie Gibbs, A-Trak, Kirk Knight and Vita as guests.
+Meechy Darko's first solo album, Gothic Luxury, came out on 26 August 2022, three days after the kit. Dot Da Genius was its executive producer, and its 13 tracks bring in Black Thought, Busta Rhymes, Denzel Curry, Freddie Gibbs, A-Trak, Kirk Knight and Vita as guests.

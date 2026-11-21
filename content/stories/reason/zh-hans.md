@@ -8,4 +8,4 @@ sources:
     url: https://music.apple.com/us/album/all-i-need-ep/1690225824
 translation: machine
 ---
-NIGHTMODE 于 2023 年 6 月 30 日发行了 Rad Cat 的四曲 EP《all i need *》，第三首《reason》与这款音乐盒的英文名相同。整张 EP 由他独立制作，在 future bass 和 future house 之间来回切换。
+NIGHTMODE 于 2023 年 6 月 30 日发行了 Rad Cat 的四曲 EP《all i need *》，《reason》是其中的第三首。整张 EP 由他独立制作，在 future bass 和 future house 之间来回切换。
