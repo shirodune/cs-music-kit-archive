@@ -91,11 +91,11 @@ test.describe("record page player", () => {
     await expect(play(page, "Match start and end")).toBeVisible();
   });
 
-  test("PROD-14 PROD-24 the MVP button on the cover plays the kit's MVP anthem", async ({ page }) => {
+  test("PROD-14 PROD-24 the MVP button under the facts plays the kit's MVP anthem", async ({ page }) => {
     const requested = await serveAudio(page);
     await page.goto("/en/kits/desert-fire/");
     const mvp = page.getByRole("button", { name: "Play the MVP anthem" });
-    await expect(page.locator("[data-player] figure").getByRole("button", { name: "Play the MVP anthem" })).toHaveCount(
+    await expect(page.locator("[data-player] > div").getByRole("button", { name: "Play the MVP anthem" })).toHaveCount(
       1,
     );
     await mvp.click();
