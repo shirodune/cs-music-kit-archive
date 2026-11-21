@@ -8,4 +8,4 @@ sources:
     url: https://www.edmtunes.com/2023/02/kill-script-returns-to-nightmode-with-all-night/
 translation: machine
 ---
-《通宵达旦》的英文名 All Night 与一首单曲同名，那是 KILL SCRIPT 于 2023 年 2 月在 NIGHTMODE 发行的一首 progressive house 单曲，也是他自《VIRTUAL ENVIRONMENT》之后与这家厂牌的首次合作。这首歌的现场首秀是在洛杉矶门票售罄的 Exchange LA。他说：“If you're alone in your room or raving at a show, I hope 'All Night' can help you feel connected and loved.”（无论你是独自待在房间里，还是在演出现场狂欢，我都希望《All Night》能让你感到与人相连、被爱包围。）
+KILL SCRIPT 于 2023 年 2 月在 NIGHTMODE 发行了 progressive house 单曲《All Night》，歌名与这款音乐盒的英文名相同；这是他自《VIRTUAL ENVIRONMENT》以来与这家厂牌的首个合作项目。这首歌的现场首秀是在洛杉矶门票售罄的 Exchange LA。他说：“If you're alone in your room or raving at a show, I hope 'All Night' can help you feel connected and loved.”（无论你是独自待在房间里，还是在演出现场狂欢，我都希望《All Night》能让你感到与人相连、被爱包围。）
