@@ -2,6 +2,7 @@
 import { execFileSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { describe, expect, test } from "vitest";
+import curatedArtists from "../../data/curated/artists.json";
 import overrides from "../../data/curated/overrides.json";
 import artistsJson from "../../data/generated/artists.json";
 import kitsJson from "../../data/generated/kits.json";
@@ -10,6 +11,7 @@ import en from "../../data/generated/text/en.json";
 import manifest from "../../data/upstream/audio-manifest.json";
 import gameFiles from "../../data/upstream/game-files.json";
 import itemsGame from "../../data/upstream/items-game.json";
+import enLoc from "../../data/upstream/loc/en.json";
 import meta from "../../data/upstream/meta.json";
 import { generatedArtistSchema, kitSchema, releaseSchema, VALVE_HOSTS } from "../../src/data/schema.ts";
 
@@ -19,9 +21,14 @@ const releases = releasesJson.map((r) => releaseSchema.parse(r));
 const byIndex = new Map(kits.map((k) => [k.defIndex, k]));
 
 describe("kit set", () => {
-  test("DATA-5 every named music definition is a kit: 101 today", () => {
-    expect(kits).toHaveLength(101);
-    expect(Object.keys(en.kits)).toHaveLength(101);
+  test("DATA-5 every named music definition is a kit, and none of today's 101 is lost", () => {
+    // Counted from the game data: main and the sync's branch hold different game data (DATA-25).
+    const named = Object.entries(itemsGame.music).filter(([, d]) => d.locName && d.locName in enLoc);
+    expect(kits.map((k) => k.defIndex).sort((a, b) => a - b)).toEqual(
+      named.map(([i]) => Number(i)).sort((a, b) => a - b),
+    );
+    expect(Object.keys(en.kits)).toHaveLength(kits.length);
+    expect(kits.length).toBeGreaterThanOrEqual(101);
   });
 
   test("DATA-6 defIndex 2 is not a kit; its tracks are the alternate set of defIndex 70", () => {
@@ -118,7 +125,9 @@ describe("kits", () => {
   });
 
   test("PROD-20 DATA-15a artists with an MBID link to MusicBrainz last, one link of each kind", () => {
-    expect(artists.filter((a) => a.musicbrainzId)).toHaveLength(69);
+    const curatedMbid = new Map(curatedArtists.map((a) => [a.id, a.musicbrainzId]));
+    for (const a of artists) expect(a.musicbrainzId, a.id).toBe(curatedMbid.get(a.id));
+    expect(artists.filter((a) => a.musicbrainzId).length).toBeGreaterThanOrEqual(69);
     for (const a of artists) {
       if (!a.musicbrainzId) {
         expect(a.links, a.id).toEqual([]);
