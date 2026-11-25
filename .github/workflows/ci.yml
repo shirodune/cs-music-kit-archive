@@ -112,10 +112,12 @@ jobs:
   preview:
     name: Preview
     needs: checks
-    # Pull requests from forks get no secrets. Without its app, the weekly sync starts CI on its branch by hand
+    # Pull requests from forks get no secrets, and Dependabot's get only Dependabot's own: the deploy token stays
+    # away from new package versions. Without its app, the weekly sync starts CI on its branch by hand
     # (workflow_dispatch, D-024), so that pull request gets a preview too.
     if: >-
-      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
+      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository &&
+      github.event.pull_request.user.login != 'dependabot[bot]') ||
       (github.event_name == 'workflow_dispatch' && github.ref != 'refs/heads/main')
     runs-on: ubuntu-latest
     timeout-minutes: 10

@@ -101,7 +101,7 @@ Every field has one owner, and derived data is never edited by hand:
 Each: the decision, then why. To change one, add a new one and mark the old one replaced.
 
 - D-001 A static site built with Astro, on Cloudflare Workers static assets. The content changes weekly and is the same for everyone.
-- D-003 Every pull request gets a preview; `main` deploys after all checks. Pull requests from forks get no secrets.
+- D-003 Every pull request gets a preview; `main` deploys after all checks. Pull requests from forks and Dependabot get no secrets, so no preview: the deploy token never meets code from outside or from new package versions.
 - D-005 Valve's own game data is the source, not item sites: it updates with every game patch.
 - D-007 Full-length audio on R2, never in git: about 1.6 GB, and a takedown of a public repository would remove all of it. Match start and end stay lossless at the owner's choice.
 - D-009 Default kits are dated by their game's launch (CS:GO 2012-08-21, CS2 2023-09-27): the archive is about the music, and Valve's description dates the CS:GO kit to that launch.

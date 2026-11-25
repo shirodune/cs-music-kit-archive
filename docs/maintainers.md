@@ -60,4 +60,4 @@ When the sync's pull request says `pnpm data:build failed`, the game has new kit
 3. Check: `pnpm data:build` notes that the release waits for its kits. Have someone other than the writer, such as a second agent, check each fact (quote, date, kits, credits, MusicBrainz IDs) against its source, and fix what it finds.
 4. Open a pull request to `main` with `pnpm verify` passing. Once it is merged, the sync runs again, extracts the new audio and covers, and updates its pull request; merge that one too.
 
-Deploys run from GitHub Actions (spec D-003): every pull request gets a preview on workers.dev, and every push to `main` deploys to production after all checks pass.
+Deploys run from GitHub Actions (spec D-003): every pull request gets a preview on workers.dev (except those from forks and Dependabot), and every push to `main` deploys to production after all checks pass.
