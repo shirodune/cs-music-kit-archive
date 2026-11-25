@@ -761,6 +761,54 @@
       "locDescription": "musickit_starjunk95_01_desc",
       "locName": "musickit_starjunk95_01",
       "name": "starjunk95_01"
+    },
+    "105": {
+      "imageInventory": "econ/music_kits/alleycvt_01",
+      "locDescription": "musickit_alleycvt_01_desc",
+      "locName": "musickit_alleycvt_01",
+      "name": "alleycvt_01"
+    },
+    "106": {
+      "imageInventory": "econ/music_kits/arcando_01",
+      "locDescription": "musickit_arcando_01_desc",
+      "locName": "musickit_arcando_01",
+      "name": "arcando_01"
+    },
+    "107": {
+      "imageInventory": "econ/music_kits/djdiesel_01",
+      "locDescription": "musickit_djdiesel_01_desc",
+      "locName": "musickit_djdiesel_01",
+      "name": "djdiesel_01"
+    },
+    "108": {
+      "imageInventory": "econ/music_kits/fool_01",
+      "locDescription": "musickit_fool_01_desc",
+      "locName": "musickit_fool_01",
+      "name": "fool_01"
+    },
+    "109": {
+      "imageInventory": "econ/music_kits/noisestorm_01",
+      "locDescription": "musickit_noisestorm_01_desc",
+      "locName": "musickit_noisestorm_01",
+      "name": "noisestorm_01"
+    },
+    "110": {
+      "imageInventory": "econ/music_kits/pegboardnerds_01",
+      "locDescription": "musickit_pegboardnerds_01_desc",
+      "locName": "musickit_pegboardnerds_01",
+      "name": "pegboardnerds_01"
+    },
+    "111": {
+      "imageInventory": "econ/music_kits/tristam_braken_01",
+      "locDescription": "musickit_tristam_braken_01_desc",
+      "locName": "musickit_tristam_braken_01",
+      "name": "tristam_braken_01"
+    },
+    "112": {
+      "imageInventory": "econ/music_kits/vicetone_01",
+      "locDescription": "musickit_vicetone_01_desc",
+      "locName": "musickit_vicetone_01",
+      "name": "vicetone_01"
     }
   }
 }

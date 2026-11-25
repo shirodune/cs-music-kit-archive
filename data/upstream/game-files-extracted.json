@@ -15,6 +15,14 @@
     "bytes": 637783,
     "crc": "005eefda1e"
   },
+  "materials/models/inventory_items/music_kit/alleycvt_01/mp3_screen_color_psd_89485f11.vtex_c": {
+    "bytes": 1183177,
+    "crc": "00ff22537b"
+  },
+  "materials/models/inventory_items/music_kit/alleycvt_01/mp3_screen_color_psd_782306fd.vtex_c": {
+    "bytes": 527508,
+    "crc": "009b856397"
+  },
   "materials/models/inventory_items/music_kit/alrt_01/mp3_screen_color_psd_25b44773.vtex_c": {
     "bytes": 588524,
     "crc": "00d84d2841"
@@ -38,6 +46,14 @@
   "materials/models/inventory_items/music_kit/amontobin_01/mp3_screen_color_psd_d7856311.vtex_c": {
     "bytes": 137867,
     "crc": "005383ca11"
+  },
+  "materials/models/inventory_items/music_kit/arcando_01/mp3_screen_color_psd_a2282409.vtex_c": {
+    "bytes": 890125,
+    "crc": "00873b6d77"
+  },
+  "materials/models/inventory_items/music_kit/arcando_01/mp3_screen_color_psd_e87ea661.vtex_c": {
+    "bytes": 361775,
+    "crc": "0085cb2eae"
   },
   "materials/models/inventory_items/music_kit/austinwintory_01/mp3_screen_color_psd_868a26a3.vtex_c": {
     "bytes": 45792,
@@ -199,6 +215,14 @@
     "bytes": 176900,
     "crc": "007f7e9318"
   },
+  "materials/models/inventory_items/music_kit/djdiesel_01/mp3_screen_color_psd_7febf7ad.vtex_c": {
+    "bytes": 1400336,
+    "crc": "0079533607"
+  },
+  "materials/models/inventory_items/music_kit/djdiesel_01/mp3_screen_color_psd_afc885fb.vtex_c": {
+    "bytes": 636155,
+    "crc": "00f6537643"
+  },
   "materials/models/inventory_items/music_kit/dren_01/mp3_screen_color_psd_2fba268f.vtex_c": {
     "bytes": 45760,
     "crc": "00462377f5"
@@ -238,6 +262,14 @@
   "materials/models/inventory_items/music_kit/feedme_01/mp3_screen_color_psd_fc8e0ee0.vtex_c": {
     "bytes": 30780,
     "crc": "0049272f1c"
+  },
+  "materials/models/inventory_items/music_kit/fool_01/mp3_screen_color_psd_5b081c47.vtex_c": {
+    "bytes": 557794,
+    "crc": "00d61cb399"
+  },
+  "materials/models/inventory_items/music_kit/fool_01/mp3_screen_color_psd_607a020f.vtex_c": {
+    "bytes": 1220872,
+    "crc": "001e13816d"
   },
   "materials/models/inventory_items/music_kit/freakydna_01/mp3_screen_color_psd_3eed8d5b.vtex_c": {
     "bytes": 95776,
@@ -519,6 +551,14 @@
     "bytes": 44447,
     "crc": "00fde7e2d0"
   },
+  "materials/models/inventory_items/music_kit/noisestorm_01/mp3_screen_color_psd_a709a585.vtex_c": {
+    "bytes": 1336513,
+    "crc": "0064a07490"
+  },
+  "materials/models/inventory_items/music_kit/noisestorm_01/mp3_screen_color_psd_b4189c0e.vtex_c": {
+    "bytes": 634796,
+    "crc": "00d6a036f7"
+  },
   "materials/models/inventory_items/music_kit/noisia_01/mp3_screen_color_psd_b2c58624.vtex_c": {
     "bytes": 89528,
     "crc": "00fa2a87b1"
@@ -526,6 +566,14 @@
   "materials/models/inventory_items/music_kit/noisia_01/mp3_screen_color_psd_ec3c0b3a.vtex_c": {
     "bytes": 45760,
     "crc": "00d911fe32"
+  },
+  "materials/models/inventory_items/music_kit/pegboardnerds_01/mp3_screen_color_psd_307cc0ce.vtex_c": {
+    "bytes": 220454,
+    "crc": "00d526fb3d"
+  },
+  "materials/models/inventory_items/music_kit/pegboardnerds_01/mp3_screen_color_psd_b07deb7a.vtex_c": {
+    "bytes": 452092,
+    "crc": "00ee7ef072"
   },
   "materials/models/inventory_items/music_kit/perfectworld_01/mp3_screen_color_psd_b029522f.vtex_c": {
     "bytes": 572041,
@@ -767,6 +815,14 @@
     "bytes": 176852,
     "crc": "00b782c138"
   },
+  "materials/models/inventory_items/music_kit/tristam_braken_01/mp3_screen_color_psd_e1ed2b78.vtex_c": {
+    "bytes": 193081,
+    "crc": "003968c3bc"
+  },
+  "materials/models/inventory_items/music_kit/tristam_braken_01/mp3_screen_color_psd_fbb84307.vtex_c": {
+    "bytes": 345650,
+    "crc": "004cec55bf"
+  },
   "materials/models/inventory_items/music_kit/troelsfolmann_01/mp3_screen_color_psd_2700f9f3.vtex_c": {
     "bytes": 89528,
     "crc": "00c573726d"
@@ -806,6 +862,14 @@
   "materials/models/inventory_items/music_kit/valve_cs2_01/mp3_screen_color_psd_bca63ccc.vtex_c": {
     "bytes": 232774,
     "crc": "00e588f1d7"
+  },
+  "materials/models/inventory_items/music_kit/vicetone_01/mp3_screen_color_psd_8c5a91dd.vtex_c": {
+    "bytes": 597685,
+    "crc": "00c3ca5133"
+  },
+  "materials/models/inventory_items/music_kit/vicetone_01/mp3_screen_color_psd_dad06cce.vtex_c": {
+    "bytes": 1192531,
+    "crc": "00ffa5a9cd"
   },
   "sounds/music/3kliksphilip_01/bombplanted.vsnd_c": {
     "bytes": 1457934,
@@ -938,6 +1002,62 @@
   "sounds/music/adambeyer_01/wonround.vsnd_c": {
     "bytes": 123007,
     "crc": "007f304338"
+  },
+  "sounds/music/alleycvt_01/bombplanted.vsnd_c": {
+    "bytes": 607714,
+    "crc": "00eb53f3e8"
+  },
+  "sounds/music/alleycvt_01/bombtenseccount.vsnd_c": {
+    "bytes": 178223,
+    "crc": "00dd70821a"
+  },
+  "sounds/music/alleycvt_01/chooseteam.vsnd_c": {
+    "bytes": 457175,
+    "crc": "00a6b8a8c6"
+  },
+  "sounds/music/alleycvt_01/deathcam.vsnd_c": {
+    "bytes": 93749,
+    "crc": "0062b28e5b"
+  },
+  "sounds/music/alleycvt_01/endofmatch.vsnd_c": {
+    "bytes": 1025671,
+    "crc": "0041d9d2a1"
+  },
+  "sounds/music/alleycvt_01/lostround.vsnd_c": {
+    "bytes": 102305,
+    "crc": "0097608d42"
+  },
+  "sounds/music/alleycvt_01/mainmenu.vsnd_c": {
+    "bytes": 2773403,
+    "crc": "002d96d624"
+  },
+  "sounds/music/alleycvt_01/roundmvpanthem_01.vsnd_c": {
+    "bytes": 148739,
+    "crc": "00a4450903"
+  },
+  "sounds/music/alleycvt_01/roundmvpanthem_02.vsnd_c": {
+    "bytes": 150828,
+    "crc": "007bc80d84"
+  },
+  "sounds/music/alleycvt_01/roundtenseccount.vsnd_c": {
+    "bytes": 194593,
+    "crc": "005876cd3c"
+  },
+  "sounds/music/alleycvt_01/startaction_01.vsnd_c": {
+    "bytes": 264919,
+    "crc": "0036f04e31"
+  },
+  "sounds/music/alleycvt_01/startofmatch.vsnd_c": {
+    "bytes": 259724,
+    "crc": "00a56e4e1a"
+  },
+  "sounds/music/alleycvt_01/startround_01.vsnd_c": {
+    "bytes": 235937,
+    "crc": "00912bd3cd"
+  },
+  "sounds/music/alleycvt_01/wonround.vsnd_c": {
+    "bytes": 155518,
+    "crc": "00a6daff77"
   },
   "sounds/music/alrt_01/bombplanted.vsnd_c": {
     "bytes": 596737,
@@ -1142,6 +1262,62 @@
   "sounds/music/amontobin_01/wonround.vsnd_c": {
     "bytes": 164640,
     "crc": "00c7659c6d"
+  },
+  "sounds/music/arcando_01/bombplanted.vsnd_c": {
+    "bytes": 615708,
+    "crc": "003e7c2902"
+  },
+  "sounds/music/arcando_01/bombtenseccount.vsnd_c": {
+    "bytes": 194089,
+    "crc": "0008b6b4d4"
+  },
+  "sounds/music/arcando_01/chooseteam.vsnd_c": {
+    "bytes": 377610,
+    "crc": "0031610f51"
+  },
+  "sounds/music/arcando_01/deathcam.vsnd_c": {
+    "bytes": 78321,
+    "crc": "00613e352d"
+  },
+  "sounds/music/arcando_01/endofmatch.vsnd_c": {
+    "bytes": 1614355,
+    "crc": "006766d2da"
+  },
+  "sounds/music/arcando_01/lostround.vsnd_c": {
+    "bytes": 135047,
+    "crc": "00d4512e38"
+  },
+  "sounds/music/arcando_01/mainmenu.vsnd_c": {
+    "bytes": 3253493,
+    "crc": "0083357032"
+  },
+  "sounds/music/arcando_01/roundmvpanthem_01.vsnd_c": {
+    "bytes": 141019,
+    "crc": "0033208595"
+  },
+  "sounds/music/arcando_01/roundmvpanthem_02.vsnd_c": {
+    "bytes": 146320,
+    "crc": "003ced7be4"
+  },
+  "sounds/music/arcando_01/roundtenseccount.vsnd_c": {
+    "bytes": 200549,
+    "crc": "00f89a110d"
+  },
+  "sounds/music/arcando_01/startaction_01.vsnd_c": {
+    "bytes": 215569,
+    "crc": "00235cf7c3"
+  },
+  "sounds/music/arcando_01/startofmatch.vsnd_c": {
+    "bytes": 226265,
+    "crc": "00e403f257"
+  },
+  "sounds/music/arcando_01/startround_01.vsnd_c": {
+    "bytes": 193977,
+    "crc": "00efd22449"
+  },
+  "sounds/music/arcando_01/wonround.vsnd_c": {
+    "bytes": 135777,
+    "crc": "00f91bb0b7"
   },
   "sounds/music/austinwintory_01/bombplanted.vsnd_c": {
     "bytes": 695449,
@@ -2323,6 +2499,62 @@
     "bytes": 162678,
     "crc": "004eda99d8"
   },
+  "sounds/music/djdiesel_01/bombplanted.vsnd_c": {
+    "bytes": 578077,
+    "crc": "00c8596967"
+  },
+  "sounds/music/djdiesel_01/bombtenseccount.vsnd_c": {
+    "bytes": 175274,
+    "crc": "003c40c0a7"
+  },
+  "sounds/music/djdiesel_01/chooseteam.vsnd_c": {
+    "bytes": 439029,
+    "crc": "00b8e1ebc6"
+  },
+  "sounds/music/djdiesel_01/deathcam.vsnd_c": {
+    "bytes": 81762,
+    "crc": "001b7221db"
+  },
+  "sounds/music/djdiesel_01/endofmatch.vsnd_c": {
+    "bytes": 1946442,
+    "crc": "001e303581"
+  },
+  "sounds/music/djdiesel_01/lostround.vsnd_c": {
+    "bytes": 104983,
+    "crc": "0034680859"
+  },
+  "sounds/music/djdiesel_01/mainmenu.vsnd_c": {
+    "bytes": 3686396,
+    "crc": "00bb6758f0"
+  },
+  "sounds/music/djdiesel_01/roundmvpanthem_01.vsnd_c": {
+    "bytes": 149255,
+    "crc": "00a99e4db0"
+  },
+  "sounds/music/djdiesel_01/roundmvpanthem_02.vsnd_c": {
+    "bytes": 155553,
+    "crc": "00640d6574"
+  },
+  "sounds/music/djdiesel_01/roundtenseccount.vsnd_c": {
+    "bytes": 176423,
+    "crc": "00765851dc"
+  },
+  "sounds/music/djdiesel_01/startaction_01.vsnd_c": {
+    "bytes": 208739,
+    "crc": "00169db51a"
+  },
+  "sounds/music/djdiesel_01/startofmatch.vsnd_c": {
+    "bytes": 284891,
+    "crc": "001577a9b2"
+  },
+  "sounds/music/djdiesel_01/startround_01.vsnd_c": {
+    "bytes": 225684,
+    "crc": "00727f25a8"
+  },
+  "sounds/music/djdiesel_01/wonround.vsnd_c": {
+    "bytes": 138056,
+    "crc": "000fa26d2a"
+  },
   "sounds/music/dren_01/bombplanted.vsnd_c": {
     "bytes": 616020,
     "crc": "00f6cf1a40"
@@ -2642,6 +2874,66 @@
   "sounds/music/feedme_01/wonround.vsnd_c": {
     "bytes": 133278,
     "crc": "0094b7a819"
+  },
+  "sounds/music/fool_01/bombplanted.vsnd_c": {
+    "bytes": 657978,
+    "crc": "00f23b59be"
+  },
+  "sounds/music/fool_01/bombtenseccount.vsnd_c": {
+    "bytes": 184164,
+    "crc": "00945b9564"
+  },
+  "sounds/music/fool_01/chooseteam.vsnd_c": {
+    "bytes": 388875,
+    "crc": "003bb38fbb"
+  },
+  "sounds/music/fool_01/deathcam.vsnd_c": {
+    "bytes": 145553,
+    "crc": "00b47e4818"
+  },
+  "sounds/music/fool_01/endofmatch.vsnd_c": {
+    "bytes": 1038858,
+    "crc": "000475b562"
+  },
+  "sounds/music/fool_01/lostround.vsnd_c": {
+    "bytes": 125320,
+    "crc": "006f30cee6"
+  },
+  "sounds/music/fool_01/mainmenu.vsnd_c": {
+    "bytes": 4319047,
+    "crc": "009e7d3bb3"
+  },
+  "sounds/music/fool_01/roundmvpanthem_01.vsnd_c": {
+    "bytes": 150069,
+    "crc": "00ee453234"
+  },
+  "sounds/music/fool_01/roundmvpanthem_02.vsnd_c": {
+    "bytes": 166163,
+    "crc": "00c72cc195"
+  },
+  "sounds/music/fool_01/roundtenseccount.vsnd_c": {
+    "bytes": 179343,
+    "crc": "0096d33a9d"
+  },
+  "sounds/music/fool_01/startaction_01.vsnd_c": {
+    "bytes": 247569,
+    "crc": "00b818ee2b"
+  },
+  "sounds/music/fool_01/startofmatch.vsnd_c": {
+    "bytes": 242446,
+    "crc": "004f7e4d51"
+  },
+  "sounds/music/fool_01/startround_01.vsnd_c": {
+    "bytes": 299797,
+    "crc": "00073eb6c2"
+  },
+  "sounds/music/fool_01/startround_02.vsnd_c": {
+    "bytes": 314221,
+    "crc": "00ac2f623d"
+  },
+  "sounds/music/fool_01/wonround.vsnd_c": {
+    "bytes": 149847,
+    "crc": "009490eb92"
   },
   "sounds/music/freakydna_01/bombplanted.vsnd_c": {
     "bytes": 584271,
@@ -4831,6 +5123,62 @@
     "bytes": 147086,
     "crc": "009f7c2d2a"
   },
+  "sounds/music/noisestorm_01/bombplanted.vsnd_c": {
+    "bytes": 663761,
+    "crc": "00723c6f50"
+  },
+  "sounds/music/noisestorm_01/bombtenseccount.vsnd_c": {
+    "bytes": 201486,
+    "crc": "0054931450"
+  },
+  "sounds/music/noisestorm_01/chooseteam.vsnd_c": {
+    "bytes": 436711,
+    "crc": "0052157819"
+  },
+  "sounds/music/noisestorm_01/deathcam.vsnd_c": {
+    "bytes": 91078,
+    "crc": "008500452f"
+  },
+  "sounds/music/noisestorm_01/endofmatch.vsnd_c": {
+    "bytes": 1463326,
+    "crc": "004dc86bd0"
+  },
+  "sounds/music/noisestorm_01/lostround.vsnd_c": {
+    "bytes": 118783,
+    "crc": "0056af0ade"
+  },
+  "sounds/music/noisestorm_01/mainmenu.vsnd_c": {
+    "bytes": 2897768,
+    "crc": "003ba1fbd6"
+  },
+  "sounds/music/noisestorm_01/roundmvpanthem_01.vsnd_c": {
+    "bytes": 118270,
+    "crc": "001a400e99"
+  },
+  "sounds/music/noisestorm_01/roundmvpanthem_02.vsnd_c": {
+    "bytes": 119110,
+    "crc": "0070a47532"
+  },
+  "sounds/music/noisestorm_01/roundtenseccount.vsnd_c": {
+    "bytes": 188145,
+    "crc": "00a0375a94"
+  },
+  "sounds/music/noisestorm_01/startaction_01.vsnd_c": {
+    "bytes": 340181,
+    "crc": "00fd8e2813"
+  },
+  "sounds/music/noisestorm_01/startofmatch.vsnd_c": {
+    "bytes": 301138,
+    "crc": "00d036c522"
+  },
+  "sounds/music/noisestorm_01/startround_01.vsnd_c": {
+    "bytes": 182038,
+    "crc": "00ec82534a"
+  },
+  "sounds/music/noisestorm_01/wonround.vsnd_c": {
+    "bytes": 118261,
+    "crc": "003be32711"
+  },
   "sounds/music/noisia_01/bombplanted.vsnd_c": {
     "bytes": 811223,
     "crc": "0016d26e17"
@@ -4890,6 +5238,62 @@
   "sounds/music/noisia_01/wonround.vsnd_c": {
     "bytes": 247380,
     "crc": "00e0d07b16"
+  },
+  "sounds/music/pegboardnerds_01/bombplanted.vsnd_c": {
+    "bytes": 633924,
+    "crc": "00aae4ef82"
+  },
+  "sounds/music/pegboardnerds_01/bombtenseccount.vsnd_c": {
+    "bytes": 184660,
+    "crc": "0043bd234e"
+  },
+  "sounds/music/pegboardnerds_01/chooseteam.vsnd_c": {
+    "bytes": 288180,
+    "crc": "00073ed24d"
+  },
+  "sounds/music/pegboardnerds_01/deathcam.vsnd_c": {
+    "bytes": 82813,
+    "crc": "00f4f755a0"
+  },
+  "sounds/music/pegboardnerds_01/endofmatch.vsnd_c": {
+    "bytes": 1362601,
+    "crc": "007439b2b9"
+  },
+  "sounds/music/pegboardnerds_01/lostround.vsnd_c": {
+    "bytes": 142447,
+    "crc": "0076e70ecb"
+  },
+  "sounds/music/pegboardnerds_01/mainmenu.vsnd_c": {
+    "bytes": 4039896,
+    "crc": "007698bd38"
+  },
+  "sounds/music/pegboardnerds_01/roundmvpanthem_01.vsnd_c": {
+    "bytes": 130776,
+    "crc": "0022eab2c7"
+  },
+  "sounds/music/pegboardnerds_01/roundmvpanthem_02.vsnd_c": {
+    "bytes": 133919,
+    "crc": "003bda7b00"
+  },
+  "sounds/music/pegboardnerds_01/roundtenseccount.vsnd_c": {
+    "bytes": 199503,
+    "crc": "00580e5d36"
+  },
+  "sounds/music/pegboardnerds_01/startaction_01.vsnd_c": {
+    "bytes": 308373,
+    "crc": "0018f9828b"
+  },
+  "sounds/music/pegboardnerds_01/startofmatch.vsnd_c": {
+    "bytes": 259616,
+    "crc": "007463243c"
+  },
+  "sounds/music/pegboardnerds_01/startround_01.vsnd_c": {
+    "bytes": 296791,
+    "crc": "008881ff3d"
+  },
+  "sounds/music/pegboardnerds_01/wonround.vsnd_c": {
+    "bytes": 133592,
+    "crc": "0064b3b0e0"
   },
   "sounds/music/perfectworld_01/bombplanted.vsnd_c": {
     "bytes": 409983,
@@ -6707,6 +7111,70 @@
     "bytes": 168402,
     "crc": "00fdc814a9"
   },
+  "sounds/music/tristam_braken_01/bombplanted.vsnd_c": {
+    "bytes": 645003,
+    "crc": "00f16eb166"
+  },
+  "sounds/music/tristam_braken_01/bombtenseccount.vsnd_c": {
+    "bytes": 183106,
+    "crc": "000b70c045"
+  },
+  "sounds/music/tristam_braken_01/chooseteam.vsnd_c": {
+    "bytes": 432577,
+    "crc": "00f071892a"
+  },
+  "sounds/music/tristam_braken_01/deathcam.vsnd_c": {
+    "bytes": 84151,
+    "crc": "001b8137be"
+  },
+  "sounds/music/tristam_braken_01/endofmatch.vsnd_c": {
+    "bytes": 2319661,
+    "crc": "0086dd893f"
+  },
+  "sounds/music/tristam_braken_01/lostround.vsnd_c": {
+    "bytes": 126899,
+    "crc": "00cdc566d8"
+  },
+  "sounds/music/tristam_braken_01/mainmenu.vsnd_c": {
+    "bytes": 3569859,
+    "crc": "0088a16e6f"
+  },
+  "sounds/music/tristam_braken_01/roundmvpanthem_01.vsnd_c": {
+    "bytes": 122419,
+    "crc": "00d874b1f6"
+  },
+  "sounds/music/tristam_braken_01/roundmvpanthem_02.vsnd_c": {
+    "bytes": 123473,
+    "crc": "00d68e19ce"
+  },
+  "sounds/music/tristam_braken_01/roundtenseccount.vsnd_c": {
+    "bytes": 206794,
+    "crc": "00fbdb17c9"
+  },
+  "sounds/music/tristam_braken_01/startaction_01.vsnd_c": {
+    "bytes": 219169,
+    "crc": "00d03611b1"
+  },
+  "sounds/music/tristam_braken_01/startaction_02.vsnd_c": {
+    "bytes": 218331,
+    "crc": "0018ac6149"
+  },
+  "sounds/music/tristam_braken_01/startofmatch.vsnd_c": {
+    "bytes": 279020,
+    "crc": "00dc7e95e6"
+  },
+  "sounds/music/tristam_braken_01/startround_01.vsnd_c": {
+    "bytes": 184052,
+    "crc": "003e12ad2a"
+  },
+  "sounds/music/tristam_braken_01/startround_02.vsnd_c": {
+    "bytes": 183524,
+    "crc": "00ccbed177"
+  },
+  "sounds/music/tristam_braken_01/wonround.vsnd_c": {
+    "bytes": 122318,
+    "crc": "009f2a6ce5"
+  },
   "sounds/music/troelsfolmann_01/bombplanted.vsnd_c": {
     "bytes": 582600,
     "crc": "008ac962c7"
@@ -7062,5 +7530,61 @@
   "sounds/music/valve_cs2_01/wonround.vsnd_c": {
     "bytes": 102377,
     "crc": "009c11c339"
+  },
+  "sounds/music/vicetone_01/bombplanted.vsnd_c": {
+    "bytes": 656314,
+    "crc": "004e28f8a2"
+  },
+  "sounds/music/vicetone_01/bombtenseccount.vsnd_c": {
+    "bytes": 205779,
+    "crc": "005441f4fa"
+  },
+  "sounds/music/vicetone_01/chooseteam.vsnd_c": {
+    "bytes": 453959,
+    "crc": "00c263bf50"
+  },
+  "sounds/music/vicetone_01/deathcam.vsnd_c": {
+    "bytes": 98013,
+    "crc": "00d1d3f070"
+  },
+  "sounds/music/vicetone_01/endofmatch.vsnd_c": {
+    "bytes": 1636712,
+    "crc": "00075b0810"
+  },
+  "sounds/music/vicetone_01/lostround.vsnd_c": {
+    "bytes": 135763,
+    "crc": "003beea93a"
+  },
+  "sounds/music/vicetone_01/mainmenu.vsnd_c": {
+    "bytes": 3507426,
+    "crc": "0070742bc2"
+  },
+  "sounds/music/vicetone_01/roundmvpanthem_01.vsnd_c": {
+    "bytes": 141330,
+    "crc": "00ef196aac"
+  },
+  "sounds/music/vicetone_01/roundmvpanthem_02.vsnd_c": {
+    "bytes": 138497,
+    "crc": "0073ab7826"
+  },
+  "sounds/music/vicetone_01/roundtenseccount.vsnd_c": {
+    "bytes": 191656,
+    "crc": "00388fdc1a"
+  },
+  "sounds/music/vicetone_01/startaction_01.vsnd_c": {
+    "bytes": 219242,
+    "crc": "00305ba692"
+  },
+  "sounds/music/vicetone_01/startofmatch.vsnd_c": {
+    "bytes": 304738,
+    "crc": "0029841ca3"
+  },
+  "sounds/music/vicetone_01/startround_01.vsnd_c": {
+    "bytes": 305357,
+    "crc": "001bb722e0"
+  },
+  "sounds/music/vicetone_01/wonround.vsnd_c": {
+    "bytes": 141314,
+    "crc": "00683582f5"
   }
 }

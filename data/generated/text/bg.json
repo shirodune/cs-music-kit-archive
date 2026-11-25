@@ -602,9 +602,57 @@
     },
     "104": {
       "credit": "Starjunk 95",
-      "description": "Изпитайте музикален пакет от най-готината станция в галактиката, включваща най-новите съвременни звуци, пропити със старомодна носталгия по отминалото. Това е Starjunk 95.",
+      "description": "Starjunk 95, Industrial Sunset Memories\n\nИзпитайте музикален пакет от най-готината станция в галактиката, включваща най-новите съвременни звуци, пропити със старомодна носталгия по отминалото. Това е Starjunk 95.",
       "name": "Starjunk 95 — Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT & LEVEL UP, BELIEVE\n\nALLEYCVT и LEVEL UP обединяват сили в „BELIEVE“. Безпощадно бас парче с достатъчно тежки спускания, които могат да разтърсят целия сървър.",
+      "name": "ALLEYCVT & LEVEL UP — BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Arcando & Pirapus, Ultrasound\n\n„Ultrasound“ от Arcando и Pirapus е динамичен дръм енд бейс химн, който поддържа напрежението от първия първия контакт до финалното убийство.",
+      "name": "Arcando & Pirapus — Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "DJ DIESEL & Hairitage, BANG YOUR HEAD\n\nКогато DJ DIESEL, познат също като Шакил О'Нийл, се обедини с басовата тежка артилерия от Hairitage, резултатът е „BANG YOUR HEAD“! Ударно дъбстеп парче, направено за изстрели в главата.",
+      "name": "DJ DIESEL & Hairitage — BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "F.O.O.L, Criminals\n\nСтраната на Т най-сетне разполага с тематична песен. Мрачна, кинематографична и изпълнена със синтуейв, „Criminals“ на F.O.O.L предоставя партитура за всяко изпълнение.",
+      "name": "F.O.O.L — Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Noisestorm, Crab Rave\n\nИздадена на 01 април 2018, „Crab Rave“ на Noisestorm си проправи път към статута на интернет легенда. Спечелете рунда и разпространете новината, че противниковият отбор го няма.",
+      "name": "Noisestorm — Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Pegboard Nerds, Disconnected\n\nКласика от лейбъла Monstercat, „Disconnected“ на Pegboard Nerds дава на късо говорители за повече от десетилетие. Този път другият отбор ще се разкачи.",
+      "name": "Pegboard Nerds — Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Tristam & Braken, Flight\n\n„Flight“ на Tristam и Braken е чиста носталгия, която звучи точно толкова добре днес, колкото и при първоначалното ѝ издаване през 2013.",
+      "name": "Tristam & Braken — Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Vicetone & Cozi Zuehlsdorff, Nevada\n\nНякои песни Ви връщат назад във времето, а „Nevada“ на Vicetone е доза от 2016. Най-добре е да ѝ се наслаждавате, докато празнувате победа.",
+      "name": "Vicetone & Cozi Zuehlsdorff — Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "Кутия с музикални комплекти „NIGHTMODE“",
     "2024-08-20-masterminds-2": "Кутия с музикални комплекти „Престъпни гении 2“",
     "2025-08-14-deluge": "Кутия с музикални комплекти „Потоп“",
-    "2026-05-07-nightmode-ii": "Музикални комплекти NIGHTMODE II"
+    "2026-05-07-nightmode-ii": "Музикални комплекти NIGHTMODE II",
+    "2026-11-17-monstercat": "Музикални комплекти Monstercat"
   }
 }

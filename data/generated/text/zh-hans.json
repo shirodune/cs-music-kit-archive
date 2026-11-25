@@ -605,6 +605,54 @@
       "description": "体验来自银河系中最带感电台的音乐盒，融合了当今潮流音效与旧日复古氛围。这就是Starjunk 95。",
       "name": "Starjunk 95，工业忆夕",
       "title": "工业忆夕"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT与LEVEL UP强强联手，带来《相信》这首持续高能的贝斯劲曲，其炸裂的重低音足以撼动整个服务器。",
+      "name": "ALLEYCVT & LEVEL UP, 相信",
+      "title": "相信"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "来自Arcando与Pirapus合作的《超声波》是一首高速的鼓打贝斯战歌，从首次交火到最后一击，压迫感始终不减。",
+      "name": "Arcando & Pirapus, 超声波",
+      "title": "超声波"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "当DJ DIESEL（本名沙奎尔·奥尼尔）与重低音巨头Hairitage联手，便诞生了《甩起头来》，一首专为爆头而生的Dubstep劲曲。",
+      "name": "DJ DIESEL & Hairitage, 甩起头来",
+      "title": "甩起头来"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "T方终于有主题曲了。F.O.O.L的《狂徒》黑暗、极具电影感，且充满合成器浪潮气息，为每一次爆弹战术提供了完美配乐。",
+      "name": "F.O.O.L, 狂徒",
+      "title": "狂徒"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Noisestorm的《横行无忌》于2018年愚人节发布，随后一路横行成为互联网传奇。赢下这一回合并传下去：敌方队伍已被团灭。",
+      "name": "Noisestorm, 横行无忌",
+      "title": "横行无忌"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "作为怪兽猫的经典之作，Pegboard Nerds的《断开连接》已经让扬声器短路了十多年。只不过这一次，掉线的是对面那支队。",
+      "name": "Pegboard Nerds, 断开连接",
+      "title": "断开连接"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Tristam与Braken的《翱翔》是一首纯粹的怀旧之作，时隔多年，它依然和2013年刚发行时一样动听。",
+      "name": "Tristam & Braken, 翱翔",
+      "title": "翱翔"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "有些歌一下子就能把你拉回到过去，而Vicetone的《内华达》就是一记2016年的回忆杀，拿来庆祝胜利再合适不过了。",
+      "name": "Vicetone & Cozi Zuehlsdorff, 内华达",
+      "title": "内华达"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "夜间模式音乐盒集",
     "2024-08-20-masterminds-2": "决策大师2号音乐盒集",
     "2025-08-14-deluge": "暴雨音乐盒集",
-    "2026-05-07-nightmode-ii": "夜间模式II 系列音乐盒"
+    "2026-05-07-nightmode-ii": "夜间模式II 系列音乐盒",
+    "2026-11-17-monstercat": "怪兽猫 系列音乐盒"
   }
 }

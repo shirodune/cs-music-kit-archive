@@ -605,6 +605,54 @@
       "description": "Насладитесь набором музыки от самой зажигательной радиостанции в галактике, где звучание сегодняшнего дня пропитано ностальгией по дню вчерашнему. Это Starjunk 95.",
       "name": "Starjunk 95 — Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT и LEVEL UP объединили усилия в треке BELIEVE — сокрушительной басовой композиции с тяжёлыми дропами, способными содрогнуть сервер.",
+      "name": "ALLEYCVT & LEVEL UP — BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Ultrasound от Arcando и Pirapus — это высокоскоростной гимн в жанре драм-н-бейс, который держит в напряжении с первой стычки до последнего убийства.",
+      "name": "Arcando & Pirapus — Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "Когда DJ DIESEL (сценическое имя Шакила О’Нила) объединяется с басовым тяжеловесом Hairitage, получается BANG YOUR HEAD — хитовый дабстеп, созданный для выстрелов в голову.",
+      "name": "DJ DIESEL & Hairitage — BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "У террористов наконец-то появилась своя тема. Мрачная, кинематографичная, пропитанная синтвейвом композиция Criminals от F.O.O.L станет саундтреком к каждому прорыву на точку.",
+      "name": "F.O.O.L — Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Трек Crab Rave от Noisestorm, выпущенный 1 апреля 2018 года, моментально стал интернет-легендой. Выиграйте раунд и сообщите всем: вражеской команды больше нет.",
+      "name": "Noisestorm — Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Классика от Monstercat: трек Disconnected группы Pegboard Nerds уже больше десяти лет коротит колонки. А на этот раз отключаться будет вражеская команда.",
+      "name": "Pegboard Nerds — Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Flight от Tristam & Braken — чистая ностальгия, которая сегодня звучит так же хорошо, как и в 2013-м, когда трек только вышел.",
+      "name": "Tristam & Braken — Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Некоторые песни переносят прямо в прошлое, и трек Nevada от Vicetone — воплощение 2016 года, которым лучше всего наслаждаться, празднуя победу.",
+      "name": "Vicetone & Cozi Zuehlsdorff — Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "Ящик с музыкой NIGHTMODE",
     "2024-08-20-masterminds-2": "Ящик с музыкой «Великие умы 2»",
     "2025-08-14-deluge": "Ящик с музыкой «Потоп»",
-    "2026-05-07-nightmode-ii": "Наборы музыки NIGHTMODE II"
+    "2026-05-07-nightmode-ii": "Наборы музыки NIGHTMODE II",
+    "2026-11-17-monstercat": "Наборы музыки Monstercat"
   }
 }

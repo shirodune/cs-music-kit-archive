@@ -164,6 +164,76 @@
     "durationSec": 7.007,
     "sha256": "297cba606e43310d4d1358a3556337e41271c4219c6da68c0e521cb42ca222c7"
   },
+  "alleycvt_01/bombplanted.mp3": {
+    "bytes": 606339,
+    "durationSec": 37.601,
+    "sha256": "04fe2c14a82014b26ac9b4e116c27340beb6e714e993878b61f4c752bffe8565"
+  },
+  "alleycvt_01/bombtenseccount.mp3": {
+    "bytes": 176848,
+    "durationSec": 10.401,
+    "sha256": "768e9418d1a8eebda8732a241b549b8347e6f08fe76a4efca8a0dc81af599106"
+  },
+  "alleycvt_01/chooseteam.mp3": {
+    "bytes": 455800,
+    "durationSec": 27.202,
+    "sha256": "92821ba670e6cea2d013aa48b49e2d88193c46e7105a8ba5f72f9e6fdd8fb259"
+  },
+  "alleycvt_01/deathcam.mp3": {
+    "bytes": 92374,
+    "durationSec": 5.602,
+    "sha256": "6f753e1c4ccb34ad7b6fccfc6f4d11823aa32e2c185aa223d613719aaa31d864"
+  },
+  "alleycvt_01/endofmatch.mp3": {
+    "bytes": 1024313,
+    "durationSec": 57.611,
+    "sha256": "29d0826f8a9e0cd3ee961da032b5ebc2cbce8643fe28795a76d28cc9abb0b80d"
+  },
+  "alleycvt_01/lostround.mp3": {
+    "bytes": 100946,
+    "durationSec": 5.602,
+    "sha256": "98806441b3668236c710f10cf4b24b43f330bbcdabe20a7038538237e7fa1f59"
+  },
+  "alleycvt_01/mainmenu.mp3": {
+    "bytes": 2772044,
+    "durationSec": 161.601,
+    "sha256": "c8e8bbb73038d178c5adec6d23e725eec6964411b07ee747c60bfd287fcb6046"
+  },
+  "alleycvt_01/roundmvpanthem_01.mp3": {
+    "bytes": 147365,
+    "durationSec": 8.002,
+    "sha256": "57ad619843979225ec21fb3702cb14818b4b7ae3eab5bff5c4a9a856d91fb98f"
+  },
+  "alleycvt_01/roundmvpanthem_02.mp3": {
+    "bytes": 149453,
+    "durationSec": 8.002,
+    "sha256": "db311a859342297a4fbe47ba172e7cb42cd447d4823940f4f17fa334ae7048a3"
+  },
+  "alleycvt_01/roundtenseccount.mp3": {
+    "bytes": 193218,
+    "durationSec": 11.401,
+    "sha256": "c8a42afb8628cb78dbe8f8156959f96bba9dfd9ffa52e40ab795ca77debe4c5e"
+  },
+  "alleycvt_01/startaction_01.mp3": {
+    "bytes": 263544,
+    "durationSec": 14.401,
+    "sha256": "2a498877fd0d9868a9db0842a051247fb0aa8946969c3c79193fac00fe08f575"
+  },
+  "alleycvt_01/startofmatch.mp3": {
+    "bytes": 258349,
+    "durationSec": 16.002,
+    "sha256": "66c9ce11703b4e7782e3b1ab3a78ae637d94973614de58addc9293ffab19c6e7"
+  },
+  "alleycvt_01/startround_01.mp3": {
+    "bytes": 234564,
+    "durationSec": 12.801,
+    "sha256": "24e954739ef05db9c84fa7468d52486467ecef3944d74e002e20dddc44ded9af"
+  },
+  "alleycvt_01/wonround.mp3": {
+    "bytes": 154160,
+    "durationSec": 8.002,
+    "sha256": "8d5b4ab6adfba4e89bd34789a7efac9f8f1793d59630ffb2fb3a92491f89d3d7"
+  },
   "alrt_01/bombplanted.mp3": {
     "bytes": 595406,
     "durationSec": 36.923,
@@ -418,6 +488,76 @@
     "bytes": 163840,
     "durationSec": 10.24,
     "sha256": "88dae8aa0bb4677ceb0e3a854f3e43d62cf803b40f72910dbe04468e7bbcfc3d"
+  },
+  "arcando_01/bombplanted.mp3": {
+    "bytes": 614333,
+    "durationSec": 37.029,
+    "sha256": "083ddff6d90430aaa5b7324af533d28042db86fb5964655676b547cf4b776173"
+  },
+  "arcando_01/bombtenseccount.mp3": {
+    "bytes": 192714,
+    "durationSec": 10.972,
+    "sha256": "3a1cb39ddc877b93c2f6e9df1b699d6fb5a0e55ca06dd047a11af38cfa496baa"
+  },
+  "arcando_01/chooseteam.mp3": {
+    "bytes": 376235,
+    "durationSec": 21.944,
+    "sha256": "f8c96060a02f68f2f60e527b31f68b15fd8b151b28e5ed2e26449d41403c580f"
+  },
+  "arcando_01/deathcam.mp3": {
+    "bytes": 76946,
+    "durationSec": 4.801,
+    "sha256": "45c2a33259f12accfecfb0e28bc6608395c169f5ccac82955fbfa74f4763a6e9"
+  },
+  "arcando_01/endofmatch.mp3": {
+    "bytes": 1612996,
+    "durationSec": 92.581,
+    "sha256": "bdf2ae4571ce0a969dd54d61cf47309b296330cc28aa84b55940def570e715d8"
+  },
+  "arcando_01/lostround.mp3": {
+    "bytes": 133688,
+    "durationSec": 7.544,
+    "sha256": "8274b084ac6190646905bf59df8c5758a5c3bae78b5a9461b07d1681b0cff310"
+  },
+  "arcando_01/mainmenu.mp3": {
+    "bytes": 3252135,
+    "durationSec": 185.144,
+    "sha256": "9541dba94c0c548394089042d512b513b9f4249b572b91be97b6b8cfe8049363"
+  },
+  "arcando_01/roundmvpanthem_01.mp3": {
+    "bytes": 139644,
+    "durationSec": 7.544,
+    "sha256": "39362311d5fb25fb75ef8d099a657c386f62908f22da0326bf7908abdacd2a19"
+  },
+  "arcando_01/roundmvpanthem_02.mp3": {
+    "bytes": 144945,
+    "durationSec": 8.23,
+    "sha256": "c385f6286d1fb07a9baa165d2469c681bb98d67d3a2b7bad4698d2d2765d177b"
+  },
+  "arcando_01/roundtenseccount.mp3": {
+    "bytes": 199176,
+    "durationSec": 11.315,
+    "sha256": "2b971b6f0cc6612d39a9e01cb84a6a73ba3c803b892e93f92920e80dc5ed0b61"
+  },
+  "arcando_01/startaction_01.mp3": {
+    "bytes": 214194,
+    "durationSec": 12.351,
+    "sha256": "c45346dd61f0744c8ec68f4d541ce528acc2ac2e190bcfbbb5fd9b595331c459"
+  },
+  "arcando_01/startofmatch.mp3": {
+    "bytes": 224890,
+    "durationSec": 13.716,
+    "sha256": "58c76f04d5cfadbb67697a3f4843f79d444166e3f9cf809da17de337b01644e3"
+  },
+  "arcando_01/startround_01.mp3": {
+    "bytes": 192602,
+    "durationSec": 10.972,
+    "sha256": "b2ccd5babb1fd249e9cc7700b2880c59395f09e699709dbdf3d883d5a4ba50f2"
+  },
+  "arcando_01/wonround.mp3": {
+    "bytes": 134418,
+    "durationSec": 7.544,
+    "sha256": "6e6aacb7a1df48f517e188b084cee7c3248cd564f6b45e52dc84ffc45d655951"
   },
   "austinwintory_01/bombplanted.mp3": {
     "bytes": 694649,
@@ -1894,6 +2034,76 @@
     "durationSec": 10.117,
     "sha256": "d7701ff32221268b35b32f6e175374bd03c252c675439a65942e6197f1a17f3f"
   },
+  "djdiesel_01/bombplanted.mp3": {
+    "bytes": 576702,
+    "durationSec": 34.801,
+    "sha256": "aa877744b307a86b7dd432de701a2638fef3aec5a75b121a364fe10e1ecc42dc"
+  },
+  "djdiesel_01/bombtenseccount.mp3": {
+    "bytes": 173899,
+    "durationSec": 10.665,
+    "sha256": "425ed476d6378c2b75f249557b65ab889b4ee5c95d8e9e461c89b6b141961365"
+  },
+  "djdiesel_01/chooseteam.mp3": {
+    "bytes": 437655,
+    "durationSec": 27.2,
+    "sha256": "00eff4bb8da2276e9f1afae52a535983a994b2a2e11e59b807285a9a69cfad8d"
+  },
+  "djdiesel_01/deathcam.mp3": {
+    "bytes": 80389,
+    "durationSec": 4.802,
+    "sha256": "2438ddc6d34dde9e2d52e02e8072fcb2b98ecf771993adbb6f80871a1a468604"
+  },
+  "djdiesel_01/endofmatch.mp3": {
+    "bytes": 1945083,
+    "durationSec": 104.002,
+    "sha256": "c6e95e296a368ed8f033607818e3ffa69a7e5e218c421896a517c2012f59cca1"
+  },
+  "djdiesel_01/lostround.mp3": {
+    "bytes": 103626,
+    "durationSec": 6.402,
+    "sha256": "f45ba3729bd47529241ed41903661a717820067fefa03b9d2fe042a9ddd23331"
+  },
+  "djdiesel_01/mainmenu.mp3": {
+    "bytes": 3685037,
+    "durationSec": 204.8,
+    "sha256": "6ffc963c20e454687f461e3453da2ab92bc184d50fe4d0ac0379ad2ebe897ec3"
+  },
+  "djdiesel_01/roundmvpanthem_01.mp3": {
+    "bytes": 147881,
+    "durationSec": 8.002,
+    "sha256": "42810a6f360653e6a7bdcad1dece59e23c6d93c8e215731db8d0bd1da7cc93fc"
+  },
+  "djdiesel_01/roundmvpanthem_02.mp3": {
+    "bytes": 154180,
+    "durationSec": 7.602,
+    "sha256": "1be337cdae3acfb589db72f793f7df1be9a75deae3b8c890f2118199377bac34"
+  },
+  "djdiesel_01/roundtenseccount.mp3": {
+    "bytes": 175048,
+    "durationSec": 10.665,
+    "sha256": "f2a9255d45025085fb4d0bed9a5b7242f51aa693b6f4b0d7aa29ead539eff7f4"
+  },
+  "djdiesel_01/startaction_01.mp3": {
+    "bytes": 207366,
+    "durationSec": 12.801,
+    "sha256": "5e028a334d89251c5e758372bf947643cabdad0d2a8797317db575ae6e7c254a"
+  },
+  "djdiesel_01/startofmatch.mp3": {
+    "bytes": 283516,
+    "durationSec": 16.802,
+    "sha256": "6b306ee5fa42d3c792168e0edc4609f4bb0ef696062a09112a7b5075e34b0a10"
+  },
+  "djdiesel_01/startround_01.mp3": {
+    "bytes": 224311,
+    "durationSec": 12.801,
+    "sha256": "e0179e5e788fc4a966fa474b43050ce29995d13bc4f4cff308d9716c3ec28af2"
+  },
+  "djdiesel_01/wonround.mp3": {
+    "bytes": 136697,
+    "durationSec": 8.002,
+    "sha256": "f8a4557b462b993544424a3fc183dc801c2fb7134118052fdce3053ab2b2bd8d"
+  },
   "dren_01/bombplanted.mp3": {
     "bytes": 615236,
     "durationSec": 38.452,
@@ -2293,6 +2503,81 @@
     "bytes": 132494,
     "durationSec": 8.281,
     "sha256": "4814abca2848a0b96aa08d0a650199a85e721462d6c98ecae2b1633cf0f6d7a2"
+  },
+  "fool_01/bombplanted.mp3": {
+    "bytes": 656619,
+    "durationSec": 40.365,
+    "sha256": "9ffac9f09bd9dfd181c3cb5284869d99a73ff6032f57f8254a8218040ab7d425"
+  },
+  "fool_01/bombtenseccount.mp3": {
+    "bytes": 182792,
+    "durationSec": 10.912,
+    "sha256": "696b7506e68e7252a407e8ab7c9fcd71ae92de37b699eda1dd545881fe464fe8"
+  },
+  "fool_01/chooseteam.mp3": {
+    "bytes": 387516,
+    "durationSec": 24.003,
+    "sha256": "c6293445d64fc366816eea14f361f2ccb41f3f29568097baac6d6ce4bcd5626e"
+  },
+  "fool_01/deathcam.mp3": {
+    "bytes": 144194,
+    "durationSec": 8.729,
+    "sha256": "9d09a9d852087f6a9ebb16cc0cf1268aa645125324b2615211f3f16459bc0ac3"
+  },
+  "fool_01/endofmatch.mp3": {
+    "bytes": 1037499,
+    "durationSec": 60.002,
+    "sha256": "1969bdc4f91f4ba82a334424285a9652b5e7c56e2c59710f783ca65ac3fc6b4f"
+  },
+  "fool_01/lostround.mp3": {
+    "bytes": 123961,
+    "durationSec": 7.637,
+    "sha256": "378faf7aa505e8862a106175b6f67c3340987d39e3def09125f0b3b58df6489e"
+  },
+  "fool_01/mainmenu.mp3": {
+    "bytes": 4317688,
+    "durationSec": 250.922,
+    "sha256": "fc69335fea791b3e5d869e1edd2038aa749467736cc264d5901faf7e564649e7"
+  },
+  "fool_01/roundmvpanthem_01.mp3": {
+    "bytes": 148694,
+    "durationSec": 8.729,
+    "sha256": "f5327dd49e991ca1b627f2da163a657be68d18e2292adf7dad754000a49492a5"
+  },
+  "fool_01/roundmvpanthem_02.mp3": {
+    "bytes": 164788,
+    "durationSec": 8.729,
+    "sha256": "f4903c36bd74d9beb1f791107a6ed96e7bc6a99bf2ba8c02e9f1e7d4868846f6"
+  },
+  "fool_01/roundtenseccount.mp3": {
+    "bytes": 177969,
+    "durationSec": 10.912,
+    "sha256": "0da0b77b82e2b6c0281c6dbe22d75ebd81d5b0222ea0266c2f591ccb57602bca"
+  },
+  "fool_01/startaction_01.mp3": {
+    "bytes": 246210,
+    "durationSec": 14.184,
+    "sha256": "dee3a0c24c7ae254bc733f8fbcbf5744d88af0a0704288f1ca87c4a26b26a94b"
+  },
+  "fool_01/startofmatch.mp3": {
+    "bytes": 241087,
+    "durationSec": 14.184,
+    "sha256": "9a7ac187ea9be4a3ea0dbcaad2b744400477e5d07db3d97d798ee4c5bcd892ee"
+  },
+  "fool_01/startround_01.mp3": {
+    "bytes": 298439,
+    "durationSec": 17.458,
+    "sha256": "3a8aae37c9c434b4efe295bafdece01d628d873000d79ef2140f202ada82f07b"
+  },
+  "fool_01/startround_02.mp3": {
+    "bytes": 312863,
+    "durationSec": 17.458,
+    "sha256": "ba235d6b85b81efceb53e458e8c1b68e351e0005c3388dfbfa3e78cbf8505684"
+  },
+  "fool_01/wonround.mp3": {
+    "bytes": 148490,
+    "durationSec": 8.729,
+    "sha256": "3c8254b5a56238b55b19bd5bea4a042cbfdbfcb7ce944c58f60df5773774e979"
   },
   "freakydna_01/bombplanted.mp3": {
     "bytes": 583471,
@@ -5029,6 +5314,76 @@
     "durationSec": 9.143,
     "sha256": "9e18b0877e524704d37cfbb8b2fdaa2c4af81b2be9c2638a7b9594f95a216ab3"
   },
+  "noisestorm_01/bombplanted.mp3": {
+    "bytes": 662386,
+    "durationSec": 38.415,
+    "sha256": "8613b889fb545d69f4b1a9a9f43961fe05bc53d187995e576af1783b1223c1b0"
+  },
+  "noisestorm_01/bombtenseccount.mp3": {
+    "bytes": 200112,
+    "durationSec": 11.535,
+    "sha256": "e2a3dfd7feb1fa73e7a27cca1d86ca6051c932acf47c01f962116c12dce57f35"
+  },
+  "noisestorm_01/chooseteam.mp3": {
+    "bytes": 435336,
+    "durationSec": 22.095,
+    "sha256": "e9e7a60581c5f77f4005c752a849ed6e442cfcbee49db120dbf8d21f442da018"
+  },
+  "noisestorm_01/deathcam.mp3": {
+    "bytes": 89703,
+    "durationSec": 4.815,
+    "sha256": "7306ac8c68aadb852ad7ac6a723c156f7479060f027a66e09f1a45833dbb9a99"
+  },
+  "noisestorm_01/endofmatch.mp3": {
+    "bytes": 1461967,
+    "durationSec": 83.535,
+    "sha256": "79977f792c68f661ad456a0b5695a216a30c845d5724e82d7c6eac8f256f23f1"
+  },
+  "noisestorm_01/lostround.mp3": {
+    "bytes": 117424,
+    "durationSec": 6.735,
+    "sha256": "29ce3b27d7e4527e26e268a9030cfa7c4384d9593c8996aae39c9aa1354e9eaf"
+  },
+  "noisestorm_01/mainmenu.mp3": {
+    "bytes": 2896409,
+    "durationSec": 161.295,
+    "sha256": "bca12eb43ce97d25be0d995071387a02836eaf2880693eafbf6eba0352a8166e"
+  },
+  "noisestorm_01/roundmvpanthem_01.mp3": {
+    "bytes": 116895,
+    "durationSec": 6.735,
+    "sha256": "6aababcba9ab6e171f52fc54157963af248c4df2bb94cdc7bd3354c149eb3bff"
+  },
+  "noisestorm_01/roundmvpanthem_02.mp3": {
+    "bytes": 117736,
+    "durationSec": 6.722,
+    "sha256": "50fd74066b86d3f89ab64d00c8fcfb7ab7212daf311d43dcbad824d2bdd6168f"
+  },
+  "noisestorm_01/roundtenseccount.mp3": {
+    "bytes": 186770,
+    "durationSec": 10.575,
+    "sha256": "d6fe2cd1d9d1e53745fb4f92724ab30650132321ce690eed30c3948cfaac23df"
+  },
+  "noisestorm_01/startaction_01.mp3": {
+    "bytes": 338806,
+    "durationSec": 18.255,
+    "sha256": "99ed6bec5a2c04d3ae9c1bb623e23c97c60aa071ca334ce1f47eca619d47c4c8"
+  },
+  "noisestorm_01/startofmatch.mp3": {
+    "bytes": 299763,
+    "durationSec": 16.335,
+    "sha256": "837d5e5131179d335126809ba69a9bdbe7d25e50c8bacaf889bedda015e9f5ae"
+  },
+  "noisestorm_01/startround_01.mp3": {
+    "bytes": 180664,
+    "durationSec": 7.695,
+    "sha256": "d4fa6cb69f544f1859aa4133ecb56856d52c10487d19ac27889270cc7b993a9b"
+  },
+  "noisestorm_01/wonround.mp3": {
+    "bytes": 116902,
+    "durationSec": 6.735,
+    "sha256": "9e65deab2d1ff1d00f5b0b4c71855c43d4d2216063d61552187ef34537a51134"
+  },
   "noisia_01/bombplanted.mp3": {
     "bytes": 810423,
     "durationSec": 50.651,
@@ -5103,6 +5458,76 @@
     "bytes": 246596,
     "durationSec": 15.412,
     "sha256": "5ebad5db04b52489105c5c8e180082abd15cac5f2b5c0e841b18b75cf625857d"
+  },
+  "pegboardnerds_01/bombplanted.mp3": {
+    "bytes": 632549,
+    "durationSec": 38.439,
+    "sha256": "69c313882eab9ea8ef867a7b0687ed0eefdc4f173a1394c8830e44456d20e97c"
+  },
+  "pegboardnerds_01/bombtenseccount.mp3": {
+    "bytes": 183285,
+    "durationSec": 11.251,
+    "sha256": "765607f4fcbafdd1bc20178a3569efc33ab463532b32a68e2b813e771f7c4c09"
+  },
+  "pegboardnerds_01/chooseteam.mp3": {
+    "bytes": 286805,
+    "durationSec": 17.814,
+    "sha256": "7dd2c8392f3f1b373d2ba4dc39458257ba40ba9b2aedadb35fdfc6591e63939b"
+  },
+  "pegboardnerds_01/deathcam.mp3": {
+    "bytes": 81438,
+    "durationSec": 4.689,
+    "sha256": "bdc1ddc9cfc074438ff7284f11c831a2cfe2cee1b0e64b45f5a85638216afbc2"
+  },
+  "pegboardnerds_01/endofmatch.mp3": {
+    "bytes": 1361227,
+    "durationSec": 79.699,
+    "sha256": "6034eb86121b07de77d6fddb1f2316b438bd22ca8c228bf29eb7d9d73b93ff94"
+  },
+  "pegboardnerds_01/lostround.mp3": {
+    "bytes": 141072,
+    "durationSec": 8.439,
+    "sha256": "463553263c80e51fca9244df36e186ec5c09fb8f95e5a4ebdb67aa9c1d174890"
+  },
+  "pegboardnerds_01/mainmenu.mp3": {
+    "bytes": 4038523,
+    "durationSec": 241.876,
+    "sha256": "3f85489b881f2eb5484fd6796ec9177655851f3e1fe49d6f75e57b6090e21ce5"
+  },
+  "pegboardnerds_01/roundmvpanthem_01.mp3": {
+    "bytes": 129401,
+    "durationSec": 7.628,
+    "sha256": "f19d696ddac09fda3c004b332adf9d055e221f03f2a5ee30d6a6092ddaf7fe8f"
+  },
+  "pegboardnerds_01/roundmvpanthem_02.mp3": {
+    "bytes": 132544,
+    "durationSec": 7.628,
+    "sha256": "efbf0f5a8039bbb9965e66c05fc9baddb0ae0b6455c9d54574d05d8f51c6964e"
+  },
+  "pegboardnerds_01/roundtenseccount.mp3": {
+    "bytes": 198128,
+    "durationSec": 11.72,
+    "sha256": "87f481fbae7d3ab8780f6fbc7d636c5d0e6a0eb1f48497d03293782a0849033d"
+  },
+  "pegboardnerds_01/startaction_01.mp3": {
+    "bytes": 306998,
+    "durationSec": 15.236,
+    "sha256": "e377bc7d596cf480de2bf3bc2806ec6e0f611e4d2d22c891db875c5acd01de8c"
+  },
+  "pegboardnerds_01/startofmatch.mp3": {
+    "bytes": 258241,
+    "durationSec": 15.939,
+    "sha256": "2b3b0a40cb175a94a514f96649b6957f085a67632ef3f087fb6a984d119c9cea"
+  },
+  "pegboardnerds_01/startround_01.mp3": {
+    "bytes": 295416,
+    "durationSec": 15.013,
+    "sha256": "e277181061255a9379ed65dd206096820312555d81cf4344d2573a5173ca6669"
+  },
+  "pegboardnerds_01/wonround.mp3": {
+    "bytes": 132217,
+    "durationSec": 7.739,
+    "sha256": "99454ec631cd218963b4a702d9a94f62c2db6a29f94d302847299ec898870de2"
   },
   "perfectworld_01/bombplanted.mp3": {
     "bytes": 409183,
@@ -7374,6 +7799,86 @@
     "durationSec": 10.475,
     "sha256": "2d9060c04cfaa4ac4ef65543ac76011dfef33587d1cf402b61adab4ce9172f18"
   },
+  "tristam_braken_01/bombplanted.mp3": {
+    "bytes": 643628,
+    "durationSec": 38.745,
+    "sha256": "230e06418b56ee9f5e96efcde0fb2830b1be78aefbc995335f3b496dc41074c4"
+  },
+  "tristam_braken_01/bombtenseccount.mp3": {
+    "bytes": 181731,
+    "durationSec": 10.973,
+    "sha256": "f2951099dc98e40d1e40abebc6cadbc41d6ebdf3b60c39176fd4eb4bd32f4f82"
+  },
+  "tristam_braken_01/chooseteam.mp3": {
+    "bytes": 431202,
+    "durationSec": 26.745,
+    "sha256": "2b40310e4dc97d3c82f0fb2387f83fd9c436d91dc09e122786f0149cb3eace67"
+  },
+  "tristam_braken_01/deathcam.mp3": {
+    "bytes": 82776,
+    "durationSec": 5.145,
+    "sha256": "18484152388c58d2bba7b313ae7432daee5d16b0017c713641230e6bdc14d87f"
+  },
+  "tristam_braken_01/endofmatch.mp3": {
+    "bytes": 2318286,
+    "durationSec": 141.603,
+    "sha256": "77cbbbeb6c8e36569f6191e04b773af826cbf0abe7494cfc999775fc6d377f10"
+  },
+  "tristam_braken_01/lostround.mp3": {
+    "bytes": 125524,
+    "durationSec": 7.718,
+    "sha256": "589203d81a9301833092c19d3695ddc5a9c94ba8a37ceb14793da3d261c7577d"
+  },
+  "tristam_braken_01/mainmenu.mp3": {
+    "bytes": 3568484,
+    "durationSec": 219.43,
+    "sha256": "043873a3472e53d7a91e6d2d8ed245a0e18ebbd24e24045b7389e8d8ae0d5fda"
+  },
+  "tristam_braken_01/roundmvpanthem_01.mp3": {
+    "bytes": 121044,
+    "durationSec": 7.373,
+    "sha256": "e1891549eadf57ca40f8dba789d1efdbc64a7b803f83294d9ee0977323fd85fd"
+  },
+  "tristam_braken_01/roundmvpanthem_02.mp3": {
+    "bytes": 122098,
+    "durationSec": 7.373,
+    "sha256": "545b9645162d4dcce66d2d5bb9a7fda1e244e151673f01aa7cfefcd2acce98bd"
+  },
+  "tristam_braken_01/roundtenseccount.mp3": {
+    "bytes": 205419,
+    "durationSec": 12.002,
+    "sha256": "51d489ea9a41962b668b8814b253abe8396b58c328d2438c96ce504216c802fb"
+  },
+  "tristam_braken_01/startaction_01.mp3": {
+    "bytes": 217794,
+    "durationSec": 13.373,
+    "sha256": "eafebe8db07e59875042f7f6694beca03c06831387741c0906e88c16698ea96d"
+  },
+  "tristam_braken_01/startaction_02.mp3": {
+    "bytes": 216956,
+    "durationSec": 13.373,
+    "sha256": "32b92ad46ba560ad7f96e50a29a8cb3e7ae7a1f3bdc9006f0fccce5f2ce60ff5"
+  },
+  "tristam_braken_01/startofmatch.mp3": {
+    "bytes": 277646,
+    "durationSec": 16.921,
+    "sha256": "dbe762dcbdacb439ee52521680cc5c35889ed169acfebc538ccb0bdf7b16f6bf"
+  },
+  "tristam_braken_01/startround_01.mp3": {
+    "bytes": 182677,
+    "durationSec": 10.973,
+    "sha256": "a79fbdecd141ceed0a4564d6ada9169280c0412368d4233ef22f022cdcfb31fe"
+  },
+  "tristam_braken_01/startround_02.mp3": {
+    "bytes": 182149,
+    "durationSec": 10.973,
+    "sha256": "2d325a094b3db67229a4ce1c3f4ac60b8fbe0bed3926670373b6577e9ffaa423"
+  },
+  "tristam_braken_01/wonround.mp3": {
+    "bytes": 120943,
+    "durationSec": 7.373,
+    "sha256": "e683fba61966437c12d33b26f087bb856f29059bf5bf1c6479169b4bd1f2692b"
+  },
   "troelsfolmann_01/bombplanted.mp3": {
     "bytes": 581800,
     "durationSec": 36.363,
@@ -7818,5 +8323,75 @@
     "bytes": 101545,
     "durationSec": 6.207,
     "sha256": "4bf3023af5b35ce8c9311614098682e66e287937a1652a095395c78c2c0fa8ce"
+  },
+  "vicetone_01/bombplanted.mp3": {
+    "bytes": 654939,
+    "durationSec": 37.26,
+    "sha256": "75c86579e2b1affcafd5e25fb28d6aa423c5df67e9daf310004eb5e72b81209b"
+  },
+  "vicetone_01/bombtenseccount.mp3": {
+    "bytes": 204405,
+    "durationSec": 11.612,
+    "sha256": "75075e84665c3dcbb36b95dfdd724a4d9a833fae60cb5a6e569fc234fcf36ec2"
+  },
+  "vicetone_01/chooseteam.mp3": {
+    "bytes": 452584,
+    "durationSec": 24.196,
+    "sha256": "407af856a0dc3e13a67d8823e8817d0b34b06e64f71adaf4b9cdf03aaafc8b51"
+  },
+  "vicetone_01/deathcam.mp3": {
+    "bytes": 96654,
+    "durationSec": 5.809,
+    "sha256": "cacc223310f4da114903b5a5ab76c334bae91971bb5b905e590799e560fc9776"
+  },
+  "vicetone_01/endofmatch.mp3": {
+    "bytes": 1635353,
+    "durationSec": 95.808,
+    "sha256": "accc8d3ec157bac8925e9286892faf8f0f33ea7d79fba084a18a6970f631f7cd"
+  },
+  "vicetone_01/lostround.mp3": {
+    "bytes": 134406,
+    "durationSec": 7.986,
+    "sha256": "e342f37dd74cafeec10f22fb4d1bed3dc2e6ca949fe1e15574720bc24bc53765"
+  },
+  "vicetone_01/mainmenu.mp3": {
+    "bytes": 3506068,
+    "durationSec": 208.563,
+    "sha256": "60d601240b745b943994390a7b1b20bec24cebb7ff009f0e42d90ad696ab2f50"
+  },
+  "vicetone_01/roundmvpanthem_01.mp3": {
+    "bytes": 139955,
+    "durationSec": 7.986,
+    "sha256": "64f6dbd4ec047438493125f94306007f057126e2a939cb4d9fbecd902058a71b"
+  },
+  "vicetone_01/roundmvpanthem_02.mp3": {
+    "bytes": 137122,
+    "durationSec": 7.986,
+    "sha256": "404d577a4108a1c00e57cf27dbbdbcc4fd4a156c1e773bdb5b800ce2e1374135"
+  },
+  "vicetone_01/roundtenseccount.mp3": {
+    "bytes": 190282,
+    "durationSec": 11.616,
+    "sha256": "f70e14b9379968062de6d0a831ff73e6164b1124984f8b968291f7290730eb0e"
+  },
+  "vicetone_01/startaction_01.mp3": {
+    "bytes": 217869,
+    "durationSec": 12.099,
+    "sha256": "bf068e260b3d8a598c73e1ccc1ec54b27840cc141707ca4895b408e771ad8417"
+  },
+  "vicetone_01/startofmatch.mp3": {
+    "bytes": 303365,
+    "durationSec": 17.421,
+    "sha256": "5f0e61d142c22282bc7f2114c0be5b283d0c499cf9b36cd9362fe01b61edc47f"
+  },
+  "vicetone_01/startround_01.mp3": {
+    "bytes": 303983,
+    "durationSec": 15.485,
+    "sha256": "ebeb6ccfbc7aa5d290d39e9478cfd0fa58db1fd1cfb37260839b4b9975542789"
+  },
+  "vicetone_01/wonround.mp3": {
+    "bytes": 139955,
+    "durationSec": 7.986,
+    "sha256": "64f6dbd4ec047438493125f94306007f057126e2a939cb4d9fbecd902058a71b"
   }
 }

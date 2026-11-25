@@ -605,6 +605,54 @@
       "description": "銀河で最もグルーヴィーなラジオ曲からお届けするミュージックキット。最新のサウンドに、懐かしのヴィンテージ感をたっぷり盛り込んだ。これが、Starjunk 95 だ。",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT と LEVEL UP がタッグを組んだ「BELIEVE」。サーバー中を震わせるほど強烈なドロップが炸裂する、怒涛のベースサウンドを体感しよう。",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Arcando と Pirapus が贈る「Ultrasound」。ファーストコンタクトから最後のキルまで、圧倒的な勢いで攻め続けるドラムンベースのアンセム。",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "Shaquille O'Neal こと DJ DIESEL と、ベースミュージック界の大物 Hairitage がタッグを組んで生まれた「BANG YOUR HEAD」。ヘッドショットにぴったりの強烈なダブステップナンバー。",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "ついに T サイドにもテーマ曲が登場。ダークで映画のような雰囲気とシンセウェーブサウンド、 F.O.O.L の「Criminals」が、あらゆる攻撃作戦を盛り上げる。",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "2018 年のエイプリルフールにリリースされた Noisestorm の「Crab Rave」は、カニのように横歩きしながらインターネットの伝説となった。ラウンドに勝利して、このニュースを広めよう。敵チームはもういない！",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Monstercat の名曲、Pegboard Nerds の「Disconnected」は、10 年以上にわたってスピーカーをショートさせるほどの衝撃を与え続けてきた。今度は敵チームが「切断」される番だ。",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Tristam & Braken の「Flight」は、ノスタルジーを感じさせる一曲。2013 年のリリース当時と変わらない魅力を、今もなお放っている。",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "聞くだけであの頃に戻れる曲がある。Vicetone の「Nevada」は、2016 年の空気をたっぷり味わえる一曲。勝利を祝うときに聴くのがおすすめ。",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "NIGHTMODE ミュージックキットボックス",
     "2024-08-20-masterminds-2": "Masterminds 2 ミュージックキットボックス",
     "2025-08-14-deluge": "Deluge ミュージックキットボックス",
-    "2026-05-07-nightmode-ii": "NIGHTMODE II ミュージックキット"
+    "2026-05-07-nightmode-ii": "NIGHTMODE II ミュージックキット",
+    "2026-11-17-monstercat": "Monstercat ミュージックキット"
   }
 }

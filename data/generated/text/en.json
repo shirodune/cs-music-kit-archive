@@ -605,6 +605,54 @@
       "description": "Experience a music kit from the grooviest station in the galaxy, featuring the newest sounds of today drenched with vintage nostalgia of yesterday. This is Starjunk 95.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT and LEVEL UP join forces on \"BELIEVE\", a relentless bass record with drops heavy enough to shake the whole server.",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "From Arcando and Pirapus, \"Ultrasound\" is a high velocity drum and bass anthem that keeps the pressure on from first contact to final kill.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "When DJ DIESEL, AKA Shaquille O'Neal, links up with bass heavyweight Hairitage, the result is \"BANG YOUR HEAD\", a dubstep banger made for headshots.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "T-side finally has a theme song. Dark, cinematic, and full of synthwave, F.O.O.L's \"Criminals\" provides a score for every execute.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Released on April Fools' Day 2018, Noisestorm's \"Crab Rave\" scuttled its way into internet legend. Win the round and spread the news; the enemy team is gone.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "A Monstercat classic, Pegboard Nerds' \"Disconnected\" has been short-circuiting speakers for over a decade. This time, it's the other team disconnecting.",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Tristam & Braken's \"Flight\" is pure nostalgia that sounds just as good today as when it originally released in 2013.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Some songs take you right back, and Vicetone's \"Nevada\" is a dose of 2016, best enjoyed celebrating a victory.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "NIGHTMODE Music Kit Box",
     "2024-08-20-masterminds-2": "Masterminds 2 Music Kit Box",
     "2025-08-14-deluge": "Deluge Music Kit Box",
-    "2026-05-07-nightmode-ii": "NIGHTMODE II Music Kits"
+    "2026-05-07-nightmode-ii": "NIGHTMODE II Music Kits",
+    "2026-11-17-monstercat": "Monstercat Music Kits"
   }
 }

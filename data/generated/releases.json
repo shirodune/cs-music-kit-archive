@@ -437,5 +437,26 @@
       "title": "Counter-Strike 2 Update",
       "url": "https://store.steampowered.com/news/app/730/view/674006995886407685"
     }
+  },
+  {
+    "date": "2026-11-17",
+    "id": "2026-11-17-monstercat",
+    "kits": [
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112
+    ],
+    "nameKey": "store_nav_section_coupon_monstercat",
+    "note": null,
+    "source": {
+      "quote": "Added 8 new music kits from Monstercat.",
+      "title": "Counter-Strike 2 Update",
+      "url": "https://store.steampowered.com/news/app/730/view/687522235410286587"
+    }
   }
 ]

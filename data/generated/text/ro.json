@@ -605,6 +605,54 @@
       "description": "Bucură-te de un pachet muzical de la cel mai tare post de radio din galaxie, unde cele mai noi hituri alte momentului se îmbină cu melodii nostalgice de altă dată. Acesta este Starjunk 95.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT și LEVEL UP își unesc forțele pentru „BELIEVE”, o melodie plină de bas, cu schimbări de ritm suficient de puternice pentru a zgudui tot serverul.",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "De la Arcando și Pirapus, „Ultrasound” este un imn drum and bass care nu oferă nicio clipă de respiro, de la contactul inițial până la ultima ucidere.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "Când DJ DIESEL, alias Shaquille O'Neal, își unește forțele cu un greu al pieselor pline de bas, Hairitage, rezultă „BANG YOUR HEAD”, o piesă dubstep explozivă concepută pentru a-ți surprinde inamicii cu focuri de armă în cap.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "Echipa teroriștilor are în sfârșit o melodie tematică. Sumbră, cinematică și plină de elemente synthwave, melodia „Criminals” de la F.O.O.L acompaniază cu stil fiecare execuție.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Lansată de ziua păcălelii în 2018, melodia „Crab Rave” a lui Noisestorm a devenit legendară pe internet. Câștigă runda și dă vestea mai departe: echipa adversă a fost eliminată.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Un clasic Monstercat, melodia „Disconnected” de la Pegboard Nerds scurtcircuitează boxe de peste un deceniu. De data aceasta, echipa adversă este cea care se deconectează.",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Melodia „Flight” de la Tristam & Braken este nostalgie în formă pură, care sună la fel de bine și astăzi ca atunci când a fost lansată inițial în 2013.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Unele melodii te poartă înapoi în timp, iar melodia „Nevada” de la Vicetone îți oferă o doză din anul 2016, pe care o poți savura cel mai bine sărbătorind o victorie.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "Cutie cu pachet muzical NIGHTMODE",
     "2024-08-20-masterminds-2": "Cutie cu pachet muzical Masterminds 2",
     "2025-08-14-deluge": "Cutie cu pachet muzical Deluge",
-    "2026-05-07-nightmode-ii": "Pachete muzicale NIGHTMODE II"
+    "2026-05-07-nightmode-ii": "Pachete muzicale NIGHTMODE II",
+    "2026-11-17-monstercat": "Pachete muzicale Monstercat"
   }
 }
