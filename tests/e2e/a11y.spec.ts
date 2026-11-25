@@ -8,6 +8,8 @@ const pages = [
   "/en/kits/cs-go/",
   // A kit in a box: its release line has the box name under the date.
   "/en/kits/kolibri/",
+  // A story with several sources, one per line: each link needs room around it (WCAG 2.5.8).
+  "/en/kits/bachram/",
   "/en/artists/",
   "/en/artists/austin-wintory/",
   "/en/about/",
