@@ -553,13 +553,6 @@
     "musicbrainzId": null
   },
   {
-    "id": "arcando",
-    "name": "Arcando",
-    "type": "person",
-    "aliases": [],
-    "musicbrainzId": "c88ccba8-a247-46a6-ada7-c013f5776e58"
-  },
-  {
     "id": "dj-diesel-hairitage",
     "name": "DJ DIESEL & Hairitage",
     "type": "group",
