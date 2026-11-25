@@ -23,8 +23,11 @@ Astro 7 (static output) with React islands, Tailwind CSS 4, TypeScript 6 (Astro'
 - UI strings go through `t()` (`src/i18n/t.ts`) in `messages/{segment}.json`: flat dot-separated keys; a plural is an object with exactly the CLDR categories the locale uses, the number is `{count}`. Never build plurals by string concatenation. `pnpm i18n:check` enforces this.
 - No translation library in the browser: islands get their strings as props. Format dates in UTC so the day never shifts. Uppercase comes from CSS (`text-transform`), never from changing the string. `font-synthesis: none` everywhere; each script's fallback fonts are in `src/i18n/fonts.ts`.
 - New kits: follow "New kits" in `docs/maintainers.md`.
-- Written content (stories, introductions, curated facts) is checked fact by fact against its sources by someone other than the writer, such as a second agent, before the owner reviews it. Chinese text puts kit names in 《》, with Valve's official Chinese names.
-- Public text stays plain, like comparable fan sites: no extra emphasis.
+- Written content (stories, introductions, curated facts) is checked fact by fact against its sources by someone other than the writer, such as a second agent, before the owner reviews it; see "Writing and checking" in `content/README.md`. Chinese text puts kit names in 《》, with Valve's official Chinese names.
+- Public text stays plain, like comparable fan sites: no extra emphasis. Before writing README- or About-style text, look at popular comparable projects (Paimon.moe, Destiny Item Manager, FFXIV Teamcraft) and match their level of detail. A one-line description says what the site is, every music kit with its full tracklist, not a feature such as its languages.
+- A feature that is not thought through: interview the owner with multiple-choice questions until it can be written into the spec, then build it.
+- Interface changes start from the common pattern for that kind of element and land in one change, not in a series of small tweaks.
+- Code reviews fix only what affects correctness. Leave out style, and code or tests for cases that cannot happen.
 - Secrets never go in the repository. The deploy token lives in the GitHub `production` and `preview` environments.
 
 ## Language
