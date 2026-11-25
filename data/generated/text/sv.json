@@ -605,6 +605,54 @@
       "description": "Upplev ett musikpaket från den coolaste stationen i galaxen, med toppmoderna ljud indränkta i lite nostalgi från den gamla goda tiden. Det här är Starjunk 95.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT och LEVEL UP slår ihop sina påsar på ”BELIEVE”, ett skoningslöst basspår med drops som är tunga nog att få hela servern att skaka.",
+      "name": "ALLEYCVT & LEVEL UP – BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "”Ultrasound” från Arcando och Pirapus är en drum and bass-hymn med hög hastighet som håller trycket uppe från första kontakt till sista eliminering.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "När DJ DIESEL, alias Shaquille O'Neal, slår sig ihop med baskungen Hairitage blir resultatet ”BANG YOUR HEAD”, en dubstep-fullträff som gjord för headshots.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "T-sidan har äntligen fått en signaturmelodi. Mörka, filmiska synthwave-toner genomsyrar F.O.O.L:s ”Criminals”, som ger rätt soundtrack till varje handling.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Noisestorms ”Crab Rave”, som släpptes första april 2018, blev via krabbgång en internetlegend. Vinn rundan och sprid nyheten: fiendelaget är borta.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Pegboard Nerds ”Disconnected” är en Monstercat-klassiker som har kortslutit högtalare i över ett decennium. Den här gången är det det andra laget som kopplas bort.",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Tristam & Brakens ”Flight” är ren nostalgi som låter lika bra idag som när den släpptes 2013.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Vissa låtar tar en rakt tillbaka i tiden, och Vicetones ”Nevada” är en dos av 2016, som avnjutes bäst när man firar en seger.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "Musikpaketlåda: NIGHTMODE",
     "2024-08-20-masterminds-2": "Musikpaketlåda: Masterminds 2",
     "2025-08-14-deluge": "Musikpaketlåda: Deluge",
-    "2026-05-07-nightmode-ii": "NIGHTMODE II Musikpaket"
+    "2026-05-07-nightmode-ii": "NIGHTMODE II Musikpaket",
+    "2026-11-17-monstercat": "Musikpaket Monstercat"
   }
 }

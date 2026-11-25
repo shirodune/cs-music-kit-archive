@@ -605,6 +605,54 @@
       "description": "Geniet van een groovy muziekset met de nieuwste hits en nostalgische klassiekers. Dit is Starjunk 95.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT en LEVEL UP werken samen in BELIEVE, een superdik nummer met drops die zo hard gaan dat de hele server ervan trilt.",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "De snelle drum-'n'-bass van Ultrasound, van Arcando en Pirapus, houdt de druk erop, van het eerste contact tot de laatste kill.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "Als DJ DIESEL, ook wel bekend als Shaquille O'Neal, samenwerkt met bass-zwaargewicht Hairitage, leidt dat tot BANG YOUR HEAD. Deze vette dubsteptrack is gemaakt voor headshots.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "Eindelijk een herkenningstune voor de terroristen. Criminals van F.O.O.L is een duister, filmisch synthwavenummer dat perfect past bij epische kills.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Crab Rave van Noisestorm, dat op 1 april 2018 werd uitgebracht, is uitgegroeid tot een internetlegende. Win de ronde en zegt het voort: het vijandelijke team ligt onder de zoden.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Disconnected van Pegboard Nerds is een klassieker uit de catalogus van Monstercat. Al meer dan tien jaar zorgt het nummer voor kortsluiting in speakers. Dit keer krijgt het vijandelijke team kortsluiting.",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Flight, van Tristam & Braken, is een nostalgisch nummer dat nu nog net zo goed klinkt als in 2013, toen het uitkwam.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Soms wekt muziek nostalgische gevoelens op. Nevada van Vicetone neemt je mee terug naar 2016 en is heel geschikt als overwinningsmuziek.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "NIGHTMODE-vinylkoffer",
     "2024-08-20-masterminds-2": "Masterminds 2-vinylkoffer",
     "2025-08-14-deluge": "Deluge-vinylkoffer",
-    "2026-05-07-nightmode-ii": "Muzieksets NIGHTMODE II"
+    "2026-05-07-nightmode-ii": "Muzieksets NIGHTMODE II",
+    "2026-11-17-monstercat": "Monstercat Muzieksets"
   }
 }

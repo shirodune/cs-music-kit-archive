@@ -605,6 +605,54 @@
       "description": "과거의 오랜 향수에 흠뻑 젖은 오늘의 최신 사운드가 담긴, 은하계에서 가장 흥겨운 음악 키트를 즐겨 보세요. Starjunk 95입니다.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT와 LEVEL UP이 힘을 합쳐 발표한 'BELIEVE'는 서버 전체를 뒤흔들 만큼 강력한 드롭이 폭발하는 멈추지 않는 베이스 사운드의 곡입니다.",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Arcando와 Pirapus의 'Ultrasound'는 첫 교전부터 마지막 처치까지 긴장감을 유지하는 빠른 속도의 드럼 앤 베이스 명곡입니다.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "DJ DIESEL(일명 샤킬 오닐)이 베이스 음악계의 헤비급 Hairitage와 만나 탄생한 헤드샷을 위한 히트곡 'BANG YOUR HEAD'입니다.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "테러리스트 진영에 드디어 테마곡이 생겼습니다. 어둡고 영화 같은 분위기에 전자 음악 느낌이 가득한 F.O.O.L의 'Criminals'는 모든 결정적인 플레이에 어울리는 배경 음악입니다.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "2018년 만우절에 발매된 Noisestorm의 'Crab Rave'는 인터넷 전설이 되었습니다. 라운드에서 승리하고 적군이 모두 사라졌다는 소식을 널리 알리세요.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Monstercat의 명곡, Pegboard Nerds의 'Disconnected'는 10년 넘게 스피커를 합선시켜 왔습니다. 이번에는 상대 팀의 연결을 끊을 차례입니다.",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Tristam & Braken의 'Flight'는 2013년 처음 발매되었을 때와 마찬가지로 지금 들어도 훌륭하며 순수한 향수를 불러일으키는 곡입니다.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "어떤 노래는 우리를 과거로 데려갑니다. Vicetone의 'Nevada'는 2016년의 감성이 담긴 곡으로, 승리를 축하할 때 가장 잘 어울립니다.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "NIGHTMODE 음악 키트 상자",
     "2024-08-20-masterminds-2": "Masterminds 2 음악 키트 상자",
     "2025-08-14-deluge": "Deluge 음악 키트 상자",
-    "2026-05-07-nightmode-ii": "NIGHTMODE II 음악 키트"
+    "2026-05-07-nightmode-ii": "NIGHTMODE II 음악 키트",
+    "2026-11-17-monstercat": "Monstercat 음악 키트"
   }
 }

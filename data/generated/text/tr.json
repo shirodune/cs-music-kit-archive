@@ -605,6 +605,54 @@
       "description": "Galaksinin en havalı istasyonunun müzik kitini deneyimleyin. Geçmişin nostaljisini bugünün yepyeni sesleri ile harmanlıyor. Starjunk 95'i dinliyorsunuz.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT ve LEVEL UP, sunucuları sarsan büyük drop'lara sahip amansız bir bass parçası olan \"BELIEVE\" için bir araya geldi.",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Arcando ve Pirapus'un yüksek tempolu bir davul ve bas marşı \"Ultrasound\", ilk temastan son leşe kadar baskıyı hiç düşürmüyor.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "DJ DIESEL, yani namıdiğer Shaquille O'Neal, bas ustası Hairitage ile bir araya geldiğinde ortaya bir dubstep bombası olan \"BANG YOUR HEAD\" çıkıyor ve kafadan vuruşlarla çok iyi gidiyor.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "T tarafı sonunda tanıtım şarkısına kavuştu. F.O.O.L'un karanlık, sinematik ve synthwave dolu \"Criminals\" parçası, her infaz için bir fon müziği görevi görüyor.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Noisestorm'un 2018'de 1 Nisan şaka gününde yayımlanan \"Crab Rave\" parçası, internet efsaneleri arasına katılmayı başardı. Raundu kazan ve haberi yay; düşman takım artık yok.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Pegboard Nerds'ün bir Monstercat klasiği olan \"Disconnected\" parçası, on yılı aşkın süredir hoparlörleri patlatıyor. Bu sefer bağlantısı kopan taraf rakip takım.",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Tristam & Braken'ın \"Flight\" parçası tam bir nostalji örneği; 2013'te çıktığı gün gibi bugün de harika.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Bazı şarkılar doğrudan geçmişe götürür. Vicetone'un 2016 havası veren \"Nevada\" parçası, zafer kutlarken çok iyi gidiyor.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "NIGHTMODE Müzik Kiti Kutusu",
     "2024-08-20-masterminds-2": "Masterminds 2 Müzik Kiti Kutusu",
     "2025-08-14-deluge": "Deluge Müzik Kiti Kutusu",
-    "2026-05-07-nightmode-ii": "NIGHTMODE II Müzik Kitleri"
+    "2026-05-07-nightmode-ii": "NIGHTMODE II Müzik Kitleri",
+    "2026-11-17-monstercat": "Monstercat Müzik Kitleri"
   }
 }
