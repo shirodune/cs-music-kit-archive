@@ -1,4 +1,11 @@
+import { readFileSync } from "node:fs";
 import { expect, type Page, test } from "@playwright/test";
+
+const json = (file: string) => JSON.parse(readFileSync(new URL(file, import.meta.url), "utf8"));
+// The newest kit changes with every release, and main and the sync's branch hold different kits (DATA-25).
+const kits: { defIndex: number }[] = json("../../data/generated/kits.json");
+const en: { kits: Record<string, { title: string }> } = json("../../data/generated/text/en.json");
+const newest = en.kits[String(kits.at(-1)?.defIndex)]?.title ?? "";
 
 const card = (page: Page) => page.getByRole("region", { name: "Record label" });
 const rack = (page: Page) => page.getByRole("region", { name: /^Records rack/ });
@@ -6,7 +13,7 @@ const rack = (page: Page) => page.getByRole("region", { name: /^Records rack/ })
 test.describe("records rack", () => {
   test("PROD-7 PROD-12 the newest kit is selected and kept in the URL hash", async ({ page }) => {
     await page.goto("/en/");
-    await expect(card(page).getByRole("heading")).toHaveText("Industrial Sunset Memories");
+    await expect(card(page).getByRole("heading")).toHaveText(newest);
     await expect(page).toHaveURL("/en/");
     await rack(page).focus();
     await page.keyboard.press("ArrowLeft");
