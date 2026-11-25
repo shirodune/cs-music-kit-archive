@@ -115,3 +115,4 @@ Each: the decision, then why. To change one, add a new one and mark the old one 
 - D-021 Phones are supported, not prioritized: pages must not scroll sideways on a phone, but work goes to content and desktop first. Revisit if most visitors use phones.
 - D-022 Covers are the game's textures, committed as stored (about 69 MB), so the build is self-contained.
 - D-023 The weekly sync extracts and publishes audio itself. The step that runs third-party tools gets no secrets; only the upload gets the storage credentials, limited to the one bucket.
+- D-024 The sync pushes and opens its pull request with a GitHub App's token, limited to contents and pull requests of this repository. With the workflow's own token the push starts no CI, and CI started by hand did not satisfy `main`'s required checks (2026-11-25), so the pull request could not be merged.
