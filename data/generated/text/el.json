@@ -605,6 +605,54 @@
       "description": "Ζήστε την εμπειρία ενός μουσικού κουτιού από τον πιο κουλ σταθμό του γαλαξία, που περιέχει τους νεότερους ήχους του σήμερα αγκαλιασμένους με τη βίντατζ νοσταλγία του χθες. Αυτό είναι το Starjunk 95.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "Οι ALLEYCVT και LEVEL UP ενώνουν τις δυνάμεις τους στο «BELIEVE», έναν δίσκο όπου το μπάσο βαράει αλύπητα και είναι ικανό να κάνει όλον τον διακομιστή να σείεται και να χτυπιέται.",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Από τους Arcando και Pirapus, το «Ultrasound» είναι ένας ύμνος υψηλής ταχύτητας με ντραμς και μπάσο, που κρατά σταθερά ψηλά την ένταση από τον πρώτο μέχρι τον τελευταίο σκοτωμό.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "Όταν ο DJ DIESEL, γνωστός και ως Shaquille O'Neal, συνεργάζεται με τον τιτανομέγιστο μπασίστα Hairitage, το αποτέλεσμα είναι το «BANG YOUR HEAD» ένα ντάμπστεπ χιτάκι φτιαγμένο για κεφαλίδια.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "Η πλευρά των T απέκτησε επιτέλους θεματικό τραγούδι. Σκοτεινό, κινηματογραφικό και γεμάτο ήχους ηλεκτρονικής μουσικής, το «Criminals» των F.O.O.L δίνει ποντάκια για κάθε εκτέλεση.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Το «Crab Rave» των Noisestorm κυκλοφόρησε πρωταπριλιά του 2018 και έγινε γρήγορα το θρυλικό άσμα του διαδικτύου. Κερδίστε τον γύρο και διαδώστε τα νέα, η ομάδα των εχθρών πάει.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Το «Disconnected» των Pegboard Nerds, ένα κλασικό κομμάτι Monstercat, βραχυκυκλώνει ηχεία εδώ και πάνω από μια δεκαετία. Αυτήν τη φορά, είναι η άλλη ομάδα που «αποσυνδέεται».",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Το «Flight» των Tristam & Braken είναι η νοσταλγία προσωποποιημένη και ακούγεται το ίδιο υπέροχο σήμερα όσο και όταν κυκλοφόρησε αρχικά το 2013.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Κάποια τραγούδια μας γυρίζουν αμέσως πίσω στον χρόνο, και το «Nevada» των Vicetone είναι μια δόση από 2016, που την απολαμβάνετε περισσότερο όταν γιορτάζετε μια νίκη.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "Πακέτο μουσικών κουτιών NIGHTMODE",
     "2024-08-20-masterminds-2": "Πακέτο μουσικών κουτιών Masterminds 2",
     "2025-08-14-deluge": "Πακέτο μουσικών κουτιών Deluge",
-    "2026-05-07-nightmode-ii": "Μουσικά κουτιά NIGHTMODE II"
+    "2026-05-07-nightmode-ii": "Μουσικά κουτιά NIGHTMODE II",
+    "2026-11-17-monstercat": "Μουσικά κουτιά Monstercat"
   }
 }

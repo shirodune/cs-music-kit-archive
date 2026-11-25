@@ -286,6 +286,143 @@
       ]
     }
   ],
+  "alleycvt_01": [
+    {
+      "durationSec": 161.601242,
+      "event": "Music.Background",
+      "files": [
+        "mainmenu"
+      ]
+    },
+    {
+      "durationSec": 8.001791,
+      "event": "Music.MVPPreview",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 27.201677,
+      "event": "Music.Selection",
+      "files": [
+        "chooseteam"
+      ]
+    },
+    {
+      "durationSec": 12.801248,
+      "event": "Music.MatchFound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 14.401247,
+      "event": "Music.LoadingScreen",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 12.801248,
+      "event": "Music.StartRound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 14.401247,
+      "event": "Music.StartAction",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 12.801248,
+      "event": "Music.StartRound_GG",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 37.601246,
+      "event": "Music.BombPlanted",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 10.400839,
+      "event": "Music.BombTenSecCount",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 37.601246,
+      "event": "Music.GotHostage",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 10.400839,
+      "event": "Music.HostageNearRescue",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 11.400839,
+      "event": "Music.TenSecCount",
+      "files": [
+        "roundtenseccount"
+      ]
+    },
+    {
+      "durationSec": 8.001678,
+      "event": "Music.WonRound",
+      "files": [
+        "wonround"
+      ]
+    },
+    {
+      "durationSec": 5.601678,
+      "event": "Music.LostRound",
+      "files": [
+        "lostround"
+      ]
+    },
+    {
+      "durationSec": 5.601678,
+      "event": "Music.DeathCam",
+      "files": [
+        "deathcam"
+      ]
+    },
+    {
+      "durationSec": 8.001791,
+      "event": "Music.MVPAnthem",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 16.002087,
+      "event": "Music.MatchStart",
+      "files": [
+        "startofmatch"
+      ]
+    },
+    {
+      "durationSec": 57.61084,
+      "event": "Music.MatchEnd",
+      "files": [
+        "endofmatch"
+      ]
+    }
+  ],
   "alrt_01": [
     {
       "durationSec": 194.685333,
@@ -714,6 +851,143 @@
     },
     {
       "durationSec": 93.750366,
+      "event": "Music.MatchEnd",
+      "files": [
+        "endofmatch"
+      ]
+    }
+  ],
+  "arcando_01": [
+    {
+      "durationSec": 185.143921,
+      "event": "Music.Background",
+      "files": [
+        "mainmenu"
+      ]
+    },
+    {
+      "durationSec": 8.229909,
+      "event": "Music.MVPPreview",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 21.944286,
+      "event": "Music.Selection",
+      "files": [
+        "chooseteam"
+      ]
+    },
+    {
+      "durationSec": 10.971791,
+      "event": "Music.MatchFound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 12.351429,
+      "event": "Music.LoadingScreen",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 10.971791,
+      "event": "Music.StartRound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 12.351429,
+      "event": "Music.StartAction",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 10.971791,
+      "event": "Music.StartRound_GG",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 37.028934,
+      "event": "Music.BombPlanted",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 10.971791,
+      "event": "Music.BombTenSecCount",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 37.028934,
+      "event": "Music.GotHostage",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 10.971791,
+      "event": "Music.HostageNearRescue",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 11.314649,
+      "event": "Music.TenSecCount",
+      "files": [
+        "roundtenseccount"
+      ]
+    },
+    {
+      "durationSec": 7.544286,
+      "event": "Music.WonRound",
+      "files": [
+        "wonround"
+      ]
+    },
+    {
+      "durationSec": 7.544286,
+      "event": "Music.LostRound",
+      "files": [
+        "lostround"
+      ]
+    },
+    {
+      "durationSec": 4.801429,
+      "event": "Music.DeathCam",
+      "files": [
+        "deathcam"
+      ]
+    },
+    {
+      "durationSec": 8.229909,
+      "event": "Music.MVPAnthem",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 13.715714,
+      "event": "Music.MatchStart",
+      "files": [
+        "startofmatch"
+      ]
+    },
+    {
+      "durationSec": 92.581429,
       "event": "Music.MatchEnd",
       "files": [
         "endofmatch"
@@ -3507,6 +3781,143 @@
       ]
     }
   ],
+  "djdiesel_01": [
+    {
+      "durationSec": 204.799591,
+      "event": "Music.Background",
+      "files": [
+        "mainmenu"
+      ]
+    },
+    {
+      "durationSec": 8.001678,
+      "event": "Music.MVPPreview",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 27.200409,
+      "event": "Music.Selection",
+      "files": [
+        "chooseteam"
+      ]
+    },
+    {
+      "durationSec": 12.801248,
+      "event": "Music.MatchFound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 12.801248,
+      "event": "Music.LoadingScreen",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 12.801248,
+      "event": "Music.StartRound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 12.801248,
+      "event": "Music.StartAction",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 12.801248,
+      "event": "Music.StartRound_GG",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 34.800838,
+      "event": "Music.BombPlanted",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 10.664989,
+      "event": "Music.BombTenSecCount",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 34.800838,
+      "event": "Music.GotHostage",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 10.664989,
+      "event": "Music.HostageNearRescue",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 10.664989,
+      "event": "Music.TenSecCount",
+      "files": [
+        "roundtenseccount"
+      ]
+    },
+    {
+      "durationSec": 8.001791,
+      "event": "Music.WonRound",
+      "files": [
+        "wonround"
+      ]
+    },
+    {
+      "durationSec": 6.401678,
+      "event": "Music.LostRound",
+      "files": [
+        "lostround"
+      ]
+    },
+    {
+      "durationSec": 4.801678,
+      "event": "Music.DeathCam",
+      "files": [
+        "deathcam"
+      ]
+    },
+    {
+      "durationSec": 8.001678,
+      "event": "Music.MVPAnthem",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 16.801678,
+      "event": "Music.MatchStart",
+      "files": [
+        "startofmatch"
+      ]
+    },
+    {
+      "durationSec": 104.001678,
+      "event": "Music.MatchEnd",
+      "files": [
+        "endofmatch"
+      ]
+    }
+  ],
   "dren_01": [
     {
       "durationSec": 215.666931,
@@ -4213,6 +4624,146 @@
     },
     {
       "durationSec": 50.525986,
+      "event": "Music.MatchEnd",
+      "files": [
+        "endofmatch"
+      ]
+    }
+  ],
+  "fool_01": [
+    {
+      "durationSec": 250.921707,
+      "event": "Music.Background",
+      "files": [
+        "mainmenu"
+      ]
+    },
+    {
+      "durationSec": 8.729025,
+      "event": "Music.MVPPreview",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 24.002676,
+      "event": "Music.Selection",
+      "files": [
+        "chooseteam"
+      ]
+    },
+    {
+      "durationSec": 17.457596,
+      "event": "Music.MatchFound",
+      "files": [
+        "startround_01",
+        "startround_02"
+      ]
+    },
+    {
+      "durationSec": 14.183923,
+      "event": "Music.LoadingScreen",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 17.457596,
+      "event": "Music.StartRound",
+      "files": [
+        "startround_01",
+        "startround_02"
+      ]
+    },
+    {
+      "durationSec": 14.183923,
+      "event": "Music.StartAction",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 17.457596,
+      "event": "Music.StartRound_GG",
+      "files": [
+        "startround_01",
+        "startround_02"
+      ]
+    },
+    {
+      "durationSec": 40.364738,
+      "event": "Music.BombPlanted",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 10.912064,
+      "event": "Music.BombTenSecCount",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 40.364738,
+      "event": "Music.GotHostage",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 10.912064,
+      "event": "Music.HostageNearRescue",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 10.912064,
+      "event": "Music.TenSecCount",
+      "files": [
+        "roundtenseccount"
+      ]
+    },
+    {
+      "durationSec": 8.729025,
+      "event": "Music.WonRound",
+      "files": [
+        "wonround"
+      ]
+    },
+    {
+      "durationSec": 7.637052,
+      "event": "Music.LostRound",
+      "files": [
+        "lostround"
+      ]
+    },
+    {
+      "durationSec": 8.729025,
+      "event": "Music.DeathCam",
+      "files": [
+        "deathcam"
+      ]
+    },
+    {
+      "durationSec": 8.729025,
+      "event": "Music.MVPAnthem",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 14.183923,
+      "event": "Music.MatchStart",
+      "files": [
+        "startofmatch"
+      ]
+    },
+    {
+      "durationSec": 60.001793,
       "event": "Music.MatchEnd",
       "files": [
         "endofmatch"
@@ -9173,6 +9724,143 @@
       ]
     }
   ],
+  "noisestorm_01": [
+    {
+      "durationSec": 161.295013,
+      "event": "Music.Background",
+      "files": [
+        "mainmenu"
+      ]
+    },
+    {
+      "durationSec": 6.735011,
+      "event": "Music.MVPPreview",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 22.095011,
+      "event": "Music.Selection",
+      "files": [
+        "chooseteam"
+      ]
+    },
+    {
+      "durationSec": 7.695011,
+      "event": "Music.MatchFound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 18.255011,
+      "event": "Music.LoadingScreen",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 7.695011,
+      "event": "Music.StartRound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 18.255011,
+      "event": "Music.StartAction",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 7.695011,
+      "event": "Music.StartRound_GG",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 38.415012,
+      "event": "Music.BombPlanted",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 11.535011,
+      "event": "Music.BombTenSecCount",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 38.415012,
+      "event": "Music.GotHostage",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 11.535011,
+      "event": "Music.HostageNearRescue",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 10.575011,
+      "event": "Music.TenSecCount",
+      "files": [
+        "roundtenseccount"
+      ]
+    },
+    {
+      "durationSec": 6.735011,
+      "event": "Music.WonRound",
+      "files": [
+        "wonround"
+      ]
+    },
+    {
+      "durationSec": 6.735011,
+      "event": "Music.LostRound",
+      "files": [
+        "lostround"
+      ]
+    },
+    {
+      "durationSec": 4.815012,
+      "event": "Music.DeathCam",
+      "files": [
+        "deathcam"
+      ]
+    },
+    {
+      "durationSec": 6.735011,
+      "event": "Music.MVPAnthem",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 16.335011,
+      "event": "Music.MatchStart",
+      "files": [
+        "startofmatch"
+      ]
+    },
+    {
+      "durationSec": 83.535011,
+      "event": "Music.MatchEnd",
+      "files": [
+        "endofmatch"
+      ]
+    }
+  ],
   "noisia_01": [
     {
       "durationSec": 129.828568,
@@ -9307,6 +9995,143 @@
     },
     {
       "durationSec": 50.146961,
+      "event": "Music.MatchEnd",
+      "files": [
+        "endofmatch"
+      ]
+    }
+  ],
+  "pegboardnerds_01": [
+    {
+      "durationSec": 241.876465,
+      "event": "Music.Background",
+      "files": [
+        "mainmenu"
+      ]
+    },
+    {
+      "durationSec": 7.628413,
+      "event": "Music.MVPPreview",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 17.814444,
+      "event": "Music.Selection",
+      "files": [
+        "chooseteam"
+      ]
+    },
+    {
+      "durationSec": 15.012698,
+      "event": "Music.MatchFound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 15.236326,
+      "event": "Music.LoadingScreen",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 15.012698,
+      "event": "Music.StartRound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 15.236326,
+      "event": "Music.StartAction",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 15.012698,
+      "event": "Music.StartRound_GG",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 38.438957,
+      "event": "Music.BombPlanted",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 11.250975,
+      "event": "Music.BombTenSecCount",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 38.438957,
+      "event": "Music.GotHostage",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 11.250975,
+      "event": "Music.HostageNearRescue",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 11.720204,
+      "event": "Music.TenSecCount",
+      "files": [
+        "roundtenseccount"
+      ]
+    },
+    {
+      "durationSec": 7.738843,
+      "event": "Music.WonRound",
+      "files": [
+        "wonround"
+      ]
+    },
+    {
+      "durationSec": 8.439456,
+      "event": "Music.LostRound",
+      "files": [
+        "lostround"
+      ]
+    },
+    {
+      "durationSec": 4.689456,
+      "event": "Music.DeathCam",
+      "files": [
+        "deathcam"
+      ]
+    },
+    {
+      "durationSec": 7.628413,
+      "event": "Music.MVPAnthem",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 15.939456,
+      "event": "Music.MatchStart",
+      "files": [
+        "startofmatch"
+      ]
+    },
+    {
+      "durationSec": 79.69873,
       "event": "Music.MatchEnd",
       "files": [
         "endofmatch"
@@ -13520,6 +14345,148 @@
       ]
     }
   ],
+  "tristam_braken_01": [
+    {
+      "durationSec": 219.429916,
+      "event": "Music.Background",
+      "files": [
+        "mainmenu"
+      ]
+    },
+    {
+      "durationSec": 7.37322,
+      "event": "Music.MVPPreview",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 26.744648,
+      "event": "Music.Selection",
+      "files": [
+        "chooseteam"
+      ]
+    },
+    {
+      "durationSec": 10.97322,
+      "event": "Music.MatchFound",
+      "files": [
+        "startround_01",
+        "startround_02"
+      ]
+    },
+    {
+      "durationSec": 13.373219,
+      "event": "Music.LoadingScreen",
+      "files": [
+        "startaction_01",
+        "startaction_02"
+      ]
+    },
+    {
+      "durationSec": 10.97322,
+      "event": "Music.StartRound",
+      "files": [
+        "startround_01",
+        "startround_02"
+      ]
+    },
+    {
+      "durationSec": 13.373219,
+      "event": "Music.StartAction",
+      "files": [
+        "startaction_01",
+        "startaction_02"
+      ]
+    },
+    {
+      "durationSec": 10.97322,
+      "event": "Music.StartRound_GG",
+      "files": [
+        "startround_01",
+        "startround_02"
+      ]
+    },
+    {
+      "durationSec": 38.744648,
+      "event": "Music.BombPlanted",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 10.97322,
+      "event": "Music.BombTenSecCount",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 38.744648,
+      "event": "Music.GotHostage",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 10.97322,
+      "event": "Music.HostageNearRescue",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 12.001791,
+      "event": "Music.TenSecCount",
+      "files": [
+        "roundtenseccount"
+      ]
+    },
+    {
+      "durationSec": 7.37322,
+      "event": "Music.WonRound",
+      "files": [
+        "wonround"
+      ]
+    },
+    {
+      "durationSec": 7.718299,
+      "event": "Music.LostRound",
+      "files": [
+        "lostround"
+      ]
+    },
+    {
+      "durationSec": 5.144649,
+      "event": "Music.DeathCam",
+      "files": [
+        "deathcam"
+      ]
+    },
+    {
+      "durationSec": 7.37322,
+      "event": "Music.MVPAnthem",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 16.920975,
+      "event": "Music.MatchStart",
+      "files": [
+        "startofmatch"
+      ]
+    },
+    {
+      "durationSec": 141.602676,
+      "event": "Music.MatchEnd",
+      "files": [
+        "endofmatch"
+      ]
+    }
+  ],
   "troelsfolmann_01": [
     {
       "durationSec": 245.106934,
@@ -14352,6 +15319,143 @@
     },
     {
       "durationSec": 44.400002,
+      "event": "Music.MatchEnd",
+      "files": [
+        "endofmatch"
+      ]
+    }
+  ],
+  "vicetone_01": [
+    {
+      "durationSec": 208.562988,
+      "event": "Music.Background",
+      "files": [
+        "mainmenu"
+      ]
+    },
+    {
+      "durationSec": 7.985896,
+      "event": "Music.MVPPreview",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 24.195555,
+      "event": "Music.Selection",
+      "files": [
+        "chooseteam"
+      ]
+    },
+    {
+      "durationSec": 15.485374,
+      "event": "Music.MatchFound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 12.098798,
+      "event": "Music.LoadingScreen",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 15.485374,
+      "event": "Music.StartRound",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 12.098798,
+      "event": "Music.StartAction",
+      "files": [
+        "startaction_01"
+      ]
+    },
+    {
+      "durationSec": 15.485374,
+      "event": "Music.StartRound_GG",
+      "files": [
+        "startround_01"
+      ]
+    },
+    {
+      "durationSec": 37.259567,
+      "event": "Music.BombPlanted",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 11.612404,
+      "event": "Music.BombTenSecCount",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 37.259567,
+      "event": "Music.GotHostage",
+      "files": [
+        "bombplanted"
+      ]
+    },
+    {
+      "durationSec": 11.612404,
+      "event": "Music.HostageNearRescue",
+      "files": [
+        "bombtenseccount"
+      ]
+    },
+    {
+      "durationSec": 11.615623,
+      "event": "Music.TenSecCount",
+      "files": [
+        "roundtenseccount"
+      ]
+    },
+    {
+      "durationSec": 7.985896,
+      "event": "Music.WonRound",
+      "files": [
+        "wonround"
+      ]
+    },
+    {
+      "durationSec": 7.985896,
+      "event": "Music.LostRound",
+      "files": [
+        "lostround"
+      ]
+    },
+    {
+      "durationSec": 5.80898,
+      "event": "Music.DeathCam",
+      "files": [
+        "deathcam"
+      ]
+    },
+    {
+      "durationSec": 7.985896,
+      "event": "Music.MVPAnthem",
+      "files": [
+        "roundmvpanthem_01",
+        "roundmvpanthem_02"
+      ]
+    },
+    {
+      "durationSec": 17.42136,
+      "event": "Music.MatchStart",
+      "files": [
+        "startofmatch"
+      ]
+    },
+    {
+      "durationSec": 95.808456,
       "event": "Music.MatchEnd",
       "files": [
         "endofmatch"

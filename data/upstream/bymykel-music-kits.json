@@ -508,5 +508,45 @@
     "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIijyEKzb_3d19nuJm-W91xg-oytv2a3EFOpycPlqCdatqGqOaE_I6nLVzbCw7pw4rZrTnHhwEtx6m-Dw43_JS-WcEZ-XYyGj8X1",
     "standard": true,
     "stattrak": true
+  },
+  "105": {
+    "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/music_kits/alleycvt_01_png.png",
+    "standard": true,
+    "stattrak": true
+  },
+  "106": {
+    "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/music_kits/arcando_01_png.png",
+    "standard": true,
+    "stattrak": true
+  },
+  "107": {
+    "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/music_kits/djdiesel_01_png.png",
+    "standard": true,
+    "stattrak": true
+  },
+  "108": {
+    "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/music_kits/fool_01_png.png",
+    "standard": true,
+    "stattrak": true
+  },
+  "109": {
+    "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/music_kits/noisestorm_01_png.png",
+    "standard": true,
+    "stattrak": true
+  },
+  "110": {
+    "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/music_kits/pegboardnerds_01_png.png",
+    "standard": true,
+    "stattrak": true
+  },
+  "111": {
+    "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/music_kits/tristam_braken_01_png.png",
+    "standard": true,
+    "stattrak": true
+  },
+  "112": {
+    "image": "https://raw.githubusercontent.com/ByMykel/counter-strike-image-tracker/main/static/panorama/images/econ/music_kits/vicetone_01_png.png",
+    "standard": true,
+    "stattrak": true
   }
 }

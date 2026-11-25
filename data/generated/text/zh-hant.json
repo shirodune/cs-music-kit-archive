@@ -605,6 +605,54 @@
       "description": "體驗來自銀河系中最動感電台的音樂包，帶來沉浸在昨日復古懷舊氣息中的今日最新聲音，這就是 Starjunk 95。",
       "name": "Starjunk 95 - Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT 和 LEVEL UP 攜手打造《BELIEVE》，毫不間斷的低音作品，強烈的 Drop 讓整個伺服器為之撼動。",
+      "name": "ALLEYCVT & LEVEL UP - BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Arcando 和 Pirapus 帶來的《Ultrasound》帶來高速鼓聲和低音歌曲，為首次接觸到最終擊殺保持高壓節奏。",
+      "name": "Arcando & Pirapus - Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "DJ DIESEL，又名俠客‧歐尼爾，與低音重量級音樂人 Hairtage 合作，帶來的《BANG YOUR HEAD》為爆頭帶來迴響貝斯節奏。",
+      "name": "DJ DIESEL & Hairitage - BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "恐怖份子終於有了主題曲。暗黑、電影感，充滿了合成器浪潮感，F.O.O. 的《Criminals》為每次執行提供了合適配樂。",
+      "name": "F.O.O.L - Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Noisestorm 的《Crab Rave》在 2018 年愚人節發行，迅速成為網路傳奇。贏下該回合並散播好消息：敵方隊伍全滅了。",
+      "name": "Noisestorm - Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Pegboard Nerd 的《Disconnected》是 Monstercat 唱片公司經典之作，在短路音響上已經播放了超過十年。這一次，該換對方隊伍斷線了。",
+      "name": "Pegboard Nerds - Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Tristam & Braken 的《Flight》是純粹的懷舊，即使現在聆聽，也和 2013 年首次發行時一樣令人百聽不厭。",
+      "name": "Tristam & Braken - Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "有些歌曲讓人回到過去，而 Vicetone 的《Nevada》是一劑 2016 年的回憶，最適合在慶祝勝利時聆聽。",
+      "name": "Vicetone & Cozi Zuehlsdorff - Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "NIGHTMODE 音樂箱",
     "2024-08-20-masterminds-2": "Masterminds 2 音樂箱",
     "2025-08-14-deluge": "Deluge 音樂箱",
-    "2026-05-07-nightmode-ii": "NIGHTMODE II 音樂包"
+    "2026-05-07-nightmode-ii": "NIGHTMODE II 音樂包",
+    "2026-11-17-monstercat": "Monstercat 音樂包"
   }
 }

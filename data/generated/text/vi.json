@@ -605,6 +605,54 @@
       "description": "Thưởng thức âm nhạc từ đài phát thanh tuyệt vời nhất trong dải ngân hà, đã lên sóng rồi!",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT và LEVEL UP bắt tay hợp tác cho ra \"BELIEVE\", một bản nhạc bass dồn dập không ngừng nghỉ với những cú drop đủ làm chấn động cả máy chủ.",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Từ Arcando và Pirapus, \"Ultrasound\" là bản quốc ca drum n' bass tốc độ cao, giữ áp lực từ nhịp đập đầu tiên cho tới phát chí mạng cuối cùng.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "Khi DJ DIESEL, cũng chính là Shaquille O'Neal, bắt tay với bậc thầy âm bass hạng nặng Hairitage để cho ra \"BANG YOUR HEAD\", bản dubstep cực chất để song hành cùng những cú bắn xuyên táo hoàn hảo.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "Đội khủng bố cuối cùng đã có bản quốc ca. Tối tăm, đậm chất điện ảnh và đậm chất synthwave, \"Criminals\" của F.O.O.L. đồng hành cùng mỗi lầm xông pha khu bom bằng bản nhạc nền xứng đáng.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Phát hành vào ngày Cá tháng Tư 2018, \"Crab Rave\" của Noisestorm đã len lỏi và trở thành huyền thoại internet. Giành chiến thắng từng ván đấu và truyền bá thông điệp: đội địch đã không còn nữa.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Bản nhạc kinh điển của Monstercat, \"Disconnected\" của Pegboard Nerds trong cả thập kỷ đã làm chập mạch không biết bao nhiêu dàn loa. Lần này, đến lượt đội kia ngắt kết nối.",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "\"Flight\" của Tristam & Braken là bản nhạc đậm chất thuần túy hoài niệm, ngày nay nghe vẫn hay như khi nó được phát hành vào năm 2013.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Có những bản nhạc sẽ đưa bạn quay ngược thời gian, và \"Nevada\" của Vicetone là một liều thuốc với nhãn in năm 2016, thích hợp nhất để thưởng thức khi ăn mừng chiến thắng.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "Bộ gói âm thanh NIGHTMODE",
     "2024-08-20-masterminds-2": "Hộp gói âm thanh Masterminds 2",
     "2025-08-14-deluge": "Bộ gói âm thanh Deluge",
-    "2026-05-07-nightmode-ii": "Gói âm thanh NIGHTMODE II"
+    "2026-05-07-nightmode-ii": "Gói âm thanh NIGHTMODE II",
+    "2026-11-17-monstercat": "Gói âm thanh Monstercat"
   }
 }

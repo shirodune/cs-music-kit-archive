@@ -2261,7 +2261,8 @@
     "aliases": [],
     "id": "pirapus",
     "kits": [
-      101
+      101,
+      106
     ],
     "links": [
       {
@@ -2363,5 +2364,157 @@
     "musicbrainzId": "18822272-d7dd-4619-bb3e-dd619b2cd179",
     "name": "Starjunk 95",
     "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "alleycvt-level-up",
+    "kits": [
+      105
+    ],
+    "links": [],
+    "musicbrainzId": null,
+    "name": "ALLEYCVT & LEVEL UP",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "dj-diesel-hairitage",
+    "kits": [
+      107
+    ],
+    "links": [],
+    "musicbrainzId": null,
+    "name": "DJ DIESEL & Hairitage",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "f-o-o-l",
+    "kits": [
+      108
+    ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.fuckourordinarylives.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/1ldNdtZX38LAsOk0ciLvb2"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/ca/artist/410555666"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/fuckourordinarylives"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCMbhB5CA18gAui_64sk-plw"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/8ccd44fb-1c4a-4c5f-98b5-cf3b35a2aa5c"
+      }
+    ],
+    "musicbrainzId": "8ccd44fb-1c4a-4c5f-98b5-cf3b35a2aa5c",
+    "name": "F.O.O.L",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "noisestorm",
+    "kits": [
+      109
+    ],
+    "links": [
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/2BuSNpxpMGJGiAAWJYJT2t"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/ie/artist/419653769"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/noisestorm"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCMxqfxGRX07XOoFfyaM-eYA"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/93c6c515-e575-4114-80e5-46bf6aa408bc"
+      }
+    ],
+    "musicbrainzId": "93c6c515-e575-4114-80e5-46bf6aa408bc",
+    "name": "Noisestorm",
+    "type": "person"
+  },
+  {
+    "aliases": [],
+    "id": "pegboard-nerds",
+    "kits": [
+      110
+    ],
+    "links": [
+      {
+        "kind": "official",
+        "url": "http://www.pegboardnerds.com/"
+      },
+      {
+        "kind": "bandcamp",
+        "url": "https://pegboardnerds.bandcamp.com/"
+      },
+      {
+        "kind": "spotify",
+        "url": "https://open.spotify.com/artist/0lLY20XpZ9yDobkbHI7u1y"
+      },
+      {
+        "kind": "apple-music",
+        "url": "https://music.apple.com/dk/artist/492889905"
+      },
+      {
+        "kind": "soundcloud",
+        "url": "https://soundcloud.com/pegboardnerds"
+      },
+      {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/channel/UCeVB7ql9TxVhvJhEEQ0qipQ"
+      },
+      {
+        "kind": "musicbrainz",
+        "url": "https://musicbrainz.org/artist/c729681b-c5c1-4509-a6d1-f916c51aefd7"
+      }
+    ],
+    "musicbrainzId": "c729681b-c5c1-4509-a6d1-f916c51aefd7",
+    "name": "Pegboard Nerds",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "tristam-braken",
+    "kits": [
+      111
+    ],
+    "links": [],
+    "musicbrainzId": null,
+    "name": "Tristam & Braken",
+    "type": "group"
+  },
+  {
+    "aliases": [],
+    "id": "vicetone-cozi-zuehlsdorff",
+    "kits": [
+      112
+    ],
+    "links": [],
+    "musicbrainzId": null,
+    "name": "Vicetone & Cozi Zuehlsdorff",
+    "type": "group"
   }
 ]

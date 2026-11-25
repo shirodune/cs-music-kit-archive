@@ -7,6 +7,10 @@
     "height": 1024,
     "width": 1024
   },
+  "alleycvt_01": {
+    "height": 1024,
+    "width": 1024
+  },
   "alrt_01": {
     "height": 1024,
     "width": 1024
@@ -18,6 +22,10 @@
   "amontobin_01": {
     "height": 512,
     "width": 512
+  },
+  "arcando_01": {
+    "height": 1024,
+    "width": 1024
   },
   "austinwintory_01": {
     "height": 256,
@@ -99,6 +107,10 @@
     "height": 512,
     "width": 512
   },
+  "djdiesel_01": {
+    "height": 1024,
+    "width": 1024
+  },
   "dren_01": {
     "height": 256,
     "width": 256
@@ -118,6 +130,10 @@
   "feedme_01": {
     "height": 256,
     "width": 256
+  },
+  "fool_01": {
+    "height": 1024,
+    "width": 1024
   },
   "freakydna_01": {
     "height": 512,
@@ -259,9 +275,17 @@
     "height": 256,
     "width": 256
   },
+  "noisestorm_01": {
+    "height": 1024,
+    "width": 1024
+  },
   "noisia_01": {
     "height": 256,
     "width": 256
+  },
+  "pegboardnerds_01": {
+    "height": 1024,
+    "width": 1024
   },
   "perfectworld_01": {
     "height": 1024,
@@ -383,6 +407,10 @@
     "height": 512,
     "width": 512
   },
+  "tristam_braken_01": {
+    "height": 1024,
+    "width": 1024
+  },
   "troelsfolmann_01": {
     "height": 256,
     "width": 256
@@ -400,6 +428,10 @@
     "width": 1024
   },
   "valve_cs2_01": {
+    "height": 1024,
+    "width": 1024
+  },
+  "vicetone_01": {
     "height": 1024,
     "width": 1024
   }

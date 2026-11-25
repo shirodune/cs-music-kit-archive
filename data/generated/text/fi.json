@@ -605,6 +605,54 @@
       "description": "Fiilistele galaksin svengaavimman radiokanavan musiikkia, joka yhdistelee nykysoundia entisaikojen nostalgian kanssa. Kyseessä on Starjunk 95.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT ja LEVEL UP puhaltavat yhteen hiileen kappaleella BELIEVE. Kyseessä on peräänantamaton ja bassopainotteinen kappale, jonka hevimmät osuudet tärisyttävät koko palvelinta.",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Arcandon ja Pirapusin tuottama Ultrasound on nopeatempoinen drum and bass -kappale, joka ei hellitä kertaakaan ensimmäisestä yhteenotosta viimeiseen tappoon asti.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "Kun DJ DIESEL, joka tunnetaan myös nimellä Shaquille O'Neal, tekee yhteistyötä kovista bassolinjoista tunnetun Hairitagen kanssa, tuloksena on tarttuva dubstep-kappale BANG YOUR HEAD, jonka tahtiin kelpaa tehdä pääosumia.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "Terroristeille on vihdoinkin oma teemamusiikkinsa. F.O.O.L:n synkkä, elokuvamainen ja synthwave-soundia pursuava Criminals tarjoaa täydellisen ääniraidan vihollisten listimiseen.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Noisestormin vuoden 2018 aprillipäivänä julkaisema Crab Rave nousi varsinaiseksi legendaksi internetissä. Voita erä ja levitä ilosanomaa vihollisen kuolemasta.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Monstercatista tunnetun Pegboard Nerdsin Disconnected on jo vuosikymmenen ajan pistänyt kaiuttimia koetukselle. Tällä kertaa vihollisjoukkue joutuu koetukselle.",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Tristamin ja Brakenin Flight on puhdasta nostalgiaa, ja kuulostaa tänään aivan yhtä hyvältä kuin vuonna 2013, jolloin se alun perin julkaistiin.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Jotkin kappaleet vievät takaisin menneisyyteen. Vicetonen Nevada on kuin aikakapseli vuodelta 2016, ja sopii mainiosti voiton juhlimiseen.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "NIGHTMODE-musiikkipakkauslaatikko",
     "2024-08-20-masterminds-2": "Masterminds 2 -musiikkipakkauslaatikko",
     "2025-08-14-deluge": "Deluge-musiikkipakkauslaatikko",
-    "2026-05-07-nightmode-ii": "NIGHTMODE II -musiikkipakkaukset"
+    "2026-05-07-nightmode-ii": "NIGHTMODE II -musiikkipakkaukset",
+    "2026-11-17-monstercat": "Monstercat Musiikkipakkaukset"
   }
 }

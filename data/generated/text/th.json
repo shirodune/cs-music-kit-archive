@@ -605,6 +605,54 @@
       "description": "สัมผัสประสบการณ์เสียงเพลงจากสถานีที่ยอดเยี่ยมที่สุดในกาแล็กซี นำเสนอท่วงทำนองเพลงสดใหม่แห่งยุคปัจจุบันที่ผสานเข้ากับความทรงจำอันอันแสนคลาสสิกของวันวาน นี่คือ Starjunk 95",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT และ LEVEL UP ผนึกกำลังกันใน \"BELIEVE\" เพลงสายเบสสุดเดือดไม่มียั้ง พร้อมท่อนดรอปที่หนักหน่วงจนสะเทือนไปทั้งเซิร์ฟเวอร์",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "จาก Arcando และ Pirapus สู่ \"Ultrasound\" คือเพลงแนวกลองและเบสความเร็วสูงที่จะคอยกดดัน และเร่งจังหวะอย่างต่อเนื่อง ตั้งแต่การปะทะครั้งแรกไปจนถึงการสังหารครั้งสุดท้าย",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "เมื่อ DJ DIESEL หรือที่รู้จักกันในนาม Shaquille O'Neal ร่วมงานกับเจ้าพ่อสายเบสอย่าง Hairitage ผลลัพธ์ที่ได้คือ \"BANG YOUR HEAD\" เพลงดับสเต็ปสุดเดือดที่สร้างมาเพื่อการเล็งที่หัวโดยเฉพาะ",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "ในที่สุดฝั่ง T ก็มีเพลงธีมประจำตัวเสียที ด้วยบรรยากาศอันมืดหม่น ให้อารมณ์ราวกับภาพยนตร์ และอัดแน่นด้วยซาวด์ซินธ์เวฟ เพลง \"Criminals\" จาก F.O.O.L พร้อมมอบดนตรีประกอบให้กับทุกจังหวะช่วงปฏิบัติการ",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "เปิดตัวครั้งแรกในวัน April Fools' Day ปี 2018 เพลง \"Crab Rave\" ของ Noisestorm ได้คืบคลานจนกลายเป็นตำนานของอินเทอร์เน็ต ชนะรอบนี้แล้วไปประกาศข่าวกันเลย ทีมศัตรูหายไปหมดแล้ว",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "ผลงานคลาสสิกจากอัลบั้ม Monstercat อย่างเพลง \"Disconnected\" ของ Pegboard Nerds ได้ทำลำโพงช็อตมานานกว่าทศวรรษแล้ว แต่คราวนี้ ทีมศัตรูคือฝ่ายที่จะหลุดการเชื่อมต่อออกจากเกมแทน",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "เพลง \"Flight\" ของ Tristam & Braken ทำให้นึกถึงความหลัง และยังคงไพเราะไม่แพ้ตอนที่ปล่อยออกมาครั้งแรกในปี 2013",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "บางบทเพลงพาคุณย้อนเวลากลับไปในอดีตได้ทันที และเพลง \"Nevada\" ของ Vicetone ก็คือกลิ่นอายแห่งปี 2016 ที่เหมาะจะเปิดฟังที่สุดในช่วงเวลาแห่งการฉลองชัยชนะ",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "กล่องชุดอุปกรณ์เพลง NIGHTMODE",
     "2024-08-20-masterminds-2": "กล่องชุดอุปกรณ์เพลง Masterminds 2",
     "2025-08-14-deluge": "กล่องชุดอุปกรณ์เพลง Deluge",
-    "2026-05-07-nightmode-ii": "ชุดอุปกรณ์เพลง NIGHTMODE II"
+    "2026-05-07-nightmode-ii": "ชุดอุปกรณ์เพลง NIGHTMODE II",
+    "2026-11-17-monstercat": "ชุดอุปกรณ์เพลง Monstercat"
   }
 }

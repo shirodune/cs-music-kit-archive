@@ -605,6 +605,54 @@
       "description": "Vivi l'esperienza di un tema musicale trasmesso dalla stazione più groovy della galassia, con i suoni più innovativi di oggi permeati dalla nostalgia vintage di ieri. Questa è Starjunk 95.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT e LEVEL UP uniscono le forze in \"BELIEVE\", un brano dai bassi incessanti con drop così pesanti da far tremare l'intero server.",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Di Arcando e Pirapus, \"Ultrasound\" è un inno drum and bass ad alta velocità che mantiene alta la pressione dal primo contatto all'ultima uccisione.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "Quando DJ DIESEL, alias Shaquille O'Neal, collabora con il peso massimo del basso Hairitage, il risultato è \"BANG YOUR HEAD\", un pezzo dubstep esplosivo creato per i colpi alla testa.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "Finalmente anche i Terroristi hanno un tema musicale. Cupo, cinematografico e pieno di synthwave, \"Criminals\" dei F.O.O.L offre una colonna sonora per ogni esecuzione.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Pubblicata il primo aprile 2018, \"Crab Rave\" di Noisestorm si è fatta strada a passo di granchio fino a diventare una leggenda di internet. Vinci il round e spargi la voce: la squadra nemica non c'è più.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Un classico di Monstercat: \"Disconnected\" dei Pegboard Nerds manda in cortocircuito gli altoparlanti da oltre dieci anni. Questa volta, però, a disconnettersi è l'altra squadra.",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "\"Flight\" di Tristam & Braken è pura nostalgia, e suona bene oggi come quando uscì originariamente nel 2013.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Certi brani ti riportano subito indietro nel tempo, e \"Nevada\" di Vicetone è una dose del 2016, da gustare al meglio festeggiando una vittoria.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "Scatola di temi musicali NIGHTMODE",
     "2024-08-20-masterminds-2": "Scatola di temi musicali Masterminds 2",
     "2025-08-14-deluge": "Scatola di temi musicali Deluge",
-    "2026-05-07-nightmode-ii": "Temi musicali NIGHTMODE II"
+    "2026-05-07-nightmode-ii": "Temi musicali NIGHTMODE II",
+    "2026-11-17-monstercat": "Temi musicali Monstercat"
   }
 }

@@ -605,6 +605,54 @@
       "description": "Zažij na vlastní uši nejhustější stanici v galaxii, kde se hrají nejnovější zvuky dneška prokládané nostalgickými tóny včerejška. Tohle je Starjunk 95.",
       "name": "Starjunk 95 – Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT a LEVEL UP spojili síly a dali vzniknout našlapanému basovému balíčku „BELIEVE“, jehož dropy otřesou mapou víc než výbuch bomby.",
+      "name": "ALLEYCVT & LEVEL UP – BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "„Ultrasound“ od Arcanda a Pirapuse je pocta žánru drum’n’bass, která v první sekundě sešlápne plyn až na podlahu a nepustí.",
+      "name": "Arcando & Pirapus – Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "DJ DIESEL (TEN Shaquille O'Neal) si přizval basovou těžkou váhu v podobě Hairitage a společně přichystali „BANG YOUR HEAD“, což je balíček, kterému nejde říkat jinak než dubstepový banger jako stvořený pro headshotování.",
+      "name": "DJ DIESEL & Hairitage – BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "Teroristi mají konečně vlastní znělku! Balíček „Criminals“ od F.O.O.L.a je temný a filmový synthwave, který má skladbu pro každou příležitost.",
+      "name": "F.O.O.L – Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Noisestormův „Crab Rave“ byl původně vydán jako aprílový žertík v roce 2018, ale netrvalo dlouho a stala se z něj internetová legenda. Takže vyhraj kolo a zvěstuj tu skvělou novinu, že nepřátelský tým je v tahu!",
+      "name": "Noisestorm – Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "„Disconnected“ od Pegboard Nerds, stálic vydavatelství Monstercat, zkratuje repráky už více než dekádu. Ale tentokrát to bude nepřátelský tým, kdo se odpojí.",
+      "name": "Pegboard Nerds – Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "„Flight“ od Tristam & Braken je čirá nostalgie, která zní pořád stejně dobře jako v roce 2013, kdy spatřila světlo světa.",
+      "name": "Tristam & Braken – Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Některé songy tě zkrátka vezmou zpátky a „Nevada“ od Vicetona je dávka roku 2016, která osladí každou výhru.",
+      "name": "Vicetone & Cozi Zuehlsdorff – Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "NIGHTMODE Music Kit Box",
     "2024-08-20-masterminds-2": "Masterminds 2 Music Kit Box",
     "2025-08-14-deluge": "Deluge Music Kit Box",
-    "2026-05-07-nightmode-ii": "Hudební balíčky NIGHTMODE II"
+    "2026-05-07-nightmode-ii": "Hudební balíčky NIGHTMODE II",
+    "2026-11-17-monstercat": "Hudební balíčky Monstercat"
   }
 }

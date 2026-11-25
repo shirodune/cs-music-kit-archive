@@ -605,6 +605,54 @@
       "description": "Posłuchaj zestawu utworów od najbardziej rozbujanej stacji w galaktyce, zawierającego najnowsze współczesne brzmienia przesiąknięte tęsknotą za minionymi czasami. Oto Starjunk 95.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "ALLEYCVT oraz LEVEL UP łączą siły w utworze „BELIEVE”, nieustępliwym basowym brzmieniu z dropami na tyle ciężkimi, by trząść całym serwerem.",
+      "name": "ALLEYCVT & LEVEL UP, BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "„Ultrasound” od Arcando i Pirapusa to szybki drum and bassowy hymn, który trzyma presję przez cały czas – od pierwszego kontaktu aż po ostatnie zabójstwo.",
+      "name": "Arcando & Pirapus, Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "Kiedy DJ DIESEL, czyli Shaquille O'Neal, łączy siły z basową wagą ciężką Hairitage, powstaje „BANG YOUR HEAD”, dubstepowy hicior stworzony pod strzelanie prosto w głowy.",
+      "name": "DJ DIESEL & Hairitage, BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "Terroryści w końcu doczekali się własnego motywu muzycznego. Mroczny, filmowy i pełen synthwave'u utwór „Criminals” od F.O.O.L zapewnia oprawę muzyczną każdej akcji.",
+      "name": "F.O.O.L, Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Wydany w prima aprilis w 2018 roku utwór „Crab Rave” Noisestorma wyspacerował sobie drogę do statusu internetowej legendy. Wygraj rundę i głoś wieść; po rywalach ani śladu.",
+      "name": "Noisestorm, Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "Będący klasykiem wytwórni Monstercat „Disconnected” autorstwa Pegboard Nerds od ponad dekady rozgrzewa głośniki aż do zwracia. Tym razem to przeciwnicy rozłączają się z grą.",
+      "name": "Pegboard Nerds, Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "„Flight” od duetu Tristam & Braken to czysta nostalgia, która dziś brzmi równie dobrze, jak wtedy, gdy pierwotnie ukazała się w 2013 roku.",
+      "name": "Tristam & Braken, Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Niektóre utwory od razu przywołują wspomnienia, a „Nevada” od Vicetone to dawka wspomnień z 2016 roku, którą najlepiej słuchać, świętując zwycięstwo.",
+      "name": "Vicetone & Cozi Zuehlsdorff, Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "Skrzynia z zestawem utworów „NIGHTMODE”",
     "2024-08-20-masterminds-2": "Skrzynia z zestawem utworów „Masterminds 2”",
     "2025-08-14-deluge": "Skrzynia z zestawem utworów „Deluge”",
-    "2026-05-07-nightmode-ii": "Zestawy utworów NIGHTMODE II"
+    "2026-05-07-nightmode-ii": "Zestawy utworów NIGHTMODE II",
+    "2026-11-17-monstercat": "Zestawy utworów Monstercat"
   }
 }

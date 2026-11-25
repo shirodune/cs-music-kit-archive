@@ -605,6 +605,54 @@
       "description": "Tapasztald meg a galaxis legmenőbb rádióállomásának zenekészletét, amely a mai legújabb hangzásokat retró nosztalgiával ötvözi. Ez a Starjunk 95.",
       "name": "Starjunk 95, Industrial Sunset Memories",
       "title": "Industrial Sunset Memories"
+    },
+    "105": {
+      "credit": "ALLEYCVT & LEVEL UP",
+      "description": "Az ALLEYCVT és a LEVEL UP egyesítik erőiket a „BELIEVE”-en, egy könyörtelen basszuslemezen, amelynek dropjai elég erősek ahhoz, hogy az egész szervert megrázzák.",
+      "name": "ALLEYCVT & LEVEL UP – BELIEVE",
+      "title": "BELIEVE"
+    },
+    "106": {
+      "credit": "Arcando & Pirapus",
+      "description": "Arcando és Pirapus „Ultrasound” című száma egy nagy sebességű dob és basszushimnusz, amely az első találkozástól az utolsó ölésig fenntartja a nyomást.",
+      "name": "Arcando & Pirapus – Ultrasound",
+      "title": "Ultrasound"
+    },
+    "107": {
+      "credit": "DJ DIESEL & Hairitage",
+      "description": "Amikor DJ DIESEL, azaz Shaquille O'Neal összeáll a basszus nehézsúlyú Hairitage-dzsel, az eredmény a „BANG YOUR HEAD”, egy dubstep-bomba, amelyet fejlövésekhez találtak ki.",
+      "name": "DJ DIESEL & Hairitage – BANG YOUR HEAD",
+      "title": "BANG YOUR HEAD"
+    },
+    "108": {
+      "credit": "F.O.O.L",
+      "description": "A T oldalnak végre saját főcímdala van. A F.O.O.L „Criminals” című száma sötét, moziszerű és tele van synthwave-vel; minden végrehajtáshoz szolgáltat aláfestést.",
+      "name": "F.O.O.L – Criminals",
+      "title": "Criminals"
+    },
+    "109": {
+      "credit": "Noisestorm",
+      "description": "Noisestorm 2018-as áprilisi bolondok napján megjelent „Crab Rave”-je bejutott az internetes legendák közé. Nyerd meg a kört, és terjeszd a híreket; az ellenséges csapatnak annyi.",
+      "name": "Noisestorm – Crab Rave",
+      "title": "Crab Rave"
+    },
+    "110": {
+      "credit": "Pegboard Nerds",
+      "description": "A Monstercat klasszikusának számító Pegboard Nerds „Disconnected” című száma több mint egy évtizede okoz rövidzárlatot a hangszórókban. Ezúttal a másik csapatnak szakad meg a kapcsolata.",
+      "name": "Pegboard Nerds – Disconnected",
+      "title": "Disconnected"
+    },
+    "111": {
+      "credit": "Tristam & Braken",
+      "description": "Tristam & Braken „Flight” című száma színtiszta nosztalgia, ami ma is ugyanolyan jól hangzik, mint amikor 2013-ban először megjelent.",
+      "name": "Tristam & Braken – Flight",
+      "title": "Flight"
+    },
+    "112": {
+      "credit": "Vicetone & Cozi Zuehlsdorff",
+      "description": "Vannak dalok, amelyek rögtön visszarepítenek az időben, és a Vicetone „Nevada” című száma egy adag 2016, amit a legjobb egy győzelem ünneplése közben élvezni.",
+      "name": "Vicetone & Cozi Zuehlsdorff – Nevada",
+      "title": "Nevada"
     }
   },
   "releases": {
@@ -615,6 +663,7 @@
     "2024-02-06-nightmode": "NIGHTMODE Zenekészlet Doboz",
     "2024-08-20-masterminds-2": "Lángelmék 2 Zenekészlet Doboz",
     "2025-08-14-deluge": "Özönvíz Zenekészlet Doboz",
-    "2026-05-07-nightmode-ii": "NIGHTMODE II Zenekészletek"
+    "2026-05-07-nightmode-ii": "NIGHTMODE II Zenekészletek",
+    "2026-11-17-monstercat": "Monstercat Zenekészletek"
   }
 }
