@@ -23,3 +23,17 @@ Text in Markdown. Use `###` for subheadings: the page gives the section its head
 - Official Valve text (kit names, descriptions, box names) is quoted as it is, never rewritten or translated.
 
 The build fails on a folder that is not a kit or artist, a file name that is not a locale, a missing `en.md`, or front matter without sources.
+
+## Writing and checking
+
+A writer and a separate checker go through every text before the owner reviews it (`CLAUDE.md`). The checker splits the text into single claims, checks each against the page it cites, and compares the Chinese with the English. Problems the checks found before, worth giving every writer up front:
+
+- Close paraphrase: a Wikipedia lead or an official biography retold in the same order of facts counts as copied. Take the facts and write your own text.
+- Claims broader than the source: "won" for an award the source lists only as a nomination, "his one kit", "best known for", "first-ever", "six years later" for five years and eight months.
+- Connections the writer made up: a word in Valve's description that is also a song title is not a link between them.
+- Filler, such as the label posting a preview on YouTube, and promotional quotes.
+- Which kits a box holds: cite the box's Steam Market listing, not release notes that do not list the kits.
+- Chinese box and album names: when only the English names match, write "英文名…同名", not "《中文盒名》与专辑《English》同名".
+- Give writers the release's `note` from `data/curated/releases.json` as well as `data/generated/`, and check the note too.
+
+A story opens with the work itself, not with "X shares its name with…": the kit page already shows the English title under the translated one. A kit with nothing sourced beyond its own page gets no story.
