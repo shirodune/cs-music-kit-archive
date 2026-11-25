@@ -151,6 +151,21 @@ async function main(): Promise<void> {
     .map(([defIndex, d]) => ({ defIndex: Number(defIndex), ...d }))
     .filter((d) => d.locName && en[d.locName]);
 
+  // DATA-25: the release and credits of a new kit reach main before the sync brings the kit's game data. A release
+  // whose kits are all missing from the game data waits, left out of the output, until they arrive. New kits get
+  // numbers above every kit in the game, so a lower missing number is a typo, not a kit to wait for.
+  const inGame = (defIndex: number) => String(defIndex) in itemsGame.music;
+  const newest = Math.max(...Object.keys(itemsGame.music).map(Number));
+  const waiting = releases.filter((r) => !r.kits.some(inGame));
+  const current = releases.filter((r) => r.kits.some(inGame));
+  for (const release of waiting) {
+    console.log(`note   ${release.id} waits for kits ${release.kits.join(", ")} (DATA-25)`);
+    for (const defIndex of release.kits) {
+      if (defIndex <= newest) fail(`${release.id}: kit ${defIndex} is not a kit`);
+      if (!credits[String(defIndex)]) fail(`kit ${defIndex} (${release.id}) has no credit in credits.json`);
+    }
+  }
+
   // DATA-14a: every kit belongs to exactly one release.
   const releaseOf = new Map<number, Release>();
   for (const release of releases) {
@@ -158,8 +173,20 @@ async function main(): Promise<void> {
       if (releaseOf.has(defIndex))
         fail(`kit ${defIndex} is in two releases: ${releaseOf.get(defIndex)?.id}, ${release.id}`);
       releaseOf.set(defIndex, release);
-      if (!definitions.some((d) => d.defIndex === defIndex)) fail(`${release.id}: kit ${defIndex} is not a kit`);
     }
+  }
+  for (const release of current) {
+    for (const defIndex of release.kits)
+      if (!definitions.some((d) => d.defIndex === defIndex)) fail(`${release.id}: kit ${defIndex} is not a kit`);
+  }
+
+  // Credits of kits still waiting are checked as far as they can be.
+  for (const [defIndex, credit] of Object.entries(credits)) {
+    if (inGame(Number(defIndex))) continue;
+    if (!releaseOf.has(Number(defIndex))) fail(`credits.json: kit ${defIndex} is not a kit and in no release`);
+    for (const { artist } of credit.artists)
+      if (!artistById.has(artist)) fail(`credits.json: kit ${defIndex} names unknown artist ${artist}`);
+    if (!credit.artists.some((a) => a.role === "main")) fail(`kit ${defIndex} has no main credit`);
   }
 
   // Box releases must list exactly the kits in the box's loot list.
@@ -171,7 +198,7 @@ async function main(): Promise<void> {
       fail(`${release.id}: kits ${names.join(", ")} differ from the ${box.name} loot list ${box.kits.join(", ")}`);
     }
   }
-  for (const release of releases) {
+  for (const release of current) {
     if (release.nameKey && !en[release.nameKey]) fail(`${release.id}: nameKey ${release.nameKey} has no English text`);
   }
 
@@ -268,7 +295,7 @@ async function main(): Promise<void> {
   }
 
   // Release names in every locale.
-  for (const release of releases) {
+  for (const release of current) {
     if (!release.nameKey) continue;
     for (const { segment } of LOCALES) {
       const value = loc[segment]?.[release.nameKey];
@@ -284,7 +311,10 @@ async function main(): Promise<void> {
     if (!fetched) fail(`artist ${a.id}: no MusicBrainz links fetched for ${a.musicbrainzId}, run pnpm data:links`);
     const theirs = kits.filter((k) => k.artists.some((c) => c.artist === a.id)).map((k) => k.defIndex);
     if (theirs.length === 0) {
-      fail(`artist ${a.id} has no kits (DATA-16)`);
+      const waits = Object.entries(credits).some(
+        ([defIndex, c]) => !inGame(Number(defIndex)) && c.artists.some((x) => x.artist === a.id),
+      );
+      if (!waits) fail(`artist ${a.id} has no kits (DATA-16)`);
       return [];
     }
     const artist = check(
@@ -308,7 +338,7 @@ async function main(): Promise<void> {
   for (const url of Object.keys(overrides.hiddenLinks))
     if (!fetchedUrls.has(url)) fail(`overrides.json: hidden link ${url} is no longer on MusicBrainz; remove it`);
 
-  const generatedReleases = [...releases]
+  const generatedReleases = [...current]
     .sort((a, b) => a.date.localeCompare(b.date))
     .map((r) => ({ ...r, kits: [...r.kits].sort((x, y) => (order.get(x) ?? 0) - (order.get(y) ?? 0)) }));
 

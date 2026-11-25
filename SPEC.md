@@ -79,7 +79,7 @@ Every field has one owner, and derived data is never edited by hand:
 - DATA-22 Stories and introductions are Markdown files per page and language in `content/`. English is the original and must exist (`content/README.md`).
 - DATA-23 Each states its sources and whether it is the original, a human translation or a machine translation.
 - DATA-24 A weekly sync, also run when curated data changes on `main`, fetches the data, extracts new or changed audio and covers from the game, publishes the audio, and opens one pull request with the rest. It rebuilds that pull request's branch from `main` every time.
-- DATA-25 A new kit fails the build until it has a release and credits. The pull request lists what is missing and suggests the release; the fixes go to `main`, then the sync runs again.
+- DATA-25 A new kit fails the build until it has a release and credits. The pull request lists what is missing and suggests the release; the fixes go to `main`, then the sync runs again. Until the sync brings a kit's game data, `main` keeps its release and credits without checking them against the game or showing them.
 - DATA-26 The sync tells from GameTracking's listing of the game files which audio and covers changed, so nothing is downloaded when nothing changed.
 
 ## Languages

@@ -21,8 +21,9 @@ const AUDIO_MANIFEST = "https://audio.musickitarchive.com/manifest.json";
 const COVER_TEXTURES = /^materials\/models\/inventory_items\/music_kit\/[^/]+\/mp3_screen_color[^/]*\.vtex_c$/;
 
 /** Localization keys we keep, compared in lower case (DATA-3). */
-const KEY_PREFIXES = ["musickit_", "csgo_crate_musickit_"];
-const EXTRA_KEYS = ["store_nav_section_coupon_nightmode2", "csgo_type_musickit"];
+// Store sections name the releases sold there, such as NIGHTMODE II (DATA-14d).
+const KEY_PREFIXES = ["musickit_", "csgo_crate_musickit_", "store_nav_section_coupon_"];
+const EXTRA_KEYS = ["csgo_type_musickit"];
 
 const GITHUB_HOSTS = new Set(["api.github.com", "raw.githubusercontent.com"]);
 
