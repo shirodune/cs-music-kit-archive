@@ -54,7 +54,7 @@ Every field has one owner, and derived data is never edited by hand:
 - DATA-3 Sources: Valve's game data via SteamTracking/GameTracking-CS2; the game's text in every language via ByMykel/counter-strike-file-tracker; editions and Steam icons via ByMykel/CSGO-API; artist links via MusicBrainz; audio and covers from the game files. Each upstream snapshot records the commit it came from.
 - DATA-4 MusicBrainz is used as it asks: requests name the project with a contact, about one a second.
 - DATA-4b Links whose site is gone or has changed hands (some became casino sites) are hidden in `overrides.json`. Check an artist's official site when adding them.
-- DATA-5 A kit is a music definition with an English name: 101 today.
+- DATA-5 A kit is a music definition with an English name.
 - DATA-6 The unnamed definition 2 is the alternate track set of the default CS:GO kit, not a kit.
 - DATA-8 StatTrak™ is an edition of a kit, not another kit.
 - DATA-9 A kit's address uses its English title (`desert-fire`); `overrides.json` sets it when two would clash.
