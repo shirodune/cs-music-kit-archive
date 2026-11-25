@@ -266,7 +266,7 @@ export default function Rack({ kits, strings, initial }: Props) {
             <Row label={strings.released} index={1}>
               {kit.date}
               {kit.batch && (
-                <span lang={kit.batch.lang} className="mt-0.5 block opacity-75">
+                <span lang={kit.batch.lang} className="mt-0.5 block">
                   {kit.batch.text}
                 </span>
               )}
@@ -463,7 +463,7 @@ function Row({ label, index, children }: { label: string; index: number; childre
     <div
       className={`flex flex-col gap-0.5 border-ink/35 py-[7px] lg:flex-row lg:items-baseline lg:justify-between lg:gap-3 ${rule}`}
     >
-      <dt className="flex-none opacity-75 lg:opacity-100">{label}</dt>
+      <dt className="flex-none">{label}</dt>
       <dd className="m-0 lg:text-right">{children}</dd>
     </div>
   );

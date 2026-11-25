@@ -6,6 +6,8 @@ const pages = [
   "/en/",
   "/en/kits/desert-fire/",
   "/en/kits/cs-go/",
+  // A kit in a box: its release line has the box name under the date.
+  "/en/kits/kolibri/",
   "/en/artists/",
   "/en/artists/austin-wintory/",
   "/en/about/",
