@@ -310,5 +310,17 @@
       "quote": "The Starjunk 95, Industrial Sunset Memories Music Kit is now available for purchase in standard and StatTrak versions through the STORE tab."
     },
     "note": null
+  },
+  {
+    "id": "2026-11-17-monstercat",
+    "date": "2026-11-17",
+    "nameKey": "store_nav_section_coupon_monstercat",
+    "kits": [105, 106, 107, 108, 109, 110, 111, 112],
+    "source": {
+      "url": "https://store.steampowered.com/news/app/730/view/687522235410286587",
+      "title": "Counter-Strike 2 Update",
+      "quote": "Added 8 new music kits from Monstercat."
+    },
+    "note": null
   }
 ]

@@ -544,5 +544,61 @@
     "type": "person",
     "aliases": [],
     "musicbrainzId": "18822272-d7dd-4619-bb3e-dd619b2cd179"
+  },
+  {
+    "id": "alleycvt-level-up",
+    "name": "ALLEYCVT & LEVEL UP",
+    "type": "group",
+    "aliases": [],
+    "musicbrainzId": null
+  },
+  {
+    "id": "arcando",
+    "name": "Arcando",
+    "type": "person",
+    "aliases": [],
+    "musicbrainzId": "c88ccba8-a247-46a6-ada7-c013f5776e58"
+  },
+  {
+    "id": "dj-diesel-hairitage",
+    "name": "DJ DIESEL & Hairitage",
+    "type": "group",
+    "aliases": [],
+    "musicbrainzId": null
+  },
+  {
+    "id": "f-o-o-l",
+    "name": "F.O.O.L",
+    "type": "group",
+    "aliases": [],
+    "musicbrainzId": "8ccd44fb-1c4a-4c5f-98b5-cf3b35a2aa5c"
+  },
+  {
+    "id": "noisestorm",
+    "name": "Noisestorm",
+    "type": "person",
+    "aliases": [],
+    "musicbrainzId": "93c6c515-e575-4114-80e5-46bf6aa408bc"
+  },
+  {
+    "id": "pegboard-nerds",
+    "name": "Pegboard Nerds",
+    "type": "group",
+    "aliases": [],
+    "musicbrainzId": "c729681b-c5c1-4509-a6d1-f916c51aefd7"
+  },
+  {
+    "id": "tristam-braken",
+    "name": "Tristam & Braken",
+    "type": "group",
+    "aliases": [],
+    "musicbrainzId": null
+  },
+  {
+    "id": "vicetone-cozi-zuehlsdorff",
+    "name": "Vicetone & Cozi Zuehlsdorff",
+    "type": "group",
+    "aliases": [],
+    "musicbrainzId": null
   }
 ]
