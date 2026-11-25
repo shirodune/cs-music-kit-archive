@@ -13,6 +13,10 @@ on:
   schedule:
     - cron: "17 6 * * 1" # Mondays, 06:17 UTC
   workflow_dispatch:
+  # A new kit's release and credits reaching main (DATA-25) start the sync again.
+  push:
+    branches: [main]
+    paths: ["data/curated/**"]
 
 concurrency:
   group: weekly-sync
@@ -206,7 +210,10 @@ jobs:
               echo
               echo "## pnpm data:build failed (DATA-25)"
               echo
-              echo "A new kit needs a release, credits and, when needed, slug or title overrides. Add them to main in a pull request of their own, then run this workflow again: it rebuilds this branch from main on every run, so commits pushed here are lost. The kit's audio and cover are extracted on the first run after the build passes."
+              echo "A new kit needs a release, credits and, when needed, slug or title overrides. Add them to main in a pull request of their own (\"New kits\" in docs/maintainers.md); the sync then runs again by itself. It rebuilds this branch from main on every run, so commits pushed here are lost. The kit's audio and cover are extracted on the first run after the build passes."
+              echo
+              prompt='The weekly sync found new music kits; its pull request is on the branch data-sync. Follow "New kits" in docs/maintainers.md and open a pull request to main.'
+              echo "To have Claude do it: [open Claude Code](https://claude.ai/code?prompt=$(jq -rn --arg p "$prompt" '$p|@uri')&repositories=$GITHUB_REPOSITORY)."
               echo
               echo '```'
               tail -n 40 "$RUNNER_TEMP/sync-logs/build.log"

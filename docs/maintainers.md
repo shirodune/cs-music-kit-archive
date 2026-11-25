@@ -40,10 +40,20 @@ pnpm data:build
 
 ## Weekly sync
 
-`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts the audio and cover textures of game files that changed, uploads the audio, and opens or updates the pull request on the branch `data-sync` with everything else, the covers included. When a new kit fails the build, the pull request lists the errors and the `pnpm data:suggest-release` output; add the release (checked against its page) and credits to `main` in a pull request of their own, then run the workflow again from the Actions tab. Do not push to `data-sync`: every run rebuilds it from `main`. One-time setup (done 2026-11-13):
+`.github/workflows/weekly-sync.yml` runs every Monday and from the Actions tab (spec DATA-24, D-023). It fetches the upstream data and artist links, extracts the audio and cover textures of game files that changed, uploads the audio, and opens or updates the pull request on the branch `data-sync` with everything else, the covers included. When a new kit fails the build, the pull request lists the errors and the `pnpm data:suggest-release` output; add the release and credits to `main` in a pull request of their own (see "New kits" below); the sync then runs again by itself. Do not push to `data-sync`: every run rebuilds it from `main`. One-time setup (done 2026-11-13):
 
 1. Create an R2 token limited to the bucket: in Cloudflare, R2 → Manage API tokens → Create Account API token, permission "Object Read & Write", bucket `cs-music-kit-audio`. It shows an Access Key ID and a Secret Access Key.
 2. In GitHub, create the environment `audio` (Settings → Environments), limit its deployment branches to `main`, and add the two values as the secrets `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`.
 3. In GitHub, allow workflows to open pull requests: Settings → Actions → General → Workflow permissions → "Allow GitHub Actions to create and approve pull requests".
+4. For the Claude Code link in the sync's pull request: connect GitHub at [claude.ai/code](https://claude.ai/code), and give its environment network access to Steam and MusicBrainz.
+
+## New kits
+
+When the sync's pull request says `pnpm data:build failed`, the game has new kits. Open the Claude Code link in that pull request, or do it by hand:
+
+1. Release: in `data/curated/releases.json`, the release notes of that day with URL, title and verbatim quote (spec DATA-13, DATA-14); the pull request lists the Steam posts that may be it. Name the release by its box or store section (`csgo_crate_musickit_*` or `store_nav_section_coupon_*` in `data/upstream/loc/en.json` on the `data-sync` branch), or `null` for a kit on its own.
+2. Credits and artists: one entry per kit in `data/curated/credits.json` (spec DATA-15; see kits 46 and 61). A new artist goes in `data/curated/artists.json` with its MusicBrainz ID when MusicBrainz has that act; a pair MusicBrainz credits separately gets `null`. Then run `pnpm data:links`.
+3. Check: `pnpm data:build` notes that the release waits for its kits. Have someone other than the writer, such as a second agent, check each fact (quote, date, kits, credits, MusicBrainz IDs) against its source, and fix what it finds.
+4. Open a pull request to `main` with `pnpm verify` passing. Once it is merged, the sync runs again, extracts the new audio and covers, and updates its pull request; merge that one too.
 
 Deploys run from GitHub Actions (spec D-003): every pull request gets a preview on workers.dev, and every push to `main` deploys to production after all checks pass.

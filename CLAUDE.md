@@ -22,6 +22,9 @@ Astro 7 (static output) with React islands, Tailwind CSS 4, TypeScript 6 (Astro'
 - Official Valve text (kit names, descriptions, box names) is never edited or machine translated.
 - UI strings go through `t()` (`src/i18n/t.ts`) in `messages/{segment}.json`: flat dot-separated keys; a plural is an object with exactly the CLDR categories the locale uses, the number is `{count}`. Never build plurals by string concatenation. `pnpm i18n:check` enforces this.
 - No translation library in the browser: islands get their strings as props. Format dates in UTC so the day never shifts. Uppercase comes from CSS (`text-transform`), never from changing the string. `font-synthesis: none` everywhere; each script's fallback fonts are in `src/i18n/fonts.ts`.
+- New kits: follow "New kits" in `docs/maintainers.md`.
+- Written content (stories, introductions, curated facts) is checked fact by fact against its sources by someone other than the writer, such as a second agent, before the owner reviews it. Chinese text puts kit names in 《》, with Valve's official Chinese names.
+- Public text stays plain, like comparable fan sites: no extra emphasis.
 - Secrets never go in the repository. The deploy token lives in the GitHub `production` and `preview` environments.
 
 ## Language
