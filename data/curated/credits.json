@@ -911,5 +911,77 @@
       }
     ],
     "credit": null
+  },
+  "105": {
+    "artists": [
+      {
+        "artist": "alleycvt-level-up",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "106": {
+    "artists": [
+      {
+        "artist": "pirapus",
+        "role": "main"
+      }
+    ],
+    "credit": "Arcando & Pirapus"
+  },
+  "107": {
+    "artists": [
+      {
+        "artist": "dj-diesel-hairitage",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "108": {
+    "artists": [
+      {
+        "artist": "f-o-o-l",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "109": {
+    "artists": [
+      {
+        "artist": "noisestorm",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "110": {
+    "artists": [
+      {
+        "artist": "pegboard-nerds",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "111": {
+    "artists": [
+      {
+        "artist": "tristam-braken",
+        "role": "main"
+      }
+    ],
+    "credit": null
+  },
+  "112": {
+    "artists": [
+      {
+        "artist": "vicetone-cozi-zuehlsdorff",
+        "role": "main"
+      }
+    ],
+    "credit": null
   }
 }

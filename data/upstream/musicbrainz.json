@@ -207,6 +207,28 @@
       "url": "https://soundcloud.com/selectiveresponse1"
     }
   ],
+  "8ccd44fb-1c4a-4c5f-98b5-cf3b35a2aa5c": [
+    {
+      "kind": "official",
+      "url": "http://www.fuckourordinarylives.com/"
+    },
+    {
+      "kind": "spotify",
+      "url": "https://open.spotify.com/artist/1ldNdtZX38LAsOk0ciLvb2"
+    },
+    {
+      "kind": "apple-music",
+      "url": "https://music.apple.com/ca/artist/410555666"
+    },
+    {
+      "kind": "soundcloud",
+      "url": "https://soundcloud.com/fuckourordinarylives"
+    },
+    {
+      "kind": "youtube",
+      "url": "https://www.youtube.com/channel/UCMbhB5CA18gAui_64sk-plw"
+    }
+  ],
   "8f9a7d46-778a-48b6-8b4c-0c0938a95053": [
     {
       "kind": "official",
@@ -461,6 +483,24 @@
     {
       "kind": "youtube",
       "url": "https://www.youtube.com/proxytv"
+    }
+  ],
+  "93c6c515-e575-4114-80e5-46bf6aa408bc": [
+    {
+      "kind": "spotify",
+      "url": "https://open.spotify.com/artist/2BuSNpxpMGJGiAAWJYJT2t"
+    },
+    {
+      "kind": "apple-music",
+      "url": "https://music.apple.com/ie/artist/419653769"
+    },
+    {
+      "kind": "soundcloud",
+      "url": "https://soundcloud.com/noisestorm"
+    },
+    {
+      "kind": "youtube",
+      "url": "https://www.youtube.com/channel/UCMxqfxGRX07XOoFfyaM-eYA"
     }
   ],
   "98a1e0ab-35fa-40dd-b62c-9fda46fdb061": [
@@ -1020,6 +1060,32 @@
     {
       "kind": "spotify",
       "url": "https://open.spotify.com/artist/5QRlmTynCos8JyojtmgNq6"
+    }
+  ],
+  "c729681b-c5c1-4509-a6d1-f916c51aefd7": [
+    {
+      "kind": "official",
+      "url": "http://www.pegboardnerds.com/"
+    },
+    {
+      "kind": "bandcamp",
+      "url": "https://pegboardnerds.bandcamp.com/"
+    },
+    {
+      "kind": "spotify",
+      "url": "https://open.spotify.com/artist/0lLY20XpZ9yDobkbHI7u1y"
+    },
+    {
+      "kind": "apple-music",
+      "url": "https://music.apple.com/dk/artist/492889905"
+    },
+    {
+      "kind": "soundcloud",
+      "url": "https://soundcloud.com/pegboardnerds"
+    },
+    {
+      "kind": "youtube",
+      "url": "https://www.youtube.com/channel/UCeVB7ql9TxVhvJhEEQ0qipQ"
     }
   ],
   "cec708a0-ee01-4ae9-978c-2cb2564e00c8": [],
